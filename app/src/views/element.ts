@@ -5,11 +5,15 @@ import { CONCEPTS } from '../content/concepts';
 import { ELEMENTS, findBySymbol, loadElement, type IndexRow } from '../data/elements';
 import { isRenderable } from '../data/facts';
 import type { Element, Fact, Isotope } from '../data/schema';
-import { atomLegend, atomSvg } from '../ui/atom';
+import { atomLegend, atomSvg, type AtomModel } from '../ui/atom';
+import { openAtom3d } from '../ui/atom3d';
 import { citation, el, factRow, predictedBadge } from '../ui/fact';
 import { configuration, halfLifeText, percent } from '../ui/format';
 import { getTempUnit, setTempUnit, TEMP_UNITS, type TempUnit } from '../units';
 import { CLASSES } from './table';
+
+/** Elements whose atom opens in 3D when tapped. A trial: vanadium only for now. */
+const TRIAL_3D = new Set(['V']);
 
 function section(title: string, ...children: (Node | null)[]): HTMLElement {
   const s = el('section', 'card');
@@ -52,13 +56,24 @@ function atomSection(e: Element): HTMLElement {
   const figure = el('figure', 'atom-figure');
   if (ok) {
     const shellText = drawnShells ? `, electrons in shells of ${(drawnShells.value as number[]).join(', ')}` : '';
-    figure.append(atomSvg({
+    const model: AtomModel = {
       protons: protons.value as number,
       neutrons: neutrons.value as number,
       shells: drawnShells?.value as number[] | undefined,
       predicted: drawnShells?.uncertain,
       label: `Model of a ${name} atom: ${protons.value} protons and ${neutrons.value} neutrons in the nucleus${shellText}.`,
-    }));
+    };
+    if (TRIAL_3D.has(String(e.symbol.value)) && drawnShells) {
+      // Tap the flat atom to open the moving 3D one.
+      const open = el('button', 'atom-open');
+      open.type = 'button';
+      open.setAttribute('aria-label', `Open the 3D model of a ${name} atom`);
+      open.append(atomSvg(model), el('span', 'atom-open-hint', 'Tap for 3D'));
+      open.addEventListener('click', () => openAtom3d(model, `${e.name.value} atom in 3D`, atomLegend()));
+      figure.append(open);
+    } else {
+      figure.append(atomSvg(model));
+    }
     figure.append(atomLegend());
     if (!drawnShells) {
       figure.append(el('p', 'atom-caption',
