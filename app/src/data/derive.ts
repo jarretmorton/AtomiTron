@@ -28,11 +28,11 @@ export type Occupancy = Map<string, number>;
  * Parses an electron configuration such as "[Ar] 3d10 4s1". It also accepts
  * the superscript-less form PubChem serves ("[Ar]4s13d10"). Counts are split
  * by subshell capacity, with backtracking, so "4s13d10" reads as 4s1 3d10.
- * The "(predicted)" marker and stray whitespace (including zero-width spaces)
+ * The "(predicted)", "(calculated)" and "probably" markers and stray whitespace (including zero-width spaces)
  * are ignored. Returns null if the text isn't a valid configuration.
  */
 export function parseConfiguration(text: string): Occupancy | null {
-  let s = text.replace(/\(?predicted\)?/gi, '').replace(/[\s​]+/g, '');
+  let s = text.replace(/\(?(predicted|calculated)\)?|probably/gi, '').replace(/[\s\u200b]+/g, '');
   const occ: Occupancy = new Map();
   const core = /^\[(He|Ne|Ar|Kr|Xe|Rn)\]/.exec(s);
   if (core) {

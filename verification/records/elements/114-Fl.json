@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 2,
+  "kind": "verification-records",
+  "items": [
+    {
+      "id": "Fl.atomicNumber",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/atomicNumber"
+      },
+      "method": "extract",
+      "claimedValue": 114,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/114",
+      "upstream": "PubChem",
+      "retrievedValue": 114,
+      "evidence": "RecordNumber 114",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Fl.symbol",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/symbol"
+      },
+      "method": "extract",
+      "claimedValue": "Fl",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/114#section=Element-Symbol",
+      "upstream": "PubChem",
+      "retrievedValue": "Fl",
+      "evidence": "Fl",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/114#section=Element-Symbol",
+          "upstream": "IUPAC CIAAW",
+          "value": "Fl"
+        }
+      ]
+    },
+    {
+      "id": "Fl.name",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/name"
+      },
+      "method": "extract",
+      "claimedValue": "Flerovium",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/114#section=Element-Name",
+      "upstream": "PubChem",
+      "retrievedValue": "Flerovium",
+      "evidence": "Flerovium",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Fl.period",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/period"
+      },
+      "method": "extract",
+      "claimedValue": 7,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/114#section=Element-Period-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 7,
+      "evidence": "7",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the period boundaries at Z = 2, 10, 18, 36, 54, 86, 118"
+    },
+    {
+      "id": "Fl.group",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/group"
+      },
+      "method": "extract",
+      "claimedValue": 14,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/114#section=Element-Group-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 14,
+      "evidence": "14",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the standard 18-column table position"
+    },
+    {
+      "id": "Fl.electronConfiguration",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/electronConfiguration"
+      },
+      "method": "extract",
+      "claimedValue": "[Rn] 5f14 6d10 7s2 7p2",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/114#section=Electron-Configuration",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "[Rn] 5f14 6d10 7s2 7p2",
+      "evidence": "[Rn] 7s27p2 5f14 6d10(predicted)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "predicted: marked by the source"
+    },
+    {
+      "id": "Fl.state",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/state"
+      },
+      "method": "extract",
+      "claimedValue": "Expected to be a Solid",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/114#section=Physical-Description",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Expected to be a Solid",
+      "evidence": "Expected to be a Solid",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Fl.longestLivedIsotopeMassNumber",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/longestLivedIsotopeMassNumber"
+      },
+      "method": "extract",
+      "claimedValue": 290,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/114#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 290,
+      "evidence": "290Fl",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "longest measured half-life among 7 ground-state isotopes"
+    },
+    {
+      "id": "Fl.isotopes.0.massNumber",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/isotopes/0/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 290,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/114#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 290,
+      "evidence": "290Fl",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Fl.isotopes.0.halfLife",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/isotopes/0/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": 80.0,
+      "unit": "s",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/114#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 80.0,
+      "evidence": "80 s ± 60",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Fl.atom.protons",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/atom/protons"
+      },
+      "method": "derive",
+      "claimedValue": 114,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 114,
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "protons-equal-atomic-number from Fl.atomicNumber"
+    },
+    {
+      "id": "Fl.atom.electrons",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/atom/electrons"
+      },
+      "method": "derive",
+      "claimedValue": 114,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 114,
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "electrons-equal-atomic-number from Fl.atomicNumber"
+    },
+    {
+      "id": "Fl.atom.neutrons",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/atom/neutrons"
+      },
+      "method": "derive",
+      "claimedValue": 176,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
+      "retrievedValue": 176,
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "neutrons-from-mass-number from Fl.isotopes.0.massNumber, Fl.atomicNumber"
+    },
+    {
+      "id": "Fl.atom.shells",
+      "subject": {
+        "entity": "element:Fl",
+        "field": "/atom/shells"
+      },
+      "method": "derive",
+      "claimedValue": [
+        2,
+        8,
+        18,
+        32,
+        32,
+        18,
+        4
+      ],
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations",
+      "retrievedValue": [
+        2,
+        8,
+        18,
+        32,
+        32,
+        18,
+        4
+      ],
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "shells-from-configuration from Fl.electronConfiguration"
+    }
+  ]
+}

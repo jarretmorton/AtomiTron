@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 2,
+  "kind": "verification-records",
+  "items": [
+    {
+      "id": "Og.atomicNumber",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/atomicNumber"
+      },
+      "method": "extract",
+      "claimedValue": 118,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118",
+      "upstream": "PubChem",
+      "retrievedValue": 118,
+      "evidence": "RecordNumber 118",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Og.symbol",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/symbol"
+      },
+      "method": "extract",
+      "claimedValue": "Og",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Element-Symbol",
+      "upstream": "PubChem",
+      "retrievedValue": "Og",
+      "evidence": "Og",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Element-Symbol",
+          "upstream": "IUPAC CIAAW",
+          "value": "Og"
+        }
+      ]
+    },
+    {
+      "id": "Og.name",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/name"
+      },
+      "method": "extract",
+      "claimedValue": "Oganesson",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Element-Name",
+      "upstream": "PubChem",
+      "retrievedValue": "Oganesson",
+      "evidence": "Oganesson",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Og.period",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/period"
+      },
+      "method": "extract",
+      "claimedValue": 7,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Element-Period-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 7,
+      "evidence": "7",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the period boundaries at Z = 2, 10, 18, 36, 54, 86, 118"
+    },
+    {
+      "id": "Og.group",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/group"
+      },
+      "method": "extract",
+      "claimedValue": 18,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Element-Group-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 18,
+      "evidence": "18 - Noble Gas",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the standard 18-column table position"
+    },
+    {
+      "id": "Og.electronConfiguration",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/electronConfiguration"
+      },
+      "method": "extract",
+      "claimedValue": "[Rn] 5f14 6d10 7s2 7p6",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Electron-Configuration",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "[Rn] 5f14 6d10 7s2 7p6",
+      "evidence": "[Rn] 7s2 7p6 5f14 6d10(predicted)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "predicted: marked by the source"
+    },
+    {
+      "id": "Og.state",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/state"
+      },
+      "method": "extract",
+      "claimedValue": "Expected to be a Gas",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Physical-Description",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Expected to be a Gas",
+      "evidence": "Expected to be a Gas",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Og.boilingPoint",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/boilingPoint"
+      },
+      "method": "extract",
+      "claimedValue": {
+        "min": 50.0,
+        "max": 110.0
+      },
+      "unit": "°C",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Boiling-Point",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": {
+        "min": 50.0,
+        "max": 110.0
+      },
+      "evidence": "350±30K(80±30°C,170±50°F)(extrapolated)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "predicted or extrapolated; stated as a range by the source"
+    },
+    {
+      "id": "Og.longestLivedIsotopeMassNumber",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/longestLivedIsotopeMassNumber"
+      },
+      "method": "extract",
+      "claimedValue": 295,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 295,
+      "evidence": "295Og",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "longest measured half-life among 2 ground-state isotopes"
+    },
+    {
+      "id": "Og.isotopes.0.massNumber",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/isotopes/0/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 295,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 295,
+      "evidence": "295Og",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Og.isotopes.0.halfLife",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/isotopes/0/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": 680.0,
+      "unit": "ms",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 680.0,
+      "evidence": "680 ms ± 540",
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Og.atom.protons",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/atom/protons"
+      },
+      "method": "derive",
+      "claimedValue": 118,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 118,
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "protons-equal-atomic-number from Og.atomicNumber"
+    },
+    {
+      "id": "Og.atom.electrons",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/atom/electrons"
+      },
+      "method": "derive",
+      "claimedValue": 118,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 118,
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "electrons-equal-atomic-number from Og.atomicNumber"
+    },
+    {
+      "id": "Og.atom.neutrons",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/atom/neutrons"
+      },
+      "method": "derive",
+      "claimedValue": 177,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
+      "retrievedValue": 177,
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "neutrons-from-mass-number from Og.isotopes.0.massNumber, Og.atomicNumber"
+    },
+    {
+      "id": "Og.atom.shells",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/atom/shells"
+      },
+      "method": "derive",
+      "claimedValue": [
+        2,
+        8,
+        18,
+        32,
+        32,
+        18,
+        8
+      ],
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations",
+      "retrievedValue": [
+        2,
+        8,
+        18,
+        32,
+        32,
+        18,
+        8
+      ],
+      "result": "pass",
+      "checkedAt": "2026-11-11T03:53:45Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "shells-from-configuration from Og.electronConfiguration"
+    }
+  ]
+}

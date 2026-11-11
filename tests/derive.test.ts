@@ -16,7 +16,7 @@ describe('parseConfiguration', () => {
     ['Tc, flattened', '[Kr]5s24d5', 43, [2, 8, 18, 13, 2]],
     ['Pb, flattened', '[Xe]4f145d106s26p2', 82, [2, 8, 18, 32, 18, 4]],
     ['U, flattened', '[Rn]5f36d17s2', 92, [2, 8, 18, 32, 21, 9, 2]],
-    ['Og, predicted with zero-width space', '[Rn] 7s2 7p6 5f14 6d10​(predicted)', 118, [2, 8, 18, 32, 32, 18, 8]],
+    ['Og, predicted with zero-width space', '[Rn] 7s2 7p6 5f14 6d10\u200b(predicted)', 118, [2, 8, 18, 32, 32, 18, 8]],
   ])('%s', (_, text, electrons, shells) => {
     const occ = parseConfiguration(text);
     expect(occ).not.toBeNull();

@@ -92,6 +92,33 @@
       "type": "string",
       "maxLength": 400
     },
+    "corroboration": {
+      "description": "Other contributors or sources whose values agree with the claimed value (methodology section 5), including a NIST WebBook tiebreak.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sourceUrl",
+          "value"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "sourceUrl": {
+            "$ref": "urn:atomitron:schema:fact#/$defs/sourceUrl"
+          },
+          "upstream": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": [
+              "string",
+              "number"
+            ]
+          }
+        }
+      }
+    },
     "tolerance": {
       "description": "Numeric match tolerance applied, per the published methodology. Omit for exact or text matches.",
       "type": "object",

@@ -33,6 +33,8 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - name: Pipeline tests (Python, standard library only)
+        run: python3 -m unittest discover -s pipeline/tests -t .
       - name: Tests (schema + verified-data gate)
         run: npm test
       - name: Typecheck and build

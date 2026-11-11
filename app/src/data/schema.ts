@@ -54,6 +54,8 @@ export interface Isotope {
   massNumber: Fact<number>;
   atomicMass?: Fact<number>;
   abundance?: Fact<number | Range>;
+  /** e.g. 4.21 with unit "My", or "Stable". */
+  halfLife?: Fact<number | string>;
 }
 
 export interface Element {
@@ -110,6 +112,8 @@ export interface VerificationRecord {
   upstream?: string;
   retrievedValue: FactValue | null;
   evidence?: string;
+  /** Agreeing values from other contributors or sources. */
+  corroboration?: { sourceUrl: string; upstream?: string; value: string | number }[];
   tolerance?: { absolute?: number; relative?: number };
   result: 'pass' | 'fail';
   /** ISO 8601 date-time */
