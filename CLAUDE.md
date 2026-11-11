@@ -65,9 +65,17 @@ with the Python pipeline). It's mirrored by the TypeScript types in
 - **The build fails on any unverified fact.** The test suite checks every fact
   in `data/verified/` against the schema and `isRenderable`. It also requires
   a passing record in `verification/records/` with a matching source URL and
-  value.
-- Uncertain values (such as superheavy predictions) are `{ min, max }` ranges
-  with `uncertain: true`. Show the range, never one falsely precise number.
+  value. It recomputes every derived fact and runs element consistency checks.
+- How facts are sourced, matched, cross-checked and dropped is defined in
+  [verification/methodology.md](verification/methodology.md). Follow it, and
+  change it only with the user's approval.
+- Values calculated from other facts (protons, neutrons, shells, valence)
+  carry a `derivation` with a named rule from
+  [app/src/data/derive.ts](app/src/data/derive.ts). Never hand-compute them.
+- An uncertain value (`uncertain: true`, such as a superheavy prediction) is
+  never a single number. It's a `{ min, max }` range, or a labelled non-number
+  such as a predicted configuration. A predicted number with no stated range
+  is left out.
 - Open questions are objects linked to entity IDs. The claim that a question
   is open is itself a sourced `Fact`.
 - Entity IDs: `element:Na`, `compound:cid-5234` (PubChem CID),
@@ -79,7 +87,7 @@ with the Python pipeline). It's mirrored by the TypeScript types in
 
 ```
 app/                 the web app (Vite root): index.html, public/ icons, src/
-data/schema/         JSON Schema for facts, open questions, verification records
+data/schema/         JSON Schema for facts, elements, open questions, verification records
 data/verified/       verified element and reaction JSON; the ONLY data normal mode loads
 data/spot-the-error/ planted errors, kept separate
 pipeline/            Python orchestrator, drafting, verifier and evaluator agents and prompts

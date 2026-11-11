@@ -2,36 +2,43 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "urn:atomitron:schema:fact",
   "title": "Fact",
-  "description": "One displayed fact (spec 10.3): a value, its unit, the whitelisted source it came from, when it was retrieved, and its verification status. The app refuses to render a fact without a passing verification record.",
+  "description": "One displayed fact (spec 10.3): a value, its unit, the whitelisted source it came from, when it was retrieved, and its verification status. The app refuses to render a fact without a passing verification record. See verification/methodology.md.",
   "type": "object",
   "required": ["value", "unit", "uncertain", "source", "verification"],
   "additionalProperties": false,
   "properties": {
     "value": { "$ref": "#/$defs/value" },
     "unit": {
-      "description": "Unit symbol, e.g. \"K\", \"g/mol\", \"kJ/mol\". null when the value has no unit (counts, text, electron configurations).",
+      "description": "Unit symbol, e.g. \"°C\", \"g/cm³\", \"u\". null when the value has no unit (counts, text, electron configurations).",
       "type": ["string", "null"],
       "minLength": 1
     },
     "uncertain": {
-      "description": "True for predicted or disputed values (e.g. superheavy elements). An uncertain value must be a range.",
+      "description": "True for predicted, estimated or extrapolated values (e.g. superheavy elements). An uncertain value is never a single number: it's a range, or a labelled non-numeric value such as a predicted configuration.",
       "type": "boolean"
     },
     "source": { "$ref": "#/$defs/source" },
-    "verification": { "$ref": "#/$defs/verification" }
+    "verification": { "$ref": "#/$defs/verification" },
+    "derivation": { "$ref": "#/$defs/derivation" }
   },
   "if": { "properties": { "uncertain": { "const": true } } },
-  "then": { "properties": { "value": { "$ref": "#/$defs/range" } } },
+  "then": { "properties": { "value": { "not": { "type": "number" } } } },
   "$defs": {
     "value": {
       "oneOf": [
         { "type": "number" },
         { "type": "string", "minLength": 1 },
-        { "$ref": "#/$defs/range" }
+        { "$ref": "#/$defs/range" },
+        {
+          "description": "List of counts, e.g. electrons per shell [2, 8, 1].",
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "integer", "minimum": 0 }
+        }
       ]
     },
     "range": {
-      "description": "Closed interval. min <= max is enforced by the integrity tests, since JSON Schema can't compare fields.",
+      "description": "Closed interval. Used for uncertain values, and for values that genuinely vary in nature (e.g. hydrogen's standard atomic weight). min <= max is enforced by the integrity tests, since JSON Schema can't compare fields.",
       "type": "object",
       "required": ["min", "max"],
       "additionalProperties": false,
@@ -55,6 +62,11 @@
           "description": "Date the value was retrieved from the source (YYYY-MM-DD).",
           "type": "string",
           "format": "date"
+        },
+        "via": {
+          "description": "The original contributor that the whitelisted page credits for this value, e.g. \"IUPAC CIAAW\" or \"Jefferson Lab\". Display only. The citation is still the url.",
+          "type": "string",
+          "minLength": 1
         }
       }
     },
@@ -68,9 +80,32 @@
           "enum": ["pass", "fail", "pending"]
         },
         "recordId": {
-          "description": "ID of the per-fact record in verification/records/.",
+          "description": "ID of the per-fact record in verification/records/. Unique: no two facts share a record.",
           "type": "string",
           "pattern": "^[A-Za-z0-9._:-]+$"
+        }
+      }
+    },
+    "derivation": {
+      "description": "Present when the value is calculated from other verified facts rather than read from a page. The rule is implemented in code (app/src/data/derive.ts), and the build recomputes it from the inputs on every run. For a derived fact, source.url points to a page explaining the rule.",
+      "type": "object",
+      "required": ["rule", "inputs"],
+      "additionalProperties": false,
+      "properties": {
+        "rule": {
+          "enum": [
+            "protons-equal-atomic-number",
+            "electrons-equal-atomic-number",
+            "neutrons-from-mass-number",
+            "shells-from-configuration",
+            "valence-main-group"
+          ]
+        },
+        "inputs": {
+          "description": "recordIds of the input facts, in the order the rule expects.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "pattern": "^[A-Za-z0-9._:-]+$" }
         }
       }
     },

@@ -1,109 +1,114 @@
 # AtomiTron status
 
-*Updated 2026-11-10. Phase 1 (skeleton) is built and in a pull request; merging it deploys.*
+*Updated 2026-11-11. Phase 1 is complete and live. Phase 2 has started: the
+element schema and verification methodology are approved and committed.
+No elements have been verified yet.*
 
 ## Where things stand
 
-Phase 1 from [requirements.md](requirements.md) section 10.4 is done. It's
-committed on the branch `claude/phase-1-skeleton`, with a pull request into
-`main`. The repo is now public, and GitHub Pages is set to deploy through
-GitHub Actions.
+**Phase 1 (skeleton): complete.** Merged through
+[PR #1](https://github.com/jarretmorton/AtomiTron/pull/1) and live at
+<https://jarretmorton.github.io/AtomiTron/>. It was checked on the iPad mini in
+Safari. The repo is public, and Pages deploys through GitHub Actions on every
+push to `main`.
 
-Checks at pause:
+**Phase 2 (elements): schema and methodology approved.** The work is on the
+local branch `claude/phase-2-elements`, committed but not pushed.
 
-- `npm test`: 44 of 44 tests pass (schema tests and the verified-data gate)
+- `npm test`: 108 of 108 tests pass
 - `npm run typecheck`: clean
-- `npm run build`: builds `dist/` with relative asset paths
-- Served locally under `/AtomiTron/` the way Pages serves it, every file
-  loaded. Checked in headless Edge at iPad mini size, portrait and landscape,
-  light and dark. **Not yet seen on the real iPad in Safari.**
+- `npm run build`: clean
 
-## What was built
+## Phase 2 so far
 
-| Area | Files | Notes |
+| Area | Files | What changed |
 |---|---|---|
-| Project rules | [CLAUDE.md](../CLAUDE.md) | Correctness first, exactly three sources, no how-to content for hazards, touch first, static at runtime, Spot the Error isolation, data rules, layout, deploy |
-| Data schema | [data/schema/](../data/schema/) | JSON Schema 2020-12, shared with the future Python pipeline. Defines facts, open questions, verification records, and the file envelope |
-| TypeScript types | [app/src/data/schema.ts](../app/src/data/schema.ts) | Mirror of the JSON Schema |
-| Render gate | [app/src/data/facts.ts](../app/src/data/facts.ts) | `isRenderable()` shows a fact only with a passing status, a record ID and a whitelisted source |
-| Build gate | [tests/integrity.ts](../tests/integrity.ts), [tests/](../tests/) | Every fact in `data/verified/` must pass the schema and `isRenderable()`, and have a passing record in `verification/records/` with the same source URL, value and unit |
-| App shell | [app/](../app/) | Vite and TypeScript. Table, Combine and Journal tabs as placeholders, hash routing, light/dark toggle, 44 px touch targets, iPad safe areas |
-| Icons | [app/public/](../app/public/), [scripts/make_icons.py](../scripts/make_icons.py) | Carbon-atom icon. The script generates the SVG and both PNGs from the same shapes |
-| Deploy | [.github/workflows/deploy.yml](../.github/workflows/deploy.yml) | Test, then build, then publish `dist/` to Pages. Pull requests test and build but don't deploy |
-| Placeholders | `data/verified/`, `data/spot-the-error/`, `pipeline/`, `verification/` | READMEs only, filled in from phase 2 |
+| Element schema | [data/schema/element.schema.json](../data/schema/element.schema.json) | Every spec 3.2 field as a `Fact`: identity, period and group, atomic weight, configuration, electronegativity, valence, state, melting and boiling points, density, isotopes, the atom (protons, neutrons, electrons, shells), discovery, uses |
+| Fact schema | [data/schema/fact.schema.json](../data/schema/fact.schema.json) | Adds derived values (`derivation`: a named rule plus input record IDs), count arrays (electrons per shell), and `source.via` (original contributor). Uncertain now means "never a single number" rather than "always a range" |
+| Records | [data/schema/verification-record.schema.json](../data/schema/verification-record.schema.json) | Adds `method` (extract, agent or derive), `upstream`, and `evidence` (a short excerpt) |
+| Envelope | [data/schema/dataset.schema.json](../data/schema/dataset.schema.json) | Adds the `elements` kind. `schemaVersion` bumped to 2 |
+| Derivation rules | [app/src/data/derive.ts](../app/src/data/derive.ts) | Protons, electrons, neutrons, shells, valence. The configuration parser handles PubChem's flattened form (`[Ar]4s13d10`) |
+| Build gate | [tests/integrity.ts](../tests/integrity.ts) | Recomputes every derived fact; checks that configuration electrons equal the atomic number, that the ID matches the symbol, that the right isotope is drawn, that uncertainty passes to derived values, and that each fact has its own record |
+| Methodology | [verification/methodology.md](../verification/methodology.md) | **Approved.** Sources, match rules, tolerances, disagreement handling, consistency checks, derived values, which isotope the atom shows, uncertain values |
 
-## Decisions made, and why
+### What the PubChem survey found (all 118 elements, 2026-11-10)
 
-- **Deploy through GitHub Actions, not straight from a branch.** Rock ID and
-  Addonaut publish `main` / root because they have no build step. Vite needs
-  one. The things that matter on the iPad are unchanged: the same
-  `jarretmorton.github.io` host (already allowed), relative paths, and the
-  same three icon files. The workflow also provides the spec 10.5 gate,
-  because a failing test blocks the deploy.
-- **Hash routes** (`#/table`, later `#/element/Na`), because Pages has no
-  fallback for single-page apps.
-- **The JSON Schema is the contract** between the Python pipeline and the app.
-  TypeScript types mirror it. Tests check that the schema and `isRenderable()`
-  reject the same bad facts.
-- **The fact schema allows `pending` and `fail`** so pipeline drafts can use
-  it. Only `isRenderable()` and the build gate require `pass`.
-- **Entity IDs:** `element:Na`, `compound:cid-5234` (PubChem CID),
-  `reaction:sodium-chlorine`. Open questions use `oq-...`.
-- **The gate finds facts by their `verification` key** anywhere in a file, so
-  it keeps working when the phase 2 and 3 data shapes are added.
-- **LF line endings** (`.gitattributes`), so data and verification records
-  hash the same on every OS.
+- **PubChem's periodic-table summary disagrees with its own element pages**
+  (technetium 96.90636 vs [98]). Only the element-page data is used.
+- **Contributors contain real errors.**
+  - Melting points: 18 elements disagree by more than 1 °C.
+  - Boiling points: 28 elements disagree by more than 1 °C.
+  - Krypton's boiling point appears with its minus sign missing.
+  - Neon's melting point appears 10 °C apart, probably a typo.
+  - No single contributor is always right.
+- **Contributors disagree on the longest-lived isotope** of 11 radioactive
+  elements, so the methodology uses the IAEA half-life table instead.
 
-## Decisions
+## Methodology decisions (approved 2026-11-11)
 
-Settled on 2026-11-10:
-
-- The repo is **public**, matching Rock ID, Addonaut and spec 6.1.
-- Pages source is **GitHub Actions**.
-- Phase 1 ships through a branch and pull request, like the Rock ID flow.
+1. **Numbers are checked by code, not agents.** This deliberately departs
+   from spec 6's wording. Code reading PubChem's structured data is exact,
+   repeatable and needs no API key. Agents check written statements only.
+2. **When contributors disagree:**
+   - They must agree within 1 °C (melting and boiling points).
+   - If they don't, the NIST WebBook breaks the tie.
+   - If NIST can't, the value is dropped and listed in the release report.
+   - Values given by only one contributor must pass the consistency checks.
+3. **Valence electrons are shown only for main-group elements.**
+4. **For radioactive elements,** the atom shows the longest-lived isotope from
+   the IAEA half-life table.
+5. **Temperatures are stored in °C** as the contributor states them. A reader
+   setting shows them in °C, °F, K or °R, converted exactly
+   ([app/src/units.ts](../app/src/units.ts)). A converted value keeps the
+   stored decimal places and says "converted from ...". The settings control
+   arrives with the element pages.
 
 Still open from requirements section 9:
 - trademark check on the name
 - size and priority order of the first reaction set
 - model and budget for the pipeline
 
-Hosting is now answered: same host, deployed through Actions.
+## Decisions made earlier, and why
 
-## Known gaps, deliberately left for later phases
+- **Deploy through GitHub Actions**, because Vite needs a build. It's the same
+  `jarretmorton.github.io` host as Rock ID and Addonaut, and a failing test
+  blocks the deploy.
+- **Hash routes**, because Pages has no fallback for single-page apps.
+- **The JSON Schema is the contract** between pipeline and app. The
+  TypeScript types mirror it, and tests keep the two in agreement.
+- **Drafts may use the `pending` and `fail` statuses.** Only `pass` renders
+  or ships.
+- **Entity IDs:** `element:Na`, `compound:cid-5234`,
+  `reaction:sodium-chlorine`, `oq-...`.
+- **LF line endings**, so records hash the same on every OS.
+- **The repo is public; phases ship through a branch and pull request.**
 
-- **Element, compound and reaction data shapes:** the file envelope only knows
-  `open-questions` and `verification-records` so far. Phase 2 adds `elements`,
-  and phase 3 adds `compounds` and `reactions`.
-- **Calculated values** such as reaction enthalpies come from several NIST
-  inputs. A fact currently has one `source`, so phase 3 needs a way to show
-  the calculation and link every input.
-- **Hazard test:** no quantities or procedures (spec 10.5), due in phase 3.
-- **Spot the Error isolation test:** a guard that normal-mode code never
-  imports `data/spot-the-error/`, due in phase 5.
-- **Verification methodology document**, with match rules and numeric
-  tolerances, due with the pipeline in phase 2.
+## Known gaps, deliberately left for later
+
+- **Phase 3:** compound and reaction data shapes, a derivation rule for
+  reaction enthalpy (Hess's law over NIST inputs), and the hazard "no
+  quantities or procedures" test.
+- **Phase 5:** the Spot the Error isolation test.
+- **Category colors** for the periodic table (which grouping scheme, and how
+  it stays color-blind-safe) are decided when the table UI is built.
 
 ## Next steps
 
-1. Review phase 1: read [CLAUDE.md](../CLAUDE.md), skim the schema, and run
-   `npm install && npm run dev`.
-2. Merge the phase 1 pull request, which deploys it. Then confirm that
-   <https://jarretmorton.github.io/AtomiTron/> loads on the iPad mini in
-   Safari, and that Add to Home Screen picks up the icon.
-3. Start **phase 2 (elements)**:
-   - Add the `elements` kind and element schema, with every displayed value a
-     `Fact`.
-   - Write `verification/methodology.md`: what counts as a match, and the
-     numeric tolerances.
-   - Run verification for all 118 elements with Claude Code subagents (the
-     execution path for phases 1 to 3), using PubChem PUG REST. Each fact
-     gets a verification record, and failures get one retry before being
-     dropped and listed.
-   - Build the periodic table (color-blind-safe group colors, each with a
-     label) and element pages with the animated atom and a source link on
-     every fact.
-4. **Checkpoint 1** comes after phase 2: a human spot review of about 25
-   sampled facts, logged in `verification/spot-reviews/`.
+1. ~~Review the methodology draft.~~ Approved 2026-11-11.
+2. ~~Commit the reviewed schema and methodology.~~ Done.
+3. Build the extractor in `pipeline/` (Python):
+   - fetch the PUG View data
+   - parse each field
+   - cross-check contributors, with the NIST tiebreak
+   - run the consistency checks
+   - write `data/verified/elements/` and `verification/records/elements/`
+4. Draft and verify the text facts (history, uses) with verifier agents:
+   three runs each, keeping short evidence excerpts.
+5. Run all 118 elements, and write the first release report listing what was
+   dropped and why.
+6. Build the periodic table and element pages with the animated atom.
+7. Open the phase 2 PR. **Checkpoint 1** follows: a human spot review of
+   about 25 sampled facts, logged in `verification/spot-reviews/`.
 
 ## Picking it back up
 

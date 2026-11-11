@@ -1,52 +1,102 @@
 // The build gate. The first test runs over the real repo data; if it fails,
 // CI fails and nothing deploys. The rest prove the gate catches each way an
-// unverified fact could slip through.
+// unverified or inconsistent fact could slip through.
 
 import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import type { OpenQuestion, VerificationRecord } from '../app/src/data/schema';
+import type { Element, OpenQuestion, VerificationRecord } from '../app/src/data/schema';
 import { checkData, ROOT } from './integrity';
-import { goodOpenQuestion, recordsFor } from './samples';
+import { goodElement, goodOpenQuestion, recordsFor } from './samples';
 
 it('repo data: every fact in data/verified/ is verified', () => {
   const errors = checkData(join(ROOT, 'data', 'verified'), join(ROOT, 'verification', 'records'));
   expect(errors).toEqual([]);
 });
 
+/**
+ * Writes the samples to a temp dir, applies an edit, and runs the gate.
+ * Records are made before the edit, so editing a fact simulates a change
+ * after verification. Pass `rerecord` to regenerate records after the edit,
+ * which simulates a pipeline that recorded the bad value too.
+ */
 function scenario(
-  edit: (q: OpenQuestion, records: VerificationRecord[]) => void = () => {},
+  edit: (q: OpenQuestion, e: Element, records: VerificationRecord[]) => void = () => {},
+  { rerecord = false } = {},
 ): string[] {
   const dir = mkdtempSync(join(tmpdir(), 'atomitron-'));
   const q = structuredClone(goodOpenQuestion);
-  const records = recordsFor(q);
-  edit(q, records);
+  const e = structuredClone(goodElement);
+  let records = [...recordsFor(q), ...recordsFor(e)];
+  edit(q, e, records);
+  if (rerecord) records = [...recordsFor(q), ...recordsFor(e)];
   mkdirSync(join(dir, 'verified'));
   mkdirSync(join(dir, 'records'));
   const write = (p: string, kind: string, items: unknown[]) =>
-    writeFileSync(join(dir, p), JSON.stringify({ schemaVersion: 1, kind, items }));
+    writeFileSync(join(dir, p), JSON.stringify({ schemaVersion: 2, kind, items }));
   write('verified/open-questions.json', 'open-questions', [q]);
+  write('verified/011-Na.json', 'elements', [e]);
   write('records/records.json', 'verification-records', records);
   return checkData(join(dir, 'verified'), join(dir, 'records'));
 }
+
+type Edit = (q: OpenQuestion, e: Element, r: VerificationRecord[]) => void;
 
 describe('gate', () => {
   it('passes fully verified data', () => {
     expect(scenario()).toEqual([]);
   });
 
-  it.each<[string, (q: OpenQuestion, r: VerificationRecord[]) => void, RegExp]>([
+  it.each<[string, Edit, RegExp]>([
     ['fact not passed', (q) => (q.known[0]!.verification.status = 'pending'), /fails isRenderable/],
-    ['record missing', (_, r) => r.splice(0, 1), /no verification record/],
-    ['record failed', (_, r) => (r[0]!.result = 'fail'), /did not pass/],
+    ['record missing', (_q, _e, r) => r.splice(0, 1), /no verification record/],
+    ['record failed', (_q, _e, r) => (r[0]!.result = 'fail'), /did not pass/],
     ['value edited after verification', (q) => (q.known[0]!.value = 999), /value or unit differs/],
     ['unit edited after verification', (q) => (q.known[0]!.unit = 'kJ/mol'), /value or unit differs/],
     ['source swapped after verification', (q) => (q.known[0]!.source.url = 'https://webbook.nist.gov/x'), /source URL differs/],
     ['non-whitelisted source', (q) => (q.known[0]!.source.url = 'https://example.com/'), /must match pattern/],
-    ['duplicate record id', (_, r) => r.push(r[0]!), /duplicate record id/],
+    ['duplicate record id', (_q, _e, r) => r.push(r[0]!), /duplicate record id/],
+    ['record method mislabelled', (_q, _e, r) => (r.find((x) => x.id === 'na-shells')!.method = 'extract'), /method "extract"/],
   ])('fails when %s', (_, edit, expected) => {
-    const errors = scenario(edit);
-    expect(errors.join('\n')).toMatch(expected);
+    expect(scenario(edit).join('\n')).toMatch(expected);
+  });
+});
+
+describe('gate: elements', () => {
+  // These edits are re-recorded, as if the pipeline had verified the bad
+  // value. The gate must still catch them on structure alone.
+  it.each<[string, Edit, RegExp]>([
+    ['neutrons miscounted', (_q, e) => (e.atom.neutrons.value = 13), /neutrons-from-mass-number gives 12, fact says 13/],
+    ['shells miscounted', (_q, e) => (e.atom.shells.value = [2, 8, 2]), /shells-from-configuration gives \[2,8,1\]/],
+    ['configuration does not match atomic number', (_q, e) => (e.electronConfiguration.value = '[Ne] 3s2'), /holds 12 electrons, atomic number is 11/],
+    ['unparseable configuration', (_q, e) => (e.electronConfiguration.value = '[Ne] 3x1'), /doesn't parse/],
+    ['id does not match symbol', (_q, e) => (e.id = 'element:K'), /doesn't match symbol/],
+    ['wrong isotope drawn', (_q, e) => (e.atom.isotope = 24), /atom shows isotope 24, expected 23/],
+    ['derived field without its rule', (_q, e) => delete e.atom.protons.derivation, /must be derived with rule protons-equal-atomic-number/],
+    ['derivation input missing', (_q, e) => (e.atom.neutrons.derivation!.inputs = ['na-iso99', 'na-z']), /inputs not found.*na-iso99/],
+    ['valence for a non-main group', (_q, e) => (e.group!.value = 11), /only derived for main groups/],
+    [
+      'uncertainty not inherited',
+      (_q, e) => {
+        e.electronConfiguration.uncertain = true;
+      },
+      /uncertain exactly when one of its inputs is/,
+    ],
+    ['two facts sharing a record', (_q, e) => (e.name.verification.recordId = 'na-symbol'), /also used by/],
+  ])('fails when %s', (_, edit, expected) => {
+    expect(scenario(edit, { rerecord: true }).join('\n')).toMatch(expected);
+  });
+
+  it('uses the longest-lived mass number when no isotope occurs naturally', () => {
+    const errors = scenario(
+      (_q, e) => {
+        delete e.isotopes[0]!.abundance;
+        e.longestLivedIsotopeMassNumber = { ...structuredClone(e.period), value: 23 };
+        e.longestLivedIsotopeMassNumber.verification.recordId = 'na-longest';
+      },
+      { rerecord: true },
+    );
+    expect(errors).toEqual([]);
   });
 });

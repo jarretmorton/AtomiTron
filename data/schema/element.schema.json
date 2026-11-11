@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:atomitron:schema:element",
+  "title": "Element",
+  "description": "One element's page (spec 3.2). Every displayed value is a Fact. An optional field is omitted when the source gives no value or it couldn't be verified; it is never filled with a guess. See verification/methodology.md for where each field comes from.",
+  "type": "object",
+  "required": ["id", "atomicNumber", "symbol", "name", "period", "electronConfiguration", "isotopes", "atom", "uses"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "description": "element:<symbol>. Must match symbol.value.", "type": "string", "pattern": "^element:[A-Z][a-z]?$" },
+
+    "atomicNumber": { "$ref": "#/$defs/integerFact" },
+    "symbol": { "$ref": "urn:atomitron:schema:fact" },
+    "name": { "$ref": "urn:atomitron:schema:fact" },
+    "period": { "$ref": "#/$defs/integerFact" },
+    "group": {
+      "description": "1 to 18. Omitted for lanthanides and actinides, which PubChem doesn't place in a numbered group.",
+      "$ref": "#/$defs/integerFact"
+    },
+
+    "atomicWeight": {
+      "description": "Standard atomic weight (u). A number, or a range where IUPAC gives an interval because it varies in nature. Omitted for elements with no stable isotopes.",
+      "$ref": "urn:atomitron:schema:fact"
+    },
+    "longestLivedIsotopeMassNumber": {
+      "description": "For elements with no natural isotopes: mass number of the longest-lived ground-state isotope in the AMDC (NUBASE) half-life table on PubChem (methodology section 8). This is a mass number, not an atomic weight, and is shown that way.",
+      "$ref": "#/$defs/integerFact"
+    },
+
+    "electronConfiguration": {
+      "description": "Normalized notation with spaces, e.g. \"[Ar] 3d10 4s1\". Compared with the source by parsed subshell occupancy, not by string. Uncertain when the source marks it predicted.",
+      "$ref": "urn:atomitron:schema:fact"
+    },
+    "electronegativity": { "description": "Pauling scale. Omitted where the source has no value (e.g. most noble gases).", "$ref": "urn:atomitron:schema:fact" },
+    "valenceElectrons": {
+      "description": "Derived (rule valence-main-group). Only for groups 1, 2 and 13 to 18, where the count is well defined. Omitted for transition metals, lanthanides and actinides, and when the configuration is only predicted.",
+      "$ref": "urn:atomitron:schema:fact"
+    },
+
+    "state": { "description": "State at room temperature, as the source words it (e.g. \"Solid\", \"Expected to be a Gas\").", "$ref": "urn:atomitron:schema:fact" },
+    "meltingPoint": { "$ref": "urn:atomitron:schema:fact" },
+    "boilingPoint": { "$ref": "urn:atomitron:schema:fact" },
+    "density": { "$ref": "urn:atomitron:schema:fact" },
+
+    "isotopes": {
+      "description": "Isotopes listed in the source's isotope mass and abundance table.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/isotope" }
+    },
+
+    "atom": {
+      "description": "What the animated atom shows (spec 3.2): one specific isotope of the neutral atom.",
+      "type": "object",
+      "required": ["isotope", "protons", "neutrons", "electrons", "shells"],
+      "additionalProperties": false,
+      "properties": {
+        "isotope": {
+          "description": "Mass number of the isotope drawn: the most abundant natural isotope, or for elements with no natural abundance, longestLivedIsotopeMassNumber. The page names which one it is.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "protons": { "description": "Derived: protons-equal-atomic-number.", "$ref": "urn:atomitron:schema:fact" },
+        "neutrons": { "description": "Derived: neutrons-from-mass-number.", "$ref": "urn:atomitron:schema:fact" },
+        "electrons": { "description": "Derived: electrons-equal-atomic-number (neutral atom).", "$ref": "urn:atomitron:schema:fact" },
+        "shells": { "description": "Derived: shells-from-configuration. Electrons per shell, innermost first.", "$ref": "urn:atomitron:schema:fact" }
+      }
+    },
+
+    "discovery": {
+      "type": "object",
+      "required": ["story"],
+      "additionalProperties": false,
+      "properties": {
+        "year": { "description": "A year (number) or \"Ancient\".", "$ref": "urn:atomitron:schema:fact" },
+        "story": {
+          "description": "Short plain-language statements, each supported by the cited History section.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "urn:atomitron:schema:fact" }
+        }
+      }
+    },
+
+    "uses": {
+      "description": "Short plain-language statements, each supported by the cited Uses section. Textbook level: never quantities or procedures.",
+      "type": "array",
+      "items": { "$ref": "urn:atomitron:schema:fact" }
+    }
+  },
+  "$defs": {
+    "integerFact": {
+      "allOf": [
+        { "$ref": "urn:atomitron:schema:fact" },
+        { "type": "object", "properties": { "value": { "type": "integer", "minimum": 1 }, "unit": { "const": null } } }
+      ]
+    },
+    "isotope": {
+      "type": "object",
+      "required": ["massNumber"],
+      "additionalProperties": false,
+      "properties": {
+        "massNumber": { "$ref": "#/$defs/integerFact" },
+        "atomicMass": { "description": "Isotope mass (u).", "$ref": "urn:atomitron:schema:fact" },
+        "abundance": {
+          "description": "Natural abundance as a fraction (0 to 1), or a range where IUPAC gives an interval. Omitted when the isotope doesn't occur naturally.",
+          "$ref": "urn:atomitron:schema:fact"
+        }
+      }
+    }
+  }
+}

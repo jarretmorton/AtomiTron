@@ -5,11 +5,12 @@ import { describe, expect, it } from 'vitest';
 import { isRenderable, sourceName } from '../app/src/data/facts';
 import type { Fact } from '../app/src/data/schema';
 import { makeAjv } from './integrity';
-import { goodFact, goodOpenQuestion } from './samples';
+import { goodElement, goodFact, goodOpenQuestion } from './samples';
 
 const ajv = makeAjv();
 const factSchema = ajv.getSchema('urn:atomitron:schema:fact')!;
 const oqSchema = ajv.getSchema('urn:atomitron:schema:open-question')!;
+const elementSchema = ajv.getSchema('urn:atomitron:schema:element')!;
 const entityId = (id: string) =>
   ajv.validate({ $ref: 'urn:atomitron:schema:fact#/$defs/entityId' }, id);
 
@@ -23,6 +24,25 @@ describe('fact', () => {
   it('accepts a verified fact, in schema and at render', () => {
     expect(factSchema(goodFact), ajv.errorsText(factSchema.errors)).toBe(true);
     expect(isRenderable(goodFact)).toBe(true);
+  });
+
+  it.each<[string, Fact['value']]>([
+    ['predicted text', 'Expected to be a gas'],
+    ['predicted counts', [2, 8, 18, 32, 32, 18, 8]],
+  ])('accepts an uncertain non-numeric value (%s)', (_, value) => {
+    const f = mutate((f) => {
+      f.value = value;
+      f.unit = null;
+      f.uncertain = true;
+    });
+    expect(factSchema(f), ajv.errorsText(factSchema.errors)).toBe(true);
+    expect(isRenderable(f)).toBe(true);
+  });
+
+  it('accepts a range that is not uncertain (varies in nature)', () => {
+    const f = mutate((f) => (f.value = { min: 1.00784, max: 1.00811 }));
+    expect(factSchema(f)).toBe(true);
+    expect(isRenderable(f)).toBe(true);
   });
 
   it('accepts an uncertain value stored as a range', () => {
@@ -56,6 +76,9 @@ describe('fact', () => {
     ['empty unit string', mutate((f) => (f.unit = ''))],
     ['missing unit key', mutate((f) => delete (f as Partial<Fact>).unit)],
     ['missing verification', mutate((f) => delete (f as Partial<Fact>).verification)],
+    ['empty counts', mutate((f) => (f.value = []))],
+    ['negative count', mutate((f) => (f.value = [2, -1]))],
+    ['fractional count', mutate((f) => (f.value = [2, 1.5]))],
   ];
 
   it.each(rejected)('rejects %s, in schema and at render', (_, f) => {
@@ -70,6 +93,26 @@ describe('fact', () => {
 
   it('rejects unknown properties', () => {
     expect(factSchema({ ...goodFact, note: 'x' })).toBe(false);
+  });
+});
+
+describe('element', () => {
+  it('accepts a complete element', () => {
+    expect(elementSchema(goodElement), ajv.errorsText(elementSchema.errors)).toBe(true);
+  });
+
+  it.each<[string, (e: typeof goodElement) => void]>([
+    ['atomic number with a unit', (e) => (e.atomicNumber.unit = 'u')],
+    ['fractional period', (e) => (e.period.value = 3.5)],
+    ['group zero', (e) => (e.group!.value = 0)],
+    ['bad id', (e) => (e.id = 'element:na' as typeof e.id)],
+    ['missing atom', (e) => delete (e as Partial<typeof e>).atom],
+    ['unknown derivation rule', (e) => ((e.atom.protons.derivation!.rule as string) = 'guess')],
+    ['unknown field', (e) => ((e as unknown as Record<string, unknown>).colour = 'silver')],
+  ])('rejects %s', (_, edit) => {
+    const e = structuredClone(goodElement);
+    edit(e);
+    expect(elementSchema(e)).toBe(false);
   });
 });
 
