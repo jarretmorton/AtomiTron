@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AtomiTron — explore the elements</title>
+<meta name="description" content="Explore the periodic table, combine elements, and check every fact against its source.">
+<meta name="theme-color" content="#14171b">
+<meta name="color-scheme" content="light dark">
+<!--
+  App icon: a Bohr-model carbon atom (2 + 4 electrons in two shells) on the
+  header's own ink tile. icon.svg is the master. favicon-32.png is for browsers
+  that ignore SVG favicons. apple-touch-icon.png is separate because iOS does
+  not use SVG favicons for Add to Home Screen. Both PNGs are rasterised from the
+  same geometry by scripts/make_icons.py, so regenerate them rather than
+  redrawing. Without these links, a github.io page falls back to whatever icon
+  the browser cached for the origin (which is how RockID once showed an
+  unrelated app's icon).
+-->
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>
+  // Apply a saved light/dark choice before first paint, to avoid a flash.
+  try {
+    var t = localStorage.getItem('atomitron.theme');
+    if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+  } catch (e) {}
+</script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <a class="brand" href="#/table" aria-label="AtomiTron home">
+        <img class="logo-mark" src="/icon.svg" width="28" height="28" alt="">
+        <span class="wordmark">AtomiTron</span>
+        <span id="app-version" class="version-tag"></span>
+      </a>
+      <button id="theme-btn" class="icon-btn" type="button" aria-label="Switch to dark mode"></button>
+    </div>
+    <nav class="tabs" aria-label="Sections">
+      <a class="tab" href="#/table" data-route="table">Table</a>
+      <a class="tab" href="#/combine" data-route="combine">Combine</a>
+      <a class="tab" href="#/journal" data-route="journal">Journal</a>
+    </nav>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <footer class="app-footer">
+    <p>
+      Every fact links to its source:
+      <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubChem</a>,
+      <a href="https://webbook.nist.gov/" target="_blank" rel="noopener">NIST Chemistry WebBook</a>, or
+      <a href="https://chem.libretexts.org/" target="_blank" rel="noopener">LibreTexts Chemistry</a>.
+    </p>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
