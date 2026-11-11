@@ -1,0 +1,1019 @@
+{
+  "schemaVersion": 2,
+  "kind": "verification-records",
+  "items": [
+    {
+      "id": "Se.atomicNumber",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/atomicNumber"
+      },
+      "method": "extract",
+      "claimedValue": 34,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34",
+      "upstream": "PubChem",
+      "retrievedValue": 34,
+      "evidence": "RecordNumber 34",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.symbol",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/symbol"
+      },
+      "method": "extract",
+      "claimedValue": "Se",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Element-Symbol",
+      "upstream": "PubChem",
+      "retrievedValue": "Se",
+      "evidence": "Se",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Element-Symbol",
+          "upstream": "IUPAC CIAAW",
+          "value": "Se"
+        }
+      ]
+    },
+    {
+      "id": "Se.name",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/name"
+      },
+      "method": "extract",
+      "claimedValue": "Selenium",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Element-Name",
+      "upstream": "PubChem",
+      "retrievedValue": "Selenium",
+      "evidence": "Selenium",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.period",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/period"
+      },
+      "method": "extract",
+      "claimedValue": 4,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Element-Period-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 4,
+      "evidence": "4",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the period boundaries at Z = 2, 10, 18, 36, 54, 86, 118"
+    },
+    {
+      "id": "Se.group",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/group"
+      },
+      "method": "extract",
+      "claimedValue": 16,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Element-Group-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 16,
+      "evidence": "16 - Chalcogen",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the standard 18-column table position"
+    },
+    {
+      "id": "Se.atomicWeight",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/atomicWeight"
+      },
+      "method": "extract",
+      "claimedValue": 78.971,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Atomic-Weight",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 78.971,
+      "evidence": "78.971(8)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Atomic-Weight",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "78.971(8)"
+        },
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Atomic-Weight",
+          "upstream": "Jefferson Lab",
+          "value": "78.971"
+        },
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Atomic-Weight",
+          "upstream": "Los Alamos National Laboratory",
+          "value": "78.96"
+        }
+      ]
+    },
+    {
+      "id": "Se.electronConfiguration",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/electronConfiguration"
+      },
+      "method": "extract",
+      "claimedValue": "[Ar] 3d10 4s2 4p4",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Electron-Configuration",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "[Ar] 3d10 4s2 4p4",
+      "evidence": "[Ar]4s23d104p4",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Atomic_and_Molecular_Properties/A1%3A_Atomic_Electron_Configurations",
+          "upstream": "LibreTexts Chemistry",
+          "value": "[Ar] 3d10 4s2 4p4"
+        }
+      ],
+      "notes": "electron count equals the atomic number"
+    },
+    {
+      "id": "Se.electronegativity",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/electronegativity"
+      },
+      "method": "extract",
+      "claimedValue": 2.55,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Electronegativity",
+      "upstream": "PubChem",
+      "retrievedValue": 2.55,
+      "evidence": "2.55 (Pauling Scale)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "Pauling scale; single contributor"
+    },
+    {
+      "id": "Se.state",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/state"
+      },
+      "method": "extract",
+      "claimedValue": "Solid",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Physical-Description",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Solid",
+      "evidence": "Solid",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.classification",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/classification"
+      },
+      "method": "extract",
+      "claimedValue": "Non-metal",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Element-Classification",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Non-metal",
+      "evidence": "Non-metal",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "single contributor"
+    },
+    {
+      "id": "Se.meltingPoint",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/meltingPoint"
+      },
+      "method": "extract",
+      "claimedValue": 220.5,
+      "unit": "°C",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Melting-Point",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 220.5,
+      "evidence": "493.65 K (220.5°C or 428.9°F)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "tolerance": {
+        "absolute": 1.0
+      },
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Melting-Point",
+          "upstream": "Los Alamos National Laboratory",
+          "value": "221°C"
+        }
+      ]
+    },
+    {
+      "id": "Se.boilingPoint",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/boilingPoint"
+      },
+      "method": "extract",
+      "claimedValue": 685.0,
+      "unit": "°C",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Boiling-Point",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 685.0,
+      "evidence": "958 K (685°C or 1265°F)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "tolerance": {
+        "absolute": 1.0
+      },
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Boiling-Point",
+          "upstream": "Los Alamos National Laboratory",
+          "value": "685°C"
+        }
+      ]
+    },
+    {
+      "id": "Se.density",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/density"
+      },
+      "method": "extract",
+      "claimedValue": 4.809,
+      "unit": "g/cm³",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Density",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 4.809,
+      "evidence": "4.809 grams per cubic centimeter",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "single contributor"
+    },
+    {
+      "id": "Se.isotopes.0.massNumber",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/0/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 74,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 74,
+      "evidence": "74Se",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.isotopes.0.atomicMass",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/0/atomicMass"
+      },
+      "method": "extract",
+      "claimedValue": 73.9224759,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 73.9224759,
+      "evidence": "73.922 4759(1)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "73.922475934(15)"
+        }
+      ]
+    },
+    {
+      "id": "Se.isotopes.0.abundance",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/0/abundance"
+      },
+      "method": "extract",
+      "claimedValue": 0.0086,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 0.0086,
+      "evidence": "0.0086(3)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "0.0089(4)"
+        }
+      ],
+      "notes": "fraction of atoms in nature"
+    },
+    {
+      "id": "Se.isotopes.1.massNumber",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/1/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 76,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 76,
+      "evidence": "76Se",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.isotopes.1.atomicMass",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/1/atomicMass"
+      },
+      "method": "extract",
+      "claimedValue": 75.9192137,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 75.9192137,
+      "evidence": "75.919 2137(1)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "75.919213704(17)"
+        }
+      ]
+    },
+    {
+      "id": "Se.isotopes.1.abundance",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/1/abundance"
+      },
+      "method": "extract",
+      "claimedValue": 0.0923,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 0.0923,
+      "evidence": "0.0923(7)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "0.0937(29)"
+        }
+      ],
+      "notes": "fraction of atoms in nature"
+    },
+    {
+      "id": "Se.isotopes.1.halfLife",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/1/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": "Stable",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": "Stable",
+      "evidence": "Stable",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.isotopes.2.massNumber",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/2/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 77,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 77,
+      "evidence": "77Se",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.isotopes.2.atomicMass",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/2/atomicMass"
+      },
+      "method": "extract",
+      "claimedValue": 76.9199141,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 76.9199141,
+      "evidence": "76.919 9141(5)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "76.919914154(67)"
+        }
+      ]
+    },
+    {
+      "id": "Se.isotopes.2.abundance",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/2/abundance"
+      },
+      "method": "extract",
+      "claimedValue": 0.076,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 0.076,
+      "evidence": "0.0760(7)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "0.0763(16)"
+        }
+      ],
+      "notes": "fraction of atoms in nature"
+    },
+    {
+      "id": "Se.isotopes.2.halfLife",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/2/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": "Stable",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": "Stable",
+      "evidence": "Stable",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.isotopes.3.massNumber",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/3/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 78,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 78,
+      "evidence": "78Se",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.isotopes.3.atomicMass",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/3/atomicMass"
+      },
+      "method": "extract",
+      "claimedValue": 77.917309,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 77.917309,
+      "evidence": "77.917 309(1)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "77.91730928(20)"
+        }
+      ]
+    },
+    {
+      "id": "Se.isotopes.3.abundance",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/3/abundance"
+      },
+      "method": "extract",
+      "claimedValue": 0.2369,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 0.2369,
+      "evidence": "0.2369(22)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "0.2377(28)"
+        }
+      ],
+      "notes": "fraction of atoms in nature"
+    },
+    {
+      "id": "Se.isotopes.3.halfLife",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/3/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": "Stable",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": "Stable",
+      "evidence": "Stable",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.isotopes.4.massNumber",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/4/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 80,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 80,
+      "evidence": "80Se",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.isotopes.4.atomicMass",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/4/atomicMass"
+      },
+      "method": "extract",
+      "claimedValue": 79.916522,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 79.916522,
+      "evidence": "79.916 522(6)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "79.9165218(13)"
+        }
+      ]
+    },
+    {
+      "id": "Se.isotopes.4.abundance",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/4/abundance"
+      },
+      "method": "extract",
+      "claimedValue": 0.498,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 0.498,
+      "evidence": "0.4980(36)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "0.4961(41)"
+        }
+      ],
+      "notes": "fraction of atoms in nature"
+    },
+    {
+      "id": "Se.isotopes.4.halfLife",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/4/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": "Stable",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": "Stable",
+      "evidence": "Stable",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.isotopes.5.massNumber",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/5/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 82,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 82,
+      "evidence": "82Se",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.isotopes.5.atomicMass",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/5/atomicMass"
+      },
+      "method": "extract",
+      "claimedValue": 81.916699,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 81.916699,
+      "evidence": "81.916 699(3)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "81.9166995(15)"
+        }
+      ]
+    },
+    {
+      "id": "Se.isotopes.5.abundance",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/5/abundance"
+      },
+      "method": "extract",
+      "claimedValue": 0.0882,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 0.0882,
+      "evidence": "0.0882(15)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "0.0873(22)"
+        }
+      ],
+      "notes": "fraction of atoms in nature"
+    },
+    {
+      "id": "Se.isotopes.5.halfLife",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/isotopes/5/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": 87.6,
+      "unit": "Ey",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 87.6,
+      "evidence": "87.6 Ey ± 1.5",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Se.atom.protons",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/atom/protons"
+      },
+      "method": "derive",
+      "claimedValue": 34,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 34,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "protons-equal-atomic-number from Se.atomicNumber"
+    },
+    {
+      "id": "Se.atom.electrons",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/atom/electrons"
+      },
+      "method": "derive",
+      "claimedValue": 34,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 34,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "electrons-equal-atomic-number from Se.atomicNumber"
+    },
+    {
+      "id": "Se.atom.neutrons",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/atom/neutrons"
+      },
+      "method": "derive",
+      "claimedValue": 46,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
+      "retrievedValue": 46,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "neutrons-from-mass-number from Se.isotopes.4.massNumber, Se.atomicNumber"
+    },
+    {
+      "id": "Se.atom.shells",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/atom/shells"
+      },
+      "method": "derive",
+      "claimedValue": [
+        2,
+        8,
+        18,
+        6
+      ],
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations",
+      "retrievedValue": [
+        2,
+        8,
+        18,
+        6
+      ],
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "shells-from-configuration from Se.electronConfiguration"
+    },
+    {
+      "id": "Se.valenceElectrons",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/valenceElectrons"
+      },
+      "method": "derive",
+      "claimedValue": 6,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.07%3A_Electron_Configurations_and_the_Periodic_Table",
+      "retrievedValue": 6,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "valence-main-group from Se.electronConfiguration, Se.group"
+    }
+  ]
+}

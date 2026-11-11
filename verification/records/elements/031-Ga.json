@@ -1,0 +1,613 @@
+{
+  "schemaVersion": 2,
+  "kind": "verification-records",
+  "items": [
+    {
+      "id": "Ga.atomicNumber",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/atomicNumber"
+      },
+      "method": "extract",
+      "claimedValue": 31,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31",
+      "upstream": "PubChem",
+      "retrievedValue": 31,
+      "evidence": "RecordNumber 31",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Ga.symbol",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/symbol"
+      },
+      "method": "extract",
+      "claimedValue": "Ga",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Element-Symbol",
+      "upstream": "PubChem",
+      "retrievedValue": "Ga",
+      "evidence": "Ga",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Element-Symbol",
+          "upstream": "IUPAC CIAAW",
+          "value": "Ga"
+        }
+      ]
+    },
+    {
+      "id": "Ga.name",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/name"
+      },
+      "method": "extract",
+      "claimedValue": "Gallium",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Element-Name",
+      "upstream": "PubChem",
+      "retrievedValue": "Gallium",
+      "evidence": "Gallium",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Ga.period",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/period"
+      },
+      "method": "extract",
+      "claimedValue": 4,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Element-Period-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 4,
+      "evidence": "4",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the period boundaries at Z = 2, 10, 18, 36, 54, 86, 118"
+    },
+    {
+      "id": "Ga.group",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/group"
+      },
+      "method": "extract",
+      "claimedValue": 13,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Element-Group-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 13,
+      "evidence": "13",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the standard 18-column table position"
+    },
+    {
+      "id": "Ga.atomicWeight",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/atomicWeight"
+      },
+      "method": "extract",
+      "claimedValue": 69.723,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Atomic-Weight",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 69.723,
+      "evidence": "69.723(1)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Atomic-Weight",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "69.723(1)"
+        },
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Atomic-Weight",
+          "upstream": "Jefferson Lab",
+          "value": "69.723"
+        },
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Atomic-Weight",
+          "upstream": "Los Alamos National Laboratory",
+          "value": "69.72"
+        }
+      ]
+    },
+    {
+      "id": "Ga.electronConfiguration",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/electronConfiguration"
+      },
+      "method": "extract",
+      "claimedValue": "[Ar] 3d10 4s2 4p1",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Electron-Configuration",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "[Ar] 3d10 4s2 4p1",
+      "evidence": "[Ar]4s23d104p1",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Atomic_and_Molecular_Properties/A1%3A_Atomic_Electron_Configurations",
+          "upstream": "LibreTexts Chemistry",
+          "value": "[Ar] 3d10 4s2 4p1"
+        }
+      ],
+      "notes": "electron count equals the atomic number"
+    },
+    {
+      "id": "Ga.electronegativity",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/electronegativity"
+      },
+      "method": "extract",
+      "claimedValue": 1.81,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Electronegativity",
+      "upstream": "PubChem",
+      "retrievedValue": 1.81,
+      "evidence": "1.81 (Pauling Scale)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "Pauling scale; single contributor"
+    },
+    {
+      "id": "Ga.state",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/state"
+      },
+      "method": "extract",
+      "claimedValue": "Solid",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Physical-Description",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Solid",
+      "evidence": "Solid",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Ga.classification",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/classification"
+      },
+      "method": "extract",
+      "claimedValue": "Metal",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Element-Classification",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Metal",
+      "evidence": "Metal",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "single contributor"
+    },
+    {
+      "id": "Ga.meltingPoint",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/meltingPoint"
+      },
+      "method": "extract",
+      "claimedValue": 29.76,
+      "unit": "°C",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Melting-Point",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 29.76,
+      "evidence": "302.91 K (29.76°C or 85.57°F)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "tolerance": {
+        "absolute": 1.0
+      },
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Melting-Point",
+          "upstream": "Los Alamos National Laboratory",
+          "value": "29.76°C"
+        }
+      ]
+    },
+    {
+      "id": "Ga.density",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/density"
+      },
+      "method": "extract",
+      "claimedValue": 5.91,
+      "unit": "g/cm³",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Density",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 5.91,
+      "evidence": "5.91 grams per cubic centimeter",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "single contributor"
+    },
+    {
+      "id": "Ga.isotopes.0.massNumber",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/isotopes/0/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 69,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 69,
+      "evidence": "69Ga",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Ga.isotopes.0.atomicMass",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/isotopes/0/atomicMass"
+      },
+      "method": "extract",
+      "claimedValue": 68.925573,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 68.925573,
+      "evidence": "68.925 573(8)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "68.9255735(13)"
+        }
+      ]
+    },
+    {
+      "id": "Ga.isotopes.0.abundance",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/isotopes/0/abundance"
+      },
+      "method": "extract",
+      "claimedValue": 0.60108,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 0.60108,
+      "evidence": "0.601 08(50)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "0.60108(9)"
+        }
+      ],
+      "notes": "fraction of atoms in nature"
+    },
+    {
+      "id": "Ga.isotopes.0.halfLife",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/isotopes/0/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": "Stable",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": "Stable",
+      "evidence": "Stable",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Ga.isotopes.1.massNumber",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/isotopes/1/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 71,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 71,
+      "evidence": "71Ga",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Ga.isotopes.1.atomicMass",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/isotopes/1/atomicMass"
+      },
+      "method": "extract",
+      "claimedValue": 70.924702,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 70.924702,
+      "evidence": "70.924 702(6)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "70.92470258(87)"
+        }
+      ]
+    },
+    {
+      "id": "Ga.isotopes.1.abundance",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/isotopes/1/abundance"
+      },
+      "method": "extract",
+      "claimedValue": 0.39892,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 0.39892,
+      "evidence": "0.398 92(50)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "0.39892(9)"
+        }
+      ],
+      "notes": "fraction of atoms in nature"
+    },
+    {
+      "id": "Ga.isotopes.1.halfLife",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/isotopes/1/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": "Stable",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": "Stable",
+      "evidence": "Stable",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Ga.atom.protons",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/atom/protons"
+      },
+      "method": "derive",
+      "claimedValue": 31,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 31,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "protons-equal-atomic-number from Ga.atomicNumber"
+    },
+    {
+      "id": "Ga.atom.electrons",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/atom/electrons"
+      },
+      "method": "derive",
+      "claimedValue": 31,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 31,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "electrons-equal-atomic-number from Ga.atomicNumber"
+    },
+    {
+      "id": "Ga.atom.neutrons",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/atom/neutrons"
+      },
+      "method": "derive",
+      "claimedValue": 38,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
+      "retrievedValue": 38,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "neutrons-from-mass-number from Ga.isotopes.0.massNumber, Ga.atomicNumber"
+    },
+    {
+      "id": "Ga.atom.shells",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/atom/shells"
+      },
+      "method": "derive",
+      "claimedValue": [
+        2,
+        8,
+        18,
+        3
+      ],
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations",
+      "retrievedValue": [
+        2,
+        8,
+        18,
+        3
+      ],
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "shells-from-configuration from Ga.electronConfiguration"
+    },
+    {
+      "id": "Ga.valenceElectrons",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/valenceElectrons"
+      },
+      "method": "derive",
+      "claimedValue": 3,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.07%3A_Electron_Configurations_and_the_Periodic_Table",
+      "retrievedValue": 3,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "valence-main-group from Ga.electronConfiguration, Ga.group"
+    }
+  ]
+}

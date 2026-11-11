@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 2,
+  "kind": "elements",
+  "items": [
+    {
+      "id": "element:La",
+      "atomicNumber": {
+        "value": 57,
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/57",
+          "retrieved": "2026-11-10",
+          "via": "PubChem"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "La.atomicNumber"
+        }
+      },
+      "symbol": {
+        "value": "La",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Element-Symbol",
+          "retrieved": "2026-11-10",
+          "via": "PubChem"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "La.symbol"
+        }
+      },
+      "name": {
+        "value": "Lanthanum",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Element-Name",
+          "retrieved": "2026-11-10",
+          "via": "PubChem"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "La.name"
+        }
+      },
+      "period": {
+        "value": 6,
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Element-Period-Number",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "La.period"
+        }
+      },
+      "atomicWeight": {
+        "value": 138.90547,
+        "unit": "u",
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Atomic-Weight",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "La.atomicWeight"
+        }
+      },
+      "electronConfiguration": {
+        "value": "[Xe] 5d1 6s2",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Electron-Configuration",
+          "retrieved": "2026-11-10",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "La.electronConfiguration"
+        }
+      },
+      "electronegativity": {
+        "value": 1.1,
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Electronegativity",
+          "retrieved": "2026-11-10",
+          "via": "PubChem"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "La.electronegativity"
+        }
+      },
+      "classification": {
+        "value": "Metal",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Element-Classification",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "La.classification"
+        }
+      },
+      "state": {
+        "value": "Solid",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Physical-Description",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "La.state"
+        }
+      },
+      "boilingPoint": {
+        "value": 3464.0,
+        "unit": "°C",
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Boiling-Point",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "La.boilingPoint"
+        }
+      },
+      "density": {
+        "value": 6.15,
+        "unit": "g/cm³",
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Density",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "La.density"
+        }
+      },
+      "isotopes": [
+        {
+          "massNumber": {
+            "value": 138,
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Isotope-Mass-and-Abundance",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "La.isotopes.0.massNumber"
+            }
+          },
+          "atomicMass": {
+            "value": 137.90712,
+            "unit": "u",
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Isotope-Mass-and-Abundance",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "La.isotopes.0.atomicMass"
+            }
+          },
+          "abundance": {
+            "value": 0.0008881,
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Isotope-Mass-and-Abundance",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "La.isotopes.0.abundance"
+            }
+          },
+          "halfLife": {
+            "value": 103.0,
+            "unit": "Gy",
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Atomic-Mass-Half-Life-and-Decay",
+              "retrieved": "2026-11-10",
+              "via": "IAEA Atomic Mass Data Center"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "La.isotopes.0.halfLife"
+            }
+          }
+        },
+        {
+          "massNumber": {
+            "value": 139,
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Isotope-Mass-and-Abundance",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "La.isotopes.1.massNumber"
+            }
+          },
+          "atomicMass": {
+            "value": 138.90636,
+            "unit": "u",
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Isotope-Mass-and-Abundance",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "La.isotopes.1.atomicMass"
+            }
+          },
+          "abundance": {
+            "value": 0.9991119,
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Isotope-Mass-and-Abundance",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "La.isotopes.1.abundance"
+            }
+          },
+          "halfLife": {
+            "value": "Stable",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Atomic-Mass-Half-Life-and-Decay",
+              "retrieved": "2026-11-10",
+              "via": "IAEA Atomic Mass Data Center"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "La.isotopes.1.halfLife"
+            }
+          }
+        }
+      ],
+      "atom": {
+        "isotope": 139,
+        "protons": {
+          "value": 57,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+            "retrieved": "2026-11-10",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "La.atom.protons"
+          },
+          "derivation": {
+            "rule": "protons-equal-atomic-number",
+            "inputs": [
+              "La.atomicNumber"
+            ]
+          }
+        },
+        "neutrons": {
+          "value": 82,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
+            "retrieved": "2026-11-10",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "La.atom.neutrons"
+          },
+          "derivation": {
+            "rule": "neutrons-from-mass-number",
+            "inputs": [
+              "La.isotopes.1.massNumber",
+              "La.atomicNumber"
+            ]
+          }
+        },
+        "electrons": {
+          "value": 57,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+            "retrieved": "2026-11-10",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "La.atom.electrons"
+          },
+          "derivation": {
+            "rule": "electrons-equal-atomic-number",
+            "inputs": [
+              "La.atomicNumber"
+            ]
+          }
+        },
+        "shells": {
+          "value": [
+            2,
+            8,
+            18,
+            18,
+            9,
+            2
+          ],
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations",
+            "retrieved": "2026-11-10",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "La.atom.shells"
+          },
+          "derivation": {
+            "rule": "shells-from-configuration",
+            "inputs": [
+              "La.electronConfiguration"
+            ]
+          }
+        }
+      },
+      "uses": []
+    }
+  ]
+}

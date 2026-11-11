@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 2,
+  "kind": "elements",
+  "items": [
+    {
+      "id": "element:Al",
+      "atomicNumber": {
+        "value": 13,
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13",
+          "retrieved": "2026-11-10",
+          "via": "PubChem"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.atomicNumber"
+        }
+      },
+      "symbol": {
+        "value": "Al",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Element-Symbol",
+          "retrieved": "2026-11-10",
+          "via": "PubChem"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.symbol"
+        }
+      },
+      "name": {
+        "value": "Aluminum",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Element-Name",
+          "retrieved": "2026-11-10",
+          "via": "PubChem"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.name"
+        }
+      },
+      "period": {
+        "value": 3,
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Element-Period-Number",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.period"
+        }
+      },
+      "group": {
+        "value": 13,
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Element-Group-Number",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.group"
+        }
+      },
+      "atomicWeight": {
+        "value": 26.9815384,
+        "unit": "u",
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Atomic-Weight",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.atomicWeight"
+        }
+      },
+      "electronConfiguration": {
+        "value": "[Ne] 3s2 3p1",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Electron-Configuration",
+          "retrieved": "2026-11-10",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.electronConfiguration"
+        }
+      },
+      "electronegativity": {
+        "value": 1.61,
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Electronegativity",
+          "retrieved": "2026-11-10",
+          "via": "PubChem"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.electronegativity"
+        }
+      },
+      "valenceElectrons": {
+        "value": 3,
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.07%3A_Electron_Configurations_and_the_Periodic_Table",
+          "retrieved": "2026-11-10",
+          "via": "LibreTexts Chemistry"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.valenceElectrons"
+        },
+        "derivation": {
+          "rule": "valence-main-group",
+          "inputs": [
+            "Al.electronConfiguration",
+            "Al.group"
+          ]
+        }
+      },
+      "classification": {
+        "value": "Metal",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Element-Classification",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.classification"
+        }
+      },
+      "state": {
+        "value": "Solid",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Physical-Description",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.state"
+        }
+      },
+      "meltingPoint": {
+        "value": 660.32,
+        "unit": "°C",
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Melting-Point",
+          "retrieved": "2026-11-10",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.meltingPoint"
+        }
+      },
+      "density": {
+        "value": 2.7,
+        "unit": "g/cm³",
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Density",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.density"
+        }
+      },
+      "isotopes": [
+        {
+          "massNumber": {
+            "value": 27,
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Isotope-Mass-and-Abundance",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Al.isotopes.0.massNumber"
+            }
+          },
+          "atomicMass": {
+            "value": 26.9815384,
+            "unit": "u",
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Isotope-Mass-and-Abundance",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Al.isotopes.0.atomicMass"
+            }
+          },
+          "abundance": {
+            "value": 1.0,
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Isotope-Mass-and-Abundance",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Al.isotopes.0.abundance"
+            }
+          },
+          "halfLife": {
+            "value": "Stable",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Atomic-Mass-Half-Life-and-Decay",
+              "retrieved": "2026-11-10",
+              "via": "IAEA Atomic Mass Data Center"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Al.isotopes.0.halfLife"
+            }
+          }
+        }
+      ],
+      "atom": {
+        "isotope": 27,
+        "protons": {
+          "value": 13,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+            "retrieved": "2026-11-10",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Al.atom.protons"
+          },
+          "derivation": {
+            "rule": "protons-equal-atomic-number",
+            "inputs": [
+              "Al.atomicNumber"
+            ]
+          }
+        },
+        "neutrons": {
+          "value": 14,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
+            "retrieved": "2026-11-10",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Al.atom.neutrons"
+          },
+          "derivation": {
+            "rule": "neutrons-from-mass-number",
+            "inputs": [
+              "Al.isotopes.0.massNumber",
+              "Al.atomicNumber"
+            ]
+          }
+        },
+        "electrons": {
+          "value": 13,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+            "retrieved": "2026-11-10",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Al.atom.electrons"
+          },
+          "derivation": {
+            "rule": "electrons-equal-atomic-number",
+            "inputs": [
+              "Al.atomicNumber"
+            ]
+          }
+        },
+        "shells": {
+          "value": [
+            2,
+            8,
+            3
+          ],
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations",
+            "retrieved": "2026-11-10",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Al.atom.shells"
+          },
+          "derivation": {
+            "rule": "shells-from-configuration",
+            "inputs": [
+              "Al.electronConfiguration"
+            ]
+          }
+        }
+      },
+      "uses": []
+    }
+  ]
+}

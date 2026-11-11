@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 2,
+  "kind": "verification-records",
+  "items": [
+    {
+      "id": "Hs.atomicNumber",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/atomicNumber"
+      },
+      "method": "extract",
+      "claimedValue": 108,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108",
+      "upstream": "PubChem",
+      "retrievedValue": 108,
+      "evidence": "RecordNumber 108",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Hs.symbol",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/symbol"
+      },
+      "method": "extract",
+      "claimedValue": "Hs",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Element-Symbol",
+      "upstream": "PubChem",
+      "retrievedValue": "Hs",
+      "evidence": "Hs",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Element-Symbol",
+          "upstream": "IUPAC CIAAW",
+          "value": "Hs"
+        }
+      ]
+    },
+    {
+      "id": "Hs.name",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/name"
+      },
+      "method": "extract",
+      "claimedValue": "Hassium",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Element-Name",
+      "upstream": "PubChem",
+      "retrievedValue": "Hassium",
+      "evidence": "Hassium",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Hs.period",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/period"
+      },
+      "method": "extract",
+      "claimedValue": 7,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Element-Period-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 7,
+      "evidence": "7",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the period boundaries at Z = 2, 10, 18, 36, 54, 86, 118"
+    },
+    {
+      "id": "Hs.group",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/group"
+      },
+      "method": "extract",
+      "claimedValue": 8,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Element-Group-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 8,
+      "evidence": "8",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the standard 18-column table position"
+    },
+    {
+      "id": "Hs.electronConfiguration",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/electronConfiguration"
+      },
+      "method": "extract",
+      "claimedValue": "[Rn] 5f14 6d6 7s2",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Electron-Configuration",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "[Rn] 5f14 6d6 7s2",
+      "evidence": "[Rn]7s25f146d6",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "predicted: calculated for Z >= 104"
+    },
+    {
+      "id": "Hs.state",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/state"
+      },
+      "method": "extract",
+      "claimedValue": "Solid",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Physical-Description",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Solid",
+      "evidence": "Solid",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "predicted: never made in visible amounts (Z >= 100)"
+    },
+    {
+      "id": "Hs.classification",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/classification"
+      },
+      "method": "extract",
+      "claimedValue": "Metal",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Element-Classification",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Metal",
+      "evidence": "Metal",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "predicted: never made in visible amounts (Z >= 100)"
+    },
+    {
+      "id": "Hs.longestLivedIsotopeMassNumber",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/longestLivedIsotopeMassNumber"
+      },
+      "method": "extract",
+      "claimedValue": 269,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 269,
+      "evidence": "269Hs",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "longest measured half-life among 11 ground-state isotopes; near tie with Hs-270 (9 s), whose uncertainty overlaps"
+    },
+    {
+      "id": "Hs.isotopes.0.massNumber",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/isotopes/0/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 269,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 269,
+      "evidence": "269Hs",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Hs.isotopes.0.halfLife",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/isotopes/0/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": 15.0,
+      "unit": "s",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 15.0,
+      "evidence": "15 s ± 7",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Hs.atom.protons",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/atom/protons"
+      },
+      "method": "derive",
+      "claimedValue": 108,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 108,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "protons-equal-atomic-number from Hs.atomicNumber"
+    },
+    {
+      "id": "Hs.atom.electrons",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/atom/electrons"
+      },
+      "method": "derive",
+      "claimedValue": 108,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 108,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "electrons-equal-atomic-number from Hs.atomicNumber"
+    },
+    {
+      "id": "Hs.atom.neutrons",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/atom/neutrons"
+      },
+      "method": "derive",
+      "claimedValue": 161,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
+      "retrievedValue": 161,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "neutrons-from-mass-number from Hs.isotopes.0.massNumber, Hs.atomicNumber"
+    },
+    {
+      "id": "Hs.atom.shells",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/atom/shells"
+      },
+      "method": "derive",
+      "claimedValue": [
+        2,
+        8,
+        18,
+        32,
+        32,
+        14,
+        2
+      ],
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations",
+      "retrievedValue": [
+        2,
+        8,
+        18,
+        32,
+        32,
+        14,
+        2
+      ],
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "shells-from-configuration from Hs.electronConfiguration"
+    }
+  ]
+}

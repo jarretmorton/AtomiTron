@@ -1,0 +1,510 @@
+{
+  "schemaVersion": 2,
+  "kind": "verification-records",
+  "items": [
+    {
+      "id": "Be.atomicNumber",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/atomicNumber"
+      },
+      "method": "extract",
+      "claimedValue": 4,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4",
+      "upstream": "PubChem",
+      "retrievedValue": 4,
+      "evidence": "RecordNumber 4",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Be.symbol",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/symbol"
+      },
+      "method": "extract",
+      "claimedValue": "Be",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Element-Symbol",
+      "upstream": "PubChem",
+      "retrievedValue": "Be",
+      "evidence": "Be",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Element-Symbol",
+          "upstream": "IUPAC CIAAW",
+          "value": "Be"
+        }
+      ]
+    },
+    {
+      "id": "Be.name",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/name"
+      },
+      "method": "extract",
+      "claimedValue": "Beryllium",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Element-Name",
+      "upstream": "PubChem",
+      "retrievedValue": "Beryllium",
+      "evidence": "Beryllium",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Be.period",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/period"
+      },
+      "method": "extract",
+      "claimedValue": 2,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Element-Period-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 2,
+      "evidence": "2",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the period boundaries at Z = 2, 10, 18, 36, 54, 86, 118"
+    },
+    {
+      "id": "Be.group",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/group"
+      },
+      "method": "extract",
+      "claimedValue": 2,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Element-Group-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 2,
+      "evidence": "2 - Alkaline Earth Metal",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the standard 18-column table position"
+    },
+    {
+      "id": "Be.atomicWeight",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/atomicWeight"
+      },
+      "method": "extract",
+      "claimedValue": 9.0121831,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Atomic-Weight",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 9.0121831,
+      "evidence": "9.012 1831(5)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Atomic-Weight",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "9.0121831(5)"
+        },
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Atomic-Weight",
+          "upstream": "Jefferson Lab",
+          "value": "9.0121831"
+        },
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Atomic-Weight",
+          "upstream": "Los Alamos National Laboratory",
+          "value": "9.012"
+        }
+      ]
+    },
+    {
+      "id": "Be.electronConfiguration",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/electronConfiguration"
+      },
+      "method": "extract",
+      "claimedValue": "[He] 2s2",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Electron-Configuration",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "[He] 2s2",
+      "evidence": "[He]2s2",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Atomic_and_Molecular_Properties/A1%3A_Atomic_Electron_Configurations",
+          "upstream": "LibreTexts Chemistry",
+          "value": "1s2 2s2"
+        }
+      ],
+      "notes": "electron count equals the atomic number"
+    },
+    {
+      "id": "Be.electronegativity",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/electronegativity"
+      },
+      "method": "extract",
+      "claimedValue": 1.57,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Electronegativity",
+      "upstream": "PubChem",
+      "retrievedValue": 1.57,
+      "evidence": "1.57 (Pauling Scale)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "Pauling scale; single contributor"
+    },
+    {
+      "id": "Be.state",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/state"
+      },
+      "method": "extract",
+      "claimedValue": "Solid",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Physical-Description",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Solid",
+      "evidence": "Solid",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Be.classification",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/classification"
+      },
+      "method": "extract",
+      "claimedValue": "Metal",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Element-Classification",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Metal",
+      "evidence": "Metal",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "single contributor"
+    },
+    {
+      "id": "Be.meltingPoint",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/meltingPoint"
+      },
+      "method": "extract",
+      "claimedValue": 1287.0,
+      "unit": "°C",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Melting-Point",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 1287.0,
+      "evidence": "1560 K (1287°C or 2349°F)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "tolerance": {
+        "absolute": 1.0
+      },
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Melting-Point",
+          "upstream": "Los Alamos National Laboratory",
+          "value": "1287°C"
+        }
+      ]
+    },
+    {
+      "id": "Be.density",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/density"
+      },
+      "method": "extract",
+      "claimedValue": 1.85,
+      "unit": "g/cm³",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Density",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 1.85,
+      "evidence": "1.85 grams per cubic centimeter",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "single contributor"
+    },
+    {
+      "id": "Be.isotopes.0.massNumber",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/isotopes/0/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 9,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 9,
+      "evidence": "9Be",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Be.isotopes.0.atomicMass",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/isotopes/0/atomicMass"
+      },
+      "method": "extract",
+      "claimedValue": 9.0121831,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 9.0121831,
+      "evidence": "9.012 1831(5)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "9.012183065(82)"
+        }
+      ]
+    },
+    {
+      "id": "Be.isotopes.0.abundance",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/isotopes/0/abundance"
+      },
+      "method": "extract",
+      "claimedValue": 1.0,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Isotope-Mass-and-Abundance",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": 1.0,
+      "evidence": "1",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Isotope-Mass-and-Abundance",
+          "upstream": "NIST Physical Measurement Laboratory",
+          "value": "1"
+        }
+      ],
+      "notes": "fraction of atoms in nature"
+    },
+    {
+      "id": "Be.isotopes.0.halfLife",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/isotopes/0/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": "Stable",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": "Stable",
+      "evidence": "Stable",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Be.atom.protons",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/atom/protons"
+      },
+      "method": "derive",
+      "claimedValue": 4,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 4,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "protons-equal-atomic-number from Be.atomicNumber"
+    },
+    {
+      "id": "Be.atom.electrons",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/atom/electrons"
+      },
+      "method": "derive",
+      "claimedValue": 4,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 4,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "electrons-equal-atomic-number from Be.atomicNumber"
+    },
+    {
+      "id": "Be.atom.neutrons",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/atom/neutrons"
+      },
+      "method": "derive",
+      "claimedValue": 5,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
+      "retrievedValue": 5,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "neutrons-from-mass-number from Be.isotopes.0.massNumber, Be.atomicNumber"
+    },
+    {
+      "id": "Be.atom.shells",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/atom/shells"
+      },
+      "method": "derive",
+      "claimedValue": [
+        2,
+        2
+      ],
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations",
+      "retrievedValue": [
+        2,
+        2
+      ],
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "shells-from-configuration from Be.electronConfiguration"
+    },
+    {
+      "id": "Be.valenceElectrons",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/valenceElectrons"
+      },
+      "method": "derive",
+      "claimedValue": 2,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.07%3A_Electron_Configurations_and_the_Periodic_Table",
+      "retrievedValue": 2,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "valence-main-group from Be.electronConfiguration, Be.group"
+    }
+  ]
+}

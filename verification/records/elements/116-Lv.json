@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 2,
+  "kind": "verification-records",
+  "items": [
+    {
+      "id": "Lv.atomicNumber",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/atomicNumber"
+      },
+      "method": "extract",
+      "claimedValue": 116,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116",
+      "upstream": "PubChem",
+      "retrievedValue": 116,
+      "evidence": "RecordNumber 116",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Lv.symbol",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/symbol"
+      },
+      "method": "extract",
+      "claimedValue": "Lv",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Element-Symbol",
+      "upstream": "PubChem",
+      "retrievedValue": "Lv",
+      "evidence": "Lv",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Element-Symbol",
+          "upstream": "IUPAC CIAAW",
+          "value": "Lv"
+        }
+      ]
+    },
+    {
+      "id": "Lv.name",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/name"
+      },
+      "method": "extract",
+      "claimedValue": "Livermorium",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Element-Name",
+      "upstream": "PubChem",
+      "retrievedValue": "Livermorium",
+      "evidence": "Livermorium",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Lv.period",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/period"
+      },
+      "method": "extract",
+      "claimedValue": 7,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Element-Period-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 7,
+      "evidence": "7",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the period boundaries at Z = 2, 10, 18, 36, 54, 86, 118"
+    },
+    {
+      "id": "Lv.group",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/group"
+      },
+      "method": "extract",
+      "claimedValue": 16,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Element-Group-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 16,
+      "evidence": "16 - Chalcogen",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the standard 18-column table position"
+    },
+    {
+      "id": "Lv.electronConfiguration",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/electronConfiguration"
+      },
+      "method": "extract",
+      "claimedValue": "[Rn] 5f14 6d10 7s2 7p4",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Electron-Configuration",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "[Rn] 5f14 6d10 7s2 7p4",
+      "evidence": "[Rn] 7s2 7p4 5f14 6d10(predicted)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "predicted: marked by the source"
+    },
+    {
+      "id": "Lv.state",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/state"
+      },
+      "method": "extract",
+      "claimedValue": "Expected to be a Solid",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Physical-Description",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Expected to be a Solid",
+      "evidence": "Expected to be a Solid",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Lv.classification",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/classification"
+      },
+      "method": "extract",
+      "claimedValue": "Metal",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Element-Classification",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Metal",
+      "evidence": "Metal",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "predicted: never made in visible amounts (Z >= 100)"
+    },
+    {
+      "id": "Lv.meltingPoint",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/meltingPoint"
+      },
+      "method": "extract",
+      "claimedValue": {
+        "min": 364.0,
+        "max": 507.0
+      },
+      "unit": "°C",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Melting-Point",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": {
+        "min": 364.0,
+        "max": 507.0
+      },
+      "evidence": "637–780K(364–507°C,687–944°F)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "predicted or extrapolated; stated as a range by the source"
+    },
+    {
+      "id": "Lv.boilingPoint",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/boilingPoint"
+      },
+      "method": "extract",
+      "claimedValue": {
+        "min": 762.0,
+        "max": 862.0
+      },
+      "unit": "°C",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Boiling-Point",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": {
+        "min": 762.0,
+        "max": 862.0
+      },
+      "evidence": "1035–1135K(762–862°C,1403–1583°F)(extrapolated)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "predicted or extrapolated; stated as a range by the source"
+    },
+    {
+      "id": "Lv.longestLivedIsotopeMassNumber",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/longestLivedIsotopeMassNumber"
+      },
+      "method": "extract",
+      "claimedValue": 293,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 293,
+      "evidence": "293Lv",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "longest measured half-life among 4 ground-state isotopes"
+    },
+    {
+      "id": "Lv.isotopes.0.massNumber",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/isotopes/0/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 293,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 293,
+      "evidence": "293Lv",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Lv.isotopes.0.halfLife",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/isotopes/0/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": 70.0,
+      "unit": "ms",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 70.0,
+      "evidence": "70 ms ± 30",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Lv.atom.protons",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/atom/protons"
+      },
+      "method": "derive",
+      "claimedValue": 116,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 116,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "protons-equal-atomic-number from Lv.atomicNumber"
+    },
+    {
+      "id": "Lv.atom.electrons",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/atom/electrons"
+      },
+      "method": "derive",
+      "claimedValue": 116,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 116,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "electrons-equal-atomic-number from Lv.atomicNumber"
+    },
+    {
+      "id": "Lv.atom.neutrons",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/atom/neutrons"
+      },
+      "method": "derive",
+      "claimedValue": 177,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
+      "retrievedValue": 177,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "neutrons-from-mass-number from Lv.isotopes.0.massNumber, Lv.atomicNumber"
+    },
+    {
+      "id": "Lv.atom.shells",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/atom/shells"
+      },
+      "method": "derive",
+      "claimedValue": [
+        2,
+        8,
+        18,
+        32,
+        32,
+        18,
+        6
+      ],
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations",
+      "retrievedValue": [
+        2,
+        8,
+        18,
+        32,
+        32,
+        18,
+        6
+      ],
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "shells-from-configuration from Lv.electronConfiguration"
+    }
+  ]
+}

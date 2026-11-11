@@ -1,4 +1,7 @@
-// Phase 1 placeholders. Each later phase replaces one of these with the real view.
+// Route table. Combine and Journal are placeholders until phases 3 and 4.
+
+import { elementView } from './views/element';
+import { tableView } from './views/table';
 
 function placeholder(title: string, body: string, phase: number): () => HTMLElement {
   return () => {
@@ -17,21 +20,10 @@ function placeholder(title: string, body: string, phase: number): () => HTMLElem
 }
 
 export const views = {
-  table: placeholder(
-    'Periodic table',
-    'Tap any element to see its atom, what its numbers mean, and where every fact comes from.',
-    2,
-  ),
-  combine: placeholder(
-    'Combine',
-    'Pick two or more elements and find out whether they react, and why.',
-    3,
-  ),
-  journal: placeholder(
-    'Journal',
-    'Every compound you discover and every hypothesis you write is collected here.',
-    4,
-  ),
-} satisfies Record<string, () => HTMLElement>;
+  table: () => tableView(),
+  element: (params: string[]) => elementView(params[0]),
+  combine: placeholder('Combine', 'Pick two or more elements and find out whether they react, and why.', 3),
+  journal: placeholder('Journal', 'Every compound you discover and every hypothesis you write is collected here.', 4),
+} satisfies Record<string, (params: string[]) => HTMLElement>;
 
 export type Route = keyof typeof views;

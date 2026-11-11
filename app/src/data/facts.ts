@@ -2,7 +2,7 @@
 // passes. The data-integrity tests run the same predicate over every file in
 // data/verified/, so the app and the build can't disagree about it.
 
-import type { Fact, FactValue, Range } from './schema';
+import type { Fact, FactValue, Range } from './schema.ts';
 
 /** The only three citation hosts (spec 5.1), with their display names. */
 export const SOURCES = {
@@ -45,6 +45,9 @@ export function isRange(value: unknown): value is Range {
 function isValidValue(value: unknown): value is FactValue {
   if (typeof value === 'number') return Number.isFinite(value);
   if (typeof value === 'string') return value.trim().length > 0;
+  if (Array.isArray(value)) {
+    return value.length > 0 && value.every((n) => Number.isInteger(n) && n >= 0);
+  }
   return (
     isRange(value) &&
     Number.isFinite(value.min) &&
@@ -64,7 +67,8 @@ export function isRenderable(fact: unknown): fact is Fact {
     isValidValue(f.value) &&
     (f.unit === null || (typeof f.unit === 'string' && f.unit.length > 0)) &&
     typeof f.uncertain === 'boolean' &&
-    (!f.uncertain || isRange(f.value)) &&
+    // An uncertain value is never one falsely precise number (spec 3.6).
+    (!f.uncertain || typeof f.value !== 'number') &&
     typeof f.source?.url === 'string' &&
     sourceName(f.source.url) !== null &&
     typeof f.source.retrieved === 'string' &&

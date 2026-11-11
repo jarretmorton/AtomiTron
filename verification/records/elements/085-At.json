@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 2,
+  "kind": "verification-records",
+  "items": [
+    {
+      "id": "At.atomicNumber",
+      "subject": {
+        "entity": "element:At",
+        "field": "/atomicNumber"
+      },
+      "method": "extract",
+      "claimedValue": 85,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85",
+      "upstream": "PubChem",
+      "retrievedValue": 85,
+      "evidence": "RecordNumber 85",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "At.symbol",
+      "subject": {
+        "entity": "element:At",
+        "field": "/symbol"
+      },
+      "method": "extract",
+      "claimedValue": "At",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Element-Symbol",
+      "upstream": "PubChem",
+      "retrievedValue": "At",
+      "evidence": "At",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Element-Symbol",
+          "upstream": "IUPAC CIAAW",
+          "value": "At"
+        }
+      ]
+    },
+    {
+      "id": "At.name",
+      "subject": {
+        "entity": "element:At",
+        "field": "/name"
+      },
+      "method": "extract",
+      "claimedValue": "Astatine",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Element-Name",
+      "upstream": "PubChem",
+      "retrievedValue": "Astatine",
+      "evidence": "Astatine",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "At.period",
+      "subject": {
+        "entity": "element:At",
+        "field": "/period"
+      },
+      "method": "extract",
+      "claimedValue": 6,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Element-Period-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 6,
+      "evidence": "6",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the period boundaries at Z = 2, 10, 18, 36, 54, 86, 118"
+    },
+    {
+      "id": "At.group",
+      "subject": {
+        "entity": "element:At",
+        "field": "/group"
+      },
+      "method": "extract",
+      "claimedValue": 17,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Element-Group-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 17,
+      "evidence": "17 - Halogen",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the standard 18-column table position"
+    },
+    {
+      "id": "At.electronConfiguration",
+      "subject": {
+        "entity": "element:At",
+        "field": "/electronConfiguration"
+      },
+      "method": "extract",
+      "claimedValue": "[Xe] 4f14 5d10 6s2 6p5",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Electron-Configuration",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "[Xe] 4f14 5d10 6s2 6p5",
+      "evidence": "[Xe]6s24f145d106p5",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Atomic_and_Molecular_Properties/A1%3A_Atomic_Electron_Configurations",
+          "upstream": "LibreTexts Chemistry",
+          "value": "[Xe] 4f14 5d10 6s2 6p5"
+        }
+      ],
+      "notes": "electron count equals the atomic number"
+    },
+    {
+      "id": "At.electronegativity",
+      "subject": {
+        "entity": "element:At",
+        "field": "/electronegativity"
+      },
+      "method": "extract",
+      "claimedValue": 2.2,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Electronegativity",
+      "upstream": "PubChem",
+      "retrievedValue": 2.2,
+      "evidence": "2.2 (Pauling Scale)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "Pauling scale; single contributor"
+    },
+    {
+      "id": "At.state",
+      "subject": {
+        "entity": "element:At",
+        "field": "/state"
+      },
+      "method": "extract",
+      "claimedValue": "Solid",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Physical-Description",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Solid",
+      "evidence": "Solid",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "At.classification",
+      "subject": {
+        "entity": "element:At",
+        "field": "/classification"
+      },
+      "method": "extract",
+      "claimedValue": "Semi-metal",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Element-Classification",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Semi-metal",
+      "evidence": "Semi-metal",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "single contributor"
+    },
+    {
+      "id": "At.meltingPoint",
+      "subject": {
+        "entity": "element:At",
+        "field": "/meltingPoint"
+      },
+      "method": "extract",
+      "claimedValue": 302.0,
+      "unit": "°C",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Melting-Point",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 302.0,
+      "evidence": "575 K (302°C or 576°F)",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "tolerance": {
+        "absolute": 1.0
+      },
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Melting-Point",
+          "upstream": "Los Alamos National Laboratory",
+          "value": "302°C"
+        }
+      ]
+    },
+    {
+      "id": "At.boilingPoint",
+      "subject": {
+        "entity": "element:At",
+        "field": "/boilingPoint"
+      },
+      "method": "extract",
+      "claimedValue": 337.0,
+      "unit": "°C",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Boiling-Point",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": 337.0,
+      "evidence": "337°C",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "single contributor; must pass the consistency checks"
+    },
+    {
+      "id": "At.longestLivedIsotopeMassNumber",
+      "subject": {
+        "entity": "element:At",
+        "field": "/longestLivedIsotopeMassNumber"
+      },
+      "method": "extract",
+      "claimedValue": 210,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 210,
+      "evidence": "210At",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "longest measured half-life among 34 ground-state isotopes"
+    },
+    {
+      "id": "At.isotopes.0.massNumber",
+      "subject": {
+        "entity": "element:At",
+        "field": "/isotopes/0/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 210,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 210,
+      "evidence": "210At",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "At.isotopes.0.atomicMass",
+      "subject": {
+        "entity": "element:At",
+        "field": "/isotopes/0/atomicMass"
+      },
+      "method": "extract",
+      "claimedValue": 209.987147423,
+      "unit": "u",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 209.987147423,
+      "evidence": "209.987147423 ± 0.000008261",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "At.isotopes.0.halfLife",
+      "subject": {
+        "entity": "element:At",
+        "field": "/isotopes/0/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": 8.1,
+      "unit": "h",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 8.1,
+      "evidence": "8.1 h ± 0.4",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "At.atom.protons",
+      "subject": {
+        "entity": "element:At",
+        "field": "/atom/protons"
+      },
+      "method": "derive",
+      "claimedValue": 85,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 85,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "protons-equal-atomic-number from At.atomicNumber"
+    },
+    {
+      "id": "At.atom.electrons",
+      "subject": {
+        "entity": "element:At",
+        "field": "/atom/electrons"
+      },
+      "method": "derive",
+      "claimedValue": 85,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 85,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "electrons-equal-atomic-number from At.atomicNumber"
+    },
+    {
+      "id": "At.atom.neutrons",
+      "subject": {
+        "entity": "element:At",
+        "field": "/atom/neutrons"
+      },
+      "method": "derive",
+      "claimedValue": 125,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
+      "retrievedValue": 125,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "neutrons-from-mass-number from At.isotopes.0.massNumber, At.atomicNumber"
+    },
+    {
+      "id": "At.atom.shells",
+      "subject": {
+        "entity": "element:At",
+        "field": "/atom/shells"
+      },
+      "method": "derive",
+      "claimedValue": [
+        2,
+        8,
+        18,
+        32,
+        18,
+        7
+      ],
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations",
+      "retrievedValue": [
+        2,
+        8,
+        18,
+        32,
+        18,
+        7
+      ],
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "shells-from-configuration from At.electronConfiguration"
+    },
+    {
+      "id": "At.valenceElectrons",
+      "subject": {
+        "entity": "element:At",
+        "field": "/valenceElectrons"
+      },
+      "method": "derive",
+      "claimedValue": 7,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.07%3A_Electron_Configurations_and_the_Periodic_Table",
+      "retrievedValue": 7,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "valence-main-group from At.electronConfiguration, At.group"
+    }
+  ]
+}
