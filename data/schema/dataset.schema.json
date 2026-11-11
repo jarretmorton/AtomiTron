@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:atomitron:schema:dataset",
+  "title": "Dataset file",
+  "description": "Envelope for every JSON file in data/verified/ and verification/records/. The kind picks the item schema. Phase 2 adds \"elements\", and phase 3 adds \"compounds\" and \"reactions\".",
+  "type": "object",
+  "required": ["schemaVersion", "kind", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "kind": { "enum": ["open-questions", "verification-records"] },
+    "items": { "type": "array" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "kind": { "const": "open-questions" } } },
+      "then": { "properties": { "items": { "type": "array", "items": { "$ref": "urn:atomitron:schema:open-question" } } } }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "verification-records" } } },
+      "then": { "properties": { "items": { "type": "array", "items": { "$ref": "urn:atomitron:schema:verification-record" } } } }
+    }
+  ]
+}

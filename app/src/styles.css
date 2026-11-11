@@ -1,0 +1,254 @@
+/*
+  AtomiTron: a lab-reference look. Neutral paper and ink, one restrained
+  accent, system type. Accent hues come from the Okabe–Ito color-blind-safe
+  set: blue #0072B2 / sky #56B4E9 for links, orange #E69F00 for the current
+  tab. Color never carries meaning alone (the current tab is also bold and
+  underlined, and it's marked aria-current).
+
+  The header is the same ink band in both modes, like Rock ID and Addonaut,
+  so the icon tile merges into it.
+*/
+
+:root {
+  --header: #14171b;
+  --header-ink: #f2f2ee;
+  --header-muted: #a7adb4;
+  --highlight: #e69f00;
+
+  --bg: #f7f7f4;
+  --surface: #ffffff;
+  --ink: #1a1d21;
+  --muted: #535a62;
+  --rule: #d6d8d3;
+  --link: #0068a3;
+
+  --tap: 44px; /* minimum touch target (spec 10.5) */
+  --radius: 10px;
+  --gutter: max(16px, env(safe-area-inset-left));
+  --gutter-r: max(16px, env(safe-area-inset-right));
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #121519;
+    --surface: #1b1f24;
+    --ink: #e8e9e5;
+    --muted: #a2a8af;
+    --rule: #2e343b;
+    --link: #56b4e9;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #121519;
+  --surface: #1b1f24;
+  --ink: #e8e9e5;
+  --muted: #a2a8af;
+  --rule: #2e343b;
+  --link: #56b4e9;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: var(--link);
+}
+
+button,
+a {
+  touch-action: manipulation; /* no double-tap zoom delay */
+}
+
+/* currentColor, not the orange: orange is only 2.1:1 on the light paper,
+   while every text color here already clears 3:1 against its background. */
+:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* ---- Header -------------------------------------------------------------- */
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--header);
+  color: var(--header-ink);
+  padding-top: env(safe-area-inset-top);
+}
+
+.header-inner,
+.tabs,
+#view,
+.app-footer {
+  width: 100%;
+  max-width: 960px;
+  margin-inline: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter-r);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 56px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--tap);
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo-mark {
+  display: block;
+  border-radius: 6px;
+}
+
+.wordmark {
+  font-size: 1.2rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+.version-tag {
+  font-size: 0.75rem;
+  color: var(--header-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.icon-btn {
+  min-width: var(--tap);
+  min-height: var(--tap);
+  border: 1px solid #3a4148;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--header-ink);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.icon-btn:active {
+  background: #2a3036;
+}
+
+/* ---- Tabs ---------------------------------------------------------------- */
+
+.tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.tab {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--tap);
+  padding: 0 12px;
+  color: var(--header-muted);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+}
+
+.tab[aria-current='page'] {
+  color: var(--header-ink);
+  font-weight: 700;
+  border-bottom-color: var(--highlight);
+}
+
+/* ---- Content ------------------------------------------------------------- */
+
+#view {
+  flex: 1;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+#view:focus {
+  outline: none;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.placeholder {
+  max-width: 40rem;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.placeholder p {
+  margin: 0 0 8px;
+}
+
+.placeholder .coming {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ---- Footer -------------------------------------------------------------- */
+
+.app-footer {
+  padding-top: 16px;
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.app-footer p {
+  margin: 0;
+}
+
+.app-footer a {
+  display: inline-block;
+  padding-block: 11px; /* 11 + 23 line + 11 = 45px tall */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

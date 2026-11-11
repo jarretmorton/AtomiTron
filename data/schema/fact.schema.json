@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:atomitron:schema:fact",
+  "title": "Fact",
+  "description": "One displayed fact (spec 10.3): a value, its unit, the whitelisted source it came from, when it was retrieved, and its verification status. The app refuses to render a fact without a passing verification record.",
+  "type": "object",
+  "required": ["value", "unit", "uncertain", "source", "verification"],
+  "additionalProperties": false,
+  "properties": {
+    "value": { "$ref": "#/$defs/value" },
+    "unit": {
+      "description": "Unit symbol, e.g. \"K\", \"g/mol\", \"kJ/mol\". null when the value has no unit (counts, text, electron configurations).",
+      "type": ["string", "null"],
+      "minLength": 1
+    },
+    "uncertain": {
+      "description": "True for predicted or disputed values (e.g. superheavy elements). An uncertain value must be a range.",
+      "type": "boolean"
+    },
+    "source": { "$ref": "#/$defs/source" },
+    "verification": { "$ref": "#/$defs/verification" }
+  },
+  "if": { "properties": { "uncertain": { "const": true } } },
+  "then": { "properties": { "value": { "$ref": "#/$defs/range" } } },
+  "$defs": {
+    "value": {
+      "oneOf": [
+        { "type": "number" },
+        { "type": "string", "minLength": 1 },
+        { "$ref": "#/$defs/range" }
+      ]
+    },
+    "range": {
+      "description": "Closed interval. min <= max is enforced by the integrity tests, since JSON Schema can't compare fields.",
+      "type": "object",
+      "required": ["min", "max"],
+      "additionalProperties": false,
+      "properties": {
+        "min": { "type": "number" },
+        "max": { "type": "number" }
+      }
+    },
+    "sourceUrl": {
+      "description": "https URL on exactly one of the three whitelisted hosts (spec 5.1). The slash after the host blocks look-alikes such as pubchem.ncbi.nlm.nih.gov.example.com and user@host tricks.",
+      "type": "string",
+      "pattern": "^https://(pubchem\\.ncbi\\.nlm\\.nih\\.gov|webbook\\.nist\\.gov|chem\\.libretexts\\.org)/"
+    },
+    "source": {
+      "type": "object",
+      "required": ["url", "retrieved"],
+      "additionalProperties": false,
+      "properties": {
+        "url": { "$ref": "#/$defs/sourceUrl" },
+        "retrieved": {
+          "description": "Date the value was retrieved from the source (YYYY-MM-DD).",
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": ["status", "recordId"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "description": "Only \"pass\" may appear in data/verified/. The other values exist for pipeline drafts.",
+          "enum": ["pass", "fail", "pending"]
+        },
+        "recordId": {
+          "description": "ID of the per-fact record in verification/records/.",
+          "type": "string",
+          "pattern": "^[A-Za-z0-9._:-]+$"
+        }
+      }
+    },
+    "entityId": {
+      "description": "element:<symbol>, compound:cid-<PubChem CID>, or reaction:<kebab-slug>.",
+      "type": "string",
+      "pattern": "^(element:[A-Z][a-z]?|compound:cid-[1-9][0-9]*|reaction:[a-z0-9]+(-[a-z0-9]+)*)$"
+    }
+  }
+}

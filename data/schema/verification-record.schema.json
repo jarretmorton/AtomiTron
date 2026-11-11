@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:atomitron:schema:verification-record",
+  "title": "VerificationRecord",
+  "description": "Per-fact verification record (spec 6.1, 10.4b), published in verification/records/. A fact in data/verified/ points at one of these by recordId.",
+  "type": "object",
+  "required": ["id", "subject", "claimedValue", "unit", "sourceUrl", "retrievedValue", "result", "checkedAt", "consistency", "verifier"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9._:-]+$" },
+    "subject": {
+      "type": "object",
+      "required": ["entity", "field"],
+      "additionalProperties": false,
+      "properties": {
+        "entity": {
+          "description": "Entity ID, or an open question ID (oq-...).",
+          "anyOf": [
+            { "$ref": "urn:atomitron:schema:fact#/$defs/entityId" },
+            { "type": "string", "pattern": "^oq-[a-z0-9]+(-[a-z0-9]+)*$" }
+          ]
+        },
+        "field": { "description": "JSON Pointer to the fact inside the entity, e.g. \"/meltingPoint\".", "type": "string", "pattern": "^(/[^/]+)+$" }
+      }
+    },
+    "claimedValue": { "$ref": "urn:atomitron:schema:fact#/$defs/value" },
+    "unit": { "type": ["string", "null"], "minLength": 1 },
+    "sourceUrl": { "$ref": "urn:atomitron:schema:fact#/$defs/sourceUrl" },
+    "retrievedValue": {
+      "description": "What the verifier actually found at the source. null if the value could not be found.",
+      "anyOf": [{ "$ref": "urn:atomitron:schema:fact#/$defs/value" }, { "type": "null" }]
+    },
+    "tolerance": {
+      "description": "Numeric match tolerance applied, per the published methodology. Omit for exact or text matches.",
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "absolute": { "type": "number", "minimum": 0 },
+        "relative": { "type": "number", "minimum": 0 }
+      }
+    },
+    "result": { "enum": ["pass", "fail"] },
+    "checkedAt": { "type": "string", "format": "date-time" },
+    "consistency": {
+      "description": "Each check runs several times. Agreement across runs is a confidence signal (spec 10.4b).",
+      "type": "object",
+      "required": ["runs", "agreeing"],
+      "additionalProperties": false,
+      "properties": {
+        "runs": { "type": "integer", "minimum": 1 },
+        "agreeing": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "verifier": { "description": "Agent and model that ran the check.", "type": "string", "minLength": 1 },
+    "notes": { "type": "string" }
+  }
+}

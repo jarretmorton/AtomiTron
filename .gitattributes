@@ -1,0 +1,3 @@
+# LF everywhere, so data files and verification records hash the same on every OS.
+* text=auto eol=lf
+*.png binary

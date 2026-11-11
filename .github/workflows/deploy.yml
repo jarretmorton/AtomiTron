@@ -1,0 +1,57 @@
+# Test, build and publish to GitHub Pages at https://jarretmorton.github.io/AtomiTron/
+#
+# Same host as Rock ID and Addonaut. Those deploy straight from main / root
+# because they have no build step. AtomiTron is built with Vite, so this
+# workflow publishes dist/ instead. One-time setup: repo Settings -> Pages ->
+# Build and deployment -> Source: "GitHub Actions".
+#
+# The tests run before the build, so any unverified fact in data/verified/
+# fails the run and nothing deploys (spec 10.5).
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Tests (schema + verified-data gate)
+        run: npm test
+      - name: Typecheck and build
+        run: npm run build
+      - uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request'
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
