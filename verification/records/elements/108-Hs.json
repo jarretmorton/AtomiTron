@@ -16,7 +16,7 @@
       "retrievedValue": 108,
       "evidence": "RecordNumber 108",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -37,7 +37,7 @@
       "retrievedValue": "Hs",
       "evidence": "Hs",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -65,7 +65,7 @@
       "retrievedValue": "Hassium",
       "evidence": "Hassium",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -86,7 +86,7 @@
       "retrievedValue": 7,
       "evidence": "7",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -108,7 +108,7 @@
       "retrievedValue": 8,
       "evidence": "8",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -130,7 +130,7 @@
       "retrievedValue": "[Rn] 5f14 6d6 7s2",
       "evidence": "[Rn]7s25f146d6",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -152,7 +152,29 @@
       "retrievedValue": "Solid",
       "evidence": "Solid",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "predicted: never made in visible amounts (Z >= 100)"
+    },
+    {
+      "id": "Hs.classification",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/classification"
+      },
+      "method": "extract",
+      "claimedValue": "Metal",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Element-Classification",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Metal",
+      "evidence": "Metal",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -174,7 +196,7 @@
       "retrievedValue": 269,
       "evidence": "269Hs",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -196,7 +218,7 @@
       "retrievedValue": 269,
       "evidence": "269Hs",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -217,7 +239,7 @@
       "retrievedValue": 15.0,
       "evidence": "15 s ± 7",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -236,7 +258,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 108,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -256,7 +278,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 108,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -276,7 +298,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
       "retrievedValue": 161,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -312,7 +334,7 @@
         2
       ],
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1

@@ -16,7 +16,7 @@
       "retrievedValue": 13,
       "evidence": "RecordNumber 13",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -37,7 +37,7 @@
       "retrievedValue": "Al",
       "evidence": "Al",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -65,7 +65,7 @@
       "retrievedValue": "Aluminum",
       "evidence": "Aluminum",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -87,7 +87,7 @@
       "retrievedValue": 3,
       "evidence": "3",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -109,7 +109,7 @@
       "retrievedValue": 13,
       "evidence": "13",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -131,7 +131,7 @@
       "retrievedValue": 26.9815384,
       "evidence": "26.981 5384(3)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -169,7 +169,7 @@
       "retrievedValue": "[Ne] 3s2 3p1",
       "evidence": "[Ne]3s23p1",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -198,7 +198,7 @@
       "retrievedValue": 1.61,
       "evidence": "1.61 (Pauling Scale)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -220,12 +220,34 @@
       "retrievedValue": "Solid",
       "evidence": "Solid",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
       },
       "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Al.classification",
+      "subject": {
+        "entity": "element:Al",
+        "field": "/classification"
+      },
+      "method": "extract",
+      "claimedValue": "Metal",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Element-Classification",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Metal",
+      "evidence": "Metal",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "single contributor"
     },
     {
       "id": "Al.meltingPoint",
@@ -241,7 +263,7 @@
       "retrievedValue": 660.32,
       "evidence": "660.32°C",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -263,7 +285,7 @@
       "retrievedValue": 2.7,
       "evidence": "2.70 grams per cubic centimeter",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -285,7 +307,7 @@
       "retrievedValue": 27,
       "evidence": "27Al",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -306,7 +328,7 @@
       "retrievedValue": 26.9815384,
       "evidence": "26.981 5384(3)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -334,7 +356,7 @@
       "retrievedValue": 1.0,
       "evidence": "1",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -363,7 +385,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -382,7 +404,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 13,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -402,7 +424,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 13,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -422,7 +444,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
       "retrievedValue": 14,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -450,7 +472,7 @@
         3
       ],
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -470,7 +492,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.07%3A_Electron_Configurations_and_the_Periodic_Table",
       "retrievedValue": 3,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1

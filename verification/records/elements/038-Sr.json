@@ -16,7 +16,7 @@
       "retrievedValue": 38,
       "evidence": "RecordNumber 38",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -37,7 +37,7 @@
       "retrievedValue": "Sr",
       "evidence": "Sr",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -65,7 +65,7 @@
       "retrievedValue": "Strontium",
       "evidence": "Strontium",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -86,7 +86,7 @@
       "retrievedValue": 5,
       "evidence": "5",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -108,7 +108,7 @@
       "retrievedValue": 2,
       "evidence": "2 - Alkaline Earth Metal",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -130,7 +130,7 @@
       "retrievedValue": 87.62,
       "evidence": "87.62(1)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -168,7 +168,7 @@
       "retrievedValue": "[Kr] 5s2",
       "evidence": "[Kr]5s2",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -197,7 +197,7 @@
       "retrievedValue": 0.95,
       "evidence": "0.95 (Pauling Scale)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -219,12 +219,34 @@
       "retrievedValue": "Solid",
       "evidence": "Solid",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
       },
       "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Sr.classification",
+      "subject": {
+        "entity": "element:Sr",
+        "field": "/classification"
+      },
+      "method": "extract",
+      "claimedValue": "Metal",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/38#section=Element-Classification",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Metal",
+      "evidence": "Metal",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "single contributor"
     },
     {
       "id": "Sr.meltingPoint",
@@ -240,7 +262,7 @@
       "retrievedValue": 777.0,
       "evidence": "1050 K (777°C or 1431°F)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -271,7 +293,7 @@
       "retrievedValue": 2.64,
       "evidence": "2.64 grams per cubic centimeter",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -293,7 +315,7 @@
       "retrievedValue": 84,
       "evidence": "84Sr",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -314,7 +336,7 @@
       "retrievedValue": 83.913419,
       "evidence": "83.913 419(8)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -342,7 +364,7 @@
       "retrievedValue": 0.0056,
       "evidence": "0.0056(2)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -371,7 +393,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -392,7 +414,7 @@
       "retrievedValue": 86,
       "evidence": "86Sr",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -413,7 +435,7 @@
       "retrievedValue": 85.90926073,
       "evidence": "85.909 260 73(4)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -441,7 +463,7 @@
       "retrievedValue": 0.0986,
       "evidence": "0.0986(20)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -470,7 +492,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -491,7 +513,7 @@
       "retrievedValue": 87,
       "evidence": "87Sr",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -512,7 +534,7 @@
       "retrievedValue": 86.9088775,
       "evidence": "86.908 877 50(3)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -540,7 +562,7 @@
       "retrievedValue": 0.07,
       "evidence": "0.0700(20)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -569,7 +591,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -590,7 +612,7 @@
       "retrievedValue": 88,
       "evidence": "88Sr",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -611,7 +633,7 @@
       "retrievedValue": 87.90561226,
       "evidence": "87.905 612 26(4)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -639,7 +661,7 @@
       "retrievedValue": 0.8258,
       "evidence": "0.8258(35)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -668,7 +690,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -687,7 +709,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 38,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -707,7 +729,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 38,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -727,7 +749,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
       "retrievedValue": 50,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -759,7 +781,7 @@
         2
       ],
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -779,7 +801,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.07%3A_Electron_Configurations_and_the_Periodic_Table",
       "retrievedValue": 2,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1

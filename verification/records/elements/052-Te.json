@@ -16,7 +16,7 @@
       "retrievedValue": 52,
       "evidence": "RecordNumber 52",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -37,7 +37,7 @@
       "retrievedValue": "Te",
       "evidence": "Te",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -65,7 +65,7 @@
       "retrievedValue": "Tellurium",
       "evidence": "Tellurium",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -86,7 +86,7 @@
       "retrievedValue": 5,
       "evidence": "5",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -108,7 +108,7 @@
       "retrievedValue": 16,
       "evidence": "16 - Chalcogen",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -130,7 +130,7 @@
       "retrievedValue": 127.6,
       "evidence": "127.60(3)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -168,7 +168,7 @@
       "retrievedValue": "[Kr] 4d10 5s2 5p4",
       "evidence": "[Kr]5s24d105p4",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -197,7 +197,7 @@
       "retrievedValue": 2.1,
       "evidence": "2.1 (Pauling Scale)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -219,12 +219,34 @@
       "retrievedValue": "Solid",
       "evidence": "Solid",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
       },
       "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Te.classification",
+      "subject": {
+        "entity": "element:Te",
+        "field": "/classification"
+      },
+      "method": "extract",
+      "claimedValue": "Semi-metal",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=Element-Classification",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Semi-metal",
+      "evidence": "Semi-metal",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:11:15Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "single contributor"
     },
     {
       "id": "Te.meltingPoint",
@@ -240,7 +262,7 @@
       "retrievedValue": 449.51,
       "evidence": "722.66 K (449.51°C or 841.12°F)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -271,7 +293,7 @@
       "retrievedValue": 988.0,
       "evidence": "1261 K (988°C or 1810°F)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -302,7 +324,7 @@
       "retrievedValue": 6.232,
       "evidence": "6.232 grams per cubic centimeter",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -324,7 +346,7 @@
       "retrievedValue": 120,
       "evidence": "120Te",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -345,7 +367,7 @@
       "retrievedValue": 119.90406,
       "evidence": "119.904 06(2)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -373,7 +395,7 @@
       "retrievedValue": 0.0009,
       "evidence": "0.0009(1)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -402,7 +424,7 @@
       "retrievedValue": 122,
       "evidence": "122Te",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -423,7 +445,7 @@
       "retrievedValue": 121.90304,
       "evidence": "121.903 04(1)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -451,7 +473,7 @@
       "retrievedValue": 0.0255,
       "evidence": "0.0255(12)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -480,7 +502,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -501,7 +523,7 @@
       "retrievedValue": 123,
       "evidence": "123Te",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -522,7 +544,7 @@
       "retrievedValue": 122.90427,
       "evidence": "122.904 27(1)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -550,7 +572,7 @@
       "retrievedValue": 0.0089,
       "evidence": "0.0089(3)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -579,7 +601,7 @@
       "retrievedValue": 124,
       "evidence": "124Te",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -600,7 +622,7 @@
       "retrievedValue": 123.90282,
       "evidence": "123.902 82(1)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -628,7 +650,7 @@
       "retrievedValue": 0.0474,
       "evidence": "0.0474(14)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -657,7 +679,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -678,7 +700,7 @@
       "retrievedValue": 125,
       "evidence": "125Te",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -699,7 +721,7 @@
       "retrievedValue": 124.90443,
       "evidence": "124.904 43(1)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -727,7 +749,7 @@
       "retrievedValue": 0.0707,
       "evidence": "0.0707(15)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -756,7 +778,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -777,7 +799,7 @@
       "retrievedValue": 126,
       "evidence": "126Te",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -798,7 +820,7 @@
       "retrievedValue": 125.90331,
       "evidence": "125.903 31(1)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -826,7 +848,7 @@
       "retrievedValue": 0.1884,
       "evidence": "0.1884(25)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -855,7 +877,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -876,7 +898,7 @@
       "retrievedValue": 128,
       "evidence": "128Te",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -897,7 +919,7 @@
       "retrievedValue": 127.904461,
       "evidence": "127.904 461(6)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -925,7 +947,7 @@
       "retrievedValue": 0.3174,
       "evidence": "0.3174(8)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -954,7 +976,7 @@
       "retrievedValue": 2.25,
       "evidence": "2.25 Yy ± 0.09",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -975,7 +997,7 @@
       "retrievedValue": 130,
       "evidence": "130Te",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -996,7 +1018,7 @@
       "retrievedValue": 129.90622275,
       "evidence": "129.906 222 75(8)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -1024,7 +1046,7 @@
       "retrievedValue": 0.3408,
       "evidence": "0.3408(62)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -1053,7 +1075,7 @@
       "retrievedValue": 791.0,
       "evidence": "791 Ey ± 21",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -1072,7 +1094,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 52,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -1092,7 +1114,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 52,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -1112,7 +1134,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
       "retrievedValue": 78,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -1144,7 +1166,7 @@
         6
       ],
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -1164,7 +1186,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.07%3A_Electron_Configurations_and_the_Periodic_Table",
       "retrievedValue": 6,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:05:10Z",
+      "checkedAt": "2026-11-11T04:11:15Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1

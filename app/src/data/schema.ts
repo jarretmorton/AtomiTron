@@ -74,6 +74,8 @@ export interface Element {
   electronConfiguration?: Fact<string>;
   electronegativity?: Fact<number>;
   valenceElectrons?: Fact<number>;
+  /** "Metal", "Non-metal" or "Semi-metal". */
+  classification?: Fact<string>;
   state?: Fact<string>;
   meltingPoint?: Fact;
   boilingPoint?: Fact;

@@ -478,6 +478,18 @@ class ElementBuilder:
             reason = "no NIST WebBook data" if not nist_c else f"NIST WebBook ({', '.join(f'{c:.2f}' for c in nist_c)} °C) doesn't settle it"
             self.drops.append((pointer, f"contributors disagree ({both}); {reason}"))
 
+    def classification(self) -> None:
+        """Metal, Non-metal or Semi-metal: colors the periodic table."""
+        raw = self.first("Element Classification", "Jefferson Lab")
+        if not raw:
+            return
+        if raw not in ("Metal", "Non-metal", "Semi-metal"):
+            self.drops.append(("/classification", f"unrecognized: {raw!r}"))
+            return
+        predicted = self.z >= NO_BULK_SAMPLE_Z
+        self.add("/classification", raw, None, "Element Classification", "Jefferson Lab", raw, uncertain=predicted,
+                 notes=f"predicted: never made in visible amounts (Z >= {NO_BULK_SAMPLE_Z})" if predicted else "single contributor")
+
     def density(self) -> None:
         raw = self.first("Density", "Jefferson Lab")
         if not raw:
@@ -675,6 +687,7 @@ class ElementBuilder:
         has_config = self.configuration()
         self.electronegativity()
         self.state()
+        self.classification()
         self.temperature("/meltingPoint", "Melting Point")
         self.temperature("/boilingPoint", "Boiling Point")
         self.density()
@@ -706,7 +719,7 @@ class ElementBuilder:
         f = self.facts
         el: dict[str, Any] = {"id": f"element:{self.symbol}"}
         for key in ("atomicNumber", "symbol", "name", "period", "group", "atomicWeight", "longestLivedIsotopeMassNumber",
-                    "electronConfiguration", "electronegativity", "valenceElectrons", "state", "meltingPoint", "boilingPoint", "density"):
+                    "electronConfiguration", "electronegativity", "valenceElectrons", "classification", "state", "meltingPoint", "boilingPoint", "density"):
             if f"/{key}" in f:
                 el[key] = f[f"/{key}"]
         isotopes = []
@@ -778,7 +791,7 @@ def main(argv: list[str] | None = None) -> None:
     print(f"{shipped} of {len(results)} elements shipped; {sum(len(b.records) for *_, b in results)} facts; report: {report.relative_to(ROOT)}")
 
 
-FIELDS = ["atomicWeight", "electronConfiguration", "electronegativity", "valenceElectrons", "state", "meltingPoint", "boilingPoint", "density"]
+FIELDS = ["atomicWeight", "electronConfiguration", "electronegativity", "valenceElectrons", "classification", "state", "meltingPoint", "boilingPoint", "density"]
 
 
 def write_report(results: list[tuple[int, str, Built]], checked_at: str) -> Path:

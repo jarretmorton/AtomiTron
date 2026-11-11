@@ -102,6 +102,20 @@
           "recordId": "Fl.electronConfiguration"
         }
       },
+      "classification": {
+        "value": "Metal",
+        "unit": null,
+        "uncertain": true,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/114#section=Element-Classification",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Fl.classification"
+        }
+      },
       "state": {
         "value": "Expected to be a Solid",
         "unit": null,

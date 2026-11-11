@@ -1,4 +1,5 @@
 import './styles.css';
+import './components.css';
 import { startRouter } from './router';
 import { initTheme } from './theme';
 

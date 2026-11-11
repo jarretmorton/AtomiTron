@@ -72,6 +72,7 @@ where the page gives 294. It also has no units.
 | Electron configuration | Electron Configuration | Los Alamos, cross-checked with LibreTexts A1 | extract |
 | Electronegativity | Electronegativity | PubChem Elements (Pauling) | extract |
 | State at room temperature | Physical Description | Jefferson Lab | extract |
+| Metal, non-metal or semi-metal | Element Classification | Jefferson Lab | extract (predicted for Z >= 100, section 9) |
 | Melting point, boiling point | Melting Point, Boiling Point | Jefferson Lab | extract, cross-checked (section 5) |
 | Density | Density | Jefferson Lab | extract |
 | Isotopes: mass number, mass, abundance | Isotope Mass and Abundance | IUPAC CIAAW, NIST | extract |

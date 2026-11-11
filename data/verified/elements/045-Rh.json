@@ -116,6 +116,20 @@
           "recordId": "Rh.electronegativity"
         }
       },
+      "classification": {
+        "value": "Metal",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/45#section=Element-Classification",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Rh.classification"
+        }
+      },
       "state": {
         "value": "Solid",
         "unit": null,

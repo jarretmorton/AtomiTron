@@ -57,6 +57,10 @@
       "description": "Derived (rule valence-main-group). Only for groups 1, 2 and 13 to 18, where the count is well defined. Omitted for transition metals, lanthanides and actinides, and when the configuration is only predicted.",
       "$ref": "urn:atomitron:schema:fact"
     },
+    "classification": {
+      "description": "\"Metal\", \"Non-metal\" or \"Semi-metal\", as the source words it. Colors the periodic table.",
+      "$ref": "urn:atomitron:schema:fact"
+    },
     "state": {
       "description": "State at room temperature, as the source words it (e.g. \"Solid\", \"Expected to be a Gas\").",
       "$ref": "urn:atomitron:schema:fact"

@@ -1,0 +1,413 @@
+/*
+  Periodic table, element pages and the atom. Color tokens live in
+  styles.css, defined for light and dark mode.
+*/
+
+/* ---- Shared ---------------------------------------------------------------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.lede {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.loading,
+.error,
+.coming {
+  color: var(--muted);
+}
+
+.metal { --c-bg: var(--metal-bg); --c-edge: var(--metal-edge); }
+.semimetal { --c-bg: var(--semi-bg); --c-edge: var(--semi-edge); }
+.nonmetal { --c-bg: var(--non-bg); --c-edge: var(--non-edge); }
+.unclassified { --c-bg: var(--unc-bg); --c-edge: var(--unc-edge); }
+
+/* ---- Periodic table -------------------------------------------------------- */
+
+/* Scrolls sideways inside its own frame when the screen is too narrow for
+   eighteen 44 px columns (iPad mini portrait); the page itself never does. */
+.table-frame {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  margin-inline: calc(-1 * var(--gutter)) calc(-1 * var(--gutter-r));
+  padding: 4px var(--gutter-r) 12px var(--gutter);
+}
+
+.ptable {
+  display: grid;
+  grid-template-columns: repeat(18, minmax(var(--tap), 1fr));
+  grid-template-rows: repeat(7, auto) 14px repeat(2, auto);
+  gap: 3px;
+  min-width: calc(18 * var(--tap) + 17 * 3px);
+}
+
+.tile {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  min-height: var(--tap);
+  border: 1.5px solid var(--c-edge);
+  border-radius: 6px;
+  background: var(--c-bg);
+  color: var(--ink);
+  text-decoration: none;
+  container-type: inline-size;
+}
+
+.tile.predicted,
+.big-tile.predicted {
+  border-style: dashed;
+}
+
+.tile:active {
+  filter: brightness(0.92);
+}
+
+.tile-z {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.tile-shape {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  font-size: 9px;
+  line-height: 1;
+  color: var(--c-edge);
+}
+
+.tile-symbol {
+  font-weight: 700;
+  font-size: clamp(15px, 36cqi, 26px);
+  line-height: 1;
+}
+
+.tile-name {
+  display: none;
+}
+
+@container (min-width: 64px) {
+  .tile-name {
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    inset-inline: 2px;
+    overflow: hidden;
+    font-size: 9px;
+    line-height: 1.1;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.swipe-hint {
+  display: none;
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Only when the 18 columns can't fit (44 px each plus gaps and gutters). */
+@media (max-width: 880px) {
+  .swipe-hint {
+    display: block;
+  }
+}
+
+.table-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 4px 0 8px;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-swatch {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--c-edge, var(--muted));
+  border-radius: 4px;
+  background: var(--c-bg, transparent);
+  color: var(--c-edge);
+  font-size: 11px;
+}
+
+.legend-swatch.dashed {
+  border-style: dashed;
+}
+
+.table-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ---- Element page ---------------------------------------------------------- */
+
+.element-view {
+  max-width: 44rem;
+}
+
+.element-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.nav-spacer {
+  flex: 1;
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0 14px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.element-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.big-tile {
+  position: relative;
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 88px;
+  height: 88px;
+  border: 2px solid var(--c-edge);
+  border-radius: 10px;
+  background: var(--c-bg);
+}
+
+.big-tile .tile-z {
+  top: 6px;
+  left: 8px;
+  font-size: 13px;
+}
+
+.big-tile .tile-symbol {
+  font-size: 40px;
+}
+
+.element-titles h1 {
+  margin: 0;
+}
+
+.element-class {
+  margin: 4px 0 0;
+}
+
+.card {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+.fact {
+  padding: 10px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.fact-label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.fact-value {
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.fact-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.cite {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  margin-top: 2px;
+  padding: 0 12px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--link);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.cite::after {
+  content: "\00a0\2197";
+}
+
+.concept {
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+}
+
+.concept .cite {
+  margin-left: 4px;
+}
+
+.badge-predicted {
+  display: inline-block;
+  padding: 1px 8px;
+  border: 1.5px dashed currentColor;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.unit-picker {
+  display: inline-flex;
+  margin-bottom: 4px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.unit-btn {
+  min-width: var(--tap);
+  min-height: var(--tap);
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.unit-btn[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--surface);
+}
+
+/* ---- The atom -------------------------------------------------------------- */
+
+.atom-figure {
+  margin: 0 0 8px;
+}
+
+.atom {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.proton { fill: var(--proton); }
+.neutron { fill: var(--surface); stroke: var(--neutron); }
+.electron { fill: var(--electron); }
+
+.shell {
+  fill: none;
+  stroke: var(--shell);
+  stroke-width: 1.5;
+}
+
+.shell.predicted {
+  stroke-dasharray: 6 5;
+}
+
+.electrons {
+  transform-box: view-box;
+  transform-origin: 50% 50%;
+  animation: orbit linear infinite;
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.atom-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 18px;
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.atom-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.atom-caption {
+  margin: 0 0 8px;
+  color: var(--muted);
+}
+
+/* ---- Isotopes -------------------------------------------------------------- */
+
+.isotopes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.isotope {
+  padding: 4px 12px 8px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+}
+
+.isotope h3 {
+  margin: 8px 0 0;
+  font-size: 1rem;
+}

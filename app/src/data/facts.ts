@@ -2,7 +2,7 @@
 // passes. The data-integrity tests run the same predicate over every file in
 // data/verified/, so the app and the build can't disagree about it.
 
-import type { Fact, FactValue, Range } from './schema';
+import type { Fact, FactValue, Range } from './schema.ts';
 
 /** The only three citation hosts (spec 5.1), with their display names. */
 export const SOURCES = {

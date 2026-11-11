@@ -88,6 +88,20 @@
           "recordId": "Yb.electronConfiguration"
         }
       },
+      "classification": {
+        "value": "Metal",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=Element-Classification",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Yb.classification"
+        }
+      },
       "state": {
         "value": "Solid",
         "unit": null,
