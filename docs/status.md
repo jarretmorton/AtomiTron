@@ -96,8 +96,8 @@ density.
 as approximate. It passes the current checks. But arsenic doesn't melt at
 normal pressure: it turns straight to gas at about 614 °C, and 817 °C is its
 melting point under high pressure. The value is real but missing its
-qualifier. Fixing it belongs with the deferred qualified-values rule, unless
-we decide to drop it now.
+qualifier. Decided 2026-11-11: leave it as is, and handle it with #5 when
+the qualified-values rule is revisited.
 
 **Lawrencium** ships with everything except its disputed configuration: the
 atom shows the nucleus and the electron count but no shells.
