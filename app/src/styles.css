@@ -33,10 +33,12 @@
   --unc-bg: #e9e9e6;
   --unc-edge: #646a71;
 
-  /* The atom: protons solid, neutrons hollow rings, electrons solid. */
-  --proton: #c45200;
-  --neutron: #646a71;
-  --electron: #0072b2;
+  /* The atom: protons solid red, neutrons hollow blue rings, electrons solid
+     yellow. Yellow is faint on paper, so electrons get a darker edge. */
+  --proton: #cc1f1f;
+  --neutron: #1f5fd0;
+  --electron: #f2c200;
+  --electron-edge: #806600;
   --shell: #b9bdb6;
 
   --tap: 44px; /* minimum touch target (spec 10.5) */
@@ -63,9 +65,10 @@
     --non-edge: #f0b23a;
     --unc-bg: #262b31;
     --unc-edge: #9aa1a8;
-    --proton: #f08a4b;
-    --neutron: #a2a8af;
-    --electron: #56b4e9;
+    --proton: #ff5a52;
+    --neutron: #5aa2ff;
+    --electron: #ffd633;
+    --electron-edge: #1b1f24;
     --shell: #46505a;
     color-scheme: dark;
   }
@@ -86,9 +89,10 @@
   --non-edge: #f0b23a;
   --unc-bg: #262b31;
   --unc-edge: #9aa1a8;
-  --proton: #f08a4b;
-  --neutron: #a2a8af;
-  --electron: #56b4e9;
+  --proton: #ff5a52;
+  --neutron: #5aa2ff;
+  --electron: #ffd633;
+  --electron-edge: #1b1f24;
   --shell: #46505a;
   color-scheme: dark;
 }

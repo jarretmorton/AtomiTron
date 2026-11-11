@@ -44,7 +44,13 @@ the same shell model: [app/src/ui/atom3d.ts](../app/src/ui/atom3d.ts).
   Each shell's electrons are spread over up to three tilted rings (vanadium:
   2 / 4+4 / 4+4+3 / 2). A test checks the rings always add up to the shell.
 - Canvas 2D with its own projection: no library, no network. Drag (or arrow
-  keys) to turn it. With reduced motion on, it only moves when dragged.
+  keys) to turn it, flick to spin it (the spin eases back to a slow turn),
+  and pinch, wheel or the − / + buttons to zoom. With reduced motion on, it
+  only moves when dragged.
+- Particle colors, flat and 3D: protons red, neutrons blue, electrons yellow
+  (asked for 2026-11-11). Protons stay solid and neutrons stay rings, and
+  electrons have a darker edge in light mode because yellow is faint on
+  paper. Pinch zoom couldn't be exercised headlessly; check it on the iPad.
 - Checked in headless Chromium at iPad mini size, both orientations, light
   and dark. **Not yet seen on the real iPad.**
 - To extend it, add symbols to `TRIAL_3D` in
