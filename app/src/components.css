@@ -346,8 +346,8 @@
 }
 
 .proton { fill: var(--proton); }
-.neutron { fill: var(--surface); stroke: var(--neutron); }
-.electron { fill: var(--electron); }
+.neutron { fill: var(--neutron); }
+.electron { fill: var(--electron); stroke: var(--electron-edge); stroke-width: 1px; }
 
 .shell {
   fill: none;
@@ -427,11 +427,14 @@
 }
 
 .atom3d-bar h2 {
+  flex: 1;
   margin: 0;
   font-size: 1.15rem;
 }
 
 .atom3d-bar .nav-btn {
+  min-width: var(--tap);
+  justify-content: center;
   cursor: pointer;
   font: inherit;
   font-weight: 600;

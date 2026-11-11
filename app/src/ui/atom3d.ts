@@ -3,9 +3,9 @@
 // neutrons in the nucleus, electrons in their shells. Nothing new is claimed.
 //
 // Drawn on a 2D canvas with a hand-rolled perspective projection, so there is
-// no library and no network request. Protons stay solid and neutrons stay
-// hollow rings, so they read apart without color. Drag to turn the atom. With
-// reduced motion on, nothing moves until the reader drags it.
+// no library and no network request. Drag to turn the atom, flick
+// to spin it, pinch (or wheel, or the buttons) to zoom. With reduced motion on,
+// nothing moves until the reader drags it.
 
 import type { AtomModel } from './atom';
 
@@ -129,10 +129,21 @@ interface Drawable {
 const RING_SEGMENTS = 56;
 const CAMERA = 3.4; // camera distance, in model units
 
-/** Start drawing on a canvas. Returns a function that stops everything. */
-export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): () => void {
+const MIN_ZOOM = 0.6;
+const MAX_ZOOM = 5;
+const IDLE_SPIN = 0.25; // radians per second: a slow turn, so the depth reads
+const MAX_SPIN = 14;
+
+export interface Atom3d {
+  stop: () => void;
+  /** Multiply the zoom (above 1 zooms in). */
+  zoomBy: (factor: number) => void;
+}
+
+/** Start drawing on a canvas. */
+export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): Atom3d {
   const context = canvas.getContext('2d');
-  if (!context) return () => {};
+  if (!context) return { stop: () => {}, zoomBy: () => {} };
   const ctx: CanvasRenderingContext2D = context;
 
   const count = m.protons + m.neutrons;
@@ -149,9 +160,15 @@ export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): () => void
   let time = 0;
   let last = 0;
   let frame = 0;
-  let dragging = false;
-  let lastX = 0;
-  let lastY = 0;
+  let zoom = 1;
+  // Spin momentum: the turning speed carries on after a flick, then eases
+  // back to the slow idle turn.
+  let vYaw = IDLE_SPIN;
+  let vPitch = 0;
+  let spinDir = 1;
+  let lastMove = 0;
+  const pointers = new Map<number, { x: number; y: number }>();
+  let pinch = 0; // distance between two fingers at the last event
   let colors = readColors();
 
   function readColors() {
@@ -162,6 +179,7 @@ export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): () => void
       neutron: get('--neutron'),
       electron: get('--electron'),
       shell: get('--shell'),
+      electronEdge: get('--electron-edge'),
       surface: get('--surface'),
     };
   }
@@ -179,7 +197,7 @@ export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): () => void
     const w = canvas.width;
     const h = canvas.height;
     // A point on the outermost shell projects at most CAMERA / sqrt(CAMERA^2 - 1) from the centre.
-    const scale = (Math.min(w, h) * 0.5 * 0.94 * Math.sqrt(CAMERA * CAMERA - 1)) / CAMERA;
+    const scale = (Math.min(w, h) * 0.5 * 0.94 * Math.sqrt(CAMERA * CAMERA - 1) * zoom) / CAMERA;
     const cy = Math.cos(yaw);
     const sy = Math.sin(yaw);
     const cp = Math.cos(pitch);
@@ -200,7 +218,7 @@ export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): () => void
     };
 
     const items: Drawable[] = [];
-    const line = Math.max(1, scale * 0.006);
+    const line = Math.max(1, (scale / zoom) * 0.006); // doesn't thicken when zoomed in
 
     for (const ring of rings) {
       let prev = project(onRing(ring, 0));
@@ -225,10 +243,10 @@ export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): () => void
       for (let k = 0; k < ring.electrons; k++) {
         const p = project(onRing(ring, ring.phase + ring.speed * time + (2 * Math.PI * k) / ring.electrons));
         items.push({
-          z: p[2],
+          z: p[2] + 0.04, // just in front of its own ring, so the line never crosses it
           draw: () => {
             ctx.fillStyle = colors.electron;
-            ctx.strokeStyle = colors.surface;
+            ctx.strokeStyle = colors.electronEdge;
             ctx.lineWidth = line;
             ctx.beginPath();
             ctx.arc(p[0], p[1], er * p[3], 0, 2 * Math.PI);
@@ -245,25 +263,13 @@ export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): () => void
       items.push({
         z: p[2],
         draw: () => {
-          const r = pr * p[3];
           ctx.beginPath();
-          if (proton) {
-            ctx.arc(p[0], p[1], r, 0, 2 * Math.PI);
-            ctx.fillStyle = colors.proton;
-            ctx.fill();
-            ctx.strokeStyle = colors.surface;
-            ctx.lineWidth = line;
-            ctx.stroke();
-          } else {
-            // A hollow ring: surface-colored middle, thick outline.
-            const stroke = r * 0.4;
-            ctx.arc(p[0], p[1], r - stroke / 2, 0, 2 * Math.PI);
-            ctx.fillStyle = colors.surface;
-            ctx.fill();
-            ctx.strokeStyle = colors.neutron;
-            ctx.lineWidth = stroke;
-            ctx.stroke();
-          }
+          ctx.arc(p[0], p[1], pr * p[3], 0, 2 * Math.PI);
+          ctx.fillStyle = proton ? colors.proton : colors.neutron;
+          ctx.fill();
+          ctx.strokeStyle = colors.surface;
+          ctx.lineWidth = line;
+          ctx.stroke();
         },
       });
     });
@@ -273,38 +279,92 @@ export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): () => void
     for (const item of items) item.draw();
   }
 
+  const clampPitch = (p: number) => Math.max(-1.5, Math.min(1.5, p));
+
   function tick(now: number) {
     const dt = last ? Math.min(0.1, (now - last) / 1000) : 0;
     last = now;
     time += dt;
-    if (!dragging) yaw += dt * 0.25; // a slow turn, so the depth reads
+    if (pointers.size === 0) {
+      yaw += vYaw * dt;
+      const p = clampPitch(pitch + vPitch * dt);
+      if (p !== pitch + vPitch * dt) vPitch = 0;
+      pitch = p;
+      // Friction: ease toward the idle turn, in the direction of the last flick.
+      vYaw += (IDLE_SPIN * spinDir - vYaw) * (1 - Math.exp(-dt * 1.1));
+      vPitch *= Math.exp(-dt * 2.2);
+    }
     draw();
     frame = requestAnimationFrame(tick);
   }
 
-  function down(e: PointerEvent) {
-    dragging = true;
-    lastX = e.clientX;
-    lastY = e.clientY;
-    canvas.setPointerCapture(e.pointerId);
-  }
-  function move(e: PointerEvent) {
-    if (!dragging) return;
-    yaw += (e.clientX - lastX) * 0.01;
-    pitch = Math.max(-1.5, Math.min(1.5, pitch + (e.clientY - lastY) * 0.01));
-    lastX = e.clientX;
-    lastY = e.clientY;
+  function setZoom(z: number) {
+    zoom = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, z));
     if (reduceMotion) draw();
   }
-  function up() {
-    dragging = false;
+
+  function pinchDistance(): number {
+    const [a, b] = [...pointers.values()];
+    return a && b ? Math.hypot(a.x - b.x, a.y - b.y) : 0;
+  }
+
+  function down(e: PointerEvent) {
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    canvas.setPointerCapture(e.pointerId);
+    vYaw = 0;
+    vPitch = 0;
+    lastMove = e.timeStamp;
+    pinch = pinchDistance();
+  }
+  function move(e: PointerEvent) {
+    const p = pointers.get(e.pointerId);
+    if (!p) return;
+    const dx = e.clientX - p.x;
+    const dy = e.clientY - p.y;
+    p.x = e.clientX;
+    p.y = e.clientY;
+    if (pointers.size >= 2) {
+      // Two fingers: pinch to zoom.
+      const d = pinchDistance();
+      if (pinch > 0 && d > 0) setZoom(zoom * (d / pinch));
+      pinch = d;
+      vYaw = 0;
+      vPitch = 0;
+      return;
+    }
+    yaw += dx * 0.01;
+    pitch = clampPitch(pitch + dy * 0.01);
+    // Track the speed of the drag (smoothed), to carry on after release.
+    const dt = Math.max(0.001, (e.timeStamp - lastMove) / 1000);
+    lastMove = e.timeStamp;
+    const cap = (v: number) => Math.max(-MAX_SPIN, Math.min(MAX_SPIN, v));
+    vYaw = cap(vYaw * 0.5 + ((dx * 0.01) / dt) * 0.5);
+    vPitch = cap(vPitch * 0.5 + ((dy * 0.01) / dt) * 0.5);
+    if (reduceMotion) draw();
+  }
+  function up(e: PointerEvent) {
+    pointers.delete(e.pointerId);
+    pinch = 0;
+    if (pointers.size > 0) return;
+    // A finger that paused before lifting leaves the atom where it is.
+    if (reduceMotion || e.timeStamp - lastMove > 90) {
+      vYaw = 0;
+      vPitch = 0;
+    }
+    if (Math.abs(vYaw) > 0.05) spinDir = Math.sign(vYaw);
+  }
+  function wheel(e: WheelEvent) {
+    e.preventDefault();
+    setZoom(zoom * Math.exp(-e.deltaY * 0.0015));
   }
   function key(e: KeyboardEvent) {
     const step = 0.15;
     if (e.key === 'ArrowLeft') yaw -= step;
     else if (e.key === 'ArrowRight') yaw += step;
-    else if (e.key === 'ArrowUp') pitch = Math.min(1.5, pitch + step);
-    else if (e.key === 'ArrowDown') pitch = Math.max(-1.5, pitch - step);
+    else if (e.key === 'ArrowUp') pitch = clampPitch(pitch + step);
+    else if (e.key === 'ArrowDown') pitch = clampPitch(pitch - step);
+    else if (e.key === '+' || e.key === '=') setZoom(zoom * 1.25);
+    else if (e.key === '-') setZoom(zoom / 1.25);
     else return;
     e.preventDefault();
     if (reduceMotion) draw();
@@ -315,13 +375,14 @@ export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): () => void
   canvas.addEventListener('pointerup', up);
   canvas.addEventListener('pointercancel', up);
   canvas.addEventListener('keydown', key);
+  canvas.addEventListener('wheel', wheel, { passive: false });
   const observer = new ResizeObserver(resize);
   observer.observe(canvas);
   resize();
   if (reduceMotion) draw();
   else frame = requestAnimationFrame(tick);
 
-  return () => {
+  const stop = () => {
     cancelAnimationFrame(frame);
     observer.disconnect();
     canvas.removeEventListener('pointerdown', down);
@@ -329,7 +390,9 @@ export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): () => void
     canvas.removeEventListener('pointerup', up);
     canvas.removeEventListener('pointercancel', up);
     canvas.removeEventListener('keydown', key);
+    canvas.removeEventListener('wheel', wheel);
   };
+  return { stop, zoomBy: (factor) => setZoom(zoom * factor) };
 }
 
 /**
@@ -349,31 +412,43 @@ export function openAtom3d(m: AtomModel, title: string, legend: HTMLElement): vo
   close.type = 'button';
   close.className = 'nav-btn';
   close.textContent = '✕ Close';
-  bar.append(h, close);
+  const zoomButton = (text: string, label: string) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'nav-btn';
+    b.textContent = text;
+    b.setAttribute('aria-label', label);
+    return b;
+  };
+  const zoomOut = zoomButton('−', 'Zoom out');
+  const zoomIn = zoomButton('+', 'Zoom in');
+  bar.append(h, zoomOut, zoomIn, close);
 
   const canvas = document.createElement('canvas');
   canvas.className = 'atom3d-canvas';
   canvas.tabIndex = 0;
   canvas.setAttribute('role', 'img');
-  canvas.setAttribute('aria-label', `${m.label} Shown in 3D. Drag, or use the arrow keys, to turn it.`);
+  canvas.setAttribute('aria-label', `${m.label} Shown in 3D. Drag, or use the arrow keys, to turn it. Pinch, or use the plus and minus keys, to zoom.`);
 
   const foot = document.createElement('div');
   foot.className = 'atom3d-foot';
   const hint = document.createElement('p');
   hint.className = 'atom-caption';
-  hint.textContent = 'Drag to turn the atom. This is the same shell model as the flat picture, with each shell’s electrons spread over tilted rings.';
+  hint.textContent = 'Drag to turn the atom, flick to spin it, pinch or use − and + to zoom. This is the same shell model as the flat picture, with each shell’s electrons spread over tilted rings.';
   foot.append(legend, hint);
 
   dialog.append(bar, canvas, foot);
   document.body.append(dialog);
   dialog.showModal();
-  const stop = startAtom3d(canvas, m);
+  const view = startAtom3d(canvas, m);
+  zoomOut.addEventListener('click', () => view.zoomBy(1 / 1.4));
+  zoomIn.addEventListener('click', () => view.zoomBy(1.4));
 
   const shut = () => dialog.close();
   close.addEventListener('click', shut);
   window.addEventListener('hashchange', shut, { once: true });
   dialog.addEventListener('close', () => {
-    stop();
+    view.stop();
     window.removeEventListener('hashchange', shut);
     dialog.remove();
   });

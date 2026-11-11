@@ -1,7 +1,7 @@
 // The animated atom (spec 3.2): protons and neutrons in the nucleus, electrons
 // in their shells. Plain SVG plus CSS rotation, which the iPad composites on
-// the GPU. Protons are solid and neutrons are hollow rings, so they read apart
-// without relying on color. Predicted shells are dashed. With reduced motion
+// the GPU. Protons are red, neutrons blue and electrons yellow, and the legend
+// names each. Predicted shells are dashed. With reduced motion
 // on, the electrons stand still.
 
 const NS = 'http://www.w3.org/2000/svg';
@@ -57,9 +57,8 @@ export function atomSvg(m: AtomModel): SVGSVGElement {
       svg('circle', {
         cx: (C + d * Math.cos(a)).toFixed(2),
         cy: (C + d * Math.sin(a)).toFixed(2),
-        r: kind === 'p' ? r : r - Math.min(0.9, r * 0.2),
+        r,
         class: kind === 'p' ? 'proton' : 'neutron',
-        'stroke-width': kind === 'n' ? Math.max(1, r * 0.45).toFixed(2) : 0,
       }),
     );
   });
@@ -91,14 +90,14 @@ export function atomSvg(m: AtomModel): SVGSVGElement {
   return root;
 }
 
-/** The legend: shapes as well as colors. */
+/** The legend: a labelled dot for each particle. */
 export function atomLegend(): HTMLElement {
   const ul = document.createElement('ul');
   ul.className = 'atom-legend';
-  for (const [cls, text] of [['proton', 'Proton (solid)'], ['neutron', 'Neutron (ring)'], ['electron', 'Electron']] as const) {
+  for (const [cls, text] of [['proton', 'Proton'], ['neutron', 'Neutron'], ['electron', 'Electron']] as const) {
     const li = document.createElement('li');
     const s = svg('svg', { viewBox: '0 0 20 20', width: 18, height: 18, 'aria-hidden': 'true' });
-    s.append(svg('circle', { cx: 10, cy: 10, r: cls === 'neutron' ? 6 : 7, class: cls, 'stroke-width': cls === 'neutron' ? 3 : 0 }));
+    s.append(svg('circle', { cx: 10, cy: 10, r: 7, class: cls }));
     li.append(s, ` ${text}`);
     ul.append(li);
   }
