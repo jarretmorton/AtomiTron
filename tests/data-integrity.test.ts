@@ -68,9 +68,9 @@ describe('gate: elements', () => {
   // value. The gate must still catch them on structure alone.
   it.each<[string, Edit, RegExp]>([
     ['neutrons miscounted', (_q, e) => (e.atom.neutrons.value = 13), /neutrons-from-mass-number gives 12, fact says 13/],
-    ['shells miscounted', (_q, e) => (e.atom.shells.value = [2, 8, 2]), /shells-from-configuration gives \[2,8,1\]/],
-    ['configuration does not match atomic number', (_q, e) => (e.electronConfiguration.value = '[Ne] 3s2'), /holds 12 electrons, atomic number is 11/],
-    ['unparseable configuration', (_q, e) => (e.electronConfiguration.value = '[Ne] 3x1'), /doesn't parse/],
+    ['shells miscounted', (_q, e) => (e.atom.shells!.value = [2, 8, 2]), /shells-from-configuration gives \[2,8,1\]/],
+    ['configuration does not match atomic number', (_q, e) => (e.electronConfiguration!.value = '[Ne] 3s2'), /holds 12 electrons, atomic number is 11/],
+    ['unparseable configuration', (_q, e) => (e.electronConfiguration!.value = '[Ne] 3x1'), /doesn't parse/],
     ['id does not match symbol', (_q, e) => (e.id = 'element:K'), /doesn't match symbol/],
     ['wrong isotope drawn', (_q, e) => (e.atom.isotope = 24), /atom shows isotope 24, expected 23/],
     ['derived field without its rule', (_q, e) => delete e.atom.protons.derivation, /must be derived with rule protons-equal-atomic-number/],
@@ -79,13 +79,36 @@ describe('gate: elements', () => {
     [
       'uncertainty not inherited',
       (_q, e) => {
-        e.electronConfiguration.uncertain = true;
+        e.electronConfiguration!.uncertain = true;
       },
       /uncertain exactly when one of its inputs is/,
     ],
     ['two facts sharing a record', (_q, e) => (e.name.verification.recordId = 'na-symbol'), /also used by/],
   ])('fails when %s', (_, edit, expected) => {
     expect(scenario(edit, { rerecord: true }).join('\n')).toMatch(expected);
+  });
+
+  it('ships an element whose configuration is disputed, without shells or valence', () => {
+    const errors = scenario(
+      (_q, e) => {
+        delete e.electronConfiguration;
+        delete e.atom.shells;
+        delete e.valenceElectrons;
+      },
+      { rerecord: true },
+    );
+    expect(errors).toEqual([]);
+  });
+
+  it('fails when shells are kept without a configuration', () => {
+    const errors = scenario(
+      (_q, e) => {
+        delete e.electronConfiguration;
+        delete e.valenceElectrons;
+      },
+      { rerecord: true },
+    );
+    expect(errors.join('\n')).toMatch(/shells or valence without an electron configuration/);
   });
 
   it('uses the longest-lived mass number when no isotope occurs naturally', () => {

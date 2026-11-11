@@ -16,7 +16,7 @@
       "retrievedValue": 35,
       "evidence": "RecordNumber 35",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -37,7 +37,7 @@
       "retrievedValue": "Br",
       "evidence": "Br",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -65,7 +65,7 @@
       "retrievedValue": "Bromine",
       "evidence": "Bromine",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -86,7 +86,7 @@
       "retrievedValue": 4,
       "evidence": "4",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -108,7 +108,7 @@
       "retrievedValue": 17,
       "evidence": "17 - Halogen",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -136,7 +136,7 @@
       },
       "evidence": "[79.901, 79.907]",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -175,7 +175,7 @@
       "retrievedValue": "[Ar] 3d10 4s2 4p5",
       "evidence": "[Ar]4s23d104p5",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -204,7 +204,7 @@
       "retrievedValue": 2.96,
       "evidence": "2.96 (Pauling Scale)",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -226,7 +226,7 @@
       "retrievedValue": "Liquid",
       "evidence": "Liquid",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -247,7 +247,7 @@
       "retrievedValue": -7.2,
       "evidence": "265.95 K (-7.2°C or 19.0°F)",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -278,7 +278,7 @@
       "retrievedValue": 58.8,
       "evidence": "331.95 K (58.8°C or 137.8°F)",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -309,7 +309,7 @@
       "retrievedValue": 3.11,
       "evidence": "3.11 grams per cubic centimeter",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -331,7 +331,7 @@
       "retrievedValue": 79,
       "evidence": "79Br",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -352,7 +352,7 @@
       "retrievedValue": 78.918338,
       "evidence": "78.918 338(7)",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -386,7 +386,7 @@
       },
       "evidence": "[0.505, 0.508]",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -415,7 +415,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -436,7 +436,7 @@
       "retrievedValue": 81,
       "evidence": "81Br",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -457,7 +457,7 @@
       "retrievedValue": 80.916288,
       "evidence": "80.916 288(6)",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -491,7 +491,7 @@
       },
       "evidence": "[0.492, 0.495]",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -520,7 +520,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -539,7 +539,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 35,
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -559,7 +559,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 35,
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -579,7 +579,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
       "retrievedValue": 44,
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -609,7 +609,7 @@
         7
       ],
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -629,7 +629,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.07%3A_Electron_Configurations_and_the_Periodic_Table",
       "retrievedValue": 7,
       "result": "pass",
-      "checkedAt": "2026-11-11T03:53:45Z",
+      "checkedAt": "2026-11-11T04:05:10Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1

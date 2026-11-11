@@ -1,18 +1,11 @@
 # How AtomiTron verifies facts
 
-> **Status: approved 2026-11-11 (phase 2), with additions pending approval.**
-> Where a rule is based on measured evidence, the evidence is given. Changes
-> to these rules need the project owner's approval.
+> **Status: approved 2026-11-11 (phase 2).** Where a rule is based on
+> measured evidence, the evidence is given. Changes to these rules need the
+> project owner's approval.
 >
-> **Pending approval:** the first full run over all 118 elements found cases
-> the approved rules didn't cover. The additions are marked *(pending)*:
-> - agreement within stated uncertainties (section 4)
-> - IUPAC CIAAW as the authority for atomic weights and isotope abundances,
->   and the IAEA mass table as the tiebreak for isotope masses (section 5)
-> - LibreTexts table A1 as a second contributor for electron configurations
->   (section 2)
-> - approximate and qualified values left out (section 5)
-> - predicted status for elements never made in bulk (section 9)
+> One rule is marked *(deferred)*: how approximate and qualified values are
+> handled (section 5) will be revisited. Until then they're left out.
 
 AtomiTron is a chemistry reference for a young learner, so a wrong fact is the
 worst possible bug. This document explains where every fact comes from, how it
@@ -50,12 +43,12 @@ as "PubChem, from Jefferson Lab":
 |---|---|
 | IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW) | Standard atomic weights, isotope abundances |
 | NIST Physical Measurement Laboratory | Atomic weights, isotope masses and abundances |
-| Atomic Mass Data Center, IAEA (NUBASE) | Half-lives of every known isotope; isotope masses as a tiebreak *(pending)* |
+| Atomic Mass Data Center, IAEA (NUBASE) | Half-lives of every known isotope; isotope masses as a tiebreak |
 | Jefferson Lab, U.S. Department of Energy | Melting and boiling points, density, state, period and group, history, uses |
 | Los Alamos National Laboratory | Electron configuration, melting and boiling points, history, uses |
 | PubChem Elements | Electronegativity (Pauling scale) |
 
-*(pending)* **LibreTexts Chemistry reference table A1**
+**LibreTexts Chemistry reference table A1**
 ([Atomic Electron Configurations](https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Atomic_and_Molecular_Properties/A1%3A_Atomic_Electron_Configurations))
 is a second, independent contributor for electron configurations:
 - It agrees with Los Alamos on all 102 elements both cover, except
@@ -76,7 +69,7 @@ where the page gives 294. It also has no units.
 | Atomic number, symbol, name | Identifiers | PubChem | extract |
 | Period, group | Element Period Number, Element Group Number | Jefferson Lab | extract |
 | Atomic weight | Atomic Weight | IUPAC CIAAW | extract |
-| Electron configuration | Electron Configuration | Los Alamos, cross-checked with LibreTexts A1 *(pending)* | extract |
+| Electron configuration | Electron Configuration | Los Alamos, cross-checked with LibreTexts A1 | extract |
 | Electronegativity | Electronegativity | PubChem Elements (Pauling) | extract |
 | State at room temperature | Physical Description | Jefferson Lab | extract |
 | Melting point, boiling point | Melting Point, Boiling Point | Jefferson Lab | extract, cross-checked (section 5) |
@@ -108,8 +101,8 @@ The method used for each fact is recorded in its verification record.
 |---|---|
 | Integers (atomic number, period, group, mass number) | Exactly equal |
 | Atomic weight, isotope mass | Equal to the source's stated digits. The source's uncertainty notation (the `(2)` in `22.989 769 28(2)`) is recorded but not displayed |
-| Two contributors' numbers *(pending)* | If either states an uncertainty, they agree when they differ by no more than the stated uncertainties combined (a bare number counts as ± half its last digit). For example, 18.998 403 162(5) agrees with 18.998403163(6). Without stated uncertainties, the shorter value must be the longer one correctly rounded: 22.99 agrees with 22.98976928, but 63.6 doesn't agree with 63.546 |
-| A number against an interval *(pending)* | The number lies within the interval rounded to the number's own precision. Los Alamos's 14.01 agrees with nitrogen's [14.006 43, 14.007 28] |
+| Two contributors' numbers | If either states an uncertainty, they agree when they differ by no more than the stated uncertainties combined (a bare number counts as ± half its last digit). For example, 18.998 403 162(5) agrees with 18.998403163(6). Without stated uncertainties, the shorter value must be the longer one correctly rounded: 22.99 agrees with 22.98976928, but 63.6 doesn't agree with 63.546 |
+| A number against an interval | The number lies within the interval rounded to the number's own precision. Los Alamos's 14.01 agrees with nitrogen's [14.006 43, 14.007 28] |
 | Atomic weight given as an interval | Both ends equal. Stored as a range, which is *not* marked uncertain, because it varies in nature |
 | Melting point, boiling point (°C) | Equal to the primary contributor's value, which must be corroborated (section 5) |
 | Density, electronegativity | Equal to the source's stated digits |
@@ -165,14 +158,14 @@ isn't safe.
      it matches exactly one contributor within tolerance, ship that
      contributor's value.
    - NIST's value is kept in the fact's verification record as the
-     corroboration *(pending: previously "a second citation")*.
+     corroboration.
    - For a melting point, NIST's triple point counts as well, since for
-     these substances it is within a hair of the melting point *(pending)*.
+     these substances it is within a hair of the melting point.
    - Otherwise the value is left out and listed in the release report.
 3. **Only one contributor gives the value:** ship it only if it passes the
    consistency checks in section 6.
 
-**IUPAC CIAAW values *(pending)*.** CIAAW defines the standard atomic weights,
+**IUPAC CIAAW values.** CIAAW defines the standard atomic weights,
 and it is the IUPAC body for isotopic composition, so its values are
 authoritative.
 - **An atomic weight** still needs at least one agreeing contributor. Older
@@ -185,21 +178,24 @@ authoritative.
 - **Isotope masses** that disagree are settled by the IAEA mass table on the
   same PubChem page. If it doesn't settle them, the mass is left out.
 
-**Approximate values *(pending)*.** A value written as approximate ("~817 °C",
+**Approximate values *(deferred)*.** A value written as approximate ("~817 °C",
 "about 7 g/cm³") can't be checked to any precision. It isn't used to
 corroborate anything, and on its own it's left out.
 
-**Qualified values *(pending)*.** Some values apply only to one form or
+**Qualified values *(deferred)*.** Some values apply only to one form or
 condition, such as white phosphorus, diamond, or a sublimation point. For
 now, if any contributor qualifies a value, it's left out and listed. Showing
 qualified values with their qualifier is a later improvement.
 
 **Configurations that disagree.** If the two configuration contributors
-disagree, the configuration is left out, and the element can't ship, because
-the atom needs it. This applies only to lawrencium. PubChem gives
-[Rn] 5f14 6d1 7s2, while LibreTexts gives "probably" [Rn] 5f14 7s2 7p1. This
-is a real open question, and a candidate for the app's "Nobody knows yet"
-markers.
+disagree, the configuration is left out. The element still ships with
+everything that isn't disputed. Its atom shows the nucleus and the electron
+count, but not how the electrons are arranged in shells, and there's no
+valence count.
+
+This applies only to lawrencium. PubChem gives [Rn] 5f14 6d1 7s2, while
+LibreTexts gives "probably" [Rn] 5f14 7s2 7p1. This is a real open question,
+and a candidate for the app's "Nobody knows yet" markers.
 
 ## 6. Consistency checks
 
@@ -269,7 +265,7 @@ A value the source marks as predicted, expected, estimated, extrapolated,
 calculated or "probably" (as with superheavy elements) is stored with
 `uncertain: true`.
 
-*(pending)* Sources don't always mark predictions. Jefferson Lab lists
+Sources don't always mark predictions. Jefferson Lab lists
 fermium through meitnerium as plain "Solid". Los Alamos gives tennessine a
 plain boiling point of 610 °C, though nobody has ever made enough tennessine
 to boil. So two rules apply whatever the source says:

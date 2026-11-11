@@ -70,7 +70,8 @@ export interface Element {
   atomicWeight?: Fact<number | Range>;
   /** No natural isotopes: longest-lived isotope per the AMDC half-life table. A mass number, not an atomic weight. */
   longestLivedIsotopeMassNumber?: Fact<number>;
-  electronConfiguration: Fact<string>;
+  /** Omitted when the contributors disagree (lawrencium). */
+  electronConfiguration?: Fact<string>;
   electronegativity?: Fact<number>;
   valenceElectrons?: Fact<number>;
   state?: Fact<string>;
@@ -84,7 +85,8 @@ export interface Element {
     protons: Fact<number>;
     neutrons: Fact<number>;
     electrons: Fact<number>;
-    shells: Fact<Counts>;
+    /** Omitted when the electron configuration is. */
+    shells?: Fact<Counts>;
   };
   discovery?: { year?: Fact<number | string>; story: Fact<string>[] };
   uses: Fact<string>[];

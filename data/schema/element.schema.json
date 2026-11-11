@@ -10,7 +10,6 @@
     "symbol",
     "name",
     "period",
-    "electronConfiguration",
     "isotopes",
     "atom",
     "uses"
@@ -47,7 +46,7 @@
       "$ref": "#/$defs/integerFact"
     },
     "electronConfiguration": {
-      "description": "Normalized notation with spaces, e.g. \"[Ar] 3d10 4s1\". Compared with the source by parsed subshell occupancy, not by string. Uncertain when the source marks it predicted.",
+      "description": "Normalized notation with spaces, e.g. \"[Ar] 3d10 4s1\". Compared with the source by parsed subshell occupancy, not by string. Uncertain when the source marks it predicted. Omitted when the contributors disagree (methodology section 5); the element still ships, without shells or valence.",
       "$ref": "urn:atomitron:schema:fact"
     },
     "electronegativity": {
@@ -85,8 +84,7 @@
         "isotope",
         "protons",
         "neutrons",
-        "electrons",
-        "shells"
+        "electrons"
       ],
       "additionalProperties": false,
       "properties": {
@@ -108,7 +106,7 @@
           "$ref": "urn:atomitron:schema:fact"
         },
         "shells": {
-          "description": "Derived: shells-from-configuration. Electrons per shell, innermost first.",
+          "description": "Derived: shells-from-configuration. Electrons per shell, innermost first. Omitted when the electron configuration is.",
           "$ref": "urn:atomitron:schema:fact"
         }
       }

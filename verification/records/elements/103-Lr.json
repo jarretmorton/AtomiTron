@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 2,
+  "kind": "verification-records",
+  "items": [
+    {
+      "id": "Lr.atomicNumber",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/atomicNumber"
+      },
+      "method": "extract",
+      "claimedValue": 103,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103",
+      "upstream": "PubChem",
+      "retrievedValue": 103,
+      "evidence": "RecordNumber 103",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:05:10Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Lr.symbol",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/symbol"
+      },
+      "method": "extract",
+      "claimedValue": "Lr",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=Element-Symbol",
+      "upstream": "PubChem",
+      "retrievedValue": "Lr",
+      "evidence": "Lr",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:05:10Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "corroboration": [
+        {
+          "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=Element-Symbol",
+          "upstream": "IUPAC CIAAW",
+          "value": "Lr"
+        }
+      ]
+    },
+    {
+      "id": "Lr.name",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/name"
+      },
+      "method": "extract",
+      "claimedValue": "Lawrencium",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=Element-Name",
+      "upstream": "PubChem",
+      "retrievedValue": "Lawrencium",
+      "evidence": "Lawrencium",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:05:10Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Lr.period",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/period"
+      },
+      "method": "extract",
+      "claimedValue": 7,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=Element-Period-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 7,
+      "evidence": "7",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:05:10Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the period boundaries at Z = 2, 10, 18, 36, 54, 86, 118"
+    },
+    {
+      "id": "Lr.group",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/group"
+      },
+      "method": "extract",
+      "claimedValue": 3,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=Element-Group-Number",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": 3,
+      "evidence": "3 - Actinide",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:05:10Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "consistent with the standard 18-column table position"
+    },
+    {
+      "id": "Lr.state",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/state"
+      },
+      "method": "extract",
+      "claimedValue": "Solid",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=Physical-Description",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Solid",
+      "evidence": "Solid",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:05:10Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "predicted: never made in visible amounts (Z >= 100)"
+    },
+    {
+      "id": "Lr.longestLivedIsotopeMassNumber",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/longestLivedIsotopeMassNumber"
+      },
+      "method": "extract",
+      "claimedValue": 266,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 266,
+      "evidence": "266Lr",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:05:10Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "longest measured half-life among 11 ground-state isotopes"
+    },
+    {
+      "id": "Lr.isotopes.0.massNumber",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/isotopes/0/massNumber"
+      },
+      "method": "extract",
+      "claimedValue": 266,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 266,
+      "evidence": "266Lr",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:05:10Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Lr.isotopes.0.halfLife",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/isotopes/0/halfLife"
+      },
+      "method": "extract",
+      "claimedValue": 22.0,
+      "unit": "h",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=Atomic-Mass-Half-Life-and-Decay",
+      "upstream": "IAEA Atomic Mass Data Center",
+      "retrievedValue": 22.0,
+      "evidence": "22 h ± 14",
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:05:10Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py"
+    },
+    {
+      "id": "Lr.atom.protons",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/atom/protons"
+      },
+      "method": "derive",
+      "claimedValue": 103,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 103,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:05:10Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "protons-equal-atomic-number from Lr.atomicNumber"
+    },
+    {
+      "id": "Lr.atom.electrons",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/atom/electrons"
+      },
+      "method": "derive",
+      "claimedValue": 103,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
+      "retrievedValue": 103,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:05:10Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "electrons-equal-atomic-number from Lr.atomicNumber"
+    },
+    {
+      "id": "Lr.atom.neutrons",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/atom/neutrons"
+      },
+      "method": "derive",
+      "claimedValue": 163,
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
+      "retrievedValue": 163,
+      "result": "pass",
+      "checkedAt": "2026-11-11T04:05:10Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/elements.py",
+      "notes": "neutrons-from-mass-number from Lr.isotopes.0.massNumber, Lr.atomicNumber"
+    }
+  ]
+}

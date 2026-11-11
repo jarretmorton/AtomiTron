@@ -681,7 +681,7 @@ class ElementBuilder:
         drawn = self.isotopes()
         self.consistency()
 
-        if not has_config or drawn is None or "/period" not in self.facts:
+        if drawn is None or "/period" not in self.facts:
             self.drops.append(("/", "element not shipped: a required field is missing"))
             return Built(None, [], self.drops, self.notes)
 
@@ -689,9 +689,12 @@ class ElementBuilder:
         self.add_derived("/atom/protons", "protons-equal-atomic-number", ["/atomicNumber"])
         self.add_derived("/atom/electrons", "electrons-equal-atomic-number", ["/atomicNumber"])
         self.add_derived("/atom/neutrons", "neutrons-from-mass-number", [drawn_ptr, "/atomicNumber"])
-        self.add_derived("/atom/shells", "shells-from-configuration", ["/electronConfiguration"])
+        if not has_config:
+            self.notes.append("shipped without an electron configuration, shells or valence: the configuration is disputed")
+        else:
+            self.add_derived("/atom/shells", "shells-from-configuration", ["/electronConfiguration"])
         group = self.facts.get("/group")
-        if group and group["value"] in MAIN_GROUPS:
+        if has_config and group and group["value"] in MAIN_GROUPS:
             if self.facts["/electronConfiguration"]["uncertain"]:
                 self.drops.append(("/valenceElectrons", "configuration is only predicted, so no single number is shown"))
             else:
@@ -716,7 +719,7 @@ class ElementBuilder:
             isotopes.append(iso)
             i += 1
         el["isotopes"] = isotopes
-        el["atom"] = {"isotope": drawn, **{k: f[f"/atom/{k}"] for k in ("protons", "neutrons", "electrons", "shells")}}
+        el["atom"] = {"isotope": drawn, **{k: f[f"/atom/{k}"] for k in ("protons", "neutrons", "electrons", "shells") if f"/atom/{k}" in f}}
         el["uses"] = []
         return el
 

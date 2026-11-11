@@ -64,10 +64,14 @@ function checkElement(e: Element, at: string, errors: string[]): void {
   const z = e.atomicNumber.value;
   if (e.id !== `element:${e.symbol.value}`) errors.push(`${at}: id "${e.id}" doesn't match symbol "${e.symbol.value}"`);
 
-  const occ = parseConfiguration(e.electronConfiguration.value);
-  if (!occ) errors.push(`${at}: electron configuration "${e.electronConfiguration.value}" doesn't parse`);
-  else if (electronCount(occ) !== z) {
-    errors.push(`${at}: electron configuration holds ${electronCount(occ)} electrons, atomic number is ${z}`);
+  if (e.electronConfiguration) {
+    const occ = parseConfiguration(e.electronConfiguration.value);
+    if (!occ) errors.push(`${at}: electron configuration "${e.electronConfiguration.value}" doesn't parse`);
+    else if (electronCount(occ) !== z) {
+      errors.push(`${at}: electron configuration holds ${electronCount(occ)} electrons, atomic number is ${z}`);
+    }
+  } else if (e.atom.shells || e.valenceElectrons) {
+    errors.push(`${at}: shells or valence without an electron configuration`);
   }
 
   for (const [field, get, rule] of ELEMENT_RULES) {

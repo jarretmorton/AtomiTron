@@ -1,8 +1,9 @@
 # AtomiTron status
 
-*Updated 2026-11-11. Phase 1 is complete and live. Phase 2: the element
-extractor has run, and 117 of 118 elements are verified (2,948 facts). Some
-methodology additions from that run are waiting for approval.*
+*Updated 2026-11-11. Phase 1 is complete and live. Phase 2: all 118
+elements are verified (2,960 facts), and the methodology additions are
+approved, with one deferred. Next: the text facts, then the periodic table
+and element pages.*
 
 ## Where things stand
 
@@ -15,15 +16,16 @@ push to `main`.
 **Phase 2 (elements): numeric facts extracted and verified.** The work is on
 the local branch `claude/phase-2-elements`, committed but not pushed.
 
-- `python -m pipeline.elements` shipped **117 of 118 elements**: 2,948 facts,
-  each with a passing record. 67 values were left out, each listed with its
+- `python -m pipeline.elements` shipped **all 118 elements**: 2,960 facts,
+  each with a passing record. The values left out are each listed with their
   reason in
   [verification/reports/elements-2026-11-11.md](../verification/reports/elements-2026-11-11.md).
-- Lawrencium alone isn't shipped. Its electron configuration is genuinely
-  disputed: PubChem gives 6d1 and LibreTexts "probably" 7p1.
+- Lawrencium ships without its electron configuration, shells or valence,
+  because the configuration is genuinely disputed: PubChem gives 6d1 and
+  LibreTexts "probably" 7p1. Everything else about it ships.
 - Spot-checked against well-known values (H, C, N, O, Na, Cl, Fe, Cu, Tc,
   Hg, U, Cn, Og), and all correct.
-- `npm test`: 108 of 108 pass, and the gate accepts every generated fact.
+- `npm test`: 110 of 110 pass, and the gate accepts every generated fact.
 - Python pipeline tests: 24 of 24 pass. They now also run in CI.
 - `npm run typecheck` and `npm run build`: clean.
 
@@ -39,7 +41,7 @@ the local branch `claude/phase-2-elements`, committed but not pushed.
 | Build gate | [tests/integrity.ts](../tests/integrity.ts) | Recomputes every derived fact; checks that configuration electrons equal the atomic number, that the ID matches the symbol, that the right isotope is drawn, that uncertainty passes to derived values, and that each fact has its own record |
 | Methodology | [verification/methodology.md](../verification/methodology.md) | **Approved**, with additions from the first run marked *(pending)* |
 | Pipeline | [pipeline/](../pipeline/) | Python, standard library only. Fetches and caches the sources, parses every value format strictly, cross-checks contributors (NIST tiebreak), runs consistency checks, derives the atom, and writes data, records and the report |
-| Element data | `data/verified/elements/`, `verification/records/elements/` | 117 elements, 1.7 MB of data plus 2.4 MB of records |
+| Element data | `data/verified/elements/`, `verification/records/elements/` | 118 elements, about 1.7 MB of data plus 2.4 MB of records |
 | Units | [app/src/units.ts](../app/src/units.ts) | Exact °C, °F, K and °R conversion for the reader's setting |
 
 ### What the PubChem survey found (all 118 elements, 2026-11-10)
@@ -74,33 +76,31 @@ the local branch `claude/phase-2-elements`, committed but not pushed.
    stored decimal places and says "converted from ...". The settings control
    arrives with the element pages.
 
-## Methodology additions waiting on you
+## Methodology additions from the first run (2026-11-11)
 
-The first full run found cases the approved rules didn't cover. Each one is
-marked *(pending)* in
-[verification/methodology.md](../verification/methodology.md):
+Approved:
+- agreement within stated uncertainty
+- IUPAC CIAAW as the authority for atomic weights and isotope abundances
+- the IAEA mass table as the tiebreak for isotope masses
+- LibreTexts table A1 as a second contributor for electron configurations
+- predicted status for Z >= 100 bulk properties and Z >= 104 configurations
+- a NIST tiebreak value recorded as corroboration
 
-1. **Agreement within stated uncertainty.** Two values agree if they differ
-   by no more than their stated uncertainties combined. Without stated
-   uncertainties, the shorter value must be the longer one correctly rounded.
-   The strict rounding rule wrongly rejected values like 18.998403162(5) vs
-   18.998403163(6).
-2. **IUPAC CIAAW is authoritative** for atomic weights (which still need one
-   agreeing contributor) and isotope abundances (which must pass the sum
-   check). Older copies elsewhere are noted, not blocking. Without this, Los
-   Alamos's outdated titanium 47.88 would block IUPAC's 47.867.
-3. **The IAEA mass table breaks ties** between IUPAC and NIST isotope masses.
-4. **LibreTexts table A1 is a second contributor for electron
-   configurations.** It agrees with PubChem on 101 of 102 elements, and it's
-   the only source for nitrogen, whose PubChem page has none.
-5. **Approximate values ("~", "about") and qualified values** ("diamond",
-   "sublimation") are left out for now.
-6. **Never made in bulk:** Z ≥ 100 state and bulk properties, and Z ≥ 104
-   configurations, are always predictions, even when the source doesn't say
-   so. Jefferson Lab calls fermium through meitnerium plain "Solid".
-7. **A NIST tiebreak value goes in the record as corroboration,** rather than
-   being shown as a second citation. NIST's triple point counts for a melting
-   point.
+**Deferred:** approximate values ("~817 °C") and qualified values ("diamond",
+"sublimation", "white phosphorus") are left out until we revisit them. This
+affects carbon's and phosphorus's melting and boiling points, and astatine's
+density.
+
+**Known issue for that discussion: arsenic.** Its melting point ships as
+817 °C from Jefferson Lab alone, after Los Alamos's "~817 °C" was set aside
+as approximate. It passes the current checks. But arsenic doesn't melt at
+normal pressure: it turns straight to gas at about 614 °C, and 817 °C is its
+melting point under high pressure. The value is real but missing its
+qualifier. Fixing it belongs with the deferred qualified-values rule, unless
+we decide to drop it now.
+
+**Lawrencium** ships with everything except its disputed configuration: the
+atom shows the nucleus and the electron count but no shells.
 
 Still open from requirements section 9:
 - trademark check on the name
@@ -133,8 +133,10 @@ Still open from requirements section 9:
 - **Loading element data:** 1.7 MB is too much to bundle at once for the iPad.
   The table needs a small index (symbol, name, position), and each element
   page should load its own file.
-- **Lawrencium** isn't shipped (disputed configuration). Options: show its
-  page without the electron shells, or make it an Open Question in phase 5.
+- **Lawrencium's page** needs an atom drawing with no shells, and a note
+  that the electron arrangement is disputed. It's also a good phase 5 Open
+  Question ("Where does lawrencium's outermost electron go?").
+- **Approximate and qualified values** (deferred; see above).
 - **PubChem section anchors** in the citation links (`#section=Melting-Point`)
   follow PubChem's pattern but haven't been checked in a browser yet.
 
@@ -144,7 +146,7 @@ Still open from requirements section 9:
 2. ~~Commit the reviewed schema and methodology.~~ Done.
 3. ~~Build the extractor and run all 118 elements.~~ Done: 117 shipped, with
    a report.
-4. **Approve (or adjust) the methodology additions above.**
+4. ~~Approve the methodology additions.~~ Approved 2026-11-11; one deferred.
 5. Draft and verify the text facts (history, uses) with verifier agents:
    three runs each, keeping short evidence excerpts.
 6. Build the periodic table and element pages with the animated atom, the
