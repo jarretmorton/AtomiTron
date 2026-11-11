@@ -34,6 +34,23 @@ pages.
 - **Tests:** `npm test` 122 of 122 and the Python pipeline 24 of 24 pass.
   Typecheck and build are clean.
 
+## Trial: a moving 3D atom (vanadium only)
+
+On branch `ccr-f1546f87-6q2x1f`, not merged. On the vanadium page, tapping the
+flat atom (it now has a "Tap for 3D" label) opens a full-screen 3D version of
+the same shell model: [app/src/ui/atom3d.ts](../app/src/ui/atom3d.ts).
+
+- It uses the same verified counts as the flat atom and adds no new facts.
+  Each shell's electrons are spread over up to three tilted rings (vanadium:
+  2 / 4+4 / 4+4+3 / 2). A test checks the rings always add up to the shell.
+- Canvas 2D with its own projection: no library, no network. Drag (or arrow
+  keys) to turn it. With reduced motion on, it only moves when dragged.
+- Checked in headless Chromium at iPad mini size, both orientations, light
+  and dark. **Not yet seen on the real iPad.**
+- To extend it, add symbols to `TRIAL_3D` in
+  [app/src/views/element.ts](../app/src/views/element.ts). Heavy elements
+  (seven shells, about 300 nucleons) haven't been looked at yet.
+
 ## What was built in phase 2
 
 | Area | Files | What it does |

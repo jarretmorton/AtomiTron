@@ -61,3 +61,32 @@ describe('concepts', () => {
     for (const c of Object.values(CONCEPTS)) expect(sourceName(c.url)).toBe('LibreTexts Chemistry');
   });
 });
+
+import { buildRings, packNucleus, ringCounts } from '../app/src/ui/atom3d';
+
+describe('3D atom layout', () => {
+  it('spreads a shell over rings without gaining or losing electrons', () => {
+    for (let n = 0; n <= 32; n++) {
+      expect(ringCounts(n).reduce((a, b) => a + b, 0)).toBe(n);
+    }
+    expect(ringCounts(11)).toEqual([4, 4, 3]);
+  });
+
+  it('draws each shell with its own electron count (vanadium: 2, 8, 11, 2)', () => {
+    const shells = [2, 8, 11, 2];
+    const rings = buildRings(shells, 0.3);
+    shells.forEach((count, i) => {
+      const inShell = rings.filter((r) => r.shell === i);
+      expect(inShell.reduce((a, r) => a + r.electrons, 0)).toBe(count);
+      expect(new Set(inShell.map((r) => r.radius)).size).toBe(1);
+    });
+    const radii = shells.map((_, i) => rings.find((r) => r.shell === i)!.radius);
+    expect(radii).toEqual([...radii].sort((a, b) => a - b));
+  });
+
+  it('packs one position per nucleon', () => {
+    const pts = packNucleus(51, 0.03);
+    expect(pts).toHaveLength(51);
+    expect(pts.flat().every(Number.isFinite)).toBe(true);
+  });
+});

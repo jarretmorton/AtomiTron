@@ -371,6 +371,85 @@
   }
 }
 
+/* The flat atom as a button that opens the 3D one. */
+.atom-open {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+
+.atom-open-hint {
+  /* Below the picture, so it never hides an electron. */
+  display: flex;
+  width: fit-content;
+  margin: 4px auto 0;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0 14px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-weight: 600;
+}
+
+.atom3d {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: max(8px, env(safe-area-inset-top)) var(--gutter-r) max(8px, env(safe-area-inset-bottom)) var(--gutter);
+  border: 0;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.atom3d[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.atom3d-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.atom3d-bar h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.atom3d-bar .nav-btn {
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.atom3d-canvas {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  touch-action: none; /* dragging turns the atom instead of scrolling */
+  cursor: grab;
+}
+
+.atom3d-foot .atom-caption {
+  margin: 6px 0 0;
+  text-align: center;
+}
+
 .atom-legend {
   display: flex;
   flex-wrap: wrap;
