@@ -3,8 +3,7 @@
 // neutrons in the nucleus, electrons in their shells. Nothing new is claimed.
 //
 // Drawn on a 2D canvas with a hand-rolled perspective projection, so there is
-// no library and no network request. Protons stay solid and neutrons stay
-// hollow rings, so they read apart without color. Drag to turn the atom, flick
+// no library and no network request. Drag to turn the atom, flick
 // to spin it, pinch (or wheel, or the buttons) to zoom. With reduced motion on,
 // nothing moves until the reader drags it.
 
@@ -219,7 +218,7 @@ export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): Atom3d {
     };
 
     const items: Drawable[] = [];
-    const line = Math.max(1, Math.min(scale, canvas.height) * 0.006); // doesn't thicken when zoomed in
+    const line = Math.max(1, (scale / zoom) * 0.006); // doesn't thicken when zoomed in
 
     for (const ring of rings) {
       let prev = project(onRing(ring, 0));
@@ -264,25 +263,13 @@ export function startAtom3d(canvas: HTMLCanvasElement, m: AtomModel): Atom3d {
       items.push({
         z: p[2],
         draw: () => {
-          const r = pr * p[3];
           ctx.beginPath();
-          if (proton) {
-            ctx.arc(p[0], p[1], r, 0, 2 * Math.PI);
-            ctx.fillStyle = colors.proton;
-            ctx.fill();
-            ctx.strokeStyle = colors.surface;
-            ctx.lineWidth = line;
-            ctx.stroke();
-          } else {
-            // A hollow ring: surface-colored middle, thick outline.
-            const stroke = r * 0.4;
-            ctx.arc(p[0], p[1], r - stroke / 2, 0, 2 * Math.PI);
-            ctx.fillStyle = colors.surface;
-            ctx.fill();
-            ctx.strokeStyle = colors.neutron;
-            ctx.lineWidth = stroke;
-            ctx.stroke();
-          }
+          ctx.arc(p[0], p[1], pr * p[3], 0, 2 * Math.PI);
+          ctx.fillStyle = proton ? colors.proton : colors.neutron;
+          ctx.fill();
+          ctx.strokeStyle = colors.surface;
+          ctx.lineWidth = line;
+          ctx.stroke();
         },
       });
     });

@@ -48,9 +48,10 @@ the same shell model: [app/src/ui/atom3d.ts](../app/src/ui/atom3d.ts).
   and pinch, wheel or the − / + buttons to zoom. With reduced motion on, it
   only moves when dragged.
 - Particle colors, flat and 3D: protons red, neutrons blue, electrons yellow
-  (asked for 2026-11-11). Protons stay solid and neutrons stay rings, and
-  electrons have a darker edge in light mode because yellow is faint on
-  paper. Pinch zoom couldn't be exercised headlessly; check it on the iPad.
+  (asked for 2026-11-11), all solid. Neutrons were hollow rings so they
+  could be told from protons without color; solid blue was asked for, so
+  red versus blue (plus the labelled legend) is now the only cue. Electrons
+  have a darker edge in light mode because yellow is faint on paper. Pinch zoom couldn't be exercised headlessly; check it on the iPad.
 - Checked in headless Chromium at iPad mini size, both orientations, light
   and dark. **Not yet seen on the real iPad.**
 - To extend it, add symbols to `TRIAL_3D` in

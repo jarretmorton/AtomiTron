@@ -346,7 +346,7 @@
 }
 
 .proton { fill: var(--proton); }
-.neutron { fill: var(--surface); stroke: var(--neutron); }
+.neutron { fill: var(--neutron); }
 .electron { fill: var(--electron); stroke: var(--electron-edge); stroke-width: 1px; }
 
 .shell {

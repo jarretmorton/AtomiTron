@@ -33,8 +33,8 @@
   --unc-bg: #e9e9e6;
   --unc-edge: #646a71;
 
-  /* The atom: protons solid red, neutrons hollow blue rings, electrons solid
-     yellow. Yellow is faint on paper, so electrons get a darker edge. */
+  /* The atom: protons red, neutrons blue, electrons yellow, all solid.
+     Yellow is faint on paper, so electrons get a darker edge. */
   --proton: #cc1f1f;
   --neutron: #1f5fd0;
   --electron: #f2c200;
