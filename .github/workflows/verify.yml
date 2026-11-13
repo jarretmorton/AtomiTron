@@ -19,7 +19,12 @@ on:
         type: choice
         options:
           - reverify-pilot
+          - draft-and-verify
         default: reverify-pilot
+      elements:
+        description: "For draft-and-verify: element symbols separated by spaces, or 'remaining' (every element without history and uses yet, about $20–25)"
+        type: string
+        default: remaining
 
 permissions:
   contents: write  # to push the results branch; nothing else
@@ -45,7 +50,9 @@ jobs:
       - run: npm ci
 
       - name: Collect the source passages
-        run: python -m pipeline.text_sources H C N O Na Mg Cl Fe Cu Au
+        env:
+          ELEMENTS: ${{ inputs.task == 'reverify-pilot' && 'H C N O Na Mg Cl Fe Cu Au' || inputs.elements }}
+        run: python -m pipeline.text_sources $ELEMENTS
 
       - name: Re-verify the pilot statements through the Claude API
         if: inputs.task == 'reverify-pilot'
@@ -58,6 +65,21 @@ jobs:
           python -m pipeline.text_facts evaluate "$RUN"
           python -m pipeline.text_facts compare verification/agent-runs/2026-11-12-elements-text-pilot "$RUN"
           python -m pipeline.text_facts apply
+
+      - name: Draft and verify history and uses through the Claude API
+        if: inputs.task == 'draft-and-verify'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ELEMENTS: ${{ inputs.elements }}
+        run: |
+          RUN="verification/agent-runs/$(date -u +%F)-api-elements"
+          echo "RUN=$RUN" >> "$GITHUB_ENV"
+          python -m pipeline.agents_api draft "$RUN" $ELEMENTS
+          python -m pipeline.text_facts claims "$RUN"
+          python -m pipeline.agents_api verify "$RUN"
+          python -m pipeline.text_facts evaluate "$RUN"
+          python -m pipeline.text_facts apply
+          echo "No comparison for a first draft: see $RUN/report.md" > "$RUN/comparison.md"
 
       - name: Gate (every published fact verified)
         run: npm test

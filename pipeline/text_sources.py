@@ -84,8 +84,18 @@ def concept_claims() -> tuple[list[dict], list[dict]]:
     return claims, passages
 
 
+def resolve_symbols(argv: list[str]) -> list[str]:
+    """Symbols as given, or "remaining": every verified element that has no
+    history and uses text yet (no data/text/elements file)."""
+    if argv != ["remaining"]:
+        return argv or ["H", "C", "N", "O", "Na", "Mg", "Cl", "Fe", "Cu", "Au"]
+    done = {p.stem.split("-", 1)[1] for p in (ROOT / "data" / "text" / "elements").glob("*.json")}
+    every = [p.stem.split("-", 1)[1] for p in sorted((ROOT / "data" / "verified" / "elements").glob("*.json"))]
+    return [s for s in every if s not in done]
+
+
 def main(argv: list[str]) -> None:
-    symbols = argv or ["H", "C", "N", "O", "Na", "Mg", "Cl", "Fe", "Cu", "Au"]
+    symbols = resolve_symbols(argv)
     passages = element_passages(symbols)
     claims, concept_passages = concept_claims()
     OUT.mkdir(parents=True, exist_ok=True)

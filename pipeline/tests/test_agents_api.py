@@ -37,5 +37,16 @@ class Shapes(unittest.TestCase):
         self.assertAlmostEqual(cost({"input": 1_000_000, "output": 100_000, "cache_read": 0}), 6.0)
 
 
+class YearRule(unittest.TestCase):
+    def test_year_must_be_stated(self):
+        from pipeline.text_facts import year_stated
+
+        self.assertTrue(year_stated(1807, "Sodium was discovered in 1807 by Humphry Davy."))
+        self.assertFalse(year_stated(1807, "Sodium was discovered by Humphry Davy."))
+        self.assertFalse(year_stated(180, "discovered in 1807"))  # whole numbers only
+        self.assertTrue(year_stated("Ancient", "Carbon has been known since ancient times."))
+        self.assertFalse(year_stated("Ancient", "The element has been known from prehistoric times."))
+
+
 if __name__ == "__main__":
     unittest.main()
