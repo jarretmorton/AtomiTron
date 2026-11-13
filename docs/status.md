@@ -60,6 +60,20 @@ They went live early, at your request, so you can review them on the iPad.
 They were verified by subagents rather than the Claude API pipeline. The
 methodology section describing this procedure is still marked for review.
 
+## Checkpoint 1: spot review (in progress)
+
+- **The sample:** 25 facts in `verification/spot-reviews/checkpoint-1-sample.json`,
+  drawn by `python -m pipeline.spot_review checkpoint-1 25` (seeded, so
+  reproducible). It's weighted toward the facts most likely to hide a
+  mistake.
+- **The worksheet:** `checkpoint-1-worksheet.pdf` (and `.html`), from
+  `python -m pipeline.spot_worksheet checkpoint-1`. It's done on paper,
+  checking each fact through AtomiTron's own source buttons on the iPad.
+- **Recording the answers:** they're typed into a private claude.ai review
+  sheet (same numbering), then written to `verification/spot-reviews/` with
+  the agreement rate. Look over any "Doesn't match" or "Can't tell" before
+  they're logged.
+
 ## Phase 2, part 2: history and uses (pilot, live for review)
 
 Prototyped with Claude Code subagents, and published early on 2026-11-12 at
