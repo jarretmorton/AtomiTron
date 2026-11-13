@@ -12,9 +12,6 @@ import { configuration, halfLifeText, percent } from '../ui/format';
 import { getTempUnit, setTempUnit, TEMP_UNITS, type TempUnit } from '../units';
 import { CLASSES } from './table';
 
-/** Elements whose atom opens in 3D when tapped. A trial: vanadium only for now. */
-const TRIAL_3D = new Set(['V']);
-
 function section(title: string, ...children: (Node | null)[]): HTMLElement {
   const s = el('section', 'card');
   s.append(el('h2', undefined, title), ...children.filter((c): c is Node => c !== null));
@@ -63,8 +60,9 @@ function atomSection(e: Element): HTMLElement {
       predicted: drawnShells?.uncertain,
       label: `Model of a ${name} atom: ${protons.value} protons and ${neutrons.value} neutrons in the nucleus${shellText}.`,
     };
-    if (TRIAL_3D.has(String(e.symbol.value)) && drawnShells) {
-      // Tap the flat atom to open the moving 3D one.
+    if (drawnShells) {
+      // Tap the flat atom to open the moving 3D one. Every element with verified
+      // shells has it; lawrencium's arrangement is disputed, so it stays flat.
       const open = el('button', 'atom-open');
       open.type = 'button';
       open.setAttribute('aria-label', `Open the 3D model of a ${name} atom`);
