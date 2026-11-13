@@ -121,11 +121,14 @@ explanations beside its numbers) go through five steps. The prompts are in
 4. **Verification (three independent agents).** Each verifier sees only the
    statements and the passages, not the drafter's excerpts or the other
    verifiers' answers. It marks each statement supported or not, with its
-   own word-for-word excerpt. *(Approved 2026-11-13)* A statement that gives
-   only some of the items the passage lists for the same thing is **not
-   supported**, even when everything it says is true. For example, it might
-   name two of a name's three origins. A partial list can mislead by
-   omission.
+   own word-for-word excerpt. *(Approved 2026-11-13)* A statement that
+   presents part of a list as the whole answer is **not supported**, even
+   when everything it says is true. For example, it might give two of a
+   name's three origins, or some of the people who discovered something. A
+   partial list can mislead by omission. Examples aren't covered by this
+   rule: "X is used to make Y", or "including Y and Z", doesn't claim to be
+   the whole list. The first API run applied the rule to examples of uses as
+   well, so its scope was narrowed the same day.
 5. **Evaluation (code).** A statement passes only if all three verifiers
    support it, and every one of their excerpts is found word for word in the
    passage. Anything else is left out and listed in the run's report.

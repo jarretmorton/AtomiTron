@@ -62,11 +62,22 @@ methodology section describing this procedure is still marked for review.
 
 ## Phase 2, part 2: history and uses (pilot, live for review)
 
-Prototyped with Claude Code subagents. **Published early on 2026-11-12, at
-your request, so the wording can be reviewed on the iPad.** The spec
-(10.1) says to switch to the Claude API pipeline before anything is
-published. That re-run is still required before a wider release, and it
-will replace these records.
+Prototyped with Claude Code subagents, and published early on 2026-11-12 at
+your request, for review on the iPad.
+
+**Re-verified through the Claude API on 2026-11-13**, in Run verification
+43385337386 (about $1.95). [PR #10](https://github.com/jarretmorton/AtomiTron/pull/10)
+publishes those records, which replaces the subagent ones and closes the
+early-publication exception.
+- **Result:** 74 of 83 claims passed.
+- **Dropped:** five uses sentences, which an over-broad reading of the new
+  partial-list rule rejected. That rule has since been narrowed for future
+  runs.
+- **Agreement with the subagent run:** 94% on identically worded claims.
+- **Earlier runs:** two that day were superseded. One ran before the
+  discovery-year check (iron's "ancient" claim passed); the other ran
+  before PR #9 was merged.
+- **API spend so far:** about $5.55.
 
 - **Pilot elements:** H, C, N, O, Na, Mg, Cl, Fe, Cu, Au.
 - **The run:** one drafter wrote 70 statements and 7 discovery years. Code
@@ -233,10 +244,10 @@ Still open from requirements section 9:
    - ~~build the Claude API version~~ Built 2026-11-13: `pipeline/agents_api.py`
      plus the "Run verification" workflow, on Claude Opus 5.5 at high effort.
      The `ANTHROPIC_API_KEY` repository secret is set.
-   - run "Run verification" (reverify-pilot), about $1–2: it re-checks the
-     pilot's statements through the API and compares them claim by claim with
-     the subagent run. Review and merge its results PR.
-   - then scale to all 118 elements
+   - ~~re-verify the pilot through the API~~ Done; PR #10 publishes it.
+   - next: scale to the remaining 108 elements: **Run verification →
+     draft-and-verify → `remaining`** (about $20–25), after the partial-list
+     scope fix is merged
 3. **Checkpoint 1:** a human spot review of about 25 sampled facts, logged
    in `verification/spot-reviews/`.
 

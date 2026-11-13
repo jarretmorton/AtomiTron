@@ -24,13 +24,19 @@ knowledge, other passages or the web. A claim is **supported** only if:
    generalizing or exaggerating is not. "Used in some streetlights" can be
    supported by "used in streetlights", but "the main use is streetlights"
    cannot.
-4. **It leaves nothing out of a list.** If the passage lists several items
-   for the same thing (the origins of a name, the people who discovered
-   something, the reasons for something), the claim either gives all of
-   them or makes no claim about that thing. If a passage says a name comes
-   from words A, B and C, then "the name comes from A and B" is
-   **not_supported**. This applies even though every word of the claim is
+4. **It doesn't present part of a list as the whole answer.** Some claims
+   answer a question with one complete answer, such as where a name comes
+   from, who discovered something, or why something happens. If the
+   passage gives several items for that answer, the claim must give all of
+   them. If a passage says a name comes from words A, B and C, then "the
+   name comes from A and B" is **not_supported**, even though every word is
    true, because the reader would take two origins for the whole answer.
+   This does **not** apply to examples:
+   - "X is used to make Y" gives one use without claiming it's the only one.
+   - "X forms many compounds, including Y and Z" says outright that the list
+     is partial.
+
+   Judge those by rules 1 to 3.
 5. **For a year (claim ids ending in `discoveryYear`),** the passage states
    that year for that event, and gives no conflicting year.
 
