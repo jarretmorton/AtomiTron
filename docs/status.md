@@ -87,7 +87,7 @@ will replace these records.
   two-sentence claim, that may cover only the first sentence, although the
   verifier judged both.
 
-## Trial: a moving 3D atom (vanadium only)
+## The moving 3D atom (all elements with shells)
 
 Live: merged through [PR #3](https://github.com/jarretmorton/AtomiTron/pull/3)
 and [PR #4](https://github.com/jarretmorton/AtomiTron/pull/4) on 2026-11-11,
@@ -110,9 +110,11 @@ the same shell model: [app/src/ui/atom3d.ts](../app/src/ui/atom3d.ts).
   zoom couldn't be exercised headlessly; check it on the iPad.
 - Checked in headless Chromium at iPad mini size, both orientations, light
   and dark. **Not yet seen on the real iPad.**
-- To extend it, add symbols to `TRIAL_3D` in
-  [app/src/views/element.ts](../app/src/views/element.ts). Heavy elements
-  (seven shells, about 300 nucleons) haven't been looked at yet.
+- **Rolled out to every element with verified shells** on 2026-11-12, after
+  you tried the vanadium trial on the iPad. Lawrencium stays flat, because
+  its shell arrangement is disputed. Oganesson (7 shells, 21 rings, 295
+  nucleons) was checked in a headless browser: it's dense but renders. Worth
+  a spin on the iPad to check it stays smooth.
 
 ## What was built in phase 2
 
@@ -207,8 +209,6 @@ Still open from requirements section 9:
 - **The explanations** in `concepts.ts` were checked against their LibreTexts
   pages by hand. They get formal verification records in the text-facts
   step.
-- **PubChem section anchors** in the citation links (`#section=Melting-Point`)
-  follow PubChem's pattern but haven't been checked in a browser yet.
 - **Approximate and qualified values** (deferred; see above).
 - **Phase 3:** compound and reaction data shapes, a derivation rule for
   reaction enthalpy (Hess's law over NIST inputs), and the hazard "no
@@ -225,7 +225,8 @@ Still open from requirements section 9:
      portrait
    - a few element pages
    - the temperature-unit buttons
-   - that citation links open PubChem at the right section
+   - ~~that citation links open PubChem at the right section~~ Confirmed
+     working on the iPad, 2026-11-12.
 2. **Phase 2, part 2: history and uses.** The pilot of 10 elements is live
    for review (see above). Next:
    - review the pilot's wording
