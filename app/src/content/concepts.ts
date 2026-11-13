@@ -1,8 +1,9 @@
 // Short explanations shown beside the numbers on an element page ("all the
 // table numbers explained", spec 3.2). Each one is a plain-language statement
-// of what its cited LibreTexts page says. They were checked against the pages
-// by hand on 2026-11-11, and they get formal verification records in the
-// text-facts step. Tests check every URL is on the whitelist.
+// of what its cited LibreTexts page says, and each has a verification record
+// in verification/records/concepts.json from three independent verifiers
+// (pipeline/text_facts.py). A test fails the build if any sentence here lacks
+// a passing record for its exact text and URL.
 
 const LT = 'https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)';
 const PROTONS = `${LT}/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons`;
@@ -33,11 +34,11 @@ export const CONCEPTS = {
     url: ISOTOPES,
   },
   shells: {
-    text: 'Electrons sit in shells around the nucleus. Orbitals with the same principal quantum number form one shell.',
+    text: 'Orbitals that have the same principal quantum number form a shell, and each shell is divided into subshells.',
     url: ORBITALS,
   },
   valence: {
-    text: 'Valence electrons are the ones in the outermost shell. They do most of the work when atoms combine.',
+    text: "Valence electrons are the electrons in the highest-numbered shell, plus any in the last unfilled subshell. They largely control an atom's chemistry.",
     url: VALENCE,
   },
 } satisfies Record<string, Concept>;

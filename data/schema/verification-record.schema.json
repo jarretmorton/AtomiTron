@@ -32,7 +32,7 @@
       "additionalProperties": false,
       "properties": {
         "entity": {
-          "description": "Entity ID, or an open question ID (oq-...).",
+          "description": "Entity ID, an open question ID (oq-...), or an explanation sentence (concept:<key>, app/src/content/concepts.ts).",
           "anyOf": [
             {
               "$ref": "urn:atomitron:schema:fact#/$defs/entityId"
@@ -40,6 +40,10 @@
             {
               "type": "string",
               "pattern": "^oq-[a-z0-9]+(-[a-z0-9]+)*$"
+            },
+            {
+              "type": "string",
+              "pattern": "^concept:[A-Za-z]+$"
             }
           ]
         },

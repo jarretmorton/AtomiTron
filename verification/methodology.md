@@ -96,6 +96,41 @@ The method used for each fact is recorded in its verification record.
   neutron count, is computed by a named rule and recomputed by the build on
   every run (section 7).
 
+### How agent-checked text works *(added with the pilot, 2026-11-12, for review)*
+
+Written statements (an element's history and uses, and the short
+explanations beside its numbers) go through five steps. The prompts are in
+[pipeline/prompts/](../pipeline/prompts/), and the code is
+[pipeline/text_facts.py](../pipeline/text_facts.py).
+
+1. **Sources (code).** The History and Uses passages are taken from each
+   element's PubChem page, and the LibreTexts pages from the explanations'
+   links. Full passages stay in a local cache. Only short excerpts are ever
+   published.
+2. **Drafting (one agent).** Short plain-language statements are written,
+   each resting on a single cited passage, with a word-for-word excerpt of at
+   most 25 words. A discovery year is given only if the passages agree on it.
+3. **Code checks before verification.** A statement is sent back without
+   verification if:
+   - its passage isn't a History or Uses passage for that element
+   - its excerpt isn't word for word in the passage
+   - it fails the safety screen: no numbers in uses, only stated years in
+     history, at most 25 words, and no words that signal operational or
+     hazardous content (weapons, poisons, quantities, "heat to", "mix with",
+     and so on)
+4. **Verification (three independent agents).** Each verifier sees only the
+   statements and the passages, not the drafter's excerpts or the other
+   verifiers' answers. It marks each statement supported or not, with its
+   own word-for-word excerpt.
+5. **Evaluation (code).** A statement passes only if all three verifiers
+   support it, and every one of their excerpts is found word for word in the
+   passage. Anything else is left out and listed in the run's report.
+
+The build gate then requires three agreeing runs and evidence on every
+agent-checked record, and it repeats the number screen on the shipped text.
+Each run's drafts, claims, verdicts and report are kept in
+`verification/agent-runs/`.
+
 ## 4. What counts as a match
 
 | Kind of value | Match rule |

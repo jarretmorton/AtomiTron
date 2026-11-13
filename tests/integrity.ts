@@ -79,6 +79,16 @@ function checkElement(e: Element, at: string, errors: string[]): void {
     if (f && f.derivation?.rule !== rule) errors.push(`${at}: ${field} must be derived with rule ${rule}`);
   }
 
+  // Safety screen on text (spec 4, 10.5): no numbers in uses; only years in history.
+  for (const [i, f] of e.uses.entries()) {
+    if (/\d/.test(String(f.value))) errors.push(`${at}: uses[${i}] contains a number`);
+  }
+  for (const [i, f] of (e.discovery?.story ?? []).entries()) {
+    if (/\d/.test(String(f.value).replace(/\b1\d{3}\b|\b20\d{2}\b/g, ''))) {
+      errors.push(`${at}: discovery.story[${i}] contains a number that isn't a year`);
+    }
+  }
+
   // The atom shows the most abundant natural isotope, or, with none in
   // nature, the longest-lived isotope (methodology section 8).
   const natural = e.isotopes.filter((i) => i.abundance);
@@ -163,6 +173,12 @@ export function checkData(verifiedDir: string, recordsDir: string, ajv = makeAjv
       if (record.sourceUrl !== fact.source.url) errors.push(`${at}: source URL differs from record "${id}"`);
       if (!isDeepStrictEqual(record.claimedValue, fact.value) || record.unit !== fact.unit) {
         errors.push(`${at}: value or unit differs from what record "${id}" verified`);
+      }
+      if (record.method === 'agent') {
+        // Agent-checked text: all independent runs must agree, with evidence (methodology section 3).
+        if (record.consistency.runs < 3 || record.consistency.agreeing !== record.consistency.runs || !record.evidence) {
+          errors.push(`${at}: agent record "${id}" needs 3 or more runs, all agreeing, with evidence`);
+        }
       }
       if ((record.method === 'derive') !== Boolean(fact.derivation)) {
         errors.push(`${at}: record "${id}" method "${record.method}" doesn't match whether the fact is derived`);

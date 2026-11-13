@@ -1,9 +1,9 @@
 # AtomiTron status
 
-*Updated 2026-11-11. Phase 1 is live. Phase 2 (part 1) is in a pull request:
-the periodic table and element pages for all 118 elements, with every fact
-verified and cited. Merging it updates the live site. The history and uses
-text comes in part 2.*
+*Updated 2026-11-12. Phase 1 and phase 2 part 1 are live: the periodic
+table and element pages for all 118 elements, with every fact verified and
+cited, plus a 3D atom trial on the vanadium page. Next: the history and uses
+text (part 2).*
 
 ## Where things stand
 
@@ -13,9 +13,9 @@ text comes in part 2.*
 Safari. The repo is public, and Pages deploys through GitHub Actions on every
 push to `main`.
 
-**Phase 2, part 1 (elements): in a pull request** from
-`claude/phase-2-elements`. Merging it deploys the periodic table and element
-pages.
+**Phase 2, part 1 (elements): live.** Merged through
+[PR #2](https://github.com/jarretmorton/AtomiTron/pull/2) on 2026-11-11, and
+deployed successfully.
 
 - **Data:** `python -m pipeline.elements` shipped all 118 elements, 3,077
   facts, each with a passing record. The values left out are each listed
@@ -31,12 +31,43 @@ pages.
   - a citation chip on every value
 - **Checked in headless Edge** at iPad mini size, portrait and landscape,
   light and dark. **Not yet seen on the real iPad.**
-- **Tests:** `npm test` 122 of 122 and the Python pipeline 24 of 24 pass.
-  Typecheck and build are clean.
+- **Tests:** on current `main`, `npm test` passes 125 of 125 and the Python
+  pipeline 24 of 24. Typecheck and build are clean.
+- **Local test runs on Windows:** run them from `C:/Users/...` (uppercase
+  drive letter). From a `c:/...` path, vitest loads itself twice and every
+  suite fails with "Cannot read properties of undefined (reading 'config')".
+  CI isn't affected.
+
+## Explanations corrected and verified (2026-11-12)
+
+The six short explanations beside an element's numbers
+([app/src/content/concepts.ts](../app/src/content/concepts.ts)) now each
+have a verification record in `verification/records/concepts.json`. Three
+independent verifiers (Claude Code subagents) passed every one. A test fails
+the build if any sentence lacks a passing record for its exact text and
+link.
+
+Two of the original sentences failed, because they said more than their
+LibreTexts pages do:
+- **Shells:** now "Orbitals that have the same principal quantum number form
+  a shell, and each shell is divided into subshells."
+- **Valence:** now "Valence electrons are the electrons in the
+  highest-numbered shell, plus any in the last unfilled subshell. They
+  largely control an atom's chemistry."
+
+They went live early, at your request, so you can review them on the iPad.
+They were verified by subagents rather than the Claude API pipeline. The
+methodology section describing this procedure is still marked for review.
+
+The history and uses pilot for 10 elements is on branch
+`claude/phase-2-text` and isn't published. It waits for the Claude API
+pipeline.
 
 ## Trial: a moving 3D atom (vanadium only)
 
-On branch `ccr-f1546f87-6q2x1f`, not merged. On the vanadium page, tapping the
+Live: merged through [PR #3](https://github.com/jarretmorton/AtomiTron/pull/3)
+and [PR #4](https://github.com/jarretmorton/AtomiTron/pull/4) on 2026-11-11,
+from a separate Claude Code session. On the vanadium page, tapping the
 flat atom (it now has a "Tap for 3D" label) opens a full-screen 3D version of
 the same shell model: [app/src/ui/atom3d.ts](../app/src/ui/atom3d.ts).
 
@@ -51,7 +82,8 @@ the same shell model: [app/src/ui/atom3d.ts](../app/src/ui/atom3d.ts).
   (asked for 2026-11-11), all solid. Neutrons were hollow rings so they
   could be told from protons without color; solid blue was asked for, so
   red versus blue (plus the labelled legend) is now the only cue. Electrons
-  have a darker edge in light mode because yellow is faint on paper. Pinch zoom couldn't be exercised headlessly; check it on the iPad.
+  have a darker edge in light mode because yellow is faint on paper. Pinch
+  zoom couldn't be exercised headlessly; check it on the iPad.
 - Checked in headless Chromium at iPad mini size, both orientations, light
   and dark. **Not yet seen on the real iPad.**
 - To extend it, add symbols to `TRIAL_3D` in
@@ -162,8 +194,9 @@ Still open from requirements section 9:
 
 ## Next steps
 
-1. **Review and merge the phase 2 PR.** Merging deploys it. Then check it on
-   the iPad mini:
+1. ~~Review and merge the phase 2 PR.~~ Merged and live 2026-11-11.
+   **Still to do: check it on the iPad mini**, along with the 3D atom trial
+   on vanadium (pinch zoom, flick to spin, the − / + buttons):
    - the table in both orientations, including the sideways swipe in
      portrait
    - a few element pages
