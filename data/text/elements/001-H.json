@@ -8,7 +8,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "IUPAC CIAAW"
         },
         "verification": {
@@ -22,7 +22,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "IUPAC CIAAW"
         },
         "verification": {
@@ -36,7 +36,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "Jefferson Lab"
         },
         "verification": {
@@ -53,7 +53,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Los Alamos National Laboratory"
       },
       "verification": {
@@ -67,7 +67,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -81,7 +81,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Los Alamos National Laboratory"
       },
       "verification": {
@@ -95,7 +95,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -119,13 +119,13 @@
       "retrievedValue": "The name derives from the Greek hydro for \"water\" and genes for \"forming\" because it burned in air to form water.",
       "evidence": "The name derives from the Greek hydro for \"water\" and genes for \"forming\" because it burned in air to form water.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "H.discovery.story.1",
@@ -141,13 +141,13 @@
       "retrievedValue": "Hydrogen was discovered by the English physicist Henry Cavendish in 1766.",
       "evidence": "Hydrogen was discovered by the English physicist Henry Cavendish in 1766.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "H.discovery.story.2",
@@ -163,13 +163,13 @@
       "retrievedValue": "Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids.",
       "evidence": "Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "H.uses.0",
@@ -185,13 +185,13 @@
       "retrievedValue": "Other uses include rocket fuel, welding, producing hydrochloric acid, reducing metallic ores, and filling balloons.",
       "evidence": "Other uses include rocket fuel, welding, producing hydrochloric acid, reducing metallic ores, and filling balloons.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "H.uses.1",
@@ -207,13 +207,13 @@
       "retrievedValue": "Hydrogen is also added to fats and oils, such as peanut oil, through a process called hydrogenation.",
       "evidence": "Hydrogen is also added to fats and oils, such as peanut oil, through a process called hydrogenation.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "H.uses.2",
@@ -229,13 +229,13 @@
       "retrievedValue": "The hydrogen fuel cell is a developing technology that will allow great amounts of electrical power to be obtained using a source of hydrogen gas.",
       "evidence": "The hydrogen fuel cell is a developing technology that will allow great amounts of electrical power to be obtained using a source of hydrogen gas.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "H.uses.3",
@@ -251,13 +251,13 @@
       "retrievedValue": "Liquid hydrogen is used in the study of superconductors",
       "evidence": "Liquid hydrogen is used in the study of superconductors",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     }
   ]
 }

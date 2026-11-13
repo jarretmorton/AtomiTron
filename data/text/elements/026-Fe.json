@@ -8,7 +8,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "IUPAC CIAAW"
         },
         "verification": {
@@ -22,7 +22,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "IUPAC CIAAW"
         },
         "verification": {
@@ -36,7 +36,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "Los Alamos National Laboratory"
         },
         "verification": {
@@ -53,7 +53,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -67,7 +67,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -81,7 +81,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -95,7 +95,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -119,13 +119,13 @@
       "retrievedValue": "The name derives from the Anglo-Saxon iron of unknown origin.",
       "evidence": "The name derives from the Anglo-Saxon iron of unknown origin.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Fe.discovery.story.1",
@@ -141,13 +141,13 @@
       "retrievedValue": "The symbol Fe is derived from the Latin ferrum for \"firmness\".",
       "evidence": "The symbol Fe is derived from the Latin ferrum for \"firmness\".",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Fe.discovery.story.2",
@@ -163,13 +163,13 @@
       "retrievedValue": "Iron is mentioned numerous times in the Old Testament of the Bible.",
       "evidence": "Iron is mentioned numerous times in the Old Testament of the Bible.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Fe.uses.0",
@@ -185,13 +185,13 @@
       "retrievedValue": "Huge amounts of iron are used to make steel, an alloy of iron and carbon.",
       "evidence": "Huge amounts of iron are used to make steel, an alloy of iron and carbon.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Fe.uses.1",
@@ -207,13 +207,13 @@
       "retrievedValue": "Steel is used to make paper clips, skyscrapers and everything in between.",
       "evidence": "Steel is used to make paper clips, skyscrapers and everything in between.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Fe.uses.2",
@@ -229,13 +229,13 @@
       "retrievedValue": "Small amounts of chromium improves durability and prevents rust (stainless steel)",
       "evidence": "Small amounts of chromium improves durability and prevents rust (stainless steel)",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Fe.uses.3",
@@ -251,13 +251,13 @@
       "retrievedValue": "Iron sulfate (FeSO4) is used to treat the blood disease anemia.",
       "evidence": "Iron sulfate (FeSO4) is used to treat the blood disease anemia.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     }
   ]
 }

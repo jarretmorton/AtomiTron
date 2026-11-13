@@ -429,7 +429,7 @@
           "uncertain": false,
           "source": {
             "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
-            "retrieved": "2026-11-10",
+            "retrieved": "2026-11-13",
             "via": "Jefferson Lab"
           },
           "verification": {
@@ -443,40 +443,12 @@
           "uncertain": false,
           "source": {
             "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
-            "retrieved": "2026-11-10",
+            "retrieved": "2026-11-13",
             "via": "Jefferson Lab"
           },
           "verification": {
             "status": "pass",
             "recordId": "Cl.uses.1"
-          }
-        },
-        {
-          "value": "Sodium chloride, a chlorine compound commonly known as table salt, is used to season food.",
-          "unit": null,
-          "uncertain": false,
-          "source": {
-            "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
-            "retrieved": "2026-11-10",
-            "via": "Jefferson Lab"
-          },
-          "verification": {
-            "status": "pass",
-            "recordId": "Cl.uses.2"
-          }
-        },
-        {
-          "value": "Chlorine is used in the production of paper products, textiles and medicines.",
-          "unit": null,
-          "uncertain": false,
-          "source": {
-            "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
-            "retrieved": "2026-11-10",
-            "via": "Los Alamos National Laboratory"
-          },
-          "verification": {
-            "status": "pass",
-            "recordId": "Cl.uses.3"
           }
         }
       ],
@@ -488,7 +460,7 @@
             "uncertain": false,
             "source": {
               "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
-              "retrieved": "2026-11-10",
+              "retrieved": "2026-11-13",
               "via": "IUPAC CIAAW"
             },
             "verification": {
@@ -502,7 +474,7 @@
             "uncertain": false,
             "source": {
               "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
-              "retrieved": "2026-11-10",
+              "retrieved": "2026-11-13",
               "via": "IUPAC CIAAW"
             },
             "verification": {
@@ -516,7 +488,7 @@
             "uncertain": false,
             "source": {
               "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
-              "retrieved": "2026-11-10",
+              "retrieved": "2026-11-13",
               "via": "IUPAC CIAAW"
             },
             "verification": {
@@ -531,7 +503,7 @@
           "uncertain": false,
           "source": {
             "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
-            "retrieved": "2026-11-10",
+            "retrieved": "2026-11-13",
             "via": "IUPAC CIAAW"
           },
           "verification": {

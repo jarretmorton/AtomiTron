@@ -550,16 +550,16 @@
       "unit": null,
       "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/11#section=History",
       "upstream": "IUPAC CIAAW",
-      "retrievedValue": "Sodium was discovered in 1807 by the English chemist Humphry Davy from electrolysis of caustic soda (NaOH).",
-      "evidence": "Sodium was discovered in 1807 by the English chemist Humphry Davy from electrolysis of caustic soda (NaOH).",
+      "retrievedValue": "Sodium was discovered in 1807 by the English chemist Humphry Davy",
+      "evidence": "Sodium was discovered in 1807 by the English chemist Humphry Davy",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Na.discovery.story.0",
@@ -575,13 +575,13 @@
       "retrievedValue": "Sodium was discovered in 1807 by the English chemist Humphry Davy",
       "evidence": "Sodium was discovered in 1807 by the English chemist Humphry Davy",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Na.discovery.story.1",
@@ -597,13 +597,13 @@
       "retrievedValue": "The name derives from the English soda and Latin sodanum for \"headache remedy\".",
       "evidence": "The name derives from the English soda and Latin sodanum for \"headache remedy\".",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Na.discovery.story.2",
@@ -619,13 +619,13 @@
       "retrievedValue": "The symbol Na derives from the Latin natrium",
       "evidence": "The symbol Na derives from the Latin natrium",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Na.uses.0",
@@ -641,41 +641,19 @@
       "retrievedValue": "Sodium vapor is used in streetlights and produces a brilliant yellow light.",
       "evidence": "Sodium vapor is used in streetlights and produces a brilliant yellow light.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Na.uses.1",
       "subject": {
         "entity": "element:Na",
         "field": "/uses/1"
-      },
-      "method": "agent",
-      "claimedValue": "Sodium forms many useful compounds, including table salt and baking soda.",
-      "unit": null,
-      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/11#section=Uses",
-      "upstream": "Jefferson Lab",
-      "retrievedValue": "Sodium also forms many useful compounds. Some of the most common are: table salt (NaCl), soda ash (Na2CO3), baking soda (NaHCO3)",
-      "evidence": "Sodium also forms many useful compounds. Some of the most common are: table salt (NaCl), soda ash (Na2CO3), baking soda (NaHCO3)",
-      "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
-      "consistency": {
-        "runs": 3,
-        "agreeing": 3
-      },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
-    },
-    {
-      "id": "Na.uses.2",
-      "subject": {
-        "entity": "element:Na",
-        "field": "/uses/2"
       },
       "method": "agent",
       "claimedValue": "Liquid sodium has been used as a coolant for nuclear reactors.",
@@ -685,35 +663,13 @@
       "retrievedValue": "Liquid sodium has been used as a coolant for nuclear reactors.",
       "evidence": "Liquid sodium has been used as a coolant for nuclear reactors.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
-    },
-    {
-      "id": "Na.uses.3",
-      "subject": {
-        "entity": "element:Na",
-        "field": "/uses/3"
-      },
-      "method": "agent",
-      "claimedValue": "Sodium is used in the production of titanium.",
-      "unit": null,
-      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/11#section=Uses",
-      "upstream": "Jefferson Lab",
-      "retrievedValue": "Sodium is used in the production of titanium",
-      "evidence": "Sodium is used in the production of titanium",
-      "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
-      "consistency": {
-        "runs": 3,
-        "agreeing": 3
-      },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     }
   ]
 }

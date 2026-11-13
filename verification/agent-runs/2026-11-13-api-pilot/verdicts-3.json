@@ -1,0 +1,336 @@
+{
+  "claims": {
+    "H.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek hydro for \"water\" and genes for \"forming\" because it burned in air to form water."
+    },
+    "H.story.1": {
+      "verdict": "supported",
+      "excerpt": "Hydrogen was discovered by the English physicist Henry Cavendish in 1766."
+    },
+    "H.story.2": {
+      "verdict": "supported",
+      "excerpt": "Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids."
+    },
+    "H.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Other uses include rocket fuel, welding, producing hydrochloric acid, reducing metallic ores, and filling balloons."
+    },
+    "H.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Hydrogen is also added to fats and oils, such as peanut oil, through a process called hydrogenation."
+    },
+    "H.uses.2": {
+      "verdict": "supported",
+      "excerpt": "The hydrogen fuel cell is a developing technology that will allow great amounts of electrical power to be obtained using a source of hydrogen gas."
+    },
+    "H.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Liquid hydrogen is used in the study of superconductors"
+    },
+    "C.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Carbon, the sixth most abundant element in the universe, has been known since ancient times."
+    },
+    "C.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin carbo for \"charcoal\"."
+    },
+    "C.story.1": {
+      "verdict": "supported",
+      "excerpt": "It was known in prehistoric times in the form of charcoal and soot."
+    },
+    "C.story.2": {
+      "verdict": "supported",
+      "excerpt": "In 1797, the English chemist Smithson Tennant proved that diamond is pure carbon."
+    },
+    "C.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Although commonly called lead, the black material used in pencils is actually graphite."
+    },
+    "C.uses.1": {
+      "verdict": "supported",
+      "excerpt": "This black soot, also known as lampblack, gas black, channel black or carbon black, is used to make inks, paints and rubber products."
+    },
+    "C.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Graphite, one of the softest materials known, is a form of carbon that is primarily used as a lubricant."
+    },
+    "C.uses.3": {
+      "verdict": "supported",
+      "excerpt": "is used to find the age of formerly living things through a process known as radiocarbon dating."
+    },
+    "N.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Nitrogen was discovered by the Scottish physician and chemist Daniel Rutherford in 1772."
+    },
+    "N.story.0": {
+      "verdict": "supported",
+      "excerpt": "Nitrogen was discovered by the Scottish physician and chemist Daniel Rutherford in 1772."
+    },
+    "N.story.1": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin nitrum and Greek nitron for \"native soda\" and genes for \"forming\"."
+    },
+    "N.story.2": {
+      "verdict": "supported",
+      "excerpt": "He removed oxygen and carbon dioxide from air and showed that the residual gas would not support combustion or living organisms."
+    },
+    "N.uses.0": {
+      "verdict": "supported",
+      "excerpt": "The largest use of nitrogen is for the production of ammonia (NH3)."
+    },
+    "N.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Liquid nitrogen is an inexpensive cryogenic liquid used for refrigeration"
+    },
+    "N.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Liquid nitrogen is an inexpensive cryogenic liquid used for refrigeration, preservation of biological samples"
+    },
+    "N.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Nitrogen gas is largely inert and is used as a protective shield in the semiconductor industry"
+    },
+    "O.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek oxys for \"acid\" and genes for \"forming\""
+    },
+    "O.story.1": {
+      "verdict": "supported",
+      "excerpt": "The name oxygen was created by Antoine Lavoisier who incorrectly believed that oxygen was necessary to form all acids."
+    },
+    "O.story.2": {
+      "verdict": "supported",
+      "excerpt": "Joseph Priestley and Carl Wilhelm Scheele both independently discovered oxygen, but Priestly is usually given credit for the discovery."
+    },
+    "O.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Plants and animals rely on oxygen for respiration."
+    },
+    "O.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Hospitals frequently prescribe oxygen for patients with respiratory ailments."
+    },
+    "O.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Impurities in molten pig iron are burned away with streams of high pressure oxygen to produce steel."
+    },
+    "O.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Oxygen can also be combined with acetylene (C2H2) to produce an extremely hot flame used for welding."
+    },
+    "Na.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Sodium was discovered in 1807 by the English chemist Humphry Davy"
+    },
+    "Na.story.0": {
+      "verdict": "supported",
+      "excerpt": "Sodium was discovered in 1807 by the English chemist Humphry Davy"
+    },
+    "Na.story.1": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the English soda and Latin sodanum for \"headache remedy\"."
+    },
+    "Na.story.2": {
+      "verdict": "supported",
+      "excerpt": "The symbol Na derives from the Latin natrium"
+    },
+    "Na.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Sodium vapor is used in streetlights and produces a brilliant yellow light."
+    },
+    "Na.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Sodium also forms many useful compounds. Some of the most common are: table salt (NaCl), soda ash (Na2CO3), baking soda (NaHCO3)"
+    },
+    "Na.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Liquid sodium has been used as a coolant for nuclear reactors."
+    },
+    "Na.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Sodium is used in the production of titanium"
+    },
+    "Mg.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from Magnesia, a district in the north-eastern region of Greece called Thessalia."
+    },
+    "Mg.story.1": {
+      "verdict": "supported",
+      "excerpt": "The Scottish chemist Joseph Black recognized it as a separate element in 1755."
+    },
+    "Mg.story.2": {
+      "verdict": "supported",
+      "excerpt": "In 1808, the English chemist Humphry Davy obtained the impure metal"
+    },
+    "Mg.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Cameras, horseshoes, baseball catchers' masks and snowshoes are other items that are made from magnesium alloys."
+    },
+    "Mg.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Magnesium oxide is used in some antacids"
+    },
+    "Mg.uses.2": {
+      "verdict": "supported",
+      "excerpt": "A thin film of magnesium fluoride is applied to optical lenses to help reduce glare and reflections."
+    },
+    "Mg.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Magnesium carbonate is used to make some types of paints and inks and is added to table salt to prevent caking."
+    },
+    "Cl.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774."
+    },
+    "Cl.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek chloros for \"pale green\" or \"greenish yellow\" colour of the element."
+    },
+    "Cl.story.1": {
+      "verdict": "supported",
+      "excerpt": "It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774."
+    },
+    "Cl.story.2": {
+      "verdict": "supported",
+      "excerpt": "In 1810, the English chemist Humphry Davy proved it was an element."
+    },
+    "Cl.uses.0": {
+      "verdict": "supported",
+      "excerpt": "is used to make drinking water safe and to treat swimming pools"
+    },
+    "Cl.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Chlorine is commonly used as an antiseptic"
+    },
+    "Cl.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Sodium chloride, commonly known as table salt, is used to season food"
+    },
+    "Cl.uses.3": {
+      "verdict": "supported",
+      "excerpt": "It is also extensively used in the production of paper products, dyestuffs, textiles, petroleum products, medicines, antiseptics"
+    },
+    "Fe.discoveryYear": {
+      "verdict": "not_supported",
+      "reason": "The passage says iron has been known from prehistoric times, which is not the same as ancient times, so the rewording changes the meaning."
+    },
+    "Fe.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Anglo-Saxon iron of unknown origin."
+    },
+    "Fe.story.1": {
+      "verdict": "supported",
+      "excerpt": "The symbol Fe is derived from the Latin ferrum for \"firmness\"."
+    },
+    "Fe.story.2": {
+      "verdict": "supported",
+      "excerpt": "Iron is mentioned numerous times in the Old Testament of the Bible."
+    },
+    "Fe.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Huge amounts of iron are used to make steel, an alloy of iron and carbon."
+    },
+    "Fe.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Steel is used to make paper clips, skyscrapers and everything in between."
+    },
+    "Fe.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Small amounts of chromium improves durability and prevents rust (stainless steel)"
+    },
+    "Fe.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Iron sulfate (FeSO4) is used to treat the blood disease anemia."
+    },
+    "Cu.discoveryYear": {
+      "verdict": "not_supported",
+      "reason": "The passage says 'prehistoric times', and changing this to the broader 'ancient times' generalizes the passage's wording."
+    },
+    "Cu.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin cuprum for Cyprus, the island where the Romans first obtained copper."
+    },
+    "Cu.story.1": {
+      "verdict": "supported",
+      "excerpt": "The symbol Cu also comes from the Latin cuprum."
+    },
+    "Cu.story.2": {
+      "verdict": "supported",
+      "excerpt": "The element has been known since prehistoric times."
+    },
+    "Cu.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Used in large amounts by the electrical industry in the form of wire"
+    },
+    "Cu.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Since it resists corrosion from the air, moisture and seawater, copper has been widely used in coins."
+    },
+    "Cu.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Copper is also used to make water pipes and jewelry, as well as other items."
+    },
+    "Cu.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Today, brass is also used in some musical instruments, screws and other hardware that must resist corrosion."
+    },
+    "Au.discoveryYear": {
+      "verdict": "not_supported",
+      "reason": "The passage says gold was known in 'prehistoric times', and the claim swaps this for the different, vaguer era label 'ancient times'."
+    },
+    "Au.story.0": {
+      "verdict": "not_supported",
+      "reason": "The passage gives three name origins, and the claim leaves out the Anglo-Saxon 'gold' of unknown origin."
+    },
+    "Au.story.1": {
+      "verdict": "supported",
+      "excerpt": "The symbol Au derives from the Latin aurum, for Aurora, the goddess of dawn."
+    },
+    "Au.story.2": {
+      "verdict": "supported",
+      "excerpt": "Gold was known and highly valued in prehistoric times."
+    },
+    "Au.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Gold alloys are used to make jewelry, decorative items, dental fillings and coins."
+    },
+    "Au.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Thin sheets of gold, known as gold leaf, are primarily used in arts and crafts for gilding."
+    },
+    "Au.uses.2": {
+      "verdict": "supported",
+      "excerpt": "so it can be used to make electrical connectors and printed circuit boards."
+    },
+    "Au.uses.3": {
+      "verdict": "supported",
+      "excerpt": "It is used for coating certain space satellites, as it is a good reflector of infrared and is inert."
+    },
+    "concept.atomicNumber": {
+      "verdict": "supported",
+      "excerpt": "All atoms of an element have the same number of protons, and every element has a different number of protons in its atoms."
+    },
+    "concept.electrons": {
+      "verdict": "supported",
+      "excerpt": "since neutral atoms have to have one electron for every proton"
+    },
+    "concept.neutrons": {
+      "verdict": "supported",
+      "excerpt": "To find the number of neutrons, subtract the number of protons from the mass number."
+    },
+    "concept.isotopes": {
+      "verdict": "supported",
+      "excerpt": "Atoms of the same element that differ in their numbers of neutrons are called isotopes"
+    },
+    "concept.shells": {
+      "verdict": "supported",
+      "excerpt": "Orbitals that have the same value of the principal quantum number form a shell . Orbitals within a shell are divided into subshells"
+    },
+    "concept.valence": {
+      "verdict": "supported",
+      "excerpt": "The electrons in the highest-numbered shell, plus any electrons in the last unfilled subshell, are called valence electrons"
+    }
+  }
+}

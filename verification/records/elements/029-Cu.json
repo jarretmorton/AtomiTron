@@ -634,13 +634,13 @@
       "retrievedValue": "The name derives from the Latin cuprum for Cyprus, the island where the Romans first obtained copper.",
       "evidence": "The name derives from the Latin cuprum for Cyprus, the island where the Romans first obtained copper.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Cu.discovery.story.1",
@@ -656,13 +656,13 @@
       "retrievedValue": "The symbol Cu also comes from the Latin cuprum.",
       "evidence": "The symbol Cu also comes from the Latin cuprum.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Cu.discovery.story.2",
@@ -678,13 +678,13 @@
       "retrievedValue": "The element has been known since prehistoric times.",
       "evidence": "The element has been known since prehistoric times.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Cu.uses.0",
@@ -700,13 +700,13 @@
       "retrievedValue": "Used in large amounts by the electrical industry in the form of wire",
       "evidence": "Used in large amounts by the electrical industry in the form of wire",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Cu.uses.1",
@@ -722,13 +722,13 @@
       "retrievedValue": "Since it resists corrosion from the air, moisture and seawater, copper has been widely used in coins.",
       "evidence": "Since it resists corrosion from the air, moisture and seawater, copper has been widely used in coins.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Cu.uses.2",
@@ -741,38 +741,16 @@
       "unit": null,
       "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=Uses",
       "upstream": "Jefferson Lab",
-      "retrievedValue": "Copper is also used to make water pipes and jewelry",
-      "evidence": "Copper is also used to make water pipes and jewelry",
+      "retrievedValue": "Copper is also used to make water pipes and jewelry, as well as other items.",
+      "evidence": "Copper is also used to make water pipes and jewelry, as well as other items.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
-    },
-    {
-      "id": "Cu.uses.3",
-      "subject": {
-        "entity": "element:Cu",
-        "field": "/uses/3"
-      },
-      "method": "agent",
-      "claimedValue": "Brass, an alloy of copper, is used today in some musical instruments and screws.",
-      "unit": null,
-      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=Uses",
-      "upstream": "Jefferson Lab",
-      "retrievedValue": "Today, brass is also used in some musical instruments, screws and other hardware that must resist corrosion.",
-      "evidence": "Today, brass is also used in some musical instruments, screws and other hardware that must resist corrosion.",
-      "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
-      "consistency": {
-        "runs": 3,
-        "agreeing": 3
-      },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     }
   ]
 }

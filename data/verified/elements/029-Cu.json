@@ -400,7 +400,7 @@
           "uncertain": false,
           "source": {
             "url": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=Uses",
-            "retrieved": "2026-11-10",
+            "retrieved": "2026-11-13",
             "via": "Jefferson Lab"
           },
           "verification": {
@@ -414,7 +414,7 @@
           "uncertain": false,
           "source": {
             "url": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=Uses",
-            "retrieved": "2026-11-10",
+            "retrieved": "2026-11-13",
             "via": "Jefferson Lab"
           },
           "verification": {
@@ -428,26 +428,12 @@
           "uncertain": false,
           "source": {
             "url": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=Uses",
-            "retrieved": "2026-11-10",
+            "retrieved": "2026-11-13",
             "via": "Jefferson Lab"
           },
           "verification": {
             "status": "pass",
             "recordId": "Cu.uses.2"
-          }
-        },
-        {
-          "value": "Brass, an alloy of copper, is used today in some musical instruments and screws.",
-          "unit": null,
-          "uncertain": false,
-          "source": {
-            "url": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=Uses",
-            "retrieved": "2026-11-10",
-            "via": "Jefferson Lab"
-          },
-          "verification": {
-            "status": "pass",
-            "recordId": "Cu.uses.3"
           }
         }
       ],
@@ -459,7 +445,7 @@
             "uncertain": false,
             "source": {
               "url": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=History",
-              "retrieved": "2026-11-10",
+              "retrieved": "2026-11-13",
               "via": "IUPAC CIAAW"
             },
             "verification": {
@@ -473,7 +459,7 @@
             "uncertain": false,
             "source": {
               "url": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=History",
-              "retrieved": "2026-11-10",
+              "retrieved": "2026-11-13",
               "via": "IUPAC CIAAW"
             },
             "verification": {
@@ -487,7 +473,7 @@
             "uncertain": false,
             "source": {
               "url": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=History",
-              "retrieved": "2026-11-10",
+              "retrieved": "2026-11-13",
               "via": "IUPAC CIAAW"
             },
             "verification": {
