@@ -229,8 +229,12 @@ Still open from requirements section 9:
 2. **Phase 2, part 2: history and uses.** The pilot of 10 elements is live
    for review (see above). Next:
    - review the pilot's wording
-   - build the Claude API version of `pipeline/text_facts.py`, which needs an
-     API key and a budget (spec section 9), and re-run the pilot through it
+   - ~~build the Claude API version~~ Built 2026-11-13: `pipeline/agents_api.py`
+     plus the "Run verification" workflow, on Claude Opus 5.5 at high effort.
+     The `ANTHROPIC_API_KEY` repository secret is set.
+   - run "Run verification" (reverify-pilot), about $1–2: it re-checks the
+     pilot's statements through the API and compares them claim by claim with
+     the subagent run. Review and merge its results PR.
    - then scale to all 118 elements
 3. **Checkpoint 1:** a human spot review of about 25 sampled facts, logged
    in `verification/spot-reviews/`.

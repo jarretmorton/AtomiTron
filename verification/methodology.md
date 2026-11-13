@@ -356,7 +356,20 @@ re-check of that fact's whole category.
 ## 13. Reproducing this
 
 The extraction and derivation code, the agent prompts, and these rules are
-all in this repository. The extract and derive checks need no API key. During
-early development, the agent checks run as Claude Code subagents. Before
-public release they move to a script using the Claude API, so anyone can
-re-run the full verification.
+all in this repository. The extract and derive checks need no API key.
+
+The agent checks ran first as Claude Code subagents, as a prototype. The
+reproducible path is [pipeline/agents_api.py](../pipeline/agents_api.py):
+- **The same prompts** as the prototype, sent to Claude Opus 5.5 through the
+  Claude API, with JSON answers in a fixed format.
+- **Independent calls:** three separate verifier calls per group of
+  statements, with no shared context.
+- **The same code checks** around the calls.
+- **A run record:** each run's `run.json` records the model that answered,
+  the prompt version, every request ID, token use and estimated cost.
+
+Anyone with an API key can re-run it with
+`python -m pipeline.agents_api reverify <new run folder> <earlier run folder>`.
+The project's own runs use the "Run verification" GitHub Actions workflow.
+That workflow pushes its results to a branch for review, never straight to
+the app.

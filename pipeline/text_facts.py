@@ -125,6 +125,10 @@ def evaluate(run: Path) -> None:
     drafts = load_json(run / "drafts.json")["elements"]
     verdicts = [load_json(run / f"verdicts-{i}.json")["claims"] for i in range(1, RUNS + 1)]
     checked_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    # API runs name their model and prompt version in run.json; the subagent
+    # prototype runs predate that file.
+    meta = run / "run.json"
+    verifier = load_json(meta).get("verifier", VERIFIER) if meta.exists() else VERIFIER
 
     results = {}
     for cid, claim in claims.items():
@@ -160,7 +164,7 @@ def evaluate(run: Path) -> None:
             "result": "pass",
             "checkedAt": checked_at,
             "consistency": {"runs": RUNS, "agreeing": r["agreeing"]},
-            "verifier": VERIFIER,
+            "verifier": verifier,
             "notes": f"prompts: pipeline/prompts/; audit trail: {run.relative_to(ROOT).as_posix()}",
         }
 
@@ -231,6 +235,73 @@ def evaluate(run: Path) -> None:
     print(f"{passed} of {len(results)} claims passed; report: {(run / 'report.md').relative_to(ROOT).as_posix()}")
 
 
+# ---- apply and compare --------------------------------------------------------
+
+
+def apply(_run: Path | None = None) -> None:
+    """Put the current data/text facts into the published element files and
+    their records, leaving every extracted number (and its retrieval date)
+    untouched. A full `python -m pipeline.elements` rebuild does the same
+    merge."""
+    data_dir = ROOT / "data" / "verified" / "elements"
+    rec_dir = ROOT / "verification" / "records" / "elements"
+    changed = 0
+    for text_file in sorted(TEXT_DIR.glob("*.json")):
+        text = load_json(text_file)
+        data_path, rec_path = data_dir / text_file.name, rec_dir / text_file.name
+        data, recs = load_json(data_path), load_json(rec_path)
+        element = data["items"][0]
+        # Same field order as pipeline.elements' merge: uses, then discovery, last.
+        element.pop("discovery", None)
+        element.pop("uses", None)
+        element["uses"] = text.get("uses", [])
+        if text.get("discovery"):
+            element["discovery"] = text["discovery"]
+        recs["items"] = [r for r in recs["items"] if r["method"] != "agent"] + text.get("records", [])
+        write_json(data_path, data)
+        write_json(rec_path, recs)
+        changed += 1
+    print(f"applied text facts to {changed} element files")
+
+
+def compare(run_a: Path, run_b: Path) -> None:
+    """Claim-by-claim pass/fail of two runs over the same claims, written to
+    RUN_B/comparison.md."""
+
+    def outcome(run: Path) -> dict[str, tuple[bool, int]]:
+        verdicts = [load_json(run / f"verdicts-{i}.json")["claims"] for i in range(1, RUNS + 1)]
+        src = sources()
+        out = {}
+        for c in load_json(run / "claims.json"):
+            ok = sum(1 for v in verdicts if (got := v.get(c["id"])) and got.get("verdict") == "supported"
+                     and verbatim(got.get("excerpt"), src[c["passage"]]))
+            out[c["id"]] = (ok == RUNS, ok)
+        return out
+
+    a, b = outcome(run_a), outcome(run_b)
+    common = sorted(set(a) & set(b))
+    same = [c for c in common if a[c][0] == b[c][0]]
+    differ = [c for c in common if a[c][0] != b[c][0]]
+    lines = [f"# Comparison: {run_a.name} vs {run_b.name}", "",
+             f"- Claims in both runs: **{len(common)}**",
+             f"- Same outcome: **{len(same)}** ({100 * len(same) / max(1, len(common)):.0f}%)",
+             f"- Different outcome: **{len(differ)}**", "",
+             "| Claim | " + run_a.name + " | " + run_b.name + " |", "|---|---|---|"]
+    for c in differ:
+        lines.append(f"| `{c}` | {'pass' if a[c][0] else 'fail'} ({a[c][1]}/{RUNS}) | {'pass' if b[c][0] else 'fail'} ({b[c][1]}/{RUNS}) |")
+    only = sorted(set(a) ^ set(b))
+    if only:
+        lines += ["", "Claims in only one run (not compared): " + ", ".join(f"`{c}`" for c in only)]
+    (run_b / "comparison.md").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+    print(f"{len(same)} of {len(common)} claims have the same outcome; {len(differ)} differ -> {(run_b / 'comparison.md').relative_to(ROOT).as_posix()}")
+
+
 if __name__ == "__main__":
-    cmd, run_dir = sys.argv[1], Path(sys.argv[2]).resolve()
-    {"claims": build_claims, "evaluate": evaluate}[cmd](run_dir)
+    cmd = sys.argv[1]
+    if cmd == "apply":
+        apply()
+    elif cmd == "compare":
+        compare(Path(sys.argv[2]).resolve(), Path(sys.argv[3]).resolve())
+    else:
+        run_dir = Path(sys.argv[2]).resolve()
+        {"claims": build_claims, "evaluate": evaluate}[cmd](run_dir)
