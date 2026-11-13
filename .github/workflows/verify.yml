@@ -1,0 +1,75 @@
+# Run verification: the agent checks through the Claude API (spec 10.1).
+#
+# Started by hand from the Actions tab ("Run workflow"). Each run costs a few
+# dollars of API credit (the run's run.json records the exact tokens and an
+# estimated cost). It never deploys: it pushes its results to a new branch
+# named verification/run-<id>, which becomes a pull request to review. The
+# usual checks, including the verified-data gate, run on that PR, and merging
+# it is what publishes anything.
+#
+# Needs the ANTHROPIC_API_KEY repository secret.
+
+name: Run verification
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: What to run
+        type: choice
+        options:
+          - reverify-pilot
+        default: reverify-pilot
+
+permissions:
+  contents: write  # to push the results branch; nothing else
+
+concurrency:
+  group: verification
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: pip install -r pipeline/requirements.txt
+      - run: npm ci
+
+      - name: Collect the source passages
+        run: python -m pipeline.text_sources H C N O Na Mg Cl Fe Cu Au
+
+      - name: Re-verify the pilot statements through the Claude API
+        if: inputs.task == 'reverify-pilot'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          RUN="verification/agent-runs/$(date -u +%F)-api-pilot"
+          echo "RUN=$RUN" >> "$GITHUB_ENV"
+          python -m pipeline.agents_api reverify "$RUN" verification/agent-runs/2026-11-12-elements-text-pilot
+          python -m pipeline.text_facts evaluate "$RUN"
+          python -m pipeline.text_facts compare verification/agent-runs/2026-11-12-elements-text-pilot "$RUN"
+          python -m pipeline.text_facts apply
+
+      - name: Gate (every published fact verified)
+        run: npm test
+
+      - name: Push results to a branch for review
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BRANCH="verification/run-${{ github.run_id }}"
+          git switch -c "$BRANCH"
+          git add -A data verification
+          git commit -m "Verification run ${{ github.run_id }}: ${{ inputs.task }}" -m "Claude API run. See $RUN/run.json for the model, requests and cost."
+          git push origin "$BRANCH"
+          echo "Results pushed to $BRANCH" >> "$GITHUB_STEP_SUMMARY"
+          cat "$RUN/comparison.md" >> "$GITHUB_STEP_SUMMARY"
