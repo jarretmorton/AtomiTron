@@ -8,7 +8,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "IUPAC CIAAW"
         },
         "verification": {
@@ -22,7 +22,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "Jefferson Lab"
         },
         "verification": {
@@ -36,7 +36,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "Jefferson Lab"
         },
         "verification": {
@@ -53,7 +53,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Los Alamos National Laboratory"
       },
       "verification": {
@@ -67,7 +67,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Los Alamos National Laboratory"
       },
       "verification": {
@@ -81,7 +81,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -95,7 +95,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -119,13 +119,13 @@
       "retrievedValue": "The name derives from the Greek oxys for \"acid\" and genes for \"forming\"",
       "evidence": "The name derives from the Greek oxys for \"acid\" and genes for \"forming\"",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "O.discovery.story.1",
@@ -141,13 +141,13 @@
       "retrievedValue": "The name oxygen was created by Antoine Lavoisier who incorrectly believed that oxygen was necessary to form all acids.",
       "evidence": "The name oxygen was created by Antoine Lavoisier who incorrectly believed that oxygen was necessary to form all acids.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "O.discovery.story.2",
@@ -163,13 +163,13 @@
       "retrievedValue": "Joseph Priestley and Carl Wilhelm Scheele both independently discovered oxygen, but Priestly is usually given credit for the discovery.",
       "evidence": "Joseph Priestley and Carl Wilhelm Scheele both independently discovered oxygen, but Priestly is usually given credit for the discovery.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "O.uses.0",
@@ -185,13 +185,13 @@
       "retrievedValue": "Plants and animals rely on oxygen for respiration.",
       "evidence": "Plants and animals rely on oxygen for respiration.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "O.uses.1",
@@ -207,13 +207,13 @@
       "retrievedValue": "Hospitals frequently prescribe oxygen for patients with respiratory ailments.",
       "evidence": "Hospitals frequently prescribe oxygen for patients with respiratory ailments.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "O.uses.2",
@@ -229,13 +229,13 @@
       "retrievedValue": "Impurities in molten pig iron are burned away with streams of high pressure oxygen to produce steel.",
       "evidence": "Impurities in molten pig iron are burned away with streams of high pressure oxygen to produce steel.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "O.uses.3",
@@ -251,13 +251,13 @@
       "retrievedValue": "Oxygen can also be combined with acetylene (C2H2) to produce an extremely hot flame used for welding.",
       "evidence": "Oxygen can also be combined with acetylene (C2H2) to produce an extremely hot flame used for welding.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     }
   ]
 }

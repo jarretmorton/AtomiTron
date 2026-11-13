@@ -1,0 +1,417 @@
+[
+  {
+    "id": "H.story.0",
+    "text": "The name hydrogen comes from Greek words meaning \"water\" and \"forming\", because it burned in air to form water.",
+    "passage": "H/History/IUPAC CIAAW"
+  },
+  {
+    "id": "H.story.1",
+    "text": "Hydrogen was discovered by the English physicist Henry Cavendish.",
+    "passage": "H/History/IUPAC CIAAW"
+  },
+  {
+    "id": "H.story.2",
+    "text": "Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids.",
+    "passage": "H/History/Jefferson Lab"
+  },
+  {
+    "id": "H.uses.0",
+    "text": "Hydrogen is used for filling balloons.",
+    "passage": "H/Uses/Los Alamos National Laboratory"
+  },
+  {
+    "id": "H.uses.1",
+    "text": "Hydrogen is added to fats and oils, such as peanut oil, through a process called hydrogenation.",
+    "passage": "H/Uses/Jefferson Lab"
+  },
+  {
+    "id": "H.uses.2",
+    "text": "The hydrogen fuel cell is a developing technology for obtaining electrical power from hydrogen gas.",
+    "passage": "H/Uses/Los Alamos National Laboratory"
+  },
+  {
+    "id": "H.uses.3",
+    "text": "Liquid hydrogen is used in the study of superconductors.",
+    "passage": "H/Uses/Jefferson Lab"
+  },
+  {
+    "id": "C.discoveryYear",
+    "text": "Carbon has been known since ancient times.",
+    "passage": "C/History/Jefferson Lab"
+  },
+  {
+    "id": "C.story.0",
+    "text": "The name carbon comes from the Latin word carbo, meaning \"charcoal\".",
+    "passage": "C/History/IUPAC CIAAW"
+  },
+  {
+    "id": "C.story.1",
+    "text": "Carbon was known in prehistoric times in the form of charcoal and soot.",
+    "passage": "C/History/IUPAC CIAAW"
+  },
+  {
+    "id": "C.story.2",
+    "text": "In 1797, the English chemist Smithson Tennant proved that diamond is pure carbon.",
+    "passage": "C/History/IUPAC CIAAW"
+  },
+  {
+    "id": "C.uses.0",
+    "text": "The black material in pencils, often called lead, is actually graphite.",
+    "passage": "C/Uses/Jefferson Lab"
+  },
+  {
+    "id": "C.uses.1",
+    "text": "Carbon black, a kind of black soot, is used to make inks, paints and rubber products.",
+    "passage": "C/Uses/Jefferson Lab"
+  },
+  {
+    "id": "C.uses.2",
+    "text": "Graphite, a form of carbon, is mainly used as a lubricant.",
+    "passage": "C/Uses/Jefferson Lab"
+  },
+  {
+    "id": "C.uses.3",
+    "text": "A radioactive isotope of carbon is used to find the age of formerly living things, through a process known as radiocarbon dating.",
+    "passage": "C/Uses/Jefferson Lab"
+  },
+  {
+    "id": "N.discoveryYear",
+    "text": "Nitrogen was discovered or first isolated in 1772.",
+    "passage": "N/History/IUPAC CIAAW"
+  },
+  {
+    "id": "N.story.0",
+    "text": "Nitrogen was discovered by the Scottish physician and chemist Daniel Rutherford in 1772.",
+    "passage": "N/History/IUPAC CIAAW"
+  },
+  {
+    "id": "N.story.1",
+    "text": "The name nitrogen comes from words meaning \"native soda\" and \"forming\".",
+    "passage": "N/History/IUPAC CIAAW"
+  },
+  {
+    "id": "N.story.2",
+    "text": "Rutherford removed oxygen and carbon dioxide from air and showed that the remaining gas would not support burning or living things.",
+    "passage": "N/History/Los Alamos National Laboratory"
+  },
+  {
+    "id": "N.uses.0",
+    "text": "The largest use of nitrogen is for making ammonia.",
+    "passage": "N/Uses/Jefferson Lab"
+  },
+  {
+    "id": "N.uses.1",
+    "text": "Liquid nitrogen is used for refrigeration.",
+    "passage": "N/Uses/Jefferson Lab"
+  },
+  {
+    "id": "N.uses.2",
+    "text": "Liquid nitrogen is used to preserve biological samples.",
+    "passage": "N/Uses/Jefferson Lab"
+  },
+  {
+    "id": "N.uses.3",
+    "text": "Nitrogen gas is used as a protective shield in the semiconductor industry.",
+    "passage": "N/Uses/Jefferson Lab"
+  },
+  {
+    "id": "O.story.0",
+    "text": "The name oxygen comes from Greek words meaning \"acid\" and \"forming\".",
+    "passage": "O/History/IUPAC CIAAW"
+  },
+  {
+    "id": "O.story.1",
+    "text": "The name oxygen was created by Antoine Lavoisier, who incorrectly believed that oxygen was necessary to form all acids.",
+    "passage": "O/History/Jefferson Lab"
+  },
+  {
+    "id": "O.story.2",
+    "text": "Joseph Priestley and Carl Wilhelm Scheele both discovered oxygen independently, but Priestley is usually given credit for the discovery.",
+    "passage": "O/History/Jefferson Lab"
+  },
+  {
+    "id": "O.uses.0",
+    "text": "Plants and animals rely on oxygen for respiration.",
+    "passage": "O/Uses/Los Alamos National Laboratory"
+  },
+  {
+    "id": "O.uses.1",
+    "text": "Hospitals frequently prescribe oxygen for patients with breathing illnesses.",
+    "passage": "O/Uses/Los Alamos National Laboratory"
+  },
+  {
+    "id": "O.uses.2",
+    "text": "Oxygen is used in making steel, where it burns away impurities in molten iron.",
+    "passage": "O/Uses/Jefferson Lab"
+  },
+  {
+    "id": "O.uses.3",
+    "text": "Oxygen can be combined with acetylene to produce a very hot flame used for welding.",
+    "passage": "O/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Na.discoveryYear",
+    "text": "Sodium was discovered or first isolated in 1807.",
+    "passage": "Na/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Na.story.0",
+    "text": "Sodium was discovered in 1807 by the English chemist Humphry Davy.",
+    "passage": "Na/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Na.story.1",
+    "text": "The name sodium comes from the English word soda and the Latin sodanum, meaning \"headache remedy\".",
+    "passage": "Na/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Na.story.2",
+    "text": "The symbol Na comes from the Latin word natrium.",
+    "passage": "Na/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Na.uses.0",
+    "text": "Sodium vapor is used in streetlights and produces a brilliant yellow light.",
+    "passage": "Na/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Na.uses.1",
+    "text": "Sodium forms many useful compounds, including table salt and baking soda.",
+    "passage": "Na/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Na.uses.2",
+    "text": "Liquid sodium has been used as a coolant for nuclear reactors.",
+    "passage": "Na/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Na.uses.3",
+    "text": "Sodium is used in the production of titanium.",
+    "passage": "Na/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Mg.story.0",
+    "text": "The name magnesium comes from Magnesia, a district in the north-eastern region of Greece called Thessalia.",
+    "passage": "Mg/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Mg.story.1",
+    "text": "The Scottish chemist Joseph Black recognized magnesium as a separate element in 1755.",
+    "passage": "Mg/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Mg.story.2",
+    "text": "In 1808, the English chemist Humphry Davy obtained impure magnesium metal.",
+    "passage": "Mg/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Mg.uses.0",
+    "text": "Cameras, horseshoes, baseball catchers' masks and snowshoes are among the items made from magnesium alloys.",
+    "passage": "Mg/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Mg.uses.1",
+    "text": "Magnesium oxide is used in some antacids.",
+    "passage": "Mg/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Mg.uses.2",
+    "text": "A thin film of magnesium fluoride is applied to optical lenses to help reduce glare and reflections.",
+    "passage": "Mg/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Mg.uses.3",
+    "text": "Magnesium carbonate is added to table salt to prevent caking.",
+    "passage": "Mg/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Cl.discoveryYear",
+    "text": "Chlorine was discovered or first isolated in 1774.",
+    "passage": "Cl/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Cl.story.0",
+    "text": "The name chlorine comes from the Greek word chloros, meaning \"pale green\" or \"greenish yellow\".",
+    "passage": "Cl/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Cl.story.1",
+    "text": "Chlorine was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774.",
+    "passage": "Cl/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Cl.story.2",
+    "text": "In 1810, the English chemist Humphry Davy proved that chlorine was an element.",
+    "passage": "Cl/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Cl.uses.0",
+    "text": "Chlorine is used to make drinking water safe and to treat swimming pools.",
+    "passage": "Cl/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Cl.uses.1",
+    "text": "Chlorine is commonly used as an antiseptic.",
+    "passage": "Cl/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Cl.uses.2",
+    "text": "Sodium chloride, a chlorine compound commonly known as table salt, is used to season food.",
+    "passage": "Cl/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Cl.uses.3",
+    "text": "Chlorine is used in the production of paper products, textiles and medicines.",
+    "passage": "Cl/Uses/Los Alamos National Laboratory"
+  },
+  {
+    "id": "Fe.discoveryYear",
+    "text": "Iron has been known since ancient times.",
+    "passage": "Fe/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Fe.story.0",
+    "text": "The name iron comes from an Anglo-Saxon word of unknown origin.",
+    "passage": "Fe/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Fe.story.1",
+    "text": "The symbol Fe comes from the Latin word ferrum, meaning \"firmness\".",
+    "passage": "Fe/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Fe.story.2",
+    "text": "Iron is mentioned many times in the Old Testament of the Bible.",
+    "passage": "Fe/History/Los Alamos National Laboratory"
+  },
+  {
+    "id": "Fe.uses.0",
+    "text": "Huge amounts of iron are used to make steel, an alloy of iron and carbon.",
+    "passage": "Fe/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Fe.uses.1",
+    "text": "Steel is used to make paper clips, skyscrapers and everything in between.",
+    "passage": "Fe/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Fe.uses.2",
+    "text": "Adding chromium to steel improves its durability and prevents rust, making stainless steel.",
+    "passage": "Fe/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Fe.uses.3",
+    "text": "Iron sulfate is used to treat the blood disease anemia.",
+    "passage": "Fe/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Cu.discoveryYear",
+    "text": "Copper has been known since ancient times.",
+    "passage": "Cu/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Cu.story.0",
+    "text": "The name copper comes from the Latin cuprum, for Cyprus, the island where the Romans first obtained copper.",
+    "passage": "Cu/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Cu.story.1",
+    "text": "The symbol Cu also comes from the Latin cuprum.",
+    "passage": "Cu/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Cu.story.2",
+    "text": "Copper has been known since prehistoric times.",
+    "passage": "Cu/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Cu.uses.0",
+    "text": "The electrical industry uses copper in the form of wire.",
+    "passage": "Cu/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Cu.uses.1",
+    "text": "Since it resists corrosion from the air, moisture and seawater, copper has been widely used in coins.",
+    "passage": "Cu/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Cu.uses.2",
+    "text": "Copper is used to make water pipes and jewelry.",
+    "passage": "Cu/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Cu.uses.3",
+    "text": "Brass, an alloy of copper, is used today in some musical instruments and screws.",
+    "passage": "Cu/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Au.discoveryYear",
+    "text": "Gold has been known since ancient times.",
+    "passage": "Au/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Au.story.0",
+    "text": "The name gold comes from the Sanskrit word jval, meaning \"shine\", and the Teutonic word gulth, meaning \"shining metal\".",
+    "passage": "Au/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Au.story.1",
+    "text": "The symbol Au comes from the Latin aurum, for Aurora, the goddess of dawn.",
+    "passage": "Au/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Au.story.2",
+    "text": "Gold was known and highly valued in prehistoric times.",
+    "passage": "Au/History/IUPAC CIAAW"
+  },
+  {
+    "id": "Au.uses.0",
+    "text": "Gold alloys are used to make jewelry, decorative items, dental fillings and coins.",
+    "passage": "Au/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Au.uses.1",
+    "text": "Thin sheets of gold, known as gold leaf, are mainly used in arts and crafts for gilding.",
+    "passage": "Au/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Au.uses.2",
+    "text": "Gold can be used to make electrical connectors and printed circuit boards.",
+    "passage": "Au/Uses/Jefferson Lab"
+  },
+  {
+    "id": "Au.uses.3",
+    "text": "Gold is used for coating certain space satellites, as it is a good reflector of infrared and is inert.",
+    "passage": "Au/Uses/Los Alamos National Laboratory"
+  },
+  {
+    "id": "concept.atomicNumber",
+    "text": "The atomic number is the number of protons in the nucleus. It is what makes an element that element.",
+    "passage": "concept/protons"
+  },
+  {
+    "id": "concept.electrons",
+    "text": "A neutral atom has the same number of electrons as protons.",
+    "passage": "concept/protons"
+  },
+  {
+    "id": "concept.neutrons",
+    "text": "The mass number counts protons and neutrons together, so neutrons = mass number − atomic number.",
+    "passage": "concept/isotopes"
+  },
+  {
+    "id": "concept.isotopes",
+    "text": "Isotopes are atoms of the same element with different numbers of neutrons.",
+    "passage": "concept/isotopes"
+  },
+  {
+    "id": "concept.shells",
+    "text": "Orbitals that have the same principal quantum number form a shell, and each shell is divided into subshells.",
+    "passage": "concept/orbitals"
+  },
+  {
+    "id": "concept.valence",
+    "text": "Valence electrons are the electrons in the highest-numbered shell, plus any in the last unfilled subshell. They largely control an atom's chemistry.",
+    "passage": "concept/valence"
+  }
+]

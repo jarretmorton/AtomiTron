@@ -362,7 +362,7 @@
           "uncertain": false,
           "source": {
             "url": "https://pubchem.ncbi.nlm.nih.gov/element/11#section=Uses",
-            "retrieved": "2026-11-10",
+            "retrieved": "2026-11-13",
             "via": "Jefferson Lab"
           },
           "verification": {
@@ -371,45 +371,17 @@
           }
         },
         {
-          "value": "Sodium forms many useful compounds, including table salt and baking soda.",
-          "unit": null,
-          "uncertain": false,
-          "source": {
-            "url": "https://pubchem.ncbi.nlm.nih.gov/element/11#section=Uses",
-            "retrieved": "2026-11-10",
-            "via": "Jefferson Lab"
-          },
-          "verification": {
-            "status": "pass",
-            "recordId": "Na.uses.1"
-          }
-        },
-        {
           "value": "Liquid sodium has been used as a coolant for nuclear reactors.",
           "unit": null,
           "uncertain": false,
           "source": {
             "url": "https://pubchem.ncbi.nlm.nih.gov/element/11#section=Uses",
-            "retrieved": "2026-11-10",
+            "retrieved": "2026-11-13",
             "via": "Jefferson Lab"
           },
           "verification": {
             "status": "pass",
-            "recordId": "Na.uses.2"
-          }
-        },
-        {
-          "value": "Sodium is used in the production of titanium.",
-          "unit": null,
-          "uncertain": false,
-          "source": {
-            "url": "https://pubchem.ncbi.nlm.nih.gov/element/11#section=Uses",
-            "retrieved": "2026-11-10",
-            "via": "Jefferson Lab"
-          },
-          "verification": {
-            "status": "pass",
-            "recordId": "Na.uses.3"
+            "recordId": "Na.uses.1"
           }
         }
       ],
@@ -421,7 +393,7 @@
             "uncertain": false,
             "source": {
               "url": "https://pubchem.ncbi.nlm.nih.gov/element/11#section=History",
-              "retrieved": "2026-11-10",
+              "retrieved": "2026-11-13",
               "via": "IUPAC CIAAW"
             },
             "verification": {
@@ -435,7 +407,7 @@
             "uncertain": false,
             "source": {
               "url": "https://pubchem.ncbi.nlm.nih.gov/element/11#section=History",
-              "retrieved": "2026-11-10",
+              "retrieved": "2026-11-13",
               "via": "IUPAC CIAAW"
             },
             "verification": {
@@ -449,7 +421,7 @@
             "uncertain": false,
             "source": {
               "url": "https://pubchem.ncbi.nlm.nih.gov/element/11#section=History",
-              "retrieved": "2026-11-10",
+              "retrieved": "2026-11-13",
               "via": "IUPAC CIAAW"
             },
             "verification": {
@@ -464,7 +436,7 @@
           "uncertain": false,
           "source": {
             "url": "https://pubchem.ncbi.nlm.nih.gov/element/11#section=History",
-            "retrieved": "2026-11-10",
+            "retrieved": "2026-11-13",
             "via": "IUPAC CIAAW"
           },
           "verification": {

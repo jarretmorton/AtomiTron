@@ -8,7 +8,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "IUPAC CIAAW"
         },
         "verification": {
@@ -22,7 +22,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "IUPAC CIAAW"
         },
         "verification": {
@@ -36,7 +36,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "IUPAC CIAAW"
         },
         "verification": {
@@ -51,7 +51,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=History",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -67,7 +67,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -81,7 +81,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -95,7 +95,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -109,7 +109,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -133,13 +133,13 @@
       "retrievedValue": "Carbon, the sixth most abundant element in the universe, has been known since ancient times.",
       "evidence": "Carbon, the sixth most abundant element in the universe, has been known since ancient times.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "C.discovery.story.0",
@@ -155,13 +155,13 @@
       "retrievedValue": "The name derives from the Latin carbo for \"charcoal\".",
       "evidence": "The name derives from the Latin carbo for \"charcoal\".",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "C.discovery.story.1",
@@ -177,13 +177,13 @@
       "retrievedValue": "It was known in prehistoric times in the form of charcoal and soot.",
       "evidence": "It was known in prehistoric times in the form of charcoal and soot.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "C.discovery.story.2",
@@ -199,13 +199,13 @@
       "retrievedValue": "In 1797, the English chemist Smithson Tennant proved that diamond is pure carbon.",
       "evidence": "In 1797, the English chemist Smithson Tennant proved that diamond is pure carbon.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "C.uses.0",
@@ -221,13 +221,13 @@
       "retrievedValue": "Although commonly called lead, the black material used in pencils is actually graphite.",
       "evidence": "Although commonly called lead, the black material used in pencils is actually graphite.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "C.uses.1",
@@ -243,13 +243,13 @@
       "retrievedValue": "This black soot, also known as lampblack, gas black, channel black or carbon black, is used to make inks, paints and rubber products.",
       "evidence": "This black soot, also known as lampblack, gas black, channel black or carbon black, is used to make inks, paints and rubber products.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "C.uses.2",
@@ -265,13 +265,13 @@
       "retrievedValue": "Graphite, one of the softest materials known, is a form of carbon that is primarily used as a lubricant.",
       "evidence": "Graphite, one of the softest materials known, is a form of carbon that is primarily used as a lubricant.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "C.uses.3",
@@ -284,16 +284,16 @@
       "unit": null,
       "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
       "upstream": "Jefferson Lab",
-      "retrievedValue": "Carbon-14, a radioactive isotope of carbon with a half-life of 5,730 years, is used to find the age of formerly living things",
-      "evidence": "Carbon-14, a radioactive isotope of carbon with a half-life of 5,730 years, is used to find the age of formerly living things",
+      "retrievedValue": "is used to find the age of formerly living things through a process known as radiocarbon dating",
+      "evidence": "is used to find the age of formerly living things through a process known as radiocarbon dating",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     }
   ]
 }

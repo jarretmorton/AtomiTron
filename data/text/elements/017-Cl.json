@@ -8,7 +8,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "IUPAC CIAAW"
         },
         "verification": {
@@ -22,7 +22,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "IUPAC CIAAW"
         },
         "verification": {
@@ -36,7 +36,7 @@
         "uncertain": false,
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
-          "retrieved": "2026-11-10",
+          "retrieved": "2026-11-13",
           "via": "IUPAC CIAAW"
         },
         "verification": {
@@ -51,7 +51,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "IUPAC CIAAW"
       },
       "verification": {
@@ -67,7 +67,7 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
@@ -81,40 +81,12 @@
       "uncertain": false,
       "source": {
         "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
-        "retrieved": "2026-11-10",
+        "retrieved": "2026-11-13",
         "via": "Jefferson Lab"
       },
       "verification": {
         "status": "pass",
         "recordId": "Cl.uses.1"
-      }
-    },
-    {
-      "value": "Sodium chloride, a chlorine compound commonly known as table salt, is used to season food.",
-      "unit": null,
-      "uncertain": false,
-      "source": {
-        "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
-        "retrieved": "2026-11-10",
-        "via": "Jefferson Lab"
-      },
-      "verification": {
-        "status": "pass",
-        "recordId": "Cl.uses.2"
-      }
-    },
-    {
-      "value": "Chlorine is used in the production of paper products, textiles and medicines.",
-      "unit": null,
-      "uncertain": false,
-      "source": {
-        "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
-        "retrieved": "2026-11-10",
-        "via": "Los Alamos National Laboratory"
-      },
-      "verification": {
-        "status": "pass",
-        "recordId": "Cl.uses.3"
       }
     }
   ],
@@ -133,13 +105,13 @@
       "retrievedValue": "It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774.",
       "evidence": "It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Cl.discovery.story.0",
@@ -155,13 +127,13 @@
       "retrievedValue": "The name derives from the Greek chloros for \"pale green\" or \"greenish yellow\" colour of the element.",
       "evidence": "The name derives from the Greek chloros for \"pale green\" or \"greenish yellow\" colour of the element.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Cl.discovery.story.1",
@@ -177,13 +149,13 @@
       "retrievedValue": "It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774.",
       "evidence": "It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Cl.discovery.story.2",
@@ -199,13 +171,13 @@
       "retrievedValue": "In 1810, the English chemist Humphry Davy proved it was an element.",
       "evidence": "In 1810, the English chemist Humphry Davy proved it was an element.",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Cl.uses.0",
@@ -218,16 +190,16 @@
       "unit": null,
       "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
       "upstream": "Jefferson Lab",
-      "retrievedValue": "is used to make drinking water safe and to treat swimming pools.",
-      "evidence": "is used to make drinking water safe and to treat swimming pools.",
+      "retrievedValue": "is used to make drinking water safe and to treat swimming pools",
+      "evidence": "is used to make drinking water safe and to treat swimming pools",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
       "id": "Cl.uses.1",
@@ -243,57 +215,13 @@
       "retrievedValue": "Chlorine is commonly used as an antiseptic",
       "evidence": "Chlorine is commonly used as an antiseptic",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
+      "checkedAt": "2026-11-13T07:26:35Z",
       "consistency": {
         "runs": 3,
         "agreeing": 3
       },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
-    },
-    {
-      "id": "Cl.uses.2",
-      "subject": {
-        "entity": "element:Cl",
-        "field": "/uses/2"
-      },
-      "method": "agent",
-      "claimedValue": "Sodium chloride, a chlorine compound commonly known as table salt, is used to season food.",
-      "unit": null,
-      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
-      "upstream": "Jefferson Lab",
-      "retrievedValue": "Sodium chloride, commonly known as table salt, is used to season food",
-      "evidence": "Sodium chloride, commonly known as table salt, is used to season food",
-      "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
-      "consistency": {
-        "runs": 3,
-        "agreeing": 3
-      },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
-    },
-    {
-      "id": "Cl.uses.3",
-      "subject": {
-        "entity": "element:Cl",
-        "field": "/uses/3"
-      },
-      "method": "agent",
-      "claimedValue": "Chlorine is used in the production of paper products, textiles and medicines.",
-      "unit": null,
-      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
-      "upstream": "Los Alamos National Laboratory",
-      "retrievedValue": "It is also extensively used in the production of paper products, dyestuffs, textiles, petroleum products, medicines",
-      "evidence": "It is also extensively used in the production of paper products, dyestuffs, textiles, petroleum products, medicines",
-      "result": "pass",
-      "checkedAt": "2026-11-13T04:02:58Z",
-      "consistency": {
-        "runs": 3,
-        "agreeing": 3
-      },
-      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
-      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     }
   ]
 }
