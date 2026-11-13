@@ -108,7 +108,7 @@ export interface OpenQuestion {
 
 export interface VerificationRecord {
   id: string;
-  subject: { entity: EntityId | OpenQuestionId; field: string };
+  subject: { entity: EntityId | OpenQuestionId | `concept:${string}`; field: string };
   method: 'extract' | 'agent' | 'derive';
   claimedValue: FactValue;
   unit: string | null;

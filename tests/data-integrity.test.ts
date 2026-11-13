@@ -2,17 +2,30 @@
 // CI fails and nothing deploys. The rest prove the gate catches each way an
 // unverified or inconsistent fact could slip through.
 
-import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import type { Element, OpenQuestion, VerificationRecord } from '../app/src/data/schema';
+import { CONCEPTS } from '../app/src/content/concepts';
 import { checkData, ROOT } from './integrity';
 import { goodElement, goodOpenQuestion, recordsFor } from './samples';
 
 it('repo data: every fact in data/verified/ is verified', () => {
   const errors = checkData(join(ROOT, 'data', 'verified'), join(ROOT, 'verification', 'records'));
   expect(errors).toEqual([]);
+});
+
+it('every explanation sentence in the app has a passing record', () => {
+  const file = join(ROOT, 'verification', 'records', 'concepts.json');
+  const records: VerificationRecord[] = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')).items : [];
+  for (const [key, c] of Object.entries(CONCEPTS)) {
+    const r = records.find((x) => x.id === `concept.${key}`);
+    expect(r, `no record for concept.${key}`).toBeDefined();
+    expect(r!.result).toBe('pass');
+    expect(r!.claimedValue).toBe(c.text);
+    expect(r!.sourceUrl).toBe(c.url);
+  }
 });
 
 /**
@@ -84,6 +97,8 @@ describe('gate: elements', () => {
       /uncertain exactly when one of its inputs is/,
     ],
     ['two facts sharing a record', (_q, e) => (e.name.verification.recordId = 'na-symbol'), /also used by/],
+    ['a number in a use', (_q, e) => (e.uses[0]!.value = 'Used in 3 ways.'), /uses\[0\] contains a number/],
+    ['a non-year number in history', (_q, e) => (e.discovery!.story[0]!.value = 'Found in 1807 by 2 chemists.'), /isn't a year/],
   ])('fails when %s', (_, edit, expected) => {
     expect(scenario(edit, { rerecord: true }).join('\n')).toMatch(expected);
   });

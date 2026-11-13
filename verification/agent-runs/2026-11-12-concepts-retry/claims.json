@@ -1,0 +1,12 @@
+[
+  {
+    "id": "concept.shells",
+    "text": "Orbitals that have the same principal quantum number form a shell, and each shell is divided into subshells.",
+    "passage": "concept/orbitals"
+  },
+  {
+    "id": "concept.valence",
+    "text": "Valence electrons are the electrons in the highest-numbered shell, plus any in the last unfilled subshell. They largely control an atom's chemistry.",
+    "passage": "concept/valence"
+  }
+]

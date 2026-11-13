@@ -1,0 +1,12 @@
+{
+  "claims": {
+    "concept.shells": {
+      "verdict": "supported",
+      "excerpt": "Orbitals that have the same value of the principal quantum number form a shell . Orbitals within a shell are divided into subshells"
+    },
+    "concept.valence": {
+      "verdict": "supported",
+      "excerpt": "The electrons in the highest-numbered shell, plus any electrons in the last unfilled subshell, are called valence electrons"
+    }
+  }
+}
