@@ -34,7 +34,10 @@ the web, and don't combine facts from two passages into one statement.
 2. **Plain, serious language** for a curious 10-year-old. At most 25 words. No
    exclamation marks, jokes or "fun fact" framing.
 3. **Don't add anything the passage doesn't say:** no extra detail,
-   superlatives, comparisons or reasons.
+   superlatives, comparisons or reasons. **And don't leave out part of a
+   list:** if the passage gives several items for the same thing (the
+   origins of a name, the people involved), include all of them, or don't
+   write that statement.
 4. **No numbers in uses statements.** In story statements, the only number
    allowed is a year that the passage states.
 5. **Nothing operational:**

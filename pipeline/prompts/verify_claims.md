@@ -24,7 +24,14 @@ knowledge, other passages or the web. A claim is **supported** only if:
    generalizing or exaggerating is not. "Used in some streetlights" can be
    supported by "used in streetlights", but "the main use is streetlights"
    cannot.
-4. **For a year (claim ids ending in `discoveryYear`),** the passage states
+4. **It leaves nothing out of a list.** If the passage lists several items
+   for the same thing (the origins of a name, the people who discovered
+   something, the reasons for something), the claim either gives all of
+   them or makes no claim about that thing. If a passage says a name comes
+   from words A, B and C, then "the name comes from A and B" is
+   **not_supported**. This applies even though every word of the claim is
+   true, because the reader would take two origins for the whole answer.
+5. **For a year (claim ids ending in `discoveryYear`),** the passage states
    that year for that event, and gives no conflicting year.
 
 Otherwise it's **not_supported**. If you're unsure, it's **not_supported**.
