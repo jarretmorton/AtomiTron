@@ -64,6 +64,15 @@ def verbatim(excerpt: str | None, passage: dict) -> bool:
     return 0 < len(e.split()) <= MAX_EXCERPT_WORDS and e in passage["text"]
 
 
+def year_stated(value, excerpt: str) -> bool:
+    """A discovery year must be stated in the excerpt itself: the number, or
+    the word "ancient" for "Ancient". "Known from prehistoric times" doesn't
+    state "ancient times". Verifiers were inconsistent on that paraphrase,
+    so code decides it (methodology section 3)."""
+    text = normalize(excerpt or "").lower()
+    return "ancient" in text if value == "Ancient" else re.search(rf"\b{value}\b", text) is not None
+
+
 def screen(kind: str, text: str) -> str | None:
     """Why a statement fails the safety screen, or None if it passes."""
     if SCREEN.search(text):
@@ -94,8 +103,8 @@ def build_claims(run: Path) -> None:
             rejected.append((cid, "drafter's excerpt isn't word for word in the passage"))
         elif kind != "year" and (why := screen(kind, text)):
             rejected.append((cid, why))
-        elif kind == "year" and str(item["value"]) not in normalize(item["excerpt"]) and item["value"] != "Ancient":
-            rejected.append((cid, "the year isn't in the drafter's excerpt"))
+        elif kind == "year" and not year_stated(item["value"], item["excerpt"]):
+            rejected.append((cid, f"the drafter's excerpt doesn't state {item['value']!r}"))
         else:
             claims.append({"id": cid, "text": text, "passage": p["id"]})
 
@@ -133,6 +142,7 @@ def evaluate(run: Path) -> None:
     results = {}
     for cid, claim in claims.items():
         passage = src[claim["passage"]]
+        year = drafts.get(cid.split(".")[0], {}).get("discoveryYear") if cid.endswith(".discoveryYear") else None
         agreeing, excerpts, reasons = 0, [], []
         for n, v in enumerate(verdicts, 1):
             got = v.get(cid)
@@ -142,6 +152,8 @@ def evaluate(run: Path) -> None:
                 reasons.append(f"verifier {n}: {got.get('reason', 'not supported')}")
             elif not verbatim(got.get("excerpt"), passage):
                 reasons.append(f"verifier {n}: excerpt isn't word for word in the passage")
+            elif year and not year_stated(year["value"], got["excerpt"]):
+                reasons.append(f"verifier {n}: excerpt doesn't state {year['value']!r} (code check)")
             else:
                 agreeing += 1
                 excerpts.append(normalize(got["excerpt"]))
@@ -268,27 +280,35 @@ def compare(run_a: Path, run_b: Path) -> None:
     """Claim-by-claim pass/fail of two runs over the same claims, written to
     RUN_B/comparison.md."""
 
-    def outcome(run: Path) -> dict[str, tuple[bool, int]]:
+    def outcome(run: Path) -> dict[str, tuple[bool, int, str]]:
+        """Verifier agreement only (supported, with a verbatim excerpt);
+        code checks such as year_stated aren't part of the comparison."""
         verdicts = [load_json(run / f"verdicts-{i}.json")["claims"] for i in range(1, RUNS + 1)]
         src = sources()
         out = {}
         for c in load_json(run / "claims.json"):
             ok = sum(1 for v in verdicts if (got := v.get(c["id"])) and got.get("verdict") == "supported"
                      and verbatim(got.get("excerpt"), src[c["passage"]]))
-            out[c["id"]] = (ok == RUNS, ok)
+            out[c["id"]] = (ok == RUNS, ok, c["text"])
         return out
 
     a, b = outcome(run_a), outcome(run_b)
-    common = sorted(set(a) & set(b))
+    in_both = sorted(set(a) & set(b))
+    reworded = [c for c in in_both if a[c][2] != b[c][2]]
+    common = [c for c in in_both if a[c][2] == b[c][2]]
     same = [c for c in common if a[c][0] == b[c][0]]
     differ = [c for c in common if a[c][0] != b[c][0]]
     lines = [f"# Comparison: {run_a.name} vs {run_b.name}", "",
-             f"- Claims in both runs: **{len(common)}**",
+             "Verifier agreement only. Code checks applied at evaluation (such as the discovery-year check) "
+             "aren't part of this comparison.", "",
+             f"- Same claim, same wording, in both runs: **{len(common)}**",
              f"- Same outcome: **{len(same)}** ({100 * len(same) / max(1, len(common)):.0f}%)",
              f"- Different outcome: **{len(differ)}**", "",
              "| Claim | " + run_a.name + " | " + run_b.name + " |", "|---|---|---|"]
     for c in differ:
         lines.append(f"| `{c}` | {'pass' if a[c][0] else 'fail'} ({a[c][1]}/{RUNS}) | {'pass' if b[c][0] else 'fail'} ({b[c][1]}/{RUNS}) |")
+    if reworded:
+        lines += ["", "Reworded between the runs, so not compared: " + ", ".join(f"`{c}`" for c in reworded)]
     only = sorted(set(a) ^ set(b))
     if only:
         lines += ["", "Claims in only one run (not compared): " + ", ".join(f"`{c}`" for c in only)]

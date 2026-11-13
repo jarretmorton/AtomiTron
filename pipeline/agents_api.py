@@ -303,7 +303,9 @@ if __name__ == "__main__":
     if cmd == "verify":
         verify(run_dir)
     elif cmd == "draft":
-        draft(run_dir, sys.argv[3:])
+        from .text_sources import resolve_symbols
+
+        draft(run_dir, resolve_symbols(sys.argv[3:]))
     elif cmd == "reverify":
         reverify(run_dir, Path(sys.argv[3]).resolve())
     else:
