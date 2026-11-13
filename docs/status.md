@@ -59,12 +59,13 @@ They went live early, at your request, so you can review them on the iPad.
 They were verified by subagents rather than the Claude API pipeline. The
 methodology section describing this procedure is still marked for review.
 
-## Phase 2, part 2: history and uses (pilot, not merged)
+## Phase 2, part 2: history and uses (pilot, live for review)
 
-On branch `claude/phase-2-text`, rebased onto `main` after the explanation
-fix, and not pushed. It's prototyped with Claude Code subagents. **Don't
-merge it until the Claude API pipeline re-runs the verification**, because
-the live site is public.
+Prototyped with Claude Code subagents. **Published early on 2026-11-12, at
+your request, so the wording can be reviewed on the iPad.** The spec
+(10.1) says to switch to the Claude API pipeline before anything is
+published. That re-run is still required before a wider release, and it
+will replace these records.
 
 - **Pilot elements:** H, C, N, O, Na, Mg, Cl, Fe, Cu, Au.
 - **The run:** one drafter wrote 70 statements and 7 discovery years. Code
@@ -224,8 +225,8 @@ Still open from requirements section 9:
    - a few element pages
    - the temperature-unit buttons
    - that citation links open PubChem at the right section
-2. **Phase 2, part 2: history and uses.** The pilot of 10 elements is done
-   on `claude/phase-2-text` (see above). Next:
+2. **Phase 2, part 2: history and uses.** The pilot of 10 elements is live
+   for review (see above). Next:
    - review the pilot's wording
    - build the Claude API version of `pipeline/text_facts.py`, which needs an
      API key and a budget (spec section 9), and re-run the pilot through it
