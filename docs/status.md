@@ -2,8 +2,9 @@
 
 *Updated 2026-11-12. Phase 1 and phase 2 part 1 are live: the periodic
 table and element pages for all 118 elements, with every fact verified and
-cited, plus a 3D atom trial on the vanadium page. Next: the history and uses
-text (part 2).*
+cited, plus a 3D atom trial on the vanadium page. The history and uses
+pilot (10 elements) is live for review on the iPad, ahead of the Claude API
+re-run.*
 
 ## Where things stand
 
