@@ -1,0 +1,227 @@
+{
+  "element": "element:Au",
+  "discovery": {
+    "story": [
+      {
+        "value": "The symbol Au comes from the Latin aurum, for Aurora, the goddess of dawn.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Au.discovery.story.0"
+        }
+      },
+      {
+        "value": "Gold was known and highly valued in prehistoric times.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Au.discovery.story.1"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Gold alloys are used to make jewelry, decorative items, dental fillings and coins.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Au.uses.0"
+      }
+    },
+    {
+      "value": "Thin sheets of gold, known as gold leaf, are mainly used in arts and crafts for gilding.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Au.uses.1"
+      }
+    },
+    {
+      "value": "Gold can be used to make electrical connectors and printed circuit boards.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Au.uses.2"
+      }
+    },
+    {
+      "value": "Gold is used for coating certain space satellites, as it is a good reflector of infrared and is inert.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Au.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Au.discovery.story.0",
+      "subject": {
+        "entity": "element:Au",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The symbol Au comes from the Latin aurum, for Aurora, the goddess of dawn.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The symbol Au derives from the Latin aurum, for Aurora, the goddess of dawn.",
+      "evidence": "The symbol Au derives from the Latin aurum, for Aurora, the goddess of dawn.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Au.discovery.story.1",
+      "subject": {
+        "entity": "element:Au",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Gold was known and highly valued in prehistoric times.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Gold was known and highly valued in prehistoric times.",
+      "evidence": "Gold was known and highly valued in prehistoric times.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Au.uses.0",
+      "subject": {
+        "entity": "element:Au",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Gold alloys are used to make jewelry, decorative items, dental fillings and coins.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Gold alloys are used to make jewelry, decorative items, dental fillings and coins.",
+      "evidence": "Gold alloys are used to make jewelry, decorative items, dental fillings and coins.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Au.uses.1",
+      "subject": {
+        "entity": "element:Au",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Thin sheets of gold, known as gold leaf, are mainly used in arts and crafts for gilding.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Thin sheets of gold, known as gold leaf, are primarily used in arts and crafts for gilding.",
+      "evidence": "Thin sheets of gold, known as gold leaf, are primarily used in arts and crafts for gilding.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Au.uses.2",
+      "subject": {
+        "entity": "element:Au",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Gold can be used to make electrical connectors and printed circuit boards.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "so it can be used to make electrical connectors and printed circuit boards.",
+      "evidence": "so it can be used to make electrical connectors and printed circuit boards.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Au.uses.3",
+      "subject": {
+        "entity": "element:Au",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Gold is used for coating certain space satellites, as it is a good reflector of infrared and is inert.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It is used for coating certain space satellites, as it is a good reflector of infrared and is inert.",
+      "evidence": "It is used for coating certain space satellites, as it is a good reflector of infrared and is inert.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    }
+  ]
+}

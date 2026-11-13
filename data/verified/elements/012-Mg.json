@@ -483,7 +483,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Cameras, horseshoes, baseball catchers' masks and snowshoes are among the items made from magnesium alloys.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/12#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Mg.uses.0"
+          }
+        },
+        {
+          "value": "Magnesium oxide is used in some antacids.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/12#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Mg.uses.1"
+          }
+        },
+        {
+          "value": "A thin film of magnesium fluoride is applied to optical lenses to help reduce glare and reflections.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/12#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Mg.uses.2"
+          }
+        },
+        {
+          "value": "Magnesium carbonate is added to table salt to prevent caking.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/12#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Mg.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name magnesium comes from Magnesia, a district in the north-eastern region of Greece called Thessalia.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/12#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Mg.discovery.story.0"
+            }
+          },
+          {
+            "value": "The Scottish chemist Joseph Black recognized magnesium as a separate element in 1755.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/12#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Mg.discovery.story.1"
+            }
+          },
+          {
+            "value": "In 1808, the English chemist Humphry Davy obtained impure magnesium metal.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/12#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Mg.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

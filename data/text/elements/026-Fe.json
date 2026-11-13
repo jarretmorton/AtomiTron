@@ -1,0 +1,263 @@
+{
+  "element": "element:Fe",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name iron comes from an Anglo-Saxon word of unknown origin.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Fe.discovery.story.0"
+        }
+      },
+      {
+        "value": "The symbol Fe comes from the Latin word ferrum, meaning \"firmness\".",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Fe.discovery.story.1"
+        }
+      },
+      {
+        "value": "Iron is mentioned many times in the Old Testament of the Bible.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=History",
+          "retrieved": "2026-11-10",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Fe.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Huge amounts of iron are used to make steel, an alloy of iron and carbon.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Fe.uses.0"
+      }
+    },
+    {
+      "value": "Steel is used to make paper clips, skyscrapers and everything in between.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Fe.uses.1"
+      }
+    },
+    {
+      "value": "Adding chromium to steel improves its durability and prevents rust, making stainless steel.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Fe.uses.2"
+      }
+    },
+    {
+      "value": "Iron sulfate is used to treat the blood disease anemia.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Fe.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Fe.discovery.story.0",
+      "subject": {
+        "entity": "element:Fe",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name iron comes from an Anglo-Saxon word of unknown origin.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Anglo-Saxon iron of unknown origin.",
+      "evidence": "The name derives from the Anglo-Saxon iron of unknown origin.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Fe.discovery.story.1",
+      "subject": {
+        "entity": "element:Fe",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The symbol Fe comes from the Latin word ferrum, meaning \"firmness\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The symbol Fe is derived from the Latin ferrum for \"firmness\".",
+      "evidence": "The symbol Fe is derived from the Latin ferrum for \"firmness\".",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Fe.discovery.story.2",
+      "subject": {
+        "entity": "element:Fe",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Iron is mentioned many times in the Old Testament of the Bible.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Iron is mentioned numerous times in the Old Testament of the Bible.",
+      "evidence": "Iron is mentioned numerous times in the Old Testament of the Bible.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Fe.uses.0",
+      "subject": {
+        "entity": "element:Fe",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Huge amounts of iron are used to make steel, an alloy of iron and carbon.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Huge amounts of iron are used to make steel, an alloy of iron and carbon.",
+      "evidence": "Huge amounts of iron are used to make steel, an alloy of iron and carbon.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Fe.uses.1",
+      "subject": {
+        "entity": "element:Fe",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Steel is used to make paper clips, skyscrapers and everything in between.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Steel is used to make paper clips, skyscrapers and everything in between.",
+      "evidence": "Steel is used to make paper clips, skyscrapers and everything in between.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Fe.uses.2",
+      "subject": {
+        "entity": "element:Fe",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Adding chromium to steel improves its durability and prevents rust, making stainless steel.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Small amounts of chromium improves durability and prevents rust (stainless steel)",
+      "evidence": "Small amounts of chromium improves durability and prevents rust (stainless steel)",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Fe.uses.3",
+      "subject": {
+        "entity": "element:Fe",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Iron sulfate is used to treat the blood disease anemia.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Iron sulfate (FeSO4) is used to treat the blood disease anemia.",
+      "evidence": "Iron sulfate (FeSO4) is used to treat the blood disease anemia.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    }
+  ]
+}

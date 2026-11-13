@@ -1,0 +1,299 @@
+{
+  "element": "element:C",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name carbon comes from the Latin word carbo, meaning \"charcoal\".",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "C.discovery.story.0"
+        }
+      },
+      {
+        "value": "Carbon was known in prehistoric times in the form of charcoal and soot.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "C.discovery.story.1"
+        }
+      },
+      {
+        "value": "In 1797, the English chemist Smithson Tennant proved that diamond is pure carbon.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "C.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": "Ancient",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=History",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "C.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "The black material in pencils, often called lead, is actually graphite.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "C.uses.0"
+      }
+    },
+    {
+      "value": "Carbon black, a kind of black soot, is used to make inks, paints and rubber products.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "C.uses.1"
+      }
+    },
+    {
+      "value": "Graphite, a form of carbon, is mainly used as a lubricant.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "C.uses.2"
+      }
+    },
+    {
+      "value": "A radioactive isotope of carbon is used to find the age of formerly living things, through a process known as radiocarbon dating.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "C.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "C.discovery.year",
+      "subject": {
+        "entity": "element:C",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": "Ancient",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Carbon, the sixth most abundant element in the universe, has been known since ancient times.",
+      "evidence": "Carbon, the sixth most abundant element in the universe, has been known since ancient times.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "C.discovery.story.0",
+      "subject": {
+        "entity": "element:C",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name carbon comes from the Latin word carbo, meaning \"charcoal\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin carbo for \"charcoal\".",
+      "evidence": "The name derives from the Latin carbo for \"charcoal\".",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "C.discovery.story.1",
+      "subject": {
+        "entity": "element:C",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Carbon was known in prehistoric times in the form of charcoal and soot.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was known in prehistoric times in the form of charcoal and soot.",
+      "evidence": "It was known in prehistoric times in the form of charcoal and soot.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "C.discovery.story.2",
+      "subject": {
+        "entity": "element:C",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "In 1797, the English chemist Smithson Tennant proved that diamond is pure carbon.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "In 1797, the English chemist Smithson Tennant proved that diamond is pure carbon.",
+      "evidence": "In 1797, the English chemist Smithson Tennant proved that diamond is pure carbon.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "C.uses.0",
+      "subject": {
+        "entity": "element:C",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "The black material in pencils, often called lead, is actually graphite.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Although commonly called lead, the black material used in pencils is actually graphite.",
+      "evidence": "Although commonly called lead, the black material used in pencils is actually graphite.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "C.uses.1",
+      "subject": {
+        "entity": "element:C",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Carbon black, a kind of black soot, is used to make inks, paints and rubber products.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "This black soot, also known as lampblack, gas black, channel black or carbon black, is used to make inks, paints and rubber products.",
+      "evidence": "This black soot, also known as lampblack, gas black, channel black or carbon black, is used to make inks, paints and rubber products.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "C.uses.2",
+      "subject": {
+        "entity": "element:C",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Graphite, a form of carbon, is mainly used as a lubricant.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Graphite, one of the softest materials known, is a form of carbon that is primarily used as a lubricant.",
+      "evidence": "Graphite, one of the softest materials known, is a form of carbon that is primarily used as a lubricant.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "C.uses.3",
+      "subject": {
+        "entity": "element:C",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "A radioactive isotope of carbon is used to find the age of formerly living things, through a process known as radiocarbon dating.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/6#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Carbon-14, a radioactive isotope of carbon with a half-life of 5,730 years, is used to find the age of formerly living things",
+      "evidence": "Carbon-14, a radioactive isotope of carbon with a half-life of 5,730 years, is used to find the age of formerly living things",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    }
+  ]
+}

@@ -421,7 +421,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "The largest use of nitrogen is for making ammonia.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "N.uses.0"
+          }
+        },
+        {
+          "value": "Liquid nitrogen is used for refrigeration.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "N.uses.1"
+          }
+        },
+        {
+          "value": "Liquid nitrogen is used to preserve biological samples.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "N.uses.2"
+          }
+        },
+        {
+          "value": "Nitrogen gas is used as a protective shield in the semiconductor industry.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "N.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Nitrogen was discovered by the Scottish physician and chemist Daniel Rutherford in 1772.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "N.discovery.story.0"
+            }
+          },
+          {
+            "value": "The name nitrogen comes from words meaning \"native soda\" and \"forming\".",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "N.discovery.story.1"
+            }
+          },
+          {
+            "value": "Rutherford removed oxygen and carbon dioxide from air and showed that the remaining gas would not support burning or living things.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=History",
+              "retrieved": "2026-11-10",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "N.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1772,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=History",
+            "retrieved": "2026-11-10",
+            "via": "IUPAC CIAAW"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "N.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

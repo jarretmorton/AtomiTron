@@ -29,6 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "verified" / "elements"
 RECORDS_DIR = ROOT / "verification" / "records" / "elements"
 REPORTS_DIR = ROOT / "verification" / "reports"
+TEXT_DIR = ROOT / "data" / "text" / "elements"  # agent-verified text facts (pipeline.text_facts)
 VERIFIER = "pipeline/elements.py"
 
 PAGE = "https://pubchem.ncbi.nlm.nih.gov/element/{z}"
@@ -713,7 +714,21 @@ class ElementBuilder:
             else:
                 self.add_derived("/valenceElectrons", "valence-main-group", ["/electronConfiguration", "/group"])
 
-        return Built(self.assemble(drawn), list(self.records.values()), self.drops, self.notes)
+        element = self.assemble(drawn)
+        self.merge_text(element)
+        return Built(element, list(self.records.values()), self.drops, self.notes)
+
+    def merge_text(self, element: dict) -> None:
+        """Add history and uses verified by pipeline.text_facts, if any."""
+        path = TEXT_DIR / f"{self.z:03d}-{self.symbol}.json"
+        if not path.exists():
+            return
+        text = json.loads(path.read_text("utf-8"))
+        if text.get("discovery"):
+            element["discovery"] = text["discovery"]
+        element["uses"] = text.get("uses", [])
+        for r in text.get("records", []):
+            self.records[r["id"]] = r
 
     def assemble(self, drawn: int) -> dict:
         f = self.facts
