@@ -482,7 +482,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Plants and animals rely on oxygen for respiration.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "O.uses.0"
+          }
+        },
+        {
+          "value": "Hospitals frequently prescribe oxygen for patients with breathing illnesses.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "O.uses.1"
+          }
+        },
+        {
+          "value": "Oxygen is used in making steel, where it burns away impurities in molten iron.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "O.uses.2"
+          }
+        },
+        {
+          "value": "Oxygen can be combined with acetylene to produce a very hot flame used for welding.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "O.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name oxygen comes from Greek words meaning \"acid\" and \"forming\".",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "O.discovery.story.0"
+            }
+          },
+          {
+            "value": "The name oxygen was created by Antoine Lavoisier, who incorrectly believed that oxygen was necessary to form all acids.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=History",
+              "retrieved": "2026-11-10",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "O.discovery.story.1"
+            }
+          },
+          {
+            "value": "Joseph Priestley and Carl Wilhelm Scheele both discovered oxygen independently, but Priestley is usually given credit for the discovery.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=History",
+              "retrieved": "2026-11-10",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "O.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

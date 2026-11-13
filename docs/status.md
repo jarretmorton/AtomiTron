@@ -2,8 +2,9 @@
 
 *Updated 2026-11-12. Phase 1 and phase 2 part 1 are live: the periodic
 table and element pages for all 118 elements, with every fact verified and
-cited, plus a 3D atom trial on the vanadium page. Next: the history and uses
-text (part 2).*
+cited, plus a 3D atom trial on the vanadium page. The history and uses
+pilot (10 elements) is live for review on the iPad, ahead of the Claude API
+re-run.*
 
 ## Where things stand
 
@@ -59,9 +60,32 @@ They went live early, at your request, so you can review them on the iPad.
 They were verified by subagents rather than the Claude API pipeline. The
 methodology section describing this procedure is still marked for review.
 
-The history and uses pilot for 10 elements is on branch
-`claude/phase-2-text` and isn't published. It waits for the Claude API
-pipeline.
+## Phase 2, part 2: history and uses (pilot, live for review)
+
+Prototyped with Claude Code subagents. **Published early on 2026-11-12, at
+your request, so the wording can be reviewed on the iPad.** The spec
+(10.1) says to switch to the Claude API pipeline before anything is
+published. That re-run is still required before a wider release, and it
+will replace these records.
+
+- **Pilot elements:** H, C, N, O, Na, Mg, Cl, Fe, Cu, Au.
+- **The run:** one drafter wrote 70 statements and 7 discovery years. Code
+  checks rejected none. Three independent verifiers then judged them.
+- **Result:** 71 element statements passed with 3 of 3 agreement, and ship
+  in this branch's data, with records.
+- **Left out:**
+  - Iron, copper and gold discovery years: their passages say
+    "prehistoric", not "ancient".
+  - Gold's name origin: it gave two of the passage's three sources, and
+    passed only 2 of 3.
+- **Discovery years left blank** because the sources conflict: hydrogen
+  (1766 vs 1776), oxygen (1771 vs 1774), magnesium (three years).
+- **Audit trail:** `verification/agent-runs/2026-11-12-elements-text-pilot/`
+  (already on `main` with the explanation fix). Full source passages stay in
+  the local cache; only short excerpts are committed.
+- **Known limit:** a record keeps one excerpt of at most 25 words. For a
+  two-sentence claim, that may cover only the first sentence, although the
+  verifier judged both.
 
 ## Trial: a moving 3D atom (vanadium only)
 
@@ -202,10 +226,12 @@ Still open from requirements section 9:
    - a few element pages
    - the temperature-unit buttons
    - that citation links open PubChem at the right section
-2. **Phase 2, part 2: history and uses.** Draft plain-language statements
-   and verify each with verifier agents, three runs each, keeping short
-   evidence excerpts. These are agent-checked, so the spec's switch to the
-   Claude API pipeline applies before they're published.
+2. **Phase 2, part 2: history and uses.** The pilot of 10 elements is live
+   for review (see above). Next:
+   - review the pilot's wording
+   - build the Claude API version of `pipeline/text_facts.py`, which needs an
+     API key and a budget (spec section 9), and re-run the pilot through it
+   - then scale to all 118 elements
 3. **Checkpoint 1:** a human spot review of about 25 sampled facts, logged
    in `verification/spot-reviews/`.
 

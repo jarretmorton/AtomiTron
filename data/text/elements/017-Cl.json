@@ -1,0 +1,299 @@
+{
+  "element": "element:Cl",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name chlorine comes from the Greek word chloros, meaning \"pale green\" or \"greenish yellow\".",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cl.discovery.story.0"
+        }
+      },
+      {
+        "value": "Chlorine was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cl.discovery.story.1"
+        }
+      },
+      {
+        "value": "In 1810, the English chemist Humphry Davy proved that chlorine was an element.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cl.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1774,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
+        "retrieved": "2026-11-10",
+        "via": "IUPAC CIAAW"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cl.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Chlorine is used to make drinking water safe and to treat swimming pools.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cl.uses.0"
+      }
+    },
+    {
+      "value": "Chlorine is commonly used as an antiseptic.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cl.uses.1"
+      }
+    },
+    {
+      "value": "Sodium chloride, a chlorine compound commonly known as table salt, is used to season food.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cl.uses.2"
+      }
+    },
+    {
+      "value": "Chlorine is used in the production of paper products, textiles and medicines.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cl.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Cl.discovery.year",
+      "subject": {
+        "entity": "element:Cl",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1774,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774.",
+      "evidence": "It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cl.discovery.story.0",
+      "subject": {
+        "entity": "element:Cl",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name chlorine comes from the Greek word chloros, meaning \"pale green\" or \"greenish yellow\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek chloros for \"pale green\" or \"greenish yellow\" colour of the element.",
+      "evidence": "The name derives from the Greek chloros for \"pale green\" or \"greenish yellow\" colour of the element.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cl.discovery.story.1",
+      "subject": {
+        "entity": "element:Cl",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Chlorine was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774.",
+      "evidence": "It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cl.discovery.story.2",
+      "subject": {
+        "entity": "element:Cl",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "In 1810, the English chemist Humphry Davy proved that chlorine was an element.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "In 1810, the English chemist Humphry Davy proved it was an element.",
+      "evidence": "In 1810, the English chemist Humphry Davy proved it was an element.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cl.uses.0",
+      "subject": {
+        "entity": "element:Cl",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Chlorine is used to make drinking water safe and to treat swimming pools.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "is used to make drinking water safe and to treat swimming pools.",
+      "evidence": "is used to make drinking water safe and to treat swimming pools.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cl.uses.1",
+      "subject": {
+        "entity": "element:Cl",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Chlorine is commonly used as an antiseptic.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Chlorine is commonly used as an antiseptic",
+      "evidence": "Chlorine is commonly used as an antiseptic",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cl.uses.2",
+      "subject": {
+        "entity": "element:Cl",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Sodium chloride, a chlorine compound commonly known as table salt, is used to season food.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Sodium chloride, commonly known as table salt, is used to season food",
+      "evidence": "Sodium chloride, commonly known as table salt, is used to season food",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cl.uses.3",
+      "subject": {
+        "entity": "element:Cl",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Chlorine is used in the production of paper products, textiles and medicines.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It is also extensively used in the production of paper products, dyestuffs, textiles, petroleum products, medicines",
+      "evidence": "It is also extensively used in the production of paper products, dyestuffs, textiles, petroleum products, medicines",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    }
+  ]
+}

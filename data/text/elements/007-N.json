@@ -1,0 +1,299 @@
+{
+  "element": "element:N",
+  "discovery": {
+    "story": [
+      {
+        "value": "Nitrogen was discovered by the Scottish physician and chemist Daniel Rutherford in 1772.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "N.discovery.story.0"
+        }
+      },
+      {
+        "value": "The name nitrogen comes from words meaning \"native soda\" and \"forming\".",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "N.discovery.story.1"
+        }
+      },
+      {
+        "value": "Rutherford removed oxygen and carbon dioxide from air and showed that the remaining gas would not support burning or living things.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=History",
+          "retrieved": "2026-11-10",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "N.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1772,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=History",
+        "retrieved": "2026-11-10",
+        "via": "IUPAC CIAAW"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "N.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "The largest use of nitrogen is for making ammonia.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "N.uses.0"
+      }
+    },
+    {
+      "value": "Liquid nitrogen is used for refrigeration.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "N.uses.1"
+      }
+    },
+    {
+      "value": "Liquid nitrogen is used to preserve biological samples.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "N.uses.2"
+      }
+    },
+    {
+      "value": "Nitrogen gas is used as a protective shield in the semiconductor industry.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "N.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "N.discovery.year",
+      "subject": {
+        "entity": "element:N",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1772,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Nitrogen was discovered by the Scottish physician and chemist Daniel Rutherford in 1772.",
+      "evidence": "Nitrogen was discovered by the Scottish physician and chemist Daniel Rutherford in 1772.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "N.discovery.story.0",
+      "subject": {
+        "entity": "element:N",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Nitrogen was discovered by the Scottish physician and chemist Daniel Rutherford in 1772.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Nitrogen was discovered by the Scottish physician and chemist Daniel Rutherford in 1772.",
+      "evidence": "Nitrogen was discovered by the Scottish physician and chemist Daniel Rutherford in 1772.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "N.discovery.story.1",
+      "subject": {
+        "entity": "element:N",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name nitrogen comes from words meaning \"native soda\" and \"forming\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin nitrum and Greek nitron for \"native soda\" and genes for \"forming\".",
+      "evidence": "The name derives from the Latin nitrum and Greek nitron for \"native soda\" and genes for \"forming\".",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "N.discovery.story.2",
+      "subject": {
+        "entity": "element:N",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Rutherford removed oxygen and carbon dioxide from air and showed that the remaining gas would not support burning or living things.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "He removed oxygen and carbon dioxide from air and showed that the residual gas would not support combustion or living organisms.",
+      "evidence": "He removed oxygen and carbon dioxide from air and showed that the residual gas would not support combustion or living organisms.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "N.uses.0",
+      "subject": {
+        "entity": "element:N",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "The largest use of nitrogen is for making ammonia.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "The largest use of nitrogen is for the production of ammonia (NH3).",
+      "evidence": "The largest use of nitrogen is for the production of ammonia (NH3).",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "N.uses.1",
+      "subject": {
+        "entity": "element:N",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Liquid nitrogen is used for refrigeration.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Liquid nitrogen is an inexpensive cryogenic liquid used for refrigeration, preservation of biological samples",
+      "evidence": "Liquid nitrogen is an inexpensive cryogenic liquid used for refrigeration, preservation of biological samples",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "N.uses.2",
+      "subject": {
+        "entity": "element:N",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Liquid nitrogen is used to preserve biological samples.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Liquid nitrogen is an inexpensive cryogenic liquid used for refrigeration, preservation of biological samples",
+      "evidence": "Liquid nitrogen is an inexpensive cryogenic liquid used for refrigeration, preservation of biological samples",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "N.uses.3",
+      "subject": {
+        "entity": "element:N",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Nitrogen gas is used as a protective shield in the semiconductor industry.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/7#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Nitrogen gas is largely inert and is used as a protective shield in the semiconductor industry",
+      "evidence": "Nitrogen gas is largely inert and is used as a protective shield in the semiconductor industry",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    }
+  ]
+}

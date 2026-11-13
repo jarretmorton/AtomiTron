@@ -323,7 +323,96 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Gold alloys are used to make jewelry, decorative items, dental fillings and coins.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Au.uses.0"
+          }
+        },
+        {
+          "value": "Thin sheets of gold, known as gold leaf, are mainly used in arts and crafts for gilding.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Au.uses.1"
+          }
+        },
+        {
+          "value": "Gold can be used to make electrical connectors and printed circuit boards.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Au.uses.2"
+          }
+        },
+        {
+          "value": "Gold is used for coating certain space satellites, as it is a good reflector of infrared and is inert.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Au.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The symbol Au comes from the Latin aurum, for Aurora, the goddess of dawn.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Au.discovery.story.0"
+            }
+          },
+          {
+            "value": "Gold was known and highly valued in prehistoric times.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/79#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Au.discovery.story.1"
+            }
+          }
+        ]
+      }
     }
   ]
 }

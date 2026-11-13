@@ -175,6 +175,38 @@ function isotopesSection(e: Element): HTMLElement {
   return section(e.isotopes.some((i) => i.abundance) ? 'Isotopes found in nature' : 'Isotope shown', intro, list);
 }
 
+/** One verified statement with its citation, or null if it isn't renderable. */
+function statement(f: Fact): HTMLElement | null {
+  if (!isRenderable(f)) return null;
+  const li = el('li', 'statement');
+  li.append(String(f.value), ' ', citation(f.source.url, f.source.via));
+  return li;
+}
+
+function statements(facts: Fact[]): HTMLElement | null {
+  const items = facts.map(statement).filter((x): x is HTMLElement => x !== null);
+  if (!items.length) return null;
+  const ul = el('ul', 'statements');
+  ul.append(...items);
+  return ul;
+}
+
+function discoverySection(e: Element): HTMLElement {
+  const story = statements(e.discovery?.story ?? []);
+  const uses = statements(e.uses);
+  if (!story && !uses) {
+    return section('Discovery and uses', el('p', 'coming', 'Coming in a later update, once each statement has been checked against its source.'));
+  }
+  const year = e.discovery?.year;
+  return section('Discovery and uses',
+    year ? factRow('Discovered or first isolated', year) : null,
+    story ? el('h3', undefined, 'How it was found') : null,
+    story,
+    uses ? el('h3', undefined, 'What it is used for') : null,
+    uses,
+  );
+}
+
 function nav(row: IndexRow): HTMLElement {
   const n = el('nav', 'element-nav');
   n.setAttribute('aria-label', 'Element navigation');
@@ -212,7 +244,7 @@ export function elementView(symbol: string | undefined): HTMLElement {
   loadElement(row)
     .then((e) => {
       page.replaceChildren(nav(row), header(row, e), atomSection(e), numbersSection(e), propertiesSection(e), isotopesSection(e),
-        section('Discovery and uses', el('p', 'coming', 'Coming in a later update, once each statement has been checked against its source.')));
+        discoverySection(e));
       document.title = `${row.name} — AtomiTron`;
     })
     .catch(() => {

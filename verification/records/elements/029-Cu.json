@@ -16,7 +16,7 @@
       "retrievedValue": 29,
       "evidence": "RecordNumber 29",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -37,7 +37,7 @@
       "retrievedValue": "Cu",
       "evidence": "Cu",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -65,7 +65,7 @@
       "retrievedValue": "Copper",
       "evidence": "Copper",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -86,7 +86,7 @@
       "retrievedValue": 4,
       "evidence": "4",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -108,7 +108,7 @@
       "retrievedValue": 11,
       "evidence": "11",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -130,7 +130,7 @@
       "retrievedValue": 63.546,
       "evidence": "63.546(3)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -168,7 +168,7 @@
       "retrievedValue": "[Ar] 3d10 4s1",
       "evidence": "[Ar]4s13d10",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -197,7 +197,7 @@
       "retrievedValue": 1.9,
       "evidence": "1.9 (Pauling Scale)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -219,7 +219,7 @@
       "retrievedValue": "Solid",
       "evidence": "Solid",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -240,7 +240,7 @@
       "retrievedValue": "Metal",
       "evidence": "Metal",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -262,7 +262,7 @@
       "retrievedValue": 1084.62,
       "evidence": "1357.77 K (1084.62°C or 1984.32°F)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -293,7 +293,7 @@
       "retrievedValue": 2562.0,
       "evidence": "2835 K (2562°C or 4644°F)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -324,7 +324,7 @@
       "retrievedValue": 8.933,
       "evidence": "8.933 grams per cubic centimeter",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -346,7 +346,7 @@
       "retrievedValue": 63,
       "evidence": "63Cu",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -367,7 +367,7 @@
       "retrievedValue": 62.929597,
       "evidence": "62.929 597(3)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -395,7 +395,7 @@
       "retrievedValue": 0.6915,
       "evidence": "0.6915(15)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -424,7 +424,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -445,7 +445,7 @@
       "retrievedValue": 65,
       "evidence": "65Cu",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -466,7 +466,7 @@
       "retrievedValue": 64.92779,
       "evidence": "64.927 790(5)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -494,7 +494,7 @@
       "retrievedValue": 0.3085,
       "evidence": "0.3085(15)",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -523,7 +523,7 @@
       "retrievedValue": "Stable",
       "evidence": "Stable",
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -542,7 +542,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 29,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -562,7 +562,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 29,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -582,7 +582,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
       "retrievedValue": 34,
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -612,13 +612,167 @@
         1
       ],
       "result": "pass",
-      "checkedAt": "2026-11-11T04:11:15Z",
+      "checkedAt": "2026-11-13T04:04:12Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Cu.electronConfiguration"
+    },
+    {
+      "id": "Cu.discovery.story.0",
+      "subject": {
+        "entity": "element:Cu",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name copper comes from the Latin cuprum, for Cyprus, the island where the Romans first obtained copper.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin cuprum for Cyprus, the island where the Romans first obtained copper.",
+      "evidence": "The name derives from the Latin cuprum for Cyprus, the island where the Romans first obtained copper.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cu.discovery.story.1",
+      "subject": {
+        "entity": "element:Cu",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The symbol Cu also comes from the Latin cuprum.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The symbol Cu also comes from the Latin cuprum.",
+      "evidence": "The symbol Cu also comes from the Latin cuprum.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cu.discovery.story.2",
+      "subject": {
+        "entity": "element:Cu",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Copper has been known since prehistoric times.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The element has been known since prehistoric times.",
+      "evidence": "The element has been known since prehistoric times.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cu.uses.0",
+      "subject": {
+        "entity": "element:Cu",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "The electrical industry uses copper in the form of wire.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Used in large amounts by the electrical industry in the form of wire",
+      "evidence": "Used in large amounts by the electrical industry in the form of wire",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cu.uses.1",
+      "subject": {
+        "entity": "element:Cu",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Since it resists corrosion from the air, moisture and seawater, copper has been widely used in coins.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Since it resists corrosion from the air, moisture and seawater, copper has been widely used in coins.",
+      "evidence": "Since it resists corrosion from the air, moisture and seawater, copper has been widely used in coins.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cu.uses.2",
+      "subject": {
+        "entity": "element:Cu",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Copper is used to make water pipes and jewelry.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Copper is also used to make water pipes and jewelry",
+      "evidence": "Copper is also used to make water pipes and jewelry",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "Cu.uses.3",
+      "subject": {
+        "entity": "element:Cu",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Brass, an alloy of copper, is used today in some musical instruments and screws.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/29#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Today, brass is also used in some musical instruments, screws and other hardware that must resist corrosion.",
+      "evidence": "Today, brass is also used in some musical instruments, screws and other hardware that must resist corrosion.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
     }
   ]
 }

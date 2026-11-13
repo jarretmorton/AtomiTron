@@ -422,7 +422,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Chlorine is used to make drinking water safe and to treat swimming pools.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cl.uses.0"
+          }
+        },
+        {
+          "value": "Chlorine is commonly used as an antiseptic.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cl.uses.1"
+          }
+        },
+        {
+          "value": "Sodium chloride, a chlorine compound commonly known as table salt, is used to season food.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cl.uses.2"
+          }
+        },
+        {
+          "value": "Chlorine is used in the production of paper products, textiles and medicines.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cl.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name chlorine comes from the Greek word chloros, meaning \"pale green\" or \"greenish yellow\".",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Cl.discovery.story.0"
+            }
+          },
+          {
+            "value": "Chlorine was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Cl.discovery.story.1"
+            }
+          },
+          {
+            "value": "In 1810, the English chemist Humphry Davy proved that chlorine was an element.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Cl.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1774,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/17#section=History",
+            "retrieved": "2026-11-10",
+            "via": "IUPAC CIAAW"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cl.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

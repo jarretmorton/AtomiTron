@@ -493,3 +493,24 @@
   margin: 8px 0 0;
   font-size: 1rem;
 }
+
+/* ---- Discovery and uses ---------------------------------------------------- */
+
+.card h3 {
+  margin: 14px 0 4px;
+  font-size: 1rem;
+}
+
+.statements {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.statement {
+  margin: 6px 0;
+}
+
+.statement .cite {
+  margin-left: 2px;
+  vertical-align: middle;
+}

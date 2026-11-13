@@ -509,7 +509,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Huge amounts of iron are used to make steel, an alloy of iron and carbon.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Fe.uses.0"
+          }
+        },
+        {
+          "value": "Steel is used to make paper clips, skyscrapers and everything in between.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Fe.uses.1"
+          }
+        },
+        {
+          "value": "Adding chromium to steel improves its durability and prevents rust, making stainless steel.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Fe.uses.2"
+          }
+        },
+        {
+          "value": "Iron sulfate is used to treat the blood disease anemia.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Fe.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name iron comes from an Anglo-Saxon word of unknown origin.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Fe.discovery.story.0"
+            }
+          },
+          {
+            "value": "The symbol Fe comes from the Latin word ferrum, meaning \"firmness\".",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Fe.discovery.story.1"
+            }
+          },
+          {
+            "value": "Iron is mentioned many times in the Old Testament of the Bible.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/26#section=History",
+              "retrieved": "2026-11-10",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Fe.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

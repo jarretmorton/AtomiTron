@@ -1,0 +1,263 @@
+{
+  "element": "element:H",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name hydrogen comes from Greek words meaning \"water\" and \"forming\", because it burned in air to form water.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "H.discovery.story.0"
+        }
+      },
+      {
+        "value": "Hydrogen was discovered by the English physicist Henry Cavendish.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "H.discovery.story.1"
+        }
+      },
+      {
+        "value": "Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=History",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "H.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Hydrogen is used for filling balloons.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "H.uses.0"
+      }
+    },
+    {
+      "value": "Hydrogen is added to fats and oils, such as peanut oil, through a process called hydrogenation.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "H.uses.1"
+      }
+    },
+    {
+      "value": "The hydrogen fuel cell is a developing technology for obtaining electrical power from hydrogen gas.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "H.uses.2"
+      }
+    },
+    {
+      "value": "Liquid hydrogen is used in the study of superconductors.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "H.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "H.discovery.story.0",
+      "subject": {
+        "entity": "element:H",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name hydrogen comes from Greek words meaning \"water\" and \"forming\", because it burned in air to form water.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek hydro for \"water\" and genes for \"forming\" because it burned in air to form water.",
+      "evidence": "The name derives from the Greek hydro for \"water\" and genes for \"forming\" because it burned in air to form water.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "H.discovery.story.1",
+      "subject": {
+        "entity": "element:H",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Hydrogen was discovered by the English physicist Henry Cavendish.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Hydrogen was discovered by the English physicist Henry Cavendish in 1766.",
+      "evidence": "Hydrogen was discovered by the English physicist Henry Cavendish in 1766.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "H.discovery.story.2",
+      "subject": {
+        "entity": "element:H",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids.",
+      "evidence": "Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "H.uses.0",
+      "subject": {
+        "entity": "element:H",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Hydrogen is used for filling balloons.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Other uses include rocket fuel, welding, producing hydrochloric acid, reducing metallic ores, and filling balloons.",
+      "evidence": "Other uses include rocket fuel, welding, producing hydrochloric acid, reducing metallic ores, and filling balloons.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "H.uses.1",
+      "subject": {
+        "entity": "element:H",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Hydrogen is added to fats and oils, such as peanut oil, through a process called hydrogenation.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Hydrogen is also added to fats and oils, such as peanut oil, through a process called hydrogenation.",
+      "evidence": "Hydrogen is also added to fats and oils, such as peanut oil, through a process called hydrogenation.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "H.uses.2",
+      "subject": {
+        "entity": "element:H",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "The hydrogen fuel cell is a developing technology for obtaining electrical power from hydrogen gas.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "The hydrogen fuel cell is a developing technology that will allow great amounts of electrical power to be obtained using a source of hydrogen gas.",
+      "evidence": "The hydrogen fuel cell is a developing technology that will allow great amounts of electrical power to be obtained using a source of hydrogen gas.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "H.uses.3",
+      "subject": {
+        "entity": "element:H",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Liquid hydrogen is used in the study of superconductors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Liquid hydrogen is used in the study of superconductors",
+      "evidence": "Liquid hydrogen is used in the study of superconductors",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    }
+  ]
+}

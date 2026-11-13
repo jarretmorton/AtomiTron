@@ -1,0 +1,263 @@
+{
+  "element": "element:O",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name oxygen comes from Greek words meaning \"acid\" and \"forming\".",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=History",
+          "retrieved": "2026-11-10",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "O.discovery.story.0"
+        }
+      },
+      {
+        "value": "The name oxygen was created by Antoine Lavoisier, who incorrectly believed that oxygen was necessary to form all acids.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=History",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "O.discovery.story.1"
+        }
+      },
+      {
+        "value": "Joseph Priestley and Carl Wilhelm Scheele both discovered oxygen independently, but Priestley is usually given credit for the discovery.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=History",
+          "retrieved": "2026-11-10",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "O.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Plants and animals rely on oxygen for respiration.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "O.uses.0"
+      }
+    },
+    {
+      "value": "Hospitals frequently prescribe oxygen for patients with breathing illnesses.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "O.uses.1"
+      }
+    },
+    {
+      "value": "Oxygen is used in making steel, where it burns away impurities in molten iron.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "O.uses.2"
+      }
+    },
+    {
+      "value": "Oxygen can be combined with acetylene to produce a very hot flame used for welding.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
+        "retrieved": "2026-11-10",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "O.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "O.discovery.story.0",
+      "subject": {
+        "entity": "element:O",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name oxygen comes from Greek words meaning \"acid\" and \"forming\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek oxys for \"acid\" and genes for \"forming\"",
+      "evidence": "The name derives from the Greek oxys for \"acid\" and genes for \"forming\"",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "O.discovery.story.1",
+      "subject": {
+        "entity": "element:O",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name oxygen was created by Antoine Lavoisier, who incorrectly believed that oxygen was necessary to form all acids.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "The name oxygen was created by Antoine Lavoisier who incorrectly believed that oxygen was necessary to form all acids.",
+      "evidence": "The name oxygen was created by Antoine Lavoisier who incorrectly believed that oxygen was necessary to form all acids.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "O.discovery.story.2",
+      "subject": {
+        "entity": "element:O",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Joseph Priestley and Carl Wilhelm Scheele both discovered oxygen independently, but Priestley is usually given credit for the discovery.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Joseph Priestley and Carl Wilhelm Scheele both independently discovered oxygen, but Priestly is usually given credit for the discovery.",
+      "evidence": "Joseph Priestley and Carl Wilhelm Scheele both independently discovered oxygen, but Priestly is usually given credit for the discovery.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "O.uses.0",
+      "subject": {
+        "entity": "element:O",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Plants and animals rely on oxygen for respiration.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Plants and animals rely on oxygen for respiration.",
+      "evidence": "Plants and animals rely on oxygen for respiration.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "O.uses.1",
+      "subject": {
+        "entity": "element:O",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Hospitals frequently prescribe oxygen for patients with breathing illnesses.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Hospitals frequently prescribe oxygen for patients with respiratory ailments.",
+      "evidence": "Hospitals frequently prescribe oxygen for patients with respiratory ailments.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "O.uses.2",
+      "subject": {
+        "entity": "element:O",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Oxygen is used in making steel, where it burns away impurities in molten iron.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Impurities in molten pig iron are burned away with streams of high pressure oxygen to produce steel.",
+      "evidence": "Impurities in molten pig iron are burned away with streams of high pressure oxygen to produce steel.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    },
+    {
+      "id": "O.uses.3",
+      "subject": {
+        "entity": "element:O",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Oxygen can be combined with acetylene to produce a very hot flame used for welding.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/8#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Oxygen can also be combined with acetylene (C2H2) to produce an extremely hot flame used for welding.",
+      "evidence": "Oxygen can also be combined with acetylene (C2H2) to produce an extremely hot flame used for welding.",
+      "result": "pass",
+      "checkedAt": "2026-11-13T04:02:58Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude Code subagents (claude-opus-5-5): 1 drafter, 3 independent verifiers; prototype run",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-12-elements-text-pilot"
+    }
+  ]
+}

@@ -420,7 +420,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Hydrogen is used for filling balloons.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "H.uses.0"
+          }
+        },
+        {
+          "value": "Hydrogen is added to fats and oils, such as peanut oil, through a process called hydrogenation.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "H.uses.1"
+          }
+        },
+        {
+          "value": "The hydrogen fuel cell is a developing technology for obtaining electrical power from hydrogen gas.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "H.uses.2"
+          }
+        },
+        {
+          "value": "Liquid hydrogen is used in the study of superconductors.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=Uses",
+            "retrieved": "2026-11-10",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "H.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name hydrogen comes from Greek words meaning \"water\" and \"forming\", because it burned in air to form water.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "H.discovery.story.0"
+            }
+          },
+          {
+            "value": "Hydrogen was discovered by the English physicist Henry Cavendish.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=History",
+              "retrieved": "2026-11-10",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "H.discovery.story.1"
+            }
+          },
+          {
+            "value": "Written records indicate that Robert Boyle produced hydrogen gas as early as 1671 while experimenting with iron and acids.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/1#section=History",
+              "retrieved": "2026-11-10",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "H.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }
