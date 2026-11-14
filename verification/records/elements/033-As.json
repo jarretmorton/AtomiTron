@@ -500,6 +500,138 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from As.electronConfiguration, As.group"
+    },
+    {
+      "id": "As.discovery.story.0",
+      "subject": {
+        "entity": "element:As",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name arsenic comes from the Latin word arsenicium and the Greek word arsenikos, meaning \"masculine\" or \"male\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/33#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin arsenicium and the Greek arsenikos for \"masculine\" or \"male\"",
+      "evidence": "The name derives from the Latin arsenicium and the Greek arsenikos for \"masculine\" or \"male\"",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "As.discovery.story.1",
+      "subject": {
+        "entity": "element:As",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Albertus Magnus, a German alchemist, is believed to have first identified arsenic in 1250.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/33#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it is believed that arsenic itself was first identified by Albertus Magnus, a German alchemist, in 1250.",
+      "evidence": "it is believed that arsenic itself was first identified by Albertus Magnus, a German alchemist, in 1250.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "As.discovery.story.2",
+      "subject": {
+        "entity": "element:As",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Arsenic compounds were mined by the early Chinese, Greek and Egyptian civilizations.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/33#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "arsenic compounds were mined by the early Chinese, Greek and Egyptian civilizations",
+      "evidence": "arsenic compounds were mined by the early Chinese, Greek and Egyptian civilizations",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "As.uses.0",
+      "subject": {
+        "entity": "element:As",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Arsenic is added to germanium to make transistors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/33#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Small amounts of arsenic are added to germanium to make transistors.",
+      "evidence": "Small amounts of arsenic are added to germanium to make transistors.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "As.uses.1",
+      "subject": {
+        "entity": "element:As",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Gallium arsenide can produce laser light directly from electricity.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/33#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Gallium arsenide (GaAs) can produce laser light directly from electricity.",
+      "evidence": "Gallium arsenide (GaAs) can produce laser light directly from electricity.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "As.uses.2",
+      "subject": {
+        "entity": "element:As",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Arsenic is used in bronzing.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/33#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Arsenic is used in bronzing, pyrotechny, and for hardening and improving the sphericity of shot.",
+      "evidence": "Arsenic is used in bronzing, pyrotechny, and for hardening and improving the sphericity of shot.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

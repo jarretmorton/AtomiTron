@@ -539,7 +539,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Nickel is used to make some types of coins and batteries.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ni.uses.0"
+          }
+        },
+        {
+          "value": "Nickel can be electroplated onto other metals to form a protective coating.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ni.uses.1"
+          }
+        },
+        {
+          "value": "Adding nickel to glass gives the glass a green color.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ni.uses.2"
+          }
+        },
+        {
+          "value": "Nickel is used to make stainless steel and other alloys that resist corrosion.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ni.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The Swedish chemist Axel Fredrik Cronstedt discovered nickel in 1751, in a mineral called niccolite.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ni.discovery.story.0"
+            }
+          },
+          {
+            "value": "The name nickel comes from the German word Nickel, meaning \"deceptive little spirit\".",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ni.discovery.story.1"
+            }
+          },
+          {
+            "value": "Miners called the mineral niccolite Kupfernickel, meaning false copper, because it looked like copper ore but no copper was found in it.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ni.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1751,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ni.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

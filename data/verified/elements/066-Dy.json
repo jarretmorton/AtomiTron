@@ -629,7 +629,96 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "When combined with vanadium and other rare earth elements, dysprosium is used as a laser material.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/66#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Dy.uses.0"
+          }
+        },
+        {
+          "value": "A cement made with dysprosium oxide and nickel has been used in cooling nuclear reactor rods.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/66#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Dy.uses.1"
+          }
+        },
+        {
+          "value": "Compounds called dysprosium-cadmium chalcogenides have been used as sources of infrared radiation for studying chemical reactions.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/66#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Dy.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name dysprosium comes from the Greek word dysprositos, meaning hard to get at.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/66#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Dy.discovery.story.0"
+            }
+          },
+          {
+            "value": "French chemist Paul-Émile Lecoq de Boisbaudran discovered dysprosium in 1886, as an impurity in erbia, the oxide of erbium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/66#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Dy.discovery.story.1"
+            }
+          },
+          {
+            "value": "Dysprosium was first isolated by the French chemist Georges Urbain in 1906.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/66#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Dy.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

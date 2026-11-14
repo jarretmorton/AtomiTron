@@ -428,6 +428,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Pm.electronConfiguration"
+    },
+    {
+      "id": "Pm.discovery.story.0",
+      "subject": {
+        "entity": "element:Pm",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Promethium is named after Prometheus, a figure from Greek mythology who stole fire from heaven.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Named after the Greek Prometheus, who, according to mythology, stole fire from heaven.",
+      "evidence": "Named after the Greek Prometheus, who, according to mythology, stole fire from heaven.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pm.discovery.story.1",
+      "subject": {
+        "entity": "element:Pm",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The Czech chemist Bohuslav Brauner predicted in 1902 that promethium existed.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "The existence of promethium was predicted by Bohuslav Brauner, a Czech chemist, in 1902.",
+      "evidence": "The existence of promethium was predicted by Bohuslav Brauner, a Czech chemist, in 1902.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pm.discovery.story.2",
+      "subject": {
+        "entity": "element:Pm",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Jacob A. Marinsky, Lawrence E. Glendenin and Charles D. Coryell obtained proof that promethium exists in 1944.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Proof of the existence of promethium was obtained by Jacob A. Marinsky, Lawrence E. Glendenin and Charles D. Coryell in 1944.",
+      "evidence": "Proof of the existence of promethium was obtained by Jacob A. Marinsky, Lawrence E. Glendenin and Charles D. Coryell in 1944.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pm.uses.0",
+      "subject": {
+        "entity": "element:Pm",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Promethium could be used to make a nuclear powered battery.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Promethium could be used to make a nuclear powered battery.",
+      "evidence": "Promethium could be used to make a nuclear powered battery.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pm.uses.1",
+      "subject": {
+        "entity": "element:Pm",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Promethium could be used in generators that provide electricity for space probes and satellites.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "in radioisotope thermoelectric generators to provide electricity for space probes and satellites",
+      "evidence": "in radioisotope thermoelectric generators to provide electricity for space probes and satellites",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pm.uses.2",
+      "subject": {
+        "entity": "element:Pm",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Light made with promethium and a phosphor can be used for signs or signals that need to work dependably.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Light produced in this manner can be used for signs or signals that require dependable operation",
+      "evidence": "Light produced in this manner can be used for signs or signals that require dependable operation",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pm.uses.3",
+      "subject": {
+        "entity": "element:Pm",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Promethium has applications as a source of beta radiation in gauges that measure thickness.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "The element has applications as a beta source for thickness gages",
+      "evidence": "The element has applications as a beta source for thickness gages",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

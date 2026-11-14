@@ -295,7 +295,53 @@
           }
         }
       },
-      "uses": []
+      "uses": [],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name holmium comes from Holmia, the Latin word meaning Stockholm.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/67#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ho.discovery.story.0"
+            }
+          },
+          {
+            "value": "Holmium was discovered by Per Theodor Cleve, a Swedish chemist, in 1879.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/67#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ho.discovery.story.1"
+            }
+          },
+          {
+            "value": "Cleve named a brown material he obtained holmia, which is the oxide of the element holmium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/67#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ho.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

@@ -671,7 +671,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Mercury can be used to make thermometers, barometers and other scientific instruments.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Hg.uses.0"
+          }
+        },
+        {
+          "value": "Mercury vapor is used in streetlights, fluorescent lamps and advertising signs.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Hg.uses.1"
+          }
+        },
+        {
+          "value": "Mercury conducts electricity and is used to make silent switches that depend on their position.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Hg.uses.2"
+          }
+        },
+        {
+          "value": "Mercury alloys called amalgams are used for things such as dental fillings.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Hg.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Mercury is named after the Roman god Mercury, the nimble messenger of the gods.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Hg.discovery.story.0"
+            }
+          },
+          {
+            "value": "The symbol Hg comes from the Greek word hydrargyrum, meaning \"liquid silver\" or \"quick silver\".",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Hg.discovery.story.1"
+            }
+          },
+          {
+            "value": "Mercury was known to the ancient Chinese and Hindus.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Hg.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": "Ancient",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Hg.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

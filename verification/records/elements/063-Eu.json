@@ -527,6 +527,138 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Eu.electronConfiguration"
+    },
+    {
+      "id": "Eu.discovery.story.0",
+      "subject": {
+        "entity": "element:Eu",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name europium comes from the continent of Europe.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/63#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the continent of Europe.",
+      "evidence": "The name derives from the continent of Europe.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Eu.discovery.story.1",
+      "subject": {
+        "entity": "element:Eu",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Europium was discovered in 1896 by the French chemist Eugène-Antole Demarçay.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/63#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Europium was discovered by Eugène-Antole Demarçay, a French chemist, in 1896.",
+      "evidence": "Europium was discovered by Eugène-Antole Demarçay, a French chemist, in 1896.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Eu.discovery.story.2",
+      "subject": {
+        "entity": "element:Eu",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Demarçay suspected that samples of samarium, a recently discovered element, were contaminated with an unknown element.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/63#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Demarçay suspected that samples of a recently discovered element, samarium, were contaminated with an unknown element.",
+      "evidence": "Demarçay suspected that samples of a recently discovered element, samarium, were contaminated with an unknown element.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Eu.uses.0",
+      "subject": {
+        "entity": "element:Eu",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Europium oxide, a compound of europium, is used as a red phosphor in television sets.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/63#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Europium oxide (Eu2O3), one of europium's compounds, is widely used as a red phosphor in television sets",
+      "evidence": "Europium oxide (Eu2O3), one of europium's compounds, is widely used as a red phosphor in television sets",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Eu.uses.1",
+      "subject": {
+        "entity": "element:Eu",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Europium has been added to some types of plastics to make lasers.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/63#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it has been used to dope some types of plastics to make lasers",
+      "evidence": "it has been used to dope some types of plastics to make lasers",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Eu.uses.2",
+      "subject": {
+        "entity": "element:Eu",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Because it is a good absorber of neutrons, europium is being studied for use in nuclear reactors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/63#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Since it is a good absorber of neutrons, europium is being studied for use in nuclear reactors.",
+      "evidence": "Since it is a good absorber of neutrons, europium is being studied for use in nuclear reactors.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

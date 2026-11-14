@@ -395,7 +395,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Tantalum is used to make surgical sutures and implants, such as artificial joints and cranial plates.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ta.uses.0"
+          }
+        },
+        {
+          "value": "Tantalum does not react with bodily fluids and is used to make surgical equipment.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ta.uses.1"
+          }
+        },
+        {
+          "value": "Tantalum pentoxide, one of tantalum's compounds, is used to make capacitors.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ta.uses.2"
+          }
+        },
+        {
+          "value": "Tantalum oxide is used to make special glass for camera lenses.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ta.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Tantalum is named after Tantalus, a character from Greek mythology.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ta.discovery.story.0"
+            }
+          },
+          {
+            "value": "Tantalum was discovered in 1802 by Anders-Gustav Ekeberg, a Swedish chemist and mineralogist.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ta.discovery.story.1"
+            }
+          }
+        ],
+        "year": {
+          "value": 1802,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=History",
+            "retrieved": "2026-11-14",
+            "via": "IUPAC CIAAW"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ta.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

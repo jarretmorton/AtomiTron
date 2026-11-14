@@ -1,0 +1,155 @@
+{
+  "element": "element:Mt",
+  "discovery": {
+    "story": [
+      {
+        "value": "Meitnerium was first made in 1982 by Peter Armbruster, Gottfried Münzenber and their team in Darmstadt, Germany.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/109#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Mt.discovery.story.0"
+        }
+      },
+      {
+        "value": "The experiment that made meitnerium showed that fusion could be used to make new, heavy nuclei.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/109#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Mt.discovery.story.1"
+        }
+      }
+    ],
+    "year": {
+      "value": 1982,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/109#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Mt.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Meitnerium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/109#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Mt.uses.0"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Mt.discovery.year",
+      "subject": {
+        "entity": "element:Mt",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1982,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/109#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Meitnerium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1982.",
+      "evidence": "Meitnerium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1982.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mt.discovery.story.0",
+      "subject": {
+        "entity": "element:Mt",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Meitnerium was first made in 1982 by Peter Armbruster, Gottfried Münzenber and their team in Darmstadt, Germany.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/109#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Meitnerium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1982.",
+      "evidence": "Meitnerium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1982.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mt.discovery.story.1",
+      "subject": {
+        "entity": "element:Mt",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The experiment that made meitnerium showed that fusion could be used to make new, heavy nuclei.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/109#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "This experiment demonstrated the feasibility of using fusion techniques as a method of making new, heavy nuclei.",
+      "evidence": "This experiment demonstrated the feasibility of using fusion techniques as a method of making new, heavy nuclei.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mt.uses.0",
+      "subject": {
+        "entity": "element:Mt",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Meitnerium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/109#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it currently has no uses outside of basic scientific research.",
+      "evidence": "it currently has no uses outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "element": "element:Ti",
+  "discovery": {
+    "story": [
+      {
+        "value": "Titanium was discovered in 1791 by the Reverend William Gregor, an English pastor.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ti.discovery.story.0"
+        }
+      },
+      {
+        "value": "The name titanium comes from the Latin titans, the first sons of the Earth in Greek mythology.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ti.discovery.story.1"
+        }
+      },
+      {
+        "value": "In 1795, the German chemist Martin Heinrich Klaproth rediscovered the element and called it titanium.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ti.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1791,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ti.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Because titanium does not react within the human body, it is used to make implants such as artificial hips and pins for setting bones.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ti.uses.0"
+      }
+    },
+    {
+      "value": "Titanium oxide is used as a pigment to make white paint.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ti.uses.1"
+      }
+    },
+    {
+      "value": "Titanium is used in parts of boats that are exposed to sea water, such as propeller shafts and rigging.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ti.uses.2"
+      }
+    },
+    {
+      "value": "Titanium and titanium alloys are used in airplanes, among other things.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ti.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Ti.discovery.year",
+      "subject": {
+        "entity": "element:Ti",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1791,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Titanium was discovered in 1791 by the Reverend William Gregor, an English pastor.",
+      "evidence": "Titanium was discovered in 1791 by the Reverend William Gregor, an English pastor.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ti.discovery.story.0",
+      "subject": {
+        "entity": "element:Ti",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Titanium was discovered in 1791 by the Reverend William Gregor, an English pastor.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Titanium was discovered in 1791 by the Reverend William Gregor, an English pastor.",
+      "evidence": "Titanium was discovered in 1791 by the Reverend William Gregor, an English pastor.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ti.discovery.story.1",
+      "subject": {
+        "entity": "element:Ti",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name titanium comes from the Latin titans, the first sons of the Earth in Greek mythology.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Latin titans, the first sons of the Earth, Greek mythology.",
+      "evidence": "From the Latin titans, the first sons of the Earth, Greek mythology.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ti.discovery.story.2",
+      "subject": {
+        "entity": "element:Ti",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "In 1795, the German chemist Martin Heinrich Klaproth rediscovered the element and called it titanium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was rediscovered in 1795 by the German chemist Martin Heinrich Klaproth, who called it titanium",
+      "evidence": "It was rediscovered in 1795 by the German chemist Martin Heinrich Klaproth, who called it titanium",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ti.uses.0",
+      "subject": {
+        "entity": "element:Ti",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Because titanium does not react within the human body, it is used to make implants such as artificial hips and pins for setting bones.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Since titanium does not react within the human body, it is used to create artificial hips, pins for setting bones and for other biological implants.",
+      "evidence": "Since titanium does not react within the human body, it is used to create artificial hips, pins for setting bones and for other biological implants.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ti.uses.1",
+      "subject": {
+        "entity": "element:Ti",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Titanium oxide is used as a pigment to make white paint.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Titanium oxide (TiO2) is used as a pigment to create white paint",
+      "evidence": "Titanium oxide (TiO2) is used as a pigment to create white paint",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ti.uses.2",
+      "subject": {
+        "entity": "element:Ti",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Titanium is used in parts of boats that are exposed to sea water, such as propeller shafts and rigging.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "is used in propeller shafts, rigging and other parts of boats that are exposed to sea water",
+      "evidence": "is used in propeller shafts, rigging and other parts of boats that are exposed to sea water",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ti.uses.3",
+      "subject": {
+        "entity": "element:Ti",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Titanium and titanium alloys are used in airplanes, among other things.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Titanium and titanium alloys are used in airplanes, missiles and rockets",
+      "evidence": "Titanium and titanium alloys are used in airplanes, missiles and rockets",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

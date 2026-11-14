@@ -1,0 +1,263 @@
+{
+  "element": "element:V",
+  "discovery": {
+    "story": [
+      {
+        "value": "Vanadium is named after Freyja Vanadis, the Scandinavian goddess of love and beauty, because of its many beautiful multi-coloured compounds.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "V.discovery.story.0"
+        }
+      },
+      {
+        "value": "Vanadium was discovered by Andrés Manuel del Rio, a Spanish chemist, in 1801.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "V.discovery.story.1"
+        }
+      },
+      {
+        "value": "Vanadium was rediscovered in 1830 by Nils Gabriel Sefstrôm, a Swedish chemist, while he was analyzing samples of iron from a mine in Sweden.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "V.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Vanadium-steel alloys are used to make things such as axles, gears for cars, springs and cutting tools.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "V.uses.0"
+      }
+    },
+    {
+      "value": "Vanadium is used in producing rust resistant and high speed tool steels.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "V.uses.1"
+      }
+    },
+    {
+      "value": "A vanadium compound called vanadium pentoxide is used as a mordant, a material that permanently fixes dyes to fabrics.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "V.uses.2"
+      }
+    },
+    {
+      "value": "Vanadium pentoxide is used in the manufacture of ceramics.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "V.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "V.discovery.story.0",
+      "subject": {
+        "entity": "element:V",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Vanadium is named after Freyja Vanadis, the Scandinavian goddess of love and beauty, because of its many beautiful multi-coloured compounds.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Scandinavian goddess of love and beauty, Freyja Vanadis, because of its many beautiful multi-coloured compounds.",
+      "evidence": "The name derives from the Scandinavian goddess of love and beauty, Freyja Vanadis, because of its many beautiful multi-coloured compounds.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "V.discovery.story.1",
+      "subject": {
+        "entity": "element:V",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Vanadium was discovered by Andrés Manuel del Rio, a Spanish chemist, in 1801.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Vanadium was discovered by Andrés Manuel del Rio, a Spanish chemist, in 1801.",
+      "evidence": "Vanadium was discovered by Andrés Manuel del Rio, a Spanish chemist, in 1801.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "V.discovery.story.2",
+      "subject": {
+        "entity": "element:V",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Vanadium was rediscovered in 1830 by Nils Gabriel Sefstrôm, a Swedish chemist, while he was analyzing samples of iron from a mine in Sweden.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Vanadium was rediscovered by Nils Gabriel Sefstrôm, a Swedish chemist, in 1830 while analyzing samples of iron from a mine in Sweden.",
+      "evidence": "Vanadium was rediscovered by Nils Gabriel Sefstrôm, a Swedish chemist, in 1830 while analyzing samples of iron from a mine in Sweden.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "V.uses.0",
+      "subject": {
+        "entity": "element:V",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Vanadium-steel alloys are used to make things such as axles, gears for cars, springs and cutting tools.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Ferrovanadium and vanadium-steel alloys are used to make such things as axles, crankshafts and gears for cars, parts of jet engines, springs and cutting tools.",
+      "evidence": "Ferrovanadium and vanadium-steel alloys are used to make such things as axles, crankshafts and gears for cars, parts of jet engines, springs and cutting tools.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "V.uses.1",
+      "subject": {
+        "entity": "element:V",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Vanadium is used in producing rust resistant and high speed tool steels.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Vanadium is used in producing rust resistant and high speed tool steels.",
+      "evidence": "Vanadium is used in producing rust resistant and high speed tool steels.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "V.uses.2",
+      "subject": {
+        "entity": "element:V",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "A vanadium compound called vanadium pentoxide is used as a mordant, a material that permanently fixes dyes to fabrics.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Vanadium pentoxide (V2O5) is perhaps vanadium's most useful compound. It is used as a mordant, a material which permanently fixes dyes to fabrics.",
+      "evidence": "Vanadium pentoxide (V2O5) is perhaps vanadium's most useful compound. It is used as a mordant, a material which permanently fixes dyes to fabrics.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "V.uses.3",
+      "subject": {
+        "entity": "element:V",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Vanadium pentoxide is used in the manufacture of ceramics.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/23#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Vanadium pentoxide is also used as a catalyst in certain chemical reactions and in the manufacture of ceramics.",
+      "evidence": "Vanadium pentoxide is also used as a catalyst in certain chemical reactions and in the manufacture of ceramics.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

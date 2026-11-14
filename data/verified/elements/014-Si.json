@@ -483,7 +483,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Silicon crystals are used to make electronic devices such as transistors, solar cells and microchips.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Si.uses.0"
+          }
+        },
+        {
+          "value": "Silicon dioxide is used to make glass and bricks.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Si.uses.1"
+          }
+        },
+        {
+          "value": "Silica gel, a form of silicon dioxide, absorbs moisture and is used as a desiccant, which keeps things dry.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Si.uses.2"
+          }
+        },
+        {
+          "value": "Silicone, a material that contains silicon, is used for things such as lubricants, electrical insulators and medical implants.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Si.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name silicon comes from the Latin words silex and silicis, which mean flint.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Si.discovery.story.0"
+            }
+          },
+          {
+            "value": "Silicon was discovered by the Swedish chemist Jöns Jacob Berzelius in 1824.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Si.discovery.story.1"
+            }
+          },
+          {
+            "value": "Crystalline silicon was first prepared by the French chemist Henri Sainte-Claire Deville in 1854.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Si.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1824,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Si.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

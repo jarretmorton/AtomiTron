@@ -463,6 +463,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from Ra.electronConfiguration, Ra.group"
+    },
+    {
+      "id": "Ra.discovery.year",
+      "subject": {
+        "entity": "element:Ra",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1898,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Radium was discovered by Marie Sklodowska Curie, a Polish chemist, and Pierre Curie, a French chemist, in 1898.",
+      "evidence": "Radium was discovered by Marie Sklodowska Curie, a Polish chemist, and Pierre Curie, a French chemist, in 1898.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ra.discovery.story.0",
+      "subject": {
+        "entity": "element:Ra",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Radium was discovered in 1898 by Marie Sklodowska Curie, a Polish chemist, and Pierre Curie, a French chemist.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Radium was discovered by Marie Sklodowska Curie, a Polish chemist, and Pierre Curie, a French chemist, in 1898.",
+      "evidence": "Radium was discovered by Marie Sklodowska Curie, a Polish chemist, and Pierre Curie, a French chemist, in 1898.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ra.discovery.story.1",
+      "subject": {
+        "entity": "element:Ra",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Marie Curie obtained radium from pitchblende, a material that contains uranium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Marie Curie obtained radium from pitchblende, a material that contains uranium",
+      "evidence": "Marie Curie obtained radium from pitchblende, a material that contains uranium",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ra.discovery.story.2",
+      "subject": {
+        "entity": "element:Ra",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Radium was isolated in 1911 by Madame Curie and Debierne.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "The element was isolated in 1911 by Mme. Curie and Debierne",
+      "evidence": "The element was isolated in 1911 by Mme. Curie and Debierne",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ra.uses.0",
+      "subject": {
+        "entity": "element:Ra",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Radium is used to produce radon, a radioactive gas used to treat some types of cancer.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Radium is used to produce radon, a radioactive gas used to treat some types of cancer.",
+      "evidence": "Radium is used to produce radon, a radioactive gas used to treat some types of cancer.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ra.uses.1",
+      "subject": {
+        "entity": "element:Ra",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Radium was once used to make self-luminous paints for things such as watches and aircraft instrument dials.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Radium had been used to make self-luminous paints for watches, aircraft instrument dials and other instrumentation",
+      "evidence": "Radium had been used to make self-luminous paints for watches, aircraft instrument dials and other instrumentation",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ra.uses.2",
+      "subject": {
+        "entity": "element:Ra",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "A mixture of radium and beryllium gives off neutrons and is used as a neutron source.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "A mixture of radium and beryllium will emit neutrons and is used as a neutron source.",
+      "evidence": "A mixture of radium and beryllium will emit neutrons and is used as a neutron source.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

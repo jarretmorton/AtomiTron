@@ -254,7 +254,82 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Seaborgium currently has no uses outside of basic scientific research.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/106#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Sg.uses.0"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Seaborgium was first produced in 1974 by a team of scientists led by Albert Ghiorso at the Lawrence Berkeley Laboratory in California.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/106#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Sg.discovery.story.0"
+            }
+          },
+          {
+            "value": "Seaborgium was named in honor of Glenn Seaborg.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/106#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Sg.discovery.story.1"
+            }
+          },
+          {
+            "value": "The Berkeley group was credited with the discovery of seaborgium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/106#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Sg.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1974,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/106#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Sg.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

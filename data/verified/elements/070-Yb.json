@@ -629,7 +629,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Ytterbium can be alloyed with stainless steel to improve some of its mechanical properties.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Yb.uses.0"
+          }
+        },
+        {
+          "value": "Ytterbium is used as a doping agent in fiber optic cable, where it can be used as an amplifier.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Yb.uses.1"
+          }
+        },
+        {
+          "value": "An isotope of ytterbium is reported to have been used as a radiation source for a portable X-ray machine where electricity is unavailable.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Yb.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Ytterbium is named after Ytterby, a village in Sweden where the mineral ytterbite was originally found.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Yb.discovery.story.0"
+            }
+          },
+          {
+            "value": "Ytterbium was discovered in 1878 by the Swiss chemist Jean-Charles Galissard de Marignac.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Yb.discovery.story.1"
+            }
+          },
+          {
+            "value": "In 1907, Urbain separated ytterbium into two elements.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Yb.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1878,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=History",
+            "retrieved": "2026-11-14",
+            "via": "IUPAC CIAAW"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Yb.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

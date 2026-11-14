@@ -1065,6 +1065,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from Ba.electronConfiguration, Ba.group"
+    },
+    {
+      "id": "Ba.discovery.year",
+      "subject": {
+        "entity": "element:Ba",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1808,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/56#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Barium was first isolated by Sir Humphry Davy, an English chemist, in 1808",
+      "evidence": "Barium was first isolated by Sir Humphry Davy, an English chemist, in 1808",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ba.discovery.story.0",
+      "subject": {
+        "entity": "element:Ba",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Barium was first isolated in 1808 by Sir Humphry Davy, an English chemist.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/56#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Barium was first isolated by Sir Humphry Davy, an English chemist, in 1808",
+      "evidence": "Barium was first isolated by Sir Humphry Davy, an English chemist, in 1808",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ba.discovery.story.1",
+      "subject": {
+        "entity": "element:Ba",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name barium comes from the Greek word barys, meaning heavy.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/56#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Greek word barys, heavy.",
+      "evidence": "From the Greek word barys, heavy.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ba.discovery.story.2",
+      "subject": {
+        "entity": "element:Ba",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "In 1774, Scheele showed that baryta was different from lime.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/56#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Baryta was distinguished from lime by Scheele in 1774",
+      "evidence": "Baryta was distinguished from lime by Scheele in 1774",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ba.uses.0",
+      "subject": {
+        "entity": "element:Ba",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Barium sulfate absorbs X-rays and, when swallowed, can be used to produce X-ray images of the intestinal tract.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/56#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It is also a good absorber of X-rays and, when swallowed, can be used to produce X-ray images of the intestinal tract.",
+      "evidence": "It is also a good absorber of X-rays and, when swallowed, can be used to produce X-ray images of the intestinal tract.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ba.uses.1",
+      "subject": {
+        "entity": "element:Ba",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Barium chloride is used as a water softener.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/56#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Barium chloride (BaCl) is used as a water softener.",
+      "evidence": "Barium chloride (BaCl) is used as a water softener.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ba.uses.2",
+      "subject": {
+        "entity": "element:Ba",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Barium ferrite is used to make magnets.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/56#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Barium ferrite (BaO·6Fe2O3) is used to make magnets.",
+      "evidence": "Barium ferrite (BaO·6Fe2O3) is used to make magnets.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ba.uses.3",
+      "subject": {
+        "entity": "element:Ba",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Barium carbonate is used in making ceramics and some types of glass.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/56#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Barium carbonate (BaCO3), another common barium compound, is used in the manufacture of ceramics and some types of glass.",
+      "evidence": "Barium carbonate (BaCO3), another common barium compound, is used in the manufacture of ceramics and some types of glass.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

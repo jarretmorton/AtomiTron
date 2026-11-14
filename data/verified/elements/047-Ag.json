@@ -394,7 +394,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Sterling silver is used for things such as jewelry and silverware.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ag.uses.0"
+          }
+        },
+        {
+          "value": "Silver has been used to make coins, although today other metals are usually used instead.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ag.uses.1"
+          }
+        },
+        {
+          "value": "Silver is sometimes used in making things such as electrical contacts and printed circuit boards.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ag.uses.2"
+          }
+        },
+        {
+          "value": "Silver nitrate is used to make photographic films and papers.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ag.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name silver comes from the Anglo-Saxon words seofor and siolfur, whose origin is unknown.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ag.discovery.story.0"
+            }
+          },
+          {
+            "value": "Silver has been known since ancient times.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ag.discovery.story.1"
+            }
+          }
+        ],
+        "year": {
+          "value": "Ancient",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ag.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

@@ -520,6 +520,138 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Co.electronConfiguration"
+    },
+    {
+      "id": "Co.discovery.story.0",
+      "subject": {
+        "entity": "element:Co",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name cobalt comes from the German word Kobold, meaning evil spirits or goblins.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/27#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the German Kobold for \"evil spirits\" or \"goblins\"",
+      "evidence": "The name derives from the German Kobold for \"evil spirits\" or \"goblins\"",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Co.discovery.story.1",
+      "subject": {
+        "entity": "element:Co",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Cobalt was discovered by the Swedish chemist Georg Brandt.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/27#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Cobalt was discovered in 1735 by the Swedish chemist Georg Brandt.",
+      "evidence": "Cobalt was discovered in 1735 by the Swedish chemist Georg Brandt.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Co.discovery.story.2",
+      "subject": {
+        "entity": "element:Co",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Brandt was trying to prove that an unknown element, not bismuth, gave certain minerals the ability to color glass blue.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/27#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Brandt was attempting to prove that the ability of certain minerals to color glass blue was due to an unknown element and not to bismuth",
+      "evidence": "Brandt was attempting to prove that the ability of certain minerals to color glass blue was due to an unknown element and not to bismuth",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Co.uses.0",
+      "subject": {
+        "entity": "element:Co",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Cobalt compounds have been used for centuries to color things such as porcelain, glass, pottery and tile.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/27#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Cobalt compounds have been used for centuries to color porcelain, glass, pottery, tile and enamel.",
+      "evidence": "Cobalt compounds have been used for centuries to color porcelain, glass, pottery, tile and enamel.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Co.uses.1",
+      "subject": {
+        "entity": "element:Co",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Alnico, an alloy of aluminum, nickel and cobalt, is used to make powerful permanent magnets.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/27#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Alnico, an alloy consisting of aluminum, nickel and cobalt is used to make powerful permanent magnets.",
+      "evidence": "Alnico, an alloy consisting of aluminum, nickel and cobalt is used to make powerful permanent magnets.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Co.uses.2",
+      "subject": {
+        "entity": "element:Co",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Cobalt is used to make alloys, including ones for jet engines and gas turbines.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/27#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Cobalt is also used to make alloys for jet engines and gas turbines",
+      "evidence": "Cobalt is also used to make alloys for jet engines and gas turbines",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

@@ -542,6 +542,138 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from I.electronConfiguration, I.group"
+    },
+    {
+      "id": "I.discovery.year",
+      "subject": {
+        "entity": "element:I",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1811,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/53#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Discovered by Courtois in 1811",
+      "evidence": "Discovered by Courtois in 1811",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "I.discovery.story.0",
+      "subject": {
+        "entity": "element:I",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Iodine was discovered in seaweed by the French chemist Bernard Courtois in 1811.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/53#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Iodine was discovered in seaweed by the French chemist Bernard Courtois in 1811",
+      "evidence": "Iodine was discovered in seaweed by the French chemist Bernard Courtois in 1811",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "I.discovery.story.1",
+      "subject": {
+        "entity": "element:I",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name iodine comes from the Greek word iodes, meaning violet, because of its violet vapours.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/53#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek iodes for \"violet\" because of its violet vapours.",
+      "evidence": "The name derives from the Greek iodes for \"violet\" because of its violet vapours.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "I.discovery.story.2",
+      "subject": {
+        "entity": "element:I",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The French chemist Louis-Joseph Gay-Lussac named iodine when he proved it was an element in 1814.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/53#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "named by the French chemist Louis-Joseph Gay-Lussac, when he proved it was an element in 1814.",
+      "evidence": "named by the French chemist Louis-Joseph Gay-Lussac, when he proved it was an element in 1814.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "I.uses.0",
+      "subject": {
+        "entity": "element:I",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "A compound called potassium iodide is used to make photographic film.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/53#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Potassium iodide (KI) is used to make photographic film",
+      "evidence": "Potassium iodide (KI) is used to make photographic film",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "I.uses.1",
+      "subject": {
+        "entity": "element:I",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Iodine compounds are very useful in medicine.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/53#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Iodine compounds are important in organic chemistry and very useful in medicine.",
+      "evidence": "Iodine compounds are important in organic chemistry and very useful in medicine.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

@@ -357,7 +357,96 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "A compound called potassium iodide is used to make photographic film.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/53#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "I.uses.0"
+          }
+        },
+        {
+          "value": "Iodine compounds are very useful in medicine.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/53#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "I.uses.1"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Iodine was discovered in seaweed by the French chemist Bernard Courtois in 1811.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/53#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "I.discovery.story.0"
+            }
+          },
+          {
+            "value": "The name iodine comes from the Greek word iodes, meaning violet, because of its violet vapours.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/53#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "I.discovery.story.1"
+            }
+          },
+          {
+            "value": "The French chemist Louis-Joseph Gay-Lussac named iodine when he proved it was an element in 1814.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/53#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "I.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1811,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/53#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "I.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

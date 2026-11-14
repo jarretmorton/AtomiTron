@@ -499,7 +499,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Tungsten is used to make filaments for incandescent light bulbs, fluorescent light bulbs and television tubes.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "W.uses.0"
+          }
+        },
+        {
+          "value": "Tungsten is used as a target for producing X-rays.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "W.uses.1"
+          }
+        },
+        {
+          "value": "Tungsten carbide, an extremely hard tungsten compound, is used in the tips of drill bits.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "W.uses.2"
+          }
+        },
+        {
+          "value": "Compounds of tungsten with calcium and magnesium are used in fluorescent light bulbs.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "W.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name tungsten comes from Swedish words meaning \"heavy stone\".",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "W.discovery.story.0"
+            }
+          },
+          {
+            "value": "The symbol W comes from the German word wolfram.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "W.discovery.story.1"
+            }
+          },
+          {
+            "value": "Tungsten metal was first isolated in 1783 by the Spanish chemists Fausto Elhuyar and his brother Juan José.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "W.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

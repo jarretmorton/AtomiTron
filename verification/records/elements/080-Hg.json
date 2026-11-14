@@ -1093,6 +1093,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Hg.electronConfiguration"
+    },
+    {
+      "id": "Hg.discovery.year",
+      "subject": {
+        "entity": "element:Hg",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": "Ancient",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Mercury was known to the ancient Chinese and Hindus and has been found in 3500 year old Egyptian tombs.",
+      "evidence": "Mercury was known to the ancient Chinese and Hindus and has been found in 3500 year old Egyptian tombs.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hg.discovery.story.0",
+      "subject": {
+        "entity": "element:Hg",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Mercury is named after the Roman god Mercury, the nimble messenger of the gods.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Roman god Mercury, the nimble messenger of the gods",
+      "evidence": "The name derives from the Roman god Mercury, the nimble messenger of the gods",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hg.discovery.story.1",
+      "subject": {
+        "entity": "element:Hg",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The symbol Hg comes from the Greek word hydrargyrum, meaning \"liquid silver\" or \"quick silver\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The symbol Hg derives from the Greek hydrargyrum for \"liquid silver\" or \"quick silver\".",
+      "evidence": "The symbol Hg derives from the Greek hydrargyrum for \"liquid silver\" or \"quick silver\".",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hg.discovery.story.2",
+      "subject": {
+        "entity": "element:Hg",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Mercury was known to the ancient Chinese and Hindus.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Mercury was known to the ancient Chinese and Hindus",
+      "evidence": "Mercury was known to the ancient Chinese and Hindus",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hg.uses.0",
+      "subject": {
+        "entity": "element:Hg",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Mercury can be used to make thermometers, barometers and other scientific instruments.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Mercury can be used to make thermometers, barometers and other scientific instruments.",
+      "evidence": "Mercury can be used to make thermometers, barometers and other scientific instruments.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hg.uses.1",
+      "subject": {
+        "entity": "element:Hg",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Mercury vapor is used in streetlights, fluorescent lamps and advertising signs.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Mercury vapor is used in streetlights, fluorescent lamps and advertising signs.",
+      "evidence": "Mercury vapor is used in streetlights, fluorescent lamps and advertising signs.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hg.uses.2",
+      "subject": {
+        "entity": "element:Hg",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Mercury conducts electricity and is used to make silent switches that depend on their position.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Mercury conducts electricity and is used to make silent, position dependent switches.",
+      "evidence": "Mercury conducts electricity and is used to make silent, position dependent switches.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hg.uses.3",
+      "subject": {
+        "entity": "element:Hg",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Mercury alloys called amalgams are used for things such as dental fillings.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/80#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Amalgams are used to help extract gold from its ores, create dental fillings (in the case of silver)",
+      "evidence": "Amalgams are used to help extract gold from its ores, create dental fillings (in the case of silver)",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

@@ -367,7 +367,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Lanthanum is used to make carbon arc lights, which the motion picture industry uses for studio lighting and projector lights.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "La.uses.0"
+          }
+        },
+        {
+          "value": "Lanthanum is part of Misch metal, a material used to make flints for lighters.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "La.uses.1"
+          }
+        },
+        {
+          "value": "Lanthana is used to make the glass in camera lenses and other special glasses.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "La.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Lanthanum was discovered by Carl Gustaf Mosander, a Swedish chemist, in 1839.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "La.discovery.story.0"
+            }
+          },
+          {
+            "value": "The name lanthanum comes from the Greek word lanthanein, meaning \"to be hidden\" or \"to escape notice.\"",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "La.discovery.story.1"
+            }
+          },
+          {
+            "value": "It got this name because it hid in cerium ore and was difficult to separate from that mineral.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "La.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1839,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/57#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "La.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

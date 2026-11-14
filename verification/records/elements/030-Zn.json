@@ -874,6 +874,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Zn.electronConfiguration"
+    },
+    {
+      "id": "Zn.discovery.story.0",
+      "subject": {
+        "entity": "element:Zn",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name zinc comes from the German word zink, whose origin is unknown.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the German zink of unknown origin.",
+      "evidence": "The name derives from the German zink of unknown origin.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zn.discovery.story.1",
+      "subject": {
+        "entity": "element:Zn",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "In prehistoric times, zinc compounds were used for healing wounds and sore eyes and for making brass.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was first used in prehistoric times, where its compounds were used for healing wounds and sore eyes and for making brass.",
+      "evidence": "It was first used in prehistoric times, where its compounds were used for healing wounds and sore eyes and for making brass.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zn.discovery.story.2",
+      "subject": {
+        "entity": "element:Zn",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Zinc was rediscovered by Andreas Sigismund Marggraf in 1746.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Zinc was rediscovered by Andreas Sigismund Marggraf in 1746 by heating calamine with charcoal.",
+      "evidence": "Zinc was rediscovered by Andreas Sigismund Marggraf in 1746 by heating calamine with charcoal.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zn.uses.0",
+      "subject": {
+        "entity": "element:Zn",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "In galvanization, objects that can corrode, such as iron nails, are given a protective coating of zinc.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "During galvanization, an object that is subject to corrosion, such as an iron nail, is given a protective coating of zinc.",
+      "evidence": "During galvanization, an object that is subject to corrosion, such as an iron nail, is given a protective coating of zinc.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zn.uses.1",
+      "subject": {
+        "entity": "element:Zn",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Metallic zinc is used to make things including dry cell batteries and roof cladding.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Metallic zinc is also used to make dry cell batteries, roof cladding and die castings.",
+      "evidence": "Metallic zinc is also used to make dry cell batteries, roof cladding and die castings.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zn.uses.2",
+      "subject": {
+        "entity": "element:Zn",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Zinc sulfide is used to make things such as television screens and fluorescent light bulbs.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "is used to make luminous watch dials, television screens and fluorescent light bulbs",
+      "evidence": "is used to make luminous watch dials, television screens and fluorescent light bulbs",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zn.uses.3",
+      "subject": {
+        "entity": "element:Zn",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Zinc oxide is used in products such as paints, cosmetics and soap.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Zinc oxide is used in paints, some rubber products, cosmetics, pharmaceuticals, plastics, printing inks, soap and batteries",
+      "evidence": "Zinc oxide is used in paints, some rubber products, cosmetics, pharmaceuticals, plastics, printing inks, soap and batteries",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

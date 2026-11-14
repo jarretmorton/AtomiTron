@@ -310,7 +310,82 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "A form of plutonium has been used to power things such as instruments left on the Moon by Apollo astronauts and weather satellites.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pu.uses.0"
+          }
+        },
+        {
+          "value": "Plutonium can be used to make a fuel called MOX for nuclear power reactors.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pu.uses.1"
+          }
+        },
+        {
+          "value": "A form of plutonium was once used to power artificial heart pacemakers, but it has been replaced by lithium-based cells.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pu.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Plutonium was first produced by Glenn T. Seaborg, Joseph W. Kennedy, Edward M. McMillan and Arthur C. Wohl.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Pu.discovery.story.0"
+            }
+          },
+          {
+            "value": "Seaborg first considered the name plutium, but later thought it did not sound as good as plutonium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Pu.discovery.story.1"
+            }
+          }
+        ]
+      }
     }
   ]
 }

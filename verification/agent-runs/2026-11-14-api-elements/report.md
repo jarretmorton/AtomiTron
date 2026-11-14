@@ -1,0 +1,733 @@
+# Text facts: pilot run 2026-11-14-api-elements
+
+Checked 2026-11-14T06:32:14Z. Prompts: `pipeline/prompts/`. 3 independent verifiers; a claim passes only with 3 of 3, each with a word-for-word excerpt.
+
+- Claims verified: **701**, passed: **691**, failed: **10**
+- Rejected by code before verification: **13**
+
+## Failed verification
+
+| Claim | Text | Agreeing | Why |
+|---|---|---|---|
+| `F.uses.2` | Hydrofluoric acid is used to etch glass, including glass used in light bulbs. | 1/3 | verifier 1: The passage says hydrofluoric acid etches most of the glass used in light bulbs, but the claim drops 'most' and could be read as covering all light-bulb glass.; verifier 3: The passage says 'most of the glass used in light bulbs', and the claim drops 'most', which generalizes to all light-bulb glass. |
+| `Mn.discoveryYear` | Manganese was discovered or first isolated in 1774. | 2/3 | verifier 1: excerpt isn't word for word in the passage |
+| `As.discoveryYear` | Arsenic was discovered or first isolated in 1250. | 2/3 | verifier 3: The passage only says it is believed arsenic was first identified in 1250, and the claim drops that hedge and states the year as certain. |
+| `Mo.discoveryYear` | Molybdenum was discovered or first isolated in 1778. | 0/3 | verifier 1: The passage dates the discovery to 1778 but the first isolation to 1781, so the claim's 'first isolated in 1778' wording conflicts with the passage.; verifier 2: The passage gives 1778 only for the discovery and says the element was first isolated in 1781, so the claim's 'or first isolated in 1778' conflicts with it.; verifier 3: The passage gives 1778 for discovery but a conflicting year, 1781, for first isolation by Hjelm, so 'discovered or first isolated in 1778' is not cleanly supported. |
+| `Ag.story.1` | The symbol Ag comes from the Latin word argentum and the Sanskrit word argunas, meaning "bright". | 0/3 | verifier 1: The passage says argunas comes 'from "bright"', which is a derivation rather than a stated meaning, and the claim's wording could suggest both words mean 'bright'.; verifier 2: The passage says argunas comes 'from "bright"', which does not clearly state that the word means 'bright', so the claim adds certainty the passage does not give.; verifier 3: The passage says argunas comes 'from "bright"', not that it means "bright", so the claim changes the stated relationship. |
+| `Te.uses.3` | A tellurium compound called bismuth telluride has been used in thermoelectric devices. | 1/3 | verifier 1: The passage says bismuth telluride has been used in thermoelectric devices but never states that it is a tellurium compound, so that description adds information not in the passage.; verifier 2: The passage says bismuth telluride has been used in thermoelectric devices but never states that it is a tellurium compound, so that description adds information not in the passage. |
+| `I.uses.0` | Iodine is used as a test for starch, because it turns deep blue when it comes in contact with starch. | 0/3 | verifier 1: The passage links the starch test and the blue colour with 'and', not 'because', so the claim adds a causal link the passage does not state.; verifier 2: The passage only says iodine is used as a starch test and turns deep blue with starch, so the claim adds a causal 'because' the passage does not state.; verifier 3: The passage links the starch test and the blue colour only with 'and', so the claim's 'because' adds a causal link the passage does not state. |
+| `Re.uses.3` | Rhenium is most frequently used as an alloying agent in tungsten and molybdenum. | 0/3 | verifier 1: The passage names two most frequent uses, alloying agent and olefin catalyst, so presenting alloying alone as the most frequent use gives only part of the answer.; verifier 2: The passage says rhenium is most frequently used both as an alloying agent and as a catalyst for olefin reactions, so naming only the alloying use presents part of the answer as the whole.; verifier 3: The passage names two most frequent uses, as an alloying agent in tungsten and molybdenum and as a catalyst for olefin reactions, but the claim gives only the first as the whole answer. |
+| `Rn.story.2` | Radon was first called niton, from the Latin word nitens, meaning shining. | 0/3 | verifier 1: The passage also says Dorn called the element 'radium emanation' in 1900, and Ramsay and Gray only named it niton in 1908, so 'first called niton' conflicts with the passage.; verifier 2: The passage contradicts itself here: it also says Dorn called the element 'radium emanation' in 1900, before Ramsay and Gray named it niton in 1908, so 'first called niton' is uncertain.; verifier 3: The passage contradicts itself: it says Dorn first called the element 'radium emanation' in 1900 and that Ramsay and Gray named it niton later, in 1908, so 'first called niton' is not reliably supported. |
+| `Pu.story.1` | Plutonium was named after Pluto, following the example of uranium, which was named after the planet Uranus. | 0/3 | verifier 1: The passage gives the naming precedent as both uranium (Uranus) and neptunium (Neptune), and the claim presents uranium alone as the whole precedent.; verifier 2: The passage gives two naming precedents, uranium after Uranus and neptunium after Neptune, but the claim presents uranium alone as the example followed.; verifier 3: The passage gives two precedents for the naming, uranium after Uranus and neptunium after Neptune, so naming only uranium presents part of the explanation as the whole. |
+
+## Rejected before verification
+
+| Claim | Why |
+|---|---|
+| `Li.uses.1` | safety screen: 'mixed with' |
+| `Co.uses.2` | safety screen: numbers aren't allowed here |
+| `Sn.uses.1` | safety screen: 'mixed with' |
+| `I.uses.2` | safety screen: 'mixed with' |
+| `Ta.story.1` | safety screen: 'dissolve' |
+| `Os.story.2` | safety screen: 'dissolved' |
+| `Ir.uses.1` | safety screen: 'mixed with' |
+| `Pu.uses.0` | longer than 25 words |
+| `Mt.story.1` | safety screen: 'bombarding' |
+| `Ds.story.1` | safety screen: only years may be numbers |
+| `Ds.story.2` | safety screen: only years may be numbers |
+| `Ts.story.0` | safety screen: only years may be numbers |
+| `Og.story.0` | safety screen: only years may be numbers |
+
+## Passed
+
+- `He.discoveryYear` (IUPAC CIAAW): Helium was discovered or first isolated in 1868.
+- `He.story.0` (Los Alamos National Laboratory): The name helium comes from the Greek word helios, meaning the sun.
+- `He.story.1` (Jefferson Lab): In 1868, French astronomer Pierre-Jules-César Janssen noticed a yellow line in the sun's spectrum while studying a total solar eclipse.
+- `He.story.2` (Los Alamos National Laboratory): Lockyer and Frankland suggested the name helium for the new element.
+- `He.uses.0` (Jefferson Lab): Helium gas is used to inflate blimps, scientific balloons and party balloons.
+- `He.uses.1` (Los Alamos National Laboratory): Liquid helium is used in magnetic resonance imaging, known as MRI, in medicine.
+- `He.uses.2` (Jefferson Lab): Helium is combined with oxygen to make a nitrogen-free atmosphere for deep sea divers.
+- `He.uses.3` (Jefferson Lab): Liquid helium is used to study superconductivity and to make superconductive magnets.
+- `Li.story.0` (Los Alamos National Laboratory): The name lithium comes from the Greek word lithos, which means stone.
+- `Li.story.1` (Jefferson Lab): Johann August Arfvedson discovered lithium in a mineral called petalite.
+- `Li.uses.0` (Jefferson Lab): Lithium is used to make special glasses and ceramics.
+- `Li.uses.2` (Jefferson Lab): A lithium compound called lithium hydroxide is used to remove carbon dioxide from the air inside spacecraft.
+- `Li.uses.3` (Los Alamos National Laboratory): Some lithium compounds are used in dry cells and storage batteries.
+- `Be.story.0` (IUPAC CIAAW): The name beryllium comes from the Greek word beryllos, meaning beryl, which is a gemstone in which beryllium is found.
+- `Be.story.1` (IUPAC CIAAW): In 1828, the French chemist Antoine-Alexandre-Brutus Bussy and, independently, the German chemist Friedrich Wöhler first separated beryllium.
+- `Be.story.2` (IUPAC CIAAW): Beryllium was once also known as glucinium, from the Greek word glykys for sweet, until IUPAC chose the name beryllium in 1949.
+- `Be.uses.0` (Jefferson Lab): Beryllium is used to make windows for X-ray tubes.
+- `Be.uses.1` (Los Alamos National Laboratory): Beryllium is used to make an alloy called beryllium copper, which is used for things such as springs and electrical contacts.
+- `Be.uses.2` (Los Alamos National Laboratory): Beryllium is used in parts of the space shuttle, such as the windshield frame and brake discs.
+- `Be.uses.3` (Los Alamos National Laboratory): Beryllium is used in things such as gyroscopes and computer parts.
+- `B.discoveryYear` (IUPAC CIAAW): Boron was discovered or first isolated in 1808.
+- `B.story.0` (IUPAC CIAAW): The name boron comes from the Arabic word buraq, meaning "white".
+- `B.story.1` (Jefferson Lab): Boron was discovered in 1808 by French chemists Joseph-Louis Gay-Lussac and Louis-Jaques Thénard, and independently by English chemist Sir Humphry Davy.
+- `B.story.2` (IUPAC CIAAW): Boron compounds were known for thousands of years before the element itself was isolated in 1808.
+- `B.uses.0` (Jefferson Lab): Borax, a boron compound, is used in laundry products.
+- `B.uses.1` (Los Alamos National Laboratory): Boron compounds are used to make borosilicate glass.
+- `B.uses.2` (Jefferson Lab): A boron compound is used to make fiberglass insulation and a type of bleach called sodium perborate bleach.
+- `B.uses.3` (Jefferson Lab): Boron filaments are used in the aerospace industry because they are strong and lightweight.
+- `F.story.0` (IUPAC CIAAW): The name fluorine comes from the Latin word fluere, meaning "flow" or "flux".
+- `F.story.1` (IUPAC CIAAW): The Swedish pharmacist and chemist Carl-Wilhelm Scheele discovered fluorine in hydrofluoric acid in 1771.
+- `F.story.2` (Jefferson Lab): The French chemist Ferdinand Frederic Henri Moissan was the first to successfully isolate fluorine, in 1886.
+- `F.uses.0` (Jefferson Lab): Fluorine compounds, such as sodium fluoride, are added to toothpaste to help prevent tooth decay.
+- `F.uses.1` (Jefferson Lab): Fluorine is added to city water supplies to help prevent tooth decay.
+- `F.uses.3` (Jefferson Lab): Crystals of calcium fluoride, also known as fluorite and fluorspar, are used to make lenses that focus infrared light.
+- `Ne.discoveryYear` (Los Alamos National Laboratory): Neon was discovered or first isolated in 1898.
+- `Ne.story.0` (IUPAC CIAAW): The name neon comes from the Greek word neos, which means "new".
+- `Ne.story.1` (Los Alamos National Laboratory): Neon was discovered by Ramsay and Travers in 1898.
+- `Ne.story.2` (Jefferson Lab): Neon was discovered through the study of liquefied air.
+- `Ne.uses.0` (Jefferson Lab): The largest use for neon gas is in advertising signs.
+- `Ne.uses.1` (Jefferson Lab): Neon is used to make high voltage indicators.
+- `Ne.uses.2` (Jefferson Lab): Neon is combined with helium to make helium-neon lasers.
+- `Ne.uses.3` (Los Alamos National Laboratory): Neon is used in devices such as lightning arrestors and TV tubes.
+- `Al.story.0` (Los Alamos National Laboratory): The name aluminum comes from the Latin word alumen, alum.
+- `Al.story.1` (IUPAC CIAAW): In 1825, the Danish physicist Hans Christian Oersted isolated impure aluminum.
+- `Al.story.2` (IUPAC CIAAW): The German chemist Friedrich Wöhler first isolated pure aluminum in 1827.
+- `Al.uses.0` (Jefferson Lab): Aluminum and aluminum alloys are used to make products such as cans, foils and kitchen utensils.
+- `Al.uses.1` (Jefferson Lab): Aluminum is used in electrical transmission lines because of its light weight.
+- `Al.uses.2` (Jefferson Lab): Aluminum can be deposited on the surface of glass to make mirrors.
+- `Al.uses.3` (Los Alamos National Laboratory): Aluminum alloys are important in the construction of modern aircraft and rockets.
+- `Si.discoveryYear` (Jefferson Lab): Silicon was discovered or first isolated in 1824.
+- `Si.story.0` (IUPAC CIAAW): The name silicon comes from the Latin words silex and silicis, which mean flint.
+- `Si.story.1` (Jefferson Lab): Silicon was discovered by the Swedish chemist Jöns Jacob Berzelius in 1824.
+- `Si.story.2` (IUPAC CIAAW): Crystalline silicon was first prepared by the French chemist Henri Sainte-Claire Deville in 1854.
+- `Si.uses.0` (Jefferson Lab): Silicon crystals are used to make electronic devices such as transistors, solar cells and microchips.
+- `Si.uses.1` (Jefferson Lab): Silicon dioxide is used to make glass and bricks.
+- `Si.uses.2` (Jefferson Lab): Silica gel, a form of silicon dioxide, absorbs moisture and is used as a desiccant, which keeps things dry.
+- `Si.uses.3` (Jefferson Lab): Silicone, a material that contains silicon, is used for things such as lubricants, electrical insulators and medical implants.
+- `P.discoveryYear` (IUPAC CIAAW): Phosphorus was discovered or first isolated in 1669.
+- `P.story.0` (IUPAC CIAAW): The name phosphorus comes from the Greek word phosphoros, meaning "bringing light", because it glows in the dark.
+- `P.story.1` (IUPAC CIAAW): Phosphorus was discovered in 1669 by Hennig Brand, a German merchant.
+- `P.story.2` (Los Alamos National Laboratory): The Greek word phosphoros was an ancient name for the planet Venus when it appears before sunrise.
+- `P.uses.0` (Jefferson Lab): Some phosphorus compounds that give off light are used in fluorescent light bulbs and television sets.
+- `P.uses.1` (Jefferson Lab): A phosphorus compound called trisodium phosphate is used as a cleaning agent and as a water softener.
+- `P.uses.2` (Jefferson Lab): Calcium phosphate, a phosphorus compound, is used to make china and baking powder.
+- `P.uses.3` (Los Alamos National Laboratory): Phosphates are used to make special glasses, such as those used for sodium lamps.
+- `S.discoveryYear` (Los Alamos National Laboratory): Sulfur has been known since ancient times.
+- `S.story.0` (IUPAC CIAAW): The name sulfur comes from the Latin word sulphurium and the Sanskrit word sulveri.
+- `S.story.1` (IUPAC CIAAW): Sulfur was once called brenne stone, meaning combustible stone, and the word brimstone comes from that name.
+- `S.story.2` (IUPAC CIAAW): In 1809, French chemists Louis-Joseph Gay-Lussac and Louis-Jacques Thenard proved that sulfur is an element.
+- `S.uses.0` (Jefferson Lab): Most of the sulfur that is produced is used to make sulfuric acid.
+- `S.uses.1` (Los Alamos National Laboratory): Sulfur is used in making phosphatic fertilizers.
+- `S.uses.2` (Los Alamos National Laboratory): Sulfur is used in the vulcanization of natural rubber.
+- `S.uses.3` (Los Alamos National Laboratory): Sulfur is used to make papers, including sulfite paper.
+- `Ar.discoveryYear` (Jefferson Lab): Argon was discovered or first isolated in 1894.
+- `Ar.story.0` (IUPAC CIAAW): The name argon comes from the Greek word argos, meaning "lazy" or "inactive", because it does not combine with other elements.
+- `Ar.story.1` (Jefferson Lab): Argon was discovered in 1894 by Sir William Ramsay, a Scottish chemist, and Lord Rayleigh, an English chemist.
+- `Ar.story.2` (Los Alamos National Laboratory): In 1785, Cavendish suspected that argon was present in air.
+- `Ar.uses.0` (Jefferson Lab): Argon is used to fill incandescent and fluorescent light bulbs to prevent oxygen from corroding the hot filament.
+- `Ar.uses.1` (Los Alamos National Laboratory): Argon is used as an inert gas shield for arc welding and cutting.
+- `Ar.uses.2` (Los Alamos National Laboratory): Argon is used as a protective atmosphere for growing silicon and germanium crystals.
+- `Ar.uses.3` (Los Alamos National Laboratory): Argon is used to fill tubes such as photo tubes and glow tubes.
+- `K.discoveryYear` (IUPAC CIAAW): Potassium was discovered or first isolated in 1807.
+- `K.story.0` (IUPAC CIAAW): Potassium was first isolated in 1807 by the British chemist Humphry Davy.
+- `K.story.1` (IUPAC CIAAW): The name potassium comes from the English word "potash" or "pot ashes," because it is found in caustic potash.
+- `K.story.2` (IUPAC CIAAW): The symbol K comes from the Latin word kalium, via the Arabic word qali for alkali.
+- `K.uses.0` (Los Alamos National Laboratory): The greatest demand for potash has been for use in fertilizers.
+- `K.uses.1` (Jefferson Lab): Potassium hydroxide is used to make soaps, detergents and drain cleaners.
+- `K.uses.2` (Jefferson Lab): Potassium chloride is used as a salt substitute.
+- `Ca.discoveryYear` (Jefferson Lab): Calcium was discovered or first isolated in 1808.
+- `Ca.story.0` (IUPAC CIAAW): The name calcium comes from the Latin word calx, meaning lime or limestone.
+- `Ca.story.1` (Los Alamos National Laboratory): The Romans made lime under the name calx, but calcium metal was not discovered until 1808.
+- `Ca.uses.0` (Jefferson Lab): Calcium carbonate, a compound of calcium, is used to make things such as white paint, toothpaste and stomach antacids.
+- `Ca.uses.1` (Jefferson Lab): Calcium sulfate, also called gypsum, is used to make dry wall and plaster of Paris.
+- `Ca.uses.2` (Jefferson Lab): Calcium is used in vacuum tubes as a getter, a material that removes trace gases.
+- `Ca.uses.3` (Jefferson Lab): Calcium can be combined with metals such as aluminum, copper and lead to make alloys.
+- `Sc.story.0` (IUPAC CIAAW): Scandium's name comes from the Latin word scandia, meaning Scandinavia, where the mineral was found.
+- `Sc.story.1` (IUPAC CIAAW): Scandium was discovered by the Swedish chemist Lars-Fredrik Nilson.
+- `Sc.story.2` (IUPAC CIAAW): The Swedish chemist Per Theodore Cleve proved that scandium was the element eka-boron that Mendeleev had predicted.
+- `Sc.uses.0` (Jefferson Lab): Alloys of scandium and aluminum are used in some sports equipment, such as baseball bats, bicycle frames and lacrosse sticks.
+- `Sc.uses.1` (Jefferson Lab): Scandium oxide, also known as scandia, is used to make high intensity lights.
+- `Sc.uses.2` (Jefferson Lab): Scandium iodide is added to mercury vapor lamps so that their light closely resembles sunlight.
+- `Sc.uses.3` (Los Alamos National Laboratory): Mercury vapor lamps with added scandium iodide give light resembling sunlight, which is important for indoor or night-time color TV.
+- `Ti.discoveryYear` (Jefferson Lab): Titanium was discovered or first isolated in 1791.
+- `Ti.story.0` (Jefferson Lab): Titanium was discovered in 1791 by the Reverend William Gregor, an English pastor.
+- `Ti.story.1` (Los Alamos National Laboratory): The name titanium comes from the Latin titans, the first sons of the Earth in Greek mythology.
+- `Ti.story.2` (IUPAC CIAAW): In 1795, the German chemist Martin Heinrich Klaproth rediscovered the element and called it titanium.
+- `Ti.uses.0` (Jefferson Lab): Because titanium does not react within the human body, it is used to make implants such as artificial hips and pins for setting bones.
+- `Ti.uses.1` (Jefferson Lab): Titanium oxide is used as a pigment to make white paint.
+- `Ti.uses.2` (Jefferson Lab): Titanium is used in parts of boats that are exposed to sea water, such as propeller shafts and rigging.
+- `Ti.uses.3` (Jefferson Lab): Titanium and titanium alloys are used in airplanes, among other things.
+- `V.story.0` (IUPAC CIAAW): Vanadium is named after Freyja Vanadis, the Scandinavian goddess of love and beauty, because of its many beautiful multi-coloured compounds.
+- `V.story.1` (Jefferson Lab): Vanadium was discovered by Andrés Manuel del Rio, a Spanish chemist, in 1801.
+- `V.story.2` (Jefferson Lab): Vanadium was rediscovered in 1830 by Nils Gabriel Sefstrôm, a Swedish chemist, while he was analyzing samples of iron from a mine in Sweden.
+- `V.uses.0` (Jefferson Lab): Vanadium-steel alloys are used to make things such as axles, gears for cars, springs and cutting tools.
+- `V.uses.1` (Los Alamos National Laboratory): Vanadium is used in producing rust resistant and high speed tool steels.
+- `V.uses.2` (Jefferson Lab): A vanadium compound called vanadium pentoxide is used as a mordant, a material that permanently fixes dyes to fabrics.
+- `V.uses.3` (Jefferson Lab): Vanadium pentoxide is used in the manufacture of ceramics.
+- `Cr.discoveryYear` (IUPAC CIAAW): Chromium was discovered or first isolated in 1797.
+- `Cr.story.0` (IUPAC CIAAW): The name chromium comes from the Greek word chroma, meaning colour, because chromium forms many coloured compounds.
+- `Cr.story.1` (IUPAC CIAAW): Chromium was discovered in 1797 by the French chemist and pharmacist Nicolas-Louis Vauquelin.
+- `Cr.story.2` (IUPAC CIAAW): Vauquelin isolated chromium in 1798.
+- `Cr.uses.0` (Jefferson Lab): Chromium is often plated onto other metals to form a protective and attractive covering.
+- `Cr.uses.1` (Jefferson Lab): Chromium is added to steel to harden it and to make stainless steel.
+- `Cr.uses.2` (Los Alamos National Laboratory): Chromium gives glass an emerald green color.
+- `Cr.uses.3` (Jefferson Lab): A chromium compound called chrome yellow has been used as a yellow pigment in paints.
+- `Mn.story.0` (IUPAC CIAAW): The name manganese comes from the Latin word magnes, meaning magnet, because the mineral pyrolusite has magnetic properties.
+- `Mn.story.1` (Los Alamos National Laboratory): Manganese was isolated by Gahn in 1774.
+- `Mn.uses.0` (Jefferson Lab): Manganese is mixed into steel to make it easier to form and work with, and to make it stronger and more resistant to impact.
+- `Mn.uses.1` (Jefferson Lab): Manganese is used to give glass an amethyst color.
+- `Mn.uses.2` (Los Alamos National Laboratory): Manganese dioxide is used in dry cells.
+- `Mn.uses.3` (Jefferson Lab): Manganese dioxide is used as a drying agent in black paints.
+- `Co.story.0` (IUPAC CIAAW): The name cobalt comes from the German word Kobold, meaning evil spirits or goblins.
+- `Co.story.1` (IUPAC CIAAW): Cobalt was discovered by the Swedish chemist Georg Brandt.
+- `Co.story.2` (Jefferson Lab): Brandt was trying to prove that an unknown element, not bismuth, gave certain minerals the ability to color glass blue.
+- `Co.uses.0` (Jefferson Lab): Cobalt compounds have been used for centuries to color things such as porcelain, glass, pottery and tile.
+- `Co.uses.1` (Jefferson Lab): Alnico, an alloy of aluminum, nickel and cobalt, is used to make powerful permanent magnets.
+- `Co.uses.3` (Jefferson Lab): Cobalt is used to make alloys, including ones for jet engines and gas turbines.
+- `Ni.discoveryYear` (Jefferson Lab): Nickel was discovered or first isolated in 1751.
+- `Ni.story.0` (Jefferson Lab): The Swedish chemist Axel Fredrik Cronstedt discovered nickel in 1751, in a mineral called niccolite.
+- `Ni.story.1` (IUPAC CIAAW): The name nickel comes from the German word Nickel, meaning "deceptive little spirit".
+- `Ni.story.2` (IUPAC CIAAW): Miners called the mineral niccolite Kupfernickel, meaning false copper, because it looked like copper ore but no copper was found in it.
+- `Ni.uses.0` (Jefferson Lab): Nickel is used to make some types of coins and batteries.
+- `Ni.uses.1` (Jefferson Lab): Nickel can be electroplated onto other metals to form a protective coating.
+- `Ni.uses.2` (Jefferson Lab): Adding nickel to glass gives the glass a green color.
+- `Ni.uses.3` (Los Alamos National Laboratory): Nickel is used to make stainless steel and other alloys that resist corrosion.
+- `Zn.story.0` (IUPAC CIAAW): The name zinc comes from the German word zink, whose origin is unknown.
+- `Zn.story.1` (IUPAC CIAAW): In prehistoric times, zinc compounds were used for healing wounds and sore eyes and for making brass.
+- `Zn.story.2` (Jefferson Lab): Zinc was rediscovered by Andreas Sigismund Marggraf in 1746.
+- `Zn.uses.0` (Jefferson Lab): In galvanization, objects that can corrode, such as iron nails, are given a protective coating of zinc.
+- `Zn.uses.1` (Jefferson Lab): Metallic zinc is used to make things including dry cell batteries and roof cladding.
+- `Zn.uses.2` (Jefferson Lab): Zinc sulfide is used to make things such as television screens and fluorescent light bulbs.
+- `Zn.uses.3` (Jefferson Lab): Zinc oxide is used in products such as paints, cosmetics and soap.
+- `Ga.discoveryYear` (Jefferson Lab): Gallium was discovered or first isolated in 1875.
+- `Ga.story.0` (Jefferson Lab): Dmitri Mendeleyev proposed that gallium existed in 1871, based on gaps in his newly created Periodic Table of Elements.
+- `Ga.story.1` (Jefferson Lab): Gallium was discovered spectroscopically in 1875 by the French chemist Paul-Émile Lecoq de Boisbaudran.
+- `Ga.story.2` (Los Alamos National Laboratory): The name comes from the Latin word Gallia, meaning France, and also from the Latin gallus, a cock, a translation of "Lecoq."
+- `Ga.uses.0` (Jefferson Lab): Gallium has been used to produce solid-state items, including transistors and light emitting diodes.
+- `Ga.uses.1` (Jefferson Lab): Gallium has found use in high temperature thermometers.
+- `Ga.uses.2` (Jefferson Lab): Gallium has been used to create alloys with low melting points.
+- `Ga.uses.3` (Jefferson Lab): Gallium trichloride was gathered to build the Gallium Neutrino Observatory in Italy, which studies particles called neutrinos.
+- `Ge.discoveryYear` (IUPAC CIAAW): Germanium was discovered or first isolated in 1886.
+- `Ge.story.0` (IUPAC CIAAW): The name germanium comes from the Latin word germania, meaning Germany.
+- `Ge.story.1` (IUPAC CIAAW): Germanium was discovered and isolated by the German chemist Clemens-Alexander Winkler in 1886.
+- `Ge.story.2` (Jefferson Lab): In 1871, Dmitri Mendeleyev first proposed that germanium existed, based on gaps in his newly created Periodic Table of Elements.
+- `Ge.uses.0` (Jefferson Lab): Germanium is used to make transistors for electronic devices.
+- `Ge.uses.1` (Jefferson Lab): Germanium is used as a phosphor in fluorescent lamps.
+- `Ge.uses.2` (Jefferson Lab): Germanium is used in infrared optical instruments and infrared detectors.
+- `Ge.uses.3` (Los Alamos National Laboratory): Germanium is useful as a component of wide-angle camera lenses and microscope objectives.
+- `As.story.0` (IUPAC CIAAW): The name arsenic comes from the Latin word arsenicium and the Greek word arsenikos, meaning "masculine" or "male".
+- `As.story.1` (Jefferson Lab): Albertus Magnus, a German alchemist, is believed to have first identified arsenic in 1250.
+- `As.story.2` (Jefferson Lab): Arsenic compounds were mined by the early Chinese, Greek and Egyptian civilizations.
+- `As.uses.0` (Jefferson Lab): Arsenic is added to germanium to make transistors.
+- `As.uses.1` (Jefferson Lab): Gallium arsenide can produce laser light directly from electricity.
+- `As.uses.2` (Los Alamos National Laboratory): Arsenic is used in bronzing.
+- `Se.discoveryYear` (Jefferson Lab): Selenium was discovered or first isolated in 1817.
+- `Se.story.0` (IUPAC CIAAW): The name selenium comes from Selene, the Greek goddess of the Moon.
+- `Se.story.1` (IUPAC CIAAW): Selenium was discovered by the Swedish chemist Jöns Jacob Berzelius in 1817.
+- `Se.story.2` (Jefferson Lab): Berzelius first believed the material was tellurium, but he eventually realized it was a previously unknown element.
+- `Se.uses.0` (Jefferson Lab): Selenium is used in devices that respond to light, such as light meters for cameras and copiers.
+- `Se.uses.1` (Jefferson Lab): Selenium is used in solar cells.
+- `Se.uses.2` (Jefferson Lab): Selenium is used to make a ruby-red color in glasses and enamels.
+- `Se.uses.3` (Los Alamos National Laboratory): Selenium is used in xerography for copying documents.
+- `Br.story.0` (Los Alamos National Laboratory): The name bromine comes from the Greek word bromos, meaning stench.
+- `Br.story.1` (IUPAC CIAAW): The German chemist Carl Löwig first prepared bromine in 1825.
+- `Br.story.2` (IUPAC CIAAW): The French chemist Antoine-Jérôme Balard first publicly announced bromine in 1826, so the discovery is credited to him.
+- `Br.uses.0` (Jefferson Lab): A bromine compound called silver bromide is used in photography.
+- `Br.uses.1` (Jefferson Lab): Some bromine compounds are used to help purify water.
+- `Br.uses.2` (Jefferson Lab): Some bromine compounds are used in flameproofing agents.
+- `Br.uses.3` (Los Alamos National Laboratory): Bromine is used to make products including dyes, medicines and sanitizers.
+- `Kr.discoveryYear` (Los Alamos National Laboratory): Krypton was discovered or first isolated in 1898.
+- `Kr.story.0` (Los Alamos National Laboratory): Krypton's name comes from the Greek word kryptos, meaning hidden.
+- `Kr.story.1` (Jefferson Lab): Krypton was discovered in 1898 by Scottish chemist William Ramsay and English chemist Morris Travers while they were studying liquefied air.
+- `Kr.story.2` (Los Alamos National Laboratory): Ramsay and Travers found krypton in what was left after liquid air had nearly boiled away.
+- `Kr.uses.0` (Jefferson Lab): Krypton is used in some types of photographic flashes for high-speed photography.
+- `Kr.uses.1` (Jefferson Lab): Some fluorescent light bulbs are filled with a mixture of krypton and argon gases.
+- `Kr.uses.2` (Jefferson Lab): Krypton gas is combined with other gases to make glowing signs that give off a greenish-yellow light.
+- `Rb.discoveryYear` (Los Alamos National Laboratory): Rubidium was discovered or first isolated in 1861.
+- `Rb.story.0` (IUPAC CIAAW): The name rubidium comes from the Latin word rubidus, meaning deepest red, because of the two deep red lines in its spectra.
+- `Rb.story.1` (Jefferson Lab): Rubidium was discovered in 1861 by the German chemists Robert Bunsen and Gustav Kirchhoff while studying samples of the mineral lepidolite.
+- `Rb.story.2` (IUPAC CIAAW): Robert Bunsen isolated rubidium in 1863.
+- `Rb.uses.0` (Jefferson Lab): Rubidium is used in vacuum tubes as a getter, a material that combines with and removes trace gases from the tubes.
+- `Rb.uses.1` (Los Alamos National Laboratory): Rubidium is used as a part of photocells.
+- `Rb.uses.2` (Los Alamos National Laboratory): Rubidium has been used in making special glasses.
+- `Rb.uses.3` (Jefferson Lab): Because rubidium is easily ionized, it might be used as a propellant in ion engines on spacecraft.
+- `Sr.story.0` (IUPAC CIAAW): Strontium is named after Strontian, a town in Scotland.
+- `Sr.story.1` (IUPAC CIAAW): Strontium was first isolated by the English chemist Humphry Davy in 1808.
+- `Sr.story.2` (Los Alamos National Laboratory): In 1790, Adair Crawford recognized a new mineral, strontianite, as different from other barium minerals.
+- `Sr.uses.0` (Jefferson Lab): Strontium is used in making color television picture tubes.
+- `Sr.uses.1` (Jefferson Lab): Strontium is combined with iron to make magnets.
+- `Sr.uses.2` (Jefferson Lab): Strontium carbonate, a strontium compound, is used to make certain kinds of glass.
+- `Sr.uses.3` (Los Alamos National Laboratory): Strontium has found use in refining zinc.
+- `Y.story.0` (IUPAC CIAAW): Yttrium's name comes from Ytterby, a village in Sweden where the mineral gadolinite was found.
+- `Y.story.1` (Jefferson Lab): Yttrium was discovered by Johan Gadolin, a Finnish chemist.
+- `Y.story.2` (IUPAC CIAAW): Gadolin first called the element ytterbium, after the mineral ytterbite.
+- `Y.uses.0` (Jefferson Lab): Yttrium compounds are combined with europium to make the red phosphor used in color televisions.
+- `Y.uses.1` (Jefferson Lab): Garnets made from yttrium and iron are used as microwave filters in microwave communications equipment.
+- `Y.uses.2` (Jefferson Lab): Garnets made from yttrium and aluminum are used in jewelry as simulated diamond.
+- `Y.uses.3` (Los Alamos National Laboratory): Yttrium can be used in laser systems.
+- `Zr.discoveryYear` (IUPAC CIAAW): Zirconium was discovered or first isolated in 1789.
+- `Zr.story.0` (IUPAC CIAAW): The name comes from the Arabic word zargun, which means gold-like.
+- `Zr.story.1` (Jefferson Lab): German chemist Martin Heinrich Klaproth discovered zirconium in 1789 while analyzing a mineral called jargon.
+- `Zr.story.2` (IUPAC CIAAW): Swedish chemist Jöns Jacob Berzelius first isolated zirconium in 1824, but it was not pure.
+- `Zr.uses.0` (Jefferson Lab): Zirconium is used to make some types of surgical equipment.
+- `Zr.uses.1` (Los Alamos National Laboratory): Zirconium oxide, also called zircon, is used as a gem material.
+- `Zr.uses.2` (Jefferson Lab): Zirconium dioxide can withstand very high temperatures and is used to line the walls of high temperature furnaces.
+- `Zr.uses.3` (Jefferson Lab): Zirconium is widely used in nuclear reactors.
+- `Nb.story.0` (IUPAC CIAAW): The name niobium comes from Niobe, a character in Greek myths who was the daughter of Tantalus.
+- `Nb.story.1` (IUPAC CIAAW): The British chemist Charles Hatchett discovered niobium in 1801 in a black mineral from America called columbite.
+- `Nb.story.2` (Jefferson Lab): Hatchett gave the new element the name columbium.
+- `Nb.uses.0` (Los Alamos National Laboratory): Niobium is commonly used to make jewelry.
+- `Nb.uses.1` (Jefferson Lab): An alloy of niobium and titanium can be made into superconductive wire, which is used to make superconductive magnets.
+- `Nb.uses.2` (Jefferson Lab): Superconductive niobium cavities are at the heart of a machine built at the Thomas Jefferson National Accelerator Facility.
+- `Nb.uses.3` (Los Alamos National Laboratory): Niobium is used in arc-welding rods for some kinds of stainless steel.
+- `Mo.story.0` (IUPAC CIAAW): Molybdenum was discovered in 1778 by Carl Wilhelm Scheele, a Swedish pharmacist and chemist.
+- `Mo.story.1` (IUPAC CIAAW): The name molybdenum comes from the Greek word molybdos, which means "lead".
+- `Mo.story.2` (IUPAC CIAAW): In ancient times, people used the word "lead" for any black mineral that leaves a mark on paper.
+- `Mo.uses.0` (Jefferson Lab): Some electrical filaments are made from molybdenum.
+- `Mo.uses.1` (Jefferson Lab): Molybdenum is mainly used as an alloying agent in steel.
+- `Mo.uses.2` (Jefferson Lab): Molybdenum disulfide, a compound of molybdenum, is used as a lubricant at high temperatures.
+- `Mo.uses.3` (Jefferson Lab): Molybdenum trioxide, a compound of molybdenum, is used to make enamels stick to metals.
+- `Tc.discoveryYear` (Jefferson Lab): Technetium was discovered or first isolated in 1937.
+- `Tc.story.0` (Jefferson Lab): Technetium was isolated by Carlo Perrier and Emilio Segrè in 1937.
+- `Tc.story.1` (Los Alamos National Laboratory): The name technetium comes from the Greek word technetos, meaning artificial.
+- `Tc.story.2` (Los Alamos National Laboratory): Technetium was the first element to be produced artificially.
+- `Tc.uses.0` (Jefferson Lab): Technetium can be used as a medical tracer.
+- `Tc.uses.1` (Jefferson Lab): Technetium can be used to calibrate particle detectors.
+- `Tc.uses.2` (Jefferson Lab): Technetium can slow the corrosion of steel, but only in closed systems because it is radioactive.
+- `Ru.story.0` (IUPAC CIAAW): The name ruthenium comes from the Latin word ruthenia, the old name for Russia.
+- `Ru.story.1` (Jefferson Lab): Russian chemist Karl Karlovich Klaus discovered ruthenium in 1844 while analyzing the residue of a sample of platinum ore.
+- `Ru.story.2` (IUPAC CIAAW): Osann thought he had found new metals in his sample, which he called pluranium, ruthenium and polinium.
+- `Ru.uses.0` (Jefferson Lab): Ruthenium is mainly used as an alloying agent.
+- `Ru.uses.1` (Jefferson Lab): Ruthenium is added to platinum and palladium to make them stronger.
+- `Ru.uses.2` (Jefferson Lab): Alloys of ruthenium with platinum and palladium are used in jewelry and in electrical contacts that must resist wear.
+- `Ru.uses.3` (Jefferson Lab): Adding ruthenium to titanium makes titanium more resistant to corrosion.
+- `Rh.story.0` (IUPAC CIAAW): Rhodium's name comes from the Greek word rhodon, meaning rose, because dilute solutions of its salts are rose colored.
+- `Rh.story.1` (Jefferson Lab): Rhodium was discovered in 1803 by William Hyde Wollaston, an English chemist.
+- `Rh.story.2` (Jefferson Lab): Wollaston obtained rhodium from a sample of platinum ore that came from South America.
+- `Rh.uses.0` (Los Alamos National Laboratory): Rhodium is used in jewelry.
+- `Rh.uses.1` (Jefferson Lab): Rhodium is used to make electrical contacts.
+- `Rh.uses.2` (Jefferson Lab): Rhodium is used in catalytic converters.
+- `Rh.uses.3` (Los Alamos National Laboratory): Rhodium is mixed into platinum and palladium as an alloying agent to make them harder.
+- `Pd.discoveryYear` (Jefferson Lab): Palladium was discovered or first isolated in 1803.
+- `Pd.story.0` (Jefferson Lab): Palladium was discovered in 1803 by William Hyde Wollaston, an English chemist.
+- `Pd.story.1` (Jefferson Lab): Wollaston discovered palladium while analyzing samples of platinum ore that came from South America.
+- `Pd.story.2` (Los Alamos National Laboratory): Palladium was named after the asteroid Pallas, which was discovered at about the same time.
+- `Pd.uses.0` (Jefferson Lab): Palladium is used to make things such as springs for watches, surgical instruments, and dental fillings and crowns.
+- `Pd.uses.1` (Jefferson Lab): Palladium alloys are used to make jewelry.
+- `Pd.uses.2` (Jefferson Lab): When palladium is alloyed with gold, it forms a material known as white gold.
+- `Pd.uses.3` (Jefferson Lab): A palladium compound called palladium dichloride is used in carbon monoxide detectors.
+- `Ag.discoveryYear` (Los Alamos National Laboratory): Silver has been known since ancient times.
+- `Ag.story.0` (IUPAC CIAAW): The name silver comes from the Anglo-Saxon words seofor and siolfur, whose origin is unknown.
+- `Ag.story.2` (Los Alamos National Laboratory): Silver has been known since ancient times.
+- `Ag.uses.0` (Los Alamos National Laboratory): Sterling silver is used for things such as jewelry and silverware.
+- `Ag.uses.1` (Jefferson Lab): Silver has been used to make coins, although today other metals are usually used instead.
+- `Ag.uses.2` (Jefferson Lab): Silver is sometimes used in making things such as electrical contacts and printed circuit boards.
+- `Ag.uses.3` (Jefferson Lab): Silver nitrate is used to make photographic films and papers.
+- `Cd.discoveryYear` (IUPAC CIAAW): Cadmium was discovered or first isolated in 1817.
+- `Cd.story.0` (IUPAC CIAAW): Cadmium was discovered and first isolated by the German physician Friedrich Stromeyer in 1817.
+- `Cd.story.1` (Los Alamos National Laboratory): The name comes from the Latin word cadmia and the Greek word kadmeia, the ancient name for calamine, which is zinc carbonate.
+- `Cd.story.2` (Jefferson Lab): While studying calamine, Strohmeyer noticed that some samples glowed with a yellow color when heated, while other samples did not.
+- `Cd.uses.0` (Jefferson Lab): Cadmium is used in rechargeable nickel-cadmium batteries.
+- `Cd.uses.1` (Jefferson Lab): Cadmium can be electroplated onto other materials to protect them from corrosion.
+- `Cd.uses.2` (Jefferson Lab): Cadmium sulfide, a cadmium compound, is a yellow powder that is used as a pigment.
+- `Cd.uses.3` (Los Alamos National Laboratory): Cadmium compounds are used in the phosphors of black and white televisions and in blue and green phosphors for color TV tubes.
+- `In.discoveryYear` (Jefferson Lab): Indium was discovered or first isolated in 1863.
+- `In.story.0` (IUPAC CIAAW): The name indium comes from the word indigo, for the indigo-blue line in the element's spark spectrum.
+- `In.story.1` (Jefferson Lab): Indium was discovered in 1863 by the German chemists Ferdinand Reich and Hieronymus Theodor Richter.
+- `In.story.2` (Jefferson Lab): A brilliant indigo line in a sample's spectrum revealed that indium existed.
+- `In.uses.0` (Jefferson Lab): Indium is used with germanium to make transistors.
+- `In.uses.1` (Jefferson Lab): Indium can be used to make mirrors that reflect as well as silver mirrors but do not tarnish as quickly.
+- `In.uses.2` (Jefferson Lab): Indium is used to coat the bearings of high speed motors.
+- `In.uses.3` (Jefferson Lab): Indium is used to make electrical components such as rectifiers, thermistors and photoconductors.
+- `Sn.discoveryYear` (Los Alamos National Laboratory): Tin has been known since ancient times.
+- `Sn.story.0` (IUPAC CIAAW): The name tin comes from the Anglo-Saxon word tin, and its origin is unknown.
+- `Sn.story.1` (IUPAC CIAAW): The symbol Sn comes from the Latin word stannum, which was used for alloys containing lead.
+- `Sn.story.2` (IUPAC CIAAW): Tin was known in prehistoric times.
+- `Sn.uses.0` (Jefferson Lab): Tin resists corrosion and is used as a protective coating on other metals.
+- `Sn.uses.2` (Jefferson Lab): Tin and lead are mixed together to make pewter and solder.
+- `Sn.uses.3` (Jefferson Lab): A tin compound called stannous fluoride is used in some types of toothpaste.
+- `Sb.discoveryYear` (Jefferson Lab): Antimony has been known since ancient times.
+- `Sb.story.0` (IUPAC CIAAW): The name antimony comes from the Greek words anti and monos, meaning "not alone" or "not one", because it was found in many compounds.
+- `Sb.story.1` (IUPAC CIAAW): The symbol Sb comes from stibium, from the Greek stibi meaning "mark", because it was used for blackening eyebrows and eyelashes.
+- `Sb.story.2` (Jefferson Lab): Nicolas Lémery, a French chemist, was the first person to scientifically study antimony and its compounds.
+- `Sb.uses.0` (Jefferson Lab): Very pure antimony is used to make some semiconductor devices, such as diodes and infrared detectors.
+- `Sb.uses.1` (Jefferson Lab): Antimony is alloyed with lead to make the lead more durable.
+- `Sb.uses.2` (Jefferson Lab): Antimony alloys are used in products including batteries and cable sheathing.
+- `Sb.uses.3` (Jefferson Lab): Antimony compounds are used to make products such as paints, glass and pottery.
+- `Te.story.0` (IUPAC CIAAW): The name tellurium comes from the Latin Tellus, who was the Roman goddess of the Earth.
+- `Te.story.1` (Jefferson Lab): Tellurium was discovered in 1782 by Franz Joseph Müller von Reichenstein, a Romanian mining official.
+- `Te.story.2` (Jefferson Lab): Martin Heinrich Klaproth named the element tellurium but gave full credit for its discovery to Reichenstein.
+- `Te.uses.0` (Jefferson Lab): Tellurium is used to color glass and ceramics.
+- `Te.uses.1` (Jefferson Lab): Tellurium is added to copper and stainless steel to make them easier to machine and mill.
+- `Te.uses.2` (Jefferson Lab): Tellurium is added to lead to increase its strength and its resistance to sulfuric acid.
+- `I.discoveryYear` (Los Alamos National Laboratory): Iodine was discovered or first isolated in 1811.
+- `I.story.0` (IUPAC CIAAW): Iodine was discovered in seaweed by the French chemist Bernard Courtois in 1811.
+- `I.story.1` (IUPAC CIAAW): The name iodine comes from the Greek word iodes, meaning violet, because of its violet vapours.
+- `I.story.2` (IUPAC CIAAW): The French chemist Louis-Joseph Gay-Lussac named iodine when he proved it was an element in 1814.
+- `I.uses.1` (Jefferson Lab): A compound called potassium iodide is used to make photographic film.
+- `I.uses.3` (Los Alamos National Laboratory): Iodine compounds are very useful in medicine.
+- `Xe.discoveryYear` (Los Alamos National Laboratory): Xenon was discovered or first isolated in 1898.
+- `Xe.story.0` (IUPAC CIAAW): The name xenon comes from the Greek word xenos, meaning "the stranger".
+- `Xe.story.1` (IUPAC CIAAW): Xenon was discovered by the Scottish chemist William Ramsay and the English chemist Morris William Travers.
+- `Xe.story.2` (Jefferson Lab): Xenon was discovered through the study of liquefied air.
+- `Xe.uses.0` (Jefferson Lab): Xenon is widely used in strobe lights.
+- `Xe.uses.1` (Jefferson Lab): The light from xenon lamps is used to kill bacteria.
+- `Xe.uses.2` (Jefferson Lab): Xenon ions were used as fuel in an experimental ion engine aboard a space probe.
+- `Xe.uses.3` (Los Alamos National Laboratory): Xenon gas is used in making electron tubes.
+- `Cs.discoveryYear` (Los Alamos National Laboratory): Cesium was discovered or first isolated in 1860.
+- `Cs.story.0` (Los Alamos National Laboratory): The name cesium comes from the Latin word caesius, which means sky blue.
+- `Cs.story.1` (IUPAC CIAAW): Cesium was discovered in 1860 by the German chemist Robert Wilhelm Bunsen and the German physicist Gustav Robert Kirchhoff.
+- `Cs.story.2` (IUPAC CIAAW): Cesium was first isolated in 1882 by the German chemist Carl Setterberg.
+- `Cs.uses.0` (Jefferson Lab): Cesium is used in atomic clocks.
+- `Cs.uses.1` (Los Alamos National Laboratory): Cesium is used in photoelectric cells.
+- `Cs.uses.2` (Jefferson Lab): Cesium is used as a getter, a material that combines with and removes trace gases from vacuum tubes.
+- `Ba.discoveryYear` (Jefferson Lab): Barium was discovered or first isolated in 1808.
+- `Ba.story.0` (Jefferson Lab): Barium was first isolated in 1808 by Sir Humphry Davy, an English chemist.
+- `Ba.story.1` (Los Alamos National Laboratory): The name barium comes from the Greek word barys, meaning heavy.
+- `Ba.story.2` (Los Alamos National Laboratory): In 1774, Scheele showed that baryta was different from lime.
+- `Ba.uses.0` (Jefferson Lab): Barium sulfate absorbs X-rays and, when swallowed, can be used to produce X-ray images of the intestinal tract.
+- `Ba.uses.1` (Jefferson Lab): Barium chloride is used as a water softener.
+- `Ba.uses.2` (Jefferson Lab): Barium ferrite is used to make magnets.
+- `Ba.uses.3` (Jefferson Lab): Barium carbonate is used in making ceramics and some types of glass.
+- `La.discoveryYear` (Jefferson Lab): Lanthanum was discovered or first isolated in 1839.
+- `La.story.0` (Jefferson Lab): Lanthanum was discovered by Carl Gustaf Mosander, a Swedish chemist, in 1839.
+- `La.story.1` (IUPAC CIAAW): The name lanthanum comes from the Greek word lanthanein, meaning "to be hidden" or "to escape notice."
+- `La.story.2` (IUPAC CIAAW): It got this name because it hid in cerium ore and was difficult to separate from that mineral.
+- `La.uses.0` (Jefferson Lab): Lanthanum is used to make carbon arc lights, which the motion picture industry uses for studio lighting and projector lights.
+- `La.uses.1` (Jefferson Lab): Lanthanum is part of Misch metal, a material used to make flints for lighters.
+- `La.uses.2` (Jefferson Lab): Lanthana is used to make the glass in camera lenses and other special glasses.
+- `Ce.discoveryYear` (Jefferson Lab): Cerium was discovered or first isolated in 1803.
+- `Ce.story.0` (Los Alamos National Laboratory): Cerium was named after the asteroid Ceres.
+- `Ce.story.1` (Jefferson Lab): Cerium was discovered in 1803 by Berzelius and Hisinger, and independently by Klaproth.
+- `Ce.uses.0` (Jefferson Lab): Cerium is one of the rare earth elements used to make carbon arc lights, which are used in the film industry.
+- `Ce.uses.1` (Jefferson Lab): Cerium is part of misch metal, a material used to make flints for lighters.
+- `Ce.uses.2` (Jefferson Lab): Cerium oxide is a component of the walls of self-cleaning ovens.
+- `Ce.uses.3` (Jefferson Lab): Cerium oxide is used to polish glass surfaces.
+- `Pr.discoveryYear` (Jefferson Lab): Praseodymium was discovered or first isolated in 1885.
+- `Pr.story.0` (IUPAC CIAAW): The name praseodymium comes from the Greek words prasios, meaning green, and didymos, meaning twin.
+- `Pr.story.1` (Jefferson Lab): Praseodymium was discovered by Carl F. Auer von Welsbach, an Austrian chemist, in 1885.
+- `Pr.story.2` (Jefferson Lab): Auer von Welsbach separated praseodymium, as well as the element neodymium, from a material known as didymium.
+- `Pr.uses.0` (Jefferson Lab): Praseodymium is part of misch metal, a material that is used to make flints for lighters.
+- `Pr.uses.1` (Jefferson Lab): Praseodymium forms the core of carbon arc lights, which the motion picture industry uses for studio lighting and projector lights.
+- `Pr.uses.2` (Jefferson Lab): Praseodymium salts are used to give glasses and enamels a yellow color.
+- `Pr.uses.3` (Jefferson Lab): Praseodymium is part of didymium glass, which is used to make certain types of welder's and glass blower's goggles.
+- `Nd.story.0` (IUPAC CIAAW): The name neodymium comes from the Greek words neos, meaning "new", and didymos, meaning "twin".
+- `Nd.story.1` (Jefferson Lab): Neodymium was discovered in 1885 by Carl F. Auer von Welsbach, an Austrian chemist.
+- `Nd.story.2` (Los Alamos National Laboratory): Mosander named the element didymium because it was an inseparable twin brother of lanthanum.
+- `Nd.uses.0` (Jefferson Lab): Neodymium is added to glass to remove the green color caused by iron contaminants.
+- `Nd.uses.1` (Los Alamos National Laboratory): Didymium, which contains neodymium, is used to color glass for making welders' goggles.
+- `Nd.uses.2` (Jefferson Lab): Some neodymium salts are used to color enamels and glazes.
+- `Nd.uses.3` (Los Alamos National Laboratory): Glass containing neodymium can be used as a laser material.
+- `Pm.story.0` (Los Alamos National Laboratory): Promethium is named after Prometheus, a figure from Greek mythology who stole fire from heaven.
+- `Pm.story.1` (Jefferson Lab): The Czech chemist Bohuslav Brauner predicted in 1902 that promethium existed.
+- `Pm.story.2` (Jefferson Lab): Jacob A. Marinsky, Lawrence E. Glendenin and Charles D. Coryell obtained proof that promethium exists in 1944.
+- `Pm.uses.0` (Jefferson Lab): Promethium could be used to make a nuclear powered battery.
+- `Pm.uses.1` (Jefferson Lab): Promethium could be used in generators that provide electricity for space probes and satellites.
+- `Pm.uses.2` (Los Alamos National Laboratory): Light made with promethium and a phosphor can be used for signs or signals that need to work dependably.
+- `Pm.uses.3` (Los Alamos National Laboratory): Promethium has applications as a source of beta radiation in gauges that measure thickness.
+- `Sm.story.0` (IUPAC CIAAW): Samarium is named after the mineral samarskite, which was named for Colonel Samarski, a Russian mine official.
+- `Sm.story.1` (IUPAC CIAAW): Samarium was originally discovered in 1878 by the Swiss chemist Marc Delafontaine, who called it decipium.
+- `Sm.story.2` (Jefferson Lab): The French chemist Paul-Émile Lecoq de Boisbaudran was the first to isolate samarium from the mineral samarskite.
+- `Sm.uses.0` (Los Alamos National Laboratory): Samarium, along with other rare earth elements, is used in carbon-arc lighting for the motion picture industry.
+- `Sm.uses.1` (Jefferson Lab): Samarium forms a compound with cobalt that is a powerful permanent magnet.
+- `Sm.uses.2` (Los Alamos National Laboratory): Samarium oxide has been used in optical glass to absorb infrared.
+- `Sm.uses.3` (Jefferson Lab): Samarium is part of misch metal, a material used to make flints for lighters.
+- `Eu.story.0` (IUPAC CIAAW): The name europium comes from the continent of Europe.
+- `Eu.story.1` (Jefferson Lab): Europium was discovered in 1896 by the French chemist Eugène-Antole Demarçay.
+- `Eu.story.2` (Jefferson Lab): Demarçay suspected that samples of samarium, a recently discovered element, were contaminated with an unknown element.
+- `Eu.uses.0` (Jefferson Lab): Europium oxide, a compound of europium, is used as a red phosphor in television sets.
+- `Eu.uses.1` (Jefferson Lab): Europium has been added to some types of plastics to make lasers.
+- `Eu.uses.2` (Jefferson Lab): Because it is a good absorber of neutrons, europium is being studied for use in nuclear reactors.
+- `Gd.story.0` (IUPAC CIAAW): Gadolinium is named after the mineral gadolinite, where it was found, which was named for the Finnish rare earth chemist Johan Gadolin.
+- `Gd.story.1` (Jefferson Lab): The Swiss chemist Jean Charles Galissard de Marignac first observed spectroscopic evidence of gadolinium in the minerals didymia and gadolinite.
+- `Gd.story.2` (IUPAC CIAAW): In 1886, the French chemist Paul-Emile Lecoq de Boisbaudran gave the element the name gadolinium.
+- `Gd.uses.0` (Jefferson Lab): Gadolinium compounds are used to make phosphors for color televisions.
+- `Gd.uses.1` (Jefferson Lab): Gadolinium can be combined with yttrium to form garnets used in microwave technology.
+- `Gd.uses.2` (Jefferson Lab): Gadolinium can be alloyed with metals such as iron and chromium to improve their workability and resistance to high temperatures and oxidation.
+- `Gd.uses.3` (Jefferson Lab): Gadolinium can be used as control rods for nuclear reactors.
+- `Tb.discoveryYear` (IUPAC CIAAW): Terbium was discovered or first isolated in 1843.
+- `Tb.story.0` (IUPAC CIAAW): Terbium was discovered in 1843 by Carl-Gustav Mosander, a Swedish surgeon and chemist.
+- `Tb.story.1` (IUPAC CIAAW): The name terbium comes from the village of Ytterby in Sweden.
+- `Tb.story.2` (IUPAC CIAAW): The names first given to the erbium and terbium samples have since been switched.
+- `Tb.uses.0` (Jefferson Lab): Terbium is used to dope some types of solid-state devices.
+- `Tb.uses.1` (Jefferson Lab): Terbium is used with zirconium dioxide as a crystal stabilizer in fuel cells that operate at high temperatures.
+- `Tb.uses.2` (Jefferson Lab): A terbium compound called sodium terbium borate is used to make laser light.
+- `Tb.uses.3` (Jefferson Lab): Terbium oxide could potentially be used as an activator for green phosphors in television tubes.
+- `Dy.story.0` (Los Alamos National Laboratory): The name dysprosium comes from the Greek word dysprositos, meaning hard to get at.
+- `Dy.story.1` (Jefferson Lab): French chemist Paul-Émile Lecoq de Boisbaudran discovered dysprosium in 1886, as an impurity in erbia, the oxide of erbium.
+- `Dy.story.2` (IUPAC CIAAW): Dysprosium was first isolated by the French chemist Georges Urbain in 1906.
+- `Dy.uses.0` (Jefferson Lab): When combined with vanadium and other rare earth elements, dysprosium is used as a laser material.
+- `Dy.uses.1` (Los Alamos National Laboratory): A cement made with dysprosium oxide and nickel has been used in cooling nuclear reactor rods.
+- `Dy.uses.2` (Los Alamos National Laboratory): Compounds called dysprosium-cadmium chalcogenides have been used as sources of infrared radiation for studying chemical reactions.
+- `Ho.story.0` (Los Alamos National Laboratory): The name holmium comes from Holmia, the Latin word meaning Stockholm.
+- `Ho.story.1` (Jefferson Lab): Holmium was discovered by Per Theodor Cleve, a Swedish chemist, in 1879.
+- `Ho.story.2` (Jefferson Lab): Cleve named a brown material he obtained holmia, which is the oxide of the element holmium.
+- `Er.story.0` (IUPAC CIAAW): Erbium's name comes from the Swedish town of Ytterby, where the ore gadolinite, in which erbium was found, was first mined.
+- `Er.story.1` (IUPAC CIAAW): Erbium was discovered in 1843 by Carl-Gustav Mosander, a Swedish surgeon and chemist, in a sample of yttrium.
+- `Er.story.2` (Jefferson Lab): Scientists soon confused the substances erbia and terbia, and by 1877 they had reversed their names.
+- `Er.uses.0` (Jefferson Lab): Erbium is added to fiber optic cables, where it is used as a signal amplifier.
+- `Er.uses.1` (Jefferson Lab): Erbia, a pink compound of erbium, is used to color glass and glazes.
+- `Er.uses.2` (Jefferson Lab): Erbium is alloyed with vanadium to make it softer and easier to shape.
+- `Tm.story.0` (Los Alamos National Laboratory): Thulium is named after Thule, the earliest name for Scandinavia.
+- `Tm.story.1` (Jefferson Lab): Thulium was discovered by the Swedish chemist Per Theodor Cleve in 1879.
+- `Tm.story.2` (IUPAC CIAAW): Thulium was first isolated by the American chemist Charles James in 1911.
+- `Tm.uses.0` (Jefferson Lab): One of thulium's isotopes could be used as a radiation source for portable X-ray machines.
+- `Tm.uses.1` (Los Alamos National Laboratory): Natural thulium has possible use in ferrites, which are ceramic magnetic materials used in microwave equipment.
+- `Tm.uses.2` (Los Alamos National Laboratory): Natural thulium can be used for doping fiber lasers.
+- `Yb.discoveryYear` (IUPAC CIAAW): Ytterbium was discovered or first isolated in 1878.
+- `Yb.story.0` (IUPAC CIAAW): Ytterbium is named after Ytterby, a village in Sweden where the mineral ytterbite was originally found.
+- `Yb.story.1` (IUPAC CIAAW): Ytterbium was discovered in 1878 by the Swiss chemist Jean-Charles Galissard de Marignac.
+- `Yb.story.2` (Jefferson Lab): In 1907, Urbain separated ytterbium into two elements.
+- `Yb.uses.0` (Jefferson Lab): Ytterbium can be alloyed with stainless steel to improve some of its mechanical properties.
+- `Yb.uses.1` (Jefferson Lab): Ytterbium is used as a doping agent in fiber optic cable, where it can be used as an amplifier.
+- `Yb.uses.2` (Los Alamos National Laboratory): An isotope of ytterbium is reported to have been used as a radiation source for a portable X-ray machine where electricity is unavailable.
+- `Lu.discoveryYear` (IUPAC CIAAW): Lutetium was discovered or first isolated in 1907.
+- `Lu.story.0` (IUPAC CIAAW): The name lutetium comes from Lutetia, the ancient name for the city of Paris.
+- `Lu.story.1` (IUPAC CIAAW): The discovery of lutetium is credited to the French chemist Georges Urbain in 1907.
+- `Lu.story.2` (IUPAC CIAAW): Carl Auer von Welsbach had named the element cassiopeium, after the constellation Cassiopeia.
+- `Lu.uses.0` (Jefferson Lab): Lutetium has no large scale practical uses.
+- `Lu.uses.1` (Los Alamos National Laboratory): Stable forms of lutetium can be used as catalysts in processes such as hydrogenation and polymerization.
+- `Lu.uses.2` (Los Alamos National Laboratory): Almost no other commercial uses have been found for lutetium yet.
+- `Hf.discoveryYear` (Jefferson Lab): Hafnium was discovered or first isolated in 1923.
+- `Hf.story.0` (IUPAC CIAAW): The name hafnium comes from hafnia, the Latin word for Copenhagen.
+- `Hf.story.1` (IUPAC CIAAW): Niels Bohr argued that hafnium would not be a rare earth element, but would be found in zirconium ore.
+- `Hf.story.2` (IUPAC CIAAW): Dirk Coster and George von Hevesy discovered hafnium in 1923, while working at Bohr's Institute in Copenhagen.
+- `Hf.uses.0` (Jefferson Lab): Hafnium is used in the control rods of nuclear reactors.
+- `Hf.uses.1` (Los Alamos National Laboratory): Hafnium is used in gas-filled and incandescent lamps.
+- `Hf.uses.2` (Jefferson Lab): Hafnium is used in vacuum tubes to combine with and remove trace gases.
+- `Hf.uses.3` (Jefferson Lab): Hafnium has been used to make alloys with metals such as iron, titanium and niobium.
+- `Ta.discoveryYear` (IUPAC CIAAW): Tantalum was discovered or first isolated in 1802.
+- `Ta.story.0` (IUPAC CIAAW): Tantalum is named after Tantalus, a character from Greek mythology.
+- `Ta.story.2` (IUPAC CIAAW): Tantalum was discovered in 1802 by Anders-Gustav Ekeberg, a Swedish chemist and mineralogist.
+- `Ta.uses.0` (Jefferson Lab): Tantalum is used to make surgical sutures and implants, such as artificial joints and cranial plates.
+- `Ta.uses.1` (Jefferson Lab): Tantalum does not react with bodily fluids and is used to make surgical equipment.
+- `Ta.uses.2` (Jefferson Lab): Tantalum pentoxide, one of tantalum's compounds, is used to make capacitors.
+- `Ta.uses.3` (Los Alamos National Laboratory): Tantalum oxide is used to make special glass for camera lenses.
+- `W.story.0` (IUPAC CIAAW): The name tungsten comes from Swedish words meaning "heavy stone".
+- `W.story.1` (IUPAC CIAAW): The symbol W comes from the German word wolfram.
+- `W.story.2` (IUPAC CIAAW): Tungsten metal was first isolated in 1783 by the Spanish chemists Fausto Elhuyar and his brother Juan José.
+- `W.uses.0` (Jefferson Lab): Tungsten is used to make filaments for incandescent light bulbs, fluorescent light bulbs and television tubes.
+- `W.uses.1` (Jefferson Lab): Tungsten is used as a target for producing X-rays.
+- `W.uses.2` (Jefferson Lab): Tungsten carbide, an extremely hard tungsten compound, is used in the tips of drill bits.
+- `W.uses.3` (Jefferson Lab): Compounds of tungsten with calcium and magnesium are used in fluorescent light bulbs.
+- `Re.discoveryYear` (IUPAC CIAAW): Rhenium was discovered or first isolated in 1925.
+- `Re.story.0` (IUPAC CIAAW): The name rhenium comes from the Latin word rhenus, for the Rhine river in Germany.
+- `Re.story.1` (IUPAC CIAAW): Rhenium was discovered in 1925 by German chemists Walter Noddack, Ida Tacke and Otto Berg, using x-ray spectroscopy.
+- `Re.uses.0` (Jefferson Lab): Rhenium is used in flash lamps for photography.
+- `Re.uses.1` (Los Alamos National Laboratory): Rhenium is used for filaments in mass spectrographs and ion gauges.
+- `Re.uses.2` (Los Alamos National Laboratory): Rhenium is used as a material for electrical contacts.
+- `Os.discoveryYear` (IUPAC CIAAW): Osmium was discovered or first isolated in 1803.
+- `Os.story.0` (IUPAC CIAAW): The name osmium comes from the Greek word osme, meaning "smell", because of the sharp odor of its volatile oxide.
+- `Os.story.1` (Jefferson Lab): Osmium and iridium were discovered at the same time by the British chemist Smithson Tennant in 1803.
+- `Os.uses.0` (Jefferson Lab): Osmium is mainly used to make very hard alloys.
+- `Os.uses.1` (Jefferson Lab): Osmium alloys are found in items such as ball point pen tips, fountain pen tips and record player needles.
+- `Os.uses.2` (Los Alamos National Laboratory): Osmium is combined with other platinum group metals to make very hard alloys for items such as fountain pen tips and electrical contacts.
+- `Ir.discoveryYear` (Jefferson Lab): Iridium was discovered or first isolated in 1803.
+- `Ir.story.0` (IUPAC CIAAW): The name iridium comes from the Latin Iris, the Greek goddess of rainbows, because the element's salt solutions come in a variety of colours.
+- `Ir.story.1` (Jefferson Lab): The British chemist Smithson Tennant discovered iridium and osmium at the same time, in 1803.
+- `Ir.story.2` (IUPAC CIAAW): The French chemist H. V. Collet-Descotils also discovered iridium independently.
+- `Ir.uses.0` (Jefferson Lab): Iridium is mainly used as a hardening agent for platinum.
+- `Ir.uses.2` (Los Alamos National Laboratory): Iridium is used for electrical contacts.
+- `Ir.uses.3` (Jefferson Lab): The standard meter bar was made from an alloy of platinum and iridium.
+- `Pt.story.0` (IUPAC CIAAW): The name platinum comes from the Spanish word platina, meaning silver.
+- `Pt.story.1` (IUPAC CIAAW): In 1735, the Spanish astronomer Antonio de Ulloa found platinum in Peru, South America.
+- `Pt.story.2` (Jefferson Lab): Pre-Columbian Indians of South America used platinum before western scientists noticed it.
+- `Pt.uses.0` (Jefferson Lab): Platinum is used to make jewelry, wire, electrical contacts and laboratory vessels.
+- `Pt.uses.1` (Jefferson Lab): Platinum is used in catalytic converters, devices found in the exhaust systems of most cars.
+- `Pt.uses.2` (Los Alamos National Laboratory): Platinum is used in dentistry.
+- `Pt.uses.3` (Jefferson Lab): Fuel cells, which combine hydrogen and oxygen to produce electricity and water, use platinum as a catalyst.
+- `Hg.discoveryYear` (Jefferson Lab): Mercury has been known since ancient times.
+- `Hg.story.0` (IUPAC CIAAW): Mercury is named after the Roman god Mercury, the nimble messenger of the gods.
+- `Hg.story.1` (IUPAC CIAAW): The symbol Hg comes from the Greek word hydrargyrum, meaning "liquid silver" or "quick silver".
+- `Hg.story.2` (Jefferson Lab): Mercury was known to the ancient Chinese and Hindus.
+- `Hg.uses.0` (Jefferson Lab): Mercury can be used to make thermometers, barometers and other scientific instruments.
+- `Hg.uses.1` (Jefferson Lab): Mercury vapor is used in streetlights, fluorescent lamps and advertising signs.
+- `Hg.uses.2` (Jefferson Lab): Mercury conducts electricity and is used to make silent switches that depend on their position.
+- `Hg.uses.3` (Jefferson Lab): Mercury alloys called amalgams are used for things such as dental fillings.
+- `Tl.discoveryYear` (IUPAC CIAAW): Thallium was discovered or first isolated in 1861.
+- `Tl.story.0` (IUPAC CIAAW): Thallium's name comes from the Greek word thallos, meaning "green shoot" or "twig", because of the bright green line in its spectrum.
+- `Tl.story.1` (IUPAC CIAAW): Thallium was discovered in 1861 by William Crookes, an English physicist and chemist.
+- `Tl.story.2` (Los Alamos National Laboratory): Thallium metal was isolated in 1862 by both Crookes and Lamy, at about the same time.
+- `Tl.uses.0` (Jefferson Lab): Thallium sulfide, thallium iodide and thallium bromide are compounds used in devices that detect infrared radiation.
+- `Tl.uses.1` (Los Alamos National Laboratory): Thallium sulfide, whose electrical conductivity changes when exposed to infrared light, is used in photocells.
+- `Tl.uses.2` (Los Alamos National Laboratory): Thallium oxide has been used to make glasses with a high index of refraction.
+- `Tl.uses.3` (Jefferson Lab): Thallium, used together with sulfur or selenium and arsenic, forms glass that melts at a low temperature.
+- `Pb.discoveryYear` (Jefferson Lab): Lead has been known since ancient times.
+- `Pb.story.0` (IUPAC CIAAW): The name lead comes from the Anglo-Saxon word lead, which is of unknown origin.
+- `Pb.story.1` (IUPAC CIAAW): The chemical symbol Pb comes from the Latin word plumbum.
+- `Pb.story.2` (Los Alamos National Laboratory): Lead has long been known and is mentioned in Exodus.
+- `Pb.uses.0` (Jefferson Lab): Lead is used to shield against X-ray and gamma-ray radiation in X-ray machines and nuclear reactors.
+- `Pb.uses.1` (Jefferson Lab): Lead is used to make lead-acid storage batteries, such as those found in automobiles.
+- `Pb.uses.2` (Jefferson Lab): Lead is used as a covering on some wires and cables to protect them from corrosion.
+- `Pb.uses.3` (Los Alamos National Laboratory): Lead oxide, a lead compound, is used to make crystal glass and flint glass.
+- `Bi.story.0` (IUPAC CIAAW): The name comes from the German "weisse masse," meaning "white mass," from the colour of its oxides.
+- `Bi.story.1` (Los Alamos National Laboratory): In early times, bismuth was confused with tin and lead.
+- `Bi.story.2` (Los Alamos National Laboratory): In 1753, Claude Geoffroy the Younger showed that bismuth was distinct from lead.
+- `Bi.uses.0` (Jefferson Lab): Bismuth alloys are used in things such as automatic fire sprinkler systems, fire detection systems and electrical fuses.
+- `Bi.uses.1` (Jefferson Lab): Bismuth oxide, a bismuth compound, is used as a yellow pigment in paints and cosmetics.
+- `Bi.uses.2` (Jefferson Lab): Bismuth oxychloride is used to make a pigment known as bismuth white.
+- `Bi.uses.3` (Los Alamos National Laboratory): Bismuth subnitrate and subcarbonate are used in medicine.
+- `Po.discoveryYear` (Jefferson Lab): Polonium was discovered or first isolated in 1898.
+- `Po.story.0` (Jefferson Lab): Polonium was discovered by Marie Sklodowska Curie, a Polish chemist, in 1898.
+- `Po.story.1` (Los Alamos National Laboratory): Polonium is named after Poland, the native country of Madame Curie.
+- `Po.story.2` (Jefferson Lab): Curie obtained polonium from pitchblende, a material that contains uranium.
+- `Po.uses.0` (Jefferson Lab): Polonium is used in brushes for removing dust from photographic films.
+- `Po.uses.1` (Jefferson Lab): Polonium can be used to remove static electricity in machinery, such as machines that roll paper, wire or sheet metal.
+- `Po.uses.2` (Los Alamos National Laboratory): Polonium has attracted attention as a possible lightweight heat source for thermoelectric power in space satellites.
+- `At.discoveryYear` (Los Alamos National Laboratory): Astatine was discovered or first isolated in 1940.
+- `At.story.0` (Los Alamos National Laboratory): The name astatine comes from the Greek word astatos, which means unstable.
+- `At.story.1` (Los Alamos National Laboratory): Astatine was first made in 1940 by D.R. Corson, K.R. MacKenzie and E. Segre at the University of California.
+- `At.uses.0` (Jefferson Lab): Astatine currently has no uses outside of basic scientific research.
+- `Rn.discoveryYear` (Jefferson Lab): Radon was discovered or first isolated in 1900.
+- `Rn.story.0` (Jefferson Lab): Radon was discovered in 1900 by Friedrich Ernst Dorn, a German chemist, while he was studying radium's decay chain.
+- `Rn.story.1` (Los Alamos National Laboratory): The name radon was derived from radium.
+- `Rn.uses.0` (Jefferson Lab): Hospitals sometimes use radon to treat some forms of cancer.
+- `Rn.uses.1` (Los Alamos National Laboratory): A few hospitals still produce radon for therapeutic use.
+- `Fr.discoveryYear` (Jefferson Lab): Francium was discovered or first isolated in 1939.
+- `Fr.story.0` (Jefferson Lab): Francium was discovered by the French chemist Marguerite Catherine Perey in 1939.
+- `Fr.story.1` (Jefferson Lab): Perey discovered francium while analyzing the decay sequence of actinium.
+- `Fr.story.2` (Los Alamos National Laboratory): Marguerite Perey, who worked at the Curie Institute in Paris, discovered francium in 1939.
+- `Fr.uses.0` (Jefferson Lab): Francium currently has no uses outside of basic scientific research.
+- `Ra.discoveryYear` (Jefferson Lab): Radium was discovered or first isolated in 1898.
+- `Ra.story.0` (Jefferson Lab): Radium was discovered in 1898 by Marie Sklodowska Curie, a Polish chemist, and Pierre Curie, a French chemist.
+- `Ra.story.1` (Jefferson Lab): Marie Curie obtained radium from pitchblende, a material that contains uranium.
+- `Ra.story.2` (Los Alamos National Laboratory): Radium was isolated in 1911 by Madame Curie and Debierne.
+- `Ra.uses.0` (Jefferson Lab): Radium is used to produce radon, a radioactive gas used to treat some types of cancer.
+- `Ra.uses.1` (Jefferson Lab): Radium was once used to make self-luminous paints for things such as watches and aircraft instrument dials.
+- `Ra.uses.2` (Jefferson Lab): A mixture of radium and beryllium gives off neutrons and is used as a neutron source.
+- `Ac.discoveryYear` (Los Alamos National Laboratory): Actinium was discovered or first isolated in 1899.
+- `Ac.story.0` (Los Alamos National Laboratory): Actinium was discovered by Andre Debierne in 1899, and independently by F. Giesel in 1902.
+- `Ac.story.1` (Los Alamos National Laboratory): The name actinium comes from the Greek words aktis and aktinos, meaning beam or ray.
+- `Ac.story.2` (Jefferson Lab): Debierne discovered actinium while he was experimenting with new methods of separating rare earth oxides.
+- `Ac.uses.0` (Jefferson Lab): Actinium is used in the production of neutrons.
+- `Ac.uses.1` (Jefferson Lab): Actinium has no significant commercial applications.
+- `Th.story.0` (IUPAC CIAAW): Thorium is named after Thor, the Scandinavian god of thunder.
+- `Th.story.1` (Jefferson Lab): Thorium was discovered in 1828 by the Swedish chemist Jöns Jacob Berzelius.
+- `Th.story.2` (IUPAC CIAAW): Thorium was first isolated in 1914 by the chemists D. Lely, Jr. and L. Hamburger.
+- `Th.uses.0` (Los Alamos National Laboratory): In the past, thorium's main use was making Welsbach mantles for portable gaslights.
+- `Th.uses.1` (Jefferson Lab): Thorium oxide is used to make glass for high quality camera lenses.
+- `Th.uses.2` (Jefferson Lab): Thorium is used to coat tungsten filaments in electronic devices, such as television sets.
+- `Th.uses.3` (Jefferson Lab): Thorium is used as an alloying agent to make magnesium stronger at high temperatures.
+- `Pa.story.0` (IUPAC CIAAW): The name protactinium comes from the Greek word protos, meaning first, because the element comes before actinium.
+- `Pa.story.1` (Jefferson Lab): Kasimir Fajans and O.H. Göhring first identified protactinium in 1913 while studying uranium's decay chain.
+- `Pa.story.2` (Jefferson Lab): Protactinium was first isolated by Aristid V. Grosse in 1934.
+- `Pa.uses.0` (Jefferson Lab): Protactinium currently has no uses outside of basic scientific research.
+- `Pa.uses.1` (Los Alamos National Laboratory): There are currently no practical uses for protactinium other than basic scientific research.
+- `U.discoveryYear` (IUPAC CIAAW): Uranium was discovered or first isolated in 1789.
+- `U.story.0` (IUPAC CIAAW): Uranium is named after the planet Uranus.
+- `U.story.1` (IUPAC CIAAW): The German chemist Martin-Heinrich Klaproth discovered uranium in 1789.
+- `U.story.2` (IUPAC CIAAW): Uranium metal was first isolated by the French chemist Eugène-Melchior Peligot in 1841.
+- `U.uses.0` (Jefferson Lab): Uranium is most commonly used in the nuclear power industry to generate electricity.
+- `U.uses.1` (Jefferson Lab): Uranium is used as a shield against radiation.
+- `U.uses.2` (Los Alamos National Laboratory): Uranium metal is used as a target to produce high-energy X-rays.
+- `U.uses.3` (Jefferson Lab): Uranium compounds have been used for centuries to color glass.
+- `Np.discoveryYear` (Jefferson Lab): Neptunium was discovered or first isolated in 1940.
+- `Np.story.0` (Los Alamos National Laboratory): Neptunium is named after the planet Neptune, which was named after the Roman god of the sea.
+- `Np.story.1` (Jefferson Lab): Neptunium was first produced in 1940 by Edwin M. McMillian and Philip H. Abelson at the University of California, Berkeley.
+- `Np.story.2` (Los Alamos National Laboratory): There were many early false reports of the discovery of neptunium, and the most significant one was by Enrico Fermi.
+- `Np.uses.0` (Jefferson Lab): A form of neptunium made in nuclear reactors is used in neutron detectors.
+- `Pu.story.0` (Jefferson Lab): Plutonium was first produced by Glenn T. Seaborg, Joseph W. Kennedy, Edward M. McMillan and Arthur C. Wohl.
+- `Pu.story.2` (Los Alamos National Laboratory): Seaborg first considered the name plutium, but later thought it did not sound as good as plutonium.
+- `Pu.uses.1` (Los Alamos National Laboratory): A form of plutonium has been used to power things such as instruments left on the Moon by Apollo astronauts and weather satellites.
+- `Pu.uses.2` (Los Alamos National Laboratory): Plutonium can be used to make a fuel called MOX for nuclear power reactors.
+- `Pu.uses.3` (Los Alamos National Laboratory): A form of plutonium was once used to power artificial heart pacemakers, but it has been replaced by lithium-based cells.
+- `Am.discoveryYear` (Jefferson Lab): Americium was discovered or first isolated in 1944.
+- `Am.story.0` (Jefferson Lab): Americium was discovered by the American scientists Glenn T. Seaborg, Ralph A. James, Leon O. Morgan and Albert Ghiorso.
+- `Am.story.1` (Los Alamos National Laboratory): Americium was named after the continent of North America.
+- `Am.story.2` (Los Alamos National Laboratory): Glenn Seaborg announced the discovery of americium and curium on a U.S. children's radio show called The Quiz Kids.
+- `Am.uses.0` (Jefferson Lab): Americium is used in smoke detectors.
+- `Am.uses.1` (Jefferson Lab): Americium can be used as a portable source of gamma rays.
+- `Am.uses.2` (Los Alamos National Laboratory): Americium has been used to measure the thickness of glass to help make flat glass.
+- `Cm.discoveryYear` (Jefferson Lab): Curium was discovered or first isolated in 1944.
+- `Cm.story.0` (Jefferson Lab): Curium was first produced in 1944 by Glenn T. Seaborg, Ralph A. James and Albert Ghiorso.
+- `Cm.story.1` (Jefferson Lab): The first curium was made by striking plutonium atoms with alpha particles that were sped up in a device called a cyclotron.
+- `Cm.story.2` (Los Alamos National Laboratory): Curium was the third transuranium element to be discovered.
+- `Cm.uses.0` (Jefferson Lab): Curium is mainly used for basic scientific research.
+- `Cm.uses.1` (Jefferson Lab): Curium currently has no commercial uses.
+- `Cm.uses.2` (Jefferson Lab): Curium might be used in radioisotope thermoelectric generators in the future.
+- `Cm.uses.3` (Jefferson Lab): Curium compounds, like the element itself, are mainly used for basic scientific research.
+- `Bk.discoveryYear` (Los Alamos National Laboratory): Berkelium was discovered or first isolated in 1949.
+- `Bk.story.0` (Los Alamos National Laboratory): Berkelium was named after Berkeley, California, the city where it was discovered.
+- `Bk.story.1` (Jefferson Lab): Berkelium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso.
+- `Bk.story.2` (Jefferson Lab): The discoverers made berkelium by striking americium with alpha particles in a machine called a cyclotron.
+- `Cf.discoveryYear` (Jefferson Lab): Californium was discovered or first isolated in 1950.
+- `Cf.story.0` (Jefferson Lab): Californium was first produced in 1950 by Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso.
+- `Cf.story.1` (Jefferson Lab): The scientists who first produced californium worked at the University of California, Berkeley.
+- `Cf.story.2` (Jefferson Lab): Californium was first made using a device known as a cyclotron.
+- `Cf.uses.0` (Jefferson Lab): A form of californium is used as a neutron source to help identify gold and silver ores.
+- `Cf.uses.1` (Jefferson Lab): A form of californium is used in neutron moisture gauges, which help find water and oil bearing layers in oil wells.
+- `Es.discoveryYear` (Jefferson Lab): Einsteinium was discovered or first isolated in 1952.
+- `Es.story.0` (Jefferson Lab): Einsteinium was discovered in 1952 by a team of scientists led by Albert Ghiorso.
+- `Es.story.1` (Los Alamos National Laboratory): Einsteinium was named after Albert Einstein.
+- `Es.uses.0` (Jefferson Lab): Einsteinium currently has no uses outside of basic scientific research.
+- `Fm.discoveryYear` (Jefferson Lab): Fermium was discovered or first isolated in 1952.
+- `Fm.story.0` (Jefferson Lab): Fermium was discovered in 1952 by a team of scientists led by Albert Ghiorso.
+- `Fm.story.1` (Los Alamos National Laboratory): Fermium is named after the Italian physicist and Nobel Laureate Enrico Fermi.
+- `Fm.story.2` (Los Alamos National Laboratory): The Berkeley team named the element in honor of Enrico Fermi, the developer of the first artificial self-sustained nuclear reactor.
+- `Fm.uses.0` (Jefferson Lab): Because only small amounts are produced and its half-life is short, fermium currently has no uses outside of basic scientific research.
+- `Fm.uses.1` (Los Alamos National Laboratory): Fermium is currently used only in basic scientific research that expands knowledge of the rest of the periodic table.
+- `Md.discoveryYear` (Jefferson Lab): Mendelevium was discovered or first isolated in 1955.
+- `Md.story.0` (Jefferson Lab): Mendelevium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Bernard G. Harvey, Gregory R. Choppin and Albert Ghiorso.
+- `Md.story.1` (Los Alamos National Laboratory): Mendelevium is named after Dmitri Mendeleev.
+- `Md.story.2` (Los Alamos National Laboratory): When mendelevium was first identified, it was made one atom at a time.
+- `Md.uses.0` (Jefferson Lab): Mendelevium currently has no uses outside of basic scientific research.
+- `Md.uses.1` (Los Alamos National Laboratory): Scientists have used one form of mendelevium to learn about some of its chemical properties in aqueous solution.
+- `No.story.0` (Los Alamos National Laboratory): Nobelium is named after Alfred Nobel.
+- `No.story.1` (Los Alamos National Laboratory): In April 1958, A. Ghiorso, T. Sikkeland, J.R. Walton and G.T. Seaborg clearly discovered and identified nobelium at Berkeley.
+- `No.story.2` (Jefferson Lab): Credit for discovering nobelium was given to scientists at the Lawrence Radiation Laboratory, who decided to keep the name nobelium.
+- `No.uses.0` (Jefferson Lab): Only tiny amounts of nobelium have ever been made, so it currently has no uses outside of basic scientific research.
+- `Lr.discoveryYear` (Jefferson Lab): Lawrencium was discovered or first isolated in 1961.
+- `Lr.story.0` (Jefferson Lab): American scientists Albert Ghiorso, Torbjørn Sikkeland, Almon E. Larsh and Robert M. Latimer created lawrencium in March 1961.
+- `Lr.story.1` (Los Alamos National Laboratory): Lawrencium is named after Lawrence, the inventor of the cyclotron.
+- `Lr.story.2` (Jefferson Lab): The scientists who made lawrencium were working at the Lawrence Radiation Laboratory in Berkeley, California.
+- `Lr.uses.0` (Jefferson Lab): Lawrencium currently has no uses outside of basic scientific research.
+- `Rf.story.0` (Jefferson Lab): Scientists at the Joint Institute for Nuclear Research in Dubna, Russia, first reported making rutherfordium in 1964.
+- `Rf.story.1` (Jefferson Lab): Scientists still debate who should get credit for discovering rutherfordium.
+- `Rf.uses.0` (Jefferson Lab): Rutherfordium is currently not used for anything except basic scientific research.
+- `Db.story.0` (Jefferson Lab): Scientists at the Joint Institute for Nuclear Research in Dubna, Russia, first reported making dubnium in 1967.
+- `Db.story.1` (Jefferson Lab): Scientists still disagree about who should get credit for discovering dubnium.
+- `Db.story.2` (Los Alamos National Laboratory): Dubnium is named after the site of the Joint Institute for Nuclear Research in Russia.
+- `Db.uses.0` (Jefferson Lab): Dubnium currently has no uses outside of basic scientific research.
+- `Sg.discoveryYear` (Jefferson Lab): Seaborgium was discovered or first isolated in 1974.
+- `Sg.story.0` (Jefferson Lab): Seaborgium was first produced in 1974 by a team of scientists led by Albert Ghiorso at the Lawrence Berkeley Laboratory in California.
+- `Sg.story.1` (Los Alamos National Laboratory): Seaborgium was named in honor of Glenn Seaborg.
+- `Sg.story.2` (Jefferson Lab): The Berkeley group was credited with the discovery of seaborgium.
+- `Sg.uses.0` (Jefferson Lab): Seaborgium currently has no uses outside of basic scientific research.
+- `Bh.discoveryYear` (Jefferson Lab): Bohrium was discovered or first isolated in 1976.
+- `Bh.story.0` (Jefferson Lab): Bohrium was first produced in 1976 by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia.
+- `Bh.story.1` (Jefferson Lab): In 1981, Peter Armbruster, Gottfried Münzenber and their team in Darmstadt, Germany, confirmed the production of bohrium.
+- `Bh.uses.0` (Jefferson Lab): Only a few atoms of bohrium have ever been made, so it currently has no uses outside of basic scientific research.
+- `Hs.discoveryYear` (Jefferson Lab): Hassium was discovered or first isolated in 1984.
+- `Hs.story.0` (Jefferson Lab): Hassium was first made in 1984 by Peter Armbruster, Gottfried Münzenber and their team in Darmstadt, Germany.
+- `Hs.story.1` (Los Alamos National Laboratory): The name hassium comes from the Latin word "Hassias," meaning Hess, a German state.
+- `Hs.uses.0` (Jefferson Lab): Hassium currently has no uses outside of basic scientific research.
+- `Mt.discoveryYear` (Jefferson Lab): Meitnerium was discovered or first isolated in 1982.
+- `Mt.story.0` (Jefferson Lab): Meitnerium was first made in 1982 by Peter Armbruster, Gottfried Münzenber and their team in Darmstadt, Germany.
+- `Mt.story.2` (Los Alamos National Laboratory): The experiment that made meitnerium showed that fusion could be used to make new, heavy nuclei.
+- `Mt.uses.0` (Jefferson Lab): Meitnerium currently has no uses outside of basic scientific research.
+- `Ds.discoveryYear` (Los Alamos National Laboratory): Darmstadtium was discovered or first isolated in 1994.
+- `Ds.story.0` (Jefferson Lab): Darmstadtium was first produced in 1994 by Peter Armbruster, Gottfried Münzenber and their team in Darmstadt, Germany.
+- `Ds.uses.0` (Jefferson Lab): Darmstadtium currently has no uses outside of basic scientific research.
+- `Rg.discoveryYear` (Los Alamos National Laboratory): Roentgenium was discovered or first isolated in 1994.
+- `Rg.story.0` (Jefferson Lab): Roentgenium was first produced in late 1994 by a team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany.
+- `Rg.story.1` (Jefferson Lab): Roentgenium was first produced by Peter Armbruster, Gottfried Münzenber and their team.
+- `Rg.uses.0` (Jefferson Lab): Roentgenium currently has no uses outside of basic scientific research.
+- `Cn.discoveryYear` (Jefferson Lab): Copernicium was discovered or first isolated in 1996.
+- `Cn.story.0` (Jefferson Lab): Peter Armbruster, Gottfried Münzenber and their team first produced copernicium in Darmstadt, Germany, in 1996.
+- `Cn.uses.0` (Jefferson Lab): Because only a few atoms of copernicium have ever been produced, it currently has no uses outside of basic scientific research.
+- `Nh.discoveryYear` (Jefferson Lab): Nihonium was discovered or first isolated in 2004.
+- `Nh.story.0` (Jefferson Lab): In 2004, scientists at the RIKEN Nishina Center in Wako, Japan, created the first atoms of nihonium.
+- `Nh.story.1` (Los Alamos National Laboratory): The name nihonium comes from the word Nihon, meaning Japan in Japanese, and means the Land of Rising Sun.
+- `Nh.story.2` (Los Alamos National Laboratory): The name nihonium was proposed by its discoverers at the RIKEN Nishina Center for Accelerator-Based Science in Japan.
+- `Nh.uses.0` (Jefferson Lab): Nihonium currently has no uses outside of basic scientific research.
+- `Fl.story.0` (Jefferson Lab): Flerovium was first produced by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia.
+- `Fl.story.1` (Los Alamos National Laboratory): Flerovium is named after the Russian physicist Georgy Flyorov.
+- `Fl.story.2` (Los Alamos National Laboratory): The name flerovium was adopted by IUPAC in 2012.
+- `Fl.uses.0` (Jefferson Lab): Flerovium currently has no uses outside of basic scientific research.
+- `Mc.story.0` (Los Alamos National Laboratory): Moscovium is named after the Moscow region of Russia.
+- `Mc.story.1` (Los Alamos National Laboratory): Moscovium was discovered together by the Joint Institute for Nuclear Research in Russia, Oak Ridge National Laboratory, Vanderbilt University and Lawrence Livermore National Laboratory.
+- `Mc.story.2` (Los Alamos National Laboratory): Moscovium was given its name and the symbol Mc in 2016.
+- `Mc.uses.0` (Jefferson Lab): Moscovium currently has no uses outside of basic scientific research.
+- `Lv.discoveryYear` (Los Alamos National Laboratory): Livermorium was discovered or first isolated in 2000.
+- `Lv.story.0` (Los Alamos National Laboratory): Livermorium was first reported in 2000 by Russian scientists from the Joint Institute for Nuclear Research in Dubna.
+- `Lv.story.1` (Los Alamos National Laboratory): Livermorium's former name was ununhexium.
+- `Lv.story.2` (Los Alamos National Laboratory): The name livermorium was adopted by IUPAC in 2012.
+- `Lv.uses.0` (Jefferson Lab): Livermorium currently has no uses outside of basic scientific research.
+- `Ts.discoveryYear` (Jefferson Lab): Tennessine was discovered or first isolated in 2010.
+- `Ts.uses.0` (Jefferson Lab): Tennessine currently has no uses outside of basic scientific research.
+- `Og.story.1` (Los Alamos National Laboratory): The name was proposed by the Joint Institute for Nuclear Research in Dubna, Russia, and Lawrence Livermore National Laboratory in the USA.
+- `Og.story.2` (Los Alamos National Laboratory): The name honors Professor Yuri Oganessian for his pioneering contributions to research on transactinoid elements.
+- `Og.uses.0` (Jefferson Lab): Oganesson currently has no uses outside of basic scientific research.

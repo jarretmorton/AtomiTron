@@ -1,0 +1,4791 @@
+{
+  "steps": [
+    {
+      "step": "draft",
+      "startedAt": "2026-11-14T06:10:53Z",
+      "finishedAt": "2026-11-14T06:18:39Z",
+      "calls": [
+        {
+          "label": "draft-Li",
+          "requestId": "req_011Ch2KktmqrhqGeraicpMbn",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3305,
+            "output": 1849,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-B",
+          "requestId": "req_011Ch2Kktm6VjPHSrDCMDqXZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3572,
+            "output": 2379,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Be",
+          "requestId": "req_011Ch2KktirzADHDcPsSohw5",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3690,
+            "output": 2916,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ne",
+          "requestId": "req_011Ch2KnKjnt2iVJ7ChHyrsc",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2882,
+            "output": 1228,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-He",
+          "requestId": "req_011Ch2Kktkc5Hiw2kj5sNH78",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 4118,
+            "output": 4149,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-F",
+          "requestId": "req_011Ch2Kn2Wi2dH7BGmjBpN3m",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3720,
+            "output": 2728,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Al",
+          "requestId": "req_011Ch2Kng5Qm9xFZvXMSvXRo",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 4123,
+            "output": 1756,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Si",
+          "requestId": "req_011Ch2Ko5oRMQ2BwoTEekR3u",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3823,
+            "output": 2343,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ar",
+          "requestId": "req_011Ch2KomTPRAgrcVnrr3H7w",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3112,
+            "output": 1927,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-P",
+          "requestId": "req_011Ch2KoHXsNXWfsWs25fRq1",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3379,
+            "output": 2853,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-S",
+          "requestId": "req_011Ch2KogbhBbCfyq4QQsYKw",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3511,
+            "output": 2157,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-K",
+          "requestId": "req_011Ch2KpWt4uzc7XjEXt3zWT",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3451,
+            "output": 2394,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Sc",
+          "requestId": "req_011Ch2Kq2QLXYqd4eenr3e2X",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3347,
+            "output": 2287,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ti",
+          "requestId": "req_011Ch2Kq4Fy2qsjPieCrUQNF",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3644,
+            "output": 2356,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ca",
+          "requestId": "req_011Ch2KpthEXd4zRpQMgHCdR",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3344,
+            "output": 2821,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-V",
+          "requestId": "req_011Ch2KqzjQpU2mJCJQj1P52",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3753,
+            "output": 2473,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Co",
+          "requestId": "req_011Ch2KrZm1c7HCsg1NWdwab",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3445,
+            "output": 2152,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Cr",
+          "requestId": "req_011Ch2KrPojUQp6Lwk7SQfJQ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3335,
+            "output": 2411,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Mn",
+          "requestId": "req_011Ch2KrTBsmu9zxz8teZAbZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3211,
+            "output": 2308,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ni",
+          "requestId": "req_011Ch2KsQxTwcpa3kwVpy8A6",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3226,
+            "output": 2217,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ge",
+          "requestId": "req_011Ch2KsuzxhxcQA2aNbs5sX",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3116,
+            "output": 1858,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Zn",
+          "requestId": "req_011Ch2Ksq52yxvs6q5acL7EA",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3950,
+            "output": 2017,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ga",
+          "requestId": "req_011Ch2KstomNM84EmVmSya6B",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3196,
+            "output": 3042,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-As",
+          "requestId": "req_011Ch2KthjY596UqXUEQhWLN",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3308,
+            "output": 2198,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Se",
+          "requestId": "req_011Ch2Ku4AcvDZbiYqL3kgda",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3126,
+            "output": 1834,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Br",
+          "requestId": "req_011Ch2Ku5cSD15vjR2qevJXc",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3142,
+            "output": 2463,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Kr",
+          "requestId": "req_011Ch2KunmSUvvxKWRtYQiQs",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3242,
+            "output": 2055,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Sr",
+          "requestId": "req_011Ch2KvDumymyQ7K5bzs3Ny",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3286,
+            "output": 1706,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Rb",
+          "requestId": "req_011Ch2Kv61Gb26tLMbnrKSrz",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3275,
+            "output": 2160,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Y",
+          "requestId": "req_011Ch2Kvc91EiD1vdbgDw6Rf",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3662,
+            "output": 2163,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Nb",
+          "requestId": "req_011Ch2KwLrmDP4ni5HAp42ui",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3826,
+            "output": 2040,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Mo",
+          "requestId": "req_011Ch2KwMjrMQ7VHNWMU4BmS",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3578,
+            "output": 2100,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Tc",
+          "requestId": "req_011Ch2KwuS5RKyty1wmmbMXn",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2905,
+            "output": 1245,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Zr",
+          "requestId": "req_011Ch2Kw3m7bnqa35Fer3ZiK",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3574,
+            "output": 3157,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Rh",
+          "requestId": "req_011Ch2Kxf1wuZADUKznRGBXL",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3063,
+            "output": 1816,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Pd",
+          "requestId": "req_011Ch2KxhM5ZkB5iS4Jf43xW",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3058,
+            "output": 1872,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ru",
+          "requestId": "req_011Ch2KxYdDCtN5mDBN4cmdv",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2990,
+            "output": 2096,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ag",
+          "requestId": "req_011Ch2Ky1NnnhAH3CDtXFtdp",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3322,
+            "output": 2224,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Sn",
+          "requestId": "req_011Ch2KyqDPhbxeU4Yp49UVY",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3058,
+            "output": 1581,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-In",
+          "requestId": "req_011Ch2KyqCA16CMkjQ7r177k",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3010,
+            "output": 2074,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Cd",
+          "requestId": "req_011Ch2Kykhmzkyan8hTRfkTt",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3639,
+            "output": 2297,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Sb",
+          "requestId": "req_011Ch2KzRm2M7cSc3vtD7C5S",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3085,
+            "output": 2343,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Te",
+          "requestId": "req_011Ch2KzocfsfQmuEV5EmN7U",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3287,
+            "output": 1895,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-I",
+          "requestId": "req_011Ch2L16j4rUZmsgqQHAsv2",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3160,
+            "output": 1567,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Xe",
+          "requestId": "req_011Ch2L182xMmoveK5BgVv2A",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3154,
+            "output": 1974,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Cs",
+          "requestId": "req_011Ch2L1n5BKtaMZ1e71eozB",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3256,
+            "output": 2184,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-La",
+          "requestId": "req_011Ch2L23JTsRqvC7sHxceiM",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3207,
+            "output": 1938,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ba",
+          "requestId": "req_011Ch2L1zss1wE39xtb8HySD",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3537,
+            "output": 1993,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Pr",
+          "requestId": "req_011Ch2L3Bba63zjWPCpY5rC8",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3234,
+            "output": 1807,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ce",
+          "requestId": "req_011Ch2L2JNLXM8JGXgu6Mx3n",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3475,
+            "output": 3376,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Pm",
+          "requestId": "req_011Ch2L3Dq1PBfreP72U9yPs",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3410,
+            "output": 1802,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Nd",
+          "requestId": "req_011Ch2L3DPxp7qEednDaRyMM",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3271,
+            "output": 2128,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Eu",
+          "requestId": "req_011Ch2L4JvdQ2ArYgoDZg3YK",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2934,
+            "output": 1475,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Gd",
+          "requestId": "req_011Ch2L4Kmii9B1hM6mfwtBM",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3274,
+            "output": 2276,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Tb",
+          "requestId": "req_011Ch2L4UZZDTHxtjWU2G7fn",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3347,
+            "output": 1930,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Sm",
+          "requestId": "req_011Ch2L4GN6NoUPJCNTZ3bmt",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3314,
+            "output": 2848,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ho",
+          "requestId": "req_011Ch2L5e7KdMp2G7uEZ8DqJ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3047,
+            "output": 1238,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Dy",
+          "requestId": "req_011Ch2L5FXX3TZaG2jonyXwz",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3421,
+            "output": 2105,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Er",
+          "requestId": "req_011Ch2L5eXcMY9uwqwP4rDmL",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3364,
+            "output": 1971,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Tm",
+          "requestId": "req_011Ch2L5vhxhrSyFtVtWyhko",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3225,
+            "output": 1722,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Yb",
+          "requestId": "req_011Ch2L6TVd1Z2rm4f41JPtW",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3456,
+            "output": 2045,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Lu",
+          "requestId": "req_011Ch2L6USRdUmRE7MXqVMHT",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3539,
+            "output": 2110,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Hf",
+          "requestId": "req_011Ch2L6qbewpZixD34hiZQz",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3460,
+            "output": 2018,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ta",
+          "requestId": "req_011Ch2L71d9s1ijnJiiEgxHb",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3611,
+            "output": 2527,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Re",
+          "requestId": "req_011Ch2L7moj6Gb5u1LoEfhWy",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3085,
+            "output": 1708,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-W",
+          "requestId": "req_011Ch2L7fyF4ZrBv5vEp4ocG",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3835,
+            "output": 2516,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Os",
+          "requestId": "req_011Ch2L7z996WaQ4vBZHU9yh",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2877,
+            "output": 2241,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Pt",
+          "requestId": "req_011Ch2L8onpRaDKzFrFPD11V",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3742,
+            "output": 2092,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ir",
+          "requestId": "req_011Ch2L8XZVkH9MhjCg2RSFZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3210,
+            "output": 2709,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Hg",
+          "requestId": "req_011Ch2L975dGeM9jBRVWyV7t",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3271,
+            "output": 1862,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Tl",
+          "requestId": "req_011Ch2L9MWYEfvFYhK5TXg61",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3412,
+            "output": 2719,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Bi",
+          "requestId": "req_011Ch2LA8XTpJXRbF4mDrGYM",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3392,
+            "output": 1949,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Po",
+          "requestId": "req_011Ch2LAFDYNXU6BnmRnB5Tx",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3204,
+            "output": 1733,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Pb",
+          "requestId": "req_011Ch2LA6ccf35UbXfLgV8GF",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3935,
+            "output": 2411,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-At",
+          "requestId": "req_011Ch2LB3C1zxFi1jinPPUhE",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2716,
+            "output": 988,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Fr",
+          "requestId": "req_011Ch2LBMz8ALWgdQsM8Js4U",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2799,
+            "output": 1182,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Rn",
+          "requestId": "req_011Ch2LBHXyYGnvWid1Agmgj",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3057,
+            "output": 1813,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ac",
+          "requestId": "req_011Ch2LBgQeU3Ct4azQAVTYC",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2530,
+            "output": 1553,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ra",
+          "requestId": "req_011Ch2LBaBqprT9Z5SnvHSfa",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3302,
+            "output": 1882,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Th",
+          "requestId": "req_011Ch2LC7HcnAxaMPxZXLbNm",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 4062,
+            "output": 2413,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Pa",
+          "requestId": "req_011Ch2LCPeMuF5mdC6AhvxGP",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3671,
+            "output": 1948,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-U",
+          "requestId": "req_011Ch2LChHG5fSPtQUCmK9aN",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 6120,
+            "output": 1909,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Np",
+          "requestId": "req_011Ch2LCiZ9sBY71jkL2cGTw",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2977,
+            "output": 3009,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Am",
+          "requestId": "req_011Ch2LDaGNDjUwkP5mSMzaB",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3504,
+            "output": 2168,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Cm",
+          "requestId": "req_011Ch2LDtgtbGDuLuKkrDPvZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3027,
+            "output": 2311,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Pu",
+          "requestId": "req_011Ch2LDZ9PAjVpas4QNjs6G",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 5155,
+            "output": 3025,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Bk",
+          "requestId": "req_011Ch2LEbmAsgpGfaRUq7VMt",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3736,
+            "output": 1770,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Es",
+          "requestId": "req_011Ch2LFGBjF7ft3bXLnCVah",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2970,
+            "output": 1014,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Cf",
+          "requestId": "req_011Ch2LEsLJx34vYwhvKegpg",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2821,
+            "output": 2212,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Fm",
+          "requestId": "req_011Ch2LFHVMuxtEB93krabMV",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3564,
+            "output": 1833,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Lr",
+          "requestId": "req_011Ch2LG9sW9B5n815SGBLCK",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3075,
+            "output": 1456,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Md",
+          "requestId": "req_011Ch2LFm43s6c5tDLsRDPZN",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2774,
+            "output": 2100,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Rf",
+          "requestId": "req_011Ch2LGTTucQWRYY9xwEELC",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3049,
+            "output": 1285,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-No",
+          "requestId": "req_011Ch2LFxdKH9vhXwGD48cjQ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3379,
+            "output": 2121,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Db",
+          "requestId": "req_011Ch2LH2DeKtDq6yT26Q81i",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3203,
+            "output": 1376,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Sg",
+          "requestId": "req_011Ch2LH5MfDGi8ydR6gbBnn",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3138,
+            "output": 1649,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Hs",
+          "requestId": "req_011Ch2LHKePcx37XVzJBo1HC",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2543,
+            "output": 1287,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Bh",
+          "requestId": "req_011Ch2LHKbuyVDQiHoKtGjCZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2691,
+            "output": 2140,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Rg",
+          "requestId": "req_011Ch2LJ7q1wVFAbNRTBsNSA",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2585,
+            "output": 1175,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Mt",
+          "requestId": "req_011Ch2LHpVyZSjMYZmpZmzyk",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2865,
+            "output": 1817,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ds",
+          "requestId": "req_011Ch2LJ7GHcW57Ue897bfas",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2918,
+            "output": 1778,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Cn",
+          "requestId": "req_011Ch2LJfDQdxcemnP4nm75w",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2689,
+            "output": 1715,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Fl",
+          "requestId": "req_011Ch2LJyWytohMwYCkDKJ2H",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2639,
+            "output": 1350,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Nh",
+          "requestId": "req_011Ch2LJsFxNjNsWjjdv5Pjn",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2582,
+            "output": 1751,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Mc",
+          "requestId": "req_011Ch2LKDBmEvxzQqyx1dbQv",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2674,
+            "output": 2028,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Lv",
+          "requestId": "req_011Ch2LKpBBn4gePDNbf1Man",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2590,
+            "output": 1610,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Og",
+          "requestId": "req_011Ch2LKx1yWfVWp5zcT8QnV",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2657,
+            "output": 1811,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "draft-Ts",
+          "requestId": "req_011Ch2LKsW7iMowhuqppz4eE",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2552,
+            "output": 1976,
+            "cache_read": 0
+          }
+        }
+      ],
+      "usage": {
+        "input": 355962,
+        "output": 222369,
+        "cache_read": 0
+      },
+      "estimatedCostUSD": 5.8712,
+      "servedBy": [
+        "claude-opus-5-5"
+      ],
+      "noAnswer": []
+    },
+    {
+      "step": "verify",
+      "startedAt": "2026-11-14T06:18:40Z",
+      "finishedAt": "2026-11-14T06:32:13Z",
+      "calls": [
+        {
+          "label": "verify-1-Li",
+          "requestId": "req_011Ch2LMGieZTC6pHfWgvqc2",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2652,
+            "output": 801,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-B",
+          "requestId": "req_011Ch2LMGguWLP6FZHMfZ6cX",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3204,
+            "output": 1504,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-He",
+          "requestId": "req_011Ch2LMGhebSqNcyqhD365z",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3855,
+            "output": 1628,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Be",
+          "requestId": "req_011Ch2LMGfRYx4K1x7maZDhy",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2942,
+            "output": 1685,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-F",
+          "requestId": "req_011Ch2LMnDfqCUve1ZGdBfpD",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2959,
+            "output": 1612,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ne",
+          "requestId": "req_011Ch2LN8oBP4SRfh11GtRSJ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2559,
+            "output": 1019,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Al",
+          "requestId": "req_011Ch2LNG9wpcppF82SfN7y4",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3341,
+            "output": 890,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Si",
+          "requestId": "req_011Ch2LNH12kXbYFbMWTfacw",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2779,
+            "output": 1766,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-P",
+          "requestId": "req_011Ch2LNjNndyeboKYXVXsKA",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2968,
+            "output": 1364,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-S",
+          "requestId": "req_011Ch2LNoSN31wftSbTqSEAe",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2730,
+            "output": 1202,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ar",
+          "requestId": "req_011Ch2LNrzSDbg1JJXKyhXPa",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2887,
+            "output": 1321,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-K",
+          "requestId": "req_011Ch2LPLga1kB58snoB4bTX",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2542,
+            "output": 1177,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ca",
+          "requestId": "req_011Ch2LPX5tpSczvV38sP1hJ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2844,
+            "output": 1516,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ti",
+          "requestId": "req_011Ch2LPhQFyDvr7Hz6VWwXT",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2923,
+            "output": 1308,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Sc",
+          "requestId": "req_011Ch2LPaZk8hKFX183U5cc6",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2506,
+            "output": 1737,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-V",
+          "requestId": "req_011Ch2LQ55jpgvdpV859VLUF",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3224,
+            "output": 1901,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Cr",
+          "requestId": "req_011Ch2LQRstB1HTSjoKiZ8PD",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2698,
+            "output": 1258,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Co",
+          "requestId": "req_011Ch2LQZdDjLbkftHAaWPP4",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2583,
+            "output": 1131,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Mn",
+          "requestId": "req_011Ch2LQSqBhTxMK67LGMCt4",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2657,
+            "output": 1338,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Zn",
+          "requestId": "req_011Ch2LRCkP3yahrjp98uWa1",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2895,
+            "output": 1238,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ni",
+          "requestId": "req_011Ch2LRA3ftr8EX1oiKScnT",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2869,
+            "output": 1480,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ge",
+          "requestId": "req_011Ch2LRKZAGepSe9R6nGSBn",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2757,
+            "output": 1344,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ga",
+          "requestId": "req_011Ch2LRH6pN3JrXmSfZKrW2",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2646,
+            "output": 1627,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-As",
+          "requestId": "req_011Ch2LRxjYv5bxCY8hfNyc9",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2734,
+            "output": 1065,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Se",
+          "requestId": "req_011Ch2LRy5tjuqPjUrV6kNGK",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2746,
+            "output": 1404,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Kr",
+          "requestId": "req_011Ch2LSDeFAaCFUYLJymkj3",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2618,
+            "output": 1203,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Br",
+          "requestId": "req_011Ch2LS9bf3d2kNKzm5bS1a",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2482,
+            "output": 1307,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Sr",
+          "requestId": "req_011Ch2LSoNWTvTue6tAAHw6M",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2578,
+            "output": 977,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Rb",
+          "requestId": "req_011Ch2LSfitT3sPtkEfRH5Qu",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3030,
+            "output": 1235,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Y",
+          "requestId": "req_011Ch2LSw3dBHaFL7ezGeLwz",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3091,
+            "output": 1202,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Zr",
+          "requestId": "req_011Ch2LSz4StnDvbRiqkPjPb",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3059,
+            "output": 1594,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Nb",
+          "requestId": "req_011Ch2LTPMB8bNCzUFR3ucW6",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3264,
+            "output": 1272,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Mo",
+          "requestId": "req_011Ch2LTRX9FUMgeYn62j6bt",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2550,
+            "output": 1183,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Tc",
+          "requestId": "req_011Ch2LThKR4MzFTkFFBMVTW",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2617,
+            "output": 992,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ru",
+          "requestId": "req_011Ch2LTtoU7QG6izGCroL5N",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2496,
+            "output": 1432,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Rh",
+          "requestId": "req_011Ch2LUCPto67Lmqe1nYbkZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2621,
+            "output": 1063,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Pd",
+          "requestId": "req_011Ch2LUDjFX9rAY6zXCxzET",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2427,
+            "output": 1225,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ag",
+          "requestId": "req_011Ch2LUKTYbRLJQkGbEdq17",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2919,
+            "output": 1337,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-In",
+          "requestId": "req_011Ch2LUrueapHF1RZ7Gn3nq",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2409,
+            "output": 941,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Cd",
+          "requestId": "req_011Ch2LUkdN8iVToTvNedD1u",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3417,
+            "output": 1334,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Sn",
+          "requestId": "req_011Ch2LUwMXo5qbv11xMJZRZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2417,
+            "output": 1179,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Sb",
+          "requestId": "req_011Ch2LVDjHmEj3theRf6FN8",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2528,
+            "output": 1437,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Te",
+          "requestId": "req_011Ch2LVXhWxFbiWCVwmNVWF",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2879,
+            "output": 1098,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Xe",
+          "requestId": "req_011Ch2LVjoHqfuExbjsW9pb5",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2850,
+            "output": 964,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-I",
+          "requestId": "req_011Ch2LVZC4NEgbESarrTKV8",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2477,
+            "output": 1107,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Cs",
+          "requestId": "req_011Ch2LW6UW27HzezA4tH4KJ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2601,
+            "output": 1165,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ba",
+          "requestId": "req_011Ch2LWF8e1gAmdXH7V5w4A",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2944,
+            "output": 1339,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ce",
+          "requestId": "req_011Ch2LWM1bzRA1BxDisNKti",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2487,
+            "output": 1406,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-La",
+          "requestId": "req_011Ch2LWKLuX2hWTw6f5b9bR",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2465,
+            "output": 1339,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Pr",
+          "requestId": "req_011Ch2LWpGxHz5J5bWmNYwmv",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2548,
+            "output": 1271,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Nd",
+          "requestId": "req_011Ch2LX46te3kim6a18eQ29",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2940,
+            "output": 911,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Pm",
+          "requestId": "req_011Ch2LX9mTfpfdKB64zDiVe",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3142,
+            "output": 1023,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Sm",
+          "requestId": "req_011Ch2LX9w8RmiDRyFeAdm3a",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2920,
+            "output": 1312,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Eu",
+          "requestId": "req_011Ch2LXbs6t6xje52sthgMS",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2264,
+            "output": 939,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Gd",
+          "requestId": "req_011Ch2LXdZ3yMWWo3xE8Krjw",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2575,
+            "output": 1301,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Tb",
+          "requestId": "req_011Ch2LXo53LN1AMb14VGfyq",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2423,
+            "output": 1165,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Dy",
+          "requestId": "req_011Ch2LXvRZDyGddpvuhK5gr",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3066,
+            "output": 1043,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ho",
+          "requestId": "req_011Ch2LYDKK83HvPKanokBm1",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2335,
+            "output": 736,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Er",
+          "requestId": "req_011Ch2LYQ8Br8hzuL6GHYxT4",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2567,
+            "output": 1047,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Tm",
+          "requestId": "req_011Ch2LYXBbWkUpuasGBE3wf",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2822,
+            "output": 1234,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Yb",
+          "requestId": "req_011Ch2LYazJDoarPuaCbCvnS",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2961,
+            "output": 1468,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Lu",
+          "requestId": "req_011Ch2LYkVnX6rVPmNR2rD92",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2317,
+            "output": 1116,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Hf",
+          "requestId": "req_011Ch2LZ4dCvb8a43gBh28Sp",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2845,
+            "output": 1480,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ta",
+          "requestId": "req_011Ch2LZFpewRXoD3GqJDHuV",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2754,
+            "output": 1242,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Re",
+          "requestId": "req_011Ch2LZU9pEJxo9qSyUStvf",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2343,
+            "output": 1009,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-W",
+          "requestId": "req_011Ch2LZSoh7xdtZFfXcp96d",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2533,
+            "output": 1221,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ir",
+          "requestId": "req_011Ch2LZzgbmiyKWS96ToLqK",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2758,
+            "output": 1118,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Os",
+          "requestId": "req_011Ch2LZwW766qaFCosVSpDG",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2424,
+            "output": 1294,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Pt",
+          "requestId": "req_011Ch2La9tF3hzfhFWRr6i5q",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3336,
+            "output": 977,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Hg",
+          "requestId": "req_011Ch2LaCFNUVx8NMx2e7wMb",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2614,
+            "output": 1520,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Bi",
+          "requestId": "req_011Ch2Lamc5MSNoQoi1FAjyA",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2888,
+            "output": 1066,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Pb",
+          "requestId": "req_011Ch2LajTLUoY4kbSR5TfTZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3661,
+            "output": 1255,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Tl",
+          "requestId": "req_011Ch2Laf1CbHnu3a2uwUALm",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2875,
+            "output": 1339,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Po",
+          "requestId": "req_011Ch2Lb9poAwsfxr4XMYhuu",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2902,
+            "output": 1081,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Fr",
+          "requestId": "req_011Ch2LbWay1wXB2BndzPycB",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2396,
+            "output": 662,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-At",
+          "requestId": "req_011Ch2LbRFjUgEgjaVg5XaPm",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1936,
+            "output": 849,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Rn",
+          "requestId": "req_011Ch2LbTRDg4ytpxt3AiQav",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2675,
+            "output": 1378,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ra",
+          "requestId": "req_011Ch2LbrZFUCw7bRoKGk6uH",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2752,
+            "output": 1217,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ac",
+          "requestId": "req_011Ch2Lc11kEnpU5G1Mvctfi",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2196,
+            "output": 1021,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Th",
+          "requestId": "req_011Ch2Lc4EjCNUPQWpkwVwzF",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3253,
+            "output": 1201,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Pa",
+          "requestId": "req_011Ch2LcNPswo7h2rUejQbB8",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2583,
+            "output": 746,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-U",
+          "requestId": "req_011Ch2LcYgkWJdLEsuttsBr7",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 4586,
+            "output": 1473,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Np",
+          "requestId": "req_011Ch2LciuetmbsUrL2SXz86",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2599,
+            "output": 1177,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Am",
+          "requestId": "req_011Ch2Lcqq8iPzUGCidNfzDB",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3196,
+            "output": 1428,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Pu",
+          "requestId": "req_011Ch2LckyRNJKV6d5V3naKm",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 4662,
+            "output": 1636,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Bk",
+          "requestId": "req_011Ch2LdVGu3EC65yqZWpa7m",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3340,
+            "output": 965,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Es",
+          "requestId": "req_011Ch2LdmesououwbzVANMMA",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2483,
+            "output": 533,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Cm",
+          "requestId": "req_011Ch2LdUiQTYJp83kYXyu7Q",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2822,
+            "output": 1454,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Cf",
+          "requestId": "req_011Ch2LdiztfqeN6TjBxyL5C",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2276,
+            "output": 1419,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Md",
+          "requestId": "req_011Ch2LeCEzGFPzWjc4FQaNg",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2417,
+            "output": 996,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-No",
+          "requestId": "req_011Ch2LeKkvN25Vr6G6rWkSi",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2962,
+            "output": 1127,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Fm",
+          "requestId": "req_011Ch2Le8Hs5c6HnYKPMgadi",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3235,
+            "output": 1528,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Lr",
+          "requestId": "req_011Ch2LeaTTj1cjSxiWzGWqN",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2703,
+            "output": 925,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Rf",
+          "requestId": "req_011Ch2LerjWdb9tP2BmSAV2T",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2100,
+            "output": 770,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Db",
+          "requestId": "req_011Ch2Lf2mFkm2hTpKxmYbTT",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2741,
+            "output": 955,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Sg",
+          "requestId": "req_011Ch2Lf7XFwzwCV4cAf36Dt",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2740,
+            "output": 811,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Bh",
+          "requestId": "req_011Ch2LfELmpvq4WcNE7UTHS",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2001,
+            "output": 1059,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Hs",
+          "requestId": "req_011Ch2LfTL8G6ac7LzX4f4PV",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2090,
+            "output": 928,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ds",
+          "requestId": "req_011Ch2LfgxR5qCi5Dw1n7oLC",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2393,
+            "output": 838,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Mt",
+          "requestId": "req_011Ch2Lfee1eTtkw3YWzWLgV",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2411,
+            "output": 1059,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Rg",
+          "requestId": "req_011Ch2LfvaDW9xic7GjQseqe",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2135,
+            "output": 691,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Cn",
+          "requestId": "req_011Ch2Lg5L5FVcuJ1zHMMntU",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2004,
+            "output": 867,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Fl",
+          "requestId": "req_011Ch2LgPZC1CcuvhGN8bCFJ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2173,
+            "output": 510,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Nh",
+          "requestId": "req_011Ch2LgJ4XvbwcJsPKSDuoU",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2220,
+            "output": 1136,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Lv",
+          "requestId": "req_011Ch2Lgd7kxMouPnyhBi1Cu",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1943,
+            "output": 815,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Ts",
+          "requestId": "req_011Ch2LgjqaTPNURBmZeTFSX",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1803,
+            "output": 663,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Mc",
+          "requestId": "req_011Ch2LgUzcfg7B4fghGm55R",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1957,
+            "output": 1298,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-1-Og",
+          "requestId": "req_011Ch2Lh3o5G51w86QcxaDhJ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1854,
+            "output": 654,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Li",
+          "requestId": "req_011Ch2LhH81oLWwxKhN3op21",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2652,
+            "output": 864,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-He",
+          "requestId": "req_011Ch2Lh9GE12gnuH48yZwjS",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3855,
+            "output": 1477,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Be",
+          "requestId": "req_011Ch2LhKfJtF7pqoKh46hbE",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2942,
+            "output": 1673,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-B",
+          "requestId": "req_011Ch2LhXKnf1JK9AJQe1rAR",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3204,
+            "output": 1576,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ne",
+          "requestId": "req_011Ch2Li1xDuXKVsuPafUyFv",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2559,
+            "output": 1021,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Al",
+          "requestId": "req_011Ch2LiHQQSwUE88M6Cm4up",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3341,
+            "output": 973,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-F",
+          "requestId": "req_011Ch2LhpCJK2drwZNrZZX5D",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2959,
+            "output": 1813,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-P",
+          "requestId": "req_011Ch2LidF1bks9u872fUntY",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2968,
+            "output": 1162,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-S",
+          "requestId": "req_011Ch2LivpvZFmF99EhwR7pH",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2730,
+            "output": 1020,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Si",
+          "requestId": "req_011Ch2LiWbA5KJGur9tKdiCx",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2779,
+            "output": 1892,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ar",
+          "requestId": "req_011Ch2LiwLgYHYQEYCDH4Sox",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2887,
+            "output": 1343,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-K",
+          "requestId": "req_011Ch2LjKnJbsti4MCEBBXei",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2542,
+            "output": 1073,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ca",
+          "requestId": "req_011Ch2LjbGigU7YGXyFCb7yT",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2844,
+            "output": 1348,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ti",
+          "requestId": "req_011Ch2LjgwHgC9JDBmBarwQT",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2923,
+            "output": 1374,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Sc",
+          "requestId": "req_011Ch2LjfGKiqA24bEiJbfs1",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2506,
+            "output": 1746,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Cr",
+          "requestId": "req_011Ch2LkNNc5CsqbJTMpHYVk",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2698,
+            "output": 1112,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-V",
+          "requestId": "req_011Ch2LjyXvmW1v9qNDinjvH",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3224,
+            "output": 2030,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Co",
+          "requestId": "req_011Ch2LkidkpUtGGo7tKfBSh",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2583,
+            "output": 870,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Mn",
+          "requestId": "req_011Ch2LkWLamhXjUuZT5FFpz",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2657,
+            "output": 1364,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ni",
+          "requestId": "req_011Ch2Lm6F2Yb2DA1FeVJNeg",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2869,
+            "output": 1486,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Zn",
+          "requestId": "req_011Ch2Lm9mMFT5j6BVPVxkAZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2895,
+            "output": 1298,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ge",
+          "requestId": "req_011Ch2LmMihAhBZvUj2QfWM1",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2757,
+            "output": 1316,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ga",
+          "requestId": "req_011Ch2LmHk5LPoE77BGpcUzu",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2646,
+            "output": 1722,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-As",
+          "requestId": "req_011Ch2Lmx2T6dqm9u34zzWnq",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2734,
+            "output": 1160,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Se",
+          "requestId": "req_011Ch2Lmxt3LtqYK4PQSKXdQ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2746,
+            "output": 1411,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Br",
+          "requestId": "req_011Ch2Ln94UHf5GYNeK6BR26",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2482,
+            "output": 1331,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Kr",
+          "requestId": "req_011Ch2LnGN1gWdYcvy2BnMxs",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2618,
+            "output": 1173,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Rb",
+          "requestId": "req_011Ch2Lnjeqb5rCcGRALd8RA",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3030,
+            "output": 1355,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Sr",
+          "requestId": "req_011Ch2LnmwVtti3hpkVGrMbm",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2578,
+            "output": 1233,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Y",
+          "requestId": "req_011Ch2LnyQowgPAe26HEycAU",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3091,
+            "output": 1334,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Zr",
+          "requestId": "req_011Ch2Lnz1XxS4Mofkwmbr1y",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3059,
+            "output": 1833,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Mo",
+          "requestId": "req_011Ch2LoYY8QjG2o7QseBbKZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2550,
+            "output": 867,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Nb",
+          "requestId": "req_011Ch2LoXTPtLWY7aL33tfnR",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3264,
+            "output": 1300,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Tc",
+          "requestId": "req_011Ch2LokzipFqqshUy1rA6R",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2617,
+            "output": 821,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ru",
+          "requestId": "req_011Ch2Lp4PEkzdQa7W5P1tRF",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2496,
+            "output": 1184,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Rh",
+          "requestId": "req_011Ch2Lp8Ax8eoJVGcB25vHq",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2621,
+            "output": 1084,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ag",
+          "requestId": "req_011Ch2LpKJvfMPNsjh7585pk",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2919,
+            "output": 1281,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Pd",
+          "requestId": "req_011Ch2LpK71e57FSNEgaNYwW",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2427,
+            "output": 1445,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-In",
+          "requestId": "req_011Ch2LpnMbriGxoqWNCrSZc",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2409,
+            "output": 1043,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Cd",
+          "requestId": "req_011Ch2Lpn2Wq5HwXX3kMthXF",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3417,
+            "output": 1257,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Sn",
+          "requestId": "req_011Ch2Lq9ZpLtHQRNPStzT1t",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2417,
+            "output": 995,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Sb",
+          "requestId": "req_011Ch2LqBryZbgwTjHN6WuJH",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2528,
+            "output": 1490,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-I",
+          "requestId": "req_011Ch2LqYxybR694kWpmWRGM",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2477,
+            "output": 896,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Te",
+          "requestId": "req_011Ch2LqYN1tzUrmkqpSP83h",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2879,
+            "output": 1365,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Xe",
+          "requestId": "req_011Ch2LqpTPfmy9qeQbDCkiw",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2850,
+            "output": 1105,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Cs",
+          "requestId": "req_011Ch2Lr7BxVQQ9wwnnPXDP2",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2601,
+            "output": 1217,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ba",
+          "requestId": "req_011Ch2LrBadUYvohYaNqkoe2",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2944,
+            "output": 1378,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-La",
+          "requestId": "req_011Ch2LrRGPx3aqqxLCrvVNs",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2465,
+            "output": 1262,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ce",
+          "requestId": "req_011Ch2LrUPBEp7ZAuG4sC6EE",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2487,
+            "output": 1452,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Nd",
+          "requestId": "req_011Ch2Ls1RUQhQyEEKKie2vC",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2940,
+            "output": 894,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Pr",
+          "requestId": "req_011Ch2LrsvXUg52V5ztnNzeY",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2548,
+            "output": 1344,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Pm",
+          "requestId": "req_011Ch2LsEGtntzPcSL9SJiRz",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3142,
+            "output": 1047,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Sm",
+          "requestId": "req_011Ch2LsKKW1V9XDxhUjMumb",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2920,
+            "output": 1285,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Eu",
+          "requestId": "req_011Ch2LsZZG5A1MzBNPHkg3K",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2264,
+            "output": 979,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Gd",
+          "requestId": "req_011Ch2LsgcurhYH8xavhoLem",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2575,
+            "output": 1403,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Tb",
+          "requestId": "req_011Ch2LssgAtoU8quPwVLKBD",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2423,
+            "output": 1090,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ho",
+          "requestId": "req_011Ch2LtBtHsw89GPLj1yDSz",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2335,
+            "output": 749,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Dy",
+          "requestId": "req_011Ch2Lt5ETFfa4M9isLmjv1",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3066,
+            "output": 1065,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Tm",
+          "requestId": "req_011Ch2LtaExSLfjR8V2NSz72",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2822,
+            "output": 1073,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Er",
+          "requestId": "req_011Ch2LtYLMuL2giciGJVMte",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2567,
+            "output": 1349,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Lu",
+          "requestId": "req_011Ch2LtkV75Hze7EenQYuKh",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2317,
+            "output": 1017,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Yb",
+          "requestId": "req_011Ch2LtiTZxkrEvpCY817qZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2961,
+            "output": 1240,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ta",
+          "requestId": "req_011Ch2LuNBwX9wf3pLM7eqip",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2754,
+            "output": 1014,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-W",
+          "requestId": "req_011Ch2LuQsRz19pAWcXTCsEm",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2533,
+            "output": 1025,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Hf",
+          "requestId": "req_011Ch2LuDLPczBqxEqveRDbb",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2845,
+            "output": 1448,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Re",
+          "requestId": "req_011Ch2LuUee5knF4oXEPDJp3",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2343,
+            "output": 1092,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Pt",
+          "requestId": "req_011Ch2Lv6f5F6cntyJSLEGCR",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3336,
+            "output": 836,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ir",
+          "requestId": "req_011Ch2Lv3ut664zdZcBZyUhF",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2758,
+            "output": 1036,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Os",
+          "requestId": "req_011Ch2LuyduRmUTiRcZykQbi",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2424,
+            "output": 1268,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Hg",
+          "requestId": "req_011Ch2LvCxMPu6y43sjtWkBP",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2614,
+            "output": 1334,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Bi",
+          "requestId": "req_011Ch2LvnQkLynFZLHkA339d",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2888,
+            "output": 907,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Tl",
+          "requestId": "req_011Ch2LveaiCcgnM2P4kCXBy",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2875,
+            "output": 1084,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Pb",
+          "requestId": "req_011Ch2LvioTCyfsCtMCRXRTm",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3661,
+            "output": 1422,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Po",
+          "requestId": "req_011Ch2Lw1Dvhi85y6aHu76Eq",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2902,
+            "output": 1084,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-At",
+          "requestId": "req_011Ch2LwN3pDsvxVj6FK53Sx",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1936,
+            "output": 888,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Fr",
+          "requestId": "req_011Ch2LwbibiYfB6roe7E6G3",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2396,
+            "output": 840,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Rn",
+          "requestId": "req_011Ch2LwNLfvsub5uYDsPCvH",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2675,
+            "output": 1384,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ra",
+          "requestId": "req_011Ch2LwhWqaEb9AosAe1sDu",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2752,
+            "output": 1141,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ac",
+          "requestId": "req_011Ch2Lx5HYD1HnDp1tEjvvK",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2196,
+            "output": 741,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Pa",
+          "requestId": "req_011Ch2LxGyEzPcyRvMFqmgfg",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2583,
+            "output": 775,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Th",
+          "requestId": "req_011Ch2LxD46i4wgg5WEEvdKk",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3253,
+            "output": 1179,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-U",
+          "requestId": "req_011Ch2LxNxRMHarycfKPLKyz",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 4586,
+            "output": 939,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Np",
+          "requestId": "req_011Ch2Lxcax7j1w5PqgVnFGd",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2599,
+            "output": 964,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Cm",
+          "requestId": "req_011Ch2LxyiD3SZAhMTrwpZqW",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2822,
+            "output": 1378,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Pu",
+          "requestId": "req_011Ch2Lxnr6GBct8WtnccYKk",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 4662,
+            "output": 1661,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Am",
+          "requestId": "req_011Ch2Lxtm3aYGCDnJA7Jjqg",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3196,
+            "output": 1474,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Bk",
+          "requestId": "req_011Ch2LyFhsqyPhkS1JB6LVa",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3340,
+            "output": 870,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Es",
+          "requestId": "req_011Ch2LyoWJrnqeZgmjxvtdy",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2483,
+            "output": 516,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Md",
+          "requestId": "req_011Ch2LypmiUivCStsT4AfQy",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2417,
+            "output": 1121,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Cf",
+          "requestId": "req_011Ch2LymwJP3KRRZk6px2Un",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2276,
+            "output": 1399,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Fm",
+          "requestId": "req_011Ch2LypCUqmQzwmy3HgiaH",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3235,
+            "output": 1627,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-No",
+          "requestId": "req_011Ch2LzCh5cLAQdzhCTw6ms",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2962,
+            "output": 1172,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Rf",
+          "requestId": "req_011Ch2LzcwbMPSok3uRJqHWy",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2100,
+            "output": 746,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Lr",
+          "requestId": "req_011Ch2LzZ7AWRFxYSZ6Kziip",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2703,
+            "output": 1010,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Db",
+          "requestId": "req_011Ch2Lzqk3FrXdwpiAbMjJY",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2741,
+            "output": 931,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Sg",
+          "requestId": "req_011Ch2LzwfieBn6HGAm7mMPi",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2740,
+            "output": 918,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Bh",
+          "requestId": "req_011Ch2M1AYNw7GmQw9L4TeSk",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2001,
+            "output": 1014,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Hs",
+          "requestId": "req_011Ch2M1EEsUcLtkMfxeUB3n",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2090,
+            "output": 976,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ds",
+          "requestId": "req_011Ch2M1ZpbhBzcmv6h3HZS6",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2393,
+            "output": 822,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Mt",
+          "requestId": "req_011Ch2M1UyQA8kErV7eKphiR",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2411,
+            "output": 1161,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Rg",
+          "requestId": "req_011Ch2M1s1xrkf4Zkqz357Ei",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2135,
+            "output": 636,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Cn",
+          "requestId": "req_011Ch2M1szzdtLfLDjkV8D1m",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2004,
+            "output": 727,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Fl",
+          "requestId": "req_011Ch2M2GvdKprci8aT4w4nP",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2173,
+            "output": 688,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Lv",
+          "requestId": "req_011Ch2M2Po8F5Hm4JQMkEg9z",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1943,
+            "output": 777,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Nh",
+          "requestId": "req_011Ch2M29RgTJaufE7QnFJX3",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2220,
+            "output": 1201,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Mc",
+          "requestId": "req_011Ch2M2N9QRjB5AG2rp9BZR",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1957,
+            "output": 1273,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Ts",
+          "requestId": "req_011Ch2M2irbVGToy5PEsxzFA",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1803,
+            "output": 622,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-2-Og",
+          "requestId": "req_011Ch2M2tt6d3npEWLwHZzqK",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1854,
+            "output": 750,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Li",
+          "requestId": "req_011Ch2M3ARjiZRYLtkwJ7WFi",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2652,
+            "output": 771,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-He",
+          "requestId": "req_011Ch2M2tzJRb3EhepDMsEgD",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3855,
+            "output": 1566,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Be",
+          "requestId": "req_011Ch2M3FgzYbVSRSrSQDFWZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2942,
+            "output": 1600,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-B",
+          "requestId": "req_011Ch2M3TLEQFcubeVgA22xK",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3204,
+            "output": 1662,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ne",
+          "requestId": "req_011Ch2M3t719U4Y4iu7rM6Ka",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2559,
+            "output": 919,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-F",
+          "requestId": "req_011Ch2M3es27bo7vMf1rCVLW",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2959,
+            "output": 1538,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Al",
+          "requestId": "req_011Ch2M4BXVfPC4wU9eSkAgr",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3341,
+            "output": 952,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-P",
+          "requestId": "req_011Ch2M4S2cwboHfxsKG7n7p",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2968,
+            "output": 1258,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-S",
+          "requestId": "req_011Ch2M4bQRsrCXvKScx59NY",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2730,
+            "output": 949,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ar",
+          "requestId": "req_011Ch2M4r9xPoWADKDyc4Yb5",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2887,
+            "output": 1300,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Si",
+          "requestId": "req_011Ch2M4QV6shHT4T3G1BjWB",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2779,
+            "output": 2217,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ca",
+          "requestId": "req_011Ch2M5BdiU72QNy3G2Yxcv",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2844,
+            "output": 1205,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-K",
+          "requestId": "req_011Ch2M59nLp3YMrripCSiSc",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2542,
+            "output": 1211,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Sc",
+          "requestId": "req_011Ch2M5dMno5UfyQV8TSHRn",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2506,
+            "output": 1155,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ti",
+          "requestId": "req_011Ch2M5iveZzgUraPnZmegx",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2923,
+            "output": 1445,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Cr",
+          "requestId": "req_011Ch2M5ubMTXnMwzXFnmpdK",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2698,
+            "output": 1321,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-V",
+          "requestId": "req_011Ch2M5ubbWPGAMWCdSVPXS",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3224,
+            "output": 1871,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Mn",
+          "requestId": "req_011Ch2M6LhhmKPpzaoQcSNW4",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2657,
+            "output": 1425,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Co",
+          "requestId": "req_011Ch2M6Zf4ehYmPeX3PtdNX",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2583,
+            "output": 1259,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ni",
+          "requestId": "req_011Ch2M6m2BUMwZdMCiezKx3",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2869,
+            "output": 1513,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Zn",
+          "requestId": "req_011Ch2M6zCSytPRppTcASAvX",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2895,
+            "output": 1392,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ge",
+          "requestId": "req_011Ch2M7K7jwdahmro5Eyprk",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2757,
+            "output": 1341,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ga",
+          "requestId": "req_011Ch2M7ELzmbGk5ovTuJWL8",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2646,
+            "output": 1661,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-As",
+          "requestId": "req_011Ch2M7bkrdQshLSe3H9crC",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2734,
+            "output": 1248,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Se",
+          "requestId": "req_011Ch2M7qcnscRaPCZhrA399",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2746,
+            "output": 1394,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Br",
+          "requestId": "req_011Ch2M88EQxyG3GGqWasSqU",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2482,
+            "output": 1244,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Kr",
+          "requestId": "req_011Ch2M8CB3cTnBXBWPUCdAG",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2618,
+            "output": 1204,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Sr",
+          "requestId": "req_011Ch2M8gnzWCASsjbP7bf1m",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2578,
+            "output": 985,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Rb",
+          "requestId": "req_011Ch2M8UybTPt4NbX9wfFCp",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3030,
+            "output": 1499,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Y",
+          "requestId": "req_011Ch2M8uCcgF2wbYJstkGP7",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3091,
+            "output": 1332,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Zr",
+          "requestId": "req_011Ch2M8wSZ56XTosM2f6DMC",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3059,
+            "output": 1715,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Mo",
+          "requestId": "req_011Ch2M9MwwxxtMjcDHppaqC",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2550,
+            "output": 983,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Nb",
+          "requestId": "req_011Ch2M9JZZJVpTdRs8x18Bs",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3264,
+            "output": 1364,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Tc",
+          "requestId": "req_011Ch2M9iSk8oqLTLz7KHZAS",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2617,
+            "output": 1122,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ru",
+          "requestId": "req_011Ch2M9tLJZhnGc1CWgZ7CU",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2496,
+            "output": 1324,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Rh",
+          "requestId": "req_011Ch2MA2BbAPCzhQam6eLeC",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2621,
+            "output": 1134,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Pd",
+          "requestId": "req_011Ch2MABzwKk8XSiTz6n1HE",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2427,
+            "output": 1118,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ag",
+          "requestId": "req_011Ch2MAR6yur1mY5p1N49Uz",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2919,
+            "output": 1514,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Cd",
+          "requestId": "req_011Ch2MAh9NnTfrmL6qs91Gc",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3417,
+            "output": 1279,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-In",
+          "requestId": "req_011Ch2MAivnLj1WH83dbT1vd",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2409,
+            "output": 1155,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Sn",
+          "requestId": "req_011Ch2MAt1k4FAQBhzm67jWY",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2417,
+            "output": 922,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-I",
+          "requestId": "req_011Ch2MBUUQryu8rfd8ALQqt",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2477,
+            "output": 912,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Sb",
+          "requestId": "req_011Ch2MBNFrit14j29qApvPx",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2528,
+            "output": 1356,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Te",
+          "requestId": "req_011Ch2MBSkVC483MBzsihxmo",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2879,
+            "output": 1211,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Xe",
+          "requestId": "req_011Ch2MBVkZAkyh8o33J72Uy",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2850,
+            "output": 1273,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Cs",
+          "requestId": "req_011Ch2MC87atjDVqiJJVv6U7",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2601,
+            "output": 1176,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-La",
+          "requestId": "req_011Ch2MCEX4EEnN6iaox9b9e",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2465,
+            "output": 1229,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ba",
+          "requestId": "req_011Ch2MCBawCXfaH8QwL7vCj",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2944,
+            "output": 1342,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ce",
+          "requestId": "req_011Ch2MCFS81GbBKHu3e1FW1",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2487,
+            "output": 1444,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Pr",
+          "requestId": "req_011Ch2MCsiS8vb1ZX7L2HiK6",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2548,
+            "output": 956,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Nd",
+          "requestId": "req_011Ch2MCyZQsMChAN6bSEdYH",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2940,
+            "output": 921,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Pm",
+          "requestId": "req_011Ch2MCzjrLbUiPByy9UcTt",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3142,
+            "output": 1137,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Sm",
+          "requestId": "req_011Ch2MD4bXbRNbXZXUb2rsB",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2920,
+            "output": 1414,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Eu",
+          "requestId": "req_011Ch2MDV9egkhtF8p2K6RMJ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2264,
+            "output": 993,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Gd",
+          "requestId": "req_011Ch2MDYvc3P9JQ9jHRHZ4Z",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2575,
+            "output": 1323,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Tb",
+          "requestId": "req_011Ch2MDhTKe589jWkfRvk2C",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2423,
+            "output": 1245,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ho",
+          "requestId": "req_011Ch2ME9B8vNFKHNe5edTES",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2335,
+            "output": 611,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Dy",
+          "requestId": "req_011Ch2MDwPiKE5xU7FsZynRc",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3066,
+            "output": 1071,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Er",
+          "requestId": "req_011Ch2MENRNRmLs8j4dwoZwC",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2567,
+            "output": 899,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Tm",
+          "requestId": "req_011Ch2MEVyXsuU4w5wP82hJ3",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2822,
+            "output": 1004,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Yb",
+          "requestId": "req_011Ch2MEazAMKTi1p3qwKkAF",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2961,
+            "output": 1128,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Lu",
+          "requestId": "req_011Ch2MEcoZ5dTxbomKXHqp9",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2317,
+            "output": 1421,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Hf",
+          "requestId": "req_011Ch2MExq56iSBXMjgrQDkZ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2845,
+            "output": 1262,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-W",
+          "requestId": "req_011Ch2MFH5BANDiBYEETE6tr",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2533,
+            "output": 846,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ta",
+          "requestId": "req_011Ch2MF6ipexsmMDzjfx4hi",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2754,
+            "output": 1166,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Re",
+          "requestId": "req_011Ch2MFV1XGnRR819anrvhP",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2343,
+            "output": 961,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Os",
+          "requestId": "req_011Ch2MFiz9ersHMPm9tZwMs",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2424,
+            "output": 1170,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Pt",
+          "requestId": "req_011Ch2MFoR3eGu9vAgyxekwv",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3336,
+            "output": 1024,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ir",
+          "requestId": "req_011Ch2MFoQZDevM7P5x7b9Gd",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2758,
+            "output": 1183,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Hg",
+          "requestId": "req_011Ch2MGBMAiM4xRtZLzSd2X",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2614,
+            "output": 1415,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Bi",
+          "requestId": "req_011Ch2MGX9npTpvwm4bt2Xpq",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2888,
+            "output": 973,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Tl",
+          "requestId": "req_011Ch2MGRdeZFCzDFYtq8V5F",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2875,
+            "output": 1426,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Pb",
+          "requestId": "req_011Ch2MGUSK4rX5ieWrbuVda",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3661,
+            "output": 1493,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-At",
+          "requestId": "req_011Ch2MH96W4kxXVD76LVDK4",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1936,
+            "output": 801,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Po",
+          "requestId": "req_011Ch2MH1QtjNz4pukBaRhsL",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2902,
+            "output": 1225,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Fr",
+          "requestId": "req_011Ch2MHNq1XvZBJgYjZ5hvY",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2396,
+            "output": 835,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Rn",
+          "requestId": "req_011Ch2MHHwKhuKDyeWPqGS5V",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2675,
+            "output": 1154,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ac",
+          "requestId": "req_011Ch2MHnJdroXpL4gCfqQSx",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2196,
+            "output": 887,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ra",
+          "requestId": "req_011Ch2MHjv26zuqenujqcKFY",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2752,
+            "output": 1138,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Pa",
+          "requestId": "req_011Ch2MJ3CKktXNfiqjFsRcf",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2583,
+            "output": 827,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Th",
+          "requestId": "req_011Ch2MHxHf3NigFnbCrVRyd",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3253,
+            "output": 1181,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Np",
+          "requestId": "req_011Ch2MJQVFCjGYcZsUCdLMD",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2599,
+            "output": 1129,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-U",
+          "requestId": "req_011Ch2MJPv2D4AhBfsLTi4BS",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 4586,
+            "output": 1422,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Am",
+          "requestId": "req_011Ch2MJeNR5nyQxBsuB9BVP",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3196,
+            "output": 1308,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Pu",
+          "requestId": "req_011Ch2MJZxGEwXUdWpuYVoGW",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 4662,
+            "output": 1846,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Bk",
+          "requestId": "req_011Ch2MKH4HrbQHBb5o8XzcQ",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3340,
+            "output": 799,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Cm",
+          "requestId": "req_011Ch2MK8UMoyYiJLFfNEPP3",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2822,
+            "output": 1450,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Es",
+          "requestId": "req_011Ch2MKfLjk2RSar1R9CiX6",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2483,
+            "output": 526,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Cf",
+          "requestId": "req_011Ch2MKTXpv28hS92xxHNpo",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2276,
+            "output": 1343,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Fm",
+          "requestId": "req_011Ch2MKntAnzSfSj7VNsV11",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 3235,
+            "output": 1304,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Md",
+          "requestId": "req_011Ch2MKzzg4khdtn2bt6tDk",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2417,
+            "output": 1041,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-No",
+          "requestId": "req_011Ch2ML5WJ6jzzitZL6khjB",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2962,
+            "output": 1095,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Lr",
+          "requestId": "req_011Ch2MLGnCHF6ugsAbZmbAs",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2703,
+            "output": 1000,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Rf",
+          "requestId": "req_011Ch2MLeJ1tjmKCjGHzQ8c1",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2100,
+            "output": 729,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Sg",
+          "requestId": "req_011Ch2MLmdYBiPdXwZ11MVan",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2740,
+            "output": 796,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Db",
+          "requestId": "req_011Ch2MLgCc6mhJYaDZvYRXY",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2741,
+            "output": 1071,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Bh",
+          "requestId": "req_011Ch2MLw7YS9sEYqT8oVRty",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2001,
+            "output": 975,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Hs",
+          "requestId": "req_011Ch2MMB5g9PrcRjJBRGvdf",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2090,
+            "output": 986,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ds",
+          "requestId": "req_011Ch2MMPjvx8yJesruy2asU",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2393,
+            "output": 777,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Mt",
+          "requestId": "req_011Ch2MMLWxEpvHhnPfNQobK",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2411,
+            "output": 1203,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Rg",
+          "requestId": "req_011Ch2MMaXa9XfnA6Y9Anpi6",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2135,
+            "output": 915,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Cn",
+          "requestId": "req_011Ch2MMqjsNXBzsXQ23MT4R",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2004,
+            "output": 714,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Fl",
+          "requestId": "req_011Ch2MNAE7WjuXFrG8skyEp",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2173,
+            "output": 651,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Nh",
+          "requestId": "req_011Ch2MMvMBPPzBXoMgRRnHf",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 2220,
+            "output": 1237,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Lv",
+          "requestId": "req_011Ch2MNNAxdyffS7k1sooKk",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1943,
+            "output": 707,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Ts",
+          "requestId": "req_011Ch2MNahGYtX2YpFzrRm4f",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1803,
+            "output": 478,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Mc",
+          "requestId": "req_011Ch2MNDEwWVMRdSHXoVB6f",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1957,
+            "output": 1297,
+            "cache_read": 0
+          }
+        },
+        {
+          "label": "verify-3-Og",
+          "requestId": "req_011Ch2MNioBQxMy4HGp1vZkj",
+          "servedBy": "claude-opus-5-5",
+          "stopReason": "end_turn",
+          "usage": {
+            "input": 1854,
+            "output": 612,
+            "cache_read": 0
+          }
+        }
+      ],
+      "usage": {
+        "input": 879528,
+        "output": 380346,
+        "cache_read": 0
+      },
+      "estimatedCostUSD": 11.125,
+      "servedBy": [
+        "claude-opus-5-5"
+      ],
+      "noAnswer": []
+    }
+  ],
+  "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442"
+}

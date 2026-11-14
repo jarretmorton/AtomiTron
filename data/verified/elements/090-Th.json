@@ -382,7 +382,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "In the past, thorium's main use was making Welsbach mantles for portable gaslights.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Th.uses.0"
+          }
+        },
+        {
+          "value": "Thorium oxide is used to make glass for high quality camera lenses.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Th.uses.1"
+          }
+        },
+        {
+          "value": "Thorium is used to coat tungsten filaments in electronic devices, such as television sets.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Th.uses.2"
+          }
+        },
+        {
+          "value": "Thorium is used as an alloying agent to make magnesium stronger at high temperatures.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Th.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Thorium is named after Thor, the Scandinavian god of thunder.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Th.discovery.story.0"
+            }
+          },
+          {
+            "value": "Thorium was discovered in 1828 by the Swedish chemist Jöns Jacob Berzelius.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Th.discovery.story.1"
+            }
+          },
+          {
+            "value": "Thorium was first isolated in 1914 by the chemists D. Lely, Jr. and L. Hamburger.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Th.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

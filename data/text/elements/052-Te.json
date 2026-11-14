@@ -1,0 +1,227 @@
+{
+  "element": "element:Te",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name tellurium comes from the Latin Tellus, who was the Roman goddess of the Earth.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Te.discovery.story.0"
+        }
+      },
+      {
+        "value": "Tellurium was discovered in 1782 by Franz Joseph Müller von Reichenstein, a Romanian mining official.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Te.discovery.story.1"
+        }
+      },
+      {
+        "value": "Martin Heinrich Klaproth named the element tellurium but gave full credit for its discovery to Reichenstein.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Te.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Tellurium is used to color glass and ceramics.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Te.uses.0"
+      }
+    },
+    {
+      "value": "Tellurium is added to copper and stainless steel to make them easier to machine and mill.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Te.uses.1"
+      }
+    },
+    {
+      "value": "Tellurium is added to lead to increase its strength and its resistance to sulfuric acid.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Te.uses.2"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Te.discovery.story.0",
+      "subject": {
+        "entity": "element:Te",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name tellurium comes from the Latin Tellus, who was the Roman goddess of the Earth.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin Tellus, who was the Roman goddess of the Earth.",
+      "evidence": "The name derives from the Latin Tellus, who was the Roman goddess of the Earth.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Te.discovery.story.1",
+      "subject": {
+        "entity": "element:Te",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Tellurium was discovered in 1782 by Franz Joseph Müller von Reichenstein, a Romanian mining official.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Tellurium was discovered by Franz Joseph Müller von Reichenstein, a Romanian mining official, in 1782.",
+      "evidence": "Tellurium was discovered by Franz Joseph Müller von Reichenstein, a Romanian mining official, in 1782.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Te.discovery.story.2",
+      "subject": {
+        "entity": "element:Te",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Martin Heinrich Klaproth named the element tellurium but gave full credit for its discovery to Reichenstein.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Klaproth named the new element tellurium but gave full credit for its discovery to Reichenstein.",
+      "evidence": "Klaproth named the new element tellurium but gave full credit for its discovery to Reichenstein.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Te.uses.0",
+      "subject": {
+        "entity": "element:Te",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Tellurium is used to color glass and ceramics.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Tellurium is also used to color glass and ceramics",
+      "evidence": "Tellurium is also used to color glass and ceramics",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Te.uses.1",
+      "subject": {
+        "entity": "element:Te",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Tellurium is added to copper and stainless steel to make them easier to machine and mill.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Small amounts of tellurium are added to copper and stainless steel to make them easier to machine and mill.",
+      "evidence": "Small amounts of tellurium are added to copper and stainless steel to make them easier to machine and mill.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Te.uses.2",
+      "subject": {
+        "entity": "element:Te",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Tellurium is added to lead to increase its strength and its resistance to sulfuric acid.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Tellurium is also added to lead to increase its strength and resistance to sulfuric acid (H2SO4).",
+      "evidence": "Tellurium is also added to lead to increase its strength and resistance to sulfuric acid (H2SO4).",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

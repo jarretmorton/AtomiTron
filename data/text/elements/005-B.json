@@ -1,0 +1,299 @@
+{
+  "element": "element:B",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name boron comes from the Arabic word buraq, meaning \"white\".",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "B.discovery.story.0"
+        }
+      },
+      {
+        "value": "Boron was discovered in 1808 by French chemists Joseph-Louis Gay-Lussac and Louis-Jaques Thénard, and independently by English chemist Sir Humphry Davy.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "B.discovery.story.1"
+        }
+      },
+      {
+        "value": "Boron compounds were known for thousands of years before the element itself was isolated in 1808.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "B.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1808,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=History",
+        "retrieved": "2026-11-14",
+        "via": "IUPAC CIAAW"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "B.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Borax, a boron compound, is used in laundry products.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "B.uses.0"
+      }
+    },
+    {
+      "value": "Boron compounds are used to make borosilicate glass.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "B.uses.1"
+      }
+    },
+    {
+      "value": "A boron compound is used to make fiberglass insulation and a type of bleach called sodium perborate bleach.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "B.uses.2"
+      }
+    },
+    {
+      "value": "Boron filaments are used in the aerospace industry because they are strong and lightweight.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "B.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "B.discovery.year",
+      "subject": {
+        "entity": "element:B",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1808,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "it was not isolated until 1808 by the French chemists Louis-Joseph Gay-Lussac and Louis-Jacques Thenard",
+      "evidence": "it was not isolated until 1808 by the French chemists Louis-Joseph Gay-Lussac and Louis-Jacques Thenard",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "B.discovery.story.0",
+      "subject": {
+        "entity": "element:B",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name boron comes from the Arabic word buraq, meaning \"white\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Arabic buraq for \"white\".",
+      "evidence": "The name derives from the Arabic buraq for \"white\".",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "B.discovery.story.1",
+      "subject": {
+        "entity": "element:B",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Boron was discovered in 1808 by French chemists Joseph-Louis Gay-Lussac and Louis-Jaques Thénard, and independently by English chemist Sir Humphry Davy.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Boron was discovered by Joseph-Louis Gay-Lussac and Louis-Jaques Thénard, French chemists, and independently by Sir Humphry Davy, an English chemist, in 1808.",
+      "evidence": "Boron was discovered by Joseph-Louis Gay-Lussac and Louis-Jaques Thénard, French chemists, and independently by Sir Humphry Davy, an English chemist, in 1808.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "B.discovery.story.2",
+      "subject": {
+        "entity": "element:B",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Boron compounds were known for thousands of years before the element itself was isolated in 1808.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Although its compounds were known for thousands of years, it was not isolated until 1808",
+      "evidence": "Although its compounds were known for thousands of years, it was not isolated until 1808",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "B.uses.0",
+      "subject": {
+        "entity": "element:B",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Borax, a boron compound, is used in laundry products.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Borax is used in laundry products",
+      "evidence": "Borax is used in laundry products",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "B.uses.1",
+      "subject": {
+        "entity": "element:B",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Boron compounds are used to make borosilicate glass.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Boron compounds are also extensively used in the manufacture of borosilicate glasses.",
+      "evidence": "Boron compounds are also extensively used in the manufacture of borosilicate glasses.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "B.uses.2",
+      "subject": {
+        "entity": "element:B",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "A boron compound is used to make fiberglass insulation and a type of bleach called sodium perborate bleach.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Large amounts of this compound are used in the manufacture of fiberglass insulation and sodium perborate bleach.",
+      "evidence": "Large amounts of this compound are used in the manufacture of fiberglass insulation and sodium perborate bleach.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "B.uses.3",
+      "subject": {
+        "entity": "element:B",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Boron filaments are used in the aerospace industry because they are strong and lightweight.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Boron filaments are used in the aerospace industry because of their high-strength and lightweight.",
+      "evidence": "Boron filaments are used in the aerospace industry because of their high-strength and lightweight.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

@@ -567,7 +567,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Because titanium does not react within the human body, it is used to make implants such as artificial hips and pins for setting bones.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ti.uses.0"
+          }
+        },
+        {
+          "value": "Titanium oxide is used as a pigment to make white paint.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ti.uses.1"
+          }
+        },
+        {
+          "value": "Titanium is used in parts of boats that are exposed to sea water, such as propeller shafts and rigging.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ti.uses.2"
+          }
+        },
+        {
+          "value": "Titanium and titanium alloys are used in airplanes, among other things.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ti.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Titanium was discovered in 1791 by the Reverend William Gregor, an English pastor.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ti.discovery.story.0"
+            }
+          },
+          {
+            "value": "The name titanium comes from the Latin titans, the first sons of the Earth in Greek mythology.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ti.discovery.story.1"
+            }
+          },
+          {
+            "value": "In 1795, the German chemist Martin Heinrich Klaproth rediscovered the element and called it titanium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ti.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1791,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/22#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ti.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

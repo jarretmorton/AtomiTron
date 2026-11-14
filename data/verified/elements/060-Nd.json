@@ -601,7 +601,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Neodymium is added to glass to remove the green color caused by iron contaminants.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/60#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Nd.uses.0"
+          }
+        },
+        {
+          "value": "Didymium, which contains neodymium, is used to color glass for making welders' goggles.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/60#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Nd.uses.1"
+          }
+        },
+        {
+          "value": "Some neodymium salts are used to color enamels and glazes.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/60#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Nd.uses.2"
+          }
+        },
+        {
+          "value": "Glass containing neodymium can be used as a laser material.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/60#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Nd.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name neodymium comes from the Greek words neos, meaning \"new\", and didymos, meaning \"twin\".",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/60#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Nd.discovery.story.0"
+            }
+          },
+          {
+            "value": "Neodymium was discovered in 1885 by Carl F. Auer von Welsbach, an Austrian chemist.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/60#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Nd.discovery.story.1"
+            }
+          },
+          {
+            "value": "Mosander named the element didymium because it was an inseparable twin brother of lanthanum.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/60#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Nd.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

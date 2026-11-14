@@ -1044,6 +1044,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Gd.electronConfiguration"
+    },
+    {
+      "id": "Gd.discovery.story.0",
+      "subject": {
+        "entity": "element:Gd",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Gadolinium is named after the mineral gadolinite, where it was found, which was named for the Finnish rare earth chemist Johan Gadolin.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the mineral gadolinite, in which it was found, and that had been named for the Finnish rare earth chemist Johan Gadolin.",
+      "evidence": "The name derives from the mineral gadolinite, in which it was found, and that had been named for the Finnish rare earth chemist Johan Gadolin.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Gd.discovery.story.1",
+      "subject": {
+        "entity": "element:Gd",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The Swiss chemist Jean Charles Galissard de Marignac first observed spectroscopic evidence of gadolinium in the minerals didymia and gadolinite.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Spectroscopic evidence for the existence of gadolinium was first observed by the Swiss chemist Jean Charles Galissard de Marignac in the minerals didymia and gadolinite",
+      "evidence": "Spectroscopic evidence for the existence of gadolinium was first observed by the Swiss chemist Jean Charles Galissard de Marignac in the minerals didymia and gadolinite",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Gd.discovery.story.2",
+      "subject": {
+        "entity": "element:Gd",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "In 1886, the French chemist Paul-Emile Lecoq de Boisbaudran gave the element the name gadolinium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "In 1886, the French chemist Paul-Emile Lecoq de Boisbaudran gave the name gadolinium.",
+      "evidence": "In 1886, the French chemist Paul-Emile Lecoq de Boisbaudran gave the name gadolinium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Gd.uses.0",
+      "subject": {
+        "entity": "element:Gd",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Gadolinium compounds are used to make phosphors for color televisions.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Gadolinium compounds are used to make phosphors for color televisions.",
+      "evidence": "Gadolinium compounds are used to make phosphors for color televisions.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Gd.uses.1",
+      "subject": {
+        "entity": "element:Gd",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Gadolinium can be combined with yttrium to form garnets used in microwave technology.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Gadolinium can be combined with yttrium to form garnets that have applications in microwave technology.",
+      "evidence": "Gadolinium can be combined with yttrium to form garnets that have applications in microwave technology.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Gd.uses.2",
+      "subject": {
+        "entity": "element:Gd",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Gadolinium can be alloyed with metals such as iron and chromium to improve their workability and resistance to high temperatures and oxidation.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Gadolinium can be alloyed with iron, chromium and other metals to improve their workability and their resistance to high temperatures and oxidation.",
+      "evidence": "Gadolinium can be alloyed with iron, chromium and other metals to improve their workability and their resistance to high temperatures and oxidation.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Gd.uses.3",
+      "subject": {
+        "entity": "element:Gd",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Gadolinium can be used as control rods for nuclear reactors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "can be used as control rods for nuclear reactors",
+      "evidence": "can be used as control rods for nuclear reactors",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

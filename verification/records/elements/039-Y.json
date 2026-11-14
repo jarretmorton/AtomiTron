@@ -460,6 +460,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Y.electronConfiguration"
+    },
+    {
+      "id": "Y.discovery.story.0",
+      "subject": {
+        "entity": "element:Y",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Yttrium's name comes from Ytterby, a village in Sweden where the mineral gadolinite was found.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Swedish village of Ytterby where the mineral gadolinite was found.",
+      "evidence": "The name derives from the Swedish village of Ytterby where the mineral gadolinite was found.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Y.discovery.story.1",
+      "subject": {
+        "entity": "element:Y",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Yttrium was discovered by Johan Gadolin, a Finnish chemist.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Yttrium was discovered by Johan Gadolin, a Finnish chemist,",
+      "evidence": "Yttrium was discovered by Johan Gadolin, a Finnish chemist,",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Y.discovery.story.2",
+      "subject": {
+        "entity": "element:Y",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Gadolin first called the element ytterbium, after the mineral ytterbite.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Gadolin originally called the element ytterbium after ytterbite.",
+      "evidence": "Gadolin originally called the element ytterbium after ytterbite.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Y.uses.0",
+      "subject": {
+        "entity": "element:Y",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Yttrium compounds are combined with europium to make the red phosphor used in color televisions.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Yttrium oxide (Y2O3) and yttrium orthovanadate (YVO4) are both combined with europium to produce the red phosphor used in color televisions.",
+      "evidence": "Yttrium oxide (Y2O3) and yttrium orthovanadate (YVO4) are both combined with europium to produce the red phosphor used in color televisions.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Y.uses.1",
+      "subject": {
+        "entity": "element:Y",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Garnets made from yttrium and iron are used as microwave filters in microwave communications equipment.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Garnets made from yttrium and iron (Y3Fe5O12) are used as microwave filters in microwave communications equipment.",
+      "evidence": "Garnets made from yttrium and iron (Y3Fe5O12) are used as microwave filters in microwave communications equipment.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Y.uses.2",
+      "subject": {
+        "entity": "element:Y",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Garnets made from yttrium and aluminum are used in jewelry as simulated diamond.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Garnets made from yttrium and aluminum (Y3Al5O12) are used in jewelry as simulated diamond.",
+      "evidence": "Garnets made from yttrium and aluminum (Y3Al5O12) are used in jewelry as simulated diamond.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Y.uses.3",
+      "subject": {
+        "entity": "element:Y",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Yttrium can be used in laser systems.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Yttrium also can be used in laser systems and as a catalyst for ethylene polymerization reactions.",
+      "evidence": "Yttrium also can be used in laser systems and as a catalyst for ethylene polymerization reactions.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

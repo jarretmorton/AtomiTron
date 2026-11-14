@@ -271,7 +271,54 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Because only a few atoms of copernicium have ever been produced, it currently has no uses outside of basic scientific research.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/112#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cn.uses.0"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Peter Armbruster, Gottfried Münzenber and their team first produced copernicium in Darmstadt, Germany, in 1996.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/112#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Cn.discovery.story.0"
+            }
+          }
+        ],
+        "year": {
+          "value": 1996,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/112#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cn.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

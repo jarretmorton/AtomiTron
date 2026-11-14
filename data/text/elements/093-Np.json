@@ -1,0 +1,191 @@
+{
+  "element": "element:Np",
+  "discovery": {
+    "story": [
+      {
+        "value": "Neptunium is named after the planet Neptune, which was named after the Roman god of the sea.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Np.discovery.story.0"
+        }
+      },
+      {
+        "value": "Neptunium was first produced in 1940 by Edwin M. McMillian and Philip H. Abelson at the University of California, Berkeley.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Np.discovery.story.1"
+        }
+      },
+      {
+        "value": "There were many early false reports of the discovery of neptunium, and the most significant one was by Enrico Fermi.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Np.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1940,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Np.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "A form of neptunium made in nuclear reactors is used in neutron detectors.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Np.uses.0"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Np.discovery.year",
+      "subject": {
+        "entity": "element:Np",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1940,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Neptunium was first produced by Edwin M. McMillian and Philip H. Abelson, working at the University of California, Berkeley, in 1940.",
+      "evidence": "Neptunium was first produced by Edwin M. McMillian and Philip H. Abelson, working at the University of California, Berkeley, in 1940.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Np.discovery.story.0",
+      "subject": {
+        "entity": "element:Np",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Neptunium is named after the planet Neptune, which was named after the Roman god of the sea.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Named for the planet Neptune (named after the Roman god of the sea)",
+      "evidence": "Named for the planet Neptune (named after the Roman god of the sea)",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Np.discovery.story.1",
+      "subject": {
+        "entity": "element:Np",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Neptunium was first produced in 1940 by Edwin M. McMillian and Philip H. Abelson at the University of California, Berkeley.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Neptunium was first produced by Edwin M. McMillian and Philip H. Abelson, working at the University of California, Berkeley, in 1940.",
+      "evidence": "Neptunium was first produced by Edwin M. McMillian and Philip H. Abelson, working at the University of California, Berkeley, in 1940.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Np.discovery.story.2",
+      "subject": {
+        "entity": "element:Np",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "There were many early false reports of the discovery of neptunium, and the most significant one was by Enrico Fermi.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "There were many early false reports of the discovery of neptunium. The most significant was by Enrico Fermi",
+      "evidence": "There were many early false reports of the discovery of neptunium. The most significant was by Enrico Fermi",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Np.uses.0",
+      "subject": {
+        "entity": "element:Np",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "A form of neptunium made in nuclear reactors is used in neutron detectors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Neptunium-237, which is produced in gram quantities as a by-product of the production of plutonium in nuclear reactors, is used in neutron detectors.",
+      "evidence": "Neptunium-237, which is produced in gram quantities as a by-product of the production of plutonium in nuclear reactors, is used in neutron detectors.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

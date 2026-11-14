@@ -978,6 +978,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Pt.electronConfiguration"
+    },
+    {
+      "id": "Pt.discovery.story.0",
+      "subject": {
+        "entity": "element:Pt",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name platinum comes from the Spanish word platina, meaning silver.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Spanish platina for \"silver\".",
+      "evidence": "The name derives from the Spanish platina for \"silver\".",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pt.discovery.story.1",
+      "subject": {
+        "entity": "element:Pt",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "In 1735, the Spanish astronomer Antonio de Ulloa found platinum in Peru, South America.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "In 1735, the Spanish astronomer Antonio de Ulloa found platinum in Peru, South America.",
+      "evidence": "In 1735, the Spanish astronomer Antonio de Ulloa found platinum in Peru, South America.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pt.discovery.story.2",
+      "subject": {
+        "entity": "element:Pt",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Pre-Columbian Indians of South America used platinum before western scientists noticed it.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Used by the pre-Columbian Indians of South America, platinum wasn't noticed by western scientists until 1735.",
+      "evidence": "Used by the pre-Columbian Indians of South America, platinum wasn't noticed by western scientists until 1735.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pt.uses.0",
+      "subject": {
+        "entity": "element:Pt",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Platinum is used to make jewelry, wire, electrical contacts and laboratory vessels.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It is used to make jewelry, wire, electrical contacts and laboratory vessels.",
+      "evidence": "It is used to make jewelry, wire, electrical contacts and laboratory vessels.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pt.uses.1",
+      "subject": {
+        "entity": "element:Pt",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Platinum is used in catalytic converters, devices found in the exhaust systems of most cars.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Platinum is also used in a device called a catalytic converter, a device found in the exhaust systems of most cars.",
+      "evidence": "Platinum is also used in a device called a catalytic converter, a device found in the exhaust systems of most cars.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pt.uses.2",
+      "subject": {
+        "entity": "element:Pt",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Platinum is used in dentistry.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It is also used for electrical contacts, corrosion-resistant apparatus, and in dentistry.",
+      "evidence": "It is also used for electrical contacts, corrosion-resistant apparatus, and in dentistry.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pt.uses.3",
+      "subject": {
+        "entity": "element:Pt",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Fuel cells, which combine hydrogen and oxygen to produce electricity and water, use platinum as a catalyst.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Fuel cells, devices that combine hydrogen and oxygen to produce electricity and water, also use platinum as a catalyst.",
+      "evidence": "Fuel cells, devices that combine hydrogen and oxygen to produce electricity and water, also use platinum as a catalyst.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

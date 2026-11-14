@@ -335,7 +335,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Alloys of scandium and aluminum are used in some sports equipment, such as baseball bats, bicycle frames and lacrosse sticks.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Sc.uses.0"
+          }
+        },
+        {
+          "value": "Scandium oxide, also known as scandia, is used to make high intensity lights.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Sc.uses.1"
+          }
+        },
+        {
+          "value": "Scandium iodide is added to mercury vapor lamps so that their light closely resembles sunlight.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Sc.uses.2"
+          }
+        },
+        {
+          "value": "Mercury vapor lamps with added scandium iodide give light resembling sunlight, which is important for indoor or night-time color TV.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Sc.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Scandium's name comes from the Latin word scandia, meaning Scandinavia, where the mineral was found.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Sc.discovery.story.0"
+            }
+          },
+          {
+            "value": "Scandium was discovered by the Swedish chemist Lars-Fredrik Nilson.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Sc.discovery.story.1"
+            }
+          },
+          {
+            "value": "The Swedish chemist Per Theodore Cleve proved that scandium was the element eka-boron that Mendeleev had predicted.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Sc.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

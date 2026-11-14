@@ -295,7 +295,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Promethium could be used to make a nuclear powered battery.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pm.uses.0"
+          }
+        },
+        {
+          "value": "Promethium could be used in generators that provide electricity for space probes and satellites.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pm.uses.1"
+          }
+        },
+        {
+          "value": "Light made with promethium and a phosphor can be used for signs or signals that need to work dependably.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pm.uses.2"
+          }
+        },
+        {
+          "value": "Promethium has applications as a source of beta radiation in gauges that measure thickness.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pm.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Promethium is named after Prometheus, a figure from Greek mythology who stole fire from heaven.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Pm.discovery.story.0"
+            }
+          },
+          {
+            "value": "The Czech chemist Bohuslav Brauner predicted in 1902 that promethium existed.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Pm.discovery.story.1"
+            }
+          },
+          {
+            "value": "Jacob A. Marinsky, Lawrence E. Glendenin and Charles D. Coryell obtained proof that promethium exists in 1944.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/61#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Pm.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

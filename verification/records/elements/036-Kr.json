@@ -1013,6 +1013,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from Kr.electronConfiguration, Kr.group"
+    },
+    {
+      "id": "Kr.discovery.year",
+      "subject": {
+        "entity": "element:Kr",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1898,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Discovered in 1898 by Ramsay and Travers",
+      "evidence": "Discovered in 1898 by Ramsay and Travers",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Kr.discovery.story.0",
+      "subject": {
+        "entity": "element:Kr",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Krypton's name comes from the Greek word kryptos, meaning hidden.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Greek word kryptos, hidden.",
+      "evidence": "From the Greek word kryptos, hidden.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Kr.discovery.story.1",
+      "subject": {
+        "entity": "element:Kr",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Krypton was discovered in 1898 by Scottish chemist William Ramsay and English chemist Morris Travers while they were studying liquefied air.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Krypton was discovered on May 30, 1898 by Sir William Ramsay, a Scottish chemist, and Morris M. Travers, an English chemist, while studying liquefied air.",
+      "evidence": "Krypton was discovered on May 30, 1898 by Sir William Ramsay, a Scottish chemist, and Morris M. Travers, an English chemist, while studying liquefied air.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Kr.discovery.story.2",
+      "subject": {
+        "entity": "element:Kr",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Ramsay and Travers found krypton in what was left after liquid air had nearly boiled away.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Discovered in 1898 by Ramsay and Travers in the residue left after liquid air had nearly boiled away.",
+      "evidence": "Discovered in 1898 by Ramsay and Travers in the residue left after liquid air had nearly boiled away.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Kr.uses.0",
+      "subject": {
+        "entity": "element:Kr",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Krypton is used in some types of photographic flashes for high-speed photography.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Krypton is used in some types of photographic flashes used in high speed photography.",
+      "evidence": "Krypton is used in some types of photographic flashes used in high speed photography.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Kr.uses.1",
+      "subject": {
+        "entity": "element:Kr",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Some fluorescent light bulbs are filled with a mixture of krypton and argon gases.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Some fluorescent light bulbs are filled with a mixture of krypton and argon gases.",
+      "evidence": "Some fluorescent light bulbs are filled with a mixture of krypton and argon gases.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Kr.uses.2",
+      "subject": {
+        "entity": "element:Kr",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Krypton gas is combined with other gases to make glowing signs that give off a greenish-yellow light.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Krypton gas is also combined with other gases to make luminous signs that glow with a greenish-yellow light.",
+      "evidence": "Krypton gas is also combined with other gases to make luminous signs that glow with a greenish-yellow light.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

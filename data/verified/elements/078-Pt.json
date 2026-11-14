@@ -599,7 +599,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Platinum is used to make jewelry, wire, electrical contacts and laboratory vessels.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pt.uses.0"
+          }
+        },
+        {
+          "value": "Platinum is used in catalytic converters, devices found in the exhaust systems of most cars.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pt.uses.1"
+          }
+        },
+        {
+          "value": "Platinum is used in dentistry.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pt.uses.2"
+          }
+        },
+        {
+          "value": "Fuel cells, which combine hydrogen and oxygen to produce electricity and water, use platinum as a catalyst.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pt.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name platinum comes from the Spanish word platina, meaning silver.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Pt.discovery.story.0"
+            }
+          },
+          {
+            "value": "In 1735, the Spanish astronomer Antonio de Ulloa found platinum in Peru, South America.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Pt.discovery.story.1"
+            }
+          },
+          {
+            "value": "Pre-Columbian Indians of South America used platinum before western scientists noticed it.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/78#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Pt.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

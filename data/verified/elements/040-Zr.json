@@ -540,7 +540,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Zirconium is used to make some types of surgical equipment.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Zr.uses.0"
+          }
+        },
+        {
+          "value": "Zirconium oxide, also called zircon, is used as a gem material.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Zr.uses.1"
+          }
+        },
+        {
+          "value": "Zirconium dioxide can withstand very high temperatures and is used to line the walls of high temperature furnaces.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Zr.uses.2"
+          }
+        },
+        {
+          "value": "Zirconium is widely used in nuclear reactors.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Zr.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name comes from the Arabic word zargun, which means gold-like.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Zr.discovery.story.0"
+            }
+          },
+          {
+            "value": "German chemist Martin Heinrich Klaproth discovered zirconium in 1789 while analyzing a mineral called jargon.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Zr.discovery.story.1"
+            }
+          },
+          {
+            "value": "Swedish chemist Jöns Jacob Berzelius first isolated zirconium in 1824, but it was not pure.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Zr.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1789,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=History",
+            "retrieved": "2026-11-14",
+            "via": "IUPAC CIAAW"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Zr.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

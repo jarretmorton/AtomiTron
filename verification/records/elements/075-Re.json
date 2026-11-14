@@ -592,6 +592,138 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Re.electronConfiguration"
+    },
+    {
+      "id": "Re.discovery.year",
+      "subject": {
+        "entity": "element:Re",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1925,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/75#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Rhenium was discovered by x-ray spectroscopy in 1925",
+      "evidence": "Rhenium was discovered by x-ray spectroscopy in 1925",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Re.discovery.story.0",
+      "subject": {
+        "entity": "element:Re",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name rhenium comes from the Latin word rhenus, for the Rhine river in Germany.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/75#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin rhenus for the Rhine river in Germany.",
+      "evidence": "The name derives from the Latin rhenus for the Rhine river in Germany.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Re.discovery.story.1",
+      "subject": {
+        "entity": "element:Re",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Rhenium was discovered in 1925 by German chemists Walter Noddack, Ida Tacke and Otto Berg, using x-ray spectroscopy.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/75#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Rhenium was discovered by x-ray spectroscopy in 1925 by German chemists Walter Noddack, Ida Tacke, and Otto Berg.",
+      "evidence": "Rhenium was discovered by x-ray spectroscopy in 1925 by German chemists Walter Noddack, Ida Tacke, and Otto Berg.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Re.uses.0",
+      "subject": {
+        "entity": "element:Re",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Rhenium is used in flash lamps for photography.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/75#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Rhenium is used in flash lamps for photography",
+      "evidence": "Rhenium is used in flash lamps for photography",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Re.uses.1",
+      "subject": {
+        "entity": "element:Re",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Rhenium is used for filaments in mass spectrographs and ion gauges.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/75#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It is widely used as filaments for mass spectrographs and ion gauges.",
+      "evidence": "It is widely used as filaments for mass spectrographs and ion gauges.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Re.uses.2",
+      "subject": {
+        "entity": "element:Re",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Rhenium is used as a material for electrical contacts.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/75#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Rhenium is also used as an electrical contact material",
+      "evidence": "Rhenium is also used as an electrical contact material",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

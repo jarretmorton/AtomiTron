@@ -1,0 +1,299 @@
+{
+  "element": "element:Tl",
+  "discovery": {
+    "story": [
+      {
+        "value": "Thallium's name comes from the Greek word thallos, meaning \"green shoot\" or \"twig\", because of the bright green line in its spectrum.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Tl.discovery.story.0"
+        }
+      },
+      {
+        "value": "Thallium was discovered in 1861 by William Crookes, an English physicist and chemist.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Tl.discovery.story.1"
+        }
+      },
+      {
+        "value": "Thallium metal was isolated in 1862 by both Crookes and Lamy, at about the same time.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Tl.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1861,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=History",
+        "retrieved": "2026-11-14",
+        "via": "IUPAC CIAAW"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tl.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Thallium sulfide, thallium iodide and thallium bromide are compounds used in devices that detect infrared radiation.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tl.uses.0"
+      }
+    },
+    {
+      "value": "Thallium sulfide, whose electrical conductivity changes when exposed to infrared light, is used in photocells.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tl.uses.1"
+      }
+    },
+    {
+      "value": "Thallium oxide has been used to make glasses with a high index of refraction.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tl.uses.2"
+      }
+    },
+    {
+      "value": "Thallium, used together with sulfur or selenium and arsenic, forms glass that melts at a low temperature.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tl.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Tl.discovery.year",
+      "subject": {
+        "entity": "element:Tl",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1861,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Thallium was discovered by the English physicist and chemist William Crookes in 1861.",
+      "evidence": "Thallium was discovered by the English physicist and chemist William Crookes in 1861.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tl.discovery.story.0",
+      "subject": {
+        "entity": "element:Tl",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Thallium's name comes from the Greek word thallos, meaning \"green shoot\" or \"twig\", because of the bright green line in its spectrum.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek thallos for \"green shoot\" or \"twig\" because of the bright green line in its spectrum.",
+      "evidence": "The name derives from the Greek thallos for \"green shoot\" or \"twig\" because of the bright green line in its spectrum.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tl.discovery.story.1",
+      "subject": {
+        "entity": "element:Tl",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Thallium was discovered in 1861 by William Crookes, an English physicist and chemist.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Thallium was discovered by the English physicist and chemist William Crookes in 1861.",
+      "evidence": "Thallium was discovered by the English physicist and chemist William Crookes in 1861.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tl.discovery.story.2",
+      "subject": {
+        "entity": "element:Tl",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Thallium metal was isolated in 1862 by both Crookes and Lamy, at about the same time.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "The metal was isolated both by Crookes and by Lamy in 1862 at about the same time.",
+      "evidence": "The metal was isolated both by Crookes and by Lamy in 1862 at about the same time.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tl.uses.0",
+      "subject": {
+        "entity": "element:Tl",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Thallium sulfide, thallium iodide and thallium bromide are compounds used in devices that detect infrared radiation.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Thallium sulfide (Tl2S), thallium iodide (TlI) and thallium bromide (TlBr) are all compounds used in devices to detect infrared radiation.",
+      "evidence": "Thallium sulfide (Tl2S), thallium iodide (TlI) and thallium bromide (TlBr) are all compounds used in devices to detect infrared radiation.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tl.uses.1",
+      "subject": {
+        "entity": "element:Tl",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Thallium sulfide, whose electrical conductivity changes when exposed to infrared light, is used in photocells.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "The electrical conductivity of thallium sulfide changes with exposure to infrared light, and this compound is used in photocells.",
+      "evidence": "The electrical conductivity of thallium sulfide changes with exposure to infrared light, and this compound is used in photocells.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tl.uses.2",
+      "subject": {
+        "entity": "element:Tl",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Thallium oxide has been used to make glasses with a high index of refraction.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Thallium oxide has been used to produce glasses with a high index of refraction",
+      "evidence": "Thallium oxide has been used to produce glasses with a high index of refraction",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tl.uses.3",
+      "subject": {
+        "entity": "element:Tl",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Thallium, used together with sulfur or selenium and arsenic, forms glass that melts at a low temperature.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Thallium, used in conjunction with sulfur or selenium and arsenic, forms low melting glass.",
+      "evidence": "Thallium, used in conjunction with sulfur or selenium and arsenic, forms low melting glass.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

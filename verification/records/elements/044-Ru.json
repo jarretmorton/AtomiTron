@@ -1095,6 +1095,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Ru.electronConfiguration"
+    },
+    {
+      "id": "Ru.discovery.story.0",
+      "subject": {
+        "entity": "element:Ru",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name ruthenium comes from the Latin word ruthenia, the old name for Russia.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin ruthenia for the old name of Russia.",
+      "evidence": "The name derives from the Latin ruthenia for the old name of Russia.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ru.discovery.story.1",
+      "subject": {
+        "entity": "element:Ru",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Russian chemist Karl Karlovich Klaus discovered ruthenium in 1844 while analyzing the residue of a sample of platinum ore.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Ruthenium was discovered by Karl Karlovich Klaus, a Russian chemist, in 1844 while analyzing the residue of a sample of platinum ore",
+      "evidence": "Ruthenium was discovered by Karl Karlovich Klaus, a Russian chemist, in 1844 while analyzing the residue of a sample of platinum ore",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ru.discovery.story.2",
+      "subject": {
+        "entity": "element:Ru",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Osann thought he had found new metals in his sample, which he called pluranium, ruthenium and polinium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Osann thought that he had found three new metals in the sample, pluranium, ruthenium, and polinium.",
+      "evidence": "Osann thought that he had found three new metals in the sample, pluranium, ruthenium, and polinium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ru.uses.0",
+      "subject": {
+        "entity": "element:Ru",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Ruthenium is mainly used as an alloying agent.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Ruthenium is primarily used as an alloying agent.",
+      "evidence": "Ruthenium is primarily used as an alloying agent.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ru.uses.1",
+      "subject": {
+        "entity": "element:Ru",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Ruthenium is added to platinum and palladium to make them stronger.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Small amounts of ruthenium are added to platinum and palladium to strengthen them.",
+      "evidence": "Small amounts of ruthenium are added to platinum and palladium to strengthen them.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ru.uses.2",
+      "subject": {
+        "entity": "element:Ru",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Alloys of ruthenium with platinum and palladium are used in jewelry and in electrical contacts that must resist wear.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "These alloys are used in jewelry and in electrical contacts that must resist wear.",
+      "evidence": "These alloys are used in jewelry and in electrical contacts that must resist wear.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ru.uses.3",
+      "subject": {
+        "entity": "element:Ru",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Adding ruthenium to titanium makes titanium more resistant to corrosion.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Adding 0.1% ruthenium to titanium makes titanium 100 times more resistant to corrosion.",
+      "evidence": "Adding 0.1% ruthenium to titanium makes titanium 100 times more resistant to corrosion.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

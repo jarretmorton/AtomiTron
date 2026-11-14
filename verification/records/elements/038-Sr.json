@@ -808,6 +808,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from Sr.electronConfiguration, Sr.group"
+    },
+    {
+      "id": "Sr.discovery.story.0",
+      "subject": {
+        "entity": "element:Sr",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Strontium is named after Strontian, a town in Scotland.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/38#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from Strontian, a town in Scotland.",
+      "evidence": "The name derives from Strontian, a town in Scotland.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sr.discovery.story.1",
+      "subject": {
+        "entity": "element:Sr",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Strontium was first isolated by the English chemist Humphry Davy in 1808.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/38#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was first isolated by the English chemist Humphry Davy in 1808.",
+      "evidence": "It was first isolated by the English chemist Humphry Davy in 1808.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sr.discovery.story.2",
+      "subject": {
+        "entity": "element:Sr",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "In 1790, Adair Crawford recognized a new mineral, strontianite, as different from other barium minerals.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/38#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Adair Crawford recognized a new mineral (strontianite) as differing from other barium minerals in 1790.",
+      "evidence": "Adair Crawford recognized a new mineral (strontianite) as differing from other barium minerals in 1790.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sr.uses.0",
+      "subject": {
+        "entity": "element:Sr",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Strontium is used in making color television picture tubes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/38#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Most of the strontium produced today is used in the manufacture of color television picture tubes.",
+      "evidence": "Most of the strontium produced today is used in the manufacture of color television picture tubes.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sr.uses.1",
+      "subject": {
+        "entity": "element:Sr",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Strontium is combined with iron to make magnets.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/38#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "is combined with iron to make magnets",
+      "evidence": "is combined with iron to make magnets",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sr.uses.2",
+      "subject": {
+        "entity": "element:Sr",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Strontium carbonate, a strontium compound, is used to make certain kinds of glass.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/38#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Strontium carbonate is also used to make certain kinds of glass",
+      "evidence": "Strontium carbonate is also used to make certain kinds of glass",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sr.uses.3",
+      "subject": {
+        "entity": "element:Sr",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Strontium has found use in refining zinc.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/38#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "strontium has found use in producing ferrite magnets and in refining zinc",
+      "evidence": "strontium has found use in producing ferrite magnets and in refining zinc",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

@@ -502,6 +502,138 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Tm.electronConfiguration"
+    },
+    {
+      "id": "Tm.discovery.story.0",
+      "subject": {
+        "entity": "element:Tm",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Thulium is named after Thule, the earliest name for Scandinavia.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/69#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Named after Thule, the earliest name for Scandinavia.",
+      "evidence": "Named after Thule, the earliest name for Scandinavia.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tm.discovery.story.1",
+      "subject": {
+        "entity": "element:Tm",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Thulium was discovered by the Swedish chemist Per Theodor Cleve in 1879.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/69#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Thulium was discovered by Per Theodor Cleve, a Swedish chemist, in 1879.",
+      "evidence": "Thulium was discovered by Per Theodor Cleve, a Swedish chemist, in 1879.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tm.discovery.story.2",
+      "subject": {
+        "entity": "element:Tm",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Thulium was first isolated by the American chemist Charles James in 1911.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/69#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Thulium was first isolated by the American chemist Charles James in 1911.",
+      "evidence": "Thulium was first isolated by the American chemist Charles James in 1911.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tm.uses.0",
+      "subject": {
+        "entity": "element:Tm",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "One of thulium's isotopes could be used as a radiation source for portable X-ray machines.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/69#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "although one of its isotopes, thulium-169, could be used as a radiation source for portable X-ray machines.",
+      "evidence": "although one of its isotopes, thulium-169, could be used as a radiation source for portable X-ray machines.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tm.uses.1",
+      "subject": {
+        "entity": "element:Tm",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Natural thulium has possible use in ferrites, which are ceramic magnetic materials used in microwave equipment.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/69#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Natural thulium also has possible use in ferrites (ceramic magnetic materials) used in microwave equipment",
+      "evidence": "Natural thulium also has possible use in ferrites (ceramic magnetic materials) used in microwave equipment",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tm.uses.2",
+      "subject": {
+        "entity": "element:Tm",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Natural thulium can be used for doping fiber lasers.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/69#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Natural thulium also has possible use in ferrites (ceramic magnetic materials) used in microwave equipment, and can be used for doping fiber lasers.",
+      "evidence": "Natural thulium also has possible use in ferrites (ceramic magnetic materials) used in microwave equipment, and can be used for doping fiber lasers.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

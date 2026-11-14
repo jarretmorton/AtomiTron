@@ -296,7 +296,68 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Einsteinium currently has no uses outside of basic scientific research.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/99#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Es.uses.0"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Einsteinium was discovered in 1952 by a team of scientists led by Albert Ghiorso.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/99#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Es.discovery.story.0"
+            }
+          },
+          {
+            "value": "Einsteinium was named after Albert Einstein.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/99#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Es.discovery.story.1"
+            }
+          }
+        ],
+        "year": {
+          "value": 1952,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/99#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Es.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

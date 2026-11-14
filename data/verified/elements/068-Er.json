@@ -585,7 +585,96 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Erbium is added to fiber optic cables, where it is used as a signal amplifier.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/68#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Er.uses.0"
+          }
+        },
+        {
+          "value": "Erbia, a pink compound of erbium, is used to color glass and glazes.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/68#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Er.uses.1"
+          }
+        },
+        {
+          "value": "Erbium is alloyed with vanadium to make it softer and easier to shape.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/68#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Er.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Erbium's name comes from the Swedish town of Ytterby, where the ore gadolinite, in which erbium was found, was first mined.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/68#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Er.discovery.story.0"
+            }
+          },
+          {
+            "value": "Erbium was discovered in 1843 by Carl-Gustav Mosander, a Swedish surgeon and chemist, in a sample of yttrium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/68#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Er.discovery.story.1"
+            }
+          },
+          {
+            "value": "Scientists soon confused the substances erbia and terbia, and by 1877 they had reversed their names.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/68#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Er.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

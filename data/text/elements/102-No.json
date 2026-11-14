@@ -1,0 +1,155 @@
+{
+  "element": "element:No",
+  "discovery": {
+    "story": [
+      {
+        "value": "Nobelium is named after Alfred Nobel.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/102#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "No.discovery.story.0"
+        }
+      },
+      {
+        "value": "In April 1958, A. Ghiorso, T. Sikkeland, J.R. Walton and G.T. Seaborg clearly discovered and identified nobelium at Berkeley.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/102#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "No.discovery.story.1"
+        }
+      },
+      {
+        "value": "Credit for discovering nobelium was given to scientists at the Lawrence Radiation Laboratory, who decided to keep the name nobelium.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/102#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "No.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Only tiny amounts of nobelium have ever been made, so it currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/102#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "No.uses.0"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "No.discovery.story.0",
+      "subject": {
+        "entity": "element:No",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Nobelium is named after Alfred Nobel.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/102#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Named after Alfred Nobel, inventor of dynamite.",
+      "evidence": "Named after Alfred Nobel, inventor of dynamite.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "No.discovery.story.1",
+      "subject": {
+        "entity": "element:No",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "In April 1958, A. Ghiorso, T. Sikkeland, J.R. Walton and G.T. Seaborg clearly discovered and identified nobelium at Berkeley.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/102#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Nobelium was unambiguously discovered and identified in April 1958 at Berkeley by A. Ghiorso, T. Sikkeland, J.R. Walton, and G.T. Seaborg",
+      "evidence": "Nobelium was unambiguously discovered and identified in April 1958 at Berkeley by A. Ghiorso, T. Sikkeland, J.R. Walton, and G.T. Seaborg",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "No.discovery.story.2",
+      "subject": {
+        "entity": "element:No",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Credit for discovering nobelium was given to scientists at the Lawrence Radiation Laboratory, who decided to keep the name nobelium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/102#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Credit for discovering nobelium was eventually given to the scientists working at Lawrence Radiation Laboratory, who decided to keep the name nobelium.",
+      "evidence": "Credit for discovering nobelium was eventually given to the scientists working at Lawrence Radiation Laboratory, who decided to keep the name nobelium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "No.uses.0",
+      "subject": {
+        "entity": "element:No",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Only tiny amounts of nobelium have ever been made, so it currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/102#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Since only tiny amounts of nobelium have ever been produced, there are currently no uses for it outside of basic scientific research.",
+      "evidence": "Since only tiny amounts of nobelium have ever been produced, there are currently no uses for it outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

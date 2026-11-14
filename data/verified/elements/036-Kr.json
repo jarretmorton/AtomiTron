@@ -632,7 +632,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Krypton is used in some types of photographic flashes for high-speed photography.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Kr.uses.0"
+          }
+        },
+        {
+          "value": "Some fluorescent light bulbs are filled with a mixture of krypton and argon gases.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Kr.uses.1"
+          }
+        },
+        {
+          "value": "Krypton gas is combined with other gases to make glowing signs that give off a greenish-yellow light.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Kr.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Krypton's name comes from the Greek word kryptos, meaning hidden.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Kr.discovery.story.0"
+            }
+          },
+          {
+            "value": "Krypton was discovered in 1898 by Scottish chemist William Ramsay and English chemist Morris Travers while they were studying liquefied air.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Kr.discovery.story.1"
+            }
+          },
+          {
+            "value": "Ramsay and Travers found krypton in what was left after liquid air had nearly boiled away.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Kr.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1898,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/36#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Kr.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

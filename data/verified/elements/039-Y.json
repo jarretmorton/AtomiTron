@@ -308,7 +308,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Yttrium compounds are combined with europium to make the red phosphor used in color televisions.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Y.uses.0"
+          }
+        },
+        {
+          "value": "Garnets made from yttrium and iron are used as microwave filters in microwave communications equipment.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Y.uses.1"
+          }
+        },
+        {
+          "value": "Garnets made from yttrium and aluminum are used in jewelry as simulated diamond.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Y.uses.2"
+          }
+        },
+        {
+          "value": "Yttrium can be used in laser systems.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Y.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Yttrium's name comes from Ytterby, a village in Sweden where the mineral gadolinite was found.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Y.discovery.story.0"
+            }
+          },
+          {
+            "value": "Yttrium was discovered by Johan Gadolin, a Finnish chemist.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Y.discovery.story.1"
+            }
+          },
+          {
+            "value": "Gadolin first called the element ytterbium, after the mineral ytterbite.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/39#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Y.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

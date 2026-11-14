@@ -1,0 +1,263 @@
+{
+  "element": "element:Sn",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name tin comes from the Anglo-Saxon word tin, and its origin is unknown.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Sn.discovery.story.0"
+        }
+      },
+      {
+        "value": "The symbol Sn comes from the Latin word stannum, which was used for alloys containing lead.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Sn.discovery.story.1"
+        }
+      },
+      {
+        "value": "Tin was known in prehistoric times.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Sn.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": "Ancient",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Sn.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Tin resists corrosion and is used as a protective coating on other metals.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Sn.uses.0"
+      }
+    },
+    {
+      "value": "Tin and lead are mixed together to make pewter and solder.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Sn.uses.1"
+      }
+    },
+    {
+      "value": "A tin compound called stannous fluoride is used in some types of toothpaste.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Sn.uses.2"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Sn.discovery.year",
+      "subject": {
+        "entity": "element:Sn",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": "Ancient",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Known to the ancients.",
+      "evidence": "Known to the ancients.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sn.discovery.story.0",
+      "subject": {
+        "entity": "element:Sn",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name tin comes from the Anglo-Saxon word tin, and its origin is unknown.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Anglo-Saxon tin of unknown origin.",
+      "evidence": "The name derives from the Anglo-Saxon tin of unknown origin.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sn.discovery.story.1",
+      "subject": {
+        "entity": "element:Sn",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The symbol Sn comes from the Latin word stannum, which was used for alloys containing lead.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The symbol Sn is derived from Latin stannum for alloys containing lead.",
+      "evidence": "The symbol Sn is derived from Latin stannum for alloys containing lead.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sn.discovery.story.2",
+      "subject": {
+        "entity": "element:Sn",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Tin was known in prehistoric times.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The element was known in prehistoric times.",
+      "evidence": "The element was known in prehistoric times.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sn.uses.0",
+      "subject": {
+        "entity": "element:Sn",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Tin resists corrosion and is used as a protective coating on other metals.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Tin resists corrosion and is used as a protective coating on other metals.",
+      "evidence": "Tin resists corrosion and is used as a protective coating on other metals.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sn.uses.1",
+      "subject": {
+        "entity": "element:Sn",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Tin and lead are mixed together to make pewter and solder.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Tin and lead are alloyed to make pewter and solder.",
+      "evidence": "Tin and lead are alloyed to make pewter and solder.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sn.uses.2",
+      "subject": {
+        "entity": "element:Sn",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "A tin compound called stannous fluoride is used in some types of toothpaste.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/50#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Stannous fluoride (SnF2) is used in some types of toothpaste.",
+      "evidence": "Stannous fluoride (SnF2) is used in some types of toothpaste.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

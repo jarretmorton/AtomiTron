@@ -1152,6 +1152,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Cd.electronConfiguration"
+    },
+    {
+      "id": "Cd.discovery.year",
+      "subject": {
+        "entity": "element:Cd",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1817,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The element was discovered and first isolated by German physician Friedrich Stromeyer in 1817.",
+      "evidence": "The element was discovered and first isolated by German physician Friedrich Stromeyer in 1817.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cd.discovery.story.0",
+      "subject": {
+        "entity": "element:Cd",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Cadmium was discovered and first isolated by the German physician Friedrich Stromeyer in 1817.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The element was discovered and first isolated by German physician Friedrich Stromeyer in 1817.",
+      "evidence": "The element was discovered and first isolated by German physician Friedrich Stromeyer in 1817.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cd.discovery.story.1",
+      "subject": {
+        "entity": "element:Cd",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name comes from the Latin word cadmia and the Greek word kadmeia, the ancient name for calamine, which is zinc carbonate.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Latin word cadmia, Greek kadmeia - the ancient name for calamine, zinc carbonate.",
+      "evidence": "From the Latin word cadmia, Greek kadmeia - the ancient name for calamine, zinc carbonate.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cd.discovery.story.2",
+      "subject": {
+        "entity": "element:Cd",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "While studying calamine, Strohmeyer noticed that some samples glowed with a yellow color when heated, while other samples did not.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "When heated, Strohmeyer noticed that some samples of calamine glowed with a yellow color while other samples did not.",
+      "evidence": "When heated, Strohmeyer noticed that some samples of calamine glowed with a yellow color while other samples did not.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cd.uses.0",
+      "subject": {
+        "entity": "element:Cd",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Cadmium is used in rechargeable nickel-cadmium batteries.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Cadmium is also used in rechargeable nickel-cadmium batteries.",
+      "evidence": "Cadmium is also used in rechargeable nickel-cadmium batteries.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cd.uses.1",
+      "subject": {
+        "entity": "element:Cd",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Cadmium can be electroplated onto other materials to protect them from corrosion.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Like zinc, cadmium can be electroplated to other materials to protect them from corrosion.",
+      "evidence": "Like zinc, cadmium can be electroplated to other materials to protect them from corrosion.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cd.uses.2",
+      "subject": {
+        "entity": "element:Cd",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Cadmium sulfide, a cadmium compound, is a yellow powder that is used as a pigment.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Cadmium sulfide (CdS), another cadmium compound, is a yellow powder that is used as a pigment.",
+      "evidence": "Cadmium sulfide (CdS), another cadmium compound, is a yellow powder that is used as a pigment.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cd.uses.3",
+      "subject": {
+        "entity": "element:Cd",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Cadmium compounds are used in the phosphors of black and white televisions and in blue and green phosphors for color TV tubes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Cadmium compounds are used in black and white television phosphors and in blue and green phosphors for color TV tubes.",
+      "evidence": "Cadmium compounds are used in black and white television phosphors and in blue and green phosphors for color TV tubes.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

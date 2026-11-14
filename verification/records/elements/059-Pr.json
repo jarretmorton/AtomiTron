@@ -440,6 +440,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Pr.electronConfiguration"
+    },
+    {
+      "id": "Pr.discovery.year",
+      "subject": {
+        "entity": "element:Pr",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1885,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Praseodymium was discovered by Carl F. Auer von Welsbach, an Austrian chemist, in 1885.",
+      "evidence": "Praseodymium was discovered by Carl F. Auer von Welsbach, an Austrian chemist, in 1885.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pr.discovery.story.0",
+      "subject": {
+        "entity": "element:Pr",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name praseodymium comes from the Greek words prasios, meaning green, and didymos, meaning twin.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek prasios for \"green\" and didymos for \"twin\"",
+      "evidence": "The name derives from the Greek prasios for \"green\" and didymos for \"twin\"",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pr.discovery.story.1",
+      "subject": {
+        "entity": "element:Pr",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Praseodymium was discovered by Carl F. Auer von Welsbach, an Austrian chemist, in 1885.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Praseodymium was discovered by Carl F. Auer von Welsbach, an Austrian chemist, in 1885.",
+      "evidence": "Praseodymium was discovered by Carl F. Auer von Welsbach, an Austrian chemist, in 1885.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pr.discovery.story.2",
+      "subject": {
+        "entity": "element:Pr",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Auer von Welsbach separated praseodymium, as well as the element neodymium, from a material known as didymium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "He separated praseodymium, as well as the element neodymium, from a material known as didymium.",
+      "evidence": "He separated praseodymium, as well as the element neodymium, from a material known as didymium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pr.uses.0",
+      "subject": {
+        "entity": "element:Pr",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Praseodymium is part of misch metal, a material that is used to make flints for lighters.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Praseodymium also makes up about 5% of Misch metal, a material that is used to make flints for lighters.",
+      "evidence": "Praseodymium also makes up about 5% of Misch metal, a material that is used to make flints for lighters.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pr.uses.1",
+      "subject": {
+        "entity": "element:Pr",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Praseodymium forms the core of carbon arc lights, which the motion picture industry uses for studio lighting and projector lights.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Praseodymium forms the core of carbon arc lights which are used in the motion picture industry for studio lighting and projector lights.",
+      "evidence": "Praseodymium forms the core of carbon arc lights which are used in the motion picture industry for studio lighting and projector lights.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pr.uses.2",
+      "subject": {
+        "entity": "element:Pr",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Praseodymium salts are used to give glasses and enamels a yellow color.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Praseodymium salts are used to give glasses and enamels a yellow color.",
+      "evidence": "Praseodymium salts are used to give glasses and enamels a yellow color.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pr.uses.3",
+      "subject": {
+        "entity": "element:Pr",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Praseodymium is part of didymium glass, which is used to make certain types of welder's and glass blower's goggles.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Praseodymium is also a component of didymium glass, which is used to make certain types of welder's and glass blower's goggles.",
+      "evidence": "Praseodymium is also a component of didymium glass, which is used to make certain types of welder's and glass blower's goggles.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

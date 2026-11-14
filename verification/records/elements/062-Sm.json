@@ -992,6 +992,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Sm.electronConfiguration"
+    },
+    {
+      "id": "Sm.discovery.story.0",
+      "subject": {
+        "entity": "element:Sm",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Samarium is named after the mineral samarskite, which was named for Colonel Samarski, a Russian mine official.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the mineral samarskite, in which it was found and that had been named for Colonel Samarski, a Russian mine official.",
+      "evidence": "The name derives from the mineral samarskite, in which it was found and that had been named for Colonel Samarski, a Russian mine official.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sm.discovery.story.1",
+      "subject": {
+        "entity": "element:Sm",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Samarium was originally discovered in 1878 by the Swiss chemist Marc Delafontaine, who called it decipium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Samarium was originally discovered in 1878 by the Swiss chemist Marc Delafontaine, who called it decipium.",
+      "evidence": "Samarium was originally discovered in 1878 by the Swiss chemist Marc Delafontaine, who called it decipium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sm.discovery.story.2",
+      "subject": {
+        "entity": "element:Sm",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The French chemist Paul-Émile Lecoq de Boisbaudran was the first to isolate samarium from the mineral samarskite.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Paul-Émile Lecoq de Boisbaudran, a French chemist, was the first to isolate samarium from the mineral samarskite",
+      "evidence": "Paul-Émile Lecoq de Boisbaudran, a French chemist, was the first to isolate samarium from the mineral samarskite",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sm.uses.0",
+      "subject": {
+        "entity": "element:Sm",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Samarium, along with other rare earth elements, is used in carbon-arc lighting for the motion picture industry.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Samarium, along with other rare earths, is used for carbon-arc lighting for the motion picture industry.",
+      "evidence": "Samarium, along with other rare earths, is used for carbon-arc lighting for the motion picture industry.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sm.uses.1",
+      "subject": {
+        "entity": "element:Sm",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Samarium forms a compound with cobalt that is a powerful permanent magnet.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Samarium forms a compound with cobalt (SmCo5) which is a powerful permanent magnet",
+      "evidence": "Samarium forms a compound with cobalt (SmCo5) which is a powerful permanent magnet",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sm.uses.2",
+      "subject": {
+        "entity": "element:Sm",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Samarium oxide has been used in optical glass to absorb infrared.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Samarium oxide has been used in optical glass to absorb the infrared.",
+      "evidence": "Samarium oxide has been used in optical glass to absorb the infrared.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sm.uses.3",
+      "subject": {
+        "entity": "element:Sm",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Samarium is part of misch metal, a material used to make flints for lighters.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Samarium also makes up about 1% of Misch metal, a material that is used to make flints for lighters.",
+      "evidence": "Samarium also makes up about 1% of Misch metal, a material that is used to make flints for lighters.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

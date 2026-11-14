@@ -1,0 +1,155 @@
+{
+  "element": "element:Rg",
+  "discovery": {
+    "story": [
+      {
+        "value": "Roentgenium was first produced in late 1994 by a team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/111#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Rg.discovery.story.0"
+        }
+      },
+      {
+        "value": "Roentgenium was first produced by Peter Armbruster, Gottfried Münzenber and their team.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/111#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Rg.discovery.story.1"
+        }
+      }
+    ],
+    "year": {
+      "value": 1994,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/111#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Rg.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Roentgenium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/111#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Rg.uses.0"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Rg.discovery.year",
+      "subject": {
+        "entity": "element:Rg",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1994,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/111#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Discovered by Gesellschaft Schwerionenforschung (GSI) in Darmstadt, in 1994.",
+      "evidence": "Discovered by Gesellschaft Schwerionenforschung (GSI) in Darmstadt, in 1994.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rg.discovery.story.0",
+      "subject": {
+        "entity": "element:Rg",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Roentgenium was first produced in late 1994 by a team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/111#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in late 1994",
+      "evidence": "their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in late 1994",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rg.discovery.story.1",
+      "subject": {
+        "entity": "element:Rg",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Roentgenium was first produced by Peter Armbruster, Gottfried Münzenber and their team.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/111#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Roentgenium was first produced by Peter Armbruster, Gottfried Münzenber and their team",
+      "evidence": "Roentgenium was first produced by Peter Armbruster, Gottfried Münzenber and their team",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rg.uses.0",
+      "subject": {
+        "entity": "element:Rg",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Roentgenium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/111#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it currently has no uses outside of basic scientific research.",
+      "evidence": "it currently has no uses outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

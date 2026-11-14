@@ -615,7 +615,96 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Osmium is mainly used to make very hard alloys.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/76#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Os.uses.0"
+          }
+        },
+        {
+          "value": "Osmium alloys are found in items such as ball point pen tips, fountain pen tips and record player needles.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/76#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Os.uses.1"
+          }
+        },
+        {
+          "value": "Osmium is combined with other platinum group metals to make very hard alloys for items such as fountain pen tips and electrical contacts.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/76#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Os.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name osmium comes from the Greek word osme, meaning \"smell\", because of the sharp odor of its volatile oxide.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/76#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Os.discovery.story.0"
+            }
+          },
+          {
+            "value": "Osmium and iridium were discovered at the same time by the British chemist Smithson Tennant in 1803.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/76#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Os.discovery.story.1"
+            }
+          }
+        ],
+        "year": {
+          "value": 1803,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/76#section=History",
+            "retrieved": "2026-11-14",
+            "via": "IUPAC CIAAW"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Os.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

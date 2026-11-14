@@ -610,6 +610,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from Sb.electronConfiguration, Sb.group"
+    },
+    {
+      "id": "Sb.discovery.year",
+      "subject": {
+        "entity": "element:Sb",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": "Ancient",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/51#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Antimony has been known since ancient times.",
+      "evidence": "Antimony has been known since ancient times.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sb.discovery.story.0",
+      "subject": {
+        "entity": "element:Sb",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name antimony comes from the Greek words anti and monos, meaning \"not alone\" or \"not one\", because it was found in many compounds.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/51#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek, anti + monos for \"not alone\" or \"not one\" because it was found in many compounds.",
+      "evidence": "The name derives from the Greek, anti + monos for \"not alone\" or \"not one\" because it was found in many compounds.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sb.discovery.story.1",
+      "subject": {
+        "entity": "element:Sb",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The symbol Sb comes from stibium, from the Greek stibi meaning \"mark\", because it was used for blackening eyebrows and eyelashes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/51#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The symbol Sb comes from stibium, which is derived from the Greek stibi for \"mark\" because it was used for blackening eyebrows and eyelashes.",
+      "evidence": "The symbol Sb comes from stibium, which is derived from the Greek stibi for \"mark\" because it was used for blackening eyebrows and eyelashes.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sb.discovery.story.2",
+      "subject": {
+        "entity": "element:Sb",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Nicolas Lémery, a French chemist, was the first person to scientifically study antimony and its compounds.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/51#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Nicolas Lémery, a French chemist, was the first person to scientifically study antimony and its compounds.",
+      "evidence": "Nicolas Lémery, a French chemist, was the first person to scientifically study antimony and its compounds.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sb.uses.0",
+      "subject": {
+        "entity": "element:Sb",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Very pure antimony is used to make some semiconductor devices, such as diodes and infrared detectors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/51#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Very pure antimony is used to make certain types of semiconductor devices, such as diodes and infrared detectors.",
+      "evidence": "Very pure antimony is used to make certain types of semiconductor devices, such as diodes and infrared detectors.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sb.uses.1",
+      "subject": {
+        "entity": "element:Sb",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Antimony is alloyed with lead to make the lead more durable.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/51#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Antimony is alloyed with lead to increase lead's durability.",
+      "evidence": "Antimony is alloyed with lead to increase lead's durability.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sb.uses.2",
+      "subject": {
+        "entity": "element:Sb",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Antimony alloys are used in products including batteries and cable sheathing.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/51#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Antimony alloys are also used in batteries, low friction metals, type metal and cable sheathing, among other products.",
+      "evidence": "Antimony alloys are also used in batteries, low friction metals, type metal and cable sheathing, among other products.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sb.uses.3",
+      "subject": {
+        "entity": "element:Sb",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Antimony compounds are used to make products such as paints, glass and pottery.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/51#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Antimony compounds are used to make flame-proofing materials, paints, ceramic enamels, glass and pottery.",
+      "evidence": "Antimony compounds are used to make flame-proofing materials, paints, ceramic enamels, glass and pottery.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

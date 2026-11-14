@@ -346,6 +346,28 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Ts.electronConfiguration"
+    },
+    {
+      "id": "Ts.uses.0",
+      "subject": {
+        "entity": "element:Ts",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Tennessine currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/117#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it currently has no uses outside of basic scientific research.",
+      "evidence": "it currently has no uses outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

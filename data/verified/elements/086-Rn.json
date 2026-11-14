@@ -330,7 +330,82 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Hospitals sometimes use radon to treat some forms of cancer.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Rn.uses.0"
+          }
+        },
+        {
+          "value": "A few hospitals still produce radon for therapeutic use.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Rn.uses.1"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Radon was discovered in 1900 by Friedrich Ernst Dorn, a German chemist, while he was studying radium's decay chain.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Rn.discovery.story.0"
+            }
+          },
+          {
+            "value": "The name radon was derived from radium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Rn.discovery.story.1"
+            }
+          }
+        ],
+        "year": {
+          "value": 1900,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Rn.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

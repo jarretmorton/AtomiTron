@@ -330,7 +330,68 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Astatine currently has no uses outside of basic scientific research.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "At.uses.0"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name astatine comes from the Greek word astatos, which means unstable.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "At.discovery.story.0"
+            }
+          },
+          {
+            "value": "Astatine was first made in 1940 by D.R. Corson, K.R. MacKenzie and E. Segre at the University of California.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "At.discovery.story.1"
+            }
+          }
+        ],
+        "year": {
+          "value": 1940,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "At.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

@@ -1,0 +1,299 @@
+{
+  "element": "element:Si",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name silicon comes from the Latin words silex and silicis, which mean flint.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Si.discovery.story.0"
+        }
+      },
+      {
+        "value": "Silicon was discovered by the Swedish chemist Jöns Jacob Berzelius in 1824.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Si.discovery.story.1"
+        }
+      },
+      {
+        "value": "Crystalline silicon was first prepared by the French chemist Henri Sainte-Claire Deville in 1854.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Si.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1824,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Si.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Silicon crystals are used to make electronic devices such as transistors, solar cells and microchips.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Si.uses.0"
+      }
+    },
+    {
+      "value": "Silicon dioxide is used to make glass and bricks.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Si.uses.1"
+      }
+    },
+    {
+      "value": "Silica gel, a form of silicon dioxide, absorbs moisture and is used as a desiccant, which keeps things dry.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Si.uses.2"
+      }
+    },
+    {
+      "value": "Silicone, a material that contains silicon, is used for things such as lubricants, electrical insulators and medical implants.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Si.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Si.discovery.year",
+      "subject": {
+        "entity": "element:Si",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1824,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Silicon was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1824",
+      "evidence": "Silicon was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1824",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Si.discovery.story.0",
+      "subject": {
+        "entity": "element:Si",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name silicon comes from the Latin words silex and silicis, which mean flint.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin silex and silicis for \"flint\".",
+      "evidence": "The name derives from the Latin silex and silicis for \"flint\".",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Si.discovery.story.1",
+      "subject": {
+        "entity": "element:Si",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Silicon was discovered by the Swedish chemist Jöns Jacob Berzelius in 1824.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Silicon was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1824",
+      "evidence": "Silicon was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1824",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Si.discovery.story.2",
+      "subject": {
+        "entity": "element:Si",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Crystalline silicon was first prepared by the French chemist Henri Sainte-Claire Deville in 1854.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Crystalline silicon was first prepared by the French chemist Henri Sainte-Claire Deville in 1854.",
+      "evidence": "Crystalline silicon was first prepared by the French chemist Henri Sainte-Claire Deville in 1854.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Si.uses.0",
+      "subject": {
+        "entity": "element:Si",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Silicon crystals are used to make electronic devices such as transistors, solar cells and microchips.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "are used in the manufacture of solid-state electronic devices, such as transistors, solar cells, rectifiers and microchips",
+      "evidence": "are used in the manufacture of solid-state electronic devices, such as transistors, solar cells, rectifiers and microchips",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Si.uses.1",
+      "subject": {
+        "entity": "element:Si",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Silicon dioxide is used to make glass and bricks.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Silicon dioxide is extensively used in the manufacture of glass and bricks.",
+      "evidence": "Silicon dioxide is extensively used in the manufacture of glass and bricks.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Si.uses.2",
+      "subject": {
+        "entity": "element:Si",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Silica gel, a form of silicon dioxide, absorbs moisture and is used as a desiccant, which keeps things dry.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Silica gel, a colloidal form of silicon dioxide, easily absorbs moisture and is used as a desiccant.",
+      "evidence": "Silica gel, a colloidal form of silicon dioxide, easily absorbs moisture and is used as a desiccant.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Si.uses.3",
+      "subject": {
+        "entity": "element:Si",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Silicone, a material that contains silicon, is used for things such as lubricants, electrical insulators and medical implants.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/14#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "silicone, a class of material that is used for such things as lubricants, polishing agents, electrical insulators and medical implants",
+      "evidence": "silicone, a class of material that is used for such things as lubricants, polishing agents, electrical insulators and medical implants",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

@@ -1293,6 +1293,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from Xe.electronConfiguration, Xe.group"
+    },
+    {
+      "id": "Xe.discovery.year",
+      "subject": {
+        "entity": "element:Xe",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1898,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/54#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Discovered in 1898 by Ramsay and Travers in residue left after evaporating liquid air.",
+      "evidence": "Discovered in 1898 by Ramsay and Travers in residue left after evaporating liquid air.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Xe.discovery.story.0",
+      "subject": {
+        "entity": "element:Xe",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name xenon comes from the Greek word xenos, meaning \"the stranger\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/54#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek xenos for \"the stranger\".",
+      "evidence": "The name derives from the Greek xenos for \"the stranger\".",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Xe.discovery.story.1",
+      "subject": {
+        "entity": "element:Xe",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Xenon was discovered by the Scottish chemist William Ramsay and the English chemist Morris William Travers.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/54#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was discovered by the Scottish chemist William Ramsay and the English chemist Morris William Travers",
+      "evidence": "It was discovered by the Scottish chemist William Ramsay and the English chemist Morris William Travers",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Xe.discovery.story.2",
+      "subject": {
+        "entity": "element:Xe",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Xenon was discovered through the study of liquefied air.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/54#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Like krypton and neon, xenon was discovered through the study of liquefied air.",
+      "evidence": "Like krypton and neon, xenon was discovered through the study of liquefied air.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Xe.uses.0",
+      "subject": {
+        "entity": "element:Xe",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Xenon is widely used in strobe lights.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/54#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Xenon produces a brilliant white flash of light when it is excited electrically and is widely used in strobe lights.",
+      "evidence": "Xenon produces a brilliant white flash of light when it is excited electrically and is widely used in strobe lights.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Xe.uses.1",
+      "subject": {
+        "entity": "element:Xe",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "The light from xenon lamps is used to kill bacteria.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/54#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "The light emitted from xenon lamps is also used to kill bacteria",
+      "evidence": "The light emitted from xenon lamps is also used to kill bacteria",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Xe.uses.2",
+      "subject": {
+        "entity": "element:Xe",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Xenon ions were used as fuel in an experimental ion engine aboard a space probe.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/54#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "xenon ions were used as a fuel in an experimental ion engine aboard the space probe Deep Space 1.",
+      "evidence": "xenon ions were used as a fuel in an experimental ion engine aboard the space probe Deep Space 1.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Xe.uses.3",
+      "subject": {
+        "entity": "element:Xe",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Xenon gas is used in making electron tubes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/54#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "The gas is used in making electron tubes",
+      "evidence": "The gas is used in making electron tubes",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

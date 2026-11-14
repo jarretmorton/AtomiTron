@@ -1013,6 +1013,138 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Os.electronConfiguration"
+    },
+    {
+      "id": "Os.discovery.year",
+      "subject": {
+        "entity": "element:Os",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1803,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/76#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "discovered simultaneously in a crude platinum ore by the English chemist Smithson Tennant in 1803",
+      "evidence": "discovered simultaneously in a crude platinum ore by the English chemist Smithson Tennant in 1803",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Os.discovery.story.0",
+      "subject": {
+        "entity": "element:Os",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name osmium comes from the Greek word osme, meaning \"smell\", because of the sharp odor of its volatile oxide.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/76#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek osme for \"smell\" because of the sharp odor of its volatile oxide.",
+      "evidence": "The name derives from the Greek osme for \"smell\" because of the sharp odor of its volatile oxide.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Os.discovery.story.1",
+      "subject": {
+        "entity": "element:Os",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Osmium and iridium were discovered at the same time by the British chemist Smithson Tennant in 1803.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/76#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Osmium and iridium were discovered at the same time by the British chemist Smithson Tennant in 1803.",
+      "evidence": "Osmium and iridium were discovered at the same time by the British chemist Smithson Tennant in 1803.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Os.uses.0",
+      "subject": {
+        "entity": "element:Os",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Osmium is mainly used to make very hard alloys.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/76#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "osmium is primarily used to make very hard alloys",
+      "evidence": "osmium is primarily used to make very hard alloys",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Os.uses.1",
+      "subject": {
+        "entity": "element:Os",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Osmium alloys are found in items such as ball point pen tips, fountain pen tips and record player needles.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/76#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Osmium alloys can be found in ball point pen tips, fountain pen tips, record player needles, electrical contacts",
+      "evidence": "Osmium alloys can be found in ball point pen tips, fountain pen tips, record player needles, electrical contacts",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Os.uses.2",
+      "subject": {
+        "entity": "element:Os",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Osmium is combined with other platinum group metals to make very hard alloys for items such as fountain pen tips and electrical contacts.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/76#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "very hard alloys with other metals of the platinum group for fountain pen tips, instrument pivots, phonograph needles, and electrical contacts",
+      "evidence": "very hard alloys with other metals of the platinum group for fountain pen tips, instrument pivots, phonograph needles, and electrical contacts",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

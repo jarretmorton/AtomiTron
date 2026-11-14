@@ -1,0 +1,191 @@
+{
+  "element": "element:Rn",
+  "discovery": {
+    "story": [
+      {
+        "value": "Radon was discovered in 1900 by Friedrich Ernst Dorn, a German chemist, while he was studying radium's decay chain.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Rn.discovery.story.0"
+        }
+      },
+      {
+        "value": "The name radon was derived from radium.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Rn.discovery.story.1"
+        }
+      }
+    ],
+    "year": {
+      "value": 1900,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Rn.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Hospitals sometimes use radon to treat some forms of cancer.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Rn.uses.0"
+      }
+    },
+    {
+      "value": "A few hospitals still produce radon for therapeutic use.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Rn.uses.1"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Rn.discovery.year",
+      "subject": {
+        "entity": "element:Rn",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1900,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Radon was discovered by Friedrich Ernst Dorn, a German chemist, in 1900 while studying radium's decay chain.",
+      "evidence": "Radon was discovered by Friedrich Ernst Dorn, a German chemist, in 1900 while studying radium's decay chain.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rn.discovery.story.0",
+      "subject": {
+        "entity": "element:Rn",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Radon was discovered in 1900 by Friedrich Ernst Dorn, a German chemist, while he was studying radium's decay chain.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Radon was discovered by Friedrich Ernst Dorn, a German chemist, in 1900 while studying radium's decay chain.",
+      "evidence": "Radon was discovered by Friedrich Ernst Dorn, a German chemist, in 1900 while studying radium's decay chain.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rn.discovery.story.1",
+      "subject": {
+        "entity": "element:Rn",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name radon was derived from radium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "The name was derived from radium;",
+      "evidence": "The name was derived from radium;",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rn.uses.0",
+      "subject": {
+        "entity": "element:Rn",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Hospitals sometimes use radon to treat some forms of cancer.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Small amounts of radon are sometimes used by hospitals to treat some forms of cancer.",
+      "evidence": "Small amounts of radon are sometimes used by hospitals to treat some forms of cancer.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rn.uses.1",
+      "subject": {
+        "entity": "element:Rn",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "A few hospitals still produce radon for therapeutic use.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/86#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Radon is still produced for therapeutic use by a few hospitals",
+      "evidence": "Radon is still produced for therapeutic use by a few hospitals",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

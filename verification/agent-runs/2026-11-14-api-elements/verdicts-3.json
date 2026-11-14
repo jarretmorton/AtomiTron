@@ -1,0 +1,2808 @@
+{
+  "claims": {
+    "He.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "The element was discovered by spectroscopy during a solar eclipse in the sun's chromosphere by the French astronomer Pierre-Jules-Cesar Janssen in 1868."
+    },
+    "He.story.0": {
+      "verdict": "supported",
+      "excerpt": "From the Greek word helios, the sun."
+    },
+    "He.story.1": {
+      "verdict": "supported",
+      "excerpt": "Pierre-Jules-César Janssen, a French astronomer, noticed a yellow line in the sun's spectrum while studying a total solar eclipse in 1868."
+    },
+    "He.story.2": {
+      "verdict": "supported",
+      "excerpt": "Lockyer and Frankland suggested the name helium for the new element."
+    },
+    "He.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Helium gas is used to inflate blimps, scientific balloons and party balloons."
+    },
+    "He.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Liquid helium's use in magnetic resonance imaging (MRI) continues to increase as the medical profession accepts and develops new uses for the equipment."
+    },
+    "He.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Helium is combined with oxygen to create a nitrogen free atmosphere for deep sea divers"
+    },
+    "He.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Liquid helium is an important cryogenic material and is used to study superconductivity and to create superconductive magnets."
+    },
+    "Li.story.0": {
+      "verdict": "supported",
+      "excerpt": "From the Greek word lithos, stone."
+    },
+    "Li.story.1": {
+      "verdict": "supported",
+      "excerpt": "Lithium was discovered in the mineral petalite (LiAl(Si2O5)2) by Johann August Arfvedson in 1817."
+    },
+    "Li.uses.0": {
+      "verdict": "supported",
+      "excerpt": "It is used to make special glasses and ceramics"
+    },
+    "Li.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Lithium hydroxide (LiOH) is used to remove carbon dioxide from the atmosphere of spacecraft."
+    },
+    "Li.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Other lithium compounds are used in dry cells and storage batteries."
+    },
+    "Be.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek word beryllos for \"beryl\", a gemstone in which it is found"
+    },
+    "Be.story.1": {
+      "verdict": "supported",
+      "excerpt": "The element was first separated in 1828 by the French chemist Antoine-Alexandre-Brutus Bussy and independently by the German chemist Friedrich Wöhler."
+    },
+    "Be.story.2": {
+      "verdict": "supported",
+      "excerpt": "the element was also known as glucinium from the Greek glykys for \"sweet\", until IUPAC selected the name beryllium in 1949"
+    },
+    "Be.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Beryllium is relatively transparent to X-rays and is used to make windows for X-ray tubes."
+    },
+    "Be.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Beryllium is used as an alloying agent in producing beryllium copper, which is extensively used for springs, electrical contacts, spot-welding electrodes, and non-sparking tools."
+    },
+    "Be.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Other uses include windshield frame, brake discs, support beams, and other structural components of the space shuttle."
+    },
+    "Be.uses.3": {
+      "verdict": "supported",
+      "excerpt": "It is used in gyroscopes, computer parts, and instruments where lightness, stiffness, and dimensional stability are required."
+    },
+    "B.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "it was not isolated until 1808 by the French chemists Louis-Joseph Gay-Lussac and Louis-Jacques Thenard"
+    },
+    "B.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Arabic buraq for \"white\"."
+    },
+    "B.story.1": {
+      "verdict": "supported",
+      "excerpt": "Boron was discovered by Joseph-Louis Gay-Lussac and Louis-Jaques Thénard, French chemists, and independently by Sir Humphry Davy, an English chemist, in 1808."
+    },
+    "B.story.2": {
+      "verdict": "supported",
+      "excerpt": "Although its compounds were known for thousands of years, it was not isolated until 1808"
+    },
+    "B.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Borax is used in laundry products and as a mild antiseptic."
+    },
+    "B.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Boron compounds are also extensively used in the manufacture of borosilicate glasses."
+    },
+    "B.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Large amounts of this compound are used in the manufacture of fiberglass insulation and sodium perborate bleach."
+    },
+    "B.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Boron filaments are used in the aerospace industry because of their high-strength and lightweight."
+    },
+    "F.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin fluere for \"flow\" or \"flux\""
+    },
+    "F.story.1": {
+      "verdict": "supported",
+      "excerpt": "It was discovered in hydrofluoric acid by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1771"
+    },
+    "F.story.2": {
+      "verdict": "supported",
+      "excerpt": "Ferdinand Frederic Henri Moissan, a French chemist, was the first to successfully isolate fluorine in 1886."
+    },
+    "F.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Sodium fluoride (NaF), stannous(II) fluoride (SnF2) and sodium monofluorophosphate (Na2PO3F) are all fluorine compounds added to toothpaste, also to help prevent tooth decay."
+    },
+    "F.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Fluorine is added to city water supplies in the proportion of about one part per million to help prevent tooth decay."
+    },
+    "F.uses.2": {
+      "verdict": "not_supported",
+      "reason": "The passage says 'most of the glass used in light bulbs', and the claim drops 'most', which generalizes to all light-bulb glass."
+    },
+    "F.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Crystals of calcium fluoride (CaF2), also known as fluorite and fluorspar, are used to make lenses to focus infrared light."
+    },
+    "Ne.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Discovered by Ramsay and Travers in 1898."
+    },
+    "Ne.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek neos for \"new\"."
+    },
+    "Ne.story.1": {
+      "verdict": "supported",
+      "excerpt": "Discovered by Ramsay and Travers in 1898."
+    },
+    "Ne.story.2": {
+      "verdict": "supported",
+      "excerpt": "Like krypton, neon was discovered through the study of liquefied air."
+    },
+    "Ne.uses.0": {
+      "verdict": "supported",
+      "excerpt": "The largest use for neon gas is in advertising signs."
+    },
+    "Ne.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Neon is also used to make high voltage indicators"
+    },
+    "Ne.uses.2": {
+      "verdict": "supported",
+      "excerpt": "is combined with helium to make helium-neon lasers"
+    },
+    "Ne.uses.3": {
+      "verdict": "supported",
+      "excerpt": "neon also functions in high-voltage indicators, lightning arrestors, wave meter tubes, and TV tubes"
+    },
+    "Al.story.0": {
+      "verdict": "supported",
+      "excerpt": "From the Latin word alumen, alum."
+    },
+    "Al.story.1": {
+      "verdict": "supported",
+      "excerpt": "In 1825, the Danish physicist, Hans Christian Oersted, isolated impure aluminium."
+    },
+    "Al.story.2": {
+      "verdict": "supported",
+      "excerpt": "The pure metal was first isolated by the German chemist Friedrich Wöhler in 1827."
+    },
+    "Al.uses.0": {
+      "verdict": "supported",
+      "excerpt": "aluminum and aluminum alloys are used in a wide variety of products: cans, foils and kitchen utensils"
+    },
+    "Al.uses.1": {
+      "verdict": "supported",
+      "excerpt": "it is used in electrical transmission lines because of its light weight."
+    },
+    "Al.uses.2": {
+      "verdict": "supported",
+      "excerpt": "It can be deposited on the surface of glass to make mirrors"
+    },
+    "Al.uses.3": {
+      "verdict": "supported",
+      "excerpt": "These alloys are of vital importance in the construction of modern aircraft and rockets."
+    },
+    "Si.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Silicon was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1824"
+    },
+    "Si.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin silex and silicis for \"flint\"."
+    },
+    "Si.story.1": {
+      "verdict": "supported",
+      "excerpt": "Silicon was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1824"
+    },
+    "Si.story.2": {
+      "verdict": "supported",
+      "excerpt": "Crystalline silicon was first prepared by the French chemist Henri Sainte-Claire Deville in 1854."
+    },
+    "Si.uses.0": {
+      "verdict": "supported",
+      "excerpt": "are used in the manufacture of solid-state electronic devices, such as transistors, solar cells, rectifiers and microchips"
+    },
+    "Si.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Silicon dioxide is extensively used in the manufacture of glass and bricks."
+    },
+    "Si.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Silica gel, a colloidal form of silicon dioxide, easily absorbs moisture and is used as a desiccant."
+    },
+    "Si.uses.3": {
+      "verdict": "supported",
+      "excerpt": "an important ingredient in silicone, a class of material that is used for such things as lubricants, polishing agents, electrical insulators and medical implants"
+    },
+    "P.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Phosphorus was discovered by the German merchant Hennig Brand in 1669."
+    },
+    "P.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek phosphoros for \"bringing light\" because it has the property of glowing in the dark."
+    },
+    "P.story.1": {
+      "verdict": "supported",
+      "excerpt": "Phosphorus was discovered by the German merchant Hennig Brand in 1669."
+    },
+    "P.story.2": {
+      "verdict": "supported",
+      "excerpt": "From the Greek phosphoros, light bearing; ancient name for the planet Venus when appearing before sunrise."
+    },
+    "P.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Some phosphorus compounds glow in the dark or emit light in response to absorbing radiation and are used in fluorescent light bulbs and television sets."
+    },
+    "P.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Trisodium phosphate (Na3PO4) is used as a cleaning agent and as a water softener."
+    },
+    "P.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Calcium phosphate (Ca3(PO4)2) is used to make china and in the production of baking powder."
+    },
+    "P.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Phosphates are used in the production of special glasses, such as those used for sodium lamps."
+    },
+    "S.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Known to the ancients; referred to in Genesis as brimstone."
+    },
+    "S.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin sulphurium and the Sanskrit sulveri."
+    },
+    "S.story.1": {
+      "verdict": "supported",
+      "excerpt": "Sulfur was known as brenne stone for \"combustible stone\" from which brim-stone is derived."
+    },
+    "S.story.2": {
+      "verdict": "supported",
+      "excerpt": "In 1809, the French chemists Louis-Joseph Gay-Lussac and Louis-Jacques Thenard proved the elemental nature of sulfur."
+    },
+    "S.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Most of the sulfur that is produced is used in the manufacture of sulfuric acid (H2SO4)."
+    },
+    "S.uses.1": {
+      "verdict": "supported",
+      "excerpt": "It is also used extensively in making phosphatic fertilizers."
+    },
+    "S.uses.2": {
+      "verdict": "supported",
+      "excerpt": "is used in the vulcanization of natural rubber"
+    },
+    "S.uses.3": {
+      "verdict": "supported",
+      "excerpt": "It is used to make sulfite paper and other papers"
+    },
+    "Ar.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Argon was discovered by Sir William Ramsay, a Scottish chemist, and Lord Rayleigh, an English chemist, in 1894."
+    },
+    "Ar.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek argos for \"lazy\" or \"inactive\" because it does not combine with other elements."
+    },
+    "Ar.story.1": {
+      "verdict": "supported",
+      "excerpt": "Argon was discovered by Sir William Ramsay, a Scottish chemist, and Lord Rayleigh, an English chemist, in 1894."
+    },
+    "Ar.story.2": {
+      "verdict": "supported",
+      "excerpt": "Its presence in air was suspected by Cavendish in 1785"
+    },
+    "Ar.uses.0": {
+      "verdict": "supported",
+      "excerpt": "It is used to fill incandescent and fluorescent light bulbs to prevent oxygen from corroding the hot filament."
+    },
+    "Ar.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Argon is also used as an inert gas shield for arc welding and cutting"
+    },
+    "Ar.uses.2": {
+      "verdict": "supported",
+      "excerpt": "as a protective atmosphere for growing silicon and germanium crystals"
+    },
+    "Ar.uses.3": {
+      "verdict": "supported",
+      "excerpt": "in filling photo tubes, glow tubes, etc."
+    },
+    "K.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "It was first isolated by the British chemist Humphry Davy in 1807 from electrolysis of potash (KOH)."
+    },
+    "K.story.0": {
+      "verdict": "supported",
+      "excerpt": "It was first isolated by the British chemist Humphry Davy in 1807 from electrolysis of potash (KOH)."
+    },
+    "K.story.1": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the English \"potash\" or \"pot ashes\" because it is found in caustic potash (KOH)."
+    },
+    "K.story.2": {
+      "verdict": "supported",
+      "excerpt": "The symbol K derives from the Latin kalium via the Arabic qali for alkali."
+    },
+    "K.uses.0": {
+      "verdict": "supported",
+      "excerpt": "The greatest demand for potash has been in its use for fertilizers."
+    },
+    "K.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Potassium hydroxide (KOH) is used to make soaps, detergents and drain cleaners."
+    },
+    "K.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Potassium chloride (KCl) is the most common potassium compound. It is used in fertilizers, as a salt substitute"
+    },
+    "Ca.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Metallic calcium was first isolated by Sir Humphry Davy in 1808"
+    },
+    "Ca.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin calx for \"lime\" (CaO) or \"limestone\" (CaCO3)"
+    },
+    "Ca.story.1": {
+      "verdict": "supported",
+      "excerpt": "Though lime was prepared by the Romans in the first century under the name calx, the metal was not discovered until 1808."
+    },
+    "Ca.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Calcium carbonate is used to make white paint, cleaning powder, toothpaste and stomach antacids, among other things."
+    },
+    "Ca.uses.1": {
+      "verdict": "supported",
+      "excerpt": "calcium sulfate (CaSO4), also known as gypsum, which is used to make dry wall and plaster of Paris"
+    },
+    "Ca.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Calcium is also used in vacuum tubes as a getter, a material that combines with and removes trace gases from vacuum tubes."
+    },
+    "Ca.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Calcium can be alloyed with aluminum, beryllium, copper, lead and magnesium."
+    },
+    "Sc.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin scandia for Scandinavia, where the mineral was found."
+    },
+    "Sc.story.1": {
+      "verdict": "supported",
+      "excerpt": "It was discovered by the Swedish chemist Lars-Fredrik Nilson in 1879 in an ytterbium sample."
+    },
+    "Sc.story.2": {
+      "verdict": "supported",
+      "excerpt": "the Swedish chemist Per Theodore Cleve proved that scandium was Mendeleev's predicted"
+    },
+    "Sc.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Alloys of scandium and aluminum are used in some kinds of athletic equipment, such as aluminum baseball bats, bicycle frames and lacrosse sticks."
+    },
+    "Sc.uses.1": {
+      "verdict": "supported",
+      "excerpt": "scandium oxide (Sc2O3), also known as scandia, are used each year in the United States in the production of high intensity lights."
+    },
+    "Sc.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Scandium iodide (ScI3) is added to mercury vapor lamps so that they will emit light that closely resembles sunlight."
+    },
+    "Sc.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Scandium iodide added to mercury vapor lamps produces a highly efficient light source resembling sunlight, which is important for indoor or night-time color TV."
+    },
+    "Ti.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Titanium was discovered in 1791 by the Reverend William Gregor, an English pastor."
+    },
+    "Ti.story.0": {
+      "verdict": "supported",
+      "excerpt": "Titanium was discovered in 1791 by the Reverend William Gregor, an English pastor."
+    },
+    "Ti.story.1": {
+      "verdict": "supported",
+      "excerpt": "From the Latin titans, the first sons of the Earth, Greek mythology."
+    },
+    "Ti.story.2": {
+      "verdict": "supported",
+      "excerpt": "It was rediscovered in 1795 by the German chemist Martin Heinrich Klaproth, who called it titanium"
+    },
+    "Ti.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Since titanium does not react within the human body, it is used to create artificial hips, pins for setting bones and for other biological implants."
+    },
+    "Ti.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Titanium oxide (TiO2) is used as a pigment to create white paint"
+    },
+    "Ti.uses.2": {
+      "verdict": "supported",
+      "excerpt": "is used in propeller shafts, rigging and other parts of boats that are exposed to sea water"
+    },
+    "Ti.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Titanium and titanium alloys are used in airplanes, missiles and rockets"
+    },
+    "V.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Scandinavian goddess of love and beauty, Freyja Vanadis, because of its many beautiful multi-coloured compounds."
+    },
+    "V.story.1": {
+      "verdict": "supported",
+      "excerpt": "Vanadium was discovered by Andrés Manuel del Rio, a Spanish chemist, in 1801."
+    },
+    "V.story.2": {
+      "verdict": "supported",
+      "excerpt": "Vanadium was rediscovered by Nils Gabriel Sefstrôm, a Swedish chemist, in 1830 while analyzing samples of iron from a mine in Sweden."
+    },
+    "V.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Ferrovanadium and vanadium-steel alloys are used to make such things as axles, crankshafts and gears for cars, parts of jet engines, springs and cutting tools."
+    },
+    "V.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Vanadium is used in producing rust resistant and high speed tool steels."
+    },
+    "V.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Vanadium pentoxide (V2O5) is perhaps vanadium's most useful compound. It is used as a mordant, a material which permanently fixes dyes to fabrics."
+    },
+    "V.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Vanadium pentoxide is also used as a catalyst in certain chemical reactions and in the manufacture of ceramics."
+    },
+    "Cr.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "It was discovered in 1797 by the French chemist and pharmacist Nicolas-Louis Vauquelin"
+    },
+    "Cr.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek chroma for \"colour\", from the many coloured compounds of chromium."
+    },
+    "Cr.story.1": {
+      "verdict": "supported",
+      "excerpt": "It was discovered in 1797 by the French chemist and pharmacist Nicolas-Louis Vauquelin"
+    },
+    "Cr.story.2": {
+      "verdict": "supported",
+      "excerpt": "who also isolated chromium in 1798."
+    },
+    "Cr.uses.0": {
+      "verdict": "supported",
+      "excerpt": "is often plated to other metals to form a protective and attractive covering"
+    },
+    "Cr.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Chromium is added to steel to harden it and to form stainless steel"
+    },
+    "Cr.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Chromium gives glass an emerald green color"
+    },
+    "Cr.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Lead chromate (PbCrO4), also known as chrome yellow, has been used as a yellow pigment in paints."
+    },
+    "Mn.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "It was discovered by the Swedish pharmacist and chemist Carl-Wilhelm Scheele in 1774."
+    },
+    "Mn.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin magnes for \"magnet\" since pyrolusite (MnO2) has magnetic properties."
+    },
+    "Mn.story.1": {
+      "verdict": "supported",
+      "excerpt": "isolated by Gahn in 1774 by reduction of the dioxide with carbon"
+    },
+    "Mn.uses.0": {
+      "verdict": "supported",
+      "excerpt": "is alloyed with steel to make it easier to form and work with and to increase steel's strength and resistance to impact"
+    },
+    "Mn.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Manganese is also used to give glass an amethyst color"
+    },
+    "Mn.uses.2": {
+      "verdict": "supported",
+      "excerpt": "The dioxide (pyrolusite) is used as a depolarizer in dry cells"
+    },
+    "Mn.uses.3": {
+      "verdict": "supported",
+      "excerpt": "and as a drying agent in black paints"
+    },
+    "Co.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the German Kobold for \"evil spirits\" or \"goblins\""
+    },
+    "Co.story.1": {
+      "verdict": "supported",
+      "excerpt": "Cobalt was discovered in 1735 by the Swedish chemist Georg Brandt."
+    },
+    "Co.story.2": {
+      "verdict": "supported",
+      "excerpt": "Brandt was attempting to prove that the ability of certain minerals to color glass blue was due to an unknown element and not to bismuth"
+    },
+    "Co.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Cobalt compounds have been used for centuries to color porcelain, glass, pottery, tile and enamel."
+    },
+    "Co.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Alnico, an alloy consisting of aluminum, nickel and cobalt is used to make powerful permanent magnets."
+    },
+    "Co.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Cobalt is also used to make alloys for jet engines and gas turbines, magnetic steels and some types of stainless steels."
+    },
+    "Ni.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Nickel was discovered by the Swedish chemist Axel Fredrik Cronstedt in the mineral niccolite (NiAs) in 1751."
+    },
+    "Ni.story.0": {
+      "verdict": "supported",
+      "excerpt": "Nickel was discovered by the Swedish chemist Axel Fredrik Cronstedt in the mineral niccolite (NiAs) in 1751."
+    },
+    "Ni.story.1": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the German Nickel for \"deceptive little spirit\""
+    },
+    "Ni.story.2": {
+      "verdict": "supported",
+      "excerpt": "miners called mineral niccolite (NiAs) by the name Kupfernickel (false copper) because it resembled copper ores in appearance, but no copper was found"
+    },
+    "Ni.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Nickel is also used to manufacture some types of coins and batteries."
+    },
+    "Ni.uses.1": {
+      "verdict": "supported",
+      "excerpt": "It can be electroplated onto other metals to form a protective coating."
+    },
+    "Ni.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Adding nickel to glass gives it a green color."
+    },
+    "Ni.uses.3": {
+      "verdict": "supported",
+      "excerpt": "It is extensively used for making stainless steel and other corrosion-resistant alloys"
+    },
+    "Zn.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the German zink of unknown origin."
+    },
+    "Zn.story.1": {
+      "verdict": "supported",
+      "excerpt": "It was first used in prehistoric times, where its compounds were used for healing wounds and sore eyes and for making brass."
+    },
+    "Zn.story.2": {
+      "verdict": "supported",
+      "excerpt": "Zinc was rediscovered by Andreas Sigismund Marggraf in 1746 by heating calamine with charcoal."
+    },
+    "Zn.uses.0": {
+      "verdict": "supported",
+      "excerpt": "During galvanization, an object that is subject to corrosion, such as an iron nail, is given a protective coating of zinc."
+    },
+    "Zn.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Metallic zinc is also used to make dry cell batteries, roof cladding and die castings."
+    },
+    "Zn.uses.2": {
+      "verdict": "supported",
+      "excerpt": "is used to make luminous watch dials, television screens and fluorescent light bulbs."
+    },
+    "Zn.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Zinc oxide is used in paints, some rubber products, cosmetics, pharmaceuticals, plastics, printing inks, soap and batteries"
+    },
+    "Ga.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "gallium was discovered spectroscopically by the French chemist Paul-Émile Lecoq de Boisbaudran in 1875"
+    },
+    "Ga.story.0": {
+      "verdict": "supported",
+      "excerpt": "First proposed to exist by Dmitri Mendeleyev in 1871 based on gaps in his newly created Periodic Table of Elements"
+    },
+    "Ga.story.1": {
+      "verdict": "supported",
+      "excerpt": "gallium was discovered spectroscopically by the French chemist Paul-Émile Lecoq de Boisbaudran in 1875"
+    },
+    "Ga.story.2": {
+      "verdict": "supported",
+      "excerpt": "From the Latin word Gallia, France; also from Latin, gallus, a translation of \"Lecoq,\" a cock."
+    },
+    "Ga.uses.0": {
+      "verdict": "supported",
+      "excerpt": "has been used to produce solid-state items like transistors and light emitting diodes"
+    },
+    "Ga.uses.1": {
+      "verdict": "supported",
+      "excerpt": "so it has found use in high temperature thermometers"
+    },
+    "Ga.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Gallium easily forms alloys with most metals and has been used to create low melting alloys."
+    },
+    "Ga.uses.3": {
+      "verdict": "supported",
+      "excerpt": "gallium trichloride (GaCl3) have been gathered to build the Gallium Neutrino Observatory, an observatory located in Italy built to study particles called neutrinos"
+    },
+    "Ge.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "It was discovered and isolated by the German chemist Clemens-Alexander Winkler in 1886"
+    },
+    "Ge.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin germania for Germany."
+    },
+    "Ge.story.1": {
+      "verdict": "supported",
+      "excerpt": "It was discovered and isolated by the German chemist Clemens-Alexander Winkler in 1886"
+    },
+    "Ge.story.2": {
+      "verdict": "supported",
+      "excerpt": "First proposed to exist by Dmitri Mendeleyev in 1871 based on gaps in his newly created Periodic Table of Elements"
+    },
+    "Ge.uses.0": {
+      "verdict": "supported",
+      "excerpt": "germanium is used to make transistors for use in electronic devices"
+    },
+    "Ge.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Germanium is also used to create alloys and as a phosphor in fluorescent lamps."
+    },
+    "Ge.uses.2": {
+      "verdict": "supported",
+      "excerpt": "are used in infrared optical instruments and infrared detectors"
+    },
+    "Ge.uses.3": {
+      "verdict": "supported",
+      "excerpt": "have made germanium useful as a component of wide-angle camera lenses and microscope objectives"
+    },
+    "As.discoveryYear": {
+      "verdict": "not_supported",
+      "reason": "The passage only says it is believed arsenic was first identified in 1250, and the claim drops that hedge and states the year as certain."
+    },
+    "As.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin arsenicium and the Greek arsenikos for \"masculine\" or \"male\""
+    },
+    "As.story.1": {
+      "verdict": "supported",
+      "excerpt": "it is believed that arsenic itself was first identified by Albertus Magnus, a German alchemist, in 1250"
+    },
+    "As.story.2": {
+      "verdict": "supported",
+      "excerpt": "Although arsenic compounds were mined by the early Chinese, Greek and Egyptian civilizations"
+    },
+    "As.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Small amounts of arsenic are added to germanium to make transistors."
+    },
+    "As.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Gallium arsenide (GaAs) can produce laser light directly from electricity."
+    },
+    "As.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Arsenic is used in bronzing"
+    },
+    "Se.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Selenium was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1817"
+    },
+    "Se.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek Selene, who was the Greek goddess of the Moon"
+    },
+    "Se.story.1": {
+      "verdict": "supported",
+      "excerpt": "Selenium was discovered by the Swedish chemist Jöns Jacob Berzelius in 1817"
+    },
+    "Se.story.2": {
+      "verdict": "supported",
+      "excerpt": "Originally believing the material was tellurium, Berzelius eventually realized that it was actually a previously unknown element."
+    },
+    "Se.uses.0": {
+      "verdict": "supported",
+      "excerpt": "devices that respond to the intensity of light, such as electric eyes, photo cells, light meters for cameras and copiers"
+    },
+    "Se.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Selenium can also produce electricity directly from sunlight and is used in solar cells."
+    },
+    "Se.uses.2": {
+      "verdict": "supported",
+      "excerpt": "selenium is also used to make a ruby-red color in glasses and enamels"
+    },
+    "Se.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Selenium is used in Xerography for reproducing and copying documents, letters, etc."
+    },
+    "Br.story.0": {
+      "verdict": "supported",
+      "excerpt": "From the Greek word bromos, stench."
+    },
+    "Br.story.1": {
+      "verdict": "supported",
+      "excerpt": "It was first prepared by the German chemist Carl Löwig in 1825"
+    },
+    "Br.story.2": {
+      "verdict": "supported",
+      "excerpt": "it was first publicly announced in 1826 by the French chemist and pharmacist Antoine-Jérôme Balard, and so the discovery is, therefore, credited to him."
+    },
+    "Br.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Silver bromide (AgBr), a chemical used in photography, now accounts for the largest use of bromine."
+    },
+    "Br.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Other bromine compounds are used in fumigants, in flameproofing agents and in some compounds used to purify water."
+    },
+    "Br.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Other bromine compounds are used in fumigants, in flameproofing agents and in some compounds used to purify water."
+    },
+    "Br.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Bromine is used in making fumigants, flameproofing agents, water purification compounds, dyes, medicines, sanitizers"
+    },
+    "Kr.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Discovered in 1898 by Ramsay and Travers in the residue left after liquid air had nearly boiled away."
+    },
+    "Kr.story.0": {
+      "verdict": "supported",
+      "excerpt": "From the Greek word kryptos, hidden."
+    },
+    "Kr.story.1": {
+      "verdict": "supported",
+      "excerpt": "Krypton was discovered on May 30, 1898 by Sir William Ramsay, a Scottish chemist, and Morris M. Travers, an English chemist, while studying liquefied air."
+    },
+    "Kr.story.2": {
+      "verdict": "supported",
+      "excerpt": "Discovered in 1898 by Ramsay and Travers in the residue left after liquid air had nearly boiled away."
+    },
+    "Kr.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Krypton is used in some types of photographic flashes used in high speed photography."
+    },
+    "Kr.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Some fluorescent light bulbs are filled with a mixture of krypton and argon gases."
+    },
+    "Kr.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Krypton gas is also combined with other gases to make luminous signs that glow with a greenish-yellow light."
+    },
+    "Rb.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Discovered in 1861 by Bunsen and Kirchoff in the mineral lepidolite by use of the spectroscope."
+    },
+    "Rb.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin rubidus for \"deepest red\" because of the two deep red lines in its spectra."
+    },
+    "Rb.story.1": {
+      "verdict": "supported",
+      "excerpt": "Rubidium was discovered by the German chemists Robert Bunsen and Gustav Kirchhoff in 1861 while analyzing samples of the mineral lepidolite"
+    },
+    "Rb.story.2": {
+      "verdict": "supported",
+      "excerpt": "Bunsen isolated rubidium in 1863."
+    },
+    "Rb.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Rubidium is used in vacuum tubes as a getter, a material that combines with and removes trace gases from vacuum tubes."
+    },
+    "Rb.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Rubidium is used as a getter in vacuum tubes and as a photocell component."
+    },
+    "Rb.uses.2": {
+      "verdict": "supported",
+      "excerpt": "It has been used in making special glasses."
+    },
+    "Rb.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Since it is easily ionized, it might be used as a propellant in ion engines on spacecraft."
+    },
+    "Sr.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from Strontian, a town in Scotland."
+    },
+    "Sr.story.1": {
+      "verdict": "supported",
+      "excerpt": "It was first isolated by the English chemist Humphry Davy in 1808."
+    },
+    "Sr.story.2": {
+      "verdict": "supported",
+      "excerpt": "Adair Crawford recognized a new mineral (strontianite) as differing from other barium minerals in 1790."
+    },
+    "Sr.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Most of the strontium produced today is used in the manufacture of color television picture tubes."
+    },
+    "Sr.uses.1": {
+      "verdict": "supported",
+      "excerpt": "is combined with iron to make magnets"
+    },
+    "Sr.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Strontium carbonate is also used to make certain kinds of glass"
+    },
+    "Sr.uses.3": {
+      "verdict": "supported",
+      "excerpt": "strontium has found use in producing ferrite magnets and in refining zinc"
+    },
+    "Y.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Swedish village of Ytterby where the mineral gadolinite was found."
+    },
+    "Y.story.1": {
+      "verdict": "supported",
+      "excerpt": "Yttrium was discovered by Johan Gadolin, a Finnish chemist,"
+    },
+    "Y.story.2": {
+      "verdict": "supported",
+      "excerpt": "Gadolin originally called the element ytterbium after ytterbite."
+    },
+    "Y.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Yttrium oxide (Y2O3) and yttrium orthovanadate (YVO4) are both combined with europium to produce the red phosphor used in color televisions."
+    },
+    "Y.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Garnets made from yttrium and iron (Y3Fe5O12) are used as microwave filters in microwave communications equipment."
+    },
+    "Y.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Garnets made from yttrium and aluminum (Y3Al5O12) are used in jewelry as simulated diamond."
+    },
+    "Y.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Yttrium also can be used in laser systems"
+    },
+    "Zr.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "It was discovered in zirconia by the German chemist Martin-Heinrich Klaproth in 1789."
+    },
+    "Zr.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Arabic zargun for \"gold-like\"."
+    },
+    "Zr.story.1": {
+      "verdict": "supported",
+      "excerpt": "Zirconium was discovered by Martin Heinrich Klaproth, a German chemist, while analyzing the composition of the mineral jargon (ZrSiO4) in 1789."
+    },
+    "Zr.story.2": {
+      "verdict": "supported",
+      "excerpt": "Zirconium was first isolated by Swedish chemist Jöns Jacob Berzelius in 1824 in an impure state"
+    },
+    "Zr.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Zirconium is also used as an alloying agent in steel, to make some types of surgical equipment"
+    },
+    "Zr.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Zirconium oxide (zircon) has a high index of refraction and is used as a gem material."
+    },
+    "Zr.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Zirconium dioxide (ZrO2) can withstand very high temperatures and is used to make crucibles and to line the walls of high temperature furnaces."
+    },
+    "Zr.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Since it also does not easily absorb neutrons, zirconium is widely used in nuclear reactors."
+    },
+    "Nb.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek mythological character Niobe, who was the daughter of Tantalus"
+    },
+    "Nb.story.1": {
+      "verdict": "supported",
+      "excerpt": "Niobium was discovered in a black mineral from America called columbite by the British chemist and manufacturer Charles Hatchett in 1801"
+    },
+    "Nb.story.2": {
+      "verdict": "supported",
+      "excerpt": "He named the new element columbium."
+    },
+    "Nb.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Niobium is also commonly used for jewelry."
+    },
+    "Nb.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Superconductive wire can be made from an alloy of niobium and titanium which can then be used to make superconductive magnets."
+    },
+    "Nb.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Superconductive niobium cavities are at the heart of a machine built at the Thomas Jefferson National Accelerator Facility."
+    },
+    "Nb.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Niobium is used in arc-welding rods for stabilized grades of stainless steel."
+    },
+    "Mo.discoveryYear": {
+      "verdict": "not_supported",
+      "reason": "The passage gives 1778 for discovery but a conflicting year, 1781, for first isolation by Hjelm, so 'discovered or first isolated in 1778' is not cleanly supported."
+    },
+    "Mo.story.0": {
+      "verdict": "supported",
+      "excerpt": "Molybdenum was discovered by the Swedish pharmacist and chemist Carl Wilhelm Scheele in 1778."
+    },
+    "Mo.story.1": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek molybdos for \"lead\"."
+    },
+    "Mo.story.2": {
+      "verdict": "supported",
+      "excerpt": "The ancients used the term \"lead\" for any black mineral that leaves a mark on paper."
+    },
+    "Mo.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Some electrical filaments are also made from molybdenum."
+    },
+    "Mo.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Molybdenum is primarily used as an alloying agent in steel."
+    },
+    "Mo.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Molybdenum disulfide (MoS2), one of molybdenum's compounds, is used as a high temperature lubricant."
+    },
+    "Mo.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Molybdenum trioxide (MoO3), another molybdenum compound, is used to adhere enamels to metals."
+    },
+    "Tc.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "It was isolated by Carlo Perrier and Emilio Segrè in 1937."
+    },
+    "Tc.story.0": {
+      "verdict": "supported",
+      "excerpt": "It was isolated by Carlo Perrier and Emilio Segrè in 1937."
+    },
+    "Tc.story.1": {
+      "verdict": "supported",
+      "excerpt": "From the Greek word technetos, artificial."
+    },
+    "Tc.story.2": {
+      "verdict": "supported",
+      "excerpt": "Technetium was the first element to be produced artificially."
+    },
+    "Tc.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Technetium can also be used as a medical tracer and to calibrate particle detectors."
+    },
+    "Tc.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Technetium can also be used as a medical tracer and to calibrate particle detectors."
+    },
+    "Tc.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Small amounts of technetium can retard the corrosion of steel, although this protection can only be applied to closed systems due to technetium's radioactivity."
+    },
+    "Ru.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin ruthenia for the old name of Russia."
+    },
+    "Ru.story.1": {
+      "verdict": "supported",
+      "excerpt": "Ruthenium was discovered by Karl Karlovich Klaus, a Russian chemist, in 1844 while analyzing the residue of a sample of platinum ore"
+    },
+    "Ru.story.2": {
+      "verdict": "supported",
+      "excerpt": "Osann thought that he had found three new metals in the sample, pluranium, ruthenium, and polinium."
+    },
+    "Ru.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Ruthenium is primarily used as an alloying agent."
+    },
+    "Ru.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Small amounts of ruthenium are added to platinum and palladium to strengthen them."
+    },
+    "Ru.uses.2": {
+      "verdict": "supported",
+      "excerpt": "These alloys are used in jewelry and in electrical contacts that must resist wear."
+    },
+    "Ru.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Adding 0.1% ruthenium to titanium makes titanium 100 times more resistant to corrosion."
+    },
+    "Rh.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek rhodon for rose because of the rose color of dilute solutions of its salts."
+    },
+    "Rh.story.1": {
+      "verdict": "supported",
+      "excerpt": "Rhodium was discovered by William Hyde Wollaston, an English chemist, in 1803"
+    },
+    "Rh.story.2": {
+      "verdict": "supported",
+      "excerpt": "He obtained rhodium from a sample of platinum ore that was obtained from South America."
+    },
+    "Rh.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Rhodium is also used for jewelry, for decoration, and as a catalyst."
+    },
+    "Rh.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Rhodium is used to make electrical contacts, as jewelry and in catalytic converters"
+    },
+    "Rh.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Rhodium is used to make electrical contacts, as jewelry and in catalytic converters"
+    },
+    "Rh.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Rhodium's primary use is as an alloying agent to harden platinum and palladium."
+    },
+    "Pd.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Palladium was discovered by William Hyde Wollaston, an English chemist, in 1803"
+    },
+    "Pd.story.0": {
+      "verdict": "supported",
+      "excerpt": "Palladium was discovered by William Hyde Wollaston, an English chemist, in 1803"
+    },
+    "Pd.story.1": {
+      "verdict": "supported",
+      "excerpt": "in 1803 while analyzing samples of platinum ore that were obtained from South America"
+    },
+    "Pd.story.2": {
+      "verdict": "supported",
+      "excerpt": "Palladium was named after the asteroid Pallas, which was discovered at about the same time."
+    },
+    "Pd.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Palladium is used to make springs for watches, surgical instruments, electrical contacts and dental fillings and crowns."
+    },
+    "Pd.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Palladium alloys are used to make jewelry"
+    },
+    "Pd.uses.2": {
+      "verdict": "supported",
+      "excerpt": "when alloyed with gold, forms a material known as white gold"
+    },
+    "Pd.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Palladium dichloride (PdCl2), a palladium compound, can absorb large amounts of carbon monoxide (CO) gas and is used in carbon monoxide detectors."
+    },
+    "Ag.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Silver has been known since ancient times."
+    },
+    "Ag.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Anglo-Saxon seofor and siolfur, which is of unknown origin."
+    },
+    "Ag.story.1": {
+      "verdict": "not_supported",
+      "reason": "The passage says argunas comes 'from \"bright\"', not that it means \"bright\", so the claim changes the stated relationship."
+    },
+    "Ag.story.2": {
+      "verdict": "supported",
+      "excerpt": "Silver has been known since ancient times."
+    },
+    "Ag.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Sterling silver is used for jewelry, silverware, etc. where appearance is paramount."
+    },
+    "Ag.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Silver has also been used to create coins, although today other metals are typically used in its place."
+    },
+    "Ag.uses.2": {
+      "verdict": "supported",
+      "excerpt": "it is sometimes used in making solder, electrical contacts and printed circuit boards"
+    },
+    "Ag.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Silver nitrate (AgNO3) is light sensitive and is used to make photographic films and papers."
+    },
+    "Cd.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "The element was discovered and first isolated by German physician Friedrich Stromeyer in 1817."
+    },
+    "Cd.story.0": {
+      "verdict": "supported",
+      "excerpt": "The element was discovered and first isolated by German physician Friedrich Stromeyer in 1817."
+    },
+    "Cd.story.1": {
+      "verdict": "supported",
+      "excerpt": "From the Latin word cadmia, Greek kadmeia - the ancient name for calamine, zinc carbonate."
+    },
+    "Cd.story.2": {
+      "verdict": "supported",
+      "excerpt": "When heated, Strohmeyer noticed that some samples of calamine glowed with a yellow color while other samples did not."
+    },
+    "Cd.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Cadmium is also used in rechargeable nickel-cadmium batteries."
+    },
+    "Cd.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Like zinc, cadmium can be electroplated to other materials to protect them from corrosion."
+    },
+    "Cd.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Cadmium sulfide (CdS), another cadmium compound, is a yellow powder that is used as a pigment."
+    },
+    "Cd.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Cadmium compounds are used in black and white television phosphors and in blue and green phosphors for color TV tubes."
+    },
+    "In.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Indium was discovered by the German chemists Ferdinand Reich and Hieronymus Theodor Richter in 1863."
+    },
+    "In.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the term \"indigo\" for the indigo-blue line in the element's spark spectrum."
+    },
+    "In.story.1": {
+      "verdict": "supported",
+      "excerpt": "Indium was discovered by the German chemists Ferdinand Reich and Hieronymus Theodor Richter in 1863."
+    },
+    "In.story.2": {
+      "verdict": "supported",
+      "excerpt": "A brilliant indigo line in the sample's spectrum revealed the existence of indium."
+    },
+    "In.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Indium is used to dope germanium to make transistors."
+    },
+    "In.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Indium can be used to make mirrors that are as reflective as silver mirrors but do not tarnish as quickly."
+    },
+    "In.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Indium is used to coat the bearings of high speed motors"
+    },
+    "In.uses.3": {
+      "verdict": "supported",
+      "excerpt": "It is also used to make other electrical components such as rectifiers, thermistors and photoconductors."
+    },
+    "Sn.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Known to the ancients."
+    },
+    "Sn.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Anglo-Saxon tin of unknown origin."
+    },
+    "Sn.story.1": {
+      "verdict": "supported",
+      "excerpt": "The symbol Sn is derived from Latin stannum for alloys containing lead."
+    },
+    "Sn.story.2": {
+      "verdict": "supported",
+      "excerpt": "The element was known in prehistoric times."
+    },
+    "Sn.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Tin resists corrosion and is used as a protective coating on other metals."
+    },
+    "Sn.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Tin and lead are alloyed to make pewter and solder."
+    },
+    "Sn.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Stannous fluoride (SnF2) is used in some types of toothpaste."
+    },
+    "Sb.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Antimony has been known since ancient times."
+    },
+    "Sb.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek, anti + monos for \"not alone\" or \"not one\" because it was found in many compounds."
+    },
+    "Sb.story.1": {
+      "verdict": "supported",
+      "excerpt": "The symbol Sb comes from stibium, which is derived from the Greek stibi for \"mark\" because it was used for blackening eyebrows and eyelashes."
+    },
+    "Sb.story.2": {
+      "verdict": "supported",
+      "excerpt": "Nicolas Lémery, a French chemist, was the first person to scientifically study antimony and its compounds."
+    },
+    "Sb.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Very pure antimony is used to make certain types of semiconductor devices, such as diodes and infrared detectors."
+    },
+    "Sb.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Antimony is alloyed with lead to increase lead's durability."
+    },
+    "Sb.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Antimony alloys are also used in batteries, low friction metals, type metal and cable sheathing, among other products."
+    },
+    "Sb.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Antimony compounds are used to make flame-proofing materials, paints, ceramic enamels, glass and pottery."
+    },
+    "Te.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin Tellus, who was the Roman goddess of the Earth."
+    },
+    "Te.story.1": {
+      "verdict": "supported",
+      "excerpt": "Tellurium was discovered by Franz Joseph Müller von Reichenstein, a Romanian mining official, in 1782."
+    },
+    "Te.story.2": {
+      "verdict": "supported",
+      "excerpt": "Klaproth named the new element tellurium but gave full credit for its discovery to Reichenstein."
+    },
+    "Te.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Tellurium is also used to color glass and ceramics"
+    },
+    "Te.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Small amounts of tellurium are added to copper and stainless steel to make them easier to machine and mill."
+    },
+    "Te.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Tellurium is also added to lead to increase its strength and resistance to sulfuric acid (H2SO4)."
+    },
+    "Te.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Bismuth telluride has been used in thermoelectric devices."
+    },
+    "I.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Discovered by Courtois in 1811"
+    },
+    "I.story.0": {
+      "verdict": "supported",
+      "excerpt": "Iodine was discovered in seaweed by the French chemist Bernard Courtois in 1811"
+    },
+    "I.story.1": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek iodes for \"violet\" because of its violet vapours."
+    },
+    "I.story.2": {
+      "verdict": "supported",
+      "excerpt": "named by the French chemist Louis-Joseph Gay-Lussac, when he proved it was an element in 1814."
+    },
+    "I.uses.0": {
+      "verdict": "not_supported",
+      "reason": "The passage links the starch test and the blue colour only with 'and', so the claim's 'because' adds a causal link the passage does not state."
+    },
+    "I.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Potassium iodide (KI) is used to make photographic film"
+    },
+    "I.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Iodine compounds are important in organic chemistry and very useful in medicine."
+    },
+    "Xe.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Discovered in 1898 by Ramsay and Travers in residue left after evaporating liquid air."
+    },
+    "Xe.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek xenos for \"the stranger\"."
+    },
+    "Xe.story.1": {
+      "verdict": "supported",
+      "excerpt": "It was discovered by the Scottish chemist William Ramsay and the English chemist Morris William Travers"
+    },
+    "Xe.story.2": {
+      "verdict": "supported",
+      "excerpt": "Like krypton and neon, xenon was discovered through the study of liquefied air."
+    },
+    "Xe.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Xenon produces a brilliant white flash of light when it is excited electrically and is widely used in strobe lights."
+    },
+    "Xe.uses.1": {
+      "verdict": "supported",
+      "excerpt": "The light emitted from xenon lamps is also used to kill bacteria"
+    },
+    "Xe.uses.2": {
+      "verdict": "supported",
+      "excerpt": "xenon ions were used as a fuel in an experimental ion engine aboard the space probe Deep Space 1."
+    },
+    "Xe.uses.3": {
+      "verdict": "supported",
+      "excerpt": "The gas is used in making electron tubes"
+    },
+    "Cs.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Cesium was discovered spectroscopically in 1860 by Bunsen and Kirchhoff in mineral water from Durkheim."
+    },
+    "Cs.story.0": {
+      "verdict": "supported",
+      "excerpt": "From the Latin word caesius, sky blue."
+    },
+    "Cs.story.1": {
+      "verdict": "supported",
+      "excerpt": "Caesium was discovered by the German chemist Robert Wilhelm Bunsen and the German physicist Gustav Robert Kirchhoff in 1860."
+    },
+    "Cs.story.2": {
+      "verdict": "supported",
+      "excerpt": "It was first isolated by the German chemist Carl Setterberg in 1882."
+    },
+    "Cs.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Cesium is also used in atomic clocks"
+    },
+    "Cs.uses.1": {
+      "verdict": "supported",
+      "excerpt": "It is also used in photoelectric cells"
+    },
+    "Cs.uses.2": {
+      "verdict": "supported",
+      "excerpt": "is used as a getter, a material that combines with and removes trace gases from vacuum tubes."
+    },
+    "Ba.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Barium was first isolated by Sir Humphry Davy, an English chemist, in 1808"
+    },
+    "Ba.story.0": {
+      "verdict": "supported",
+      "excerpt": "Barium was first isolated by Sir Humphry Davy, an English chemist, in 1808"
+    },
+    "Ba.story.1": {
+      "verdict": "supported",
+      "excerpt": "From the Greek word barys, heavy."
+    },
+    "Ba.story.2": {
+      "verdict": "supported",
+      "excerpt": "Baryta was distinguished from lime by Scheele in 1774"
+    },
+    "Ba.uses.0": {
+      "verdict": "supported",
+      "excerpt": "It is also a good absorber of X-rays and, when swallowed, can be used to produce X-ray images of the intestinal tract."
+    },
+    "Ba.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Barium chloride (BaCl) is used as a water softener."
+    },
+    "Ba.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Barium ferrite (BaO·6Fe2O3) is used to make magnets."
+    },
+    "Ba.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Barium carbonate (BaCO3), another common barium compound, is used in the manufacture of ceramics and some types of glass."
+    },
+    "La.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Lanthanum was discovered by Carl Gustaf Mosander, a Swedish chemist, in 1839."
+    },
+    "La.story.0": {
+      "verdict": "supported",
+      "excerpt": "Lanthanum was discovered by Carl Gustaf Mosander, a Swedish chemist, in 1839."
+    },
+    "La.story.1": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek lanthanein for \"to be hidden\" or \"to escape notice\""
+    },
+    "La.story.2": {
+      "verdict": "supported",
+      "excerpt": "because it hid in cerium ore and was difficult to separate from that rare earth mineral."
+    },
+    "La.uses.0": {
+      "verdict": "supported",
+      "excerpt": "used to make carbon arc lights which are used in the motion picture industry for studio lighting and projector lights"
+    },
+    "La.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Lanthanum also makes up about 25% of Misch metal, a material that is used to make flints for lighters."
+    },
+    "La.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Lanthana (La2O3) is used to make the glass used in camera lenses and in other special glasses."
+    },
+    "Ce.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "and independently by Martin Heinrich Klaproth, a German chemist, in 1803."
+    },
+    "Ce.story.0": {
+      "verdict": "supported",
+      "excerpt": "Cerium was named for the asteroid Ceres, which was discovered in 1801."
+    },
+    "Ce.story.1": {
+      "verdict": "supported",
+      "excerpt": "Cerium was discovered by Jöns Jacob Berzelius and Wilhelm von Hisinger, Swedish chemists, and independently by Martin Heinrich Klaproth, a German chemist, in 1803."
+    },
+    "Ce.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Cerium is one of the rare earth elements used to make carbon arc lights which are used in the motion picture industry"
+    },
+    "Ce.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Cerium is also a component of Misch metal, a material that is used to make flints for lighters."
+    },
+    "Ce.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Cerium oxide (Ce2O3 and CeO2) is a component of the walls of self cleaning ovens"
+    },
+    "Ce.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Cerium oxide is also used to polish glass surfaces."
+    },
+    "Pr.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Praseodymium was discovered by Carl F. Auer von Welsbach, an Austrian chemist, in 1885."
+    },
+    "Pr.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek prasios for \"green\" and didymos for \"twin\""
+    },
+    "Pr.story.1": {
+      "verdict": "supported",
+      "excerpt": "Praseodymium was discovered by Carl F. Auer von Welsbach, an Austrian chemist, in 1885."
+    },
+    "Pr.story.2": {
+      "verdict": "supported",
+      "excerpt": "He separated praseodymium, as well as the element neodymium, from a material known as didymium."
+    },
+    "Pr.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Praseodymium also makes up about 5% of Misch metal, a material that is used to make flints for lighters."
+    },
+    "Pr.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Praseodymium forms the core of carbon arc lights which are used in the motion picture industry for studio lighting and projector lights."
+    },
+    "Pr.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Praseodymium salts are used to give glasses and enamels a yellow color."
+    },
+    "Pr.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Praseodymium is also a component of didymium glass, which is used to make certain types of welder's and glass blower's goggles."
+    },
+    "Nd.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek neos for \"new\" and didymos for \"twin\"."
+    },
+    "Nd.story.1": {
+      "verdict": "supported",
+      "excerpt": "Neodymium was discovered by Carl F. Auer von Welsbach, an Austrian chemist, in 1885."
+    },
+    "Nd.story.2": {
+      "verdict": "supported",
+      "excerpt": "He named the element didymium, as it was an inseparable twin brother of lanthanum."
+    },
+    "Nd.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Neodymium is added to glass to remove the green color caused by iron contaminants."
+    },
+    "Nd.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Didymium, of which neodymium is a component, is used for coloring glass to make welders goggles."
+    },
+    "Nd.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Some neodymium salts are used to color enamels and glazes."
+    },
+    "Nd.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Glass containing neodymium can be used as a laser material to produce coherent light."
+    },
+    "Pm.story.0": {
+      "verdict": "supported",
+      "excerpt": "Named after the Greek Prometheus, who, according to mythology, stole fire from heaven."
+    },
+    "Pm.story.1": {
+      "verdict": "supported",
+      "excerpt": "The existence of promethium was predicted by Bohuslav Brauner, a Czech chemist, in 1902."
+    },
+    "Pm.story.2": {
+      "verdict": "supported",
+      "excerpt": "Proof of the existence of promethium was obtained by Jacob A. Marinsky, Lawrence E. Glendenin and Charles D. Coryell in 1944."
+    },
+    "Pm.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Promethium could be used to make a nuclear powered battery."
+    },
+    "Pm.uses.1": {
+      "verdict": "supported",
+      "excerpt": "in radioisotope thermoelectric generators to provide electricity for space probes and satellites"
+    },
+    "Pm.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Light produced in this manner can be used for signs or signals that require dependable operation"
+    },
+    "Pm.uses.3": {
+      "verdict": "supported",
+      "excerpt": "The element has applications as a beta source for thickness gages"
+    },
+    "Sm.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the mineral samarskite, in which it was found and that had been named for Colonel Samarski, a Russian mine official."
+    },
+    "Sm.story.1": {
+      "verdict": "supported",
+      "excerpt": "Samarium was originally discovered in 1878 by the Swiss chemist Marc Delafontaine, who called it decipium."
+    },
+    "Sm.story.2": {
+      "verdict": "supported",
+      "excerpt": "Paul-Émile Lecoq de Boisbaudran, a French chemist, was the first to isolate samarium from the mineral samarskite"
+    },
+    "Sm.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Samarium, along with other rare earths, is used for carbon-arc lighting for the motion picture industry."
+    },
+    "Sm.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Samarium forms a compound with cobalt (SmCo5) which is a powerful permanent magnet"
+    },
+    "Sm.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Samarium oxide has been used in optical glass to absorb the infrared."
+    },
+    "Sm.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Samarium also makes up about 1% of Misch metal, a material that is used to make flints for lighters."
+    },
+    "Eu.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the continent of Europe."
+    },
+    "Eu.story.1": {
+      "verdict": "supported",
+      "excerpt": "Europium was discovered by Eugène-Antole Demarçay, a French chemist, in 1896."
+    },
+    "Eu.story.2": {
+      "verdict": "supported",
+      "excerpt": "Demarçay suspected that samples of a recently discovered element, samarium, were contaminated with an unknown element."
+    },
+    "Eu.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Europium oxide (Eu2O3), one of europium's compounds, is widely used as a red phosphor in television sets"
+    },
+    "Eu.uses.1": {
+      "verdict": "supported",
+      "excerpt": "it has been used to dope some types of plastics to make lasers"
+    },
+    "Eu.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Since it is a good absorber of neutrons, europium is being studied for use in nuclear reactors."
+    },
+    "Gd.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the mineral gadolinite, in which it was found, and that had been named for the Finnish rare earth chemist Johan Gadolin."
+    },
+    "Gd.story.1": {
+      "verdict": "supported",
+      "excerpt": "Spectroscopic evidence for the existence of gadolinium was first observed by the Swiss chemist Jean Charles Galissard de Marignac in the minerals didymia and gadolinite"
+    },
+    "Gd.story.2": {
+      "verdict": "supported",
+      "excerpt": "In 1886, the French chemist Paul-Emile Lecoq de Boisbaudran gave the name gadolinium."
+    },
+    "Gd.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Gadolinium compounds are used to make phosphors for color televisions."
+    },
+    "Gd.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Gadolinium can be combined with yttrium to form garnets that have applications in microwave technology."
+    },
+    "Gd.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Gadolinium can be alloyed with iron, chromium and other metals to improve their workability and their resistance to high temperatures and oxidation."
+    },
+    "Gd.uses.3": {
+      "verdict": "supported",
+      "excerpt": "can be used as control rods for nuclear reactors"
+    },
+    "Tb.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Terbium was discovered by the Swedish surgeon and chemist Carl-Gustav Mosander in 1843"
+    },
+    "Tb.story.0": {
+      "verdict": "supported",
+      "excerpt": "Terbium was discovered by the Swedish surgeon and chemist Carl-Gustav Mosander in 1843"
+    },
+    "Tb.story.1": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the village of Ytterby in Sweden"
+    },
+    "Tb.story.2": {
+      "verdict": "supported",
+      "excerpt": "Thus the original names given to erbium and terbium samples are now switched."
+    },
+    "Tb.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Terbium is used to dope some types of solid-state devices"
+    },
+    "Tb.uses.1": {
+      "verdict": "supported",
+      "excerpt": "along with zirconium dioxide (ZrO2), as a crystal stabilizer in fuel cells that operate at high temperatures"
+    },
+    "Tb.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Sodium terbium borate, another terbium compound, is used to make laser light."
+    },
+    "Tb.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Terbia can potentially be used as an activator for green phosphors in television tubes."
+    },
+    "Dy.story.0": {
+      "verdict": "supported",
+      "excerpt": "From the Greek word dysprositos, meaning hard to get at."
+    },
+    "Dy.story.1": {
+      "verdict": "supported",
+      "excerpt": "Dysprosium was discovered by Paul-Émile Lecoq de Boisbaudran, a French chemist, in 1886 as an impurity in erbia, the oxide of erbium."
+    },
+    "Dy.story.2": {
+      "verdict": "supported",
+      "excerpt": "Dysprosium was first isolated by the French chemist Georges Urbain in 1906."
+    },
+    "Dy.uses.0": {
+      "verdict": "supported",
+      "excerpt": "When combined with vanadium and other rare earth elements, dysprosium is used as a laser material."
+    },
+    "Dy.uses.1": {
+      "verdict": "supported",
+      "excerpt": "A dysprosium oxide-nickel cement has found use in cooling nuclear reactor rods."
+    },
+    "Dy.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Dysprosium-cadmium chalcogenides, as sources of infrared radiation, have been used for studying chemical reactions."
+    },
+    "Ho.story.0": {
+      "verdict": "supported",
+      "excerpt": "From the Latin word Holmia meaning Stockholm."
+    },
+    "Ho.story.1": {
+      "verdict": "supported",
+      "excerpt": "Holmium was discovered by Per Theodor Cleve, a Swedish chemist, in 1879."
+    },
+    "Ho.story.2": {
+      "verdict": "supported",
+      "excerpt": "Cleve named the brown material holmia and the green material thulia. Holmia is the oxide of the element holmium"
+    },
+    "Er.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Swedish town of Ytterby, where the ore gadolinite (in which it was found) was first mined."
+    },
+    "Er.story.1": {
+      "verdict": "supported",
+      "excerpt": "Erbium was discovered by the Swedish surgeon and chemist Carl-Gustav Mosander in 1843 in a yttrium sample."
+    },
+    "Er.story.2": {
+      "verdict": "supported",
+      "excerpt": "scientists soon confused erbia and terbia and, by 1877, had reversed their names."
+    },
+    "Er.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Erbium is added to fiber optic cables as a doping agent where it is used as a signal amplifier."
+    },
+    "Er.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Erbia has a pink color and is used to color glass and glazes."
+    },
+    "Er.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Erbium is alloyed with vanadium to make it softer and easier to shape."
+    },
+    "Tm.story.0": {
+      "verdict": "supported",
+      "excerpt": "Named after Thule, the earliest name for Scandinavia."
+    },
+    "Tm.story.1": {
+      "verdict": "supported",
+      "excerpt": "Thulium was discovered by Per Theodor Cleve, a Swedish chemist, in 1879."
+    },
+    "Tm.story.2": {
+      "verdict": "supported",
+      "excerpt": "Thulium was first isolated by the American chemist Charles James in 1911."
+    },
+    "Tm.uses.0": {
+      "verdict": "supported",
+      "excerpt": "one of its isotopes, thulium-169, could be used as a radiation source for portable X-ray machines."
+    },
+    "Tm.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Natural thulium also has possible use in ferrites (ceramic magnetic materials) used in microwave equipment"
+    },
+    "Tm.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Natural thulium also has possible use in ferrites (ceramic magnetic materials) used in microwave equipment, and can be used for doping fiber lasers."
+    },
+    "Yb.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "It was discovered by the Swiss chemist Jean-Charles Galissard de Marignac in 1878"
+    },
+    "Yb.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Swedish village of Ytterby where the mineral ytterbite (the source of ytterbium) was originally found."
+    },
+    "Yb.story.1": {
+      "verdict": "supported",
+      "excerpt": "It was discovered by the Swiss chemist Jean-Charles Galissard de Marignac in 1878"
+    },
+    "Yb.story.2": {
+      "verdict": "supported",
+      "excerpt": "In 1907, Urbain was able to separate ytterbium into two elements."
+    },
+    "Yb.uses.0": {
+      "verdict": "supported",
+      "excerpt": "It can be alloyed with stainless steel to improve some of its mechanical properties"
+    },
+    "Yb.uses.1": {
+      "verdict": "supported",
+      "excerpt": "used as a doping agent in fiber optic cable where it can be used as an amplifier"
+    },
+    "Yb.uses.2": {
+      "verdict": "supported",
+      "excerpt": "One isotope is reported to have been used as a radiation source substitute for a portable X-ray machine where electricity is unavailable."
+    },
+    "Lu.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "The discovery of lutetium is credited to the French chemist Georges Urbain in 1907"
+    },
+    "Lu.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from Lutetia, the ancient name for the city of Paris."
+    },
+    "Lu.story.1": {
+      "verdict": "supported",
+      "excerpt": "The discovery of lutetium is credited to the French chemist Georges Urbain in 1907"
+    },
+    "Lu.story.2": {
+      "verdict": "supported",
+      "excerpt": "Von Welsbach had named the element cassiopeium after the constellation Cassiopeia."
+    },
+    "Lu.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Lutetium is one of the most difficult elements to prepare and has no large scale practical uses"
+    },
+    "Lu.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Stable lutetium nuclides, which emit pure beta radiation after thermal neutron activation, can be used as catalysts in cracking, alkylation, hydrogenation, and polymerization."
+    },
+    "Lu.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Virtually no other commercial uses have been found yet for lutetium."
+    },
+    "Hf.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Hafnium was discovered by Dirk Coster, a Danish chemist, and George Charles de Hevesy, a Hungarian chemist, in 1923."
+    },
+    "Hf.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin hafnia for Copenhagen."
+    },
+    "Hf.story.1": {
+      "verdict": "supported",
+      "excerpt": "Bohr argued that hafnium would not be a rare earth element, but would be found in zirconium ore."
+    },
+    "Hf.story.2": {
+      "verdict": "supported",
+      "excerpt": "Hafnium was discovered by the Dutch physicist Dirk Coster and the Hungarian physicist George von Hevesy in 1923, while working at Bohr's Institute in Copenhagen."
+    },
+    "Hf.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Hafnium is a good absorber of neutrons and is used in the control rods of nuclear reactors."
+    },
+    "Hf.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Hafnium is used in gas-filled and incandescent lamps"
+    },
+    "Hf.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Hafnium is also used in vacuum tubes as a getter, a material that combines with and removes trace gases from vacuum tubes."
+    },
+    "Hf.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Hafnium has been used as an alloying agent in iron, titanium, niobium and other metals."
+    },
+    "Ta.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Tantalum was discovered by the Swedish chemist and mineralogist Anders- Gustav Ekeberg in 1802."
+    },
+    "Ta.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek mythological character Tantalus"
+    },
+    "Ta.story.2": {
+      "verdict": "supported",
+      "excerpt": "Tantalum was discovered by the Swedish chemist and mineralogist Anders- Gustav Ekeberg in 1802."
+    },
+    "Ta.uses.0": {
+      "verdict": "supported",
+      "excerpt": "is used to make surgical sutures as well as implants, such as artificial joints and cranial plates."
+    },
+    "Ta.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Tantalum does not react with bodily fluids and is used to make surgical equipment."
+    },
+    "Ta.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Tantalum pentoxide (Ta2O5), one of tantalum's compounds, is a dielectric material and is used to make capacitors."
+    },
+    "Ta.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Tantalum oxide is used to make special glass with high index of refraction for camera lenses."
+    },
+    "W.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Swedish tungsten for \"heavy stone\"."
+    },
+    "W.story.1": {
+      "verdict": "supported",
+      "excerpt": "The symbol W derives from the German wolfram"
+    },
+    "W.story.2": {
+      "verdict": "supported",
+      "excerpt": "Tungsten metal was first isolated by the Spanish chemists Fausto Elhuyar and his brother Juan José in 1783."
+    },
+    "W.uses.0": {
+      "verdict": "supported",
+      "excerpt": "is used to make filaments for incandescent light bulbs, fluorescent light bulbs and television tubes."
+    },
+    "W.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Tungsten is also used as a target for X-ray production"
+    },
+    "W.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Tungsten carbide (WC) is an extremely hard tungsten compound. It is used in the tips of drill bits"
+    },
+    "W.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Tungsten forms compounds with calcium and magnesium that have phosphorescent properties and are used in fluorescent light bulbs."
+    },
+    "Re.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Rhenium was discovered by x-ray spectroscopy in 1925"
+    },
+    "Re.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin rhenus for the Rhine river in Germany."
+    },
+    "Re.story.1": {
+      "verdict": "supported",
+      "excerpt": "Rhenium was discovered by x-ray spectroscopy in 1925 by German chemists Walter Noddack, Ida Tacke, and Otto Berg."
+    },
+    "Re.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Rhenium is used in flash lamps for photography"
+    },
+    "Re.uses.1": {
+      "verdict": "supported",
+      "excerpt": "It is widely used as filaments for mass spectrographs and ion gauges."
+    },
+    "Re.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Rhenium is also used as an electrical contact material"
+    },
+    "Re.uses.3": {
+      "verdict": "not_supported",
+      "reason": "The passage names two most frequent uses, as an alloying agent in tungsten and molybdenum and as a catalyst for olefin reactions, but the claim gives only the first as the whole answer."
+    },
+    "Os.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "discovered simultaneously in a crude platinum ore by the English chemist Smithson Tennant in 1803"
+    },
+    "Os.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek osme for \"smell\" because of the sharp odor of its volatile oxide."
+    },
+    "Os.story.1": {
+      "verdict": "supported",
+      "excerpt": "Osmium and iridium were discovered at the same time by the British chemist Smithson Tennant in 1803."
+    },
+    "Os.uses.0": {
+      "verdict": "supported",
+      "excerpt": "osmium is primarily used to make very hard alloys"
+    },
+    "Os.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Osmium alloys can be found in ball point pen tips, fountain pen tips, record player needles, electrical contacts"
+    },
+    "Os.uses.2": {
+      "verdict": "supported",
+      "excerpt": "very hard alloys with other metals of the platinum group for fountain pen tips, instrument pivots, phonograph needles, and electrical contacts"
+    },
+    "Ir.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Iridium and osmium were discovered at the same time by the British chemist Smithson Tennant in 1803."
+    },
+    "Ir.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Latin Iris, the Greek goddess of rainbows, because of the variety of colours in the element's salt solutions."
+    },
+    "Ir.story.1": {
+      "verdict": "supported",
+      "excerpt": "Iridium and osmium were discovered at the same time by the British chemist Smithson Tennant in 1803."
+    },
+    "Ir.story.2": {
+      "verdict": "supported",
+      "excerpt": "Iridium was discovered independently by the French chemist H. V. Collet-Descotils"
+    },
+    "Ir.uses.0": {
+      "verdict": "supported",
+      "excerpt": "It is primarily used as a hardening agent for platinum."
+    },
+    "Ir.uses.2": {
+      "verdict": "supported",
+      "excerpt": "It is also used for electrical contacts."
+    },
+    "Ir.uses.3": {
+      "verdict": "supported",
+      "excerpt": "the standard meter bar was created from an alloy of 90% platinum and 10% iridium."
+    },
+    "Pt.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Spanish platina for \"silver\"."
+    },
+    "Pt.story.1": {
+      "verdict": "supported",
+      "excerpt": "In 1735, the Spanish astronomer Antonio de Ulloa found platinum in Peru, South America."
+    },
+    "Pt.story.2": {
+      "verdict": "supported",
+      "excerpt": "Used by the pre-Columbian Indians of South America, platinum wasn't noticed by western scientists until 1735."
+    },
+    "Pt.uses.0": {
+      "verdict": "supported",
+      "excerpt": "It is used to make jewelry, wire, electrical contacts and laboratory vessels."
+    },
+    "Pt.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Platinum is also used in a device called a catalytic converter, a device found in the exhaust systems of most cars."
+    },
+    "Pt.uses.2": {
+      "verdict": "supported",
+      "excerpt": "It is also used for electrical contacts, corrosion-resistant apparatus, and in dentistry."
+    },
+    "Pt.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Fuel cells, devices that combine hydrogen and oxygen to produce electricity and water, also use platinum as a catalyst."
+    },
+    "Hg.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Mercury was known to the ancient Chinese and Hindus and has been found in 3500 year old Egyptian tombs."
+    },
+    "Hg.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Roman god Mercury, the nimble messenger of the gods,"
+    },
+    "Hg.story.1": {
+      "verdict": "supported",
+      "excerpt": "The symbol Hg derives from the Greek hydrargyrum for \"liquid silver\" or \"quick silver\"."
+    },
+    "Hg.story.2": {
+      "verdict": "supported",
+      "excerpt": "Mercury was known to the ancient Chinese and Hindus"
+    },
+    "Hg.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Mercury can be used to make thermometers, barometers and other scientific instruments."
+    },
+    "Hg.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Mercury vapor is used in streetlights, fluorescent lamps and advertising signs."
+    },
+    "Hg.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Mercury conducts electricity and is used to make silent, position dependent switches."
+    },
+    "Hg.uses.3": {
+      "verdict": "supported",
+      "excerpt": "These alloys are called amalgams. Amalgams are used to help extract gold from its ores, create dental fillings (in the case of silver)"
+    },
+    "Tl.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Thallium was discovered by the English physicist and chemist William Crookes in 1861."
+    },
+    "Tl.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek thallos for \"green shoot\" or \"twig\" because of the bright green line in its spectrum."
+    },
+    "Tl.story.1": {
+      "verdict": "supported",
+      "excerpt": "Thallium was discovered by the English physicist and chemist William Crookes in 1861."
+    },
+    "Tl.story.2": {
+      "verdict": "supported",
+      "excerpt": "The metal was isolated both by Crookes and by Lamy in 1862 at about the same time."
+    },
+    "Tl.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Thallium sulfide (Tl2S), thallium iodide (TlI) and thallium bromide (TlBr) are all compounds used in devices to detect infrared radiation."
+    },
+    "Tl.uses.1": {
+      "verdict": "supported",
+      "excerpt": "The electrical conductivity of thallium sulfide changes with exposure to infrared light, and this compound is used in photocells."
+    },
+    "Tl.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Thallium oxide has been used to produce glasses with a high index of refraction"
+    },
+    "Tl.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Thallium, used in conjunction with sulfur or selenium and arsenic, forms low melting glass."
+    },
+    "Pb.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Lead has been known since ancient times."
+    },
+    "Pb.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Anglo-Saxon lead, which is of unknown origin."
+    },
+    "Pb.story.1": {
+      "verdict": "supported",
+      "excerpt": "The chemical symbol Pb is derived from the Latin plumbum."
+    },
+    "Pb.story.2": {
+      "verdict": "supported",
+      "excerpt": "Long known, mentioned in Exodus."
+    },
+    "Pb.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Lead's high density makes it useful as a shield against X-ray and gamma-ray radiation and is used in X-ray machines and nuclear reactors."
+    },
+    "Pb.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Most of the lead used today is used in the production on lead-acid storage batteries, such as the batteries found in automobiles."
+    },
+    "Pb.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Lead is also used as a covering on some wires and cables to protect them from corrosion"
+    },
+    "Pb.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Lead oxide is used in producing fine \"crystal glass\" and \"flint glass\" of a high index of refraction for achromatic lenses."
+    },
+    "Bi.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the German weisse masse for \"white mass\" from the colour of its oxides."
+    },
+    "Bi.story.1": {
+      "verdict": "supported",
+      "excerpt": "In early times bismuth was confused with tin and lead."
+    },
+    "Bi.story.2": {
+      "verdict": "supported",
+      "excerpt": "Claude Geoffroy the Younger showed it to be distinct from lead in 1753."
+    },
+    "Bi.uses.0": {
+      "verdict": "supported",
+      "excerpt": "These alloys are used in such things as automatic fire sprinkler systems, fire detection systems and electrical fuses."
+    },
+    "Bi.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Bismuth oxide (Bi2O3), a bismuth compound, is used as a yellow pigment in paints and cosmetics."
+    },
+    "Bi.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Bismuth oxychloride (BiOCl) is used to make a pigment known as bismuth white."
+    },
+    "Bi.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Bismuth subnitrate and subcarbonate are used in medicine."
+    },
+    "Po.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Polonium was discovered by Marie Sklodowska Curie, a Polish chemist, in 1898."
+    },
+    "Po.story.0": {
+      "verdict": "supported",
+      "excerpt": "Polonium was discovered by Marie Sklodowska Curie, a Polish chemist, in 1898."
+    },
+    "Po.story.1": {
+      "verdict": "supported",
+      "excerpt": "Named after Poland, native country of Madam Curie."
+    },
+    "Po.story.2": {
+      "verdict": "supported",
+      "excerpt": "She obtained polonium from pitchblende, a material that contains uranium"
+    },
+    "Po.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Polonium is also used in brushes for removing dust from photographic films"
+    },
+    "Po.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Polonium can be used to eliminate static electricity in machinery that is caused by processes such as the rolling of paper, wire or sheet metal"
+    },
+    "Po.uses.2": {
+      "verdict": "supported",
+      "excerpt": "polonium has attracted attention for uses as a lightweight heat source for thermoelectric power in space satellites"
+    },
+    "At.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Synthesized in 1940 by D.R. Corson, K.R. MacKenzie, and E. Segre at the University of California"
+    },
+    "At.story.0": {
+      "verdict": "supported",
+      "excerpt": "From the Greek astatos meaning unstable."
+    },
+    "At.story.1": {
+      "verdict": "supported",
+      "excerpt": "Synthesized in 1940 by D.R. Corson, K.R. MacKenzie, and E. Segre at the University of California"
+    },
+    "At.uses.0": {
+      "verdict": "supported",
+      "excerpt": "there are currently no uses for astatine outside of basic scientific research."
+    },
+    "Rn.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Radon was discovered by Friedrich Ernst Dorn, a German chemist, in 1900 while studying radium's decay chain."
+    },
+    "Rn.story.0": {
+      "verdict": "supported",
+      "excerpt": "Radon was discovered by Friedrich Ernst Dorn, a German chemist, in 1900 while studying radium's decay chain."
+    },
+    "Rn.story.1": {
+      "verdict": "supported",
+      "excerpt": "The name was derived from radium"
+    },
+    "Rn.story.2": {
+      "verdict": "not_supported",
+      "reason": "The passage contradicts itself: it says Dorn first called the element 'radium emanation' in 1900 and that Ramsay and Gray named it niton later, in 1908, so 'first called niton' is not reliably supported."
+    },
+    "Rn.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Small amounts of radon are sometimes used by hospitals to treat some forms of cancer."
+    },
+    "Rn.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Radon is still produced for therapeutic use by a few hospitals"
+    },
+    "Fr.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Francium was discovered by Marguerite Catherine Perey, a French chemist, in 1939"
+    },
+    "Fr.story.0": {
+      "verdict": "supported",
+      "excerpt": "Francium was discovered by Marguerite Catherine Perey, a French chemist, in 1939"
+    },
+    "Fr.story.1": {
+      "verdict": "supported",
+      "excerpt": "in 1939 while analyzing actinium's decay sequence"
+    },
+    "Fr.story.2": {
+      "verdict": "supported",
+      "excerpt": "Discovered in 1939 by Mlle. Marguerite Perey of the Curie Institute, Paris."
+    },
+    "Fr.uses.0": {
+      "verdict": "supported",
+      "excerpt": "there are currently no uses for francium outside of basic scientific research"
+    },
+    "Ra.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Radium was discovered by Marie Sklodowska Curie, a Polish chemist, and Pierre Curie, a French chemist, in 1898."
+    },
+    "Ra.story.0": {
+      "verdict": "supported",
+      "excerpt": "Radium was discovered by Marie Sklodowska Curie, a Polish chemist, and Pierre Curie, a French chemist, in 1898."
+    },
+    "Ra.story.1": {
+      "verdict": "supported",
+      "excerpt": "Marie Curie obtained radium from pitchblende, a material that contains uranium,"
+    },
+    "Ra.story.2": {
+      "verdict": "supported",
+      "excerpt": "The element was isolated in 1911 by Mme. Curie and Debierne"
+    },
+    "Ra.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Radium is used to produce radon, a radioactive gas used to treat some types of cancer."
+    },
+    "Ra.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Radium had been used to make self-luminous paints for watches, aircraft instrument dials and other instrumentation"
+    },
+    "Ra.uses.2": {
+      "verdict": "supported",
+      "excerpt": "A mixture of radium and beryllium will emit neutrons and is used as a neutron source."
+    },
+    "Ac.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Discovered by Andre Debierne in 1899 and independently by F. Giesel in 1902."
+    },
+    "Ac.story.0": {
+      "verdict": "supported",
+      "excerpt": "Discovered by Andre Debierne in 1899 and independently by F. Giesel in 1902."
+    },
+    "Ac.story.1": {
+      "verdict": "supported",
+      "excerpt": "From the Greek aktis, aktinos, meaning beam or ray."
+    },
+    "Ac.story.2": {
+      "verdict": "supported",
+      "excerpt": "Actinium was discovered in 1899 by André-Louis Debierne, a French chemist, while experimenting with new methods of separating rare earth oxides."
+    },
+    "Ac.uses.0": {
+      "verdict": "supported",
+      "excerpt": "although it is used in the production of neutrons."
+    },
+    "Ac.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Actinium has no significant commercial applications"
+    },
+    "Th.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from Thor, the Scandinavian god of thunder."
+    },
+    "Th.story.1": {
+      "verdict": "supported",
+      "excerpt": "Thorium was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1828."
+    },
+    "Th.story.2": {
+      "verdict": "supported",
+      "excerpt": "Thorium was first isolated by the chemists D. Lely, Jr. and L. Hamburger in 1914."
+    },
+    "Th.uses.0": {
+      "verdict": "supported",
+      "excerpt": "The principal historic use of thorium has been in the preparation of the Welsbach mantle, used for portable gaslights."
+    },
+    "Th.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Thorium oxide is also used to make glass with a high index of refraction that is used to make high quality camera lenses."
+    },
+    "Th.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Thorium is also used to coat tungsten filaments used in electronic devices, such at television sets."
+    },
+    "Th.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Thorium is used as an alloying agent to improve magnesium's strength at high temperatures."
+    },
+    "Pa.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the Greek protos (first) for preceding the element actinium"
+    },
+    "Pa.story.1": {
+      "verdict": "supported",
+      "excerpt": "Protactinium was first identified by Kasimir Fajans and O.H. Göhring in 1913 while studying uranium's decay chain."
+    },
+    "Pa.story.2": {
+      "verdict": "supported",
+      "excerpt": "Protactinium was first isolated by Aristid V. Grosse in 1934."
+    },
+    "Pa.uses.0": {
+      "verdict": "supported",
+      "excerpt": "there are currently no uses for protactinium outside of basic scientific research."
+    },
+    "Pa.uses.1": {
+      "verdict": "supported",
+      "excerpt": "there are currently no practical uses for protactinium other than that of basic scientific research"
+    },
+    "U.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "The German chemist Martin-Heinrich Klaproth discovered the element in 1789"
+    },
+    "U.story.0": {
+      "verdict": "supported",
+      "excerpt": "The name derives from the planet Uranus"
+    },
+    "U.story.1": {
+      "verdict": "supported",
+      "excerpt": "The German chemist Martin-Heinrich Klaproth discovered the element in 1789"
+    },
+    "U.story.2": {
+      "verdict": "supported",
+      "excerpt": "The metallic uranium was first isolated by the French chemist Eugène-Melchior Peligot in 1841."
+    },
+    "U.uses.0": {
+      "verdict": "supported",
+      "excerpt": "is most commonly used in the nuclear power industry to generate electricity"
+    },
+    "U.uses.1": {
+      "verdict": "supported",
+      "excerpt": "as a shield against radiation"
+    },
+    "U.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Uranium metal is used for X-ray targets for production of high-energy X-rays"
+    },
+    "U.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Uranium compounds have been used for centuries to color glass."
+    },
+    "Np.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Neptunium was first produced by Edwin M. McMillian and Philip H. Abelson, working at the University of California, Berkeley, in 1940."
+    },
+    "Np.story.0": {
+      "verdict": "supported",
+      "excerpt": "Named for the planet Neptune (named after the Roman god of the sea)"
+    },
+    "Np.story.1": {
+      "verdict": "supported",
+      "excerpt": "Neptunium was first produced by Edwin M. McMillian and Philip H. Abelson, working at the University of California, Berkeley, in 1940."
+    },
+    "Np.story.2": {
+      "verdict": "supported",
+      "excerpt": "There were many early false reports of the discovery of neptunium. The most significant was by Enrico Fermi"
+    },
+    "Np.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Neptunium-237, which is produced in gram quantities as a by-product of the production of plutonium in nuclear reactors, is used in neutron detectors."
+    },
+    "Pu.story.0": {
+      "verdict": "supported",
+      "excerpt": "Plutonium was first produced by Glenn T. Seaborg, Joseph W. Kennedy, Edward M. McMillan and Arthur C. Wohl"
+    },
+    "Pu.story.1": {
+      "verdict": "not_supported",
+      "reason": "The passage gives two precedents for the naming, uranium after Uranus and neptunium after Neptune, so naming only uranium presents part of the explanation as the whole."
+    },
+    "Pu.story.2": {
+      "verdict": "supported",
+      "excerpt": "Seaborg originally considered the name \"plutium\", but later thought that it did not sound as good as \"plutonium.\""
+    },
+    "Pu.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Pu-238 has also been used to power instruments left on the Moon by Apollo astronauts, weather satellites and interplanetary probes"
+    },
+    "Pu.uses.2": {
+      "verdict": "supported",
+      "excerpt": "extract plutonium and uranium which can be used to form a mixed U/Pu oxide or \"MOX\" fuel for reuse in nuclear power reactors"
+    },
+    "Pu.uses.3": {
+      "verdict": "supported",
+      "excerpt": "Plutonium-238 was at one time used successfully to power artificial heart pacemakers but has been replaced by lithium-based primary cells."
+    },
+    "Am.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Americium was discovered in 1944 by the American scientists Glenn T. Seaborg, Ralph A. James, Leon O. Morgan and Albert Ghiorso."
+    },
+    "Am.story.0": {
+      "verdict": "supported",
+      "excerpt": "Americium was discovered in 1944 by the American scientists Glenn T. Seaborg, Ralph A. James, Leon O. Morgan and Albert Ghiorso."
+    },
+    "Am.story.1": {
+      "verdict": "supported",
+      "excerpt": "was named after the continent of North America by analogy to its lighter lanthanide homologue, europium"
+    },
+    "Am.story.2": {
+      "verdict": "supported",
+      "excerpt": "Seaborg announced the discovery of elements 95, americium 96, and curium on the U.S. children's radio show,\"The Quiz Kids\""
+    },
+    "Am.uses.0": {
+      "verdict": "supported",
+      "excerpt": "It is used in smoke detectors and can be used as a portable source of gamma rays."
+    },
+    "Am.uses.1": {
+      "verdict": "supported",
+      "excerpt": "It is used in smoke detectors and can be used as a portable source of gamma rays."
+    },
+    "Am.uses.2": {
+      "verdict": "supported",
+      "excerpt": "For example, americium has been employed to gauge glass thickness to help create flat glass."
+    },
+    "Cm.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Curium was first produced by Glenn T. Seaborg, Ralph A. James and Albert Ghiorso, working at the University of California, Berkeley, in 1944."
+    },
+    "Cm.story.0": {
+      "verdict": "supported",
+      "excerpt": "Curium was first produced by Glenn T. Seaborg, Ralph A. James and Albert Ghiorso, working at the University of California, Berkeley, in 1944."
+    },
+    "Cm.story.1": {
+      "verdict": "supported",
+      "excerpt": "They bombarded atoms of plutonium-239, an isotope of plutonium, with alpha particles that had been accelerated in a device called a cyclotron."
+    },
+    "Cm.story.2": {
+      "verdict": "supported",
+      "excerpt": "it was actually the third transuranium element to be discovered"
+    },
+    "Cm.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Curium is primarily used for basic scientific research."
+    },
+    "Cm.uses.1": {
+      "verdict": "supported",
+      "excerpt": "there are currently no commercial applications for it"
+    },
+    "Cm.uses.2": {
+      "verdict": "supported",
+      "excerpt": "it might be used in radioisotope thermoelectric generators in the future"
+    },
+    "Cm.uses.3": {
+      "verdict": "supported",
+      "excerpt": "As with the element, the compounds currently have no commercial applications and are primarily used for basic scientific research."
+    },
+    "Bk.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "was first produced in 1949 by Thompson, Ghiorso, and Seaborg"
+    },
+    "Bk.story.0": {
+      "verdict": "supported",
+      "excerpt": "It was named berkelium after Berkeley, California, the city of its discovery."
+    },
+    "Bk.story.1": {
+      "verdict": "supported",
+      "excerpt": "Berkelium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso"
+    },
+    "Bk.story.2": {
+      "verdict": "supported",
+      "excerpt": "They bombarded an isotope of americium, americium-241, with alpha particles with a device called a cyclotron."
+    },
+    "Cf.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Albert Ghiorso working at the University of California, Berkeley, in 1950"
+    },
+    "Cf.story.0": {
+      "verdict": "supported",
+      "excerpt": "first produced by Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso working at the University of California, Berkeley, in 1950"
+    },
+    "Cf.story.1": {
+      "verdict": "supported",
+      "excerpt": "Albert Ghiorso working at the University of California, Berkeley, in 1950"
+    },
+    "Cf.story.2": {
+      "verdict": "supported",
+      "excerpt": "They bombarded atoms of curium-242 with helium ions using a device known as a cyclotron."
+    },
+    "Cf.uses.0": {
+      "verdict": "supported",
+      "excerpt": "It is being used as a neutron source to identify gold and silver ores through a technique known as neutron activation."
+    },
+    "Cf.uses.1": {
+      "verdict": "supported",
+      "excerpt": "It is also being used in devices known as neutron moisture gauges that are used to find water and oil bearing layers in oil wells."
+    },
+    "Es.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Einsteinium was discovered by a team of scientists led by Albert Ghiorso in 1952"
+    },
+    "Es.story.0": {
+      "verdict": "supported",
+      "excerpt": "Einsteinium was discovered by a team of scientists led by Albert Ghiorso in 1952"
+    },
+    "Es.story.1": {
+      "verdict": "supported",
+      "excerpt": "It was named after Albert Einstein."
+    },
+    "Es.uses.0": {
+      "verdict": "supported",
+      "excerpt": "it currently has no uses outside of basic scientific research."
+    },
+    "Fm.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Fermium was discovered by a team of scientists led by Albert Ghiorso in 1952"
+    },
+    "Fm.story.0": {
+      "verdict": "supported",
+      "excerpt": "Fermium was discovered by a team of scientists led by Albert Ghiorso in 1952"
+    },
+    "Fm.story.1": {
+      "verdict": "supported",
+      "excerpt": "is named after the Italian physicist and Nobel Laureate Enrico Fermi"
+    },
+    "Fm.story.2": {
+      "verdict": "supported",
+      "excerpt": "the prerogative to name the new element in honor of the recently deceased Enrico Fermi, the developer of the first artificial self-sustained nuclear reactor"
+    },
+    "Fm.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Due to the small amounts produced and its short half-life, there are currently no uses for fermium outside of basic scientific research."
+    },
+    "Fm.uses.1": {
+      "verdict": "supported",
+      "excerpt": "there are currently no uses for it outside of basic scientific research that expands knowledge of the rest of the periodic table."
+    },
+    "Md.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Albert Ghiorso working at the University of California, Berkeley, in 1955"
+    },
+    "Md.story.0": {
+      "verdict": "supported",
+      "excerpt": "Mendelevium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Bernard G. Harvey, Gregory R. Choppin and Albert Ghiorso"
+    },
+    "Md.story.1": {
+      "verdict": "supported",
+      "excerpt": "Mendelevium is named after Dmitri Mendeleev."
+    },
+    "Md.story.2": {
+      "verdict": "supported",
+      "excerpt": "This first identification was notable in that 256Md was synthesized on a one-atom-at-a-time basis."
+    },
+    "Md.uses.0": {
+      "verdict": "supported",
+      "excerpt": "it currently has no uses outside of basic scientific research."
+    },
+    "Md.uses.1": {
+      "verdict": "supported",
+      "excerpt": "256Md has been used to elucidate some of the chemical properties of mendelevium in aqueous solution."
+    },
+    "No.story.0": {
+      "verdict": "supported",
+      "excerpt": "Named after Alfred Nobel, inventor of dynamite."
+    },
+    "No.story.1": {
+      "verdict": "supported",
+      "excerpt": "Nobelium was unambiguously discovered and identified in April 1958 at Berkeley by A. Ghiorso, T. Sikkeland, J.R. Walton, and G.T. Seaborg"
+    },
+    "No.story.2": {
+      "verdict": "supported",
+      "excerpt": "Credit for discovering nobelium was eventually given to the scientists working at Lawrence Radiation Laboratory, who decided to keep the name nobelium."
+    },
+    "No.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Since only tiny amounts of nobelium have ever been produced, there are currently no uses for it outside of basic scientific research."
+    },
+    "Lr.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Lawrencium was created by four American scientists, Albert Ghiorso, Torbjørn Sikkeland, Almon E. Larsh and Robert M. Latimer, in March, 1961."
+    },
+    "Lr.story.0": {
+      "verdict": "supported",
+      "excerpt": "Lawrencium was created by four American scientists, Albert Ghiorso, Torbjørn Sikkeland, Almon E. Larsh and Robert M. Latimer, in March, 1961."
+    },
+    "Lr.story.1": {
+      "verdict": "supported",
+      "excerpt": "Named after Lawrence, inventor of the cyclotron."
+    },
+    "Lr.story.2": {
+      "verdict": "supported",
+      "excerpt": "Working at the Lawrence Radiation Laboratory in Berkeley, California, the scientists placed three micrograms (0.000003 grams) of californium"
+    },
+    "Lr.uses.0": {
+      "verdict": "supported",
+      "excerpt": "there are currently no uses for it outside of basic scientific research."
+    },
+    "Rf.story.0": {
+      "verdict": "supported",
+      "excerpt": "Scientists working at the Joint Institute for Nuclear Research in Dubna, Russia, first reported the production of rutherfordium in 1964."
+    },
+    "Rf.story.1": {
+      "verdict": "supported",
+      "excerpt": "Credit for the discovery of rutherfordium is still under debate."
+    },
+    "Rf.uses.0": {
+      "verdict": "supported",
+      "excerpt": "there are currently no uses for rutherfordium outside of basic scientific research."
+    },
+    "Db.story.0": {
+      "verdict": "supported",
+      "excerpt": "Scientists working at the Joint Institute for Nuclear Research in Dubna, Russia, first reported the production of dubnium in 1967."
+    },
+    "Db.story.1": {
+      "verdict": "supported",
+      "excerpt": "Credit for the discovery of dubnium is still under debate."
+    },
+    "Db.story.2": {
+      "verdict": "supported",
+      "excerpt": "recommended that element 105 be named to Dubnium (symbol Db) after the site of the Joint Institute for Nuclear Research in Russia."
+    },
+    "Db.uses.0": {
+      "verdict": "supported",
+      "excerpt": "there are currently no uses for dubnium outside of basic scientific research."
+    },
+    "Sg.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Lawrence Berkeley Laboratory in Berkeley, California, in 1974"
+    },
+    "Sg.story.0": {
+      "verdict": "supported",
+      "excerpt": "Seaborgium was first produced by a team of scientists led by Albert Ghiorso working at the Lawrence Berkeley Laboratory in Berkeley, California, in 1974."
+    },
+    "Sg.story.1": {
+      "verdict": "supported",
+      "excerpt": "Glenn Seaborg was part of this group, and the element was named in his honor."
+    },
+    "Sg.story.2": {
+      "verdict": "supported",
+      "excerpt": "The Berkeley group's work was confirmed in 1993 and they were credited with the discovery."
+    },
+    "Sg.uses.0": {
+      "verdict": "supported",
+      "excerpt": "there are currently no uses for seaborgium outside of basic scientific research."
+    },
+    "Bh.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "First produced in 1976 by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia"
+    },
+    "Bh.story.0": {
+      "verdict": "supported",
+      "excerpt": "First produced in 1976 by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia"
+    },
+    "Bh.story.1": {
+      "verdict": "supported",
+      "excerpt": "later confirmed in 1981 by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany"
+    },
+    "Bh.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Since only a few atoms of bohrium have ever been made, there are currently no uses for bohrium outside of basic scientific research."
+    },
+    "Hs.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Hassium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1984."
+    },
+    "Hs.story.0": {
+      "verdict": "supported",
+      "excerpt": "Hassium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1984."
+    },
+    "Hs.story.1": {
+      "verdict": "supported",
+      "excerpt": "Its name is Latin \"Hassias\" meaning \"Hess,\" from the German state."
+    },
+    "Hs.uses.0": {
+      "verdict": "supported",
+      "excerpt": "it currently has no uses outside of basic scientific research."
+    },
+    "Mt.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1982"
+    },
+    "Mt.story.0": {
+      "verdict": "supported",
+      "excerpt": "Meitnerium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1982."
+    },
+    "Mt.story.2": {
+      "verdict": "supported",
+      "excerpt": "This experiment demonstrated the feasibility of using fusion techniques as a method of making new, heavy nuclei."
+    },
+    "Mt.uses.0": {
+      "verdict": "supported",
+      "excerpt": "it currently has no uses outside of basic scientific research."
+    },
+    "Ds.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "November 9, 1994 at 4:39 pm, the first atom with atomic number 110 was detected"
+    },
+    "Ds.story.0": {
+      "verdict": "supported",
+      "excerpt": "Darmstadtium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany on November 9th, 1994."
+    },
+    "Ds.uses.0": {
+      "verdict": "supported",
+      "excerpt": "it currently has no uses outside of basic scientific research."
+    },
+    "Rg.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "Discovered by Gesellschaft Schwerionenforschung (GSI) in Darmstadt, in 1994."
+    },
+    "Rg.story.0": {
+      "verdict": "supported",
+      "excerpt": "Roentgenium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in late 1994."
+    },
+    "Rg.story.1": {
+      "verdict": "supported",
+      "excerpt": "Roentgenium was first produced by Peter Armbruster, Gottfried Münzenber and their team"
+    },
+    "Rg.uses.0": {
+      "verdict": "supported",
+      "excerpt": "it currently has no uses outside of basic scientific research."
+    },
+    "Cn.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "in Darmstadt, Germany on February 9, 1996"
+    },
+    "Cn.story.0": {
+      "verdict": "supported",
+      "excerpt": "Copernicium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany on February 9, 1996"
+    },
+    "Cn.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Since only a few atoms of copernicium have ever been produced, it currently has no uses outside of basic scientific research."
+    },
+    "Nh.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "On July 23, 2004, scientists working at the RIKEN Nishina Center for Accelerator-based Science in Wako, Japan, created the first two atoms"
+    },
+    "Nh.story.0": {
+      "verdict": "supported",
+      "excerpt": "On July 23, 2004, scientists working at the RIKEN Nishina Center for Accelerator-based Science in Wako, Japan, created the first two atoms"
+    },
+    "Nh.story.1": {
+      "verdict": "supported",
+      "excerpt": "The name means mean \"the Land of Rising Sun\" and comes from the word \"Nihon,\" which means \"Japan\" in Japanese."
+    },
+    "Nh.story.2": {
+      "verdict": "supported",
+      "excerpt": "The name was proposed by the discoverers at RIKEN Nishina Center for Accelerator-Based Science in Japan."
+    },
+    "Nh.uses.0": {
+      "verdict": "supported",
+      "excerpt": "it currently has no uses outside of basic scientific research."
+    },
+    "Fl.story.0": {
+      "verdict": "supported",
+      "excerpt": "Flerovium was first produced by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia in 1998."
+    },
+    "Fl.story.1": {
+      "verdict": "supported",
+      "excerpt": "The element is named after Russian physicist Georgy Flyorov"
+    },
+    "Fl.story.2": {
+      "verdict": "supported",
+      "excerpt": "The name Flerovium was adopted by IUPAC on May 31, 2012."
+    },
+    "Fl.uses.0": {
+      "verdict": "supported",
+      "excerpt": "it currently has no uses outside of basic scientific research."
+    },
+    "Mc.story.0": {
+      "verdict": "supported",
+      "excerpt": "element 115 was named Moscovium with the symbol Mc. Moscovium is the Moscow region of Russia"
+    },
+    "Mc.story.1": {
+      "verdict": "supported",
+      "excerpt": "together by the Joint Institute for Nuclear Research, Dubna (Russia), Oak Ridge National Laboratory (USA), Vanderbilt University (USA) and Lawrence Livermore National Laboratory (USA)."
+    },
+    "Mc.story.2": {
+      "verdict": "supported",
+      "excerpt": "On Novemer 28th, 2016, element 115 was named Moscovium with the symbol Mc."
+    },
+    "Mc.uses.0": {
+      "verdict": "supported",
+      "excerpt": "it currently has no uses outside of basic scientific research."
+    },
+    "Lv.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "It was first reported by Russian scientists from Dubna (Joint Institute for Nuclear Research) in 2000."
+    },
+    "Lv.story.0": {
+      "verdict": "supported",
+      "excerpt": "It was first reported by Russian scientists from Dubna (Joint Institute for Nuclear Research) in 2000."
+    },
+    "Lv.story.1": {
+      "verdict": "supported",
+      "excerpt": "Its former name was ununhexium"
+    },
+    "Lv.story.2": {
+      "verdict": "supported",
+      "excerpt": "the name Livermorium name was adopted by IUPAC on May 31, 2012."
+    },
+    "Lv.uses.0": {
+      "verdict": "supported",
+      "excerpt": "it currently has no uses outside of basic scientific research."
+    },
+    "Ts.discoveryYear": {
+      "verdict": "supported",
+      "excerpt": "On April 5, 2010, scientists working at the Joint Institute for Nuclear Research in Dubna, Russia"
+    },
+    "Ts.uses.0": {
+      "verdict": "supported",
+      "excerpt": "it currently has no uses outside of basic scientific research."
+    },
+    "Og.story.1": {
+      "verdict": "supported",
+      "excerpt": "The name was proposed by the Joint Institute for Nuclear Research, Dubna (Russia) and Lawrence Livermore National Laboratory (USA)."
+    },
+    "Og.story.2": {
+      "verdict": "supported",
+      "excerpt": "It honors Professor Yuri Oganessian (born 1933) for his pioneering contributions to transactinoid elements research."
+    },
+    "Og.uses.0": {
+      "verdict": "supported",
+      "excerpt": "it currently has no uses outside of basic scientific research."
+    }
+  }
+}

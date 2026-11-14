@@ -955,6 +955,138 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Er.electronConfiguration"
+    },
+    {
+      "id": "Er.discovery.story.0",
+      "subject": {
+        "entity": "element:Er",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Erbium's name comes from the Swedish town of Ytterby, where the ore gadolinite, in which erbium was found, was first mined.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/68#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Swedish town of Ytterby, where the ore gadolinite (in which it was found) was first mined.",
+      "evidence": "The name derives from the Swedish town of Ytterby, where the ore gadolinite (in which it was found) was first mined.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Er.discovery.story.1",
+      "subject": {
+        "entity": "element:Er",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Erbium was discovered in 1843 by Carl-Gustav Mosander, a Swedish surgeon and chemist, in a sample of yttrium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/68#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Erbium was discovered by the Swedish surgeon and chemist Carl-Gustav Mosander in 1843 in a yttrium sample.",
+      "evidence": "Erbium was discovered by the Swedish surgeon and chemist Carl-Gustav Mosander in 1843 in a yttrium sample.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Er.discovery.story.2",
+      "subject": {
+        "entity": "element:Er",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Scientists soon confused the substances erbia and terbia, and by 1877 they had reversed their names.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/68#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "scientists soon confused erbia and terbia and, by 1877, had reversed their names.",
+      "evidence": "scientists soon confused erbia and terbia and, by 1877, had reversed their names.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Er.uses.0",
+      "subject": {
+        "entity": "element:Er",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Erbium is added to fiber optic cables, where it is used as a signal amplifier.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/68#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Erbium is added to fiber optic cables as a doping agent where it is used as a signal amplifier.",
+      "evidence": "Erbium is added to fiber optic cables as a doping agent where it is used as a signal amplifier.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Er.uses.1",
+      "subject": {
+        "entity": "element:Er",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Erbia, a pink compound of erbium, is used to color glass and glazes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/68#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Erbia has a pink color and is used to color glass and glazes.",
+      "evidence": "Erbia has a pink color and is used to color glass and glazes.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Er.uses.2",
+      "subject": {
+        "entity": "element:Er",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Erbium is alloyed with vanadium to make it softer and easier to shape.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/68#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Erbium is alloyed with vanadium to make it softer and easier to shape.",
+      "evidence": "Erbium is alloyed with vanadium to make it softer and easier to shape.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

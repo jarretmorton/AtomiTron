@@ -505,6 +505,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from Be.electronConfiguration, Be.group"
+    },
+    {
+      "id": "Be.discovery.story.0",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name beryllium comes from the Greek word beryllos, meaning beryl, which is a gemstone in which beryllium is found.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek word beryllos for \"beryl\", a gemstone in which it is found",
+      "evidence": "The name derives from the Greek word beryllos for \"beryl\", a gemstone in which it is found",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Be.discovery.story.1",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "In 1828, the French chemist Antoine-Alexandre-Brutus Bussy and, independently, the German chemist Friedrich Wöhler first separated beryllium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The element was first separated in 1828 by the French chemist Antoine-Alexandre-Brutus Bussy and independently by the German chemist Friedrich Wöhler",
+      "evidence": "The element was first separated in 1828 by the French chemist Antoine-Alexandre-Brutus Bussy and independently by the German chemist Friedrich Wöhler",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Be.discovery.story.2",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Beryllium was once also known as glucinium, from the Greek word glykys for sweet, until IUPAC chose the name beryllium in 1949.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "the element was also known as glucinium from the Greek glykys for \"sweet\", until IUPAC selected the name beryllium in 1949",
+      "evidence": "the element was also known as glucinium from the Greek glykys for \"sweet\", until IUPAC selected the name beryllium in 1949",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Be.uses.0",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Beryllium is used to make windows for X-ray tubes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Beryllium is relatively transparent to X-rays and is used to make windows for X-ray tubes.",
+      "evidence": "Beryllium is relatively transparent to X-rays and is used to make windows for X-ray tubes.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Be.uses.1",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Beryllium is used to make an alloy called beryllium copper, which is used for things such as springs and electrical contacts.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Beryllium is used as an alloying agent in producing beryllium copper, which is extensively used for springs, electrical contacts",
+      "evidence": "Beryllium is used as an alloying agent in producing beryllium copper, which is extensively used for springs, electrical contacts",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Be.uses.2",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Beryllium is used in parts of the space shuttle, such as the windshield frame and brake discs.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Other uses include windshield frame, brake discs, support beams, and other structural components of the space shuttle.",
+      "evidence": "Other uses include windshield frame, brake discs, support beams, and other structural components of the space shuttle.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Be.uses.3",
+      "subject": {
+        "entity": "element:Be",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Beryllium is used in things such as gyroscopes and computer parts.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It is used in gyroscopes, computer parts, and instruments where lightness, stiffness, and dimensional stability are required.",
+      "evidence": "It is used in gyroscopes, computer parts, and instruments where lightness, stiffness, and dimensional stability are required.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

@@ -656,7 +656,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Some electrical filaments are made from molybdenum.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Mo.uses.0"
+          }
+        },
+        {
+          "value": "Molybdenum is mainly used as an alloying agent in steel.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Mo.uses.1"
+          }
+        },
+        {
+          "value": "Molybdenum disulfide, a compound of molybdenum, is used as a lubricant at high temperatures.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Mo.uses.2"
+          }
+        },
+        {
+          "value": "Molybdenum trioxide, a compound of molybdenum, is used to make enamels stick to metals.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Mo.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Molybdenum was discovered in 1778 by Carl Wilhelm Scheele, a Swedish pharmacist and chemist.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Mo.discovery.story.0"
+            }
+          },
+          {
+            "value": "The name molybdenum comes from the Greek word molybdos, which means \"lead\".",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Mo.discovery.story.1"
+            }
+          },
+          {
+            "value": "In ancient times, people used the word \"lead\" for any black mineral that leaves a mark on paper.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Mo.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

@@ -866,6 +866,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from S.electronConfiguration, S.group"
+    },
+    {
+      "id": "S.discovery.year",
+      "subject": {
+        "entity": "element:S",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": "Ancient",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/16#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Known to the ancients; referred to in Genesis as brimstone.",
+      "evidence": "Known to the ancients; referred to in Genesis as brimstone.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "S.discovery.story.0",
+      "subject": {
+        "entity": "element:S",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name sulfur comes from the Latin word sulphurium and the Sanskrit word sulveri.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/16#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin sulphurium and the Sanskrit sulveri.",
+      "evidence": "The name derives from the Latin sulphurium and the Sanskrit sulveri.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "S.discovery.story.1",
+      "subject": {
+        "entity": "element:S",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Sulfur was once called brenne stone, meaning combustible stone, and the word brimstone comes from that name.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/16#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Sulfur was known as brenne stone for \"combustible stone\" from which brim-stone is derived.",
+      "evidence": "Sulfur was known as brenne stone for \"combustible stone\" from which brim-stone is derived.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "S.discovery.story.2",
+      "subject": {
+        "entity": "element:S",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "In 1809, French chemists Louis-Joseph Gay-Lussac and Louis-Jacques Thenard proved that sulfur is an element.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/16#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "In 1809, the French chemists Louis-Joseph Gay-Lussac and Louis-Jacques Thenard proved the elemental nature of sulfur.",
+      "evidence": "In 1809, the French chemists Louis-Joseph Gay-Lussac and Louis-Jacques Thenard proved the elemental nature of sulfur.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "S.uses.0",
+      "subject": {
+        "entity": "element:S",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Most of the sulfur that is produced is used to make sulfuric acid.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/16#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Most of the sulfur that is produced is used in the manufacture of sulfuric acid (H2SO4).",
+      "evidence": "Most of the sulfur that is produced is used in the manufacture of sulfuric acid (H2SO4).",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "S.uses.1",
+      "subject": {
+        "entity": "element:S",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Sulfur is used in making phosphatic fertilizers.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/16#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It is also used extensively in making phosphatic fertilizers.",
+      "evidence": "It is also used extensively in making phosphatic fertilizers.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "S.uses.2",
+      "subject": {
+        "entity": "element:S",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Sulfur is used in the vulcanization of natural rubber.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/16#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Sulfur is a component of black gunpowder, and is used in the vulcanization of natural rubber",
+      "evidence": "Sulfur is a component of black gunpowder, and is used in the vulcanization of natural rubber",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "S.uses.3",
+      "subject": {
+        "entity": "element:S",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Sulfur is used to make papers, including sulfite paper.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/16#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It is used to make sulfite paper and other papers",
+      "evidence": "It is used to make sulfite paper and other papers",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

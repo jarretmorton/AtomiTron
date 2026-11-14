@@ -415,7 +415,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Rubidium is used in vacuum tubes as a getter, a material that combines with and removes trace gases from the tubes.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Rb.uses.0"
+          }
+        },
+        {
+          "value": "Rubidium is used as a part of photocells.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Rb.uses.1"
+          }
+        },
+        {
+          "value": "Rubidium has been used in making special glasses.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Rb.uses.2"
+          }
+        },
+        {
+          "value": "Because rubidium is easily ionized, it might be used as a propellant in ion engines on spacecraft.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Rb.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name rubidium comes from the Latin word rubidus, meaning deepest red, because of the two deep red lines in its spectra.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Rb.discovery.story.0"
+            }
+          },
+          {
+            "value": "Rubidium was discovered in 1861 by the German chemists Robert Bunsen and Gustav Kirchhoff while studying samples of the mineral lepidolite.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Rb.discovery.story.1"
+            }
+          },
+          {
+            "value": "Robert Bunsen isolated rubidium in 1863.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Rb.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1861,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Rb.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

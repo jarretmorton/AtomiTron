@@ -700,7 +700,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Cadmium is used in rechargeable nickel-cadmium batteries.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cd.uses.0"
+          }
+        },
+        {
+          "value": "Cadmium can be electroplated onto other materials to protect them from corrosion.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cd.uses.1"
+          }
+        },
+        {
+          "value": "Cadmium sulfide, a cadmium compound, is a yellow powder that is used as a pigment.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cd.uses.2"
+          }
+        },
+        {
+          "value": "Cadmium compounds are used in the phosphors of black and white televisions and in blue and green phosphors for color TV tubes.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cd.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Cadmium was discovered and first isolated by the German physician Friedrich Stromeyer in 1817.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Cd.discovery.story.0"
+            }
+          },
+          {
+            "value": "The name comes from the Latin word cadmia and the Greek word kadmeia, the ancient name for calamine, which is zinc carbonate.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Cd.discovery.story.1"
+            }
+          },
+          {
+            "value": "While studying calamine, Strohmeyer noticed that some samples glowed with a yellow color when heated, while other samples did not.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Cd.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1817,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/48#section=History",
+            "retrieved": "2026-11-14",
+            "via": "IUPAC CIAAW"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cd.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

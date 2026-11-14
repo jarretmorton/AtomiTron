@@ -867,6 +867,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Zr.electronConfiguration"
+    },
+    {
+      "id": "Zr.discovery.year",
+      "subject": {
+        "entity": "element:Zr",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1789,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was discovered in zirconia by the German chemist Martin-Heinrich Klaproth in 1789.",
+      "evidence": "It was discovered in zirconia by the German chemist Martin-Heinrich Klaproth in 1789.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zr.discovery.story.0",
+      "subject": {
+        "entity": "element:Zr",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name comes from the Arabic word zargun, which means gold-like.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Arabic zargun for \"gold-like\".",
+      "evidence": "The name derives from the Arabic zargun for \"gold-like\".",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zr.discovery.story.1",
+      "subject": {
+        "entity": "element:Zr",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "German chemist Martin Heinrich Klaproth discovered zirconium in 1789 while analyzing a mineral called jargon.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Zirconium was discovered by Martin Heinrich Klaproth, a German chemist, while analyzing the composition of the mineral jargon (ZrSiO4) in 1789.",
+      "evidence": "Zirconium was discovered by Martin Heinrich Klaproth, a German chemist, while analyzing the composition of the mineral jargon (ZrSiO4) in 1789.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zr.discovery.story.2",
+      "subject": {
+        "entity": "element:Zr",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Swedish chemist Jöns Jacob Berzelius first isolated zirconium in 1824, but it was not pure.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Zirconium was first isolated by Swedish chemist Jöns Jacob Berzelius in 1824 in an impure state",
+      "evidence": "Zirconium was first isolated by Swedish chemist Jöns Jacob Berzelius in 1824 in an impure state",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zr.uses.0",
+      "subject": {
+        "entity": "element:Zr",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Zirconium is used to make some types of surgical equipment.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Zirconium is also used as an alloying agent in steel, to make some types of surgical equipment",
+      "evidence": "Zirconium is also used as an alloying agent in steel, to make some types of surgical equipment",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zr.uses.1",
+      "subject": {
+        "entity": "element:Zr",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Zirconium oxide, also called zircon, is used as a gem material.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Zirconium oxide (zircon) has a high index of refraction and is used as a gem material.",
+      "evidence": "Zirconium oxide (zircon) has a high index of refraction and is used as a gem material.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zr.uses.2",
+      "subject": {
+        "entity": "element:Zr",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Zirconium dioxide can withstand very high temperatures and is used to line the walls of high temperature furnaces.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Zirconium dioxide (ZrO2) can withstand very high temperatures and is used to make crucibles and to line the walls of high temperature furnaces.",
+      "evidence": "Zirconium dioxide (ZrO2) can withstand very high temperatures and is used to make crucibles and to line the walls of high temperature furnaces.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Zr.uses.3",
+      "subject": {
+        "entity": "element:Zr",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Zirconium is widely used in nuclear reactors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/40#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Since it also does not easily absorb neutrons, zirconium is widely used in nuclear reactors.",
+      "evidence": "Since it also does not easily absorb neutrons, zirconium is widely used in nuclear reactors.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

@@ -425,7 +425,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Thallium sulfide, thallium iodide and thallium bromide are compounds used in devices that detect infrared radiation.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Tl.uses.0"
+          }
+        },
+        {
+          "value": "Thallium sulfide, whose electrical conductivity changes when exposed to infrared light, is used in photocells.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Tl.uses.1"
+          }
+        },
+        {
+          "value": "Thallium oxide has been used to make glasses with a high index of refraction.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Tl.uses.2"
+          }
+        },
+        {
+          "value": "Thallium, used together with sulfur or selenium and arsenic, forms glass that melts at a low temperature.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Tl.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Thallium's name comes from the Greek word thallos, meaning \"green shoot\" or \"twig\", because of the bright green line in its spectrum.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Tl.discovery.story.0"
+            }
+          },
+          {
+            "value": "Thallium was discovered in 1861 by William Crookes, an English physicist and chemist.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Tl.discovery.story.1"
+            }
+          },
+          {
+            "value": "Thallium metal was isolated in 1862 by both Crookes and Lamy, at about the same time.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Tl.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1861,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/81#section=History",
+            "retrieved": "2026-11-14",
+            "via": "IUPAC CIAAW"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Tl.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

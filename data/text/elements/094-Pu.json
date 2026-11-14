@@ -1,0 +1,191 @@
+{
+  "element": "element:Pu",
+  "discovery": {
+    "story": [
+      {
+        "value": "Plutonium was first produced by Glenn T. Seaborg, Joseph W. Kennedy, Edward M. McMillan and Arthur C. Wohl.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Pu.discovery.story.0"
+        }
+      },
+      {
+        "value": "Seaborg first considered the name plutium, but later thought it did not sound as good as plutonium.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Pu.discovery.story.1"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "A form of plutonium has been used to power things such as instruments left on the Moon by Apollo astronauts and weather satellites.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Pu.uses.0"
+      }
+    },
+    {
+      "value": "Plutonium can be used to make a fuel called MOX for nuclear power reactors.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Pu.uses.1"
+      }
+    },
+    {
+      "value": "A form of plutonium was once used to power artificial heart pacemakers, but it has been replaced by lithium-based cells.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Pu.uses.2"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Pu.discovery.story.0",
+      "subject": {
+        "entity": "element:Pu",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Plutonium was first produced by Glenn T. Seaborg, Joseph W. Kennedy, Edward M. McMillan and Arthur C. Wohl.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Plutonium was first produced by Glenn T. Seaborg, Joseph W. Kennedy, Edward M. McMillan and Arthur C. Wohl",
+      "evidence": "Plutonium was first produced by Glenn T. Seaborg, Joseph W. Kennedy, Edward M. McMillan and Arthur C. Wohl",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pu.discovery.story.1",
+      "subject": {
+        "entity": "element:Pu",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Seaborg first considered the name plutium, but later thought it did not sound as good as plutonium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Seaborg originally considered the name \"plutium\", but later thought that it did not sound as good as \"plutonium.\"",
+      "evidence": "Seaborg originally considered the name \"plutium\", but later thought that it did not sound as good as \"plutonium.\"",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pu.uses.0",
+      "subject": {
+        "entity": "element:Pu",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "A form of plutonium has been used to power things such as instruments left on the Moon by Apollo astronauts and weather satellites.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Pu-238 has also been used to power instruments left on the Moon by Apollo astronauts, weather satellites and interplanetary probes",
+      "evidence": "Pu-238 has also been used to power instruments left on the Moon by Apollo astronauts, weather satellites and interplanetary probes",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pu.uses.1",
+      "subject": {
+        "entity": "element:Pu",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Plutonium can be used to make a fuel called MOX for nuclear power reactors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "plutonium and uranium which can be used to form a mixed U/Pu oxide or \"MOX\" fuel for reuse in nuclear power reactors",
+      "evidence": "plutonium and uranium which can be used to form a mixed U/Pu oxide or \"MOX\" fuel for reuse in nuclear power reactors",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pu.uses.2",
+      "subject": {
+        "entity": "element:Pu",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "A form of plutonium was once used to power artificial heart pacemakers, but it has been replaced by lithium-based cells.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/94#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Plutonium-238 was at one time used successfully to power artificial heart pacemakers but has been replaced by lithium-based primary cells.",
+      "evidence": "Plutonium-238 was at one time used successfully to power artificial heart pacemakers but has been replaced by lithium-based primary cells.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

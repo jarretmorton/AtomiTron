@@ -268,7 +268,68 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Only tiny amounts of nobelium have ever been made, so it currently has no uses outside of basic scientific research.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/102#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "No.uses.0"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Nobelium is named after Alfred Nobel.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/102#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "No.discovery.story.0"
+            }
+          },
+          {
+            "value": "In April 1958, A. Ghiorso, T. Sikkeland, J.R. Walton and G.T. Seaborg clearly discovered and identified nobelium at Berkeley.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/102#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "No.discovery.story.1"
+            }
+          },
+          {
+            "value": "Credit for discovering nobelium was given to scientists at the Lawrence Radiation Laboratory, who decided to keep the name nobelium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/102#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "No.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

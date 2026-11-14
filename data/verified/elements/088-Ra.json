@@ -331,7 +331,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Radium is used to produce radon, a radioactive gas used to treat some types of cancer.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ra.uses.0"
+          }
+        },
+        {
+          "value": "Radium was once used to make self-luminous paints for things such as watches and aircraft instrument dials.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ra.uses.1"
+          }
+        },
+        {
+          "value": "A mixture of radium and beryllium gives off neutrons and is used as a neutron source.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ra.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Radium was discovered in 1898 by Marie Sklodowska Curie, a Polish chemist, and Pierre Curie, a French chemist.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ra.discovery.story.0"
+            }
+          },
+          {
+            "value": "Marie Curie obtained radium from pitchblende, a material that contains uranium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ra.discovery.story.1"
+            }
+          },
+          {
+            "value": "Radium was isolated in 1911 by Madame Curie and Debierne.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ra.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1898,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/88#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ra.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

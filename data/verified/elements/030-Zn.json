@@ -539,7 +539,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "In galvanization, objects that can corrode, such as iron nails, are given a protective coating of zinc.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Zn.uses.0"
+          }
+        },
+        {
+          "value": "Metallic zinc is used to make things including dry cell batteries and roof cladding.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Zn.uses.1"
+          }
+        },
+        {
+          "value": "Zinc sulfide is used to make things such as television screens and fluorescent light bulbs.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Zn.uses.2"
+          }
+        },
+        {
+          "value": "Zinc oxide is used in products such as paints, cosmetics and soap.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Zn.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name zinc comes from the German word zink, whose origin is unknown.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Zn.discovery.story.0"
+            }
+          },
+          {
+            "value": "In prehistoric times, zinc compounds were used for healing wounds and sore eyes and for making brass.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Zn.discovery.story.1"
+            }
+          },
+          {
+            "value": "Zinc was rediscovered by Andreas Sigismund Marggraf in 1746.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/30#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Zn.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

@@ -1,0 +1,299 @@
+{
+  "element": "element:Ge",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name germanium comes from the Latin word germania, meaning Germany.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ge.discovery.story.0"
+        }
+      },
+      {
+        "value": "Germanium was discovered and isolated by the German chemist Clemens-Alexander Winkler in 1886.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ge.discovery.story.1"
+        }
+      },
+      {
+        "value": "In 1871, Dmitri Mendeleyev first proposed that germanium existed, based on gaps in his newly created Periodic Table of Elements.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ge.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1886,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=History",
+        "retrieved": "2026-11-14",
+        "via": "IUPAC CIAAW"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ge.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Germanium is used to make transistors for electronic devices.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ge.uses.0"
+      }
+    },
+    {
+      "value": "Germanium is used as a phosphor in fluorescent lamps.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ge.uses.1"
+      }
+    },
+    {
+      "value": "Germanium is used in infrared optical instruments and infrared detectors.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ge.uses.2"
+      }
+    },
+    {
+      "value": "Germanium is useful as a component of wide-angle camera lenses and microscope objectives.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ge.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Ge.discovery.year",
+      "subject": {
+        "entity": "element:Ge",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1886,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was discovered and isolated by the German chemist Clemens-Alexander Winkler in 1886",
+      "evidence": "It was discovered and isolated by the German chemist Clemens-Alexander Winkler in 1886",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ge.discovery.story.0",
+      "subject": {
+        "entity": "element:Ge",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name germanium comes from the Latin word germania, meaning Germany.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin germania for Germany.",
+      "evidence": "The name derives from the Latin germania for Germany.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ge.discovery.story.1",
+      "subject": {
+        "entity": "element:Ge",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Germanium was discovered and isolated by the German chemist Clemens-Alexander Winkler in 1886.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was discovered and isolated by the German chemist Clemens-Alexander Winkler in 1886",
+      "evidence": "It was discovered and isolated by the German chemist Clemens-Alexander Winkler in 1886",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ge.discovery.story.2",
+      "subject": {
+        "entity": "element:Ge",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "In 1871, Dmitri Mendeleyev first proposed that germanium existed, based on gaps in his newly created Periodic Table of Elements.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "First proposed to exist by Dmitri Mendeleyev in 1871 based on gaps in his newly created Periodic Table of Elements",
+      "evidence": "First proposed to exist by Dmitri Mendeleyev in 1871 based on gaps in his newly created Periodic Table of Elements",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ge.uses.0",
+      "subject": {
+        "entity": "element:Ge",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Germanium is used to make transistors for electronic devices.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "germanium is used to make transistors for use in electronic devices",
+      "evidence": "germanium is used to make transistors for use in electronic devices",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ge.uses.1",
+      "subject": {
+        "entity": "element:Ge",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Germanium is used as a phosphor in fluorescent lamps.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Germanium is also used to create alloys and as a phosphor in fluorescent lamps.",
+      "evidence": "Germanium is also used to create alloys and as a phosphor in fluorescent lamps.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ge.uses.2",
+      "subject": {
+        "entity": "element:Ge",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Germanium is used in infrared optical instruments and infrared detectors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Both germanium and germanium oxide (GeO) are transparent to infrared radiation and are used in infrared optical instruments and infrared detectors.",
+      "evidence": "Both germanium and germanium oxide (GeO) are transparent to infrared radiation and are used in infrared optical instruments and infrared detectors.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ge.uses.3",
+      "subject": {
+        "entity": "element:Ge",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Germanium is useful as a component of wide-angle camera lenses and microscope objectives.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/32#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "have made germanium useful as a component of wide-angle camera lenses and microscope objectives",
+      "evidence": "have made germanium useful as a component of wide-angle camera lenses and microscope objectives",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

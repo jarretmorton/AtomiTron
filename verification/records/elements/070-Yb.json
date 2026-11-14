@@ -1025,6 +1025,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Yb.electronConfiguration"
+    },
+    {
+      "id": "Yb.discovery.year",
+      "subject": {
+        "entity": "element:Yb",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1878,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was discovered by the Swiss chemist Jean-Charles Galissard de Marignac in 1878",
+      "evidence": "It was discovered by the Swiss chemist Jean-Charles Galissard de Marignac in 1878",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Yb.discovery.story.0",
+      "subject": {
+        "entity": "element:Yb",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Ytterbium is named after Ytterby, a village in Sweden where the mineral ytterbite was originally found.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Swedish village of Ytterby where the mineral ytterbite (the source of ytterbium) was originally found.",
+      "evidence": "The name derives from the Swedish village of Ytterby where the mineral ytterbite (the source of ytterbium) was originally found.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Yb.discovery.story.1",
+      "subject": {
+        "entity": "element:Yb",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Ytterbium was discovered in 1878 by the Swiss chemist Jean-Charles Galissard de Marignac.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was discovered by the Swiss chemist Jean-Charles Galissard de Marignac in 1878",
+      "evidence": "It was discovered by the Swiss chemist Jean-Charles Galissard de Marignac in 1878",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Yb.discovery.story.2",
+      "subject": {
+        "entity": "element:Yb",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "In 1907, Urbain separated ytterbium into two elements.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "In 1907, Urbain was able to separate ytterbium into two elements.",
+      "evidence": "In 1907, Urbain was able to separate ytterbium into two elements.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Yb.uses.0",
+      "subject": {
+        "entity": "element:Yb",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Ytterbium can be alloyed with stainless steel to improve some of its mechanical properties.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It can be alloyed with stainless steel to improve some of its mechanical properties",
+      "evidence": "It can be alloyed with stainless steel to improve some of its mechanical properties",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Yb.uses.1",
+      "subject": {
+        "entity": "element:Yb",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Ytterbium is used as a doping agent in fiber optic cable, where it can be used as an amplifier.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "used as a doping agent in fiber optic cable where it can be used as an amplifier",
+      "evidence": "used as a doping agent in fiber optic cable where it can be used as an amplifier",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Yb.uses.2",
+      "subject": {
+        "entity": "element:Yb",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "An isotope of ytterbium is reported to have been used as a radiation source for a portable X-ray machine where electricity is unavailable.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/70#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "One isotope is reported to have been used as a radiation source substitute for a portable X-ray machine where electricity is unavailable.",
+      "evidence": "One isotope is reported to have been used as a radiation source substitute for a portable X-ray machine where electricity is unavailable.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

@@ -1,0 +1,263 @@
+{
+  "element": "element:Br",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name bromine comes from the Greek word bromos, meaning stench.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Br.discovery.story.0"
+        }
+      },
+      {
+        "value": "The German chemist Carl Löwig first prepared bromine in 1825.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Br.discovery.story.1"
+        }
+      },
+      {
+        "value": "The French chemist Antoine-Jérôme Balard first publicly announced bromine in 1826, so the discovery is credited to him.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Br.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "A bromine compound called silver bromide is used in photography.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Br.uses.0"
+      }
+    },
+    {
+      "value": "Some bromine compounds are used to help purify water.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Br.uses.1"
+      }
+    },
+    {
+      "value": "Some bromine compounds are used in flameproofing agents.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Br.uses.2"
+      }
+    },
+    {
+      "value": "Bromine is used to make products including dyes, medicines and sanitizers.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Br.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Br.discovery.story.0",
+      "subject": {
+        "entity": "element:Br",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name bromine comes from the Greek word bromos, meaning stench.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Greek word bromos, stench.",
+      "evidence": "From the Greek word bromos, stench.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Br.discovery.story.1",
+      "subject": {
+        "entity": "element:Br",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The German chemist Carl Löwig first prepared bromine in 1825.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was first prepared by the German chemist Carl Löwig in 1825",
+      "evidence": "It was first prepared by the German chemist Carl Löwig in 1825",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Br.discovery.story.2",
+      "subject": {
+        "entity": "element:Br",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The French chemist Antoine-Jérôme Balard first publicly announced bromine in 1826, so the discovery is credited to him.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "first publicly announced in 1826 by the French chemist and pharmacist Antoine-Jérôme Balard, and so the discovery is, therefore, credited to him.",
+      "evidence": "first publicly announced in 1826 by the French chemist and pharmacist Antoine-Jérôme Balard, and so the discovery is, therefore, credited to him.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Br.uses.0",
+      "subject": {
+        "entity": "element:Br",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "A bromine compound called silver bromide is used in photography.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Silver bromide (AgBr), a chemical used in photography",
+      "evidence": "Silver bromide (AgBr), a chemical used in photography",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Br.uses.1",
+      "subject": {
+        "entity": "element:Br",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Some bromine compounds are used to help purify water.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Other bromine compounds are used in fumigants, in flameproofing agents and in some compounds used to purify water.",
+      "evidence": "Other bromine compounds are used in fumigants, in flameproofing agents and in some compounds used to purify water.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Br.uses.2",
+      "subject": {
+        "entity": "element:Br",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Some bromine compounds are used in flameproofing agents.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Other bromine compounds are used in fumigants, in flameproofing agents and in some compounds used to purify water.",
+      "evidence": "Other bromine compounds are used in fumigants, in flameproofing agents and in some compounds used to purify water.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Br.uses.3",
+      "subject": {
+        "entity": "element:Br",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Bromine is used to make products including dyes, medicines and sanitizers.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/35#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Bromine is used in making fumigants, flameproofing agents, water purification compounds, dyes, medicines, sanitizers",
+      "evidence": "Bromine is used in making fumigants, flameproofing agents, water purification compounds, dyes, medicines, sanitizers",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

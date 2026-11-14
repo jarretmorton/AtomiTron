@@ -327,7 +327,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Some phosphorus compounds that give off light are used in fluorescent light bulbs and television sets.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "P.uses.0"
+          }
+        },
+        {
+          "value": "A phosphorus compound called trisodium phosphate is used as a cleaning agent and as a water softener.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "P.uses.1"
+          }
+        },
+        {
+          "value": "Calcium phosphate, a phosphorus compound, is used to make china and baking powder.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "P.uses.2"
+          }
+        },
+        {
+          "value": "Phosphates are used to make special glasses, such as those used for sodium lamps.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "P.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name phosphorus comes from the Greek word phosphoros, meaning \"bringing light\", because it glows in the dark.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "P.discovery.story.0"
+            }
+          },
+          {
+            "value": "Phosphorus was discovered in 1669 by Hennig Brand, a German merchant.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "P.discovery.story.1"
+            }
+          },
+          {
+            "value": "The Greek word phosphoros was an ancient name for the planet Venus when it appears before sunrise.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "P.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1669,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=History",
+            "retrieved": "2026-11-14",
+            "via": "IUPAC CIAAW"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "P.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

@@ -400,7 +400,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Gallium has been used to produce solid-state items, including transistors and light emitting diodes.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ga.uses.0"
+          }
+        },
+        {
+          "value": "Gallium has found use in high temperature thermometers.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ga.uses.1"
+          }
+        },
+        {
+          "value": "Gallium has been used to create alloys with low melting points.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ga.uses.2"
+          }
+        },
+        {
+          "value": "Gallium trichloride was gathered to build the Gallium Neutrino Observatory in Italy, which studies particles called neutrinos.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ga.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Dmitri Mendeleyev proposed that gallium existed in 1871, based on gaps in his newly created Periodic Table of Elements.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ga.discovery.story.0"
+            }
+          },
+          {
+            "value": "Gallium was discovered spectroscopically in 1875 by the French chemist Paul-Émile Lecoq de Boisbaudran.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ga.discovery.story.1"
+            }
+          },
+          {
+            "value": "The name comes from the Latin word Gallia, meaning France, and also from the Latin gallus, a cock, a translation of \"Lecoq.\"",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ga.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1875,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ga.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

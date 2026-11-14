@@ -340,7 +340,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Beryllium is used to make windows for X-ray tubes.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Be.uses.0"
+          }
+        },
+        {
+          "value": "Beryllium is used to make an alloy called beryllium copper, which is used for things such as springs and electrical contacts.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Be.uses.1"
+          }
+        },
+        {
+          "value": "Beryllium is used in parts of the space shuttle, such as the windshield frame and brake discs.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Be.uses.2"
+          }
+        },
+        {
+          "value": "Beryllium is used in things such as gyroscopes and computer parts.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Be.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name beryllium comes from the Greek word beryllos, meaning beryl, which is a gemstone in which beryllium is found.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Be.discovery.story.0"
+            }
+          },
+          {
+            "value": "In 1828, the French chemist Antoine-Alexandre-Brutus Bussy and, independently, the German chemist Friedrich Wöhler first separated beryllium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Be.discovery.story.1"
+            }
+          },
+          {
+            "value": "Beryllium was once also known as glucinium, from the Greek word glykys for sweet, until IUPAC chose the name beryllium in 1949.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/4#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Be.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

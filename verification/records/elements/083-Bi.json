@@ -544,6 +544,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from Bi.electronConfiguration, Bi.group"
+    },
+    {
+      "id": "Bi.discovery.story.0",
+      "subject": {
+        "entity": "element:Bi",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name comes from the German \"weisse masse,\" meaning \"white mass,\" from the colour of its oxides.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the German weisse masse for \"white mass\" from the colour of its oxides.",
+      "evidence": "The name derives from the German weisse masse for \"white mass\" from the colour of its oxides.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Bi.discovery.story.1",
+      "subject": {
+        "entity": "element:Bi",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "In early times, bismuth was confused with tin and lead.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "In early times bismuth was confused with tin and lead.",
+      "evidence": "In early times bismuth was confused with tin and lead.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Bi.discovery.story.2",
+      "subject": {
+        "entity": "element:Bi",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "In 1753, Claude Geoffroy the Younger showed that bismuth was distinct from lead.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Claude Geoffroy the Younger showed it to be distinct from lead in 1753.",
+      "evidence": "Claude Geoffroy the Younger showed it to be distinct from lead in 1753.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Bi.uses.0",
+      "subject": {
+        "entity": "element:Bi",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Bismuth alloys are used in things such as automatic fire sprinkler systems, fire detection systems and electrical fuses.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "These alloys are used in such things as automatic fire sprinkler systems, fire detection systems and electrical fuses.",
+      "evidence": "These alloys are used in such things as automatic fire sprinkler systems, fire detection systems and electrical fuses.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Bi.uses.1",
+      "subject": {
+        "entity": "element:Bi",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Bismuth oxide, a bismuth compound, is used as a yellow pigment in paints and cosmetics.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Bismuth oxide (Bi2O3), a bismuth compound, is used as a yellow pigment in paints and cosmetics.",
+      "evidence": "Bismuth oxide (Bi2O3), a bismuth compound, is used as a yellow pigment in paints and cosmetics.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Bi.uses.2",
+      "subject": {
+        "entity": "element:Bi",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Bismuth oxychloride is used to make a pigment known as bismuth white.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Bismuth oxychloride (BiOCl) is used to make a pigment known as bismuth white.",
+      "evidence": "Bismuth oxychloride (BiOCl) is used to make a pigment known as bismuth white.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Bi.uses.3",
+      "subject": {
+        "entity": "element:Bi",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Bismuth subnitrate and subcarbonate are used in medicine.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Bismuth subnitrate and subcarbonate are used in medicine.",
+      "evidence": "Bismuth subnitrate and subcarbonate are used in medicine.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

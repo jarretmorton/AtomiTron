@@ -296,7 +296,96 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "A form of californium is used as a neutron source to help identify gold and silver ores.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cf.uses.0"
+          }
+        },
+        {
+          "value": "A form of californium is used in neutron moisture gauges, which help find water and oil bearing layers in oil wells.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cf.uses.1"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Californium was first produced in 1950 by Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Cf.discovery.story.0"
+            }
+          },
+          {
+            "value": "The scientists who first produced californium worked at the University of California, Berkeley.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Cf.discovery.story.1"
+            }
+          },
+          {
+            "value": "Californium was first made using a device known as a cyclotron.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Cf.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1950,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Cf.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

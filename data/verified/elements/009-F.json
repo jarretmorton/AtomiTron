@@ -354,7 +354,96 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Fluorine compounds, such as sodium fluoride, are added to toothpaste to help prevent tooth decay.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/9#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "F.uses.0"
+          }
+        },
+        {
+          "value": "Fluorine is added to city water supplies to help prevent tooth decay.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/9#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "F.uses.1"
+          }
+        },
+        {
+          "value": "Crystals of calcium fluoride, also known as fluorite and fluorspar, are used to make lenses that focus infrared light.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/9#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "F.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name fluorine comes from the Latin word fluere, meaning \"flow\" or \"flux\".",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/9#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "F.discovery.story.0"
+            }
+          },
+          {
+            "value": "The Swedish pharmacist and chemist Carl-Wilhelm Scheele discovered fluorine in hydrofluoric acid in 1771.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/9#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "F.discovery.story.1"
+            }
+          },
+          {
+            "value": "The French chemist Ferdinand Frederic Henri Moissan was the first to successfully isolate fluorine, in 1886.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/9#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "F.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

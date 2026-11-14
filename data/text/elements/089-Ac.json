@@ -1,0 +1,227 @@
+{
+  "element": "element:Ac",
+  "discovery": {
+    "story": [
+      {
+        "value": "Actinium was discovered by Andre Debierne in 1899, and independently by F. Giesel in 1902.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/89#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ac.discovery.story.0"
+        }
+      },
+      {
+        "value": "The name actinium comes from the Greek words aktis and aktinos, meaning beam or ray.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/89#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ac.discovery.story.1"
+        }
+      },
+      {
+        "value": "Debierne discovered actinium while he was experimenting with new methods of separating rare earth oxides.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/89#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ac.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1899,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/89#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ac.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Actinium is used in the production of neutrons.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/89#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ac.uses.0"
+      }
+    },
+    {
+      "value": "Actinium has no significant commercial applications.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/89#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ac.uses.1"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Ac.discovery.year",
+      "subject": {
+        "entity": "element:Ac",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1899,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/89#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Discovered by Andre Debierne in 1899 and independently by F. Giesel in 1902.",
+      "evidence": "Discovered by Andre Debierne in 1899 and independently by F. Giesel in 1902.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ac.discovery.story.0",
+      "subject": {
+        "entity": "element:Ac",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Actinium was discovered by Andre Debierne in 1899, and independently by F. Giesel in 1902.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/89#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Discovered by Andre Debierne in 1899 and independently by F. Giesel in 1902.",
+      "evidence": "Discovered by Andre Debierne in 1899 and independently by F. Giesel in 1902.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ac.discovery.story.1",
+      "subject": {
+        "entity": "element:Ac",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name actinium comes from the Greek words aktis and aktinos, meaning beam or ray.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/89#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Greek aktis, aktinos, meaning beam or ray.",
+      "evidence": "From the Greek aktis, aktinos, meaning beam or ray.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ac.discovery.story.2",
+      "subject": {
+        "entity": "element:Ac",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Debierne discovered actinium while he was experimenting with new methods of separating rare earth oxides.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/89#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Actinium was discovered in 1899 by André-Louis Debierne, a French chemist, while experimenting with new methods of separating rare earth oxides.",
+      "evidence": "Actinium was discovered in 1899 by André-Louis Debierne, a French chemist, while experimenting with new methods of separating rare earth oxides.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ac.uses.0",
+      "subject": {
+        "entity": "element:Ac",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Actinium is used in the production of neutrons.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/89#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "although it is used in the production of neutrons.",
+      "evidence": "although it is used in the production of neutrons.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ac.uses.1",
+      "subject": {
+        "entity": "element:Ac",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Actinium has no significant commercial applications.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/89#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Actinium has no significant commercial applications",
+      "evidence": "Actinium has no significant commercial applications",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}
