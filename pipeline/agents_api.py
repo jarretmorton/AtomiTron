@@ -165,15 +165,24 @@ class Caller:
     def json_call(self, system: str, user: str, schema: dict, label: str) -> dict | None:
         """One request. Returns the parsed JSON, or None on a refusal or a
         truncated answer (recorded, and treated as no verdict)."""
-        resp = self.client.beta.messages.create(
-            model=MODEL,
-            max_tokens=16000,
-            betas=["server-side-fallback-2026-07-01"],
-            fallbacks="default",
-            output_config={"effort": EFFORT, "format": {"type": "json_schema", "schema": schema}},
-            system=system,
-            messages=[{"role": "user", "content": user}],
-        )
+        try:
+            resp = self.client.beta.messages.create(
+                model=MODEL,
+                max_tokens=16000,
+                betas=["server-side-fallback-2026-07-01"],
+                fallbacks="default",
+                output_config={"effort": EFFORT, "format": {"type": "json_schema", "schema": schema}},
+                system=system,
+                messages=[{"role": "user", "content": user}],
+            )
+        except (self.anthropic.APIStatusError, self.anthropic.APIConnectionError) as e:
+            # After the SDK's own retries. Recorded as no answer, so those
+            # claims fail (the safe direction) instead of the whole run, and
+            # every other paid-for answer is kept.
+            self.calls.append({"label": label, "requestId": getattr(e, "request_id", None), "servedBy": None,
+                               "stopReason": f"error: {type(e).__name__}",
+                               "usage": {"input": 0, "output": 0, "cache_read": 0}})
+            return None
         u = resp.usage
         record = {
             "label": label,
@@ -218,8 +227,9 @@ def write_run_meta(run: Path, caller: Caller, started: str, step: str) -> None:
         "step": step, "startedAt": started,
         "finishedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "calls": caller.calls, "usage": usage, "estimatedCostUSD": round(cost(usage), 4),
-        "servedBy": sorted({c["servedBy"] for c in caller.calls}),
-        "noAnswer": [c["label"] for c in caller.calls if c["stopReason"] in ("refusal", "max_tokens")],
+        "servedBy": sorted({c["servedBy"] for c in caller.calls if c["servedBy"]}),
+        "noAnswer": [f"{c['label']} ({c['stopReason']})" for c in caller.calls
+                     if c["stopReason"] in ("refusal", "max_tokens") or str(c["stopReason"]).startswith("error")],
     })
     write_json(meta_path, meta)
     print(f"{step}: {len(caller.calls)} calls, {usage['input']} in / {usage['output']} out tokens, "

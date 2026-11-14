@@ -77,7 +77,17 @@ early-publication exception.
 - **Earlier runs:** two that day were superseded. One ran before the
   discovery-year check (iron's "ancient" claim passed); the other ran
   before PR #9 was merged.
-- **API spend so far:** about $5.55.
+- **API spend so far:** about $23.17. That includes run #4 (the 108
+  elements, about $17.62), whose results were lost; see below.
+
+**Run #4 (2026-11-13, 108 elements) was lost.** It drafted 708 claims, and
+699 passed 3 of 3. The gate then failed: the run had also re-checked the six
+explanations, and one verifier rejected the neutrons sentence (which passed
+in every earlier run), so its record was removed. The workflow only saved
+results after a passing gate, so nothing was kept. Fixed since:
+- element runs leave the explanations alone
+- results are pushed before the gate
+- an API error now fails only its own claims, not the whole run
 
 - **Pilot elements:** H, C, N, O, Na, Mg, Cl, Fe, Cu, Au.
 - **The run:** one drafter wrote 70 statements and 7 discovery years. Code
@@ -246,8 +256,8 @@ Still open from requirements section 9:
      The `ANTHROPIC_API_KEY` repository secret is set.
    - ~~re-verify the pilot through the API~~ Done; PR #10 publishes it.
    - next: scale to the remaining 108 elements: **Run verification →
-     draft-and-verify → `remaining`** (about $20–25), after the partial-list
-     scope fix is merged
+     draft-and-verify → `remaining`** (about $18, judging by run #4), after
+     the keep-results fix is merged
 3. **Checkpoint 1:** a human spot review of about 25 sampled facts, logged
    in `verification/spot-reviews/`.
 

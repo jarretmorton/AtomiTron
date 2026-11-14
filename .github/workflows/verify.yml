@@ -81,10 +81,11 @@ jobs:
           python -m pipeline.text_facts apply
           echo "No comparison for a first draft: see $RUN/report.md" > "$RUN/comparison.md"
 
-      - name: Gate (every published fact verified)
-        run: npm test
-
+      # Results are pushed before the gate, and even if a step after the API
+      # calls fails, so paid-for work is never lost: a gate failure is then
+      # fixed on the branch instead of by paying for a new run.
       - name: Push results to a branch for review
+        if: always() && env.RUN != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -94,4 +95,7 @@ jobs:
           git commit -m "Verification run ${{ github.run_id }}: ${{ inputs.task }}" -m "Claude API run. See $RUN/run.json for the model, requests and cost."
           git push origin "$BRANCH"
           echo "Results pushed to $BRANCH" >> "$GITHUB_STEP_SUMMARY"
-          cat "$RUN/comparison.md" >> "$GITHUB_STEP_SUMMARY"
+          cat "$RUN/comparison.md" >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+
+      - name: Gate (every published fact verified)
+        run: npm test
