@@ -154,7 +154,16 @@ def cost(usage: dict, model: str = MODEL) -> float:
 # ---- API calls ------------------------------------------------------------------
 
 
+ACCOUNT_ERRORS = ("BadRequestError", "AuthenticationError", "PermissionDeniedError", "NotFoundError")
+
+
+class RunStopped(Exception):
+    """The API refused a request in a way every later request would repeat."""
+
+
 class Caller:
+    stopped: str | None = None
+
     def __init__(self) -> None:
         import anthropic  # imported here so the pure helpers need no install
 
@@ -165,6 +174,8 @@ class Caller:
     def json_call(self, system: str, user: str, schema: dict, label: str) -> dict | None:
         """One request. Returns the parsed JSON, or None on a refusal or a
         truncated answer (recorded, and treated as no verdict)."""
+        if self.stopped:  # another worker hit an account-level error: don't spend more
+            raise RunStopped(self.stopped)
         try:
             resp = self.client.beta.messages.create(
                 model=MODEL,
@@ -176,12 +187,20 @@ class Caller:
                 messages=[{"role": "user", "content": user}],
             )
         except (self.anthropic.APIStatusError, self.anthropic.APIConnectionError) as e:
-            # After the SDK's own retries. Recorded as no answer, so those
-            # claims fail (the safe direction) instead of the whole run, and
-            # every other paid-for answer is kept.
+            message = str(getattr(e, "message", e))[:300]
             self.calls.append({"label": label, "requestId": getattr(e, "request_id", None), "servedBy": None,
-                               "stopReason": f"error: {type(e).__name__}",
+                               "stopReason": f"error: {type(e).__name__}", "message": message,
                                "usage": {"input": 0, "output": 0, "cache_read": 0}})
+            # A request the API refuses outright (bad request, key, permission,
+            # credit or spend limit) fails every later call the same way: stop
+            # the run, keeping what's done. Run #5 showed why: after the credit
+            # ran out, it carried on and returned "no verdict" for everything.
+            if isinstance(e, tuple(getattr(self.anthropic, n) for n in ACCOUNT_ERRORS if hasattr(self.anthropic, n))):
+                self.stopped = f"{type(e).__name__}: {message}"
+                raise RunStopped(self.stopped) from e
+            # Otherwise (overloaded, server error, network) it's after the SDK's
+            # own retries: no answer, so those claims fail (the safe direction)
+            # and every other paid-for answer is kept.
             return None
         u = resp.usage
         record = {
@@ -214,6 +233,12 @@ def write_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
+def stop_if_stopped(caller: Caller) -> None:
+    if caller.stopped:
+        sys.exit(f"Run stopped: the API refused a request: {caller.stopped}\n"
+                 "If this is a credit or spend-limit message, top up in the Claude Console and run again.")
+
+
 def write_run_meta(run: Path, caller: Caller, started: str, step: str) -> None:
     usage = {"input": 0, "output": 0, "cache_read": 0}
     for c in caller.calls:
@@ -231,6 +256,8 @@ def write_run_meta(run: Path, caller: Caller, started: str, step: str) -> None:
         "noAnswer": [f"{c['label']} ({c['stopReason']})" for c in caller.calls
                      if c["stopReason"] in ("refusal", "max_tokens") or str(c["stopReason"]).startswith("error")],
     })
+    if caller.stopped:
+        meta["steps"][-1]["stoppedBy"] = caller.stopped
     write_json(meta_path, meta)
     print(f"{step}: {len(caller.calls)} calls, {usage['input']} in / {usage['output']} out tokens, "
           f"about ${cost(usage):.2f}; served by {meta['steps'][-1]['servedBy']}")
@@ -260,13 +287,16 @@ def verify(run: Path) -> None:
         n, key, user = job
         return n, caller.json_call(system, user, VERDICT_SCHEMA, f"verify-{n}-{key}")
 
-    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
-        for n, data in pool.map(work, jobs):
-            if data:
-                results[n].update(verdicts_from_response(data))
-    for n in range(1, RUNS + 1):
-        write_json(run / f"verdicts-{n}.json", {"claims": results[n]})
-    write_run_meta(run, caller, started, "verify")
+    try:
+        with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+            for n, data in pool.map(work, jobs):
+                if data:
+                    results[n].update(verdicts_from_response(data))
+    finally:  # keep whatever was answered, even if the run stops
+        for n in range(1, RUNS + 1):
+            write_json(run / f"verdicts-{n}.json", {"claims": results[n]})
+        write_run_meta(run, caller, started, "verify")
+    stop_if_stopped(caller)
 
 
 def draft(run: Path, symbols: list[str]) -> None:
@@ -284,13 +314,16 @@ def draft(run: Path, symbols: list[str]) -> None:
         return caller.json_call(system, user, DRAFT_SCHEMA, f"draft-{sym}")
 
     drafts = {}
-    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
-        for data in pool.map(work, symbols):
-            if data:
-                drafts.update(drafts_from_response(data))
     run.mkdir(parents=True, exist_ok=True)
-    write_json(run / "drafts.json", {"elements": drafts})
-    write_run_meta(run, caller, started, "draft")
+    try:
+        with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+            for data in pool.map(work, symbols):
+                if data:
+                    drafts.update(drafts_from_response(data))
+    finally:  # keep whatever was drafted, even if the run stops
+        write_json(run / "drafts.json", {"elements": drafts})
+        write_run_meta(run, caller, started, "draft")
+    stop_if_stopped(caller)
 
 
 def reverify(run: Path, from_run: Path) -> None:

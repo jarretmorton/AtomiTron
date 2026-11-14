@@ -61,6 +61,38 @@ class ApiErrors(unittest.TestCase):
         self.assertEqual(caller.calls[0]["requestId"], "req_test")
 
 
+class AccountErrors(unittest.TestCase):
+    def test_a_refused_request_stops_the_run_and_blocks_further_calls(self):
+        import types
+
+        from pipeline.agents_api import Caller, RunStopped
+
+        class BadRequestError(Exception):
+            request_id = "req_x"
+            message = "Your credit balance is too low to access the Anthropic API."
+
+        class StatusError(Exception):
+            pass
+
+        calls = []
+
+        def create(**_):
+            calls.append(1)
+            raise BadRequestError()
+
+        caller = Caller.__new__(Caller)
+        caller.anthropic = types.SimpleNamespace(APIStatusError=Exception, APIConnectionError=StatusError,
+                                                 BadRequestError=BadRequestError)
+        caller.client = types.SimpleNamespace(beta=types.SimpleNamespace(messages=types.SimpleNamespace(create=create)))
+        caller.calls = []
+        with self.assertRaises(RunStopped):
+            caller.json_call("s", "u", {}, "draft-Pr")
+        self.assertIn("credit balance", caller.calls[0]["message"])
+        with self.assertRaises(RunStopped):  # later calls don't reach the API
+            caller.json_call("s", "u", {}, "draft-Nd")
+        self.assertEqual(len(calls), 1)
+
+
 class YearRule(unittest.TestCase):
     def test_year_must_be_stated(self):
         from pipeline.text_facts import year_stated
