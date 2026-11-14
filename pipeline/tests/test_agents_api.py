@@ -37,6 +37,30 @@ class Shapes(unittest.TestCase):
         self.assertAlmostEqual(cost({"input": 1_000_000, "output": 100_000, "cache_read": 0}), 6.0)
 
 
+class ApiErrors(unittest.TestCase):
+    def test_an_api_error_becomes_no_answer_not_a_crash(self):
+        import types
+
+        from pipeline.agents_api import Caller
+
+        class StatusError(Exception):
+            request_id = "req_test"
+
+        class ConnectionErr(Exception):
+            pass
+
+        def boom(**_):
+            raise StatusError("overloaded")
+
+        caller = Caller.__new__(Caller)  # skip __init__: no SDK or key needed
+        caller.anthropic = types.SimpleNamespace(APIStatusError=StatusError, APIConnectionError=ConnectionErr)
+        caller.client = types.SimpleNamespace(beta=types.SimpleNamespace(messages=types.SimpleNamespace(create=boom)))
+        caller.calls = []
+        self.assertIsNone(caller.json_call("system", "user", {}, "verify-1-Na"))
+        self.assertEqual(caller.calls[0]["stopReason"], "error: StatusError")
+        self.assertEqual(caller.calls[0]["requestId"], "req_test")
+
+
 class YearRule(unittest.TestCase):
     def test_year_must_be_stated(self):
         from pipeline.text_facts import year_stated

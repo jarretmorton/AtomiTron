@@ -88,7 +88,7 @@ def screen(kind: str, text: str) -> str | None:
 # ---- claims -------------------------------------------------------------------
 
 
-def build_claims(run: Path) -> None:
+def build_claims(run: Path, with_concepts: bool = False) -> None:
     src = sources()
     drafts = load_json(run / "drafts.json")["elements"]
     claims, rejected = [], []
@@ -119,7 +119,11 @@ def build_claims(run: Path) -> None:
             for i, item in enumerate(d.get(kind, [])):
                 take(f"{sym}.{kind}.{i}", item["text"].strip(), item, kind, sym)
 
-    claims += load_json(SOURCES_DIR / "claims-concepts.json")
+    # The explanations have their own records; an element run leaves them
+    # alone unless asked, so one verifier's change of mind about a published
+    # explanation can't sink a whole element run.
+    if with_concepts:
+        claims += load_json(SOURCES_DIR / "claims-concepts.json")
     write_json(run / "claims.json", claims)
     write_json(run / "rejected-before-verification.json", [{"id": c, "reason": r} for c, r in rejected])
     print(f"{len(claims)} claims for verification ({len(rejected)} rejected by code first) -> {run / 'claims.json'}")
@@ -324,4 +328,7 @@ if __name__ == "__main__":
         compare(Path(sys.argv[2]).resolve(), Path(sys.argv[3]).resolve())
     else:
         run_dir = Path(sys.argv[2]).resolve()
-        {"claims": build_claims, "evaluate": evaluate}[cmd](run_dir)
+        if cmd == "claims":
+            build_claims(run_dir, with_concepts="--with-concepts" in sys.argv[3:])
+        else:
+            evaluate(run_dir)
