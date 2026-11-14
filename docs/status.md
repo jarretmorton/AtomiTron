@@ -77,9 +77,20 @@ early-publication exception.
 - **Earlier runs:** two that day were superseded. One ran before the
   discovery-year check (iron's "ancient" claim passed); the other ran
   before PR #9 was merged.
-- **API spend so far:** about $26.00. That includes run #4 (the 108
-  elements, about $17.62), whose results were lost, and run #5 (about
-  $2.83), which stopped early; see below.
+- **API spend so far:** about $43.00. That includes run #4 (the 108
+  elements, about $17.62), whose results were lost; run #5 (about $2.83),
+  which stopped early; and run #6 (about $17.00), the one published.
+
+**Run #6 (2026-11-14): history and uses for the other 108 elements.**
+- **Calls:** 108 drafting and 324 verifier calls, all answered by Claude
+  Opus 5.5, with no refusals or errors.
+- **Results:** 701 claims verified and **691 passed** 3 of 3. 10 failed, and
+  13 were rejected by code first (mostly by the safety screen, on wording
+  such as "mixed with" or "bombarding").
+- **Reviewed before publishing:** a safety scan of all passing statements
+  (no weapons, poisons, drugs or procedures), and a read of arsenic,
+  mercury, polonium and uranium.
+- **Audit trail:** `verification/agent-runs/2026-11-14-api-elements/`.
 
 **Run #4 (2026-11-13, 108 elements) was lost.** It drafted 708 claims, and
 699 passed 3 of 3. The gate then failed: the run had also re-checked the six
@@ -265,9 +276,9 @@ Still open from requirements section 9:
      plus the "Run verification" workflow, on Claude Opus 5.5 at high effort.
      The `ANTHROPIC_API_KEY` repository secret is set.
    - ~~re-verify the pilot through the API~~ Done; PR #10 publishes it.
-   - next: scale to the remaining 108 elements: **Run verification →
-     draft-and-verify → `remaining`** (about $18, judging by run #4), after
-     the keep-results fix is merged
+   - ~~scale to the remaining 108 elements~~ Done in run #6 (PR from
+     `verification/run-43564971048`). Every element now has history and
+     uses text verified through the Claude API.
 3. **Checkpoint 1:** a human spot review of about 25 sampled facts, logged
    in `verification/spot-reviews/`.
 
