@@ -271,7 +271,54 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Oganesson currently has no uses outside of basic scientific research.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Og.uses.0"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name was proposed by the Joint Institute for Nuclear Research in Dubna, Russia, and Lawrence Livermore National Laboratory in the USA.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Og.discovery.story.0"
+            }
+          },
+          {
+            "value": "The name honors Professor Yuri Oganessian for his pioneering contributions to research on transactinoid elements.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Og.discovery.story.1"
+            }
+          }
+        ]
+      }
     }
   ]
 }

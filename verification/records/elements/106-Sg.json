@@ -341,6 +341,116 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Sg.electronConfiguration"
+    },
+    {
+      "id": "Sg.discovery.year",
+      "subject": {
+        "entity": "element:Sg",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1974,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/106#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Seaborgium was first produced by a team of scientists led by Albert Ghiorso working at the Lawrence Berkeley Laboratory in Berkeley, California, in 1974.",
+      "evidence": "Seaborgium was first produced by a team of scientists led by Albert Ghiorso working at the Lawrence Berkeley Laboratory in Berkeley, California, in 1974.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sg.discovery.story.0",
+      "subject": {
+        "entity": "element:Sg",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Seaborgium was first produced in 1974 by a team of scientists led by Albert Ghiorso at the Lawrence Berkeley Laboratory in California.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/106#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Seaborgium was first produced by a team of scientists led by Albert Ghiorso working at the Lawrence Berkeley Laboratory in Berkeley, California, in 1974.",
+      "evidence": "Seaborgium was first produced by a team of scientists led by Albert Ghiorso working at the Lawrence Berkeley Laboratory in Berkeley, California, in 1974.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sg.discovery.story.1",
+      "subject": {
+        "entity": "element:Sg",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Seaborgium was named in honor of Glenn Seaborg.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/106#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Glenn Seaborg was part of this group, and the element was named in his honor.",
+      "evidence": "Glenn Seaborg was part of this group, and the element was named in his honor.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sg.discovery.story.2",
+      "subject": {
+        "entity": "element:Sg",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The Berkeley group was credited with the discovery of seaborgium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/106#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "The Berkeley group's work was confirmed in 1993 and they were credited with the discovery.",
+      "evidence": "The Berkeley group's work was confirmed in 1993 and they were credited with the discovery.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sg.uses.0",
+      "subject": {
+        "entity": "element:Sg",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Seaborgium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/106#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "there are currently no uses for seaborgium outside of basic scientific research.",
+      "evidence": "there are currently no uses for seaborgium outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

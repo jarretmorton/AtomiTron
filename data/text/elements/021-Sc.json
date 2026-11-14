@@ -1,0 +1,263 @@
+{
+  "element": "element:Sc",
+  "discovery": {
+    "story": [
+      {
+        "value": "Scandium's name comes from the Latin word scandia, meaning Scandinavia, where the mineral was found.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Sc.discovery.story.0"
+        }
+      },
+      {
+        "value": "Scandium was discovered by the Swedish chemist Lars-Fredrik Nilson.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Sc.discovery.story.1"
+        }
+      },
+      {
+        "value": "The Swedish chemist Per Theodore Cleve proved that scandium was the element eka-boron that Mendeleev had predicted.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Sc.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Alloys of scandium and aluminum are used in some sports equipment, such as baseball bats, bicycle frames and lacrosse sticks.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Sc.uses.0"
+      }
+    },
+    {
+      "value": "Scandium oxide, also known as scandia, is used to make high intensity lights.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Sc.uses.1"
+      }
+    },
+    {
+      "value": "Scandium iodide is added to mercury vapor lamps so that their light closely resembles sunlight.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Sc.uses.2"
+      }
+    },
+    {
+      "value": "Mercury vapor lamps with added scandium iodide give light resembling sunlight, which is important for indoor or night-time color TV.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Sc.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Sc.discovery.story.0",
+      "subject": {
+        "entity": "element:Sc",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Scandium's name comes from the Latin word scandia, meaning Scandinavia, where the mineral was found.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin scandia for Scandinavia, where the mineral was found.",
+      "evidence": "The name derives from the Latin scandia for Scandinavia, where the mineral was found.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sc.discovery.story.1",
+      "subject": {
+        "entity": "element:Sc",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Scandium was discovered by the Swedish chemist Lars-Fredrik Nilson.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was discovered by the Swedish chemist Lars-Fredrik Nilson in 1879 in an ytterbium sample.",
+      "evidence": "It was discovered by the Swedish chemist Lars-Fredrik Nilson in 1879 in an ytterbium sample.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sc.discovery.story.2",
+      "subject": {
+        "entity": "element:Sc",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The Swedish chemist Per Theodore Cleve proved that scandium was the element eka-boron that Mendeleev had predicted.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "the Swedish chemist Per Theodore Cleve proved that scandium was Mendeleev's predicted \"eka-boron\".",
+      "evidence": "the Swedish chemist Per Theodore Cleve proved that scandium was Mendeleev's predicted \"eka-boron\".",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sc.uses.0",
+      "subject": {
+        "entity": "element:Sc",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Alloys of scandium and aluminum are used in some sports equipment, such as baseball bats, bicycle frames and lacrosse sticks.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Alloys of scandium and aluminum are used in some kinds of athletic equipment, such as aluminum baseball bats, bicycle frames and lacrosse sticks.",
+      "evidence": "Alloys of scandium and aluminum are used in some kinds of athletic equipment, such as aluminum baseball bats, bicycle frames and lacrosse sticks.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sc.uses.1",
+      "subject": {
+        "entity": "element:Sc",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Scandium oxide, also known as scandia, is used to make high intensity lights.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "scandium oxide (Sc2O3), also known as scandia, are used each year in the United States in the production of high intensity lights.",
+      "evidence": "scandium oxide (Sc2O3), also known as scandia, are used each year in the United States in the production of high intensity lights.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sc.uses.2",
+      "subject": {
+        "entity": "element:Sc",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Scandium iodide is added to mercury vapor lamps so that their light closely resembles sunlight.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Scandium iodide (ScI3) is added to mercury vapor lamps so that they will emit light that closely resembles sunlight.",
+      "evidence": "Scandium iodide (ScI3) is added to mercury vapor lamps so that they will emit light that closely resembles sunlight.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Sc.uses.3",
+      "subject": {
+        "entity": "element:Sc",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Mercury vapor lamps with added scandium iodide give light resembling sunlight, which is important for indoor or night-time color TV.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/21#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Scandium iodide added to mercury vapor lamps produces a highly efficient light source resembling sunlight, which is important for indoor or night-time color TV.",
+      "evidence": "Scandium iodide added to mercury vapor lamps produces a highly efficient light source resembling sunlight, which is important for indoor or night-time color TV.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

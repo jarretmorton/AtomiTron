@@ -369,6 +369,138 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Md.electronConfiguration"
+    },
+    {
+      "id": "Md.discovery.year",
+      "subject": {
+        "entity": "element:Md",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1955,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/101#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Gregory R. Choppin and Albert Ghiorso working at the University of California, Berkeley, in 1955",
+      "evidence": "Gregory R. Choppin and Albert Ghiorso working at the University of California, Berkeley, in 1955",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Md.discovery.story.0",
+      "subject": {
+        "entity": "element:Md",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Mendelevium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Bernard G. Harvey, Gregory R. Choppin and Albert Ghiorso.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/101#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Mendelevium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Bernard G. Harvey, Gregory R. Choppin and Albert Ghiorso",
+      "evidence": "Mendelevium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Bernard G. Harvey, Gregory R. Choppin and Albert Ghiorso",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Md.discovery.story.1",
+      "subject": {
+        "entity": "element:Md",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Mendelevium is named after Dmitri Mendeleev.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/101#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Mendelevium is named after Dmitri Mendeleev.",
+      "evidence": "Mendelevium is named after Dmitri Mendeleev.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Md.discovery.story.2",
+      "subject": {
+        "entity": "element:Md",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "When mendelevium was first identified, it was made one atom at a time.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/101#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "This first identification was notable in that 256Md was synthesized on a one-atom-at-a-time basis.",
+      "evidence": "This first identification was notable in that 256Md was synthesized on a one-atom-at-a-time basis.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Md.uses.0",
+      "subject": {
+        "entity": "element:Md",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Mendelevium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/101#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it currently has no uses outside of basic scientific research.",
+      "evidence": "it currently has no uses outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Md.uses.1",
+      "subject": {
+        "entity": "element:Md",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Scientists have used one form of mendelevium to learn about some of its chemical properties in aqueous solution.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/101#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "256Md has been used to elucidate some of the chemical properties of mendelevium in aqueous solution.",
+      "evidence": "256Md has been used to elucidate some of the chemical properties of mendelevium in aqueous solution.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

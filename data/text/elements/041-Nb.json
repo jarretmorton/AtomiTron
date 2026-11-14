@@ -1,0 +1,263 @@
+{
+  "element": "element:Nb",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name niobium comes from Niobe, a character in Greek myths who was the daughter of Tantalus.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Nb.discovery.story.0"
+        }
+      },
+      {
+        "value": "The British chemist Charles Hatchett discovered niobium in 1801 in a black mineral from America called columbite.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Nb.discovery.story.1"
+        }
+      },
+      {
+        "value": "Hatchett gave the new element the name columbium.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Nb.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Niobium is commonly used to make jewelry.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Nb.uses.0"
+      }
+    },
+    {
+      "value": "An alloy of niobium and titanium can be made into superconductive wire, which is used to make superconductive magnets.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Nb.uses.1"
+      }
+    },
+    {
+      "value": "Superconductive niobium cavities are at the heart of a machine built at the Thomas Jefferson National Accelerator Facility.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Nb.uses.2"
+      }
+    },
+    {
+      "value": "Niobium is used in arc-welding rods for some kinds of stainless steel.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Nb.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Nb.discovery.story.0",
+      "subject": {
+        "entity": "element:Nb",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name niobium comes from Niobe, a character in Greek myths who was the daughter of Tantalus.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek mythological character Niobe, who was the daughter of Tantalus",
+      "evidence": "The name derives from the Greek mythological character Niobe, who was the daughter of Tantalus",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Nb.discovery.story.1",
+      "subject": {
+        "entity": "element:Nb",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The British chemist Charles Hatchett discovered niobium in 1801 in a black mineral from America called columbite.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Niobium was discovered in a black mineral from America called columbite by the British chemist and manufacturer Charles Hatchett in 1801",
+      "evidence": "Niobium was discovered in a black mineral from America called columbite by the British chemist and manufacturer Charles Hatchett in 1801",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Nb.discovery.story.2",
+      "subject": {
+        "entity": "element:Nb",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Hatchett gave the new element the name columbium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "He named the new element columbium.",
+      "evidence": "He named the new element columbium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Nb.uses.0",
+      "subject": {
+        "entity": "element:Nb",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Niobium is commonly used to make jewelry.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Niobium is also commonly used for jewelry.",
+      "evidence": "Niobium is also commonly used for jewelry.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Nb.uses.1",
+      "subject": {
+        "entity": "element:Nb",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "An alloy of niobium and titanium can be made into superconductive wire, which is used to make superconductive magnets.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Superconductive wire can be made from an alloy of niobium and titanium which can then be used to make superconductive magnets.",
+      "evidence": "Superconductive wire can be made from an alloy of niobium and titanium which can then be used to make superconductive magnets.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Nb.uses.2",
+      "subject": {
+        "entity": "element:Nb",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Superconductive niobium cavities are at the heart of a machine built at the Thomas Jefferson National Accelerator Facility.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Superconductive niobium cavities are at the heart of a machine built at the Thomas Jefferson National Accelerator Facility.",
+      "evidence": "Superconductive niobium cavities are at the heart of a machine built at the Thomas Jefferson National Accelerator Facility.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Nb.uses.3",
+      "subject": {
+        "entity": "element:Nb",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Niobium is used in arc-welding rods for some kinds of stainless steel.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/41#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Niobium is used in arc-welding rods for stabilized grades of stainless steel.",
+      "evidence": "Niobium is used in arc-welding rods for stabilized grades of stainless steel.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "element": "element:Cn",
+  "discovery": {
+    "story": [
+      {
+        "value": "Peter Armbruster, Gottfried Münzenber and their team first produced copernicium in Darmstadt, Germany, in 1996.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/112#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cn.discovery.story.0"
+        }
+      }
+    ],
+    "year": {
+      "value": 1996,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/112#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cn.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Because only a few atoms of copernicium have ever been produced, it currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/112#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cn.uses.0"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Cn.discovery.year",
+      "subject": {
+        "entity": "element:Cn",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1996,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/112#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Copernicium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany on February 9, 1996.",
+      "evidence": "Copernicium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany on February 9, 1996.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cn.discovery.story.0",
+      "subject": {
+        "entity": "element:Cn",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Peter Armbruster, Gottfried Münzenber and their team first produced copernicium in Darmstadt, Germany, in 1996.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/112#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Copernicium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany on February 9, 1996.",
+      "evidence": "Copernicium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany on February 9, 1996.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cn.uses.0",
+      "subject": {
+        "entity": "element:Cn",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Because only a few atoms of copernicium have ever been produced, it currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/112#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Since only a few atoms of copernicium have ever been produced, it currently has no uses outside of basic scientific research.",
+      "evidence": "Since only a few atoms of copernicium have ever been produced, it currently has no uses outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

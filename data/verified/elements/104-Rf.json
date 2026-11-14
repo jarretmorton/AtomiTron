@@ -254,7 +254,54 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Rutherfordium is currently not used for anything except basic scientific research.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/104#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Rf.uses.0"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Scientists at the Joint Institute for Nuclear Research in Dubna, Russia, first reported making rutherfordium in 1964.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/104#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Rf.discovery.story.0"
+            }
+          },
+          {
+            "value": "Scientists still debate who should get credit for discovering rutherfordium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/104#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Rf.discovery.story.1"
+            }
+          }
+        ]
+      }
     }
   ]
 }

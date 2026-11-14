@@ -323,7 +323,96 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "One of thulium's isotopes could be used as a radiation source for portable X-ray machines.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/69#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Tm.uses.0"
+          }
+        },
+        {
+          "value": "Natural thulium has possible use in ferrites, which are ceramic magnetic materials used in microwave equipment.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/69#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Tm.uses.1"
+          }
+        },
+        {
+          "value": "Natural thulium can be used for doping fiber lasers.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/69#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Tm.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Thulium is named after Thule, the earliest name for Scandinavia.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/69#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Tm.discovery.story.0"
+            }
+          },
+          {
+            "value": "Thulium was discovered by the Swedish chemist Per Theodor Cleve in 1879.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/69#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Tm.discovery.story.1"
+            }
+          },
+          {
+            "value": "Thulium was first isolated by the American chemist Charles James in 1911.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/69#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Tm.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

@@ -1,0 +1,155 @@
+{
+  "element": "element:Hs",
+  "discovery": {
+    "story": [
+      {
+        "value": "Hassium was first made in 1984 by Peter Armbruster, Gottfried Münzenber and their team in Darmstadt, Germany.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Hs.discovery.story.0"
+        }
+      },
+      {
+        "value": "The name hassium comes from the Latin word \"Hassias,\" meaning Hess, a German state.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Hs.discovery.story.1"
+        }
+      }
+    ],
+    "year": {
+      "value": 1984,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Hs.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Hassium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Hs.uses.0"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Hs.discovery.year",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1984,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Hassium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1984.",
+      "evidence": "Hassium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1984.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hs.discovery.story.0",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Hassium was first made in 1984 by Peter Armbruster, Gottfried Münzenber and their team in Darmstadt, Germany.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Hassium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1984.",
+      "evidence": "Hassium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany in 1984.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hs.discovery.story.1",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name hassium comes from the Latin word \"Hassias,\" meaning Hess, a German state.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Its name is Latin \"Hassias\" meaning \"Hess,\" from the German state.",
+      "evidence": "Its name is Latin \"Hassias\" meaning \"Hess,\" from the German state.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hs.uses.0",
+      "subject": {
+        "entity": "element:Hs",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Hassium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/108#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it currently has no uses outside of basic scientific research.",
+      "evidence": "it currently has no uses outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

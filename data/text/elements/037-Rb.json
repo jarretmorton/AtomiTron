@@ -1,0 +1,299 @@
+{
+  "element": "element:Rb",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name rubidium comes from the Latin word rubidus, meaning deepest red, because of the two deep red lines in its spectra.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Rb.discovery.story.0"
+        }
+      },
+      {
+        "value": "Rubidium was discovered in 1861 by the German chemists Robert Bunsen and Gustav Kirchhoff while studying samples of the mineral lepidolite.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Rb.discovery.story.1"
+        }
+      },
+      {
+        "value": "Robert Bunsen isolated rubidium in 1863.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Rb.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1861,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Rb.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Rubidium is used in vacuum tubes as a getter, a material that combines with and removes trace gases from the tubes.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Rb.uses.0"
+      }
+    },
+    {
+      "value": "Rubidium is used as a part of photocells.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Rb.uses.1"
+      }
+    },
+    {
+      "value": "Rubidium has been used in making special glasses.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Rb.uses.2"
+      }
+    },
+    {
+      "value": "Because rubidium is easily ionized, it might be used as a propellant in ion engines on spacecraft.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Rb.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Rb.discovery.year",
+      "subject": {
+        "entity": "element:Rb",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1861,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Discovered in 1861 by Bunsen and Kirchoff in the mineral lepidolite by use of the spectroscope.",
+      "evidence": "Discovered in 1861 by Bunsen and Kirchoff in the mineral lepidolite by use of the spectroscope.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rb.discovery.story.0",
+      "subject": {
+        "entity": "element:Rb",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name rubidium comes from the Latin word rubidus, meaning deepest red, because of the two deep red lines in its spectra.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin rubidus for \"deepest red\" because of the two deep red lines in its spectra.",
+      "evidence": "The name derives from the Latin rubidus for \"deepest red\" because of the two deep red lines in its spectra.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rb.discovery.story.1",
+      "subject": {
+        "entity": "element:Rb",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Rubidium was discovered in 1861 by the German chemists Robert Bunsen and Gustav Kirchhoff while studying samples of the mineral lepidolite.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Rubidium was discovered by the German chemists Robert Bunsen and Gustav Kirchhoff in 1861 while analyzing samples of the mineral lepidolite",
+      "evidence": "Rubidium was discovered by the German chemists Robert Bunsen and Gustav Kirchhoff in 1861 while analyzing samples of the mineral lepidolite",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rb.discovery.story.2",
+      "subject": {
+        "entity": "element:Rb",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Robert Bunsen isolated rubidium in 1863.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Bunsen isolated rubidium in 1863.",
+      "evidence": "Bunsen isolated rubidium in 1863.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rb.uses.0",
+      "subject": {
+        "entity": "element:Rb",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Rubidium is used in vacuum tubes as a getter, a material that combines with and removes trace gases from the tubes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Rubidium is used in vacuum tubes as a getter, a material that combines with and removes trace gases from vacuum tubes.",
+      "evidence": "Rubidium is used in vacuum tubes as a getter, a material that combines with and removes trace gases from vacuum tubes.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rb.uses.1",
+      "subject": {
+        "entity": "element:Rb",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Rubidium is used as a part of photocells.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Rubidium is used as a getter in vacuum tubes and as a photocell component.",
+      "evidence": "Rubidium is used as a getter in vacuum tubes and as a photocell component.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rb.uses.2",
+      "subject": {
+        "entity": "element:Rb",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Rubidium has been used in making special glasses.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It has been used in making special glasses.",
+      "evidence": "It has been used in making special glasses.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rb.uses.3",
+      "subject": {
+        "entity": "element:Rb",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Because rubidium is easily ionized, it might be used as a propellant in ion engines on spacecraft.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/37#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Since it is easily ionized, it might be used as a propellant in ion engines on spacecraft.",
+      "evidence": "Since it is easily ionized, it might be used as a propellant in ion engines on spacecraft.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

@@ -998,6 +998,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Hf.electronConfiguration"
+    },
+    {
+      "id": "Hf.discovery.year",
+      "subject": {
+        "entity": "element:Hf",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1923,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/72#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Hafnium was discovered by Dirk Coster, a Danish chemist, and George Charles de Hevesy, a Hungarian chemist, in 1923.",
+      "evidence": "Hafnium was discovered by Dirk Coster, a Danish chemist, and George Charles de Hevesy, a Hungarian chemist, in 1923.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hf.discovery.story.0",
+      "subject": {
+        "entity": "element:Hf",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name hafnium comes from hafnia, the Latin word for Copenhagen.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/72#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin hafnia for Copenhagen.",
+      "evidence": "The name derives from the Latin hafnia for Copenhagen.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hf.discovery.story.1",
+      "subject": {
+        "entity": "element:Hf",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Niels Bohr argued that hafnium would not be a rare earth element, but would be found in zirconium ore.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/72#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Bohr argued that hafnium would not be a rare earth element, but would be found in zirconium ore.",
+      "evidence": "Bohr argued that hafnium would not be a rare earth element, but would be found in zirconium ore.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hf.discovery.story.2",
+      "subject": {
+        "entity": "element:Hf",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Dirk Coster and George von Hevesy discovered hafnium in 1923, while working at Bohr's Institute in Copenhagen.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/72#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Hafnium was discovered by the Dutch physicist Dirk Coster and the Hungarian physicist George von Hevesy in 1923, while working at Bohr's Institute in Copenhagen.",
+      "evidence": "Hafnium was discovered by the Dutch physicist Dirk Coster and the Hungarian physicist George von Hevesy in 1923, while working at Bohr's Institute in Copenhagen.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hf.uses.0",
+      "subject": {
+        "entity": "element:Hf",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Hafnium is used in the control rods of nuclear reactors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/72#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Hafnium is a good absorber of neutrons and is used in the control rods of nuclear reactors.",
+      "evidence": "Hafnium is a good absorber of neutrons and is used in the control rods of nuclear reactors.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hf.uses.1",
+      "subject": {
+        "entity": "element:Hf",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Hafnium is used in gas-filled and incandescent lamps.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/72#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Hafnium is used in gas-filled and incandescent lamps",
+      "evidence": "Hafnium is used in gas-filled and incandescent lamps",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hf.uses.2",
+      "subject": {
+        "entity": "element:Hf",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Hafnium is used in vacuum tubes to combine with and remove trace gases.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/72#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Hafnium is also used in vacuum tubes as a getter, a material that combines with and removes trace gases from vacuum tubes.",
+      "evidence": "Hafnium is also used in vacuum tubes as a getter, a material that combines with and removes trace gases from vacuum tubes.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Hf.uses.3",
+      "subject": {
+        "entity": "element:Hf",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Hafnium has been used to make alloys with metals such as iron, titanium and niobium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/72#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Hafnium has been used as an alloying agent in iron, titanium, niobium and other metals.",
+      "evidence": "Hafnium has been used as an alloying agent in iron, titanium, niobium and other metals.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

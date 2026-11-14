@@ -340,6 +340,72 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Ds.electronConfiguration"
+    },
+    {
+      "id": "Ds.discovery.year",
+      "subject": {
+        "entity": "element:Ds",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1994,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/110#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "November 9, 1994 at 4:39 pm, the first atom with atomic number 110 was detected at the Gesellschaft fur Schwerionenforschung (GSI) in Darmstadt, in Germany.",
+      "evidence": "November 9, 1994 at 4:39 pm, the first atom with atomic number 110 was detected at the Gesellschaft fur Schwerionenforschung (GSI) in Darmstadt, in Germany.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ds.discovery.story.0",
+      "subject": {
+        "entity": "element:Ds",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Darmstadtium was first produced in 1994 by Peter Armbruster, Gottfried Münzenber and their team in Darmstadt, Germany.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/110#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Darmstadtium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany on November 9th, 1994.",
+      "evidence": "Darmstadtium was first produced by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany on November 9th, 1994.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ds.uses.0",
+      "subject": {
+        "entity": "element:Ds",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Darmstadtium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/110#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it currently has no uses outside of basic scientific research.",
+      "evidence": "it currently has no uses outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

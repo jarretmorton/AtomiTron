@@ -1,0 +1,155 @@
+{
+  "element": "element:Bh",
+  "discovery": {
+    "story": [
+      {
+        "value": "Bohrium was first produced in 1976 by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/107#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Bh.discovery.story.0"
+        }
+      },
+      {
+        "value": "In 1981, Peter Armbruster, Gottfried Münzenber and their team in Darmstadt, Germany, confirmed the production of bohrium.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/107#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Bh.discovery.story.1"
+        }
+      }
+    ],
+    "year": {
+      "value": 1976,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/107#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Bh.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Only a few atoms of bohrium have ever been made, so it currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/107#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Bh.uses.0"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Bh.discovery.year",
+      "subject": {
+        "entity": "element:Bh",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1976,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/107#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "First produced in 1976 by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia",
+      "evidence": "First produced in 1976 by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Bh.discovery.story.0",
+      "subject": {
+        "entity": "element:Bh",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Bohrium was first produced in 1976 by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/107#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "First produced in 1976 by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia",
+      "evidence": "First produced in 1976 by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Bh.discovery.story.1",
+      "subject": {
+        "entity": "element:Bh",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "In 1981, Peter Armbruster, Gottfried Münzenber and their team in Darmstadt, Germany, confirmed the production of bohrium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/107#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "later confirmed in 1981 by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany",
+      "evidence": "later confirmed in 1981 by Peter Armbruster, Gottfried Münzenber and their team working at the Gesellschaft für Schwerionenforschung in Darmstadt, Germany",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Bh.uses.0",
+      "subject": {
+        "entity": "element:Bh",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Only a few atoms of bohrium have ever been made, so it currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/107#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Since only a few atoms of bohrium have ever been made, there are currently no uses for bohrium outside of basic scientific research.",
+      "evidence": "Since only a few atoms of bohrium have ever been made, there are currently no uses for bohrium outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

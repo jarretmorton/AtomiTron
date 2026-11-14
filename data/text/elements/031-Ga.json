@@ -1,0 +1,299 @@
+{
+  "element": "element:Ga",
+  "discovery": {
+    "story": [
+      {
+        "value": "Dmitri Mendeleyev proposed that gallium existed in 1871, based on gaps in his newly created Periodic Table of Elements.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ga.discovery.story.0"
+        }
+      },
+      {
+        "value": "Gallium was discovered spectroscopically in 1875 by the French chemist Paul-Émile Lecoq de Boisbaudran.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ga.discovery.story.1"
+        }
+      },
+      {
+        "value": "The name comes from the Latin word Gallia, meaning France, and also from the Latin gallus, a cock, a translation of \"Lecoq.\"",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ga.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1875,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ga.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Gallium has been used to produce solid-state items, including transistors and light emitting diodes.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ga.uses.0"
+      }
+    },
+    {
+      "value": "Gallium has found use in high temperature thermometers.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ga.uses.1"
+      }
+    },
+    {
+      "value": "Gallium has been used to create alloys with low melting points.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ga.uses.2"
+      }
+    },
+    {
+      "value": "Gallium trichloride was gathered to build the Gallium Neutrino Observatory in Italy, which studies particles called neutrinos.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ga.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Ga.discovery.year",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1875,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "gallium was discovered spectroscopically by the French chemist Paul-Émile Lecoq de Boisbaudran in 1875",
+      "evidence": "gallium was discovered spectroscopically by the French chemist Paul-Émile Lecoq de Boisbaudran in 1875",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ga.discovery.story.0",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Dmitri Mendeleyev proposed that gallium existed in 1871, based on gaps in his newly created Periodic Table of Elements.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "First proposed to exist by Dmitri Mendeleyev in 1871 based on gaps in his newly created Periodic Table of Elements",
+      "evidence": "First proposed to exist by Dmitri Mendeleyev in 1871 based on gaps in his newly created Periodic Table of Elements",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ga.discovery.story.1",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Gallium was discovered spectroscopically in 1875 by the French chemist Paul-Émile Lecoq de Boisbaudran.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "gallium was discovered spectroscopically by the French chemist Paul-Émile Lecoq de Boisbaudran in 1875",
+      "evidence": "gallium was discovered spectroscopically by the French chemist Paul-Émile Lecoq de Boisbaudran in 1875",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ga.discovery.story.2",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The name comes from the Latin word Gallia, meaning France, and also from the Latin gallus, a cock, a translation of \"Lecoq.\"",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Latin word Gallia, France; also from Latin, gallus, a translation of \"Lecoq,\" a cock.",
+      "evidence": "From the Latin word Gallia, France; also from Latin, gallus, a translation of \"Lecoq,\" a cock.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ga.uses.0",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Gallium has been used to produce solid-state items, including transistors and light emitting diodes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "has been used to produce solid-state items like transistors and light emitting diodes",
+      "evidence": "has been used to produce solid-state items like transistors and light emitting diodes",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ga.uses.1",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Gallium has found use in high temperature thermometers.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "so it has found use in high temperature thermometers",
+      "evidence": "so it has found use in high temperature thermometers",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ga.uses.2",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Gallium has been used to create alloys with low melting points.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Gallium easily forms alloys with most metals and has been used to create low melting alloys",
+      "evidence": "Gallium easily forms alloys with most metals and has been used to create low melting alloys",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ga.uses.3",
+      "subject": {
+        "entity": "element:Ga",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Gallium trichloride was gathered to build the Gallium Neutrino Observatory in Italy, which studies particles called neutrinos.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/31#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "gallium trichloride (GaCl3) have been gathered to build the Gallium Neutrino Observatory, an observatory located in Italy built to study particles called neutrinos",
+      "evidence": "gallium trichloride (GaCl3) have been gathered to build the Gallium Neutrino Observatory, an observatory located in Italy built to study particles called neutrinos",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

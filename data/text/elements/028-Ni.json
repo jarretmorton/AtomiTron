@@ -1,0 +1,299 @@
+{
+  "element": "element:Ni",
+  "discovery": {
+    "story": [
+      {
+        "value": "The Swedish chemist Axel Fredrik Cronstedt discovered nickel in 1751, in a mineral called niccolite.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ni.discovery.story.0"
+        }
+      },
+      {
+        "value": "The name nickel comes from the German word Nickel, meaning \"deceptive little spirit\".",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ni.discovery.story.1"
+        }
+      },
+      {
+        "value": "Miners called the mineral niccolite Kupfernickel, meaning false copper, because it looked like copper ore but no copper was found in it.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ni.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1751,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ni.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Nickel is used to make some types of coins and batteries.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ni.uses.0"
+      }
+    },
+    {
+      "value": "Nickel can be electroplated onto other metals to form a protective coating.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ni.uses.1"
+      }
+    },
+    {
+      "value": "Adding nickel to glass gives the glass a green color.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ni.uses.2"
+      }
+    },
+    {
+      "value": "Nickel is used to make stainless steel and other alloys that resist corrosion.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ni.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Ni.discovery.year",
+      "subject": {
+        "entity": "element:Ni",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1751,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Nickel was discovered by the Swedish chemist Axel Fredrik Cronstedt in the mineral niccolite (NiAs) in 1751.",
+      "evidence": "Nickel was discovered by the Swedish chemist Axel Fredrik Cronstedt in the mineral niccolite (NiAs) in 1751.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ni.discovery.story.0",
+      "subject": {
+        "entity": "element:Ni",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The Swedish chemist Axel Fredrik Cronstedt discovered nickel in 1751, in a mineral called niccolite.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Nickel was discovered by the Swedish chemist Axel Fredrik Cronstedt in the mineral niccolite (NiAs) in 1751.",
+      "evidence": "Nickel was discovered by the Swedish chemist Axel Fredrik Cronstedt in the mineral niccolite (NiAs) in 1751.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ni.discovery.story.1",
+      "subject": {
+        "entity": "element:Ni",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name nickel comes from the German word Nickel, meaning \"deceptive little spirit\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the German Nickel for \"deceptive little spirit\"",
+      "evidence": "The name derives from the German Nickel for \"deceptive little spirit\"",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ni.discovery.story.2",
+      "subject": {
+        "entity": "element:Ni",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Miners called the mineral niccolite Kupfernickel, meaning false copper, because it looked like copper ore but no copper was found in it.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "miners called mineral niccolite (NiAs) by the name Kupfernickel (false copper) because it resembled copper ores in appearance, but no copper was found",
+      "evidence": "miners called mineral niccolite (NiAs) by the name Kupfernickel (false copper) because it resembled copper ores in appearance, but no copper was found",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ni.uses.0",
+      "subject": {
+        "entity": "element:Ni",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Nickel is used to make some types of coins and batteries.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Nickel is also used to manufacture some types of coins and batteries.",
+      "evidence": "Nickel is also used to manufacture some types of coins and batteries.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ni.uses.1",
+      "subject": {
+        "entity": "element:Ni",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Nickel can be electroplated onto other metals to form a protective coating.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It can be electroplated onto other metals to form a protective coating.",
+      "evidence": "It can be electroplated onto other metals to form a protective coating.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ni.uses.2",
+      "subject": {
+        "entity": "element:Ni",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Adding nickel to glass gives the glass a green color.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Adding nickel to glass gives it a green color.",
+      "evidence": "Adding nickel to glass gives it a green color.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ni.uses.3",
+      "subject": {
+        "entity": "element:Ni",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Nickel is used to make stainless steel and other alloys that resist corrosion.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/28#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It is extensively used for making stainless steel and other corrosion-resistant alloys",
+      "evidence": "It is extensively used for making stainless steel and other corrosion-resistant alloys",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

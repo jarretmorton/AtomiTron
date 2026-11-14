@@ -1,0 +1,227 @@
+{
+  "element": "element:Cf",
+  "discovery": {
+    "story": [
+      {
+        "value": "Californium was first produced in 1950 by Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cf.discovery.story.0"
+        }
+      },
+      {
+        "value": "The scientists who first produced californium worked at the University of California, Berkeley.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cf.discovery.story.1"
+        }
+      },
+      {
+        "value": "Californium was first made using a device known as a cyclotron.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cf.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1950,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cf.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "A form of californium is used as a neutron source to help identify gold and silver ores.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cf.uses.0"
+      }
+    },
+    {
+      "value": "A form of californium is used in neutron moisture gauges, which help find water and oil bearing layers in oil wells.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cf.uses.1"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Cf.discovery.year",
+      "subject": {
+        "entity": "element:Cf",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1950,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso working at the University of California, Berkeley, in 1950.",
+      "evidence": "Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso working at the University of California, Berkeley, in 1950.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cf.discovery.story.0",
+      "subject": {
+        "entity": "element:Cf",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Californium was first produced in 1950 by Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso working at the University of California, Berkeley, in 1950.",
+      "evidence": "Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso working at the University of California, Berkeley, in 1950.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cf.discovery.story.1",
+      "subject": {
+        "entity": "element:Cf",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The scientists who first produced californium worked at the University of California, Berkeley.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "working at the University of California, Berkeley, in 1950.",
+      "evidence": "working at the University of California, Berkeley, in 1950.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cf.discovery.story.2",
+      "subject": {
+        "entity": "element:Cf",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Californium was first made using a device known as a cyclotron.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "They bombarded atoms of curium-242 with helium ions using a device known as a cyclotron.",
+      "evidence": "They bombarded atoms of curium-242 with helium ions using a device known as a cyclotron.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cf.uses.0",
+      "subject": {
+        "entity": "element:Cf",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "A form of californium is used as a neutron source to help identify gold and silver ores.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It is being used as a neutron source to identify gold and silver ores through a technique known as neutron activation.",
+      "evidence": "It is being used as a neutron source to identify gold and silver ores through a technique known as neutron activation.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cf.uses.1",
+      "subject": {
+        "entity": "element:Cf",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "A form of californium is used in neutron moisture gauges, which help find water and oil bearing layers in oil wells.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/98#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It is also being used in devices known as neutron moisture gauges that are used to find water and oil bearing layers in oil wells",
+      "evidence": "It is also being used in devices known as neutron moisture gauges that are used to find water and oil bearing layers in oil wells",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

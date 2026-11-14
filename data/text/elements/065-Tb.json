@@ -1,0 +1,299 @@
+{
+  "element": "element:Tb",
+  "discovery": {
+    "story": [
+      {
+        "value": "Terbium was discovered in 1843 by Carl-Gustav Mosander, a Swedish surgeon and chemist.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Tb.discovery.story.0"
+        }
+      },
+      {
+        "value": "The name terbium comes from the village of Ytterby in Sweden.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Tb.discovery.story.1"
+        }
+      },
+      {
+        "value": "The names first given to the erbium and terbium samples have since been switched.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Tb.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1843,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=History",
+        "retrieved": "2026-11-14",
+        "via": "IUPAC CIAAW"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tb.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Terbium is used to dope some types of solid-state devices.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tb.uses.0"
+      }
+    },
+    {
+      "value": "Terbium is used with zirconium dioxide as a crystal stabilizer in fuel cells that operate at high temperatures.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tb.uses.1"
+      }
+    },
+    {
+      "value": "A terbium compound called sodium terbium borate is used to make laser light.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tb.uses.2"
+      }
+    },
+    {
+      "value": "Terbium oxide could potentially be used as an activator for green phosphors in television tubes.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tb.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Tb.discovery.year",
+      "subject": {
+        "entity": "element:Tb",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1843,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Terbium was discovered by the Swedish surgeon and chemist Carl-Gustav Mosander in 1843",
+      "evidence": "Terbium was discovered by the Swedish surgeon and chemist Carl-Gustav Mosander in 1843",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tb.discovery.story.0",
+      "subject": {
+        "entity": "element:Tb",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Terbium was discovered in 1843 by Carl-Gustav Mosander, a Swedish surgeon and chemist.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Terbium was discovered by the Swedish surgeon and chemist Carl-Gustav Mosander in 1843",
+      "evidence": "Terbium was discovered by the Swedish surgeon and chemist Carl-Gustav Mosander in 1843",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tb.discovery.story.1",
+      "subject": {
+        "entity": "element:Tb",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name terbium comes from the village of Ytterby in Sweden.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the village of Ytterby in Sweden",
+      "evidence": "The name derives from the village of Ytterby in Sweden",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tb.discovery.story.2",
+      "subject": {
+        "entity": "element:Tb",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The names first given to the erbium and terbium samples have since been switched.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Thus the original names given to erbium and terbium samples are now switched.",
+      "evidence": "Thus the original names given to erbium and terbium samples are now switched.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tb.uses.0",
+      "subject": {
+        "entity": "element:Tb",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Terbium is used to dope some types of solid-state devices.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Terbium is used to dope some types of solid-state devices",
+      "evidence": "Terbium is used to dope some types of solid-state devices",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tb.uses.1",
+      "subject": {
+        "entity": "element:Tb",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Terbium is used with zirconium dioxide as a crystal stabilizer in fuel cells that operate at high temperatures.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "along with zirconium dioxide (ZrO2), as a crystal stabilizer in fuel cells that operate at high temperatures",
+      "evidence": "along with zirconium dioxide (ZrO2), as a crystal stabilizer in fuel cells that operate at high temperatures",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tb.uses.2",
+      "subject": {
+        "entity": "element:Tb",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "A terbium compound called sodium terbium borate is used to make laser light.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Sodium terbium borate, another terbium compound, is used to make laser light.",
+      "evidence": "Sodium terbium borate, another terbium compound, is used to make laser light.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tb.uses.3",
+      "subject": {
+        "entity": "element:Tb",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Terbium oxide could potentially be used as an activator for green phosphors in television tubes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/65#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Terbia can potentially be used as an activator for green phosphors in television tubes.",
+      "evidence": "Terbia can potentially be used as an activator for green phosphors in television tubes.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

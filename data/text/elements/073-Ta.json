@@ -1,0 +1,263 @@
+{
+  "element": "element:Ta",
+  "discovery": {
+    "story": [
+      {
+        "value": "Tantalum is named after Tantalus, a character from Greek mythology.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ta.discovery.story.0"
+        }
+      },
+      {
+        "value": "Tantalum was discovered in 1802 by Anders-Gustav Ekeberg, a Swedish chemist and mineralogist.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ta.discovery.story.1"
+        }
+      }
+    ],
+    "year": {
+      "value": 1802,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=History",
+        "retrieved": "2026-11-14",
+        "via": "IUPAC CIAAW"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ta.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Tantalum is used to make surgical sutures and implants, such as artificial joints and cranial plates.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ta.uses.0"
+      }
+    },
+    {
+      "value": "Tantalum does not react with bodily fluids and is used to make surgical equipment.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ta.uses.1"
+      }
+    },
+    {
+      "value": "Tantalum pentoxide, one of tantalum's compounds, is used to make capacitors.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ta.uses.2"
+      }
+    },
+    {
+      "value": "Tantalum oxide is used to make special glass for camera lenses.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ta.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Ta.discovery.year",
+      "subject": {
+        "entity": "element:Ta",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1802,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Tantalum was discovered by the Swedish chemist and mineralogist Anders- Gustav Ekeberg in 1802.",
+      "evidence": "Tantalum was discovered by the Swedish chemist and mineralogist Anders- Gustav Ekeberg in 1802.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ta.discovery.story.0",
+      "subject": {
+        "entity": "element:Ta",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Tantalum is named after Tantalus, a character from Greek mythology.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek mythological character Tantalus",
+      "evidence": "The name derives from the Greek mythological character Tantalus",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ta.discovery.story.1",
+      "subject": {
+        "entity": "element:Ta",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Tantalum was discovered in 1802 by Anders-Gustav Ekeberg, a Swedish chemist and mineralogist.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Tantalum was discovered by the Swedish chemist and mineralogist Anders- Gustav Ekeberg in 1802.",
+      "evidence": "Tantalum was discovered by the Swedish chemist and mineralogist Anders- Gustav Ekeberg in 1802.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ta.uses.0",
+      "subject": {
+        "entity": "element:Ta",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Tantalum is used to make surgical sutures and implants, such as artificial joints and cranial plates.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "is used to make surgical sutures as well as implants, such as artificial joints and cranial plates",
+      "evidence": "is used to make surgical sutures as well as implants, such as artificial joints and cranial plates",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ta.uses.1",
+      "subject": {
+        "entity": "element:Ta",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Tantalum does not react with bodily fluids and is used to make surgical equipment.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Tantalum does not react with bodily fluids and is used to make surgical equipment.",
+      "evidence": "Tantalum does not react with bodily fluids and is used to make surgical equipment.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ta.uses.2",
+      "subject": {
+        "entity": "element:Ta",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Tantalum pentoxide, one of tantalum's compounds, is used to make capacitors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Tantalum pentoxide (Ta2O5), one of tantalum's compounds, is a dielectric material and is used to make capacitors.",
+      "evidence": "Tantalum pentoxide (Ta2O5), one of tantalum's compounds, is a dielectric material and is used to make capacitors.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ta.uses.3",
+      "subject": {
+        "entity": "element:Ta",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Tantalum oxide is used to make special glass for camera lenses.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/73#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Tantalum oxide is used to make special glass with high index of refraction for camera lenses.",
+      "evidence": "Tantalum oxide is used to make special glass with high index of refraction for camera lenses.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

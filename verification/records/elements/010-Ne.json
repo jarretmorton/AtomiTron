@@ -713,6 +713,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from Ne.electronConfiguration, Ne.group"
+    },
+    {
+      "id": "Ne.discovery.year",
+      "subject": {
+        "entity": "element:Ne",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1898,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/10#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Discovered by Ramsay and Travers in 1898.",
+      "evidence": "Discovered by Ramsay and Travers in 1898.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ne.discovery.story.0",
+      "subject": {
+        "entity": "element:Ne",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name neon comes from the Greek word neos, which means \"new\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/10#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek neos for \"new\".",
+      "evidence": "The name derives from the Greek neos for \"new\".",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ne.discovery.story.1",
+      "subject": {
+        "entity": "element:Ne",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Neon was discovered by Ramsay and Travers in 1898.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/10#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Discovered by Ramsay and Travers in 1898.",
+      "evidence": "Discovered by Ramsay and Travers in 1898.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ne.discovery.story.2",
+      "subject": {
+        "entity": "element:Ne",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Neon was discovered through the study of liquefied air.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/10#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Like krypton, neon was discovered through the study of liquefied air.",
+      "evidence": "Like krypton, neon was discovered through the study of liquefied air.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ne.uses.0",
+      "subject": {
+        "entity": "element:Ne",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "The largest use for neon gas is in advertising signs.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/10#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "The largest use for neon gas is in advertising signs.",
+      "evidence": "The largest use for neon gas is in advertising signs.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ne.uses.1",
+      "subject": {
+        "entity": "element:Ne",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Neon is used to make high voltage indicators.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/10#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Neon is also used to make high voltage indicators",
+      "evidence": "Neon is also used to make high voltage indicators",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ne.uses.2",
+      "subject": {
+        "entity": "element:Ne",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Neon is combined with helium to make helium-neon lasers.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/10#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Neon is also used to make high voltage indicators and is combined with helium to make helium-neon lasers.",
+      "evidence": "Neon is also used to make high voltage indicators and is combined with helium to make helium-neon lasers.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ne.uses.3",
+      "subject": {
+        "entity": "element:Ne",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Neon is used in devices such as lightning arrestors and TV tubes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/10#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "neon also functions in high-voltage indicators, lightning arrestors, wave meter tubes, and TV tubes.",
+      "evidence": "neon also functions in high-voltage indicators, lightning arrestors, wave meter tubes, and TV tubes.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

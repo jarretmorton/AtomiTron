@@ -1,0 +1,263 @@
+{
+  "element": "element:Ca",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name calcium comes from the Latin word calx, meaning lime or limestone.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ca.discovery.story.0"
+        }
+      },
+      {
+        "value": "The Romans made lime under the name calx, but calcium metal was not discovered until 1808.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ca.discovery.story.1"
+        }
+      }
+    ],
+    "year": {
+      "value": 1808,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ca.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Calcium carbonate, a compound of calcium, is used to make things such as white paint, toothpaste and stomach antacids.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ca.uses.0"
+      }
+    },
+    {
+      "value": "Calcium sulfate, also called gypsum, is used to make dry wall and plaster of Paris.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ca.uses.1"
+      }
+    },
+    {
+      "value": "Calcium is used in vacuum tubes as a getter, a material that removes trace gases.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ca.uses.2"
+      }
+    },
+    {
+      "value": "Calcium can be combined with metals such as aluminum, copper and lead to make alloys.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ca.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Ca.discovery.year",
+      "subject": {
+        "entity": "element:Ca",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1808,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Metallic calcium was first isolated by Sir Humphry Davy in 1808",
+      "evidence": "Metallic calcium was first isolated by Sir Humphry Davy in 1808",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ca.discovery.story.0",
+      "subject": {
+        "entity": "element:Ca",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name calcium comes from the Latin word calx, meaning lime or limestone.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin calx for \"lime\" (CaO) or \"limestone\" (CaCO3) in which it was found.",
+      "evidence": "The name derives from the Latin calx for \"lime\" (CaO) or \"limestone\" (CaCO3) in which it was found.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ca.discovery.story.1",
+      "subject": {
+        "entity": "element:Ca",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The Romans made lime under the name calx, but calcium metal was not discovered until 1808.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Though lime was prepared by the Romans in the first century under the name calx, the metal was not discovered until 1808.",
+      "evidence": "Though lime was prepared by the Romans in the first century under the name calx, the metal was not discovered until 1808.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ca.uses.0",
+      "subject": {
+        "entity": "element:Ca",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Calcium carbonate, a compound of calcium, is used to make things such as white paint, toothpaste and stomach antacids.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Calcium carbonate is used to make white paint, cleaning powder, toothpaste and stomach antacids, among other things.",
+      "evidence": "Calcium carbonate is used to make white paint, cleaning powder, toothpaste and stomach antacids, among other things.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ca.uses.1",
+      "subject": {
+        "entity": "element:Ca",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Calcium sulfate, also called gypsum, is used to make dry wall and plaster of Paris.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "calcium sulfate (CaSO4), also known as gypsum, which is used to make dry wall and plaster of Paris",
+      "evidence": "calcium sulfate (CaSO4), also known as gypsum, which is used to make dry wall and plaster of Paris",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ca.uses.2",
+      "subject": {
+        "entity": "element:Ca",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Calcium is used in vacuum tubes as a getter, a material that removes trace gases.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Calcium is also used in vacuum tubes as a getter, a material that combines with and removes trace gases from vacuum tubes.",
+      "evidence": "Calcium is also used in vacuum tubes as a getter, a material that combines with and removes trace gases from vacuum tubes.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ca.uses.3",
+      "subject": {
+        "entity": "element:Ca",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Calcium can be combined with metals such as aluminum, copper and lead to make alloys.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/20#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Calcium can be alloyed with aluminum, beryllium, copper, lead and magnesium.",
+      "evidence": "Calcium can be alloyed with aluminum, beryllium, copper, lead and magnesium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

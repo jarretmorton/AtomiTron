@@ -805,6 +805,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from W.electronConfiguration"
+    },
+    {
+      "id": "W.discovery.story.0",
+      "subject": {
+        "entity": "element:W",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name tungsten comes from Swedish words meaning \"heavy stone\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Swedish tungsten for \"heavy stone\".",
+      "evidence": "The name derives from the Swedish tungsten for \"heavy stone\".",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "W.discovery.story.1",
+      "subject": {
+        "entity": "element:W",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The symbol W comes from the German word wolfram.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The symbol W derives from the German wolfram",
+      "evidence": "The symbol W derives from the German wolfram",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "W.discovery.story.2",
+      "subject": {
+        "entity": "element:W",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Tungsten metal was first isolated in 1783 by the Spanish chemists Fausto Elhuyar and his brother Juan José.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Tungsten metal was first isolated by the Spanish chemists Fausto Elhuyar and his brother Juan José in 1783.",
+      "evidence": "Tungsten metal was first isolated by the Spanish chemists Fausto Elhuyar and his brother Juan José in 1783.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "W.uses.0",
+      "subject": {
+        "entity": "element:W",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Tungsten is used to make filaments for incandescent light bulbs, fluorescent light bulbs and television tubes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "is used to make filaments for incandescent light bulbs, fluorescent light bulbs and television tubes",
+      "evidence": "is used to make filaments for incandescent light bulbs, fluorescent light bulbs and television tubes",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "W.uses.1",
+      "subject": {
+        "entity": "element:W",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Tungsten is used as a target for producing X-rays.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Tungsten is also used as a target for X-ray production",
+      "evidence": "Tungsten is also used as a target for X-ray production",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "W.uses.2",
+      "subject": {
+        "entity": "element:W",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Tungsten carbide, an extremely hard tungsten compound, is used in the tips of drill bits.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Tungsten carbide (WC) is an extremely hard tungsten compound. It is used in the tips of drill bits",
+      "evidence": "Tungsten carbide (WC) is an extremely hard tungsten compound. It is used in the tips of drill bits",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "W.uses.3",
+      "subject": {
+        "entity": "element:W",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Compounds of tungsten with calcium and magnesium are used in fluorescent light bulbs.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/74#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Tungsten forms compounds with calcium and magnesium that have phosphorescent properties and are used in fluorescent light bulbs.",
+      "evidence": "Tungsten forms compounds with calcium and magnesium that have phosphorescent properties and are used in fluorescent light bulbs.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

@@ -268,7 +268,96 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Because only small amounts are produced and its half-life is short, fermium currently has no uses outside of basic scientific research.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Fm.uses.0"
+          }
+        },
+        {
+          "value": "Fermium is currently used only in basic scientific research that expands knowledge of the rest of the periodic table.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Fm.uses.1"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Fermium was discovered in 1952 by a team of scientists led by Albert Ghiorso.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Fm.discovery.story.0"
+            }
+          },
+          {
+            "value": "Fermium is named after the Italian physicist and Nobel Laureate Enrico Fermi.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Fm.discovery.story.1"
+            }
+          },
+          {
+            "value": "The Berkeley team named the element in honor of Enrico Fermi, the developer of the first artificial self-sustained nuclear reactor.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Fm.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1952,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Fm.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

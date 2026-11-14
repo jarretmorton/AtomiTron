@@ -212,7 +212,82 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Lawrencium currently has no uses outside of basic scientific research.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Lr.uses.0"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "American scientists Albert Ghiorso, Torbjørn Sikkeland, Almon E. Larsh and Robert M. Latimer created lawrencium in March 1961.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Lr.discovery.story.0"
+            }
+          },
+          {
+            "value": "Lawrencium is named after Lawrence, the inventor of the cyclotron.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Lr.discovery.story.1"
+            }
+          },
+          {
+            "value": "The scientists who made lawrencium were working at the Lawrence Radiation Laboratory in Berkeley, California.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Lr.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1961,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Lr.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

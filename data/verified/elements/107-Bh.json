@@ -254,7 +254,68 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Only a few atoms of bohrium have ever been made, so it currently has no uses outside of basic scientific research.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/107#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Bh.uses.0"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Bohrium was first produced in 1976 by scientists working at the Joint Institute for Nuclear Research in Dubna, Russia.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/107#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Bh.discovery.story.0"
+            }
+          },
+          {
+            "value": "In 1981, Peter Armbruster, Gottfried Münzenber and their team in Darmstadt, Germany, confirmed the production of bohrium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/107#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Bh.discovery.story.1"
+            }
+          }
+        ],
+        "year": {
+          "value": 1976,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/107#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Bh.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

@@ -520,6 +520,138 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Mn.electronConfiguration"
+    },
+    {
+      "id": "Mn.discovery.story.0",
+      "subject": {
+        "entity": "element:Mn",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name manganese comes from the Latin word magnes, meaning magnet, because the mineral pyrolusite has magnetic properties.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/25#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin magnes for \"magnet\" since pyrolusite (MnO2) has magnetic properties.",
+      "evidence": "The name derives from the Latin magnes for \"magnet\" since pyrolusite (MnO2) has magnetic properties.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mn.discovery.story.1",
+      "subject": {
+        "entity": "element:Mn",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Manganese was isolated by Gahn in 1774.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/25#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "isolated by Gahn in 1774 by reduction of the dioxide with carbon.",
+      "evidence": "isolated by Gahn in 1774 by reduction of the dioxide with carbon.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mn.uses.0",
+      "subject": {
+        "entity": "element:Mn",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Manganese is mixed into steel to make it easier to form and work with, and to make it stronger and more resistant to impact.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/25#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "is alloyed with steel to make it easier to form and work with and to increase steel's strength and resistance to impact.",
+      "evidence": "is alloyed with steel to make it easier to form and work with and to increase steel's strength and resistance to impact.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mn.uses.1",
+      "subject": {
+        "entity": "element:Mn",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Manganese is used to give glass an amethyst color.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/25#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Manganese is also used to give glass an amethyst color",
+      "evidence": "Manganese is also used to give glass an amethyst color",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mn.uses.2",
+      "subject": {
+        "entity": "element:Mn",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Manganese dioxide is used in dry cells.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/25#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "The dioxide (pyrolusite) is used as a depolarizer in dry cells",
+      "evidence": "The dioxide (pyrolusite) is used as a depolarizer in dry cells",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mn.uses.3",
+      "subject": {
+        "entity": "element:Mn",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Manganese dioxide is used as a drying agent in black paints.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/25#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "and as a drying agent in black paints.",
+      "evidence": "and as a drying agent in black paints.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

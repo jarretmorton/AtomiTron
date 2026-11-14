@@ -621,6 +621,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Ag.electronConfiguration"
+    },
+    {
+      "id": "Ag.discovery.year",
+      "subject": {
+        "entity": "element:Ag",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": "Ancient",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Silver has been known since ancient times.",
+      "evidence": "Silver has been known since ancient times.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ag.discovery.story.0",
+      "subject": {
+        "entity": "element:Ag",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name silver comes from the Anglo-Saxon words seofor and siolfur, whose origin is unknown.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Anglo-Saxon seofor and siolfur, which is of unknown origin.",
+      "evidence": "The name derives from the Anglo-Saxon seofor and siolfur, which is of unknown origin.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ag.discovery.story.1",
+      "subject": {
+        "entity": "element:Ag",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Silver has been known since ancient times.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Silver has been known since ancient times.",
+      "evidence": "Silver has been known since ancient times.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ag.uses.0",
+      "subject": {
+        "entity": "element:Ag",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Sterling silver is used for things such as jewelry and silverware.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Sterling silver is used for jewelry, silverware, etc. where appearance is paramount.",
+      "evidence": "Sterling silver is used for jewelry, silverware, etc. where appearance is paramount.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ag.uses.1",
+      "subject": {
+        "entity": "element:Ag",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Silver has been used to make coins, although today other metals are usually used instead.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Silver has also been used to create coins, although today other metals are typically used in its place.",
+      "evidence": "Silver has also been used to create coins, although today other metals are typically used in its place.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ag.uses.2",
+      "subject": {
+        "entity": "element:Ag",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Silver is sometimes used in making things such as electrical contacts and printed circuit boards.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it is sometimes used in making solder, electrical contacts and printed circuit boards",
+      "evidence": "it is sometimes used in making solder, electrical contacts and printed circuit boards",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ag.uses.3",
+      "subject": {
+        "entity": "element:Ag",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Silver nitrate is used to make photographic films and papers.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/47#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Silver nitrate (AgNO3) is light sensitive and is used to make photographic films and papers.",
+      "evidence": "Silver nitrate (AgNO3) is light sensitive and is used to make photographic films and papers.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

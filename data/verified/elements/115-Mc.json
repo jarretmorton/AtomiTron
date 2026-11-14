@@ -254,7 +254,68 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Moscovium currently has no uses outside of basic scientific research.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/115#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Mc.uses.0"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Moscovium is named after the Moscow region of Russia.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/115#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Mc.discovery.story.0"
+            }
+          },
+          {
+            "value": "Moscovium was discovered together by the Joint Institute for Nuclear Research in Russia, Oak Ridge National Laboratory, Vanderbilt University and Lawrence Livermore National Laboratory.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/115#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Mc.discovery.story.1"
+            }
+          },
+          {
+            "value": "Moscovium was given its name and the symbol Mc in 2016.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/115#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Mc.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

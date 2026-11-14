@@ -296,7 +296,82 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "A form of neptunium made in nuclear reactors is used in neutron detectors.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Np.uses.0"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Neptunium is named after the planet Neptune, which was named after the Roman god of the sea.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Np.discovery.story.0"
+            }
+          },
+          {
+            "value": "Neptunium was first produced in 1940 by Edwin M. McMillian and Philip H. Abelson at the University of California, Berkeley.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Np.discovery.story.1"
+            }
+          },
+          {
+            "value": "There were many early false reports of the discovery of neptunium, and the most significant one was by Enrico Fermi.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Np.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1940,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/93#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Np.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

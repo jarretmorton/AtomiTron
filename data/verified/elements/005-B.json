@@ -407,7 +407,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Borax, a boron compound, is used in laundry products.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "B.uses.0"
+          }
+        },
+        {
+          "value": "Boron compounds are used to make borosilicate glass.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "B.uses.1"
+          }
+        },
+        {
+          "value": "A boron compound is used to make fiberglass insulation and a type of bleach called sodium perborate bleach.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "B.uses.2"
+          }
+        },
+        {
+          "value": "Boron filaments are used in the aerospace industry because they are strong and lightweight.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "B.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name boron comes from the Arabic word buraq, meaning \"white\".",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "B.discovery.story.0"
+            }
+          },
+          {
+            "value": "Boron was discovered in 1808 by French chemists Joseph-Louis Gay-Lussac and Louis-Jaques Thénard, and independently by English chemist Sir Humphry Davy.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "B.discovery.story.1"
+            }
+          },
+          {
+            "value": "Boron compounds were known for thousands of years before the element itself was isolated in 1808.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "B.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1808,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/5#section=History",
+            "retrieved": "2026-11-14",
+            "via": "IUPAC CIAAW"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "B.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

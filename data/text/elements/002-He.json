@@ -1,0 +1,299 @@
+{
+  "element": "element:He",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name helium comes from the Greek word helios, meaning the sun.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "He.discovery.story.0"
+        }
+      },
+      {
+        "value": "In 1868, French astronomer Pierre-Jules-César Janssen noticed a yellow line in the sun's spectrum while studying a total solar eclipse.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "He.discovery.story.1"
+        }
+      },
+      {
+        "value": "Lockyer and Frankland suggested the name helium for the new element.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "He.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1868,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=History",
+        "retrieved": "2026-11-14",
+        "via": "IUPAC CIAAW"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "He.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Helium gas is used to inflate blimps, scientific balloons and party balloons.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "He.uses.0"
+      }
+    },
+    {
+      "value": "Liquid helium is used in magnetic resonance imaging, known as MRI, in medicine.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "He.uses.1"
+      }
+    },
+    {
+      "value": "Helium is combined with oxygen to make a nitrogen-free atmosphere for deep sea divers.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "He.uses.2"
+      }
+    },
+    {
+      "value": "Liquid helium is used to study superconductivity and to make superconductive magnets.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "He.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "He.discovery.year",
+      "subject": {
+        "entity": "element:He",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1868,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The element was discovered by spectroscopy during a solar eclipse in the sun's chromosphere by the French astronomer Pierre-Jules-Cesar Janssen in 1868.",
+      "evidence": "The element was discovered by spectroscopy during a solar eclipse in the sun's chromosphere by the French astronomer Pierre-Jules-Cesar Janssen in 1868.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "He.discovery.story.0",
+      "subject": {
+        "entity": "element:He",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name helium comes from the Greek word helios, meaning the sun.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Greek word helios, the sun.",
+      "evidence": "From the Greek word helios, the sun.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "He.discovery.story.1",
+      "subject": {
+        "entity": "element:He",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "In 1868, French astronomer Pierre-Jules-César Janssen noticed a yellow line in the sun's spectrum while studying a total solar eclipse.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Pierre-Jules-César Janssen, a French astronomer, noticed a yellow line in the sun's spectrum while studying a total solar eclipse in 1868.",
+      "evidence": "Pierre-Jules-César Janssen, a French astronomer, noticed a yellow line in the sun's spectrum while studying a total solar eclipse in 1868.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "He.discovery.story.2",
+      "subject": {
+        "entity": "element:He",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Lockyer and Frankland suggested the name helium for the new element.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Lockyer and Frankland suggested the name helium for the new element.",
+      "evidence": "Lockyer and Frankland suggested the name helium for the new element.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "He.uses.0",
+      "subject": {
+        "entity": "element:He",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Helium gas is used to inflate blimps, scientific balloons and party balloons.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Helium gas is used to inflate blimps, scientific balloons and party balloons.",
+      "evidence": "Helium gas is used to inflate blimps, scientific balloons and party balloons.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "He.uses.1",
+      "subject": {
+        "entity": "element:He",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Liquid helium is used in magnetic resonance imaging, known as MRI, in medicine.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Liquid helium's use in magnetic resonance imaging (MRI) continues to increase as the medical profession accepts and develops new uses for the equipment.",
+      "evidence": "Liquid helium's use in magnetic resonance imaging (MRI) continues to increase as the medical profession accepts and develops new uses for the equipment.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "He.uses.2",
+      "subject": {
+        "entity": "element:He",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Helium is combined with oxygen to make a nitrogen-free atmosphere for deep sea divers.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Helium is combined with oxygen to create a nitrogen free atmosphere for deep sea divers",
+      "evidence": "Helium is combined with oxygen to create a nitrogen free atmosphere for deep sea divers",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "He.uses.3",
+      "subject": {
+        "entity": "element:He",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Liquid helium is used to study superconductivity and to make superconductive magnets.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Liquid helium is an important cryogenic material and is used to study superconductivity and to create superconductive magnets.",
+      "evidence": "Liquid helium is an important cryogenic material and is used to study superconductivity and to create superconductive magnets.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

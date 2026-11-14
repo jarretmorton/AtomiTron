@@ -1,0 +1,227 @@
+{
+  "element": "element:Fm",
+  "discovery": {
+    "story": [
+      {
+        "value": "Fermium was discovered in 1952 by a team of scientists led by Albert Ghiorso.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Fm.discovery.story.0"
+        }
+      },
+      {
+        "value": "Fermium is named after the Italian physicist and Nobel Laureate Enrico Fermi.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Fm.discovery.story.1"
+        }
+      },
+      {
+        "value": "The Berkeley team named the element in honor of Enrico Fermi, the developer of the first artificial self-sustained nuclear reactor.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Fm.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1952,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Fm.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Because only small amounts are produced and its half-life is short, fermium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Fm.uses.0"
+      }
+    },
+    {
+      "value": "Fermium is currently used only in basic scientific research that expands knowledge of the rest of the periodic table.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Fm.uses.1"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Fm.discovery.year",
+      "subject": {
+        "entity": "element:Fm",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1952,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Fermium was discovered by a team of scientists led by Albert Ghiorso in 1952",
+      "evidence": "Fermium was discovered by a team of scientists led by Albert Ghiorso in 1952",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Fm.discovery.story.0",
+      "subject": {
+        "entity": "element:Fm",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Fermium was discovered in 1952 by a team of scientists led by Albert Ghiorso.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Fermium was discovered by a team of scientists led by Albert Ghiorso in 1952",
+      "evidence": "Fermium was discovered by a team of scientists led by Albert Ghiorso in 1952",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Fm.discovery.story.1",
+      "subject": {
+        "entity": "element:Fm",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Fermium is named after the Italian physicist and Nobel Laureate Enrico Fermi.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "is named after the Italian physicist and Nobel Laureate Enrico Fermi",
+      "evidence": "is named after the Italian physicist and Nobel Laureate Enrico Fermi",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Fm.discovery.story.2",
+      "subject": {
+        "entity": "element:Fm",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The Berkeley team named the element in honor of Enrico Fermi, the developer of the first artificial self-sustained nuclear reactor.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "the prerogative to name the new element in honor of the recently deceased Enrico Fermi, the developer of the first artificial self-sustained nuclear reactor",
+      "evidence": "the prerogative to name the new element in honor of the recently deceased Enrico Fermi, the developer of the first artificial self-sustained nuclear reactor",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Fm.uses.0",
+      "subject": {
+        "entity": "element:Fm",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Because only small amounts are produced and its half-life is short, fermium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Due to the small amounts produced and its short half-life, there are currently no uses for fermium outside of basic scientific research.",
+      "evidence": "Due to the small amounts produced and its short half-life, there are currently no uses for fermium outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Fm.uses.1",
+      "subject": {
+        "entity": "element:Fm",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Fermium is currently used only in basic scientific research that expands knowledge of the rest of the periodic table.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/100#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "there are currently no uses for it outside of basic scientific research that expands knowledge of the rest of the periodic table",
+      "evidence": "there are currently no uses for it outside of basic scientific research that expands knowledge of the rest of the periodic table",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

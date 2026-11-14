@@ -1,0 +1,263 @@
+{
+  "element": "element:Mo",
+  "discovery": {
+    "story": [
+      {
+        "value": "Molybdenum was discovered in 1778 by Carl Wilhelm Scheele, a Swedish pharmacist and chemist.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Mo.discovery.story.0"
+        }
+      },
+      {
+        "value": "The name molybdenum comes from the Greek word molybdos, which means \"lead\".",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Mo.discovery.story.1"
+        }
+      },
+      {
+        "value": "In ancient times, people used the word \"lead\" for any black mineral that leaves a mark on paper.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Mo.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Some electrical filaments are made from molybdenum.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Mo.uses.0"
+      }
+    },
+    {
+      "value": "Molybdenum is mainly used as an alloying agent in steel.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Mo.uses.1"
+      }
+    },
+    {
+      "value": "Molybdenum disulfide, a compound of molybdenum, is used as a lubricant at high temperatures.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Mo.uses.2"
+      }
+    },
+    {
+      "value": "Molybdenum trioxide, a compound of molybdenum, is used to make enamels stick to metals.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Mo.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Mo.discovery.story.0",
+      "subject": {
+        "entity": "element:Mo",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Molybdenum was discovered in 1778 by Carl Wilhelm Scheele, a Swedish pharmacist and chemist.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Molybdenum was discovered by the Swedish pharmacist and chemist Carl Wilhelm Scheele in 1778.",
+      "evidence": "Molybdenum was discovered by the Swedish pharmacist and chemist Carl Wilhelm Scheele in 1778.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mo.discovery.story.1",
+      "subject": {
+        "entity": "element:Mo",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name molybdenum comes from the Greek word molybdos, which means \"lead\".",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek molybdos for \"lead\".",
+      "evidence": "The name derives from the Greek molybdos for \"lead\".",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mo.discovery.story.2",
+      "subject": {
+        "entity": "element:Mo",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "In ancient times, people used the word \"lead\" for any black mineral that leaves a mark on paper.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The ancients used the term \"lead\" for any black mineral that leaves a mark on paper.",
+      "evidence": "The ancients used the term \"lead\" for any black mineral that leaves a mark on paper.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mo.uses.0",
+      "subject": {
+        "entity": "element:Mo",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Some electrical filaments are made from molybdenum.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Some electrical filaments are also made from molybdenum.",
+      "evidence": "Some electrical filaments are also made from molybdenum.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mo.uses.1",
+      "subject": {
+        "entity": "element:Mo",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Molybdenum is mainly used as an alloying agent in steel.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Molybdenum is primarily used as an alloying agent in steel.",
+      "evidence": "Molybdenum is primarily used as an alloying agent in steel.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mo.uses.2",
+      "subject": {
+        "entity": "element:Mo",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Molybdenum disulfide, a compound of molybdenum, is used as a lubricant at high temperatures.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Molybdenum disulfide (MoS2), one of molybdenum's compounds, is used as a high temperature lubricant.",
+      "evidence": "Molybdenum disulfide (MoS2), one of molybdenum's compounds, is used as a high temperature lubricant.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mo.uses.3",
+      "subject": {
+        "entity": "element:Mo",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Molybdenum trioxide, a compound of molybdenum, is used to make enamels stick to metals.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/42#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Molybdenum trioxide (MoO3), another molybdenum compound, is used to adhere enamels to metals.",
+      "evidence": "Molybdenum trioxide (MoO3), another molybdenum compound, is used to adhere enamels to metals.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

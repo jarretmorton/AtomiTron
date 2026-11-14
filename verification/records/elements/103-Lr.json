@@ -283,6 +283,116 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "neutrons-from-mass-number from Lr.isotopes.0.massNumber, Lr.atomicNumber"
+    },
+    {
+      "id": "Lr.discovery.year",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1961,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Lawrencium was created by four American scientists, Albert Ghiorso, Torbjørn Sikkeland, Almon E. Larsh and Robert M. Latimer, in March, 1961.",
+      "evidence": "Lawrencium was created by four American scientists, Albert Ghiorso, Torbjørn Sikkeland, Almon E. Larsh and Robert M. Latimer, in March, 1961.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lr.discovery.story.0",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "American scientists Albert Ghiorso, Torbjørn Sikkeland, Almon E. Larsh and Robert M. Latimer created lawrencium in March 1961.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Lawrencium was created by four American scientists, Albert Ghiorso, Torbjørn Sikkeland, Almon E. Larsh and Robert M. Latimer, in March, 1961.",
+      "evidence": "Lawrencium was created by four American scientists, Albert Ghiorso, Torbjørn Sikkeland, Almon E. Larsh and Robert M. Latimer, in March, 1961.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lr.discovery.story.1",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Lawrencium is named after Lawrence, the inventor of the cyclotron.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Named after Lawrence, inventor of the cyclotron.",
+      "evidence": "Named after Lawrence, inventor of the cyclotron.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lr.discovery.story.2",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The scientists who made lawrencium were working at the Lawrence Radiation Laboratory in Berkeley, California.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Working at the Lawrence Radiation Laboratory in Berkeley, California, the scientists placed three micrograms",
+      "evidence": "Working at the Lawrence Radiation Laboratory in Berkeley, California, the scientists placed three micrograms",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lr.uses.0",
+      "subject": {
+        "entity": "element:Lr",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Lawrencium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/103#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "there are currently no uses for it outside of basic scientific research.",
+      "evidence": "there are currently no uses for it outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

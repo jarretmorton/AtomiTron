@@ -643,7 +643,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Gadolinium compounds are used to make phosphors for color televisions.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Gd.uses.0"
+          }
+        },
+        {
+          "value": "Gadolinium can be combined with yttrium to form garnets used in microwave technology.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Gd.uses.1"
+          }
+        },
+        {
+          "value": "Gadolinium can be alloyed with metals such as iron and chromium to improve their workability and resistance to high temperatures and oxidation.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Gd.uses.2"
+          }
+        },
+        {
+          "value": "Gadolinium can be used as control rods for nuclear reactors.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Gd.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Gadolinium is named after the mineral gadolinite, where it was found, which was named for the Finnish rare earth chemist Johan Gadolin.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Gd.discovery.story.0"
+            }
+          },
+          {
+            "value": "The Swiss chemist Jean Charles Galissard de Marignac first observed spectroscopic evidence of gadolinium in the minerals didymia and gadolinite.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Gd.discovery.story.1"
+            }
+          },
+          {
+            "value": "In 1886, the French chemist Paul-Emile Lecoq de Boisbaudran gave the element the name gadolinium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/64#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Gd.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

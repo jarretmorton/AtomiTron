@@ -358,7 +358,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Bismuth alloys are used in things such as automatic fire sprinkler systems, fire detection systems and electrical fuses.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Bi.uses.0"
+          }
+        },
+        {
+          "value": "Bismuth oxide, a bismuth compound, is used as a yellow pigment in paints and cosmetics.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Bi.uses.1"
+          }
+        },
+        {
+          "value": "Bismuth oxychloride is used to make a pigment known as bismuth white.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Bi.uses.2"
+          }
+        },
+        {
+          "value": "Bismuth subnitrate and subcarbonate are used in medicine.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Bi.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name comes from the German \"weisse masse,\" meaning \"white mass,\" from the colour of its oxides.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Bi.discovery.story.0"
+            }
+          },
+          {
+            "value": "In early times, bismuth was confused with tin and lead.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Bi.discovery.story.1"
+            }
+          },
+          {
+            "value": "In 1753, Claude Geoffroy the Younger showed that bismuth was distinct from lead.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/83#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Bi.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

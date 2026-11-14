@@ -1,0 +1,54 @@
+[
+  {
+    "id": "Li.uses.1",
+    "reason": "safety screen: 'mixed with'"
+  },
+  {
+    "id": "Co.uses.2",
+    "reason": "safety screen: numbers aren't allowed here"
+  },
+  {
+    "id": "Sn.uses.1",
+    "reason": "safety screen: 'mixed with'"
+  },
+  {
+    "id": "I.uses.2",
+    "reason": "safety screen: 'mixed with'"
+  },
+  {
+    "id": "Ta.story.1",
+    "reason": "safety screen: 'dissolve'"
+  },
+  {
+    "id": "Os.story.2",
+    "reason": "safety screen: 'dissolved'"
+  },
+  {
+    "id": "Ir.uses.1",
+    "reason": "safety screen: 'mixed with'"
+  },
+  {
+    "id": "Pu.uses.0",
+    "reason": "longer than 25 words"
+  },
+  {
+    "id": "Mt.story.1",
+    "reason": "safety screen: 'bombarding'"
+  },
+  {
+    "id": "Ds.story.1",
+    "reason": "safety screen: only years may be numbers"
+  },
+  {
+    "id": "Ds.story.2",
+    "reason": "safety screen: only years may be numbers"
+  },
+  {
+    "id": "Ts.story.0",
+    "reason": "safety screen: only years may be numbers"
+  },
+  {
+    "id": "Og.story.0",
+    "reason": "safety screen: only years may be numbers"
+  }
+]

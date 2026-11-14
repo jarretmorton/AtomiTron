@@ -296,7 +296,67 @@
           }
         }
       },
-      "uses": []
+      "uses": [],
+      "discovery": {
+        "story": [
+          {
+            "value": "Berkelium was named after Berkeley, California, the city where it was discovered.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/97#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Bk.discovery.story.0"
+            }
+          },
+          {
+            "value": "Berkelium was first produced by Stanley G. Thompson, Glenn T. Seaborg, Kenneth Street, Jr. and Albert Ghiorso.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/97#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Bk.discovery.story.1"
+            }
+          },
+          {
+            "value": "The discoverers made berkelium by striking americium with alpha particles in a machine called a cyclotron.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/97#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Bk.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1949,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/97#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Bk.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

@@ -412,6 +412,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Cm.electronConfiguration"
+    },
+    {
+      "id": "Cm.discovery.year",
+      "subject": {
+        "entity": "element:Cm",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1944,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/96#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Curium was first produced by Glenn T. Seaborg, Ralph A. James and Albert Ghiorso, working at the University of California, Berkeley, in 1944.",
+      "evidence": "Curium was first produced by Glenn T. Seaborg, Ralph A. James and Albert Ghiorso, working at the University of California, Berkeley, in 1944.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cm.discovery.story.0",
+      "subject": {
+        "entity": "element:Cm",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Curium was first produced in 1944 by Glenn T. Seaborg, Ralph A. James and Albert Ghiorso.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/96#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Curium was first produced by Glenn T. Seaborg, Ralph A. James and Albert Ghiorso, working at the University of California, Berkeley, in 1944.",
+      "evidence": "Curium was first produced by Glenn T. Seaborg, Ralph A. James and Albert Ghiorso, working at the University of California, Berkeley, in 1944.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cm.discovery.story.1",
+      "subject": {
+        "entity": "element:Cm",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The first curium was made by striking plutonium atoms with alpha particles that were sped up in a device called a cyclotron.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/96#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "They bombarded atoms of plutonium-239, an isotope of plutonium, with alpha particles that had been accelerated in a device called a cyclotron.",
+      "evidence": "They bombarded atoms of plutonium-239, an isotope of plutonium, with alpha particles that had been accelerated in a device called a cyclotron.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cm.discovery.story.2",
+      "subject": {
+        "entity": "element:Cm",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Curium was the third transuranium element to be discovered.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/96#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "it was actually the third transuranium element to be discovered",
+      "evidence": "it was actually the third transuranium element to be discovered",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cm.uses.0",
+      "subject": {
+        "entity": "element:Cm",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Curium is mainly used for basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/96#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Curium is primarily used for basic scientific research.",
+      "evidence": "Curium is primarily used for basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cm.uses.1",
+      "subject": {
+        "entity": "element:Cm",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Curium currently has no commercial uses.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/96#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "there are currently no commercial applications for it",
+      "evidence": "there are currently no commercial applications for it",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cm.uses.2",
+      "subject": {
+        "entity": "element:Cm",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Curium might be used in radioisotope thermoelectric generators in the future.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/96#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "although it might be used in radioisotope thermoelectric generators in the future",
+      "evidence": "although it might be used in radioisotope thermoelectric generators in the future",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cm.uses.3",
+      "subject": {
+        "entity": "element:Cm",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Curium compounds, like the element itself, are mainly used for basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/96#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "As with the element, the compounds currently have no commercial applications and are primarily used for basic scientific research.",
+      "evidence": "As with the element, the compounds currently have no commercial applications and are primarily used for basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

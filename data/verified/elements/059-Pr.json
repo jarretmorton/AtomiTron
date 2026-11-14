@@ -295,7 +295,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Praseodymium is part of misch metal, a material that is used to make flints for lighters.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pr.uses.0"
+          }
+        },
+        {
+          "value": "Praseodymium forms the core of carbon arc lights, which the motion picture industry uses for studio lighting and projector lights.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pr.uses.1"
+          }
+        },
+        {
+          "value": "Praseodymium salts are used to give glasses and enamels a yellow color.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pr.uses.2"
+          }
+        },
+        {
+          "value": "Praseodymium is part of didymium glass, which is used to make certain types of welder's and glass blower's goggles.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pr.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name praseodymium comes from the Greek words prasios, meaning green, and didymos, meaning twin.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Pr.discovery.story.0"
+            }
+          },
+          {
+            "value": "Praseodymium was discovered by Carl F. Auer von Welsbach, an Austrian chemist, in 1885.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Pr.discovery.story.1"
+            }
+          },
+          {
+            "value": "Auer von Welsbach separated praseodymium, as well as the element neodymium, from a material known as didymium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Pr.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1885,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/59#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Pr.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

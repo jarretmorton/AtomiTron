@@ -739,6 +739,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from K.electronConfiguration, K.group"
+    },
+    {
+      "id": "K.discovery.year",
+      "subject": {
+        "entity": "element:K",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1807,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/19#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was first isolated by the British chemist Humphry Davy in 1807 from electrolysis of potash (KOH).",
+      "evidence": "It was first isolated by the British chemist Humphry Davy in 1807 from electrolysis of potash (KOH).",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "K.discovery.story.0",
+      "subject": {
+        "entity": "element:K",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Potassium was first isolated in 1807 by the British chemist Humphry Davy.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/19#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was first isolated by the British chemist Humphry Davy in 1807 from electrolysis of potash (KOH).",
+      "evidence": "It was first isolated by the British chemist Humphry Davy in 1807 from electrolysis of potash (KOH).",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "K.discovery.story.1",
+      "subject": {
+        "entity": "element:K",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name potassium comes from the English word \"potash\" or \"pot ashes,\" because it is found in caustic potash.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/19#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the English \"potash\" or \"pot ashes\" because it is found in caustic potash (KOH).",
+      "evidence": "The name derives from the English \"potash\" or \"pot ashes\" because it is found in caustic potash (KOH).",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "K.discovery.story.2",
+      "subject": {
+        "entity": "element:K",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The symbol K comes from the Latin word kalium, via the Arabic word qali for alkali.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/19#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The symbol K derives from the Latin kalium via the Arabic qali for alkali.",
+      "evidence": "The symbol K derives from the Latin kalium via the Arabic qali for alkali.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "K.uses.0",
+      "subject": {
+        "entity": "element:K",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "The greatest demand for potash has been for use in fertilizers.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/19#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "The greatest demand for potash has been in its use for fertilizers.",
+      "evidence": "The greatest demand for potash has been in its use for fertilizers.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "K.uses.1",
+      "subject": {
+        "entity": "element:K",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Potassium hydroxide is used to make soaps, detergents and drain cleaners.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/19#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Potassium hydroxide (KOH) is used to make soaps, detergents and drain cleaners.",
+      "evidence": "Potassium hydroxide (KOH) is used to make soaps, detergents and drain cleaners.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "K.uses.2",
+      "subject": {
+        "entity": "element:K",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Potassium chloride is used as a salt substitute.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/19#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Potassium chloride (KCl) is the most common potassium compound. It is used in fertilizers, as a salt substitute",
+      "evidence": "Potassium chloride (KCl) is the most common potassium compound. It is used in fertilizers, as a salt substitute",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

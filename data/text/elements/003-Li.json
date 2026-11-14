@@ -1,0 +1,191 @@
+{
+  "element": "element:Li",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name lithium comes from the Greek word lithos, which means stone.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/3#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Li.discovery.story.0"
+        }
+      },
+      {
+        "value": "Johann August Arfvedson discovered lithium in a mineral called petalite.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/3#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Li.discovery.story.1"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Lithium is used to make special glasses and ceramics.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/3#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Li.uses.0"
+      }
+    },
+    {
+      "value": "A lithium compound called lithium hydroxide is used to remove carbon dioxide from the air inside spacecraft.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/3#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Li.uses.1"
+      }
+    },
+    {
+      "value": "Some lithium compounds are used in dry cells and storage batteries.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/3#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Li.uses.2"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Li.discovery.story.0",
+      "subject": {
+        "entity": "element:Li",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name lithium comes from the Greek word lithos, which means stone.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/3#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Greek word lithos, stone.",
+      "evidence": "From the Greek word lithos, stone.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Li.discovery.story.1",
+      "subject": {
+        "entity": "element:Li",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Johann August Arfvedson discovered lithium in a mineral called petalite.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/3#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Lithium was discovered in the mineral petalite (LiAl(Si2O5)2) by Johann August Arfvedson in 1817.",
+      "evidence": "Lithium was discovered in the mineral petalite (LiAl(Si2O5)2) by Johann August Arfvedson in 1817.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Li.uses.0",
+      "subject": {
+        "entity": "element:Li",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Lithium is used to make special glasses and ceramics.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/3#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It is used to make special glasses and ceramics, including the Mount Palomar telescope's 200 inch mirror.",
+      "evidence": "It is used to make special glasses and ceramics, including the Mount Palomar telescope's 200 inch mirror.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Li.uses.1",
+      "subject": {
+        "entity": "element:Li",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "A lithium compound called lithium hydroxide is used to remove carbon dioxide from the air inside spacecraft.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/3#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Lithium hydroxide (LiOH) is used to remove carbon dioxide from the atmosphere of spacecraft.",
+      "evidence": "Lithium hydroxide (LiOH) is used to remove carbon dioxide from the atmosphere of spacecraft.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Li.uses.2",
+      "subject": {
+        "entity": "element:Li",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Some lithium compounds are used in dry cells and storage batteries.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/3#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Other lithium compounds are used in dry cells and storage batteries.",
+      "evidence": "Other lithium compounds are used in dry cells and storage batteries.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

@@ -440,6 +440,72 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Ho.electronConfiguration"
+    },
+    {
+      "id": "Ho.discovery.story.0",
+      "subject": {
+        "entity": "element:Ho",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name holmium comes from Holmia, the Latin word meaning Stockholm.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/67#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Latin word Holmia meaning Stockholm.",
+      "evidence": "From the Latin word Holmia meaning Stockholm.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ho.discovery.story.1",
+      "subject": {
+        "entity": "element:Ho",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Holmium was discovered by Per Theodor Cleve, a Swedish chemist, in 1879.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/67#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Holmium was discovered by Per Theodor Cleve, a Swedish chemist, in 1879.",
+      "evidence": "Holmium was discovered by Per Theodor Cleve, a Swedish chemist, in 1879.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ho.discovery.story.2",
+      "subject": {
+        "entity": "element:Ho",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Cleve named a brown material he obtained holmia, which is the oxide of the element holmium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/67#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Cleve named the brown material holmia and the green material thulia. Holmia is the oxide of the element holmium",
+      "evidence": "Cleve named the brown material holmia and the green material thulia. Holmia is the oxide of the element holmium",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

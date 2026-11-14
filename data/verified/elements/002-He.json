@@ -397,7 +397,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Helium gas is used to inflate blimps, scientific balloons and party balloons.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "He.uses.0"
+          }
+        },
+        {
+          "value": "Liquid helium is used in magnetic resonance imaging, known as MRI, in medicine.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "He.uses.1"
+          }
+        },
+        {
+          "value": "Helium is combined with oxygen to make a nitrogen-free atmosphere for deep sea divers.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "He.uses.2"
+          }
+        },
+        {
+          "value": "Liquid helium is used to study superconductivity and to make superconductive magnets.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "He.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name helium comes from the Greek word helios, meaning the sun.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "He.discovery.story.0"
+            }
+          },
+          {
+            "value": "In 1868, French astronomer Pierre-Jules-César Janssen noticed a yellow line in the sun's spectrum while studying a total solar eclipse.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "He.discovery.story.1"
+            }
+          },
+          {
+            "value": "Lockyer and Frankland suggested the name helium for the new element.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "He.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1868,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/2#section=History",
+            "retrieved": "2026-11-14",
+            "via": "IUPAC CIAAW"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "He.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

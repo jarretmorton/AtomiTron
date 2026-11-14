@@ -335,7 +335,96 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Cobalt compounds have been used for centuries to color things such as porcelain, glass, pottery and tile.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/27#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Co.uses.0"
+          }
+        },
+        {
+          "value": "Alnico, an alloy of aluminum, nickel and cobalt, is used to make powerful permanent magnets.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/27#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Co.uses.1"
+          }
+        },
+        {
+          "value": "Cobalt is used to make alloys, including ones for jet engines and gas turbines.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/27#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Co.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name cobalt comes from the German word Kobold, meaning evil spirits or goblins.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/27#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Co.discovery.story.0"
+            }
+          },
+          {
+            "value": "Cobalt was discovered by the Swedish chemist Georg Brandt.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/27#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Co.discovery.story.1"
+            }
+          },
+          {
+            "value": "Brandt was trying to prove that an unknown element, not bismuth, gave certain minerals the ability to color glass blue.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/27#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Co.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

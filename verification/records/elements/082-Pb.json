@@ -788,6 +788,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from Pb.electronConfiguration, Pb.group"
+    },
+    {
+      "id": "Pb.discovery.year",
+      "subject": {
+        "entity": "element:Pb",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": "Ancient",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/82#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Lead has been known since ancient times.",
+      "evidence": "Lead has been known since ancient times.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pb.discovery.story.0",
+      "subject": {
+        "entity": "element:Pb",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name lead comes from the Anglo-Saxon word lead, which is of unknown origin.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/82#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Anglo-Saxon lead, which is of unknown origin.",
+      "evidence": "The name derives from the Anglo-Saxon lead, which is of unknown origin.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pb.discovery.story.1",
+      "subject": {
+        "entity": "element:Pb",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The chemical symbol Pb comes from the Latin word plumbum.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/82#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The chemical symbol Pb is derived from the Latin plumbum.",
+      "evidence": "The chemical symbol Pb is derived from the Latin plumbum.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pb.discovery.story.2",
+      "subject": {
+        "entity": "element:Pb",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Lead has long been known and is mentioned in Exodus.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/82#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Long known, mentioned in Exodus.",
+      "evidence": "Long known, mentioned in Exodus.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pb.uses.0",
+      "subject": {
+        "entity": "element:Pb",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Lead is used to shield against X-ray and gamma-ray radiation in X-ray machines and nuclear reactors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/82#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Lead's high density makes it useful as a shield against X-ray and gamma-ray radiation and is used in X-ray machines and nuclear reactors",
+      "evidence": "Lead's high density makes it useful as a shield against X-ray and gamma-ray radiation and is used in X-ray machines and nuclear reactors",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pb.uses.1",
+      "subject": {
+        "entity": "element:Pb",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Lead is used to make lead-acid storage batteries, such as those found in automobiles.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/82#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Most of the lead used today is used in the production on lead-acid storage batteries, such as the batteries found in automobiles.",
+      "evidence": "Most of the lead used today is used in the production on lead-acid storage batteries, such as the batteries found in automobiles.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pb.uses.2",
+      "subject": {
+        "entity": "element:Pb",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Lead is used as a covering on some wires and cables to protect them from corrosion.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/82#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Lead is also used as a covering on some wires and cables to protect them from corrosion",
+      "evidence": "Lead is also used as a covering on some wires and cables to protect them from corrosion",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Pb.uses.3",
+      "subject": {
+        "entity": "element:Pb",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Lead oxide, a lead compound, is used to make crystal glass and flint glass.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/82#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Lead oxide is used in producing fine \"crystal glass\" and \"flint glass\"",
+      "evidence": "Lead oxide is used in producing fine \"crystal glass\" and \"flint glass\"",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

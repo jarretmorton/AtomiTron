@@ -674,6 +674,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Ce.electronConfiguration"
+    },
+    {
+      "id": "Ce.discovery.year",
+      "subject": {
+        "entity": "element:Ce",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1803,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/58#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Cerium was discovered by Jöns Jacob Berzelius and Wilhelm von Hisinger, Swedish chemists, and independently by Martin Heinrich Klaproth, a German chemist, in 1803.",
+      "evidence": "Cerium was discovered by Jöns Jacob Berzelius and Wilhelm von Hisinger, Swedish chemists, and independently by Martin Heinrich Klaproth, a German chemist, in 1803.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ce.discovery.story.0",
+      "subject": {
+        "entity": "element:Ce",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Cerium was named after the asteroid Ceres.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/58#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Cerium was named for the asteroid Ceres",
+      "evidence": "Cerium was named for the asteroid Ceres",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ce.discovery.story.1",
+      "subject": {
+        "entity": "element:Ce",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Cerium was discovered in 1803 by Berzelius and Hisinger, and independently by Klaproth.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/58#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Cerium was discovered by Jöns Jacob Berzelius and Wilhelm von Hisinger, Swedish chemists, and independently by Martin Heinrich Klaproth, a German chemist, in 1803.",
+      "evidence": "Cerium was discovered by Jöns Jacob Berzelius and Wilhelm von Hisinger, Swedish chemists, and independently by Martin Heinrich Klaproth, a German chemist, in 1803.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ce.uses.0",
+      "subject": {
+        "entity": "element:Ce",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Cerium is one of the rare earth elements used to make carbon arc lights, which are used in the film industry.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/58#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Cerium is one of the rare earth elements used to make carbon arc lights which are used in the motion picture industry",
+      "evidence": "Cerium is one of the rare earth elements used to make carbon arc lights which are used in the motion picture industry",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ce.uses.1",
+      "subject": {
+        "entity": "element:Ce",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Cerium is part of misch metal, a material used to make flints for lighters.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/58#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Cerium is also a component of Misch metal, a material that is used to make flints for lighters.",
+      "evidence": "Cerium is also a component of Misch metal, a material that is used to make flints for lighters.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ce.uses.2",
+      "subject": {
+        "entity": "element:Ce",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Cerium oxide is a component of the walls of self-cleaning ovens.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/58#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Cerium oxide (Ce2O3 and CeO2) is a component of the walls of self cleaning ovens",
+      "evidence": "Cerium oxide (Ce2O3 and CeO2) is a component of the walls of self cleaning ovens",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ce.uses.3",
+      "subject": {
+        "entity": "element:Ce",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Cerium oxide is used to polish glass surfaces.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/58#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Cerium oxide is also used to polish glass surfaces.",
+      "evidence": "Cerium oxide is also used to polish glass surfaces.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

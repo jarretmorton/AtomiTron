@@ -368,6 +368,72 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Og.electronConfiguration"
+    },
+    {
+      "id": "Og.discovery.story.0",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name was proposed by the Joint Institute for Nuclear Research in Dubna, Russia, and Lawrence Livermore National Laboratory in the USA.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "The name was proposed by the Joint Institute for Nuclear Research, Dubna (Russia) and Lawrence Livermore National Laboratory (USA).",
+      "evidence": "The name was proposed by the Joint Institute for Nuclear Research, Dubna (Russia) and Lawrence Livermore National Laboratory (USA).",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Og.discovery.story.1",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name honors Professor Yuri Oganessian for his pioneering contributions to research on transactinoid elements.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It honors Professor Yuri Oganessian (born 1933) for his pioneering contributions to transactinoid elements research.",
+      "evidence": "It honors Professor Yuri Oganessian (born 1933) for his pioneering contributions to transactinoid elements research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Og.uses.0",
+      "subject": {
+        "entity": "element:Og",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Oganesson currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/118#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it currently has no uses outside of basic scientific research.",
+      "evidence": "it currently has no uses outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

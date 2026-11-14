@@ -469,7 +469,124 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Argon is used to fill incandescent and fluorescent light bulbs to prevent oxygen from corroding the hot filament.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ar.uses.0"
+          }
+        },
+        {
+          "value": "Argon is used as an inert gas shield for arc welding and cutting.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ar.uses.1"
+          }
+        },
+        {
+          "value": "Argon is used as a protective atmosphere for growing silicon and germanium crystals.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ar.uses.2"
+          }
+        },
+        {
+          "value": "Argon is used to fill tubes such as photo tubes and glow tubes.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ar.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name argon comes from the Greek word argos, meaning \"lazy\" or \"inactive\", because it does not combine with other elements.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ar.discovery.story.0"
+            }
+          },
+          {
+            "value": "Argon was discovered in 1894 by Sir William Ramsay, a Scottish chemist, and Lord Rayleigh, an English chemist.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ar.discovery.story.1"
+            }
+          },
+          {
+            "value": "In 1785, Cavendish suspected that argon was present in air.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Los Alamos National Laboratory"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ar.discovery.story.2"
+            }
+          }
+        ],
+        "year": {
+          "value": 1894,
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=History",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ar.discovery.year"
+          }
+        }
+      }
     }
   ]
 }

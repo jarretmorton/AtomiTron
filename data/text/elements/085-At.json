@@ -1,0 +1,155 @@
+{
+  "element": "element:At",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name astatine comes from the Greek word astatos, which means unstable.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "At.discovery.story.0"
+        }
+      },
+      {
+        "value": "Astatine was first made in 1940 by D.R. Corson, K.R. MacKenzie and E. Segre at the University of California.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "At.discovery.story.1"
+        }
+      }
+    ],
+    "year": {
+      "value": 1940,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "At.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Astatine currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "At.uses.0"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "At.discovery.year",
+      "subject": {
+        "entity": "element:At",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1940,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Synthesized in 1940 by D.R. Corson, K.R. MacKenzie, and E. Segre at the University of California",
+      "evidence": "Synthesized in 1940 by D.R. Corson, K.R. MacKenzie, and E. Segre at the University of California",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "At.discovery.story.0",
+      "subject": {
+        "entity": "element:At",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name astatine comes from the Greek word astatos, which means unstable.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Greek astatos meaning unstable.",
+      "evidence": "From the Greek astatos meaning unstable.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "At.discovery.story.1",
+      "subject": {
+        "entity": "element:At",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Astatine was first made in 1940 by D.R. Corson, K.R. MacKenzie and E. Segre at the University of California.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Synthesized in 1940 by D.R. Corson, K.R. MacKenzie, and E. Segre at the University of California",
+      "evidence": "Synthesized in 1940 by D.R. Corson, K.R. MacKenzie, and E. Segre at the University of California",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "At.uses.0",
+      "subject": {
+        "entity": "element:At",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Astatine currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/85#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "there are currently no uses for astatine outside of basic scientific research.",
+      "evidence": "there are currently no uses for astatine outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

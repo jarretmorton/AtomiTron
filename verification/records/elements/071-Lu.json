@@ -588,6 +588,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Lu.electronConfiguration"
+    },
+    {
+      "id": "Lu.discovery.year",
+      "subject": {
+        "entity": "element:Lu",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1907,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/71#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The discovery of lutetium is credited to the French chemist Georges Urbain in 1907",
+      "evidence": "The discovery of lutetium is credited to the French chemist Georges Urbain in 1907",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lu.discovery.story.0",
+      "subject": {
+        "entity": "element:Lu",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name lutetium comes from Lutetia, the ancient name for the city of Paris.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/71#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from Lutetia, the ancient name for the city of Paris.",
+      "evidence": "The name derives from Lutetia, the ancient name for the city of Paris.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lu.discovery.story.1",
+      "subject": {
+        "entity": "element:Lu",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The discovery of lutetium is credited to the French chemist Georges Urbain in 1907.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/71#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The discovery of lutetium is credited to the French chemist Georges Urbain in 1907",
+      "evidence": "The discovery of lutetium is credited to the French chemist Georges Urbain in 1907",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lu.discovery.story.2",
+      "subject": {
+        "entity": "element:Lu",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Carl Auer von Welsbach had named the element cassiopeium, after the constellation Cassiopeia.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/71#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Von Welsbach had named the element cassiopeium after the constellation Cassiopeia.",
+      "evidence": "Von Welsbach had named the element cassiopeium after the constellation Cassiopeia.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lu.uses.0",
+      "subject": {
+        "entity": "element:Lu",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Lutetium has no large scale practical uses.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/71#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Lutetium is one of the most difficult elements to prepare and has no large scale practical uses",
+      "evidence": "Lutetium is one of the most difficult elements to prepare and has no large scale practical uses",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lu.uses.1",
+      "subject": {
+        "entity": "element:Lu",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Stable forms of lutetium can be used as catalysts in processes such as hydrogenation and polymerization.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/71#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Stable lutetium nuclides, which emit pure beta radiation after thermal neutron activation, can be used as catalysts in cracking, alkylation, hydrogenation, and polymerization.",
+      "evidence": "Stable lutetium nuclides, which emit pure beta radiation after thermal neutron activation, can be used as catalysts in cracking, alkylation, hydrogenation, and polymerization.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lu.uses.2",
+      "subject": {
+        "entity": "element:Lu",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Almost no other commercial uses have been found for lutetium yet.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/71#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Virtually no other commercial uses have been found yet for lutetium.",
+      "evidence": "Virtually no other commercial uses have been found yet for lutetium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

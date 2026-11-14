@@ -1,0 +1,299 @@
+{
+  "element": "element:P",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name phosphorus comes from the Greek word phosphoros, meaning \"bringing light\", because it glows in the dark.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "P.discovery.story.0"
+        }
+      },
+      {
+        "value": "Phosphorus was discovered in 1669 by Hennig Brand, a German merchant.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "P.discovery.story.1"
+        }
+      },
+      {
+        "value": "The Greek word phosphoros was an ancient name for the planet Venus when it appears before sunrise.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "P.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1669,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=History",
+        "retrieved": "2026-11-14",
+        "via": "IUPAC CIAAW"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "P.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Some phosphorus compounds that give off light are used in fluorescent light bulbs and television sets.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "P.uses.0"
+      }
+    },
+    {
+      "value": "A phosphorus compound called trisodium phosphate is used as a cleaning agent and as a water softener.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "P.uses.1"
+      }
+    },
+    {
+      "value": "Calcium phosphate, a phosphorus compound, is used to make china and baking powder.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "P.uses.2"
+      }
+    },
+    {
+      "value": "Phosphates are used to make special glasses, such as those used for sodium lamps.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "P.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "P.discovery.year",
+      "subject": {
+        "entity": "element:P",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1669,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Phosphorus was discovered by the German merchant Hennig Brand in 1669.",
+      "evidence": "Phosphorus was discovered by the German merchant Hennig Brand in 1669.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "P.discovery.story.0",
+      "subject": {
+        "entity": "element:P",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name phosphorus comes from the Greek word phosphoros, meaning \"bringing light\", because it glows in the dark.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek phosphoros for \"bringing light\" because it has the property of glowing in the dark.",
+      "evidence": "The name derives from the Greek phosphoros for \"bringing light\" because it has the property of glowing in the dark.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "P.discovery.story.1",
+      "subject": {
+        "entity": "element:P",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Phosphorus was discovered in 1669 by Hennig Brand, a German merchant.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Phosphorus was discovered by the German merchant Hennig Brand in 1669.",
+      "evidence": "Phosphorus was discovered by the German merchant Hennig Brand in 1669.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "P.discovery.story.2",
+      "subject": {
+        "entity": "element:P",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The Greek word phosphoros was an ancient name for the planet Venus when it appears before sunrise.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Greek phosphoros, light bearing; ancient name for the planet Venus when appearing before sunrise.",
+      "evidence": "From the Greek phosphoros, light bearing; ancient name for the planet Venus when appearing before sunrise.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "P.uses.0",
+      "subject": {
+        "entity": "element:P",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Some phosphorus compounds that give off light are used in fluorescent light bulbs and television sets.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Some phosphorus compounds glow in the dark or emit light in response to absorbing radiation and are used in fluorescent light bulbs and television sets.",
+      "evidence": "Some phosphorus compounds glow in the dark or emit light in response to absorbing radiation and are used in fluorescent light bulbs and television sets.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "P.uses.1",
+      "subject": {
+        "entity": "element:P",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "A phosphorus compound called trisodium phosphate is used as a cleaning agent and as a water softener.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Trisodium phosphate (Na3PO4) is used as a cleaning agent and as a water softener.",
+      "evidence": "Trisodium phosphate (Na3PO4) is used as a cleaning agent and as a water softener.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "P.uses.2",
+      "subject": {
+        "entity": "element:P",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Calcium phosphate, a phosphorus compound, is used to make china and baking powder.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Calcium phosphate (Ca3(PO4)2) is used to make china and in the production of baking powder.",
+      "evidence": "Calcium phosphate (Ca3(PO4)2) is used to make china and in the production of baking powder.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "P.uses.3",
+      "subject": {
+        "entity": "element:P",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Phosphates are used to make special glasses, such as those used for sodium lamps.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/15#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Phosphates are used in the production of special glasses, such as those used for sodium lamps.",
+      "evidence": "Phosphates are used in the production of special glasses, such as those used for sodium lamps.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

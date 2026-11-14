@@ -522,6 +522,160 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Rh.electronConfiguration"
+    },
+    {
+      "id": "Rh.discovery.story.0",
+      "subject": {
+        "entity": "element:Rh",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Rhodium's name comes from the Greek word rhodon, meaning rose, because dilute solutions of its salts are rose colored.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/45#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek rhodon for rose because of the rose color of dilute solutions of its salts.",
+      "evidence": "The name derives from the Greek rhodon for rose because of the rose color of dilute solutions of its salts.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rh.discovery.story.1",
+      "subject": {
+        "entity": "element:Rh",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Rhodium was discovered in 1803 by William Hyde Wollaston, an English chemist.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/45#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Rhodium was discovered by William Hyde Wollaston, an English chemist, in 1803",
+      "evidence": "Rhodium was discovered by William Hyde Wollaston, an English chemist, in 1803",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rh.discovery.story.2",
+      "subject": {
+        "entity": "element:Rh",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Wollaston obtained rhodium from a sample of platinum ore that came from South America.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/45#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "He obtained rhodium from a sample of platinum ore that was obtained from South America.",
+      "evidence": "He obtained rhodium from a sample of platinum ore that was obtained from South America.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rh.uses.0",
+      "subject": {
+        "entity": "element:Rh",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Rhodium is used in jewelry.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/45#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Rhodium is also used for jewelry, for decoration, and as a catalyst.",
+      "evidence": "Rhodium is also used for jewelry, for decoration, and as a catalyst.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rh.uses.1",
+      "subject": {
+        "entity": "element:Rh",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Rhodium is used to make electrical contacts.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/45#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Rhodium is used to make electrical contacts",
+      "evidence": "Rhodium is used to make electrical contacts",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rh.uses.2",
+      "subject": {
+        "entity": "element:Rh",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Rhodium is used in catalytic converters.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/45#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Rhodium is used to make electrical contacts, as jewelry and in catalytic converters",
+      "evidence": "Rhodium is used to make electrical contacts, as jewelry and in catalytic converters",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rh.uses.3",
+      "subject": {
+        "entity": "element:Rh",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Rhodium is mixed into platinum and palladium as an alloying agent to make them harder.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/45#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Rhodium's primary use is as an alloying agent to harden platinum and palladium.",
+      "evidence": "Rhodium's primary use is as an alloying agent to harden platinum and palladium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

@@ -671,6 +671,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from U.electronConfiguration"
+    },
+    {
+      "id": "U.discovery.year",
+      "subject": {
+        "entity": "element:U",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1789,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/92#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The German chemist Martin-Heinrich Klaproth discovered the element in 1789",
+      "evidence": "The German chemist Martin-Heinrich Klaproth discovered the element in 1789",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "U.discovery.story.0",
+      "subject": {
+        "entity": "element:U",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Uranium is named after the planet Uranus.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/92#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the planet Uranus",
+      "evidence": "The name derives from the planet Uranus",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "U.discovery.story.1",
+      "subject": {
+        "entity": "element:U",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The German chemist Martin-Heinrich Klaproth discovered uranium in 1789.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/92#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The German chemist Martin-Heinrich Klaproth discovered the element in 1789",
+      "evidence": "The German chemist Martin-Heinrich Klaproth discovered the element in 1789",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "U.discovery.story.2",
+      "subject": {
+        "entity": "element:U",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Uranium metal was first isolated by the French chemist Eugène-Melchior Peligot in 1841.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/92#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The metallic uranium was first isolated by the French chemist Eugène-Melchior Peligot in 1841.",
+      "evidence": "The metallic uranium was first isolated by the French chemist Eugène-Melchior Peligot in 1841.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "U.uses.0",
+      "subject": {
+        "entity": "element:U",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Uranium is most commonly used in the nuclear power industry to generate electricity.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/92#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "uranium, usually in the form of uranium dioxide (UO2), is most commonly used in the nuclear power industry to generate electricity",
+      "evidence": "uranium, usually in the form of uranium dioxide (UO2), is most commonly used in the nuclear power industry to generate electricity",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "U.uses.1",
+      "subject": {
+        "entity": "element:U",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Uranium is used as a shield against radiation.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/92#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It is used as a target for X-ray production, as ammunition for some types of military weaponry, as a shield against radiation",
+      "evidence": "It is used as a target for X-ray production, as ammunition for some types of military weaponry, as a shield against radiation",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "U.uses.2",
+      "subject": {
+        "entity": "element:U",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Uranium metal is used as a target to produce high-energy X-rays.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/92#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Uranium metal is used for X-ray targets for production of high-energy X-rays",
+      "evidence": "Uranium metal is used for X-ray targets for production of high-energy X-rays",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "U.uses.3",
+      "subject": {
+        "entity": "element:U",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Uranium compounds have been used for centuries to color glass.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/92#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Uranium compounds have been used for centuries to color glass.",
+      "evidence": "Uranium compounds have been used for centuries to color glass.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

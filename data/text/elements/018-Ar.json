@@ -1,0 +1,299 @@
+{
+  "element": "element:Ar",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name argon comes from the Greek word argos, meaning \"lazy\" or \"inactive\", because it does not combine with other elements.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ar.discovery.story.0"
+        }
+      },
+      {
+        "value": "Argon was discovered in 1894 by Sir William Ramsay, a Scottish chemist, and Lord Rayleigh, an English chemist.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ar.discovery.story.1"
+        }
+      },
+      {
+        "value": "In 1785, Cavendish suspected that argon was present in air.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ar.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1894,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ar.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Argon is used to fill incandescent and fluorescent light bulbs to prevent oxygen from corroding the hot filament.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ar.uses.0"
+      }
+    },
+    {
+      "value": "Argon is used as an inert gas shield for arc welding and cutting.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ar.uses.1"
+      }
+    },
+    {
+      "value": "Argon is used as a protective atmosphere for growing silicon and germanium crystals.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ar.uses.2"
+      }
+    },
+    {
+      "value": "Argon is used to fill tubes such as photo tubes and glow tubes.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ar.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Ar.discovery.year",
+      "subject": {
+        "entity": "element:Ar",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1894,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Argon was discovered by Sir William Ramsay, a Scottish chemist, and Lord Rayleigh, an English chemist, in 1894.",
+      "evidence": "Argon was discovered by Sir William Ramsay, a Scottish chemist, and Lord Rayleigh, an English chemist, in 1894.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ar.discovery.story.0",
+      "subject": {
+        "entity": "element:Ar",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name argon comes from the Greek word argos, meaning \"lazy\" or \"inactive\", because it does not combine with other elements.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek argos for \"lazy\" or \"inactive\" because it does not combine with other elements.",
+      "evidence": "The name derives from the Greek argos for \"lazy\" or \"inactive\" because it does not combine with other elements.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ar.discovery.story.1",
+      "subject": {
+        "entity": "element:Ar",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Argon was discovered in 1894 by Sir William Ramsay, a Scottish chemist, and Lord Rayleigh, an English chemist.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Argon was discovered by Sir William Ramsay, a Scottish chemist, and Lord Rayleigh, an English chemist, in 1894.",
+      "evidence": "Argon was discovered by Sir William Ramsay, a Scottish chemist, and Lord Rayleigh, an English chemist, in 1894.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ar.discovery.story.2",
+      "subject": {
+        "entity": "element:Ar",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "In 1785, Cavendish suspected that argon was present in air.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Its presence in air was suspected by Cavendish in 1785",
+      "evidence": "Its presence in air was suspected by Cavendish in 1785",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ar.uses.0",
+      "subject": {
+        "entity": "element:Ar",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Argon is used to fill incandescent and fluorescent light bulbs to prevent oxygen from corroding the hot filament.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It is used to fill incandescent and fluorescent light bulbs to prevent oxygen from corroding the hot filament.",
+      "evidence": "It is used to fill incandescent and fluorescent light bulbs to prevent oxygen from corroding the hot filament.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ar.uses.1",
+      "subject": {
+        "entity": "element:Ar",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Argon is used as an inert gas shield for arc welding and cutting.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Argon is also used as an inert gas shield for arc welding and cutting",
+      "evidence": "Argon is also used as an inert gas shield for arc welding and cutting",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ar.uses.2",
+      "subject": {
+        "entity": "element:Ar",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Argon is used as a protective atmosphere for growing silicon and germanium crystals.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "and as a protective atmosphere for growing silicon and germanium crystals.",
+      "evidence": "and as a protective atmosphere for growing silicon and germanium crystals.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ar.uses.3",
+      "subject": {
+        "entity": "element:Ar",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Argon is used to fill tubes such as photo tubes and glow tubes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/18#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "and in filling photo tubes, glow tubes, etc.",
+      "evidence": "and in filling photo tubes, glow tubes, etc.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

@@ -670,7 +670,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Ruthenium is mainly used as an alloying agent.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ru.uses.0"
+          }
+        },
+        {
+          "value": "Ruthenium is added to platinum and palladium to make them stronger.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ru.uses.1"
+          }
+        },
+        {
+          "value": "Alloys of ruthenium with platinum and palladium are used in jewelry and in electrical contacts that must resist wear.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ru.uses.2"
+          }
+        },
+        {
+          "value": "Adding ruthenium to titanium makes titanium more resistant to corrosion.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ru.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name ruthenium comes from the Latin word ruthenia, the old name for Russia.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ru.discovery.story.0"
+            }
+          },
+          {
+            "value": "Russian chemist Karl Karlovich Klaus discovered ruthenium in 1844 while analyzing the residue of a sample of platinum ore.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ru.discovery.story.1"
+            }
+          },
+          {
+            "value": "Osann thought he had found new metals in his sample, which he called pluranium, ruthenium and polinium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/44#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Ru.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

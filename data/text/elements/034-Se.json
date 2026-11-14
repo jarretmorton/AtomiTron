@@ -1,0 +1,299 @@
+{
+  "element": "element:Se",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name selenium comes from Selene, the Greek goddess of the Moon.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Se.discovery.story.0"
+        }
+      },
+      {
+        "value": "Selenium was discovered by the Swedish chemist Jöns Jacob Berzelius in 1817.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Se.discovery.story.1"
+        }
+      },
+      {
+        "value": "Berzelius first believed the material was tellurium, but he eventually realized it was a previously unknown element.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Se.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1817,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Se.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Selenium is used in devices that respond to light, such as light meters for cameras and copiers.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Se.uses.0"
+      }
+    },
+    {
+      "value": "Selenium is used in solar cells.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Se.uses.1"
+      }
+    },
+    {
+      "value": "Selenium is used to make a ruby-red color in glasses and enamels.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Se.uses.2"
+      }
+    },
+    {
+      "value": "Selenium is used in xerography for copying documents.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Se.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Se.discovery.year",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1817,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Selenium was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1817",
+      "evidence": "Selenium was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1817",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Se.discovery.story.0",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name selenium comes from Selene, the Greek goddess of the Moon.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek Selene, who was the Greek goddess of the Moon",
+      "evidence": "The name derives from the Greek Selene, who was the Greek goddess of the Moon",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Se.discovery.story.1",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Selenium was discovered by the Swedish chemist Jöns Jacob Berzelius in 1817.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Selenium was discovered by the Swedish chemist Jöns Jacob Berzelius in 1817",
+      "evidence": "Selenium was discovered by the Swedish chemist Jöns Jacob Berzelius in 1817",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Se.discovery.story.2",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Berzelius first believed the material was tellurium, but he eventually realized it was a previously unknown element.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Originally believing the material was tellurium, Berzelius eventually realized that it was actually a previously unknown element.",
+      "evidence": "Originally believing the material was tellurium, Berzelius eventually realized that it was actually a previously unknown element.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Se.uses.0",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Selenium is used in devices that respond to light, such as light meters for cameras and copiers.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "selenium useful in devices that respond to the intensity of light, such as electric eyes, photo cells, light meters for cameras and copiers.",
+      "evidence": "selenium useful in devices that respond to the intensity of light, such as electric eyes, photo cells, light meters for cameras and copiers.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Se.uses.1",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Selenium is used in solar cells.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Selenium can also produce electricity directly from sunlight and is used in solar cells.",
+      "evidence": "Selenium can also produce electricity directly from sunlight and is used in solar cells.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Se.uses.2",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Selenium is used to make a ruby-red color in glasses and enamels.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "selenium is also used to make a ruby-red color in glasses and enamels",
+      "evidence": "selenium is also used to make a ruby-red color in glasses and enamels",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Se.uses.3",
+      "subject": {
+        "entity": "element:Se",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Selenium is used in xerography for copying documents.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/34#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Selenium is used in Xerography for reproducing and copying documents, letters, etc.",
+      "evidence": "Selenium is used in Xerography for reproducing and copying documents, letters, etc.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

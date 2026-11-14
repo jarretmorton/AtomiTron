@@ -1,0 +1,263 @@
+{
+  "element": "element:Cs",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name cesium comes from the Latin word caesius, which means sky blue.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cs.discovery.story.0"
+        }
+      },
+      {
+        "value": "Cesium was discovered in 1860 by the German chemist Robert Wilhelm Bunsen and the German physicist Gustav Robert Kirchhoff.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cs.discovery.story.1"
+        }
+      },
+      {
+        "value": "Cesium was first isolated in 1882 by the German chemist Carl Setterberg.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cs.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1860,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cs.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Cesium is used in atomic clocks.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cs.uses.0"
+      }
+    },
+    {
+      "value": "Cesium is used in photoelectric cells.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cs.uses.1"
+      }
+    },
+    {
+      "value": "Cesium is used as a getter, a material that combines with and removes trace gases from vacuum tubes.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cs.uses.2"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Cs.discovery.year",
+      "subject": {
+        "entity": "element:Cs",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1860,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Cesium was discovered spectroscopically in 1860 by Bunsen and Kirchhoff in mineral water from Durkheim.",
+      "evidence": "Cesium was discovered spectroscopically in 1860 by Bunsen and Kirchhoff in mineral water from Durkheim.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cs.discovery.story.0",
+      "subject": {
+        "entity": "element:Cs",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name cesium comes from the Latin word caesius, which means sky blue.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Latin word caesius, sky blue.",
+      "evidence": "From the Latin word caesius, sky blue.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cs.discovery.story.1",
+      "subject": {
+        "entity": "element:Cs",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Cesium was discovered in 1860 by the German chemist Robert Wilhelm Bunsen and the German physicist Gustav Robert Kirchhoff.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Caesium was discovered by the German chemist Robert Wilhelm Bunsen and the German physicist Gustav Robert Kirchhoff in 1860.",
+      "evidence": "Caesium was discovered by the German chemist Robert Wilhelm Bunsen and the German physicist Gustav Robert Kirchhoff in 1860.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cs.discovery.story.2",
+      "subject": {
+        "entity": "element:Cs",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Cesium was first isolated in 1882 by the German chemist Carl Setterberg.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was first isolated by the German chemist Carl Setterberg in 1882.",
+      "evidence": "It was first isolated by the German chemist Carl Setterberg in 1882.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cs.uses.0",
+      "subject": {
+        "entity": "element:Cs",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Cesium is used in atomic clocks.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Cesium is also used in atomic clocks",
+      "evidence": "Cesium is also used in atomic clocks",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cs.uses.1",
+      "subject": {
+        "entity": "element:Cs",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Cesium is used in photoelectric cells.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It is also used in photoelectric cells",
+      "evidence": "It is also used in photoelectric cells",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cs.uses.2",
+      "subject": {
+        "entity": "element:Cs",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Cesium is used as a getter, a material that combines with and removes trace gases from vacuum tubes.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/55#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "is used as a getter, a material that combines with and removes trace gases from vacuum tubes.",
+      "evidence": "is used as a getter, a material that combines with and removes trace gases from vacuum tubes.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

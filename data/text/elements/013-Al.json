@@ -1,0 +1,263 @@
+{
+  "element": "element:Al",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name aluminum comes from the Latin word alumen, alum.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.discovery.story.0"
+        }
+      },
+      {
+        "value": "In 1825, the Danish physicist Hans Christian Oersted isolated impure aluminum.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.discovery.story.1"
+        }
+      },
+      {
+        "value": "The German chemist Friedrich Wöhler first isolated pure aluminum in 1827.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Al.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Aluminum and aluminum alloys are used to make products such as cans, foils and kitchen utensils.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Al.uses.0"
+      }
+    },
+    {
+      "value": "Aluminum is used in electrical transmission lines because of its light weight.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Al.uses.1"
+      }
+    },
+    {
+      "value": "Aluminum can be deposited on the surface of glass to make mirrors.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Al.uses.2"
+      }
+    },
+    {
+      "value": "Aluminum alloys are important in the construction of modern aircraft and rockets.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Al.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Al.discovery.story.0",
+      "subject": {
+        "entity": "element:Al",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name aluminum comes from the Latin word alumen, alum.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Latin word alumen, alum.",
+      "evidence": "From the Latin word alumen, alum.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Al.discovery.story.1",
+      "subject": {
+        "entity": "element:Al",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "In 1825, the Danish physicist Hans Christian Oersted isolated impure aluminum.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "In 1825, the Danish physicist, Hans Christian Oersted, isolated impure aluminium.",
+      "evidence": "In 1825, the Danish physicist, Hans Christian Oersted, isolated impure aluminium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Al.discovery.story.2",
+      "subject": {
+        "entity": "element:Al",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The German chemist Friedrich Wöhler first isolated pure aluminum in 1827.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The pure metal was first isolated by the German chemist Friedrich Wöhler in 1827.",
+      "evidence": "The pure metal was first isolated by the German chemist Friedrich Wöhler in 1827.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Al.uses.0",
+      "subject": {
+        "entity": "element:Al",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Aluminum and aluminum alloys are used to make products such as cans, foils and kitchen utensils.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "aluminum and aluminum alloys are used in a wide variety of products: cans, foils and kitchen utensils",
+      "evidence": "aluminum and aluminum alloys are used in a wide variety of products: cans, foils and kitchen utensils",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Al.uses.1",
+      "subject": {
+        "entity": "element:Al",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Aluminum is used in electrical transmission lines because of its light weight.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it is used in electrical transmission lines because of its light weight.",
+      "evidence": "it is used in electrical transmission lines because of its light weight.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Al.uses.2",
+      "subject": {
+        "entity": "element:Al",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Aluminum can be deposited on the surface of glass to make mirrors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It can be deposited on the surface of glass to make mirrors",
+      "evidence": "It can be deposited on the surface of glass to make mirrors",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Al.uses.3",
+      "subject": {
+        "entity": "element:Al",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Aluminum alloys are important in the construction of modern aircraft and rockets.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/13#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "These alloys are of vital importance in the construction of modern aircraft and rockets.",
+      "evidence": "These alloys are of vital importance in the construction of modern aircraft and rockets.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

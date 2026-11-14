@@ -1,0 +1,263 @@
+{
+  "element": "element:Th",
+  "discovery": {
+    "story": [
+      {
+        "value": "Thorium is named after Thor, the Scandinavian god of thunder.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Th.discovery.story.0"
+        }
+      },
+      {
+        "value": "Thorium was discovered in 1828 by the Swedish chemist Jöns Jacob Berzelius.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Th.discovery.story.1"
+        }
+      },
+      {
+        "value": "Thorium was first isolated in 1914 by the chemists D. Lely, Jr. and L. Hamburger.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Th.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "In the past, thorium's main use was making Welsbach mantles for portable gaslights.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Th.uses.0"
+      }
+    },
+    {
+      "value": "Thorium oxide is used to make glass for high quality camera lenses.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Th.uses.1"
+      }
+    },
+    {
+      "value": "Thorium is used to coat tungsten filaments in electronic devices, such as television sets.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Th.uses.2"
+      }
+    },
+    {
+      "value": "Thorium is used as an alloying agent to make magnesium stronger at high temperatures.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Th.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Th.discovery.story.0",
+      "subject": {
+        "entity": "element:Th",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Thorium is named after Thor, the Scandinavian god of thunder.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from Thor, the Scandinavian god of thunder.",
+      "evidence": "The name derives from Thor, the Scandinavian god of thunder.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Th.discovery.story.1",
+      "subject": {
+        "entity": "element:Th",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Thorium was discovered in 1828 by the Swedish chemist Jöns Jacob Berzelius.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Thorium was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1828.",
+      "evidence": "Thorium was discovered by Jöns Jacob Berzelius, a Swedish chemist, in 1828.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Th.discovery.story.2",
+      "subject": {
+        "entity": "element:Th",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Thorium was first isolated in 1914 by the chemists D. Lely, Jr. and L. Hamburger.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Thorium was first isolated by the chemists D. Lely, Jr. and L. Hamburger in 1914.",
+      "evidence": "Thorium was first isolated by the chemists D. Lely, Jr. and L. Hamburger in 1914.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Th.uses.0",
+      "subject": {
+        "entity": "element:Th",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "In the past, thorium's main use was making Welsbach mantles for portable gaslights.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "The principal historic use of thorium has been in the preparation of the Welsbach mantle, used for portable gaslights.",
+      "evidence": "The principal historic use of thorium has been in the preparation of the Welsbach mantle, used for portable gaslights.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Th.uses.1",
+      "subject": {
+        "entity": "element:Th",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Thorium oxide is used to make glass for high quality camera lenses.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Thorium oxide is also used to make glass with a high index of refraction that is used to make high quality camera lenses.",
+      "evidence": "Thorium oxide is also used to make glass with a high index of refraction that is used to make high quality camera lenses.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Th.uses.2",
+      "subject": {
+        "entity": "element:Th",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Thorium is used to coat tungsten filaments in electronic devices, such as television sets.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Thorium is also used to coat tungsten filaments used in electronic devices, such at television sets.",
+      "evidence": "Thorium is also used to coat tungsten filaments used in electronic devices, such at television sets.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Th.uses.3",
+      "subject": {
+        "entity": "element:Th",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Thorium is used as an alloying agent to make magnesium stronger at high temperatures.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/90#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Thorium is used as an alloying agent to improve magnesium's strength at high temperatures.",
+      "evidence": "Thorium is used as an alloying agent to improve magnesium's strength at high temperatures.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

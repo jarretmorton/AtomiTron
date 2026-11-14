@@ -1,0 +1,263 @@
+{
+  "element": "element:Ir",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name iridium comes from the Latin Iris, the Greek goddess of rainbows, because the element's salt solutions come in a variety of colours.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ir.discovery.story.0"
+        }
+      },
+      {
+        "value": "The British chemist Smithson Tennant discovered iridium and osmium at the same time, in 1803.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ir.discovery.story.1"
+        }
+      },
+      {
+        "value": "The French chemist H. V. Collet-Descotils also discovered iridium independently.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Ir.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1803,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ir.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Iridium is mainly used as a hardening agent for platinum.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ir.uses.0"
+      }
+    },
+    {
+      "value": "Iridium is used for electrical contacts.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ir.uses.1"
+      }
+    },
+    {
+      "value": "The standard meter bar was made from an alloy of platinum and iridium.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Ir.uses.2"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Ir.discovery.year",
+      "subject": {
+        "entity": "element:Ir",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1803,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Iridium and osmium were discovered at the same time by the British chemist Smithson Tennant in 1803.",
+      "evidence": "Iridium and osmium were discovered at the same time by the British chemist Smithson Tennant in 1803.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ir.discovery.story.0",
+      "subject": {
+        "entity": "element:Ir",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name iridium comes from the Latin Iris, the Greek goddess of rainbows, because the element's salt solutions come in a variety of colours.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Latin Iris, the Greek goddess of rainbows, because of the variety of colours in the element's salt solutions.",
+      "evidence": "The name derives from the Latin Iris, the Greek goddess of rainbows, because of the variety of colours in the element's salt solutions.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ir.discovery.story.1",
+      "subject": {
+        "entity": "element:Ir",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The British chemist Smithson Tennant discovered iridium and osmium at the same time, in 1803.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Iridium and osmium were discovered at the same time by the British chemist Smithson Tennant in 1803.",
+      "evidence": "Iridium and osmium were discovered at the same time by the British chemist Smithson Tennant in 1803.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ir.discovery.story.2",
+      "subject": {
+        "entity": "element:Ir",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The French chemist H. V. Collet-Descotils also discovered iridium independently.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Iridium was discovered independently by the French chemist H. V. Collet-Descotils",
+      "evidence": "Iridium was discovered independently by the French chemist H. V. Collet-Descotils",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ir.uses.0",
+      "subject": {
+        "entity": "element:Ir",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Iridium is mainly used as a hardening agent for platinum.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It is primarily used as a hardening agent for platinum.",
+      "evidence": "It is primarily used as a hardening agent for platinum.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ir.uses.1",
+      "subject": {
+        "entity": "element:Ir",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Iridium is used for electrical contacts.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It is also used for electrical contacts.",
+      "evidence": "It is also used for electrical contacts.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Ir.uses.2",
+      "subject": {
+        "entity": "element:Ir",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "The standard meter bar was made from an alloy of platinum and iridium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/77#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "the standard meter bar was created from an alloy of 90% platinum and 10% iridium.",
+      "evidence": "the standard meter bar was created from an alloy of 90% platinum and 10% iridium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

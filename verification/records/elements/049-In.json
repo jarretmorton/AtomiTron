@@ -641,6 +641,182 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "valence-main-group from In.electronConfiguration, In.group"
+    },
+    {
+      "id": "In.discovery.year",
+      "subject": {
+        "entity": "element:In",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1863,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/49#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Indium was discovered by the German chemists Ferdinand Reich and Hieronymus Theodor Richter in 1863.",
+      "evidence": "Indium was discovered by the German chemists Ferdinand Reich and Hieronymus Theodor Richter in 1863.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "In.discovery.story.0",
+      "subject": {
+        "entity": "element:In",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name indium comes from the word indigo, for the indigo-blue line in the element's spark spectrum.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/49#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the term \"indigo\" for the indigo-blue line in the element's spark spectrum.",
+      "evidence": "The name derives from the term \"indigo\" for the indigo-blue line in the element's spark spectrum.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "In.discovery.story.1",
+      "subject": {
+        "entity": "element:In",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Indium was discovered in 1863 by the German chemists Ferdinand Reich and Hieronymus Theodor Richter.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/49#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Indium was discovered by the German chemists Ferdinand Reich and Hieronymus Theodor Richter in 1863.",
+      "evidence": "Indium was discovered by the German chemists Ferdinand Reich and Hieronymus Theodor Richter in 1863.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "In.discovery.story.2",
+      "subject": {
+        "entity": "element:In",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "A brilliant indigo line in a sample's spectrum revealed that indium existed.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/49#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "A brilliant indigo line in the sample's spectrum revealed the existence of indium.",
+      "evidence": "A brilliant indigo line in the sample's spectrum revealed the existence of indium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "In.uses.0",
+      "subject": {
+        "entity": "element:In",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Indium is used with germanium to make transistors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/49#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Indium is used to dope germanium to make transistors.",
+      "evidence": "Indium is used to dope germanium to make transistors.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "In.uses.1",
+      "subject": {
+        "entity": "element:In",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Indium can be used to make mirrors that reflect as well as silver mirrors but do not tarnish as quickly.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/49#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Indium can be used to make mirrors that are as reflective as silver mirrors but do not tarnish as quickly.",
+      "evidence": "Indium can be used to make mirrors that are as reflective as silver mirrors but do not tarnish as quickly.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "In.uses.2",
+      "subject": {
+        "entity": "element:In",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Indium is used to coat the bearings of high speed motors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/49#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Indium is used to coat the bearings of high speed motors",
+      "evidence": "Indium is used to coat the bearings of high speed motors",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "In.uses.3",
+      "subject": {
+        "entity": "element:In",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "Indium is used to make electrical components such as rectifiers, thermistors and photoconductors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/49#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It is also used to make other electrical components such as rectifiers, thermistors and photoconductors.",
+      "evidence": "It is also used to make other electrical components such as rectifiers, thermistors and photoconductors.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }

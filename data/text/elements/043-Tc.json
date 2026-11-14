@@ -1,0 +1,263 @@
+{
+  "element": "element:Tc",
+  "discovery": {
+    "story": [
+      {
+        "value": "Technetium was isolated by Carlo Perrier and Emilio Segrè in 1937.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Tc.discovery.story.0"
+        }
+      },
+      {
+        "value": "The name technetium comes from the Greek word technetos, meaning artificial.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Tc.discovery.story.1"
+        }
+      },
+      {
+        "value": "Technetium was the first element to be produced artificially.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Tc.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1937,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tc.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Technetium can be used as a medical tracer.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tc.uses.0"
+      }
+    },
+    {
+      "value": "Technetium can be used to calibrate particle detectors.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tc.uses.1"
+      }
+    },
+    {
+      "value": "Technetium can slow the corrosion of steel, but only in closed systems because it is radioactive.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Tc.uses.2"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Tc.discovery.year",
+      "subject": {
+        "entity": "element:Tc",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1937,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It was isolated by Carlo Perrier and Emilio Segrè in 1937.",
+      "evidence": "It was isolated by Carlo Perrier and Emilio Segrè in 1937.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tc.discovery.story.0",
+      "subject": {
+        "entity": "element:Tc",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Technetium was isolated by Carlo Perrier and Emilio Segrè in 1937.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It was isolated by Carlo Perrier and Emilio Segrè in 1937.",
+      "evidence": "It was isolated by Carlo Perrier and Emilio Segrè in 1937.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tc.discovery.story.1",
+      "subject": {
+        "entity": "element:Tc",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "The name technetium comes from the Greek word technetos, meaning artificial.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Greek word technetos, artificial.",
+      "evidence": "From the Greek word technetos, artificial.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tc.discovery.story.2",
+      "subject": {
+        "entity": "element:Tc",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Technetium was the first element to be produced artificially.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Technetium was the first element to be produced artificially.",
+      "evidence": "Technetium was the first element to be produced artificially.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tc.uses.0",
+      "subject": {
+        "entity": "element:Tc",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Technetium can be used as a medical tracer.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Technetium can also be used as a medical tracer and to calibrate particle detectors.",
+      "evidence": "Technetium can also be used as a medical tracer and to calibrate particle detectors.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tc.uses.1",
+      "subject": {
+        "entity": "element:Tc",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Technetium can be used to calibrate particle detectors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Technetium can also be used as a medical tracer and to calibrate particle detectors.",
+      "evidence": "Technetium can also be used as a medical tracer and to calibrate particle detectors.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Tc.uses.2",
+      "subject": {
+        "entity": "element:Tc",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Technetium can slow the corrosion of steel, but only in closed systems because it is radioactive.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/43#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Small amounts of technetium can retard the corrosion of steel, although this protection can only be applied to closed systems due to technetium's radioactivity.",
+      "evidence": "Small amounts of technetium can retard the corrosion of steel, although this protection can only be applied to closed systems due to technetium's radioactivity.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

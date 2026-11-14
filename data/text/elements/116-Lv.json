@@ -1,0 +1,191 @@
+{
+  "element": "element:Lv",
+  "discovery": {
+    "story": [
+      {
+        "value": "Livermorium was first reported in 2000 by Russian scientists from the Joint Institute for Nuclear Research in Dubna.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Lv.discovery.story.0"
+        }
+      },
+      {
+        "value": "Livermorium's former name was ununhexium.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Lv.discovery.story.1"
+        }
+      },
+      {
+        "value": "The name livermorium was adopted by IUPAC in 2012.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Lv.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 2000,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Lv.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Livermorium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Lv.uses.0"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Lv.discovery.year",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 2000,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It was first reported by Russian scientists from Dubna (Joint Institute for Nuclear Research) in 2000.",
+      "evidence": "It was first reported by Russian scientists from Dubna (Joint Institute for Nuclear Research) in 2000.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lv.discovery.story.0",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Livermorium was first reported in 2000 by Russian scientists from the Joint Institute for Nuclear Research in Dubna.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "It was first reported by Russian scientists from Dubna (Joint Institute for Nuclear Research) in 2000.",
+      "evidence": "It was first reported by Russian scientists from Dubna (Joint Institute for Nuclear Research) in 2000.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lv.discovery.story.1",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Livermorium's former name was ununhexium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Its former name was ununhexium",
+      "evidence": "Its former name was ununhexium",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lv.discovery.story.2",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "The name livermorium was adopted by IUPAC in 2012.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "the name Livermorium name was adopted by IUPAC on May 31, 2012.",
+      "evidence": "the name Livermorium name was adopted by IUPAC on May 31, 2012.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Lv.uses.0",
+      "subject": {
+        "entity": "element:Lv",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Livermorium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/116#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it currently has no uses outside of basic scientific research.",
+      "evidence": "it currently has no uses outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

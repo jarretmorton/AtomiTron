@@ -257,7 +257,22 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Tennessine currently has no uses outside of basic scientific research.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/117#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Ts.uses.0"
+          }
+        }
+      ]
     }
   ]
 }

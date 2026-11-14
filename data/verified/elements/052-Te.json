@@ -735,7 +735,96 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Tellurium is used to color glass and ceramics.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Te.uses.0"
+          }
+        },
+        {
+          "value": "Tellurium is added to copper and stainless steel to make them easier to machine and mill.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Te.uses.1"
+          }
+        },
+        {
+          "value": "Tellurium is added to lead to increase its strength and its resistance to sulfuric acid.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Te.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name tellurium comes from the Latin Tellus, who was the Roman goddess of the Earth.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Te.discovery.story.0"
+            }
+          },
+          {
+            "value": "Tellurium was discovered in 1782 by Franz Joseph Müller von Reichenstein, a Romanian mining official.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Te.discovery.story.1"
+            }
+          },
+          {
+            "value": "Martin Heinrich Klaproth named the element tellurium but gave full credit for its discovery to Reichenstein.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/52#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Te.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

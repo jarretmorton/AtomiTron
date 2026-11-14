@@ -339,7 +339,96 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Europium oxide, a compound of europium, is used as a red phosphor in television sets.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/63#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Eu.uses.0"
+          }
+        },
+        {
+          "value": "Europium has been added to some types of plastics to make lasers.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/63#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Eu.uses.1"
+          }
+        },
+        {
+          "value": "Because it is a good absorber of neutrons, europium is being studied for use in nuclear reactors.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/63#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Eu.uses.2"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "The name europium comes from the continent of Europe.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/63#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Eu.discovery.story.0"
+            }
+          },
+          {
+            "value": "Europium was discovered in 1896 by the French chemist Eugène-Antole Demarçay.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/63#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Eu.discovery.story.1"
+            }
+          },
+          {
+            "value": "Demarçay suspected that samples of samarium, a recently discovered element, were contaminated with an unknown element.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/63#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Eu.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

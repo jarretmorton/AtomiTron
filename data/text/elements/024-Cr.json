@@ -1,0 +1,299 @@
+{
+  "element": "element:Cr",
+  "discovery": {
+    "story": [
+      {
+        "value": "The name chromium comes from the Greek word chroma, meaning colour, because chromium forms many coloured compounds.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cr.discovery.story.0"
+        }
+      },
+      {
+        "value": "Chromium was discovered in 1797 by the French chemist and pharmacist Nicolas-Louis Vauquelin.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cr.discovery.story.1"
+        }
+      },
+      {
+        "value": "Vauquelin isolated chromium in 1798.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=History",
+          "retrieved": "2026-11-14",
+          "via": "IUPAC CIAAW"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Cr.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1797,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=History",
+        "retrieved": "2026-11-14",
+        "via": "IUPAC CIAAW"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cr.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Chromium is often plated onto other metals to form a protective and attractive covering.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cr.uses.0"
+      }
+    },
+    {
+      "value": "Chromium is added to steel to harden it and to make stainless steel.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cr.uses.1"
+      }
+    },
+    {
+      "value": "Chromium gives glass an emerald green color.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cr.uses.2"
+      }
+    },
+    {
+      "value": "A chromium compound called chrome yellow has been used as a yellow pigment in paints.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Cr.uses.3"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Cr.discovery.year",
+      "subject": {
+        "entity": "element:Cr",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1797,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was discovered in 1797 by the French chemist and pharmacist Nicolas-Louis Vauquelin",
+      "evidence": "It was discovered in 1797 by the French chemist and pharmacist Nicolas-Louis Vauquelin",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cr.discovery.story.0",
+      "subject": {
+        "entity": "element:Cr",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name chromium comes from the Greek word chroma, meaning colour, because chromium forms many coloured compounds.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "The name derives from the Greek chroma for \"colour\", from the many coloured compounds of chromium.",
+      "evidence": "The name derives from the Greek chroma for \"colour\", from the many coloured compounds of chromium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cr.discovery.story.1",
+      "subject": {
+        "entity": "element:Cr",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Chromium was discovered in 1797 by the French chemist and pharmacist Nicolas-Louis Vauquelin.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "It was discovered in 1797 by the French chemist and pharmacist Nicolas-Louis Vauquelin",
+      "evidence": "It was discovered in 1797 by the French chemist and pharmacist Nicolas-Louis Vauquelin",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cr.discovery.story.2",
+      "subject": {
+        "entity": "element:Cr",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Vauquelin isolated chromium in 1798.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Nicolas-Louis Vauquelin, who also isolated chromium in 1798.",
+      "evidence": "Nicolas-Louis Vauquelin, who also isolated chromium in 1798.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cr.uses.0",
+      "subject": {
+        "entity": "element:Cr",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Chromium is often plated onto other metals to form a protective and attractive covering.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "is often plated to other metals to form a protective and attractive covering",
+      "evidence": "is often plated to other metals to form a protective and attractive covering",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cr.uses.1",
+      "subject": {
+        "entity": "element:Cr",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Chromium is added to steel to harden it and to make stainless steel.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Chromium is added to steel to harden it and to form stainless steel",
+      "evidence": "Chromium is added to steel to harden it and to form stainless steel",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cr.uses.2",
+      "subject": {
+        "entity": "element:Cr",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Chromium gives glass an emerald green color.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Chromium gives glass an emerald green color",
+      "evidence": "Chromium gives glass an emerald green color",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Cr.uses.3",
+      "subject": {
+        "entity": "element:Cr",
+        "field": "/uses/3"
+      },
+      "method": "agent",
+      "claimedValue": "A chromium compound called chrome yellow has been used as a yellow pigment in paints.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/24#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Lead chromate (PbCrO4), also known as chrome yellow, has been used as a yellow pigment in paints.",
+      "evidence": "Lead chromate (PbCrO4), also known as chrome yellow, has been used as a yellow pigment in paints.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

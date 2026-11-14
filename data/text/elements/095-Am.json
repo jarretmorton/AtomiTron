@@ -1,0 +1,263 @@
+{
+  "element": "element:Am",
+  "discovery": {
+    "story": [
+      {
+        "value": "Americium was discovered by the American scientists Glenn T. Seaborg, Ralph A. James, Leon O. Morgan and Albert Ghiorso.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Am.discovery.story.0"
+        }
+      },
+      {
+        "value": "Americium was named after the continent of North America.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Am.discovery.story.1"
+        }
+      },
+      {
+        "value": "Glenn Seaborg announced the discovery of americium and curium on a U.S. children's radio show called The Quiz Kids.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Am.discovery.story.2"
+        }
+      }
+    ],
+    "year": {
+      "value": 1944,
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=History",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Am.discovery.year"
+      }
+    }
+  },
+  "uses": [
+    {
+      "value": "Americium is used in smoke detectors.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Am.uses.0"
+      }
+    },
+    {
+      "value": "Americium can be used as a portable source of gamma rays.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Am.uses.1"
+      }
+    },
+    {
+      "value": "Americium has been used to measure the thickness of glass to help make flat glass.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Los Alamos National Laboratory"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Am.uses.2"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Am.discovery.year",
+      "subject": {
+        "entity": "element:Am",
+        "field": "/discovery/year"
+      },
+      "method": "agent",
+      "claimedValue": 1944,
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Americium was discovered in 1944 by the American scientists Glenn T. Seaborg, Ralph A. James, Leon O. Morgan and Albert Ghiorso.",
+      "evidence": "Americium was discovered in 1944 by the American scientists Glenn T. Seaborg, Ralph A. James, Leon O. Morgan and Albert Ghiorso.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Am.discovery.story.0",
+      "subject": {
+        "entity": "element:Am",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Americium was discovered by the American scientists Glenn T. Seaborg, Ralph A. James, Leon O. Morgan and Albert Ghiorso.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Americium was discovered in 1944 by the American scientists Glenn T. Seaborg, Ralph A. James, Leon O. Morgan and Albert Ghiorso.",
+      "evidence": "Americium was discovered in 1944 by the American scientists Glenn T. Seaborg, Ralph A. James, Leon O. Morgan and Albert Ghiorso.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Am.discovery.story.1",
+      "subject": {
+        "entity": "element:Am",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Americium was named after the continent of North America.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "was named after the continent of North America by analogy to its lighter lanthanide homologue, europium",
+      "evidence": "was named after the continent of North America by analogy to its lighter lanthanide homologue, europium",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Am.discovery.story.2",
+      "subject": {
+        "entity": "element:Am",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Glenn Seaborg announced the discovery of americium and curium on a U.S. children's radio show called The Quiz Kids.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Seaborg announced the discovery of elements 95, americium 96, and curium on the U.S. children's radio show",
+      "evidence": "Seaborg announced the discovery of elements 95, americium 96, and curium on the U.S. children's radio show",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Am.uses.0",
+      "subject": {
+        "entity": "element:Am",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Americium is used in smoke detectors.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It is used in smoke detectors and can be used as a portable source of gamma rays.",
+      "evidence": "It is used in smoke detectors and can be used as a portable source of gamma rays.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Am.uses.1",
+      "subject": {
+        "entity": "element:Am",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Americium can be used as a portable source of gamma rays.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "It is used in smoke detectors and can be used as a portable source of gamma rays.",
+      "evidence": "It is used in smoke detectors and can be used as a portable source of gamma rays.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Am.uses.2",
+      "subject": {
+        "entity": "element:Am",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Americium has been used to measure the thickness of glass to help make flat glass.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/95#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "americium has been employed to gauge glass thickness to help create flat glass.",
+      "evidence": "americium has been employed to gauge glass thickness to help create flat glass.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

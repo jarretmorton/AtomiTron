@@ -615,7 +615,110 @@
           }
         }
       },
-      "uses": []
+      "uses": [
+        {
+          "value": "Samarium, along with other rare earth elements, is used in carbon-arc lighting for the motion picture industry.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Sm.uses.0"
+          }
+        },
+        {
+          "value": "Samarium forms a compound with cobalt that is a powerful permanent magnet.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Sm.uses.1"
+          }
+        },
+        {
+          "value": "Samarium oxide has been used in optical glass to absorb infrared.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Los Alamos National Laboratory"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Sm.uses.2"
+          }
+        },
+        {
+          "value": "Samarium is part of misch metal, a material used to make flints for lighters.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=Uses",
+            "retrieved": "2026-11-14",
+            "via": "Jefferson Lab"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "Sm.uses.3"
+          }
+        }
+      ],
+      "discovery": {
+        "story": [
+          {
+            "value": "Samarium is named after the mineral samarskite, which was named for Colonel Samarski, a Russian mine official.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Sm.discovery.story.0"
+            }
+          },
+          {
+            "value": "Samarium was originally discovered in 1878 by the Swiss chemist Marc Delafontaine, who called it decipium.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=History",
+              "retrieved": "2026-11-14",
+              "via": "IUPAC CIAAW"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Sm.discovery.story.1"
+            }
+          },
+          {
+            "value": "The French chemist Paul-Émile Lecoq de Boisbaudran was the first to isolate samarium from the mineral samarskite.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/element/62#section=History",
+              "retrieved": "2026-11-14",
+              "via": "Jefferson Lab"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "Sm.discovery.story.2"
+            }
+          }
+        ]
+      }
     }
   ]
 }

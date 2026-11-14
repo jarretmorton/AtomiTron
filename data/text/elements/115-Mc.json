@@ -1,0 +1,155 @@
+{
+  "element": "element:Mc",
+  "discovery": {
+    "story": [
+      {
+        "value": "Moscovium is named after the Moscow region of Russia.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/115#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Mc.discovery.story.0"
+        }
+      },
+      {
+        "value": "Moscovium was discovered together by the Joint Institute for Nuclear Research in Russia, Oak Ridge National Laboratory, Vanderbilt University and Lawrence Livermore National Laboratory.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/115#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Mc.discovery.story.1"
+        }
+      },
+      {
+        "value": "Moscovium was given its name and the symbol Mc in 2016.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/115#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Los Alamos National Laboratory"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Mc.discovery.story.2"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Moscovium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/115#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Mc.uses.0"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Mc.discovery.story.0",
+      "subject": {
+        "entity": "element:Mc",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Moscovium is named after the Moscow region of Russia.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/115#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "element 115 was named Moscovium with the symbol Mc. Moscovium is the Moscow region of Russia",
+      "evidence": "element 115 was named Moscovium with the symbol Mc. Moscovium is the Moscow region of Russia",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mc.discovery.story.1",
+      "subject": {
+        "entity": "element:Mc",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Moscovium was discovered together by the Joint Institute for Nuclear Research in Russia, Oak Ridge National Laboratory, Vanderbilt University and Lawrence Livermore National Laboratory.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/115#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "together by the Joint Institute for Nuclear Research, Dubna (Russia), Oak Ridge National Laboratory (USA), Vanderbilt University (USA) and Lawrence Livermore National Laboratory (USA).",
+      "evidence": "together by the Joint Institute for Nuclear Research, Dubna (Russia), Oak Ridge National Laboratory (USA), Vanderbilt University (USA) and Lawrence Livermore National Laboratory (USA).",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mc.discovery.story.2",
+      "subject": {
+        "entity": "element:Mc",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Moscovium was given its name and the symbol Mc in 2016.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/115#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "On Novemer 28th, 2016, element 115 was named Moscovium with the symbol Mc.",
+      "evidence": "On Novemer 28th, 2016, element 115 was named Moscovium with the symbol Mc.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Mc.uses.0",
+      "subject": {
+        "entity": "element:Mc",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Moscovium currently has no uses outside of basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/115#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "it currently has no uses outside of basic scientific research.",
+      "evidence": "it currently has no uses outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

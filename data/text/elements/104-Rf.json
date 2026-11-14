@@ -1,0 +1,119 @@
+{
+  "element": "element:Rf",
+  "discovery": {
+    "story": [
+      {
+        "value": "Scientists at the Joint Institute for Nuclear Research in Dubna, Russia, first reported making rutherfordium in 1964.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/104#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Rf.discovery.story.0"
+        }
+      },
+      {
+        "value": "Scientists still debate who should get credit for discovering rutherfordium.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/element/104#section=History",
+          "retrieved": "2026-11-14",
+          "via": "Jefferson Lab"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "Rf.discovery.story.1"
+        }
+      }
+    ]
+  },
+  "uses": [
+    {
+      "value": "Rutherfordium is currently not used for anything except basic scientific research.",
+      "unit": null,
+      "uncertain": false,
+      "source": {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/element/104#section=Uses",
+        "retrieved": "2026-11-14",
+        "via": "Jefferson Lab"
+      },
+      "verification": {
+        "status": "pass",
+        "recordId": "Rf.uses.0"
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "Rf.discovery.story.0",
+      "subject": {
+        "entity": "element:Rf",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "Scientists at the Joint Institute for Nuclear Research in Dubna, Russia, first reported making rutherfordium in 1964.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/104#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Scientists working at the Joint Institute for Nuclear Research in Dubna, Russia, first reported the production of rutherfordium in 1964.",
+      "evidence": "Scientists working at the Joint Institute for Nuclear Research in Dubna, Russia, first reported the production of rutherfordium in 1964.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rf.discovery.story.1",
+      "subject": {
+        "entity": "element:Rf",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "Scientists still debate who should get credit for discovering rutherfordium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/104#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Credit for the discovery of rutherfordium is still under debate.",
+      "evidence": "Credit for the discovery of rutherfordium is still under debate.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Rf.uses.0",
+      "subject": {
+        "entity": "element:Rf",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Rutherfordium is currently not used for anything except basic scientific research.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/104#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "there are currently no uses for rutherfordium outside of basic scientific research.",
+      "evidence": "there are currently no uses for rutherfordium outside of basic scientific research.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    }
+  ]
+}

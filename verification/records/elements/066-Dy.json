@@ -1013,6 +1013,138 @@
       },
       "verifier": "pipeline/elements.py",
       "notes": "shells-from-configuration from Dy.electronConfiguration"
+    },
+    {
+      "id": "Dy.discovery.story.0",
+      "subject": {
+        "entity": "element:Dy",
+        "field": "/discovery/story/0"
+      },
+      "method": "agent",
+      "claimedValue": "The name dysprosium comes from the Greek word dysprositos, meaning hard to get at.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/66#section=History",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "From the Greek word dysprositos, meaning hard to get at.",
+      "evidence": "From the Greek word dysprositos, meaning hard to get at.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Dy.discovery.story.1",
+      "subject": {
+        "entity": "element:Dy",
+        "field": "/discovery/story/1"
+      },
+      "method": "agent",
+      "claimedValue": "French chemist Paul-Émile Lecoq de Boisbaudran discovered dysprosium in 1886, as an impurity in erbia, the oxide of erbium.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/66#section=History",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "Dysprosium was discovered by Paul-Émile Lecoq de Boisbaudran, a French chemist, in 1886 as an impurity in erbia, the oxide of erbium.",
+      "evidence": "Dysprosium was discovered by Paul-Émile Lecoq de Boisbaudran, a French chemist, in 1886 as an impurity in erbia, the oxide of erbium.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Dy.discovery.story.2",
+      "subject": {
+        "entity": "element:Dy",
+        "field": "/discovery/story/2"
+      },
+      "method": "agent",
+      "claimedValue": "Dysprosium was first isolated by the French chemist Georges Urbain in 1906.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/66#section=History",
+      "upstream": "IUPAC CIAAW",
+      "retrievedValue": "Dysprosium was first isolated by the French chemist Georges Urbain in 1906.",
+      "evidence": "Dysprosium was first isolated by the French chemist Georges Urbain in 1906.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Dy.uses.0",
+      "subject": {
+        "entity": "element:Dy",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "When combined with vanadium and other rare earth elements, dysprosium is used as a laser material.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/66#section=Uses",
+      "upstream": "Jefferson Lab",
+      "retrievedValue": "When combined with vanadium and other rare earth elements, dysprosium is used as a laser material.",
+      "evidence": "When combined with vanadium and other rare earth elements, dysprosium is used as a laser material.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Dy.uses.1",
+      "subject": {
+        "entity": "element:Dy",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "A cement made with dysprosium oxide and nickel has been used in cooling nuclear reactor rods.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/66#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "A dysprosium oxide-nickel cement has found use in cooling nuclear reactor rods.",
+      "evidence": "A dysprosium oxide-nickel cement has found use in cooling nuclear reactor rods.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
+    },
+    {
+      "id": "Dy.uses.2",
+      "subject": {
+        "entity": "element:Dy",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Compounds called dysprosium-cadmium chalcogenides have been used as sources of infrared radiation for studying chemical reactions.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/element/66#section=Uses",
+      "upstream": "Los Alamos National Laboratory",
+      "retrievedValue": "Dysprosium-cadmium chalcogenides, as sources of infrared radiation, have been used for studying chemical reactions.",
+      "evidence": "Dysprosium-cadmium chalcogenides, as sources of infrared radiation, have been used for studying chemical reactions.",
+      "result": "pass",
+      "checkedAt": "2026-11-14T06:32:14Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 5782442",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-14-api-elements"
     }
   ]
 }
