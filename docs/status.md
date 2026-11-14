@@ -77,8 +77,9 @@ early-publication exception.
 - **Earlier runs:** two that day were superseded. One ran before the
   discovery-year check (iron's "ancient" claim passed); the other ran
   before PR #9 was merged.
-- **API spend so far:** about $23.17. That includes run #4 (the 108
-  elements, about $17.62), whose results were lost; see below.
+- **API spend so far:** about $26.00. That includes run #4 (the 108
+  elements, about $17.62), whose results were lost, and run #5 (about
+  $2.83), which stopped early; see below.
 
 **Run #4 (2026-11-13, 108 elements) was lost.** It drafted 708 claims, and
 699 passed 3 of 3. The gate then failed: the run had also re-checked the six
@@ -88,6 +89,15 @@ results after a passing gate, so nothing was kept. Fixed since:
 - element runs leave the explanations alone
 - results are pushed before the gate
 - an API error now fails only its own claims, not the whole run
+
+**Run #5 (2026-11-14) stopped making progress after 49 drafts.** Every later
+request was refused with "400 Bad Request". That's almost certainly the
+account's credit or spend limit running out at about $26 of total spend
+(the message wasn't recorded then). The run carried on and returned "no
+verdict" for all 369 claims; its branch `verification/run-43563709054` must
+not be merged. Since then, a refused request (bad request, key, permission,
+credit) stops the whole run at once, records the API's message, and keeps
+what's done.
 
 - **Pilot elements:** H, C, N, O, Na, Mg, Cl, Fe, Cu, Au.
 - **The run:** one drafter wrote 70 statements and 7 discovery years. Code
