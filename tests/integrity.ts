@@ -70,6 +70,13 @@ function checkElement(e: Element, at: string, errors: string[]): void {
     else if (electronCount(occ) !== z) {
       errors.push(`${at}: electron configuration holds ${electronCount(occ)} electrons, atomic number is ${z}`);
     }
+    const written = e.electronConfiguration.source.asWritten;
+    if (written !== undefined) {
+      const w = parseConfiguration(written);
+      if (!w || !occ || !isDeepStrictEqual(new Map([...w].sort()), new Map([...occ].sort()))) {
+        errors.push(`${at}: electron configuration as written by the source ("${written}") doesn't match the value`);
+      }
+    }
   } else if (e.atom.shells || e.valenceElectrons) {
     errors.push(`${at}: shells or valence without an electron configuration`);
   }

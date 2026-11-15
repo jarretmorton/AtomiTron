@@ -3,7 +3,9 @@
 // zero-width spaces.
 
 import { describe, expect, it } from 'vitest';
-import { derive, electronCount, parseConfiguration, shellCounts } from '../app/src/data/derive';
+import {
+  derive, electronCount, parseConfiguration, shellCounts, shellWorking, valenceWorking,
+} from '../app/src/data/derive';
 
 describe('parseConfiguration', () => {
   it.each<[string, string, number, number[]]>([
@@ -34,6 +36,35 @@ describe('parseConfiguration', () => {
     ['garbage', 'not a configuration'],
   ])('rejects %s', (_, text) => {
     expect(parseConfiguration(text)).toBeNull();
+  });
+});
+
+describe('working', () => {
+  it('groups every subshell by shell and adds it up (zirconium)', () => {
+    const w = shellWorking(parseConfiguration('[Kr] 4d2 5s2')!);
+    expect(w.map((s) => s.total)).toEqual([2, 8, 18, 10, 2]);
+    expect(w[3]).toEqual({
+      shell: 4,
+      parts: [{ subshell: '4s', electrons: 2 }, { subshell: '4p', electrons: 6 }, { subshell: '4d', electrons: 2 }],
+      total: 10,
+    });
+  });
+
+  it('always adds up to shellCounts', () => {
+    for (const c of ['1s1', '[Ne]3s1', '[Ar]4s13d10', '[Xe]4f145d106s26p2', '[Rn]5f36d17s2']) {
+      const occ = parseConfiguration(c)!;
+      expect(shellWorking(occ).map((s) => s.total)).toEqual(shellCounts(occ));
+    }
+  });
+
+  it('shows the outer s and p electrons for valence (sulfur, gallium, helium)', () => {
+    expect(valenceWorking(parseConfiguration('[Ne] 3s2 3p4')!)).toEqual({
+      shell: 3,
+      parts: [{ subshell: '3s', electrons: 2 }, { subshell: '3p', electrons: 4 }],
+      total: 6,
+    });
+    expect(valenceWorking(parseConfiguration('[Ar] 3d10 4s2 4p1')!).total).toBe(3);
+    expect(valenceWorking(parseConfiguration('1s2')!).total).toBe(2);
   });
 });
 

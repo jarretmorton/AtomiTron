@@ -86,6 +86,42 @@ export function shellCounts(occ: Occupancy): Counts {
   return shells;
 }
 
+/** One shell's part of the working: its subshells and their sum. */
+export interface ShellWorking {
+  shell: number;
+  parts: { subshell: string; electrons: number }[];
+  total: number;
+}
+
+const LETTERS = 'spdf';
+
+/**
+ * The working behind shellCounts(): each shell's subshells (s, p, d, f) and
+ * their sum, innermost first. Shown on the page so a reader can redo the
+ * addition (checkpoint 1 finding).
+ */
+export function shellWorking(occ: Occupancy): ShellWorking[] {
+  const shells = new Map<number, ShellWorking>();
+  for (const [subshell, electrons] of occ) {
+    const shell = Number(subshell[0]);
+    const w = shells.get(shell) ?? { shell, parts: [], total: 0 };
+    w.parts.push({ subshell, electrons });
+    w.total += electrons;
+    shells.set(shell, w);
+  }
+  const out = [...shells.values()].sort((a, b) => a.shell - b.shell);
+  for (const w of out) w.parts.sort((a, b) => LETTERS.indexOf(a.subshell[1]!) - LETTERS.indexOf(b.subshell[1]!));
+  return out;
+}
+
+/** The working behind valenceMainGroup(): the outer shell's s and p electrons. */
+export function valenceWorking(occ: Occupancy): ShellWorking {
+  const all = shellWorking(occ);
+  const outer = all.filter((w) => w.parts.some((p) => p.subshell[1] === 's' || p.subshell[1] === 'p')).at(-1)!;
+  const parts = outer.parts.filter((p) => p.subshell[1] === 's' || p.subshell[1] === 'p');
+  return { shell: outer.shell, parts, total: parts.reduce((sum, p) => sum + p.electrons, 0) };
+}
+
 const MAIN_GROUPS = new Set([1, 2, 13, 14, 15, 16, 17, 18]);
 
 /**

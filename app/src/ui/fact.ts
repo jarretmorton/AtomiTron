@@ -46,7 +46,9 @@ export interface FactOptions {
   /** A short explanation with its own citation. */
   concept?: Concept;
   /** Extra line under the value, e.g. the arithmetic for a derived count. */
-  detail?: string;
+  detail?: string | Node;
+  /** A second explanatory line or block, e.g. the working behind a count. */
+  more?: Node | null;
 }
 
 /** A labelled fact row, or null if the fact is missing or not renderable. */
@@ -64,8 +66,13 @@ export function factRow(label: string, fact: Fact | undefined, opts: FactOptions
   if (fact.uncertain) value.append(' ', predictedBadge());
   row.append(name, value);
   if (shown.note) row.append(el('div', 'fact-note', shown.note));
-  if (opts.detail) row.append(el('div', 'fact-note', opts.detail));
+  if (opts.detail) {
+    const note = el('div', 'fact-note');
+    note.append(opts.detail);
+    row.append(note);
+  }
   row.append(citation(fact.source.url, fact.source.via));
+  if (opts.more) row.append(opts.more);
   if (opts.concept) {
     // A derived fact already cites its concept page; don't link it twice.
     row.append(opts.concept.url === fact.source.url ? el('p', 'concept', opts.concept.text) : conceptNote(opts.concept));

@@ -21,7 +21,9 @@ from pathlib import Path
 from typing import Any, Callable
 
 from . import parse as P
-from .derive import MAIN_GROUPS, derive, electron_count, normalize_configuration, parse_configuration
+from .derive import (
+    MAIN_GROUPS, derive, electron_count, normalize_configuration, parse_configuration, source_order_configuration,
+)
 from .fetch import fetch
 from .nist import PhaseData, phase_data
 
@@ -134,16 +136,28 @@ def read_sections(record: dict) -> dict[str, list[Info]]:
     return out
 
 
-def libretexts_configurations(refresh: bool) -> tuple[dict[int, tuple[str, bool]], str]:
-    """LibreTexts reference table A1: {Z: (configuration, 'probably')}."""
+def libretexts_configurations(refresh: bool) -> tuple[dict[int, tuple[str, bool, list[int] | None]], str]:
+    """LibreTexts reference table A1: {Z: (configuration, 'probably', shells)}.
+
+    Each element is a title row ('40 Zr zirconium : [Kr] 4d2 5s2'), a row of
+    its subshells, and a row of seven cells giving the electrons in each
+    shell ('2', '8', '18', '10', '2', '', '')."""
     body, retrieved = fetch(LT_CONFIGS, "libretexts/a1-electron-configurations.html", refresh)
     page = body.decode("utf-8", errors="replace")
+    rows = [[re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", c))).strip()
+             for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row, re.S)]
+            for row in re.findall(r"<tr[^>]*>(.*?)</tr>", page, re.S)]
     out = {}
-    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", page, re.S):
-        cells = [re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", c))).strip()
-                 for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row, re.S)]
+    for i, cells in enumerate(rows):
         if len(cells) == 1 and (m := re.fullmatch(r"(\d+) ([A-Z][a-z]?) [a-z]+ : (probably )?(.+)", cells[0])):
-            out[int(m.group(1))] = (m.group(4), bool(m.group(3)))
+            shells = None
+            for nxt in rows[i + 1:i + 3]:
+                if len(nxt) == 7 and any(nxt) and all(re.fullmatch(r"\d*", x) for x in nxt):
+                    filled = [x for x in nxt if x]
+                    if nxt[:len(filled)] == filled:  # no gaps between shells
+                        shells = [int(x) for x in filled]
+                    break
+            out[int(m.group(1))] = (m.group(4), bool(m.group(3)), shells)
     return out, retrieved
 
 
@@ -165,7 +179,7 @@ class ElementBuilder:
     retrieved: str
     checked_at: str
     nist: Callable[[str], PhaseData | None]
-    lt_configs: tuple[dict[int, tuple[str, bool]], str]
+    lt_configs: tuple[dict[int, tuple[str, bool, list[int] | None]], str]
     facts: dict[str, dict] = field(default_factory=dict)
     records: dict[str, dict] = field(default_factory=dict)
     corroborated: set[str] = field(default_factory=set)
@@ -196,14 +210,16 @@ class ElementBuilder:
 
     def add(self, pointer: str, value: Any, unit: str | None, heading: str | None, via: str, raw: str, *,
             uncertain: bool = False, corroboration: list[dict] | None = None, tolerance: dict | None = None,
-            notes: str | None = None, url: str | None = None, retrieved: str | None = None) -> None:
+            notes: str | None = None, url: str | None = None, retrieved: str | None = None,
+            as_written: str | None = None) -> None:
         source_url = url or (self.page + (anchor(heading) if heading else ""))
         rid = self.rid(pointer)
         self.facts[pointer] = {
             "value": value,
             "unit": unit,
             "uncertain": uncertain,
-            "source": {"url": source_url, "retrieved": retrieved or self.retrieved, "via": via},
+            "source": {"url": source_url, "retrieved": retrieved or self.retrieved, "via": via,
+                       **({"asWritten": as_written} if as_written else {})},
             "verification": {"status": "pass", "recordId": rid},
         }
         record = {
@@ -347,7 +363,7 @@ class ElementBuilder:
         heading = "Electron Configuration"
         lanl = self.first(heading, "Los Alamos National Laboratory")
         table, lt_retrieved = self.lt_configs
-        lt, lt_probably = table.get(self.z, (None, False))
+        lt, lt_probably, _ = table.get(self.z, (None, False, None))
         parsed = {}
         for who, raw in (("Los Alamos National Laboratory", lanl), ("LibreTexts Chemistry", lt)):
             if raw is None:
@@ -372,7 +388,12 @@ class ElementBuilder:
         if "Los Alamos National Laboratory" in parsed:
             raw = parsed["Los Alamos National Laboratory"][0]
             corroboration = [{"sourceUrl": LT_CONFIGS, "upstream": "LibreTexts Chemistry", "value": lt}] if "LibreTexts Chemistry" in parsed else None
-            self.add("/electronConfiguration", normalize_configuration(raw), None, heading, "Los Alamos National Laboratory", raw,
+            normalized = normalize_configuration(raw)
+            written = source_order_configuration(raw)
+            # The app lists subshells shell by shell; PubChem may order them
+            # differently. Keep the source's spelling so a reader can match it.
+            self.add("/electronConfiguration", normalized, None, heading, "Los Alamos National Laboratory", raw,
+                     as_written=written if written != normalized else None,
                      uncertain=predicted, corroboration=corroboration,
                      notes=f"predicted: {why}" if predicted else ("electron count equals the atomic number"
                            + ("" if corroboration else "; single contributor")))
@@ -707,6 +728,7 @@ class ElementBuilder:
             self.notes.append("shipped without an electron configuration, shells or valence: the configuration is disputed")
         else:
             self.add_derived("/atom/shells", "shells-from-configuration", ["/electronConfiguration"])
+            self.cite_shell_row()
         group = self.facts.get("/group")
         if has_config and group and group["value"] in MAIN_GROUPS:
             if self.facts["/electronConfiguration"]["uncertain"]:
@@ -717,6 +739,26 @@ class ElementBuilder:
         element = self.assemble(drawn)
         self.merge_text(element)
         return Built(element, list(self.records.values()), self.drops, self.notes)
+
+    def cite_shell_row(self) -> None:
+        """LibreTexts table A1 prints the electrons per shell. Where it has
+        this element, cite that row, so the count can be read off the source
+        (checkpoint 1 finding). The derivation stays as the cross-check the
+        build recomputes. A disagreement drops the count."""
+        table, lt_retrieved = self.lt_configs
+        row = table.get(self.z, (None, False, None))[2]
+        if row is None:
+            return  # Z > 104: the rule's explanation page stays the citation
+        fact, rid = self.facts["/atom/shells"], self.rid("/atom/shells")
+        if row != fact["value"]:
+            self.drop("/atom/shells", f"derived {fact['value']} but LibreTexts table A1 prints {row}")
+            return
+        fact["source"] = {"url": LT_CONFIGS, "retrieved": lt_retrieved, "via": "LibreTexts Chemistry"}
+        record = self.records[rid]
+        record["sourceUrl"] = LT_CONFIGS
+        record["corroboration"] = [{"sourceUrl": LT_CONFIGS, "upstream": "LibreTexts Chemistry",
+                                    "value": ", ".join(map(str, row))}]
+        record["notes"] += f"; matches the shell row LibreTexts table A1 prints for element {self.z}"
 
     def merge_text(self, element: dict) -> None:
         """Add history and uses verified by pipeline.text_facts, if any."""
@@ -799,8 +841,8 @@ def main(argv: list[str] | None = None) -> None:
         if built.element is None:
             continue
         name = f"{z:03d}-{sym}.json"
-        write_json(DATA_DIR / name, {"schemaVersion": 2, "kind": "elements", "items": [built.element]})
-        write_json(RECORDS_DIR / name, {"schemaVersion": 2, "kind": "verification-records", "items": built.records})
+        write_json(DATA_DIR / name, {"schemaVersion": 3, "kind": "elements", "items": [built.element]})
+        write_json(RECORDS_DIR / name, {"schemaVersion": 3, "kind": "verification-records", "items": built.records})
     report = write_report(results, checked_at)
     shipped = sum(1 for *_, b in results if b.element)
     print(f"{shipped} of {len(results)} elements shipped; {sum(len(b.records) for *_, b in results)} facts; report: {report.relative_to(ROOT)}")

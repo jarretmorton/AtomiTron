@@ -76,11 +76,16 @@ The record is [verification/spot-reviews/checkpoint-1.md](../verification/spot-r
   - All 103 shell counts that LibreTexts table A1 covers match its printed
     shell rows.
   - All 44 valence counts match an independent group-number rule.
-- **Proposed fixes, waiting for approval:**
-  1. cite table A1 directly for shell counts
-  2. show the working for shell and valence counts
-  3. explain the configuration's order
-  4. add a verified explanation of how to read a configuration
+- **Four fixes, approved and built 2026-11-15:**
+  1. Shell counts cite LibreTexts table A1 directly (103 elements); the
+     derivation stays as the build's cross-check.
+  2. The page shows the working for shell and valence counts.
+  3. Where PubChem orders a configuration differently, the page shows its
+     spelling beside the app's (87 elements; new `source.asWritten` field,
+     `schemaVersion` 3).
+  4. A new explanation of how to read a configuration, verified through the
+     Claude API (the `verify-explanations` task, which checks only new or
+     reworded explanations).
 
 ## Phase 2, part 2: history and uses (pilot, live for review)
 
@@ -317,8 +322,8 @@ Still open from requirements section 9:
    - ~~scale to the remaining 108 elements~~ Done in run #6 (PR from
      `verification/run-43564971048`). Every element now has history and
      uses text verified through the Claude API.
-3. ~~Checkpoint 1.~~ Done 2026-11-15: see the section above. Next: decide
-   on its four proposed fixes.
+3. ~~Checkpoint 1.~~ Done 2026-11-15: see the section above. Its four
+   fixes are built.
 
 ## Picking it back up
 

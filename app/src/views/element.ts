@@ -8,6 +8,7 @@ import type { Element, Fact, Isotope } from '../data/schema';
 import { atomLegend, atomSvg, type AtomModel } from '../ui/atom';
 import { openAtom3d } from '../ui/atom3d';
 import { citation, el, factRow, predictedBadge } from '../ui/fact';
+import { asWrittenNote, shellSourceNote, shellsWorking, valenceWorkingNote } from '../ui/working';
 import { configuration, halfLifeText, percent } from '../ui/format';
 import { getTempUnit, setTempUnit, TEMP_UNITS, type TempUnit } from '../units';
 import { CLASSES } from './table';
@@ -85,7 +86,13 @@ function atomSection(e: Element): HTMLElement {
     factRow('Protons', protons, { detail: 'The same as the atomic number.' }),
     factRow('Neutrons', neutrons, { detail: `${massNumber} − ${protons.value} = ${neutrons.value}`, concept: CONCEPTS.neutrons }),
     factRow('Electrons', electrons, { concept: CONCEPTS.electrons }),
-    drawnShells ? factRow('Electrons in each shell', drawnShells, { concept: CONCEPTS.shells }) : null,
+    drawnShells
+      ? factRow('Electrons in each shell', drawnShells, {
+          detail: shellSourceNote(e, drawnShells),
+          more: shellsWorking(e),
+          concept: CONCEPTS.shells,
+        })
+      : null,
   );
 }
 
@@ -100,8 +107,12 @@ function numbersSection(e: Element): HTMLElement {
     factRow('Mass number of its longest-lived isotope', e.longestLivedIsotopeMassNumber, {
       detail: 'IUPAC gives no standard atomic weight for this element, so this is the mass number of its longest-lived known form instead.',
     }),
-    factRow('Electron configuration', e.electronConfiguration, { show: (f) => ({ text: configuration(String(f.value)) }) }),
-    factRow('Valence electrons', e.valenceElectrons, { concept: CONCEPTS.valence }),
+    factRow('Electron configuration', e.electronConfiguration, {
+      show: (f) => ({ text: configuration(String(f.value)) }),
+      detail: asWrittenNote(e.electronConfiguration),
+      concept: CONCEPTS.configuration,
+    }),
+    factRow('Valence electrons', e.valenceElectrons, { detail: valenceWorkingNote(e), concept: CONCEPTS.valence }),
     factRow('Electronegativity (Pauling scale)', e.electronegativity),
     factRow('Period (row)', e.period),
     factRow('Group (column)', e.group),

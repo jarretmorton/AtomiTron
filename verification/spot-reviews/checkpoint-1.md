@@ -87,19 +87,22 @@ independent data on 2026-11-15:
 
 ## Actions
 
-Proposed fixes, for the project owner's approval:
+Four fixes, approved by the project owner on 2026-11-15 and built the same
+day:
 
-1. **Cite the shell counts directly.** For the 103 elements LibreTexts table
-   A1 covers, cite the table's own shell row, so the number can be read
-   straight off the source. Keep the derivation as a cross-check that the
-   build runs.
-2. **Show the working** for shell and valence counts, as neutron counts
-   already do. For sulfur: outer shell 3s2 3p4, so 2 + 4 = 6.
-3. **Explain the configuration's order.** Say on the page that the app lists
-   subshells in shell order, and show the source's own spelling beside it.
-4. **Add a verified explanation of how to read a configuration** (the number
-   is the shell, the superscript is the electron count), checked through the
-   same pipeline as the other explanations.
+1. **Shell counts are cited directly.** For the 103 elements LibreTexts table
+   A1 covers, the citation is the table's own shell row, so the number can
+   be read straight off the source. The derivation stays as a cross-check
+   that the build runs.
+2. **The working is shown** for shell and valence counts, as neutron counts
+   already did. For sulfur: outer shell 3s2 3p4, so 2 + 4 = 6.
+3. **The configuration's order is explained.** The page says the app lists
+   subshells shell by shell, and shows the source's own spelling beside it
+   (87 elements differ).
+4. **A verified explanation of how to read a configuration** was added: "An
+   electron configuration lists the shell and subshell labels, with a
+   superscript giving the number of electrons in that subshell." It was
+   checked through the same Claude API pipeline as the other explanations.
 
 ## Other notes
 

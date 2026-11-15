@@ -95,8 +95,10 @@ def resolve_symbols(argv: list[str]) -> list[str]:
 
 
 def main(argv: list[str]) -> None:
-    symbols = resolve_symbols(argv)
-    passages = element_passages(symbols)
+    # --concepts-only: just the explanation sentences and their pages.
+    concepts_only = argv == ["--concepts-only"]
+    symbols = [] if concepts_only else resolve_symbols(argv)
+    passages = [] if concepts_only else element_passages(symbols)
     claims, concept_passages = concept_claims()
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "sources.json").write_text(json.dumps(passages + concept_passages, indent=1, ensure_ascii=False), "utf-8")

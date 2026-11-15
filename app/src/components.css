@@ -514,3 +514,31 @@
   margin-left: 2px;
   vertical-align: middle;
 }
+
+/* ---- The working behind a count --------------------------------------------- */
+
+.working {
+  margin-top: 4px;
+}
+
+.working summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0 4px;
+  color: var(--link);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.working-list {
+  margin: 4px 0 8px;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.working-list li {
+  padding: 2px 0;
+}

@@ -47,7 +47,7 @@ function scenario(
   mkdirSync(join(dir, 'verified'));
   mkdirSync(join(dir, 'records'));
   const write = (p: string, kind: string, items: unknown[]) =>
-    writeFileSync(join(dir, p), JSON.stringify({ schemaVersion: 2, kind, items }));
+    writeFileSync(join(dir, p), JSON.stringify({ schemaVersion: 3, kind, items }));
   write('verified/open-questions.json', 'open-questions', [q]);
   write('verified/011-Na.json', 'elements', [e]);
   write('records/records.json', 'verification-records', records);
@@ -83,6 +83,11 @@ describe('gate: elements', () => {
     ['neutrons miscounted', (_q, e) => (e.atom.neutrons.value = 13), /neutrons-from-mass-number gives 12, fact says 13/],
     ['shells miscounted', (_q, e) => (e.atom.shells!.value = [2, 8, 2]), /shells-from-configuration gives \[2,8,1\]/],
     ['configuration does not match atomic number', (_q, e) => (e.electronConfiguration!.value = '[Ne] 3s2'), /holds 12 electrons, atomic number is 11/],
+    [
+      'source spelling that means something else',
+      (_q, e) => (e.electronConfiguration!.source.asWritten = '[Ne] 3s2'),
+      /as written by the source/,
+    ],
     ['unparseable configuration', (_q, e) => (e.electronConfiguration!.value = '[Ne] 3x1'), /doesn't parse/],
     ['id does not match symbol', (_q, e) => (e.id = 'element:K'), /doesn't match symbol/],
     ['wrong isotope drawn', (_q, e) => (e.atom.isotope = 24), /atom shows isotope 24, expected 23/],
