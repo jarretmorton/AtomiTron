@@ -60,19 +60,27 @@ They went live early, at your request, so you can review them on the iPad.
 They were verified by subagents rather than the Claude API pipeline. The
 methodology section describing this procedure is still marked for review.
 
-## Checkpoint 1: spot review (in progress)
+## Checkpoint 1: spot review (done 2026-11-15)
 
-- **The sample:** 25 facts in `verification/spot-reviews/checkpoint-1-sample.json`,
-  drawn by `python -m pipeline.spot_review checkpoint-1 25` (seeded, so
-  reproducible). It's weighted toward the facts most likely to hide a
-  mistake.
-- **The worksheet:** `checkpoint-1-worksheet.pdf` (and `.html`), from
-  `python -m pipeline.spot_worksheet checkpoint-1`. It's done on paper,
-  checking each fact through AtomiTron's own source buttons on the iPad.
-- **Recording the answers:** they're typed into a private claude.ai review
-  sheet (same numbering), then written to `verification/spot-reviews/` with
-  the agreement rate. Look over any "Doesn't match" or "Can't tell" before
-  they're logged.
+The record is [verification/spot-reviews/checkpoint-1.md](../verification/spot-reviews/checkpoint-1.md).
+
+- **Result:** 24 of 25 sampled facts were checked by hand. The reviewer
+  agreed with the pipeline on 21 (88%). One fact had been removed from the
+  app before the review.
+- **Three "Doesn't match" findings,** all derived counts: sulfur's valence
+  electrons, and the shell counts of zirconium and neptunium. No value was
+  wrong. The finding is that a reader can't confirm these counts from what
+  the app cites: the working isn't shown, and the app writes configurations
+  in a different order than PubChem does.
+- **Category re-check** (required by spec 10.4a):
+  - All 103 shell counts that LibreTexts table A1 covers match its printed
+    shell rows.
+  - All 44 valence counts match an independent group-number rule.
+- **Proposed fixes, waiting for approval:**
+  1. cite table A1 directly for shell counts
+  2. show the working for shell and valence counts
+  3. explain the configuration's order
+  4. add a verified explanation of how to read a configuration
 
 ## Phase 2, part 2: history and uses (pilot, live for review)
 
@@ -309,8 +317,8 @@ Still open from requirements section 9:
    - ~~scale to the remaining 108 elements~~ Done in run #6 (PR from
      `verification/run-43564971048`). Every element now has history and
      uses text verified through the Claude API.
-3. **Checkpoint 1:** a human spot review of about 25 sampled facts, logged
-   in `verification/spot-reviews/`.
+3. ~~Checkpoint 1.~~ Done 2026-11-15: see the section above. Next: decide
+   on its four proposed fixes.
 
 ## Picking it back up
 

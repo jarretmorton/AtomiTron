@@ -1,0 +1,282 @@
+{
+  "checkpoint": "checkpoint-1",
+  "reviewedOn": "2026-11-15",
+  "method": "By hand on a printed worksheet, checking each fact through the app's source links; answers then typed into a private review sheet.",
+  "answers": [
+    {
+      "n": 1,
+      "recordId": "C.discovery.story.0",
+      "element": "Carbon",
+      "field": "How it was found",
+      "shown": "The name carbon comes from the Latin word carbo, meaning \"charcoal\".",
+      "category": "agent",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T17:34:19.419Z"
+    },
+    {
+      "n": 2,
+      "recordId": "N.discovery.story.0",
+      "element": "Nitrogen",
+      "field": "How it was found",
+      "shown": "Nitrogen was discovered by the Scottish physician and chemist Daniel Rutherford in 1772.",
+      "category": "agent",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T17:34:23.408Z"
+    },
+    {
+      "n": 3,
+      "recordId": "O.uses.1",
+      "element": "Oxygen",
+      "field": "What it is used for",
+      "shown": "Hospitals frequently prescribe oxygen for patients with breathing illnesses.",
+      "category": "agent",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T17:35:04.434Z"
+    },
+    {
+      "n": 4,
+      "recordId": "Mg.isotopes.1.massNumber",
+      "element": "Magnesium",
+      "field": "Mass number of magnesium-25",
+      "shown": "25",
+      "category": "other",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T17:35:12.248Z"
+    },
+    {
+      "n": 5,
+      "recordId": "S.valenceElectrons",
+      "element": "Sulfur",
+      "field": "Valence electrons",
+      "shown": "6",
+      "category": "derived",
+      "verdict": "mismatch",
+      "note": "Electron configuration and group sources match, however the explanation at LibreText does not make it clear how to calculate valence = 6 from this configuration [Ne] 3s2 3p4.",
+      "answeredAt": "2026-11-15T17:53:28.807Z"
+    },
+    {
+      "n": 6,
+      "recordId": "Cl.uses.2",
+      "element": "Chlorine",
+      "field": "What it is used for",
+      "shown": "Sodium chloride, a chlorine compound commonly known as table salt, is used to season food.",
+      "category": "agent",
+      "verdict": "unsure",
+      "note": "removed from app.",
+      "answeredAt": "2026-11-15T18:15:55.330Z"
+    },
+    {
+      "n": 7,
+      "recordId": "Cl.discovery.story.0",
+      "element": "Chlorine",
+      "field": "How it was found",
+      "shown": "The name chlorine comes from the Greek word chloros, meaning \"pale green\" or \"greenish yellow\".",
+      "category": "agent",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T17:53:47.903Z"
+    },
+    {
+      "n": 8,
+      "recordId": "K.meltingPoint",
+      "element": "Potassium",
+      "field": "Melting point",
+      "shown": "63.38 °C",
+      "category": "tiebreak",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T17:53:55.681Z"
+    },
+    {
+      "n": 9,
+      "recordId": "Ca.density",
+      "element": "Calcium",
+      "field": "Density",
+      "shown": "1.54 g/cm³",
+      "category": "single",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T17:53:57.664Z"
+    },
+    {
+      "n": 10,
+      "recordId": "Ca.isotopes.5.massNumber",
+      "element": "Calcium",
+      "field": "Mass number of calcium-48",
+      "shown": "48",
+      "category": "other",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T17:54:03.038Z"
+    },
+    {
+      "n": 11,
+      "recordId": "Ti.atom.neutrons",
+      "element": "Titanium",
+      "field": "Neutrons",
+      "shown": "26",
+      "category": "derived",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T17:56:08.210Z"
+    },
+    {
+      "n": 12,
+      "recordId": "Zr.atom.shells",
+      "element": "Zirconium",
+      "field": "Electrons in each shell",
+      "shown": "2, 8, 18, 10, 2",
+      "category": "derived",
+      "verdict": "mismatch",
+      "note": "Electron configuration is close but listed at the PuChem source as [Kr] 5s2 4d2 (not [Kr] 4d2 5s2 in the app). The explanation at LibreText does not make it clear how to calculate the shell from the configuration.",
+      "answeredAt": "2026-11-15T18:11:22.805Z"
+    },
+    {
+      "n": 13,
+      "recordId": "Mo.isotopes.2.atomicMass",
+      "element": "Molybdenum",
+      "field": "Mass of molybdenum-95",
+      "shown": "94.9058374 u",
+      "category": "tiebreak",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T18:11:34.648Z"
+    },
+    {
+      "n": 14,
+      "recordId": "Sn.isotopes.1.atomicMass",
+      "element": "Tin",
+      "field": "Mass of tin-114",
+      "shown": "113.9027801 u",
+      "category": "tiebreak",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T18:11:39.366Z"
+    },
+    {
+      "n": 15,
+      "recordId": "Ba.isotopes.2.massNumber",
+      "element": "Barium",
+      "field": "Mass number of barium-134",
+      "shown": "134",
+      "category": "other",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T18:11:42.433Z"
+    },
+    {
+      "n": 16,
+      "recordId": "Gd.isotopes.4.halfLife",
+      "element": "Gadolinium",
+      "field": "Half-life of gadolinium-157",
+      "shown": "Stable",
+      "category": "other",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T18:11:47.841Z"
+    },
+    {
+      "n": 17,
+      "recordId": "Yb.classification",
+      "element": "Ytterbium",
+      "field": "Metal / non-metal / semi-metal",
+      "shown": "Metal",
+      "category": "single",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T18:11:52.177Z"
+    },
+    {
+      "n": 18,
+      "recordId": "Au.discovery.story.1",
+      "element": "Gold",
+      "field": "How it was found",
+      "shown": "Gold was known and highly valued in prehistoric times.",
+      "category": "agent",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T18:11:54.740Z"
+    },
+    {
+      "n": 19,
+      "recordId": "Np.atom.shells",
+      "element": "Neptunium",
+      "field": "Electrons in each shell",
+      "shown": "2, 8, 18, 32, 22, 9, 2",
+      "category": "derived",
+      "verdict": "mismatch",
+      "note": "Electron configuration is close but listed at the PuChem source as [Rn]7s2 5f4 6d1 (not [Rn] 5f4 6d1 7s2 in the app). The explanation at LibreText does not make it clear how to calculate the shell from the configuration.",
+      "answeredAt": "2026-11-15T18:13:32.552Z"
+    },
+    {
+      "n": 20,
+      "recordId": "Np.density",
+      "element": "Neptunium",
+      "field": "Density",
+      "shown": "20.25 g/cm³",
+      "category": "single",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T18:13:43.270Z"
+    },
+    {
+      "n": 21,
+      "recordId": "Es.boilingPoint",
+      "element": "Einsteinium",
+      "field": "Boiling point",
+      "shown": "996.0 °C",
+      "category": "single",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T18:13:47.485Z"
+    },
+    {
+      "n": 22,
+      "recordId": "No.atom.neutrons",
+      "element": "Nobelium",
+      "field": "Neutrons",
+      "shown": "157",
+      "category": "derived",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T18:14:52.880Z"
+    },
+    {
+      "n": 23,
+      "recordId": "Bh.classification",
+      "element": "Bohrium",
+      "field": "Metal / non-metal / semi-metal",
+      "shown": "Metal",
+      "category": "uncertain",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T18:14:56.682Z"
+    },
+    {
+      "n": 24,
+      "recordId": "Ds.state",
+      "element": "Darmstadtium",
+      "field": "State at room temperature",
+      "shown": "Expected to be a Solid",
+      "category": "uncertain",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T18:14:59.218Z"
+    },
+    {
+      "n": 25,
+      "recordId": "Og.classification",
+      "element": "Oganesson",
+      "field": "Metal / non-metal / semi-metal",
+      "shown": "Non-metal",
+      "category": "uncertain",
+      "verdict": "match",
+      "note": "",
+      "answeredAt": "2026-11-15T18:15:01.625Z"
+    }
+  ]
+}
