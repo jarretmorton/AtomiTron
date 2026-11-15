@@ -1,7 +1,7 @@
-# Phase 3 plan: reactions (draft for review)
+# Phase 3 plan: reactions
 
-*Drafted 2026-11-12 from a survey of real PubChem and NIST WebBook data. Nothing
-here is in the app; it's for deciding what phase 3 builds first.*
+*Drafted 2026-11-12 from a survey of real PubChem and NIST WebBook data.
+Decisions settled 2026-11-15 (section 4). Nothing here is in the app yet.*
 
 ## 1. Worked examples from real data
 
@@ -184,7 +184,7 @@ Grouped by what each one teaches.
 | # | Reaction | Data | Notes |
 |---|---|---|---|
 | 40 | Cl₂ + 2 NaBr → 2 NaCl + Br₂ | check | ⚠ halogens |
-| 41 | 2 Al + Fe₂O₃ → Al₂O₃ + 2 Fe | check (Al₂O₃) | Thermite ⚠ **your call whether to include** |
+| 41 | Cl₂ + 2 KBr → 2 KCl + Br₂ | check | ⚠ halogens. Replaces thermite, which is left out (decided 2026-11-15) |
 
 ### I. Life: photosynthesis and respiration
 
@@ -205,16 +205,33 @@ Grouped by what each one teaches.
 | 49 | Cu + H₂O | Copper doesn't react with water |
 | 50 | N₂ + O₂ at room temperature | Only with a big energy input (see 19) |
 
-## 4. Decisions for you
+## 4. Decisions (settled 2026-11-15)
 
-1. **The list:** keep, cut or add reactions. 50 is the spec's "about 50".
-2. **Hazardous classics:** keep sodium, potassium and lithium with water,
-   hydrogen with oxygen, and chlorine reactions, with hazard badges
-   (textbook level only)? And thermite (#41): include or leave out?
-3. **Blocked reactions** (#35, #38, limestone): ship them without an energy
-   layer, or leave them out until a whitelisted source covers them?
-4. **Rule #5, qualified values** (decomposes, sublimes, solution
-   concentrations): needed before compound properties can ship.
-5. **Hazard statements:** OK to show only those most notifiers report?
-6. **Reactions in water** (acids, bases, solutions): agree to leave them for
-   a later batch?
+1. **The list:** the draft list above, with thermite replaced. Data coverage
+   is checked for every entry before building, and any that turn out to be
+   blocked are reported first.
+2. **Hazardous classics:** included, each with a hazard badge and a "why this
+   is dangerous" note at textbook level: the alkali metals with water,
+   hydrogen with oxygen, and the chlorine reactions. **Thermite is left
+   out.**
+3. **Reactions with no energy data** (limestone, #35 and #38): they ship
+   without energy numbers. The energy layer says plainly that the sources
+   have no verified value.
+4. **Qualified and approximate values:** shown with their qualifier, exactly
+   as the source gives it ("Sublimes at ...", "Decomposes", "(diamond)",
+   "about 7 g/cm³"). A qualified value is never shown without its label, and
+   it's only cross-checked against values with the same qualifier. This
+   settles the rule deferred from phase 2, so it also applies to the element
+   values left out then (carbon, phosphorus, astatine).
+5. **Hazard statements:** a GHS statement is shown only when more than half
+   of PubChem's notifiers report it, using PubChem's own percentages.
+6. **Reactions in water** (acids, bases, solutions): left for a later batch.
+
+**Arsenic still needs its own fix.** Its melting point ships as 817 °C from
+Jefferson Lab, which gives no qualifier. Los Alamos gives "~817 °C". Neither
+source says "under pressure", so the qualifier rule alone doesn't correct
+it. Under the new rule Los Alamos's approximate value no longer counts as a
+second plain value, and arsenic's sources also give a lower boiling
+(sublimation) point of about 603 to 614 °C. The existing check that a
+melting point must be below the boiling point should then drop the 817 °C
+value. That's to be confirmed when the rule is built.
