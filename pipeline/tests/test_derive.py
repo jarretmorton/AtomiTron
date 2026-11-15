@@ -5,6 +5,7 @@ import unittest
 
 from pipeline.derive import (
     DerivationError, derive, electron_count, normalize_configuration, parse_configuration, shell_counts,
+    source_order_configuration,
 )
 
 
@@ -34,6 +35,13 @@ class Configurations(unittest.TestCase):
         self.assertEqual(normalize_configuration("[Xe]6s24f145d106p2"), "[Xe] 4f14 5d10 6s2 6p2")
         self.assertEqual(normalize_configuration("[Rn] 7s2 7p6 5f14 6d10(predicted)"), "[Rn] 5f14 6d10 7s2 7p6")
         self.assertEqual(normalize_configuration("1s2"), "1s2")
+
+
+    def test_source_order(self):
+        self.assertEqual(source_order_configuration("[Kr]5s24d2"), "[Kr] 5s2 4d2")
+        self.assertEqual(source_order_configuration("[Rn] 7s2 7p6 5f14 6d10(predicted)"), "[Rn] 7s2 7p6 5f14 6d10")
+        self.assertEqual(source_order_configuration("1s1"), "1s1")
+        self.assertIsNone(source_order_configuration("garbage"))
 
 
 class Rules(unittest.TestCase):

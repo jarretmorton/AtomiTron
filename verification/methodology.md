@@ -149,7 +149,7 @@ Each run's drafts, claims, verdicts and report are kept in
 | Atomic weight given as an interval | Both ends equal. Stored as a range, which is *not* marked uncertain, because it varies in nature |
 | Melting point, boiling point (°C) | Equal to the primary contributor's value, which must be corroborated (section 5) |
 | Density, electronegativity | Equal to the source's stated digits |
-| Electron configuration | Same subshell occupancy after parsing, rather than string equality, so `[Ar]4s13d10` and `[Ar] 3d10 4s1` match |
+| Electron configuration | Same subshell occupancy after parsing, rather than string equality, so `[Ar]4s13d10` and `[Ar] 3d10 4s1` match. The app lists subshells shell by shell. Where the source orders them differently, its own spelling is stored and shown beside the value, and the build checks the two mean the same *(added after checkpoint 1)* |
 | Text (state, history, uses) | All three verifier runs agree the cited section supports every part of the statement |
 
 **Temperatures** are stored in °C, using the value the contributor itself
@@ -271,6 +271,18 @@ code ([app/src/data/derive.ts](../app/src/data/derive.ts)), the pipeline uses
 it to compute the value, and the build recomputes it from the verified inputs
 on every run. A derived fact's citation links to a LibreTexts page explaining
 the rule, and its inputs link to their own sources.
+
+*(Added after checkpoint 1, approved 2026-11-15.)* The checkpoint 1 spot
+review found that shell and valence counts couldn't be confirmed from those
+citations alone. So:
+- **Shell counts cite LibreTexts reference table A1** wherever it covers the
+  element (103 elements). The table prints the electrons in each shell, so
+  the count can be read straight off the source. The derivation stays as a
+  cross-check that the build recomputes, and a disagreement between the two
+  drops the count. Elements 105 to 118 aren't in the table, so they keep the
+  rule's explanation page as their citation.
+- **The page shows the working** for shell and valence counts: each shell's
+  subshells and their sum.
 
 | Value | Rule |
 |---|---|

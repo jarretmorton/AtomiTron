@@ -67,6 +67,11 @@
           "description": "The original contributor that the whitelisted page credits for this value, e.g. \"IUPAC CIAAW\" or \"Jefferson Lab\". Display only. The citation is still the url.",
           "type": "string",
           "minLength": 1
+        },
+        "asWritten": {
+          "description": "The value as the source spells it, when the app's spelling differs, e.g. an electron configuration the source lists in another order (\"[Kr] 5s2 4d2\" for \"[Kr] 4d2 5s2\"). Shown beside the value so a reader can match it to the source. The gate checks it means the same as the value.",
+          "type": "string",
+          "minLength": 1
         }
       }
     },
@@ -87,7 +92,7 @@
       }
     },
     "derivation": {
-      "description": "Present when the value is calculated from other verified facts rather than read from a page. The rule is implemented in code (app/src/data/derive.ts), and the build recomputes it from the inputs on every run. For a derived fact, source.url points to a page explaining the rule.",
+      "description": "Present when the value is calculated from other verified facts rather than read from a page. The rule is implemented in code (app/src/data/derive.ts), and the build recomputes it from the inputs on every run. For a derived fact, source.url points to a page that states the value itself where one exists (LibreTexts table A1 for shell counts), and otherwise to a page explaining the rule.",
       "type": "object",
       "required": ["rule", "inputs"],
       "additionalProperties": false,

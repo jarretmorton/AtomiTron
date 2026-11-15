@@ -129,6 +129,24 @@ def build_claims(run: Path, with_concepts: bool = False) -> None:
     print(f"{len(claims)} claims for verification ({len(rejected)} rejected by code first) -> {run / 'claims.json'}")
 
 
+def concept_claims(run: Path) -> None:
+    """Claims for the explanation sentences that are new or reworded: those
+    without a passing record for their exact text and page. Explanations
+    that already have one are left alone."""
+    src = sources()
+    have = {r["id"]: r for r in load_json(CONCEPT_RECORDS)["items"]} if CONCEPT_RECORDS.exists() else {}
+    claims = []
+    for c in load_json(SOURCES_DIR / "claims-concepts.json"):
+        r = have.get(c["id"])
+        if not (r and r["result"] == "pass" and r["claimedValue"] == c["text"] and r["sourceUrl"] == src[c["passage"]]["url"]):
+            claims.append(c)
+    run.mkdir(parents=True, exist_ok=True)
+    write_json(run / "claims.json", claims)
+    write_json(run / "drafts.json", {"elements": {}})
+    write_json(run / "rejected-before-verification.json", [])
+    print(f"{len(claims)} explanation(s) to verify: {[c['id'] for c in claims]}")
+
+
 # ---- evaluate -----------------------------------------------------------------
 
 
@@ -229,7 +247,7 @@ def evaluate(run: Path) -> None:
             existing.pop(cid, None)
             if r["pass"]:
                 existing[cid] = record(cid, f"concept:{cid.split('.', 1)[1]}", "/text", r["claim"]["text"], r)
-    write_json(CONCEPT_RECORDS, {"schemaVersion": 2, "kind": "verification-records", "items": sorted(existing.values(), key=lambda x: x["id"])})
+    write_json(CONCEPT_RECORDS, {"schemaVersion": 3, "kind": "verification-records", "items": sorted(existing.values(), key=lambda x: x["id"])})
 
     # Report.
     rejected = load_json(run / "rejected-before-verification.json")
@@ -330,5 +348,7 @@ if __name__ == "__main__":
         run_dir = Path(sys.argv[2]).resolve()
         if cmd == "claims":
             build_claims(run_dir, with_concepts="--with-concepts" in sys.argv[3:])
+        elif cmd == "concept-claims":
+            concept_claims(run_dir)
         else:
             evaluate(run_dir)

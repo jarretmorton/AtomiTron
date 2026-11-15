@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "kind": "verification-records",
   "items": [
     {
@@ -16,7 +16,7 @@
       "retrievedValue": 91,
       "evidence": "RecordNumber 91",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -37,7 +37,7 @@
       "retrievedValue": "Pa",
       "evidence": "Pa",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -65,7 +65,7 @@
       "retrievedValue": "Protactinium",
       "evidence": "Protactinium",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -86,7 +86,7 @@
       "retrievedValue": 7,
       "evidence": "7",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -108,7 +108,7 @@
       "retrievedValue": 231.03588,
       "evidence": "231.035 88(1)",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -146,7 +146,7 @@
       "retrievedValue": "[Rn] 5f2 6d1 7s2",
       "evidence": "[Rn]7s25f26d1",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -175,7 +175,7 @@
       "retrievedValue": 1.5,
       "evidence": "1.5 (Pauling Scale)",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -197,7 +197,7 @@
       "retrievedValue": "Solid",
       "evidence": "Solid",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -218,7 +218,7 @@
       "retrievedValue": "Metal",
       "evidence": "Metal",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -240,7 +240,7 @@
       "retrievedValue": 4027.0,
       "evidence": "4027°C",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -262,7 +262,7 @@
       "retrievedValue": 15.37,
       "evidence": "15.37 grams per cubic centimeter",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -284,7 +284,7 @@
       "retrievedValue": 231,
       "evidence": "231Pa",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -305,7 +305,7 @@
       "retrievedValue": 231.03588,
       "evidence": "231.035 88(1)",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -333,7 +333,7 @@
       "retrievedValue": 1.0,
       "evidence": "1",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -362,7 +362,7 @@
       "retrievedValue": 32.65,
       "evidence": "32.65 ky ± 0.2",
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -381,7 +381,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 91,
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -401,7 +401,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_Their_Number_of_Protons",
       "retrievedValue": 91,
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -421,7 +421,7 @@
       "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies",
       "retrievedValue": 140,
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -446,7 +446,7 @@
         2
       ],
       "unit": null,
-      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations",
+      "sourceUrl": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Atomic_and_Molecular_Properties/A1%3A_Atomic_Electron_Configurations",
       "retrievedValue": [
         2,
         8,
@@ -457,13 +457,20 @@
         2
       ],
       "result": "pass",
-      "checkedAt": "2026-11-13T04:04:12Z",
+      "checkedAt": "2026-11-15T18:28:44Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
       },
       "verifier": "pipeline/elements.py",
-      "notes": "shells-from-configuration from Pa.electronConfiguration"
+      "notes": "shells-from-configuration from Pa.electronConfiguration; matches the shell row LibreTexts table A1 prints for element 91",
+      "corroboration": [
+        {
+          "sourceUrl": "https://chem.libretexts.org/Ancillary_Materials/Reference/Reference_Tables/Atomic_and_Molecular_Properties/A1%3A_Atomic_Electron_Configurations",
+          "upstream": "LibreTexts Chemistry",
+          "value": "2, 8, 18, 32, 20, 9, 2"
+        }
+      ]
     },
     {
       "id": "Pa.discovery.story.0",

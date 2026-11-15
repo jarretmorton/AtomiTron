@@ -34,6 +34,8 @@ export interface Fact<V extends FactValue = FactValue> {
     retrieved: string;
     /** Original contributor the page credits, e.g. "IUPAC CIAAW". Display only. */
     via?: string;
+    /** The value as the source spells it, when the app's spelling differs. */
+    asWritten?: string;
   };
   verification: {
     status: VerificationStatus;
@@ -130,7 +132,7 @@ export interface VerificationRecord {
 export type DatasetKind = 'elements' | 'open-questions' | 'verification-records';
 
 export interface Dataset<K extends DatasetKind = DatasetKind> {
-  schemaVersion: 2;
+  schemaVersion: 3;
   kind: K;
   items: K extends 'elements'
     ? Element[]

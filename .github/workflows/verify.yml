@@ -20,6 +20,7 @@ on:
         options:
           - reverify-pilot
           - draft-and-verify
+          - verify-explanations
         default: reverify-pilot
       elements:
         description: "For draft-and-verify: element symbols separated by spaces, or 'remaining' (every element without history and uses yet, about $20–25)"
@@ -51,7 +52,7 @@ jobs:
 
       - name: Collect the source passages
         env:
-          ELEMENTS: ${{ inputs.task == 'reverify-pilot' && 'H C N O Na Mg Cl Fe Cu Au' || inputs.elements }}
+          ELEMENTS: ${{ inputs.task == 'reverify-pilot' && 'H C N O Na Mg Cl Fe Cu Au' || inputs.task == 'verify-explanations' && '--concepts-only' || inputs.elements }}
         run: python -m pipeline.text_sources $ELEMENTS
 
       - name: Re-verify the pilot statements through the Claude API
@@ -80,6 +81,20 @@ jobs:
           python -m pipeline.text_facts evaluate "$RUN"
           python -m pipeline.text_facts apply
           echo "No comparison for a first draft: see $RUN/report.md" > "$RUN/comparison.md"
+
+      # Only explanations that are new or reworded (no passing record for
+      # their exact text); a few cents.
+      - name: Verify new or reworded explanations through the Claude API
+        if: inputs.task == 'verify-explanations'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          RUN="verification/agent-runs/$(date -u +%F)-api-explanations"
+          echo "RUN=$RUN" >> "$GITHUB_ENV"
+          python -m pipeline.text_facts concept-claims "$RUN"
+          python -m pipeline.agents_api verify "$RUN"
+          python -m pipeline.text_facts evaluate "$RUN"
+          cp "$RUN/report.md" "$RUN/comparison.md"
 
       # Results are pushed before the gate, and even if a step after the API
       # calls fails, so paid-for work is never lost: a gate failure is then

@@ -60,6 +60,33 @@ They went live early, at your request, so you can review them on the iPad.
 They were verified by subagents rather than the Claude API pipeline. The
 methodology section describing this procedure is still marked for review.
 
+## Checkpoint 1: spot review (done 2026-11-15)
+
+The record is [verification/spot-reviews/checkpoint-1.md](../verification/spot-reviews/checkpoint-1.md).
+
+- **Result:** 24 of 25 sampled facts were checked by hand. The reviewer
+  agreed with the pipeline on 21 (88%). One fact had been removed from the
+  app before the review.
+- **Three "Doesn't match" findings,** all derived counts: sulfur's valence
+  electrons, and the shell counts of zirconium and neptunium. No value was
+  wrong. The finding is that a reader can't confirm these counts from what
+  the app cites: the working isn't shown, and the app writes configurations
+  in a different order than PubChem does.
+- **Category re-check** (required by spec 10.4a):
+  - All 103 shell counts that LibreTexts table A1 covers match its printed
+    shell rows.
+  - All 44 valence counts match an independent group-number rule.
+- **Four fixes, approved and built 2026-11-15:**
+  1. Shell counts cite LibreTexts table A1 directly (103 elements); the
+     derivation stays as the build's cross-check.
+  2. The page shows the working for shell and valence counts.
+  3. Where PubChem orders a configuration differently, the page shows its
+     spelling beside the app's (87 elements; new `source.asWritten` field,
+     `schemaVersion` 3).
+  4. A new explanation of how to read a configuration, verified through the
+     Claude API (the `verify-explanations` task, which checks only new or
+     reworded explanations).
+
 ## Phase 2, part 2: history and uses (pilot, live for review)
 
 Prototyped with Claude Code subagents, and published early on 2026-11-12 at
@@ -77,7 +104,8 @@ early-publication exception.
 - **Earlier runs:** two that day were superseded. One ran before the
   discovery-year check (iron's "ancient" claim passed); the other ran
   before PR #9 was merged.
-- **API spend so far:** about $43.00. That includes run #4 (the 108
+- **API spend so far:** about $43.25 (including $0.24 on 2026-11-15 for the
+  new configuration explanation). That includes run #4 (the 108
   elements, about $17.62), whose results were lost; run #5 (about $2.83),
   which stopped early; and run #6 (about $17.00), the one published.
 
@@ -295,8 +323,8 @@ Still open from requirements section 9:
    - ~~scale to the remaining 108 elements~~ Done in run #6 (PR from
      `verification/run-43564971048`). Every element now has history and
      uses text verified through the Claude API.
-3. **Checkpoint 1:** a human spot review of about 25 sampled facts, logged
-   in `verification/spot-reviews/`.
+3. ~~Checkpoint 1.~~ Done 2026-11-15: see the section above. Its four
+   fixes are built.
 
 ## Picking it back up
 

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "kind": "elements",
   "items": [
     {
@@ -95,7 +95,8 @@
         "source": {
           "url": "https://pubchem.ncbi.nlm.nih.gov/element/112#section=Electron-Configuration",
           "retrieved": "2026-11-10",
-          "via": "Los Alamos National Laboratory"
+          "via": "Los Alamos National Laboratory",
+          "asWritten": "[Rn] 7s2 5f14 6d10"
         },
         "verification": {
           "status": "pass",

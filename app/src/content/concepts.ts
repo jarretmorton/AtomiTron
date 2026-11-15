@@ -33,6 +33,10 @@ export const CONCEPTS = {
     text: 'Isotopes are atoms of the same element with different numbers of neutrons.',
     url: ISOTOPES,
   },
+  configuration: {
+    text: 'An electron configuration lists the shell and subshell labels, with a superscript giving the number of electrons in that subshell.',
+    url: ORBITALS,
+  },
   shells: {
     text: 'Orbitals that have the same principal quantum number form a shell, and each shell is divided into subshells.',
     url: ORBITALS,

@@ -89,6 +89,21 @@ def normalize_configuration(text: str) -> str | None:
     return " ".join(parts)
 
 
+def source_order_configuration(text: str) -> str | None:
+    """'[Kr]5s24d2' -> '[Kr] 5s2 4d2': the same subshells in the order the
+    source lists them, spaced out, without markers such as '(predicted)'.
+    Shown beside the app's shell-order spelling so a reader can match it to
+    the source."""
+    if parse_configuration(text) is None:
+        return None
+    s = re.sub(r"[\s\u200b]+", "", re.sub(r"\(?(predicted|calculated)\)?|probably", "", text, flags=re.I))
+    core = re.match(r"^\[(He|Ne|Ar|Kr|Xe|Rn)\]", s)
+    body = _body(s[core.end():] if core else s, 0)
+    if body is None:
+        return None
+    return " ".join(([f"[{core.group(1)}]"] if core else []) + [f"{k}{v}" for k, v in body])
+
+
 def electron_count(occ: dict[str, int]) -> int:
     return sum(occ.values())
 
