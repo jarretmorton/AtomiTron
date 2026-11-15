@@ -1,4 +1,4 @@
-/** package.json version, injected by vite.config.ts. */
+/** major.minor from package.json plus the commit count, injected by vite.config.ts. */
 declare const __APP_VERSION__: string;
 
 declare module 'virtual:element-index' {

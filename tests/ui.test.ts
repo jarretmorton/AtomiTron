@@ -90,3 +90,12 @@ describe('3D atom layout', () => {
     expect(pts.flat().every(Number.isFinite)).toBe(true);
   });
 });
+
+describe('color mode setting', () => {
+  it('steps System, Light, Dark and back to System', async () => {
+    const { nextSetting } = await import('../app/src/theme');
+    expect(nextSetting('system')).toBe('light');
+    expect(nextSetting('light')).toBe('dark');
+    expect(nextSetting('dark')).toBe('system');
+  });
+});

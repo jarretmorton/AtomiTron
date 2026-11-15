@@ -21,7 +21,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script>
-  // Apply a saved light/dark choice before first paint, to avoid a flash.
+  // Apply a saved Light or Dark choice before first paint, to avoid a flash.
+  // No saved choice means System: follow the device.
   try {
     var t = localStorage.getItem('atomitron.theme');
     if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
@@ -36,7 +37,7 @@
         <span class="wordmark">AtomiTron</span>
         <span id="app-version" class="version-tag"></span>
       </a>
-      <button id="theme-btn" class="icon-btn" type="button" aria-label="Switch to dark mode"></button>
+      <button id="theme-btn" class="icon-btn" type="button" aria-label="Color mode"></button>
     </div>
     <nav class="tabs" aria-label="Sections">
       <a class="tab" href="#/table" data-route="table">Table</a>

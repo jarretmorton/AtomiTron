@@ -158,6 +158,22 @@ the same shell model: [app/src/ui/atom3d.ts](../app/src/ui/atom3d.ts).
   nucleons) was checked in a headless browser: it's dense but renders. Worth
   a spin on the iPad to check it stays smooth.
 
+## Color mode: System, Light, Dark
+
+Since 2026-11-15 the header button shows the current color mode and steps
+System → Light → Dark ([app/src/theme.ts](../app/src/theme.ts)). System
+follows the iPad's own setting and is the default; choosing it clears the
+saved choice. Checked in headless Chromium, not yet on the real iPad.
+
+## The version number counts itself
+
+Since 2026-11-15 the version in the header is `major.minor` from
+`package.json` plus the number of commits being built (for example
+`v0.1.40`), worked out in [vite.config.ts](../vite.config.ts). Every merge to
+`main` raises it, so small changes show up as a new number without anyone
+bumping it. The deploy workflow fetches the full history so the count is
+right.
+
 ## What was built in phase 2
 
 | Area | Files | What it does |
