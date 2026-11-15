@@ -47,7 +47,7 @@ function scenario(
   mkdirSync(join(dir, 'verified'));
   mkdirSync(join(dir, 'records'));
   const write = (p: string, kind: string, items: unknown[]) =>
-    writeFileSync(join(dir, p), JSON.stringify({ schemaVersion: 3, kind, items }));
+    writeFileSync(join(dir, p), JSON.stringify({ schemaVersion: 4, kind, items }));
   write('verified/open-questions.json', 'open-questions', [q]);
   write('verified/011-Na.json', 'elements', [e]);
   write('records/records.json', 'verification-records', records);

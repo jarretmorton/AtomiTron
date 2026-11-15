@@ -235,3 +235,43 @@ second plain value, and arsenic's sources also give a lower boiling
 (sublimation) point of about 603 to 614 °C. The existing check that a
 melting point must be below the boiling point should then drop the 817 °C
 value. That's to be confirmed when the rule is built.
+
+## 5. Data coverage check (2026-11-15)
+
+Every compound in the list was looked up in PubChem by name (to get its CID)
+and in the NIST WebBook by formula or exact ID, and the formulas were
+compared. This checks only that the data exists. The values themselves are
+extracted and verified when the pipeline is built.
+
+**Result: 33 of 35 compounds have a reviewed formation enthalpy in the
+WebBook for the phase the reaction needs.**
+
+| Coverage | Compounds |
+|---|---|
+| Two reviewed compilations (CODATA and JANAF), which agree | H₂O, CO₂, CO, SO₂, HCl, HBr, NH₃, MgO, CaO, Al₂O₃, HgO |
+| Two reviews that differ slightly | CH₄ (−74.87 and −74.6 kJ/mol) |
+| One review | NaCl, KCl, LiCl, MgCl₂, CaCl₂, NaBr, KBr, Na₂O, CuO, Fe₂O₃, ZnO, NO, NaOH, KOH, LiOH, Ca(OH)₂, FeS, NH₄Cl, C₂H₆ |
+| Measured values only, no review | C₃H₈ (two measurements, 0.9 kJ/mol apart), glucose (see below) |
+| **No formation enthalpy** | **CaCO₃, ZnS** |
+
+What this means for the list:
+
+- **Blocked, so they ship without energy numbers** (decision 3): limestone
+  (#35 and #38), and now also **zinc with sulfur (#32)**, because the
+  WebBook has no entry for zinc sulfide.
+- **Glucose (#42 and #43, photosynthesis and respiration)** needs care. The
+  WebBook has no value under "α-D-Glucose". It has one measurement each for
+  α-D-glucopyranose (−1274.5 kJ/mol) and β-D-glucopyranose (−1268.3), both
+  from 1938. These two reactions should cite the α form by its exact ID and
+  say the value is a single measurement, or ship without energy numbers.
+  **Decided 2026-11-15: ship with a "single measurement" label.**
+- **Several formulas return more than one entry** (H₂O, HCl and NH₃ also
+  list their deuterium versions; C₆H₁₂O₆ lists eight sugars). This confirms
+  that every substance must be pinned to an exact WebBook ID.
+- **Single-review values** have no second source to cross-check
+  against. Where a measured reaction or combustion enthalpy exists, it
+  serves as the cross-check (as for methane).
+
+The elements' own formation enthalpies are zero in their standard states by
+definition. That definition, and each element's standard state, will be
+cited from LibreTexts and PubChem like any other fact.

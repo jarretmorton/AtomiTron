@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:atomitron:schema:reaction",
+  "title": "Reaction",
+  "description": "What happens when the chosen elements or compounds are combined (spec 3.3): a reaction with its five layers, or an explanation of why nothing happens. Every claim is a Fact. The balanced equation and the energy arithmetic are checked by the build.",
+  "type": "object",
+  "required": ["id", "title", "inputs", "kind", "summary"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^reaction:[a-z0-9]+(-[a-z0-9]+)*$" },
+    "title": { "description": "Short label, e.g. \"Sodium and chlorine\". Not a claim.", "type": "string", "minLength": 1 },
+    "inputs": {
+      "description": "What the user picks in Combine mode to find this entry: element and compound IDs.",
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^(element:[A-Z][a-z]?|compound:cid-[1-9][0-9]*)$" }
+    },
+    "kind": { "enum": ["reaction", "no-reaction"] },
+    "reactants": { "$ref": "#/$defs/speciesList" },
+    "products": { "$ref": "#/$defs/speciesList" },
+    "summary": {
+      "description": "Layer 1: what forms, in plain language. For a no-reaction entry: what the user sees instead.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "urn:atomitron:schema:fact" }
+    },
+    "whyNot": {
+      "description": "For a no-reaction entry: why the substances don't react.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "urn:atomitron:schema:fact" }
+    },
+    "bonding": {
+      "description": "Layer 2: the kind of bond that forms, and why.",
+      "type": "object",
+      "required": ["type", "why"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "allOf": [
+            { "$ref": "urn:atomitron:schema:fact" },
+            { "type": "object", "properties": { "value": { "enum": ["ionic", "covalent", "metallic"] } } }
+          ]
+        },
+        "why": { "type": "array", "minItems": 1, "items": { "$ref": "urn:atomitron:schema:fact" } }
+      }
+    },
+    "energy": {
+      "description": "Layers 3 and 5: the reaction enthalpy and what starts the reaction. The enthalpy is derived (rule reaction-enthalpy) from the species' formation enthalpies, and the app shows the arithmetic. When a species has no formation enthalpy in the sources, the enthalpy is omitted and `unavailable` says why.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enthalpy": { "$ref": "urn:atomitron:schema:fact" },
+        "direction": {
+          "description": "Derived from the sign of the enthalpy (rule energy-direction).",
+          "allOf": [
+            { "$ref": "urn:atomitron:schema:fact" },
+            { "type": "object", "properties": { "value": { "enum": ["exothermic", "endothermic"] } } }
+          ]
+        },
+        "trigger": {
+          "description": "The kind of thing that starts the reaction (heat, a spark, a catalyst). Never amounts, temperatures to set, or steps.",
+          "$ref": "urn:atomitron:schema:fact"
+        },
+        "unavailable": {
+          "description": "Shown instead of the enthalpy when the sources have no value, e.g. \"The NIST WebBook has no formation enthalpy for calcium carbonate.\"",
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "oneOf": [
+        { "required": ["enthalpy", "direction"], "not": { "required": ["unavailable"] } },
+        { "required": ["unavailable"], "not": { "anyOf": [{ "required": ["enthalpy"] }, { "required": ["direction"] }] } }
+      ]
+    },
+    "hazard": {
+      "description": "Present for dangerous reactions: the \"why this is dangerous\" note, at textbook level. No quantities, conditions or steps; the gate rejects any digit in these notes.",
+      "type": "object",
+      "required": ["why"],
+      "additionalProperties": false,
+      "properties": {
+        "why": { "type": "array", "minItems": 1, "items": { "$ref": "urn:atomitron:schema:fact" } }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "kind": { "const": "reaction" } } },
+      "then": { "required": ["reactants", "products", "energy"], "not": { "required": ["whyNot"] } },
+      "else": { "required": ["whyNot"], "not": { "anyOf": [{ "required": ["reactants"] }, { "required": ["products"] }, { "required": ["energy"] }] } }
+    }
+  ],
+  "$defs": {
+    "speciesList": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["substance", "coefficient", "phase"],
+        "additionalProperties": false,
+        "properties": {
+          "substance": { "type": "string", "pattern": "^compound:cid-[1-9][0-9]*$" },
+          "coefficient": { "type": "integer", "minimum": 1 },
+          "phase": { "$ref": "urn:atomitron:schema:compound#/$defs/phase" }
+        }
+      }
+    }
+  }
+}

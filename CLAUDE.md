@@ -87,7 +87,7 @@ with the Python pipeline). It's mirrored by the TypeScript types in
 
 ```
 app/                 the web app (Vite root): index.html, public/ icons, src/
-data/schema/         JSON Schema for facts, elements, open questions, verification records
+data/schema/         JSON Schema for facts, elements, compounds, reactions, open questions, verification records
 data/verified/       verified element and reaction JSON; the ONLY data normal mode loads
 data/spot-the-error/ planted errors, kept separate
 pipeline/            Python orchestrator, drafting, verifier and evaluator agents and prompts

@@ -392,3 +392,100 @@ Anyone with an API key can re-run it with
 The project's own runs use the "Run verification" GitHub Actions workflow.
 That workflow pushes its results to a branch for review, never straight to
 the app.
+
+## 14. Compounds and reactions
+
+> **Draft for review (phase 3, 2026-11-15).** The schema and the build checks
+> below exist. The pipeline that fills them in doesn't yet, so no compound or
+> reaction data has been verified.
+
+### Substances
+
+Every substance in a reaction is a **compound entry**, including elements as
+they actually occur (chlorine gas Cl₂, sodium metal Na). Each is pinned to
+two exact IDs: its PubChem CID and its NIST WebBook ID. Lookups are by ID,
+never by name or formula, because those return the wrong entry too often
+(a formula search for glucose returns eight sugars).
+
+| Field | Source | Method |
+|---|---|---|
+| Name, formula | PubChem | extract. The app writes formulas the usual way (NaCl); the source's spelling (ClNa) is kept beside it, and the build checks both hold the same atoms |
+| State at 25 °C | PubChem | to be settled with the pipeline: derived from verified melting and boiling points where both exist, otherwise agent-checked from PubChem's description |
+| Formation enthalpy, per phase | NIST WebBook | extract, by exact ID (rules below) |
+| Melting and boiling points, appearance | PubChem | extract or agent, with qualifiers (below) |
+| Uses | PubChem | agent, same procedure and safety screen as element uses |
+| Hazard statements | PubChem GHS classification | extract (rule below) |
+
+### Formation enthalpies
+
+- **Reviewed values first.** The WebBook marks values from evaluated
+  compilations as "Review" (CODATA: Cox, Wagman et al. 1984; JANAF: Chase
+  1998). A reviewed value is used when there is one.
+- **Two reviews must agree** within their stated uncertainty, by the rule in
+  section 4. The CODATA value is shown, as the one that states its
+  uncertainty.
+- **One review** ships as a single-source value.
+- **No review, only measurements:** the value ships with the qualifier
+  "single measurement" (or "measured values" where there are several that
+  agree). Glucose is the known case (decided 2026-11-15).
+- **No value:** the substance has no formation enthalpy, and any reaction
+  that needs it ships without energy numbers and says so (decided
+  2026-11-15). Calcium carbonate and zinc sulfide are the known cases.
+- **Elements in their standard state** have a formation enthalpy of zero by
+  definition. That is a derived fact (rule
+  `zero-for-element-in-standard-state`) resting on the substance's verified
+  standard state, and it cites the LibreTexts page that states the
+  definition.
+
+### Reaction enthalpy
+
+The reaction enthalpy is derived (rule `reaction-enthalpy`): each species'
+formation enthalpy times its coefficient, products minus reactants, for the
+equation as written.
+
+- The arithmetic is done in whole numbers, so there is no floating-point
+  drift.
+- The result is rounded to the decimal places of the least precise input, so
+  it never claims more precision than its inputs. An element's zero is exact
+  and doesn't count.
+- Exothermic or endothermic is derived from the sign (rule
+  `energy-direction`).
+- The app shows the arithmetic, with every input linked to its source.
+- Where the WebBook lists a measured enthalpy for the same reaction (a
+  combustion enthalpy, for example), the pipeline compares it with the
+  calculated value as a cross-check.
+
+### What the build checks for every reaction
+
+- **Every species is a verified compound.**
+- **The equation balances:** atoms are counted on both sides from the
+  verified formulas.
+- **The coefficients are the smallest whole numbers.**
+- **The energy belongs to the equation:** the enthalpy's inputs are exactly
+  the formation enthalpies of the equation's species, each in the species'
+  phase and weighted by its coefficient. The build then recomputes the sum.
+- **Missing energy is stated:** a reaction either has a derived enthalpy or
+  says why it has none.
+
+### Qualified values (decided 2026-11-15)
+
+A value that holds only for a condition or form, or that the source marks as
+approximate, carries a `qualifier` exactly as the source gives it: "sublimes",
+"decomposes", "diamond", "about". The app never shows such a value without
+its qualifier, and it is only cross-checked against values with the same
+qualifier. This replaces the earlier rule that left these values out, for
+elements as well as compounds.
+
+### Hazards
+
+- **Statements** come from PubChem's GHS classification. A statement is shown
+  only when more than half of PubChem's notifiers report it (decided
+  2026-11-15), with that share stored beside it.
+- **"Why this is dangerous" notes** are agent-checked text, at textbook
+  level. They go through the same safety screen as other text, and the build
+  rejects any digit in them: no quantities, concentrations, temperatures or
+  steps.
+- **What starts a reaction** names only the kind of trigger (heat, a spark, a
+  catalyst). The build rejects any digit there too.
+- **Thermite is left out** of the reaction list (decided 2026-11-15).
+

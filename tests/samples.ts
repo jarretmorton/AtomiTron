@@ -10,7 +10,7 @@ import type { Element, Fact, FactValue, OpenQuestion, VerificationRecord } from 
 const PUBCHEM_NA = 'https://pubchem.ncbi.nlm.nih.gov/element/11';
 const CONCEPT = 'https://chem.libretexts.org/Bookshelves';
 
-function fact<V extends FactValue>(value: V, recordId: string, extra: Partial<Fact<V>> = {}): Fact<V> {
+export function fact<V extends FactValue>(value: V, recordId: string, extra: Partial<Fact<V>> = {}): Fact<V> {
   return {
     value,
     unit: null,
@@ -21,7 +21,7 @@ function fact<V extends FactValue>(value: V, recordId: string, extra: Partial<Fa
   };
 }
 
-const derived = <V extends FactValue>(value: V, id: string, rule: NonNullable<Fact['derivation']>['rule'], inputs: string[]) =>
+export const derived = <V extends FactValue>(value: V, id: string, rule: NonNullable<Fact['derivation']>['rule'], inputs: string[]) =>
   fact(value, id, { source: { url: CONCEPT, retrieved: '2026-11-08' }, derivation: { rule, inputs } });
 
 export const goodFact: Fact = fact(123.4, 'vr-test-1', { unit: 'K' });
@@ -80,10 +80,10 @@ function* factsIn(node: unknown, path = ''): Generator<[string, Fact]> {
 }
 
 /** A passing record for every fact inside an entity. */
-export function recordsFor(entity: OpenQuestion | Element): VerificationRecord[] {
+export function recordsFor(entity: { id: string }): VerificationRecord[] {
   return [...factsIn(entity)].map(([field, f]) => ({
     id: f.verification.recordId,
-    subject: { entity: entity.id, field },
+    subject: { entity: entity.id as VerificationRecord['subject']['entity'], field },
     method: f.derivation ? 'derive' : 'extract',
     claimedValue: f.value,
     unit: f.unit,

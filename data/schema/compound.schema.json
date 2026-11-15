@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:atomitron:schema:compound",
+  "title": "Compound",
+  "description": "One substance that takes part in a reaction (spec 3.3): a compound such as sodium chloride, or an element as it actually occurs, such as chlorine gas (Cl2) or sodium metal. Every displayed value is a Fact. See verification/methodology.md.",
+  "type": "object",
+  "required": ["id", "name", "formula", "standardState", "formationEnthalpies", "uses", "hazards"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "description": "compound:cid-<PubChem CID>.", "type": "string", "pattern": "^compound:cid-[1-9][0-9]*$" },
+    "element": {
+      "description": "Set when this substance is a pure element (Cl2, Na): the element page it belongs to. The gate checks the formula contains only that element.",
+      "type": "string",
+      "pattern": "^element:[A-Z][a-z]?$"
+    },
+    "nistId": {
+      "description": "The substance's exact NIST WebBook ID, e.g. C7647145. Lookups are by ID, never by name: names and formulas return the wrong entry too often.",
+      "type": "string",
+      "pattern": "^C[0-9]+$"
+    },
+    "name": { "$ref": "urn:atomitron:schema:fact" },
+    "formula": {
+      "description": "The formula as chemists usually write it, e.g. \"NaCl\" or \"Ca(OH)2\". PubChem and NIST list atoms in another order (\"ClNa\"); that spelling goes in source.asWritten, and the gate checks both contain the same atoms.",
+      "$ref": "urn:atomitron:schema:fact"
+    },
+    "standardState": {
+      "description": "The substance's state at 25 °C and normal pressure.",
+      "allOf": [
+        { "$ref": "urn:atomitron:schema:fact" },
+        { "type": "object", "properties": { "value": { "enum": ["solid", "liquid", "gas"] } } }
+      ]
+    },
+    "formationEnthalpies": {
+      "description": "Standard enthalpy of formation (kJ/mol) for each phase the reactions need, from the NIST WebBook. For an element in its standard state the value is 0 by definition (rule zero-for-element-in-standard-state). Empty when the WebBook has no value.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["phase", "value"],
+        "additionalProperties": false,
+        "properties": {
+          "phase": { "$ref": "#/$defs/phase" },
+          "value": { "$ref": "urn:atomitron:schema:fact" }
+        }
+      }
+    },
+    "appearance": { "$ref": "urn:atomitron:schema:fact" },
+    "meltingPoint": { "$ref": "urn:atomitron:schema:fact" },
+    "boilingPoint": { "$ref": "urn:atomitron:schema:fact" },
+    "uses": { "type": "array", "items": { "$ref": "urn:atomitron:schema:fact" } },
+    "hazards": {
+      "description": "GHS hazard statements from PubChem, only those more than half of the notifiers report (decided 2026-11-15). Empty when there are none.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "statement", "reportedBy"],
+        "additionalProperties": false,
+        "properties": {
+          "code": { "description": "GHS code, e.g. H314.", "type": "string", "pattern": "^H[0-9]{3}$" },
+          "statement": { "$ref": "urn:atomitron:schema:fact" },
+          "reportedBy": {
+            "description": "Share of PubChem's notifiers that report this statement, in percent. Must be above 50.",
+            "allOf": [
+              { "$ref": "urn:atomitron:schema:fact" },
+              { "type": "object", "properties": { "value": { "type": "number", "exclusiveMinimum": 50, "maximum": 100 }, "unit": { "const": "%" } } }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "phase": { "description": "s solid, l liquid, g gas.", "enum": ["s", "l", "g"] }
+  }
+}

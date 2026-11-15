@@ -1,10 +1,55 @@
 # AtomiTron status
 
-*Updated 2026-11-12. Phase 1 and phase 2 part 1 are live: the periodic
-table and element pages for all 118 elements, with every fact verified and
-cited, plus a 3D atom trial on the vanadium page. The history and uses
-pilot (10 elements) is live for review on the iPad, ahead of the Claude API
-re-run.*
+*Updated 2026-11-15. Phases 1 and 2 are complete and live: all 118 elements
+with verified facts, 3D atoms, and history and uses checked through the
+Claude API. Checkpoint 1 is done and its fixes are live. Phase 3
+(reactions) has started: the plan is decided, and the schema and build
+checks are drafted for review.*
+
+## Phase 3: reactions (started 2026-11-15)
+
+On branch `claude/phase-3-reactions`. The plan and its decisions are in
+[phase-3-plan.md](phase-3-plan.md).
+
+- **Decided:** the starter list of 50 (thermite out), hazardous classics in
+  with badges, reactions without energy data ship without energy numbers,
+  qualified values shown with their qualifier, hazard statements only when
+  most notifiers report them, reactions in water later, and glucose's
+  energy shown with a "single measurement" label.
+- **Coverage check:** 33 of 35 compounds have a reviewed formation enthalpy
+  in the NIST WebBook. Calcium carbonate and zinc sulfide have none.
+- **Schema (drafted, for review):** `compound.schema.json` and
+  `reaction.schema.json`, a `qualifier` field on facts, three new
+  derivation rules, and `schemaVersion` 4.
+- **Build checks (drafted):** every equation must balance and use the
+  smallest whole-number coefficients, and a reaction's enthalpy must be
+  computed from exactly its own species and coefficients.
+- **Methodology:** section 14 is a draft for review.
+- **Pipeline, first part (2026-11-15):** `python -m pipeline.compounds`
+  reads the curated list in `data/reactions/definitions.json` (57 substances
+  with exact PubChem and NIST IDs, 43 equations and 6 no-reaction pairs). It
+  checks every formula against both sources, checks every equation
+  balances, extracts formation enthalpies and computes reaction energies.
+  - **Result:** all 57 substances resolved, and 34 of 43 reactions have a
+    computed energy. The TypeScript rules recompute all 34 to the same
+    values.
+  - **Output:** `data/staged/reactions.json` (staged, not published) and
+    `verification/reports/reactions-2026-11-15.md`.
+  - **Without energy, 9:** calcium carbonate (2) and zinc sulfide (1) have no
+    WebBook value; five happen in water (the alkali metals with water, and
+    the two halogen displacements); and magnesium oxide (see below).
+  - **Open question: magnesium oxide.** The two reviewed compilations give
+    −601.60 ± 0.30 and −601.24 kJ/mol. They differ by slightly more than the
+    stated uncertainty, so the approved rule drops the value, and magnesium
+    burning has no energy. Sulfur gas is dropped the same way but isn't
+    used.
+  - The list has 49 entries, not 50: "nitrogen and oxygen at room
+    temperature" is the same pair as the nitrogen and oxygen reaction.
+- **Not built yet:** the agent step for text facts (each substance's state,
+  summaries, bonding, hazard notes), hazard-statement extraction, and the
+  Combine screens.
+- **Arsenic's melting point** still needs its fix, to be confirmed when the
+  qualifier rule is built into the element pipeline.
 
 ## Where things stand
 

@@ -841,8 +841,8 @@ def main(argv: list[str] | None = None) -> None:
         if built.element is None:
             continue
         name = f"{z:03d}-{sym}.json"
-        write_json(DATA_DIR / name, {"schemaVersion": 3, "kind": "elements", "items": [built.element]})
-        write_json(RECORDS_DIR / name, {"schemaVersion": 3, "kind": "verification-records", "items": built.records})
+        write_json(DATA_DIR / name, {"schemaVersion": 4, "kind": "elements", "items": [built.element]})
+        write_json(RECORDS_DIR / name, {"schemaVersion": 4, "kind": "verification-records", "items": built.records})
     report = write_report(results, checked_at)
     shipped = sum(1 for *_, b in results if b.element)
     print(f"{shipped} of {len(results)} elements shipped; {sum(len(b.records) for *_, b in results)} facts; report: {report.relative_to(ROOT)}")

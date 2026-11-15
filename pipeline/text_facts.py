@@ -247,7 +247,7 @@ def evaluate(run: Path) -> None:
             existing.pop(cid, None)
             if r["pass"]:
                 existing[cid] = record(cid, f"concept:{cid.split('.', 1)[1]}", "/text", r["claim"]["text"], r)
-    write_json(CONCEPT_RECORDS, {"schemaVersion": 3, "kind": "verification-records", "items": sorted(existing.values(), key=lambda x: x["id"])})
+    write_json(CONCEPT_RECORDS, {"schemaVersion": 4, "kind": "verification-records", "items": sorted(existing.values(), key=lambda x: x["id"])})
 
     # Report.
     rejected = load_json(run / "rejected-before-verification.json")
