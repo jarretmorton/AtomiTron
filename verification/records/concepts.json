@@ -25,6 +25,28 @@
       "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
+      "id": "concept.configuration",
+      "subject": {
+        "entity": "concept:configuration",
+        "field": "/text"
+      },
+      "method": "agent",
+      "claimedValue": "An electron configuration lists the shell and subshell labels, with a superscript giving the number of electrons in that subshell.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "An electron configuration simply lists the shell and subshell labels, with a right superscript giving the number of electrons in that subshell.",
+      "evidence": "An electron configuration simply lists the shell and subshell labels, with a right superscript giving the number of electrons in that subshell.",
+      "result": "pass",
+      "checkedAt": "2026-11-15T18:32:32Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 7286357",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-15-api-explanations"
+    },
+    {
       "id": "concept.electrons",
       "subject": {
         "entity": "concept:electrons",

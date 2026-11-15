@@ -1,0 +1,8 @@
+{
+  "claims": {
+    "concept.configuration": {
+      "verdict": "supported",
+      "excerpt": "An electron configuration simply lists the shell and subshell labels, with a right superscript giving the number of electrons in that subshell."
+    }
+  }
+}
