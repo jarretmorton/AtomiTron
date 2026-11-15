@@ -249,8 +249,9 @@ WebBook for the phase the reaction needs.**
 | Coverage | Compounds |
 |---|---|
 | Two reviewed compilations (CODATA and JANAF), which agree | H₂O, CO₂, CO, SO₂, HCl, HBr, NH₃, MgO, CaO, Al₂O₃, HgO |
-| One reviewed compilation | NaCl, KCl, LiCl, MgCl₂, CaCl₂, NaBr, KBr, Na₂O, CuO, Fe₂O₃, ZnO, NO, NaOH, KOH, LiOH, Ca(OH)₂, FeS, NH₄Cl, CH₄ (plus a second review) |
-| Measured values only, no review | C₂H₆ (one review), C₃H₈ (two measurements, 0.9 kJ/mol apart), glucose (see below) |
+| Two reviews that differ slightly | CH₄ (−74.87 and −74.6 kJ/mol) |
+| One review | NaCl, KCl, LiCl, MgCl₂, CaCl₂, NaBr, KBr, Na₂O, CuO, Fe₂O₃, ZnO, NO, NaOH, KOH, LiOH, Ca(OH)₂, FeS, NH₄Cl, C₂H₆ |
+| Measured values only, no review | C₃H₈ (two measurements, 0.9 kJ/mol apart), glucose (see below) |
 | **No formation enthalpy** | **CaCO₃, ZnS** |
 
 What this means for the list:
@@ -266,7 +267,7 @@ What this means for the list:
 - **Several formulas return more than one entry** (H₂O, HCl and NH₃ also
   list their deuterium versions; C₆H₁₂O₆ lists eight sugars). This confirms
   that every substance must be pinned to an exact WebBook ID.
-- **Single-compilation values** have no second source to cross-check
+- **Single-review values** have no second source to cross-check
   against. Where a measured reaction or combustion enthalpy exists, it
   serves as the cross-check (as for methane).
 
