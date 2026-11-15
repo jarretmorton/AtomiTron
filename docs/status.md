@@ -104,7 +104,8 @@ early-publication exception.
 - **Earlier runs:** two that day were superseded. One ran before the
   discovery-year check (iron's "ancient" claim passed); the other ran
   before PR #9 was merged.
-- **API spend so far:** about $43.00. That includes run #4 (the 108
+- **API spend so far:** about $43.25 (including $0.24 on 2026-11-15 for the
+  new configuration explanation). That includes run #4 (the 108
   elements, about $17.62), whose results were lost; run #5 (about $2.83),
   which stopped early; and run #6 (about $17.00), the one published.
 
