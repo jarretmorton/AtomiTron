@@ -115,6 +115,10 @@ npm run preview    # serve dist/ locally
   needs Vite, so [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
   runs the tests, builds, and deploys `dist/`. A failing test blocks the
   deploy.
+- The version in the header counts itself: `major.minor` from `package.json`,
+  then the number of commits on the branch being built (`vite.config.ts`). It
+  goes up with every merge to `main`, so never bump the last number by hand.
+  Change `major.minor` in `package.json` only for a milestone.
 - Asset paths are relative (Vite `base: './'`), like Rock ID. Use hash routes
   (`#/element/Na`), because Pages has no fallback for single-page apps.
 - Always ship the icons. Without them, a github.io page shows whatever icon the

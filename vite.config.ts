@@ -1,9 +1,33 @@
+import { execFileSync } from 'node:child_process';
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { defineConfig, type Plugin } from 'vite';
 import { isRenderable } from './app/src/data/facts.ts';
 
-const { version } = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8'));
+const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8'));
+
+/**
+ * The version shown in the app: major.minor from package.json, then the
+ * number of commits in the history being built. Every merge to main adds at
+ * least one commit, so the number goes up with every deploy, however small,
+ * and nobody has to remember to bump it. A shallow clone would undercount, so
+ * the deploy workflow fetches the full history; without git, or with a
+ * shallow clone, the build falls back to package.json's own version.
+ */
+function appVersion(): string {
+  const git = (...args: string[]) =>
+    execFileSync('git', args, { cwd: import.meta.dirname, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+  try {
+    if (git('rev-parse', '--is-shallow-repository') !== 'false') return pkg.version;
+    const count = Number(git('rev-list', '--count', 'HEAD'));
+    if (!Number.isInteger(count) || count < 1) return pkg.version;
+    const [major, minor] = String(pkg.version).split('.');
+    return `${major}.${minor}.${count}`;
+  } catch {
+    return pkg.version;
+  }
+}
+const version = appVersion();
 const ELEMENTS_DIR = join(import.meta.dirname, 'data', 'verified', 'elements');
 
 /**
