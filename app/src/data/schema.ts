@@ -41,8 +41,10 @@ export interface Fact<V extends FactValue = FactValue> {
     status: VerificationStatus;
     recordId: string;
   };
+  /** A condition, form or caveat the value carries, e.g. "sublimes". Always shown with it. */
+  qualifier?: string;
   /** Calculated from other verified facts by a named rule (derive.ts). */
-  derivation?: { rule: DerivationRule; inputs: string[] };
+  derivation?: { rule: DerivationRule; inputs: string[]; weights?: number[] };
 }
 
 export type DerivationRule =
@@ -50,7 +52,62 @@ export type DerivationRule =
   | 'electrons-equal-atomic-number'
   | 'neutrons-from-mass-number'
   | 'shells-from-configuration'
-  | 'valence-main-group';
+  | 'valence-main-group'
+  | 'zero-for-element-in-standard-state'
+  | 'reaction-enthalpy'
+  | 'energy-direction';
+
+export type Phase = 's' | 'l' | 'g';
+
+/** A substance in a reaction: a compound, or an element as it occurs (Cl2, Na). */
+export interface Compound {
+  id: `compound:cid-${number}`;
+  /** Set for a pure element: the element page it belongs to. */
+  element?: `element:${string}`;
+  /** Exact NIST WebBook ID, e.g. C7647145. */
+  nistId?: string;
+  name: Fact<string>;
+  /** As chemists write it ("NaCl"); source.asWritten holds the source's spelling ("ClNa"). */
+  formula: Fact<string>;
+  /** State at 25 °C: "solid", "liquid" or "gas". */
+  standardState: Fact<string>;
+  /** kJ/mol, per phase. Empty when the sources have no value. */
+  formationEnthalpies: { phase: Phase; value: Fact<number> }[];
+  appearance?: Fact<string>;
+  meltingPoint?: Fact;
+  boilingPoint?: Fact;
+  uses: Fact<string>[];
+  /** GHS statements more than half of PubChem's notifiers report. */
+  hazards: { code: string; statement: Fact<string>; reportedBy: Fact<number> }[];
+}
+
+export interface Species {
+  substance: Compound['id'];
+  coefficient: number;
+  phase: Phase;
+}
+
+export interface Reaction {
+  id: `reaction:${string}`;
+  title: string;
+  /** What the user picks in Combine mode to find this entry. */
+  inputs: (EntityId)[];
+  kind: 'reaction' | 'no-reaction';
+  reactants?: Species[];
+  products?: Species[];
+  summary: Fact<string>[];
+  whyNot?: Fact<string>[];
+  bonding?: { type: Fact<string>; why: Fact<string>[] };
+  energy?: {
+    /** kJ for the equation as written; derived, with weights. */
+    enthalpy?: Fact<number>;
+    direction?: Fact<string>;
+    trigger?: Fact<string>;
+    /** Shown instead of the enthalpy when the sources have no value. */
+    unavailable?: string;
+  };
+  hazard?: { why: Fact<string>[] };
+}
 
 export interface Isotope {
   massNumber: Fact<number>;
@@ -129,13 +186,17 @@ export interface VerificationRecord {
   notes?: string;
 }
 
-export type DatasetKind = 'elements' | 'open-questions' | 'verification-records';
+export type DatasetKind = 'elements' | 'compounds' | 'reactions' | 'open-questions' | 'verification-records';
 
 export interface Dataset<K extends DatasetKind = DatasetKind> {
-  schemaVersion: 3;
+  schemaVersion: 4;
   kind: K;
   items: K extends 'elements'
     ? Element[]
+    : K extends 'compounds'
+    ? Compound[]
+    : K extends 'reactions'
+    ? Reaction[]
     : K extends 'open-questions'
     ? OpenQuestion[]
     : K extends 'verification-records'

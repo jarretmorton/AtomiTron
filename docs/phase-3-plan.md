@@ -264,6 +264,7 @@ What this means for the list:
   α-D-glucopyranose (−1274.5 kJ/mol) and β-D-glucopyranose (−1268.3), both
   from 1938. These two reactions should cite the α form by its exact ID and
   say the value is a single measurement, or ship without energy numbers.
+  **Decided 2026-11-15: ship with a "single measurement" label.**
 - **Several formulas return more than one entry** (H₂O, HCl and NH₃ also
   list their deuterium versions; C₆H₁₂O₆ lists eight sugars). This confirms
   that every substance must be pinned to an exact WebBook ID.

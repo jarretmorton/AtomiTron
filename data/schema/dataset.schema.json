@@ -2,27 +2,126 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "urn:atomitron:schema:dataset",
   "title": "Dataset file",
-  "description": "Envelope for every JSON file in data/verified/ and verification/records/. The kind picks the item schema. Phase 3 adds \"compounds\" and \"reactions\".",
+  "description": "Envelope for every JSON file in data/verified/ and verification/records/. The kind picks the item schema.",
   "type": "object",
-  "required": ["schemaVersion", "kind", "items"],
+  "required": [
+    "schemaVersion",
+    "kind",
+    "items"
+  ],
   "additionalProperties": false,
   "properties": {
-    "schemaVersion": { "const": 3 },
-    "kind": { "enum": ["elements", "open-questions", "verification-records"] },
-    "items": { "type": "array" }
+    "schemaVersion": {
+      "const": 4
+    },
+    "kind": {
+      "enum": [
+        "elements",
+        "compounds",
+        "reactions",
+        "open-questions",
+        "verification-records"
+      ]
+    },
+    "items": {
+      "type": "array"
+    }
   },
   "allOf": [
     {
-      "if": { "properties": { "kind": { "const": "elements" } } },
-      "then": { "properties": { "items": { "type": "array", "items": { "$ref": "urn:atomitron:schema:element" } } } }
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "elements"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "urn:atomitron:schema:element"
+            }
+          }
+        }
+      }
     },
     {
-      "if": { "properties": { "kind": { "const": "open-questions" } } },
-      "then": { "properties": { "items": { "type": "array", "items": { "$ref": "urn:atomitron:schema:open-question" } } } }
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "reactions"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "urn:atomitron:schema:reaction"
+            }
+          }
+        }
+      }
     },
     {
-      "if": { "properties": { "kind": { "const": "verification-records" } } },
-      "then": { "properties": { "items": { "type": "array", "items": { "$ref": "urn:atomitron:schema:verification-record" } } } }
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "compounds"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "urn:atomitron:schema:compound"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "open-questions"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "urn:atomitron:schema:open-question"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "verification-records"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "urn:atomitron:schema:verification-record"
+            }
+          }
+        }
+      }
     }
   ]
 }

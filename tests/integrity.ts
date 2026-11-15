@@ -12,7 +12,8 @@ import { Ajv2020 } from 'ajv/dist/2020.js';
 import addFormatsModule from 'ajv-formats';
 import { derive, DerivationError, electronCount, parseConfiguration } from '../app/src/data/derive';
 import { isRange, isRenderable } from '../app/src/data/facts';
-import type { DerivationRule, Element, Fact, VerificationRecord } from '../app/src/data/schema';
+import { inLowestTerms, isBalanced, parseFormula, sameComposition, type Term } from '../app/src/data/chemistry';
+import type { Compound, DerivationRule, Element, Fact, Reaction, Species, VerificationRecord } from '../app/src/data/schema';
 
 export const ROOT = join(import.meta.dirname, '..');
 export const SCHEMA_DIR = join(ROOT, 'data', 'schema');
@@ -22,7 +23,14 @@ const addFormats = ((addFormatsModule as unknown as { default?: typeof addFormat
   addFormatsModule) as typeof addFormatsModule;
 
 export function makeAjv(): Ajv2020 {
-  const ajv = new Ajv2020({ allErrors: true, strict: true, allowUnionTypes: true });
+  const ajv = new Ajv2020({
+    allErrors: true,
+    strict: true,
+    allowUnionTypes: true,
+    // The reaction schema names properties in if/then/not branches ("a
+    // no-reaction entry has no energy"), which this check would reject.
+    strictRequired: false,
+  });
   addFormats(ajv);
   for (const file of readdirSync(SCHEMA_DIR).filter((f) => f.endsWith('.schema.json'))) {
     ajv.addSchema(JSON.parse(readFileSync(join(SCHEMA_DIR, file), 'utf8')));
@@ -110,6 +118,90 @@ function checkElement(e: Element, at: string, errors: string[]): void {
   else if (e.atom.isotope !== expected) errors.push(`${at}: atom shows isotope ${e.atom.isotope}, expected ${expected}`);
 }
 
+function checkCompound(c: Compound, at: string, errors: string[]): void {
+  const comp = parseFormula(c.formula.value);
+  if (!comp) {
+    errors.push(`${at}: formula "${c.formula.value}" doesn't parse`);
+    return;
+  }
+  const written = c.formula.source.asWritten;
+  if (written !== undefined) {
+    const w = parseFormula(written);
+    if (!w || !sameComposition(w, comp)) errors.push(`${at}: formula as written by the source ("${written}") holds different atoms`);
+  }
+  if (c.element) {
+    const symbol = c.element.slice('element:'.length);
+    if (Object.keys(comp).length !== 1 || !(symbol in comp)) errors.push(`${at}: marked as ${c.element} but its formula is ${c.formula.value}`);
+  }
+  const phases = new Set<string>();
+  for (const h of c.formationEnthalpies) {
+    if (phases.has(h.phase)) errors.push(`${at}: two formation enthalpies for phase ${h.phase}`);
+    phases.add(h.phase);
+    if (h.value.unit !== 'kJ/mol') errors.push(`${at}: formation enthalpy must be in kJ/mol`);
+    if (h.value.derivation?.rule === 'zero-for-element-in-standard-state') {
+      const standard = { solid: 's', liquid: 'l', gas: 'g' }[c.standardState.value];
+      if (!c.element || h.phase !== standard) errors.push(`${at}: a zero formation enthalpy is only for an element in its standard state`);
+      if (h.value.derivation.inputs[0] !== c.standardState.verification.recordId) errors.push(`${at}: the zero rule must rest on this substance's standard state`);
+    }
+  }
+  for (const [i, f] of c.uses.entries()) {
+    if (/\d/.test(f.value)) errors.push(`${at}: uses[${i}] contains a number`);
+  }
+}
+
+function checkReaction(r: Reaction, at: string, compounds: Map<string, Compound>, errors: string[]): void {
+  // Hazard notes are textbook level: no quantities, so no digits at all (spec 4).
+  for (const [i, f] of (r.hazard?.why ?? []).entries()) {
+    if (/\d/.test(f.value)) errors.push(`${at}: hazard.why[${i}] contains a number`);
+  }
+  if (r.energy?.trigger && /\d/.test(r.energy.trigger.value)) errors.push(`${at}: energy.trigger contains a number`);
+  if (r.kind !== 'reaction') return;
+
+  const sides = { reactants: r.reactants!, products: r.products! };
+  const terms: Record<string, Term[]> = { reactants: [], products: [] };
+  let known = true;
+  for (const [side, list] of Object.entries(sides)) {
+    for (const s of list) {
+      const c = compounds.get(s.substance);
+      const comp = c && parseFormula(c.formula.value);
+      if (!c || !comp) {
+        errors.push(`${at}: ${side} name ${s.substance}, which isn't a verified compound`);
+        known = false;
+        continue;
+      }
+      terms[side]!.push({ coefficient: s.coefficient, composition: comp });
+    }
+  }
+  if (!known) return;
+  if (!isBalanced(terms.reactants!, terms.products!)) errors.push(`${at}: the equation doesn't balance`);
+  const all: Species[] = [...sides.reactants, ...sides.products];
+  if (!inLowestTerms(all.map((s) => s.coefficient))) errors.push(`${at}: the coefficients share a common factor`);
+
+  // The enthalpy must be computed from exactly this equation: one formation
+  // enthalpy per species, in the species' phase, weighted by its coefficient.
+  const d = r.energy?.enthalpy?.derivation;
+  if (r.energy?.enthalpy) {
+    if (r.energy.enthalpy.unit !== 'kJ') errors.push(`${at}: reaction enthalpy must be in kJ`);
+    const want = all.map((s, i) => {
+      const h = compounds.get(s.substance)!.formationEnthalpies.find((x) => x.phase === s.phase);
+      return { id: h?.value.verification.recordId, weight: i < sides.reactants.length ? -s.coefficient : s.coefficient, s };
+    });
+    const missing = want.filter((w) => !w.id).map((w) => `${w.s.substance}(${w.s.phase})`);
+    if (missing.length) errors.push(`${at}: no formation enthalpy for ${missing.join(', ')}`);
+    else if (
+      d?.rule !== 'reaction-enthalpy' ||
+      !isDeepStrictEqual(d.inputs, want.map((w) => w.id)) ||
+      !isDeepStrictEqual(d.weights, want.map((w) => w.weight))
+    ) {
+      errors.push(`${at}: the enthalpy's inputs and weights don't match the equation's species and coefficients`);
+    }
+    const dir = r.energy.direction?.derivation;
+    if (dir?.rule !== 'energy-direction' || dir.inputs[0] !== r.energy.enthalpy.verification.recordId) {
+      errors.push(`${at}: the direction must be derived from this reaction's enthalpy`);
+    }
+  }
+}
+
 /** Returns a list of problems; an empty list means the data may ship. */
 export function checkData(verifiedDir: string, recordsDir: string, ajv = makeAjv()): string[] {
   const errors: string[] = [];
@@ -147,6 +239,8 @@ export function checkData(verifiedDir: string, recordsDir: string, ajv = makeAjv
 
   // Verified data: the only data normal mode loads.
   const facts = new Map<string, { fact: Fact; at: string }>();
+  const compounds = new Map<string, Compound>();
+  const reactions: [Reaction, string][] = [];
   for (const file of jsonFiles(verifiedDir)) {
     const data = load(file) as { kind?: string; items?: unknown[] } | undefined;
     if (data === undefined) continue;
@@ -194,7 +288,20 @@ export function checkData(verifiedDir: string, recordsDir: string, ajv = makeAjv
     if (data.kind === 'elements') {
       data.items!.forEach((e, i) => checkElement(e as Element, `${rel(file)}#/items/${i}`, errors));
     }
+    if (data.kind === 'compounds') {
+      data.items!.forEach((c, i) => {
+        const compound = c as Compound;
+        if (compounds.has(compound.id)) errors.push(`${rel(file)}#/items/${i}: ${compound.id} appears twice`);
+        compounds.set(compound.id, compound);
+        checkCompound(compound, `${rel(file)}#/items/${i}`, errors);
+      });
+    }
+    if (data.kind === 'reactions') {
+      data.items!.forEach((r, i) => reactions.push([r as Reaction, `${rel(file)}#/items/${i}`]));
+    }
   }
+
+  for (const [r, at] of reactions) checkReaction(r, at, compounds, errors);
 
   // Recompute every derived fact from its verified inputs.
   for (const { fact, at } of facts.values()) {
@@ -207,7 +314,7 @@ export function checkData(verifiedDir: string, recordsDir: string, ajv = makeAjv
     }
     let value;
     try {
-      value = derive(fact.derivation.rule, inputs.map((f) => f!.value));
+      value = derive(fact.derivation.rule, inputs.map((f) => f!.value), fact.derivation.weights);
     } catch (e) {
       if (!(e instanceof DerivationError)) throw e;
       errors.push(`${at}: ${fact.derivation.rule}: ${e.message}`);

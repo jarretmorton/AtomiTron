@@ -1,10 +1,34 @@
 # AtomiTron status
 
-*Updated 2026-11-12. Phase 1 and phase 2 part 1 are live: the periodic
-table and element pages for all 118 elements, with every fact verified and
-cited, plus a 3D atom trial on the vanadium page. The history and uses
-pilot (10 elements) is live for review on the iPad, ahead of the Claude API
-re-run.*
+*Updated 2026-11-15. Phases 1 and 2 are complete and live: all 118 elements
+with verified facts, 3D atoms, and history and uses checked through the
+Claude API. Checkpoint 1 is done and its fixes are live. Phase 3
+(reactions) has started: the plan is decided, and the schema and build
+checks are drafted for review.*
+
+## Phase 3: reactions (started 2026-11-15)
+
+On branch `claude/phase-3-reactions`. The plan and its decisions are in
+[phase-3-plan.md](phase-3-plan.md).
+
+- **Decided:** the starter list of 50 (thermite out), hazardous classics in
+  with badges, reactions without energy data ship without energy numbers,
+  qualified values shown with their qualifier, hazard statements only when
+  most notifiers report them, reactions in water later, and glucose's
+  energy shown with a "single measurement" label.
+- **Coverage check:** 33 of 35 compounds have a reviewed formation enthalpy
+  in the NIST WebBook. Calcium carbonate and zinc sulfide have none.
+- **Schema (drafted, for review):** `compound.schema.json` and
+  `reaction.schema.json`, a `qualifier` field on facts, three new
+  derivation rules, and `schemaVersion` 4.
+- **Build checks (drafted):** every equation must balance and use the
+  smallest whole-number coefficients, and a reaction's enthalpy must be
+  computed from exactly its own species and coefficients.
+- **Methodology:** section 14 is a draft for review.
+- **Not built yet:** the pipeline that fills in compounds and reactions, the
+  hazard extraction, and the Combine screens.
+- **Arsenic's melting point** still needs its fix, to be confirmed when the
+  qualifier rule is built into the element pipeline.
 
 ## Where things stand
 

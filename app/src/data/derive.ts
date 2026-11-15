@@ -151,7 +151,64 @@ function config(v: FactValue | undefined): Occupancy {
   return occ;
 }
 
-const RULES: Record<DerivationRule, { arity: number; run: (inputs: FactValue[]) => FactValue }> = {
+function decimals(v: number): number {
+  const [, frac = ''] = String(v).split('e')[0]!.split('.');
+  return frac.length;
+}
+
+/**
+ * Reaction enthalpy from formation enthalpies: the sum of each value times
+ * its weight (the coefficient: positive for products, negative for
+ * reactants). The arithmetic is done in whole numbers, so 0.1 + 0.2 can't
+ * go wrong, and the result is rounded half away from zero to the decimal
+ * places of the least precise input, so it never claims more precision than
+ * its inputs. A value of exactly 0 is an element in its standard state: it
+ * is exact by definition, so it doesn't limit the precision.
+ */
+export function reactionEnthalpy(values: number[], weights: number[]): number {
+  if (values.length !== weights.length) throw new DerivationError('one weight is needed per formation enthalpy');
+  const places = values.filter((v) => v !== 0).map(decimals);
+  if (places.length === 0) return 0;
+  const most = Math.max(...places);
+  const least = Math.min(...places);
+  let sum = 0;
+  values.forEach((v, i) => {
+    sum += Math.round(v * 10 ** most) * weights[i]!;
+  });
+  const step = 10 ** (most - least);
+  const rounded = Math.sign(sum) * Math.round(Math.abs(sum) / step);
+  return rounded / 10 ** least || 0;
+}
+
+function num(v: FactValue | undefined, what: string): number {
+  if (typeof v !== 'number' || !Number.isFinite(v)) throw new DerivationError(`${what} must be a number`);
+  return v;
+}
+
+const RULES: Record<DerivationRule, { arity: number; run: (inputs: FactValue[], weights?: number[]) => FactValue }> = {
+  // An element in its standard state has zero formation enthalpy, by definition.
+  'zero-for-element-in-standard-state': {
+    arity: 1,
+    run: ([state]) => {
+      if (state !== 'solid' && state !== 'liquid' && state !== 'gas') throw new DerivationError('standard state must be solid, liquid or gas');
+      return 0;
+    },
+  },
+  'reaction-enthalpy': {
+    arity: -1, // one input per species
+    run: (inputs, weights) => {
+      if (!weights) throw new DerivationError('reaction-enthalpy needs weights');
+      return reactionEnthalpy(inputs.map((v) => num(v, 'formation enthalpy')), weights);
+    },
+  },
+  'energy-direction': {
+    arity: 1,
+    run: ([h]) => {
+      const v = num(h, 'reaction enthalpy');
+      if (v === 0) throw new DerivationError('a reaction enthalpy of zero has no direction');
+      return v < 0 ? 'exothermic' : 'endothermic';
+    },
+  },
   'protons-equal-atomic-number': { arity: 1, run: ([z]) => int(z, 'atomic number') },
   'electrons-equal-atomic-number': { arity: 1, run: ([z]) => int(z, 'atomic number') },
   'neutrons-from-mass-number': {
@@ -167,10 +224,10 @@ const RULES: Record<DerivationRule, { arity: number; run: (inputs: FactValue[]) 
 };
 
 /** Recomputes a derived value from its input values, in the rule's order. */
-export function derive(rule: DerivationRule, inputs: FactValue[]): FactValue {
+export function derive(rule: DerivationRule, inputs: FactValue[], weights?: number[]): FactValue {
   const r = RULES[rule];
-  if (inputs.length !== r.arity) {
+  if (r.arity >= 0 && inputs.length !== r.arity) {
     throw new DerivationError(`${rule} takes ${r.arity} input(s), got ${inputs.length}`);
   }
-  return r.run(inputs);
+  return r.run(inputs, weights);
 }
