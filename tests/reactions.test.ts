@@ -2,14 +2,14 @@
 // rule, and the gate checks that tie a reaction's energy to its equation.
 // The sample data is shaped like table salt but is test data only.
 
-import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { inLowestTerms, isBalanced, parseFormula, sameComposition } from '../app/src/data/chemistry';
 import { derive, reactionEnthalpy } from '../app/src/data/derive';
 import type { Compound, Reaction } from '../app/src/data/schema';
-import { checkData, makeAjv } from './integrity';
+import { checkData, makeAjv, ROOT } from './integrity';
 import { derived, fact, recordsFor } from './samples';
 
 describe('formulas', () => {
@@ -208,5 +208,35 @@ describe('reaction schema', () => {
     const r = sampleReaction();
     edit(r);
     expect(schema(r)).toBe(false);
+  });
+});
+
+// The pipeline's staged output (data/staged/reactions.json) isn't published
+// yet, but its arithmetic is checked here with the TypeScript rules, which
+// were written independently of the Python ones that produced it.
+describe('staged reaction energies', () => {
+  const file = join(ROOT, 'data', 'staged', 'reactions.json');
+  const staged = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : { substances: [], reactions: [], records: [] };
+  const value = new Map<string, unknown>(staged.records.map((r: { id: string; claimedValue: unknown }) => [r.id, r.claimedValue]));
+  const formula = new Map<string, string>(staged.substances.map((s: { id: string; formula: { value: string } }) => [s.id, s.formula.value]));
+
+  it('every staged equation balances', () => {
+    for (const r of staged.reactions.filter((x: Reaction) => x.kind === 'reaction')) {
+      const side = (list: Reaction['reactants']) => list!.map((s) => ({ coefficient: s.coefficient, composition: parseFormula(formula.get(s.substance)!)! }));
+      expect(isBalanced(side(r.reactants), side(r.products)), r.id).toBe(true);
+    }
+  });
+
+  it('every staged enthalpy and direction recomputes to the same value', () => {
+    let n = 0;
+    for (const r of staged.reactions) {
+      const h = r.energy?.enthalpy;
+      if (!h) continue;
+      const inputs = h.derivation.inputs.map((id: string) => value.get(id) as number);
+      expect(derive('reaction-enthalpy', inputs, h.derivation.weights), r.id).toBe(h.value);
+      expect(derive('energy-direction', [h.value]), r.id).toBe(r.energy.direction.value);
+      n++;
+    }
+    if (staged.reactions.length) expect(n).toBeGreaterThan(0);
   });
 });

@@ -25,8 +25,29 @@ On branch `claude/phase-3-reactions`. The plan and its decisions are in
   smallest whole-number coefficients, and a reaction's enthalpy must be
   computed from exactly its own species and coefficients.
 - **Methodology:** section 14 is a draft for review.
-- **Not built yet:** the pipeline that fills in compounds and reactions, the
-  hazard extraction, and the Combine screens.
+- **Pipeline, first part (2026-11-15):** `python -m pipeline.compounds`
+  reads the curated list in `data/reactions/definitions.json` (57 substances
+  with exact PubChem and NIST IDs, 43 equations and 6 no-reaction pairs). It
+  checks every formula against both sources, checks every equation
+  balances, extracts formation enthalpies and computes reaction energies.
+  - **Result:** all 57 substances resolved, and 34 of 43 reactions have a
+    computed energy. The TypeScript rules recompute all 34 to the same
+    values.
+  - **Output:** `data/staged/reactions.json` (staged, not published) and
+    `verification/reports/reactions-2026-11-15.md`.
+  - **Without energy, 9:** calcium carbonate (2) and zinc sulfide (1) have no
+    WebBook value; five happen in water (the alkali metals with water, and
+    the two halogen displacements); and magnesium oxide (see below).
+  - **Open question: magnesium oxide.** The two reviewed compilations give
+    −601.60 ± 0.30 and −601.24 kJ/mol. They differ by slightly more than the
+    stated uncertainty, so the approved rule drops the value, and magnesium
+    burning has no energy. Sulfur gas is dropped the same way but isn't
+    used.
+  - The list has 49 entries, not 50: "nitrogen and oxygen at room
+    temperature" is the same pair as the nitrogen and oxygen reaction.
+- **Not built yet:** the agent step for text facts (each substance's state,
+  summaries, bonding, hazard notes), hazard-statement extraction, and the
+  Combine screens.
 - **Arsenic's melting point** still needs its fix, to be confirmed when the
   qualifier rule is built into the element pipeline.
 
