@@ -198,8 +198,11 @@ a {
   border-radius: var(--radius);
   background: transparent;
   color: var(--header-ink);
-  font-size: 1.25rem;
+  padding: 0 12px;
+  font: inherit;
+  font-weight: 600;
   line-height: 1;
+  white-space: nowrap;
   cursor: pointer;
 }
 
