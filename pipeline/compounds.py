@@ -102,7 +102,12 @@ def choose(rows: list[Row]) -> tuple[Row | None, list[Row], str | None, str]:
     for a in pool:
         for b in pool:
             if a is not b and not P.agree(a.num, b.num):
-                return None, [], None, "values disagree: " + "; ".join(f"{r.raw} ({r.reference})" for r in pool)
+                listed = "; ".join(f"{r.raw} ({r.reference})" for r in pool)
+                if reviews:
+                    # Reviewed sources that differ beyond their stated
+                    # uncertainty are shown as a range (decided 2026-11-15).
+                    return None, pool, "reviewed sources differ", f"reviewed values differ: {listed}"
+                return None, [], None, f"values disagree: {listed}"
     # Prefer a value that states its uncertainty; then CODATA; then the newest.
     best = sorted(pool, key=lambda r: (r.num.uncertainty is None, "Cox" not in r.reference, -r.year))[0]
     others = [r for r in pool if r is not best]
@@ -181,6 +186,13 @@ class Builder:
             if not in_phase:
                 continue
             best, others, qualifier, note = choose(in_phase)
+            if best is None and others:
+                lo, hi = min(r.num.value for r in others), max(r.num.value for r in others)
+                self.notes.append(f"{key}({phase}): {note}; shown as a range")
+                out["formationEnthalpies"].append({"phase": phase, "value": self.fact(
+                    entity, f"/formationEnthalpies/{phase}", {"min": lo, "max": hi}, "kJ/mol", url, n_retrieved,
+                    "; ".join(r.reference for r in others), "; ".join(r.raw for r in others), qualifier=qualifier, notes=note)})
+                continue
             if best is None:
                 self.drops.append((f"{key}({phase})", f"formation enthalpy: {note}"))
                 continue
@@ -242,7 +254,7 @@ class Builder:
         retrieved = max(subs[f]["name"]["source"]["retrieved"] for _, f, _ in reactants + products)
         enthalpy = self.fact(rid, "/energy/enthalpy", value, "kJ", RULE_PAGES["reaction-enthalpy"], retrieved, "LibreTexts Chemistry", "",
                              # An energy is only as firm as its weakest input.
-                             qualifier=("single measurement" if "single measurement" in qualifiers else qualifiers[0]) if qualifiers else None,
+                             qualifier="; ".join(qualifiers) or None,
                              derivation={"rule": "reaction-enthalpy", "inputs": inputs, "weights": weights},
                              notes=f"reaction-enthalpy for {r['equation']}")
         direction = self.fact(rid, "/energy/direction", energy_direction(value), None, RULE_PAGES["energy-direction"], retrieved,
@@ -266,6 +278,10 @@ class Builder:
             sub["formationEnthalpies"].append({"phase": phase, "value": zero})
             return zero
         return None
+
+
+def shown(value) -> str:
+    return f"{value['min']} to {value['max']}" if isinstance(value, dict) else str(value)
 
 
 def input_id(sub: dict) -> str:
@@ -303,7 +319,7 @@ def write_report(b: Builder, subs: dict, reactions: list[dict]) -> Path:
         e = r["energy"]
         if "enthalpy" in e:
             f = e["enthalpy"]
-            lines.append(f"| {r['title']} | {r['equation']} | {f['value']} ({e['direction']['value']}) | {f.get('qualifier', '')} |")
+            lines.append(f"| {r['title']} | {r['equation']} | {shown(f['value'])} ({e['direction']['value']}) | {f.get('qualifier', '')} |")
         else:
             lines.append(f"| {r['title']} | {r['equation']} | none | {e['unavailable']} |")
     lines += ["", "## Formation enthalpies used", "", "| Substance | Phase | ΔfH° (kJ/mol) | Reference | Note |", "|---|---|---|---|---|"]
@@ -311,7 +327,7 @@ def write_report(b: Builder, subs: dict, reactions: list[dict]) -> Path:
         for h in s["formationEnthalpies"]:
             f = h["value"]
             rec = next(x for x in b.records if x["id"] == f["verification"]["recordId"])
-            lines.append(f"| {s['key']} | {h['phase']} | {f['value']} | {f['source']['via']} | {f.get('qualifier') or ''} {rec.get('notes', '')} |")
+            lines.append(f"| {s['key']} | {h['phase']} | {shown(f['value'])} | {f['source']['via']} | {f.get('qualifier') or ''} {rec.get('notes', '')} |")
     lines += ["", "## Left out, with reasons", ""] + ([f"- `{k}`: {why}" for k, why in b.drops] or ["None."])
     lines += ["", "## Notes", ""] + ([f"- {n}" for n in b.notes] or ["None."])
     path = REPORTS / f"reactions-{b.checked_at[:10]}.md"

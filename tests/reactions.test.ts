@@ -8,7 +8,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { inLowestTerms, isBalanced, parseFormula, sameComposition } from '../app/src/data/chemistry';
 import { derive, reactionEnthalpy } from '../app/src/data/derive';
-import type { Compound, Reaction } from '../app/src/data/schema';
+import type { Compound, FactValue, Reaction } from '../app/src/data/schema';
 import { checkData, makeAjv, ROOT } from './integrity';
 import { derived, fact, recordsFor } from './samples';
 
@@ -68,6 +68,14 @@ describe('reaction enthalpy', () => {
   it("doesn't let an element's exact zero limit the precision", () => {
     expect(reactionEnthalpy([0, 0, -411.12], [-2, -1, 2])).toBe(-822.24);
     expect(reactionEnthalpy([0, 0], [-1, 1])).toBe(0);
+  });
+
+  it('carries a range through when two reviewed sources differ', () => {
+    const mgo = { min: -601.6, max: -601.24 };
+    expect(reactionEnthalpy([0, 0, mgo], [-2, -1, 2])).toEqual({ min: -1203.2, max: -1202.5 });
+    expect(reactionEnthalpy([mgo, 0, 0], [-2, 2, 1])).toEqual({ min: 1202.5, max: 1203.2 }); // reversed
+    expect(derive('energy-direction', [{ min: -1203.2, max: -1202.5 }])).toBe('exothermic');
+    expect(() => derive('energy-direction', [{ min: -1, max: 1 }])).toThrow(/spans zero/);
   });
 
   it('has no floating-point drift', () => {
@@ -232,8 +240,8 @@ describe('staged reaction energies', () => {
     for (const r of staged.reactions) {
       const h = r.energy?.enthalpy;
       if (!h) continue;
-      const inputs = h.derivation.inputs.map((id: string) => value.get(id) as number);
-      expect(derive('reaction-enthalpy', inputs, h.derivation.weights), r.id).toBe(h.value);
+      const inputs = h.derivation.inputs.map((id: string) => value.get(id) as FactValue);
+      expect(derive('reaction-enthalpy', inputs, h.derivation.weights), r.id).toEqual(h.value);
       expect(derive('energy-direction', [h.value]), r.id).toBe(r.energy.direction.value);
       n++;
     }

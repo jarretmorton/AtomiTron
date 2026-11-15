@@ -49,6 +49,14 @@ class Enthalpy(unittest.TestCase):
         self.assertEqual(reaction_enthalpy([0.1, 0.2], [1, 1]), 0.3)
         self.assertEqual(reaction_enthalpy([0, 0], [-1, 1]), 0)
 
+    def test_ranges(self):
+        mgo = {"min": -601.6, "max": -601.24}
+        self.assertEqual(reaction_enthalpy([0, 0, mgo], [-2, -1, 2]), {"min": -1203.2, "max": -1202.5})
+        self.assertEqual(reaction_enthalpy([mgo, 0, 0], [-2, 2, 1]), {"min": 1202.5, "max": 1203.2})
+        self.assertEqual(energy_direction({"min": -1203.2, "max": -1202.5}), "exothermic")
+        with self.assertRaises(ValueError):
+            energy_direction({"min": -1, "max": 1})
+
     def test_direction(self):
         self.assertEqual(energy_direction(-822.24), "exothermic")
         self.assertEqual(energy_direction(571.66), "endothermic")
@@ -68,8 +76,13 @@ class NistValues(unittest.TestCase):
         self.assertEqual((best.reference[:3], len(others), q), ("Cox", 1, None))
         best, _, q, _ = choose([self.row("-1274.5", "Ccb", "Huffman and Fox, 1938")])
         self.assertEqual((best.num.value, q), (-1274.5, "single measurement"))
-        best, _, _, note = choose([self.row("-601.60 ± 0.30", ref="Cox, Wagman, et al., 1984"), self.row("-601.24")])
+        # Two reviews that differ beyond the stated uncertainty: a range.
+        best, both, q, note = choose([self.row("-601.60 ± 0.30", ref="Cox, Wagman, et al., 1984"), self.row("-601.24")])
         self.assertIsNone(best)
+        self.assertEqual((len(both), q), (2, "reviewed sources differ"))
+        # Measurements that disagree are still left out.
+        best, both, _, note = choose([self.row("-10.0 ± 0.1", "Ccb", "A, 1990"), self.row("-12.0 ± 0.1", "Ccb", "B, 1991")])
+        self.assertEqual((best, both), (None, []))
         self.assertIn("disagree", note)
         # A review outranks measurements.
         best, others, q, _ = choose([self.row("-74.5 ± 0.4", "Ccb", "Pittam, 1972"), self.row("-74.87")])

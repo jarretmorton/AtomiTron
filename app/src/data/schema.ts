@@ -72,7 +72,7 @@ export interface Compound {
   /** State at 25 °C: "solid", "liquid" or "gas". */
   standardState: Fact<string>;
   /** kJ/mol, per phase. Empty when the sources have no value. */
-  formationEnthalpies: { phase: Phase; value: Fact<number> }[];
+  formationEnthalpies: { phase: Phase; value: Fact<number | Range> }[];
   appearance?: Fact<string>;
   meltingPoint?: Fact;
   boilingPoint?: Fact;
@@ -100,7 +100,7 @@ export interface Reaction {
   bonding?: { type: Fact<string>; why: Fact<string>[] };
   energy?: {
     /** kJ for the equation as written; derived, with weights. */
-    enthalpy?: Fact<number>;
+    enthalpy?: Fact<number | Range>;
     direction?: Fact<string>;
     trigger?: Fact<string>;
     /** Shown instead of the enthalpy when the sources have no value. */
