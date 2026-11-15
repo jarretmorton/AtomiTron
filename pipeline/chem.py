@@ -94,23 +94,36 @@ def _places(v: float) -> int:
     return len(text.split(".")[1]) if "." in text else 0
 
 
-def reaction_enthalpy(values: list[float], weights: list[int]) -> float:
+def reaction_enthalpy(values: list, weights: list[int]):
     """Sum of value x weight (products positive, reactants negative), rounded
     half away from zero to the decimal places of the least precise input. An
-    exact 0 (an element in its standard state) doesn't limit the precision."""
+    exact 0 (an element in its standard state) doesn't limit the precision.
+
+    An input may be a range {"min", "max"}, where two reviewed sources
+    differ; the result is then the range from the lowest possible sum to the
+    highest."""
     if len(values) != len(weights):
         raise ValueError("one weight is needed per formation enthalpy")
-    places = [_places(v) for v in values if v != 0]
+    ends = [(v["min"], v["max"]) if isinstance(v, dict) else (v, v) for v in values]
+    places = [_places(x) for e in ends for x in e if x != 0]
     if not places:
         return 0
-    total = sum(Decimal(repr(float(v))) * w for v, w in zip(values, weights))
     q = Decimal(1).scaleb(-min(places))
-    rounded = total.copy_abs().quantize(q, rounding=ROUND_HALF_UP).copy_sign(total)
-    out = float(rounded)
-    return (int(out) if min(places) == 0 else out) or 0
+
+    def total(lowest: bool):
+        # A positive weight is lowest at the input's minimum; a negative one at its maximum.
+        t = sum(Decimal(repr(float(e[0] if (w > 0) == lowest else e[1]))) * w for e, w in zip(ends, weights))
+        out = float(t.copy_abs().quantize(q, rounding=ROUND_HALF_UP).copy_sign(t))
+        return (int(out) if min(places) == 0 else out) or 0
+
+    lo, hi = total(True), total(False)
+    return lo if lo == hi else {"min": lo, "max": hi}
 
 
-def energy_direction(enthalpy: float) -> str:
-    if enthalpy == 0:
-        raise ValueError("a reaction enthalpy of zero has no direction")
-    return "exothermic" if enthalpy < 0 else "endothermic"
+def energy_direction(enthalpy) -> str:
+    lo, hi = (enthalpy["min"], enthalpy["max"]) if isinstance(enthalpy, dict) else (enthalpy, enthalpy)
+    if hi < 0:
+        return "exothermic"
+    if lo > 0:
+        return "endothermic"
+    raise ValueError("a reaction enthalpy of zero, or a range that spans zero, has no direction")

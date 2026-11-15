@@ -421,9 +421,14 @@ never by name or formula, because those return the wrong entry too often
 - **Reviewed values first.** The WebBook marks values from evaluated
   compilations as "Review" (CODATA: Cox, Wagman et al. 1984; JANAF: Chase
   1998). A reviewed value is used when there is one.
-- **Two reviews must agree** within their stated uncertainty, by the rule in
-  section 4. The CODATA value is shown, as the one that states its
-  uncertainty.
+- **Two reviews that agree** within their stated uncertainty, by the rule in
+  section 4: the one that states its uncertainty is shown (CODATA).
+- **Two reviews that differ** by more than that are shown as a range from
+  one to the other, with the qualifier "reviewed sources differ" (decided
+  2026-11-15). Magnesium oxide is the known case: −601.60 ± 0.30 and
+  −601.24 kJ/mol. A reaction that uses the value gets an energy range,
+  from the lowest possible sum to the highest.
+- **Measurements that disagree,** with no review, are left out.
 - **One review** ships as a single-source value.
 - **No review, only measurements:** the value ships with the qualifier
   "single measurement" (or "measured values" where there are several that

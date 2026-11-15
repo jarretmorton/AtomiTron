@@ -3,7 +3,7 @@
 // and the build gate recomputes them here from the verified inputs, so the
 // two must agree. See verification/methodology.md.
 
-import type { Counts, DerivationRule, FactValue } from './schema';
+import type { Counts, DerivationRule, FactValue, Range } from './schema';
 
 export class DerivationError extends Error {}
 
@@ -165,19 +165,31 @@ function decimals(v: number): number {
  * its inputs. A value of exactly 0 is an element in its standard state: it
  * is exact by definition, so it doesn't limit the precision.
  */
-export function reactionEnthalpy(values: number[], weights: number[]): number {
+export function reactionEnthalpy(values: (number | Range)[], weights: number[]): number | Range {
   if (values.length !== weights.length) throw new DerivationError('one weight is needed per formation enthalpy');
-  const places = values.filter((v) => v !== 0).map(decimals);
+  // An input may be a range, where two reviewed sources differ. The result is
+  // then the range from the lowest possible sum to the highest.
+  const ends = values.map((v) => (typeof v === 'number' ? { min: v, max: v } : v));
+  const places = ends.flatMap((e) => [e.min, e.max]).filter((v) => v !== 0).map(decimals);
   if (places.length === 0) return 0;
   const most = Math.max(...places);
   const least = Math.min(...places);
-  let sum = 0;
-  values.forEach((v, i) => {
-    sum += Math.round(v * 10 ** most) * weights[i]!;
-  });
   const step = 10 ** (most - least);
-  const rounded = Math.sign(sum) * Math.round(Math.abs(sum) / step);
-  return rounded / 10 ** least || 0;
+  const total = (pick: (e: Range, w: number) => number) => {
+    let sum = 0;
+    ends.forEach((e, i) => {
+      sum += Math.round(pick(e, weights[i]!) * 10 ** most) * weights[i]!;
+    });
+    return (Math.sign(sum) * Math.round(Math.abs(sum) / step)) / 10 ** least || 0;
+  };
+  // A positive weight is lowest at the input's minimum; a negative one at its maximum.
+  const min = total((e, w) => (w > 0 ? e.min : e.max));
+  const max = total((e, w) => (w > 0 ? e.max : e.min));
+  return min === max ? min : { min, max };
+}
+
+function isRangeValue(v: FactValue | undefined): v is Range {
+  return typeof v === 'object' && v !== null && !Array.isArray(v) && typeof v.min === 'number' && typeof v.max === 'number';
 }
 
 function num(v: FactValue | undefined, what: string): number {
@@ -198,15 +210,16 @@ const RULES: Record<DerivationRule, { arity: number; run: (inputs: FactValue[], 
     arity: -1, // one input per species
     run: (inputs, weights) => {
       if (!weights) throw new DerivationError('reaction-enthalpy needs weights');
-      return reactionEnthalpy(inputs.map((v) => num(v, 'formation enthalpy')), weights);
+      return reactionEnthalpy(inputs.map((v) => (isRangeValue(v) ? v : num(v, 'formation enthalpy'))), weights);
     },
   },
   'energy-direction': {
     arity: 1,
     run: ([h]) => {
-      const v = num(h, 'reaction enthalpy');
-      if (v === 0) throw new DerivationError('a reaction enthalpy of zero has no direction');
-      return v < 0 ? 'exothermic' : 'endothermic';
+      const { min, max } = isRangeValue(h) ? h : { min: num(h, 'reaction enthalpy'), max: num(h, 'reaction enthalpy') };
+      if (max < 0) return 'exothermic';
+      if (min > 0) return 'endothermic';
+      throw new DerivationError('a reaction enthalpy of zero, or a range that spans zero, has no direction');
     },
   },
   'protons-equal-atomic-number': { arity: 1, run: ([z]) => int(z, 'atomic number') },

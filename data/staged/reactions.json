@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T19:08:49Z",
+  "generatedAt": "2026-11-15T19:13:19Z",
   "substances": [
     {
       "key": "Na",
@@ -945,6 +945,27 @@
             "verification": {
               "status": "pass",
               "recordId": "cid-5362487.formationEnthalpies.l"
+            }
+          }
+        },
+        {
+          "phase": "g",
+          "value": {
+            "value": {
+              "min": 276.98,
+              "max": 277.17
+            },
+            "unit": "kJ/mol",
+            "uncertain": false,
+            "qualifier": "reviewed sources differ",
+            "source": {
+              "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7704349&Units=SI&cTG=on&cTC=on",
+              "retrieved": "2026-11-15",
+              "via": "Cox, Wagman, et al., 1984; Chase, 1998"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "cid-5362487.formationEnthalpies.g"
             }
           }
         },
@@ -2175,6 +2196,27 @@
         }
       },
       "formationEnthalpies": [
+        {
+          "phase": "s",
+          "value": {
+            "value": {
+              "min": -601.6,
+              "max": -601.24
+            },
+            "unit": "kJ/mol",
+            "uncertain": false,
+            "qualifier": "reviewed sources differ",
+            "source": {
+              "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1309484&Units=SI&cTG=on&cTC=on",
+              "retrieved": "2026-11-15",
+              "via": "Cox, Wagman, et al., 1984; Chase, 1998"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "cid-14792.formationEnthalpies.s"
+            }
+          }
+        },
         {
           "phase": "l",
           "value": {
@@ -4381,7 +4423,57 @@
         }
       ],
       "energy": {
-        "unavailable": "The NIST WebBook has no formation enthalpy for magnesium oxide."
+        "enthalpy": {
+          "value": {
+            "min": -1203.2,
+            "max": -1202.5
+          },
+          "unit": "kJ",
+          "uncertain": false,
+          "qualifier": "reviewed sources differ",
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/07%3A_Chemical_Reactions",
+            "retrieved": "2026-11-15",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "magnesium-oxygen.energy.enthalpy"
+          },
+          "derivation": {
+            "rule": "reaction-enthalpy",
+            "inputs": [
+              "cid-5462224.formationEnthalpies.s",
+              "cid-977.formationEnthalpies.g",
+              "cid-14792.formationEnthalpies.s"
+            ],
+            "weights": [
+              -2,
+              -1,
+              2
+            ]
+          }
+        },
+        "direction": {
+          "value": "exothermic",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/07%3A_Chemical_Reactions",
+            "retrieved": "2026-11-15",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "magnesium-oxygen.energy.direction"
+          },
+          "derivation": {
+            "rule": "energy-direction",
+            "inputs": [
+              "magnesium-oxygen.energy.enthalpy"
+            ]
+          }
+        }
       }
     },
     {
@@ -6960,7 +7052,7 @@
       "retrievedValue": "Sodium",
       "evidence": "Sodium",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -6981,7 +7073,7 @@
       "retrievedValue": "Na",
       "evidence": "Na",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7002,7 +7094,7 @@
       "retrievedValue": 2.41,
       "evidence": "2.41",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7031,7 +7123,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7053,7 +7145,7 @@
       "retrievedValue": "Potassium",
       "evidence": "Potassium",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7074,7 +7166,7 @@
       "retrievedValue": "K",
       "evidence": "K",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7095,7 +7187,7 @@
       "retrievedValue": 2.27,
       "evidence": "2.27",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7124,7 +7216,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7146,7 +7238,7 @@
       "retrievedValue": "Magnesium",
       "evidence": "Magnesium",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7167,7 +7259,7 @@
       "retrievedValue": "Mg",
       "evidence": "Mg",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7188,7 +7280,7 @@
       "retrievedValue": 4.79,
       "evidence": "4.79",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7217,7 +7309,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7239,7 +7331,7 @@
       "retrievedValue": "Calcium",
       "evidence": "Calcium",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7260,7 +7352,7 @@
       "retrievedValue": "Ca",
       "evidence": "Ca",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7281,7 +7373,7 @@
       "retrievedValue": 7.79,
       "evidence": "7.79",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7310,7 +7402,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7332,7 +7424,7 @@
       "retrievedValue": "Lithium",
       "evidence": "Lithium",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7353,7 +7445,7 @@
       "retrievedValue": "Li",
       "evidence": "Li",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7374,7 +7466,7 @@
       "retrievedValue": 2.38,
       "evidence": "2.38",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7403,7 +7495,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7425,7 +7517,7 @@
       "retrievedValue": "Aluminum",
       "evidence": "Aluminum",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7446,7 +7538,7 @@
       "retrievedValue": "Al",
       "evidence": "Al",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7467,7 +7559,7 @@
       "retrievedValue": 10.56,
       "evidence": "10.56",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7496,7 +7588,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7518,7 +7610,7 @@
       "retrievedValue": "Copper",
       "evidence": "Copper",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7539,7 +7631,7 @@
       "retrievedValue": "Cu",
       "evidence": "Cu",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7560,7 +7652,7 @@
       "retrievedValue": 11.86,
       "evidence": "11.86",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7589,7 +7681,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7611,7 +7703,7 @@
       "retrievedValue": "Iron",
       "evidence": "Iron",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7632,7 +7724,7 @@
       "retrievedValue": "Fe",
       "evidence": "Fe",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7653,7 +7745,7 @@
       "retrievedValue": 12.4,
       "evidence": "12.40",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7675,7 +7767,7 @@
       "retrievedValue": 415.47,
       "evidence": "415.47",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7697,7 +7789,7 @@
       "retrievedValue": "Zinc",
       "evidence": "Zinc",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7718,7 +7810,7 @@
       "retrievedValue": "Zn",
       "evidence": "Zn",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7739,7 +7831,7 @@
       "retrievedValue": 6.52,
       "evidence": "6.52",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7768,7 +7860,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7790,7 +7882,7 @@
       "retrievedValue": "Carbon",
       "evidence": "Carbon",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7811,7 +7903,7 @@
       "retrievedValue": "C",
       "evidence": "C",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7832,7 +7924,7 @@
       "retrievedValue": "Sulfur",
       "evidence": "Sulfur",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7853,7 +7945,7 @@
       "retrievedValue": "S",
       "evidence": "S",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7874,13 +7966,41 @@
       "retrievedValue": 1.85,
       "evidence": "1.85",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
       },
       "verifier": "pipeline/compounds.py",
       "notes": "1 reviewed value(s) in the WebBook; single source"
+    },
+    {
+      "id": "cid-5362487.formationEnthalpies.g",
+      "subject": {
+        "entity": "compound:cid-5362487",
+        "field": "/formationEnthalpies/g"
+      },
+      "method": "extract",
+      "claimedValue": {
+        "min": 276.98,
+        "max": 277.17
+      },
+      "unit": "kJ/mol",
+      "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7704349&Units=SI&cTG=on&cTC=on",
+      "upstream": "Cox, Wagman, et al., 1984; Chase, 1998",
+      "retrievedValue": {
+        "min": 276.98,
+        "max": 277.17
+      },
+      "evidence": "277.17 ± 0.15; 276.98",
+      "result": "pass",
+      "checkedAt": "2026-11-15T19:13:19Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/compounds.py",
+      "notes": "reviewed values differ: 277.17 ± 0.15 (Cox, Wagman, et al., 1984); 276.98 (Chase, 1998)"
     },
     {
       "id": "cid-783.name",
@@ -7896,7 +8016,7 @@
       "retrievedValue": "Hydrogen",
       "evidence": "Hydrogen",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7917,7 +8037,7 @@
       "retrievedValue": "H2",
       "evidence": "H2",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7938,7 +8058,7 @@
       "retrievedValue": "Oxygen",
       "evidence": "Oxygen",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7959,7 +8079,7 @@
       "retrievedValue": "O2",
       "evidence": "O2",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -7980,7 +8100,7 @@
       "retrievedValue": "Nitrogen",
       "evidence": "Nitrogen",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8001,7 +8121,7 @@
       "retrievedValue": "N2",
       "evidence": "N2",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8022,7 +8142,7 @@
       "retrievedValue": "Chlorine",
       "evidence": "Chlorine",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8043,7 +8163,7 @@
       "retrievedValue": "Cl2",
       "evidence": "Cl2",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8064,7 +8184,7 @@
       "retrievedValue": "Bromine",
       "evidence": "Bromine",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8085,7 +8205,7 @@
       "retrievedValue": "Br2",
       "evidence": "Br2",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8113,7 +8233,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8135,7 +8255,7 @@
       "retrievedValue": "Mercury",
       "evidence": "Mercury",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8156,7 +8276,7 @@
       "retrievedValue": "Hg",
       "evidence": "Hg",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8184,7 +8304,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8206,7 +8326,7 @@
       "retrievedValue": "Helium",
       "evidence": "Helium",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8227,7 +8347,7 @@
       "retrievedValue": "He",
       "evidence": "He",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8248,7 +8368,7 @@
       "retrievedValue": "Neon",
       "evidence": "Neon",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8269,7 +8389,7 @@
       "retrievedValue": "Ne",
       "evidence": "Ne",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8290,7 +8410,7 @@
       "retrievedValue": "Argon",
       "evidence": "Argon",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8311,7 +8431,7 @@
       "retrievedValue": "Ar",
       "evidence": "Ar",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8332,7 +8452,7 @@
       "retrievedValue": "Gold",
       "evidence": "Gold",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8353,7 +8473,7 @@
       "retrievedValue": "Au",
       "evidence": "Au",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8374,7 +8494,7 @@
       "retrievedValue": "Platinum",
       "evidence": "Platinum",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8395,7 +8515,7 @@
       "retrievedValue": "Pt",
       "evidence": "Pt",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8416,7 +8536,7 @@
       "retrievedValue": "Sodium Chloride",
       "evidence": "Sodium Chloride",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8437,7 +8557,7 @@
       "retrievedValue": "NaCl",
       "evidence": "ClNa",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8459,7 +8579,7 @@
       "retrievedValue": -411.12,
       "evidence": "-411.12",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8481,7 +8601,7 @@
       "retrievedValue": -385.92,
       "evidence": "-385.92",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8503,7 +8623,7 @@
       "retrievedValue": -181.42,
       "evidence": "-181.42",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8525,7 +8645,7 @@
       "retrievedValue": "Potassium Chloride",
       "evidence": "Potassium Chloride",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8546,7 +8666,7 @@
       "retrievedValue": "KCl",
       "evidence": "ClK",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8568,7 +8688,7 @@
       "retrievedValue": -436.68,
       "evidence": "-436.68",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8590,7 +8710,7 @@
       "retrievedValue": -421.79,
       "evidence": "-421.79",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8612,7 +8732,7 @@
       "retrievedValue": -214.68,
       "evidence": "-214.68",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8634,7 +8754,7 @@
       "retrievedValue": "Magnesium Chloride",
       "evidence": "Magnesium Chloride",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8655,7 +8775,7 @@
       "retrievedValue": "MgCl2",
       "evidence": "Cl2Mg",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8677,7 +8797,7 @@
       "retrievedValue": -641.62,
       "evidence": "-641.62",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8699,7 +8819,7 @@
       "retrievedValue": -601.58,
       "evidence": "-601.58",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8721,7 +8841,7 @@
       "retrievedValue": -392.46,
       "evidence": "-392.46",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8743,7 +8863,7 @@
       "retrievedValue": "Calcium Chloride",
       "evidence": "Calcium Chloride",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8764,7 +8884,7 @@
       "retrievedValue": "CaCl2",
       "evidence": "CaCl2",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8785,7 +8905,7 @@
       "retrievedValue": -795.8,
       "evidence": "-795.80",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8807,7 +8927,7 @@
       "retrievedValue": -774.09,
       "evidence": "-774.09",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8829,7 +8949,7 @@
       "retrievedValue": -471.54,
       "evidence": "-471.54",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8851,7 +8971,7 @@
       "retrievedValue": "Lithium Chloride",
       "evidence": "Lithium Chloride",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8872,7 +8992,7 @@
       "retrievedValue": "LiCl",
       "evidence": "ClLi",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8894,7 +9014,7 @@
       "retrievedValue": -408.27,
       "evidence": "-408.27",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8916,7 +9036,7 @@
       "retrievedValue": -390.76,
       "evidence": "-390.76",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8938,7 +9058,7 @@
       "retrievedValue": -195.72,
       "evidence": "-195.72",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8960,7 +9080,7 @@
       "retrievedValue": "Sodium Bromide",
       "evidence": "Sodium Bromide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -8981,7 +9101,7 @@
       "retrievedValue": "NaBr",
       "evidence": "BrNa",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9003,7 +9123,7 @@
       "retrievedValue": -361.41,
       "evidence": "-361.41",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9025,7 +9145,7 @@
       "retrievedValue": -339.34,
       "evidence": "-339.34",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9047,7 +9167,7 @@
       "retrievedValue": -143.93,
       "evidence": "-143.93",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9069,7 +9189,7 @@
       "retrievedValue": "Potassium Bromide",
       "evidence": "Potassium Bromide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9090,7 +9210,7 @@
       "retrievedValue": "KBr",
       "evidence": "BrK",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9112,7 +9232,7 @@
       "retrievedValue": -393.8,
       "evidence": "-393.80",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9134,7 +9254,7 @@
       "retrievedValue": -376.49,
       "evidence": "-376.49",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9156,7 +9276,7 @@
       "retrievedValue": -180.08,
       "evidence": "-180.08",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9178,7 +9298,7 @@
       "retrievedValue": "Magnesium Oxide",
       "evidence": "Magnesium Oxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9199,12 +9319,40 @@
       "retrievedValue": "MgO",
       "evidence": "MgO",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
       },
       "verifier": "pipeline/compounds.py"
+    },
+    {
+      "id": "cid-14792.formationEnthalpies.s",
+      "subject": {
+        "entity": "compound:cid-14792",
+        "field": "/formationEnthalpies/s"
+      },
+      "method": "extract",
+      "claimedValue": {
+        "min": -601.6,
+        "max": -601.24
+      },
+      "unit": "kJ/mol",
+      "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1309484&Units=SI&cTG=on&cTC=on",
+      "upstream": "Cox, Wagman, et al., 1984; Chase, 1998",
+      "retrievedValue": {
+        "min": -601.6,
+        "max": -601.24
+      },
+      "evidence": "-601.60 ± 0.30; -601.24",
+      "result": "pass",
+      "checkedAt": "2026-11-15T19:13:19Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/compounds.py",
+      "notes": "reviewed values differ: -601.60 ± 0.30 (Cox, Wagman, et al., 1984); -601.24 (Chase, 1998)"
     },
     {
       "id": "cid-14792.formationEnthalpies.l",
@@ -9220,7 +9368,7 @@
       "retrievedValue": -532.61,
       "evidence": "-532.61",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9242,7 +9390,7 @@
       "retrievedValue": 58.16,
       "evidence": "58.16",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9264,7 +9412,7 @@
       "retrievedValue": "Sodium oxide",
       "evidence": "Sodium oxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9285,7 +9433,7 @@
       "retrievedValue": "Na2O",
       "evidence": "Na2O",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9306,7 +9454,7 @@
       "retrievedValue": -417.98,
       "evidence": "-417.98",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9328,7 +9476,7 @@
       "retrievedValue": -372.84,
       "evidence": "-372.84",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9350,7 +9498,7 @@
       "retrievedValue": "Calcium Oxide",
       "evidence": "Calcium Oxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9371,7 +9519,7 @@
       "retrievedValue": "CaO",
       "evidence": "CaO",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9399,7 +9547,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9421,7 +9569,7 @@
       "retrievedValue": -557.33,
       "evidence": "-557.33",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9443,7 +9591,7 @@
       "retrievedValue": 43.93,
       "evidence": "43.93",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9465,7 +9613,7 @@
       "retrievedValue": "Alumina",
       "evidence": "Alumina",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9486,7 +9634,7 @@
       "retrievedValue": "Al2O3",
       "evidence": "Al2O3",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9514,7 +9662,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9536,7 +9684,7 @@
       "retrievedValue": -1620.57,
       "evidence": "-1620.57",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9558,7 +9706,7 @@
       "retrievedValue": "Copper oxide (CuO)",
       "evidence": "Copper oxide (CuO)",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9579,7 +9727,7 @@
       "retrievedValue": "CuO",
       "evidence": "CuO",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9600,7 +9748,7 @@
       "retrievedValue": -156.06,
       "evidence": "-156.06",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9622,7 +9770,7 @@
       "retrievedValue": 306.27,
       "evidence": "306.27",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9644,7 +9792,7 @@
       "retrievedValue": "Iron oxide (Fe2O3)",
       "evidence": "Iron oxide (Fe2O3)",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9665,7 +9813,7 @@
       "retrievedValue": "Fe2O3",
       "evidence": "Fe2O3",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9686,7 +9834,7 @@
       "retrievedValue": -825.5,
       "evidence": "-825.50",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9708,7 +9856,7 @@
       "retrievedValue": "Zinc Oxide",
       "evidence": "Zinc Oxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9729,7 +9877,7 @@
       "retrievedValue": "ZnO",
       "evidence": "OZn",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9751,7 +9899,7 @@
       "retrievedValue": -350.46,
       "evidence": "-350.46 ± 0.27",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9773,7 +9921,7 @@
       "retrievedValue": "Water",
       "evidence": "Water",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9794,7 +9942,7 @@
       "retrievedValue": "H2O",
       "evidence": "H2O",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9822,7 +9970,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9851,7 +9999,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9873,7 +10021,7 @@
       "retrievedValue": "Carbon Dioxide",
       "evidence": "Carbon Dioxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9894,7 +10042,7 @@
       "retrievedValue": "CO2",
       "evidence": "CO2",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9922,7 +10070,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9944,7 +10092,7 @@
       "retrievedValue": "Carbon Monoxide",
       "evidence": "Carbon Monoxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9965,7 +10113,7 @@
       "retrievedValue": "CO",
       "evidence": "CO",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -9993,7 +10141,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10015,7 +10163,7 @@
       "retrievedValue": "Sulfur Dioxide",
       "evidence": "Sulfur Dioxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10036,7 +10184,7 @@
       "retrievedValue": "SO2",
       "evidence": "O2S",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10065,7 +10213,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10087,7 +10235,7 @@
       "retrievedValue": "Nitric Oxide",
       "evidence": "Nitric Oxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10108,7 +10256,7 @@
       "retrievedValue": "NO",
       "evidence": "NO",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10129,7 +10277,7 @@
       "retrievedValue": 90.29,
       "evidence": "90.29",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10151,7 +10299,7 @@
       "retrievedValue": "Methane",
       "evidence": "Methane",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10172,7 +10320,7 @@
       "retrievedValue": "CH4",
       "evidence": "CH4",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10200,7 +10348,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10222,7 +10370,7 @@
       "retrievedValue": "Propane",
       "evidence": "Propane",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10243,7 +10391,7 @@
       "retrievedValue": "C3H8",
       "evidence": "C3H8",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10264,7 +10412,7 @@
       "retrievedValue": -119.8,
       "evidence": "-119.8 ± 0.59",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10293,7 +10441,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10315,7 +10463,7 @@
       "retrievedValue": "Ethane",
       "evidence": "Ethane",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10336,7 +10484,7 @@
       "retrievedValue": "C2H6",
       "evidence": "C2H6",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10357,7 +10505,7 @@
       "retrievedValue": -84.0,
       "evidence": "-84. ± 0.4",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10379,7 +10527,7 @@
       "retrievedValue": "Hydrochloric Acid",
       "evidence": "Hydrochloric Acid",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10400,7 +10548,7 @@
       "retrievedValue": "HCl",
       "evidence": "ClH",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10429,7 +10577,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10451,7 +10599,7 @@
       "retrievedValue": "Ammonia",
       "evidence": "Ammonia",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10472,7 +10620,7 @@
       "retrievedValue": "NH3",
       "evidence": "H3N",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10501,7 +10649,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10523,7 +10671,7 @@
       "retrievedValue": "Hydrogen Bromide",
       "evidence": "Hydrogen Bromide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10544,7 +10692,7 @@
       "retrievedValue": "HBr",
       "evidence": "BrH",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10573,7 +10721,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10595,7 +10743,7 @@
       "retrievedValue": "Sodium Hydroxide",
       "evidence": "Sodium Hydroxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10616,7 +10764,7 @@
       "retrievedValue": "NaOH",
       "evidence": "HNaO",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10638,7 +10786,7 @@
       "retrievedValue": -425.93,
       "evidence": "-425.93",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10660,7 +10808,7 @@
       "retrievedValue": -416.88,
       "evidence": "-416.88",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10682,7 +10830,7 @@
       "retrievedValue": -197.76,
       "evidence": "-197.76",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10704,7 +10852,7 @@
       "retrievedValue": "Potassium Hydroxide",
       "evidence": "Potassium Hydroxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10725,7 +10873,7 @@
       "retrievedValue": "KOH",
       "evidence": "HKO",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10747,7 +10895,7 @@
       "retrievedValue": -424.72,
       "evidence": "-424.72",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10769,7 +10917,7 @@
       "retrievedValue": -412.71,
       "evidence": "-412.71",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10791,7 +10939,7 @@
       "retrievedValue": -232.63,
       "evidence": "-232.63",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10813,7 +10961,7 @@
       "retrievedValue": "Lithium Hydroxide",
       "evidence": "Lithium Hydroxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10834,7 +10982,7 @@
       "retrievedValue": "LiOH",
       "evidence": "HLiO",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10856,7 +11004,7 @@
       "retrievedValue": -484.93,
       "evidence": "-484.93",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10878,7 +11026,7 @@
       "retrievedValue": -474.42,
       "evidence": "-474.42",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10900,7 +11048,7 @@
       "retrievedValue": -234.3,
       "evidence": "-234.30",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10922,7 +11070,7 @@
       "retrievedValue": "Calcium Hydroxide",
       "evidence": "Calcium Hydroxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10943,7 +11091,7 @@
       "retrievedValue": "Ca(OH)2",
       "evidence": "CaH2O2",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10965,7 +11113,7 @@
       "retrievedValue": -986.09,
       "evidence": "-986.09",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -10987,7 +11135,7 @@
       "retrievedValue": -610.76,
       "evidence": "-610.76",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11009,7 +11157,7 @@
       "retrievedValue": "Ferrous sulfide",
       "evidence": "Ferrous sulfide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11030,7 +11178,7 @@
       "retrievedValue": "FeS",
       "evidence": "FeS",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11051,7 +11199,7 @@
       "retrievedValue": -101.67,
       "evidence": "-101.67",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11073,7 +11221,7 @@
       "retrievedValue": -68.81,
       "evidence": "-68.81",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11095,7 +11243,7 @@
       "retrievedValue": 370.77,
       "evidence": "370.77",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11117,7 +11265,7 @@
       "retrievedValue": "Zinc Sulfide",
       "evidence": "Zinc Sulfide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11138,7 +11286,7 @@
       "retrievedValue": "ZnS",
       "evidence": "SZn",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11160,7 +11308,7 @@
       "retrievedValue": "Ammonium Chloride",
       "evidence": "Ammonium Chloride",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11181,7 +11329,7 @@
       "retrievedValue": "NH4Cl",
       "evidence": "ClH4N",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11203,7 +11351,7 @@
       "retrievedValue": -314.55,
       "evidence": "-314.55",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11225,7 +11373,7 @@
       "retrievedValue": "Calcium Carbonate",
       "evidence": "Calcium Carbonate",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11246,7 +11394,7 @@
       "retrievedValue": "CaCO3",
       "evidence": "CCaO3",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11268,7 +11416,7 @@
       "retrievedValue": "Mercuric oxide",
       "evidence": "Mercuric oxide",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11289,7 +11437,7 @@
       "retrievedValue": "HgO",
       "evidence": "HgO",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11317,7 +11465,7 @@
         }
       ],
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11339,7 +11487,7 @@
       "retrievedValue": 41.84,
       "evidence": "41.84",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11361,7 +11509,7 @@
       "retrievedValue": "D-Glucose",
       "evidence": "D-Glucose",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11382,7 +11530,7 @@
       "retrievedValue": "C6H12O6",
       "evidence": "C6H12O6",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11403,7 +11551,7 @@
       "retrievedValue": -1274.5,
       "evidence": "-1274.5",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11424,7 +11572,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11445,7 +11593,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11466,7 +11614,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -822.24,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11487,7 +11635,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11507,7 +11655,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11528,7 +11676,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -873.36,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11549,7 +11697,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11569,7 +11717,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11590,7 +11738,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -641.62,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11611,7 +11759,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11631,7 +11779,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11652,7 +11800,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -795.8,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11673,7 +11821,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11693,7 +11841,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11714,7 +11862,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -816.54,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11735,7 +11883,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11755,7 +11903,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11776,7 +11924,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -722.82,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11797,7 +11945,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11817,13 +11965,60 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
       },
       "verifier": "pipeline/compounds.py",
       "notes": "element in its standard state; the standard state is confirmed by the agent step"
+    },
+    {
+      "id": "magnesium-oxygen.energy.enthalpy",
+      "subject": {
+        "entity": "reaction:magnesium-oxygen",
+        "field": "/energy/enthalpy"
+      },
+      "method": "derive",
+      "claimedValue": {
+        "min": -1203.2,
+        "max": -1202.5
+      },
+      "unit": "kJ",
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/07%3A_Chemical_Reactions",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": {
+        "min": -1203.2,
+        "max": -1202.5
+      },
+      "result": "pass",
+      "checkedAt": "2026-11-15T19:13:19Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/compounds.py",
+      "notes": "reaction-enthalpy for 2 Mg(s) + O2(g) -> 2 MgO(s)"
+    },
+    {
+      "id": "magnesium-oxygen.energy.direction",
+      "subject": {
+        "entity": "reaction:magnesium-oxygen",
+        "field": "/energy/direction"
+      },
+      "method": "derive",
+      "claimedValue": "exothermic",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/07%3A_Chemical_Reactions",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "exothermic",
+      "result": "pass",
+      "checkedAt": "2026-11-15T19:13:19Z",
+      "consistency": {
+        "runs": 1,
+        "agreeing": 1
+      },
+      "verifier": "pipeline/compounds.py"
     },
     {
       "id": "sodium-oxygen.energy.enthalpy",
@@ -11838,7 +12033,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -835.96,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11859,7 +12054,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11879,7 +12074,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -1269.84,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11900,7 +12095,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11920,7 +12115,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11941,7 +12136,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -3351.4,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11962,7 +12157,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -11982,7 +12177,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12003,7 +12198,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -312.12,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12024,7 +12219,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12044,7 +12239,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12065,7 +12260,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -1651.0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12086,7 +12281,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12106,7 +12301,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12127,7 +12322,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -700.92,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12148,7 +12343,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12168,7 +12363,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12189,7 +12384,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -571.66,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12210,7 +12405,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12230,7 +12425,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12251,7 +12446,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -393.51,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12272,7 +12467,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12292,7 +12487,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -221.06,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12313,7 +12508,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12333,7 +12528,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -565.96,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12354,7 +12549,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12374,7 +12569,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12395,7 +12590,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -296.81,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12416,7 +12611,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12436,7 +12631,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12457,7 +12652,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 180.58,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12478,7 +12673,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "endothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12498,7 +12693,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -890.6,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12519,7 +12714,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12539,7 +12734,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -2219.2,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12560,7 +12755,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12580,7 +12775,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -3121,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12601,7 +12796,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12621,7 +12816,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -184.62,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12642,7 +12837,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12662,7 +12857,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -91.88,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12683,7 +12878,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12703,7 +12898,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -72.58,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12724,7 +12919,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12744,7 +12939,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -74.6,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12765,7 +12960,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12785,7 +12980,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -414.43,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12806,7 +13001,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12826,7 +13021,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -101.67,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12847,7 +13042,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12867,7 +13062,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -176.3,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12888,7 +13083,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12908,7 +13103,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -65.34,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12929,7 +13124,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12949,7 +13144,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 571.66,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12970,7 +13165,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "endothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -12990,7 +13185,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 0,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -13011,7 +13206,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 181.58,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -13032,7 +13227,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "endothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -13052,7 +13247,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 91.88,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -13073,7 +13268,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "endothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -13093,7 +13288,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": 2801.5,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -13114,7 +13309,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "endothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -13134,7 +13329,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": -2801.5,
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1
@@ -13155,7 +13350,7 @@
       "upstream": "LibreTexts Chemistry",
       "retrievedValue": "exothermic",
       "result": "pass",
-      "checkedAt": "2026-11-15T19:08:49Z",
+      "checkedAt": "2026-11-15T19:13:19Z",
       "consistency": {
         "runs": 1,
         "agreeing": 1

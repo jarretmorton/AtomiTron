@@ -31,18 +31,19 @@ On branch `claude/phase-3-reactions`. The plan and its decisions are in
   checks every formula against both sources, checks every equation
   balances, extracts formation enthalpies and computes reaction energies.
   - **Result:** all 57 substances resolved, and 34 of 43 reactions have a
-    computed energy. The TypeScript rules recompute all 34 to the same
-    values.
+    computed energy (35 after the magnesium oxide decision below). The
+    TypeScript rules recompute them all to the same values.
   - **Output:** `data/staged/reactions.json` (staged, not published) and
     `verification/reports/reactions-2026-11-15.md`.
-  - **Without energy, 9:** calcium carbonate (2) and zinc sulfide (1) have no
-    WebBook value; five happen in water (the alkali metals with water, and
-    the two halogen displacements); and magnesium oxide (see below).
-  - **Open question: magnesium oxide.** The two reviewed compilations give
-    −601.60 ± 0.30 and −601.24 kJ/mol. They differ by slightly more than the
-    stated uncertainty, so the approved rule drops the value, and magnesium
-    burning has no energy. Sulfur gas is dropped the same way but isn't
-    used.
+  - **Without energy, 8:** calcium carbonate (2) and zinc sulfide (1) have no
+    WebBook value, and five happen in water (the alkali metals with water,
+    and the two halogen displacements).
+  - **Magnesium oxide (decided 2026-11-15):** its two reviewed values
+    differ by slightly more than the stated uncertainty, so it's shown as a
+    range, and magnesium burning gets an energy range (−1203.2 to
+    −1202.5 kJ). That makes 35 of 43 reactions with an energy.
+  - **Calcium and water** keeps its energy (decided 2026-11-15), because
+    calcium hydroxide mostly forms as a solid.
   - The list has 49 entries, not 50: "nitrogen and oxygen at room
     temperature" is the same pair as the nitrogen and oxygen reaction.
 - **Not built yet:** the agent step for text facts (each substance's state,
