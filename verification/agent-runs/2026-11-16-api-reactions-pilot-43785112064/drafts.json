@@ -1,0 +1,420 @@
+{
+  "reactions": {
+    "sodium-chlorine": {
+      "summary": [
+        {
+          "text": "As the reaction happens, a great deal of light and heat is given off.",
+          "passage": "lt/sodium-chlorine/0",
+          "excerpt": "In the process, a great amount of light and heat is released."
+        }
+      ],
+      "bondingType": [
+        {
+          "value": "ionic",
+          "text": "Sodium chloride, also called table salt, is an ionic compound.",
+          "passage": "NaCl/Record Description/1",
+          "excerpt": "Sodium chloride, also known as salt, common salt, table salt or halite, is an ionic compound"
+        }
+      ],
+      "bondingWhy": [
+        {
+          "text": "The sodium gives up an electron, and the chlorine takes that electron.",
+          "passage": "lt/sodium-chlorine/0",
+          "excerpt": "The sodium loses an electron, and the chlorine gains that electron."
+        },
+        {
+          "text": "An ionic bond is the attraction, or pull, between ions that have opposite electric charges.",
+          "passage": "lt/ionic-bonds",
+          "excerpt": "The attraction between oppositely charged ions is called an ionic bond"
+        }
+      ],
+      "trigger": [],
+      "hazard": [
+        {
+          "text": "Chlorine is a yellow-green gas that is very poisonous to animals and plants.",
+          "passage": "lt/sodium-chlorine/0",
+          "excerpt": "a yellow-green gas that is extremely corrosive to most metals and very poisonous to animals and plants"
+        },
+        {
+          "text": "Sodium metal burns strongly in air and reacts explosively with water.",
+          "passage": "lt/sodium-chlorine/0",
+          "excerpt": "a soft, silvery-white metal that burns vigorously in air and reacts explosively with water"
+        }
+      ],
+      "whyNot": []
+    },
+    "hydrogen-oxygen": {
+      "summary": [
+        {
+          "text": "Hydrogen burns with a pale blue flame that is almost impossible to see.",
+          "passage": "H2/Record Description/0",
+          "excerpt": "Once ignited it burns with a pale blue, almost invisible flame."
+        }
+      ],
+      "bondingType": [
+        {
+          "value": "covalent",
+          "text": "In water, the oxygen atom and the hydrogen atoms are held together by covalent bonds.",
+          "passage": "H2O/Record Description/2",
+          "excerpt": "hydrogen atoms that are connected by covalent bonds"
+        }
+      ],
+      "bondingWhy": [
+        {
+          "text": "Atoms make a covalent bond by sharing electrons, the tiny particles around an atom, with each other.",
+          "passage": "lt/covalent-bonds",
+          "excerpt": "Covalent bonds are formed when atoms share electrons."
+        },
+        {
+          "text": "Sharing electrons is a way for atoms to fill up their outer layer of electrons.",
+          "passage": "lt/covalent-bonds",
+          "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+        }
+      ],
+      "trigger": [
+        {
+          "text": "Hydrogen is easily set alight by heat, sparks or flames.",
+          "passage": "H2/Fire Hazards/2",
+          "excerpt": "Will be easily ignited by heat, sparks or flames."
+        }
+      ],
+      "hazard": [
+        {
+          "text": "A mixture of hydrogen and oxygen can explode if it is set alight.",
+          "passage": "lt/hydrogen-oxygen/0",
+          "excerpt": "A mixture of hydrogen and oxygen explodes if ignited."
+        },
+        {
+          "text": "Hydrogen fires are hard to notice because they burn with a flame you cannot see.",
+          "passage": "H2/Fire Hazards/2",
+          "excerpt": "Hydrogen and Deuterium fires are difficult to detect since they burn with an invisible flame."
+        }
+      ],
+      "whyNot": []
+    },
+    "methane-oxygen": {
+      "summary": [
+        {
+          "text": "As methane burns, most of the energy comes out as heat, and a little comes out as light.",
+          "passage": "lt/methane-oxygen/0",
+          "excerpt": "Most of the energy released during this chemical reaction is released as heat, and a little bit as light."
+        }
+      ],
+      "bondingType": [
+        {
+          "value": "covalent",
+          "text": "Carbon dioxide has covalent bonds: its carbon atom is joined to two oxygen atoms by double bonds.",
+          "passage": "CO2/Record Description/4",
+          "excerpt": "This naturally occurring chemical compound is composed of a carbon atom covalently double bonded to two oxygen atoms."
+        }
+      ],
+      "bondingWhy": [
+        {
+          "text": "A covalent bond forms when two atoms share electrons between them.",
+          "passage": "lt/covalent-bonds",
+          "excerpt": "When electrons are shared between two atoms, they make a bond called a covalent bond"
+        },
+        {
+          "text": "Sharing electrons is another way for atoms to fill up their outer shell, which is called the valence shell.",
+          "passage": "lt/covalent-bonds",
+          "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+        }
+      ],
+      "trigger": [
+        {
+          "text": "Methane catches fire easily from heat, a spark or a flame.",
+          "passage": "CH4/Fire Hazards/4",
+          "excerpt": "Will be easily ignited by heat, sparks or flames."
+        }
+      ],
+      "hazard": [
+        {
+          "text": "Methane catches fire very easily, and a mixture of methane gas and air can explode.",
+          "passage": "CH4/Fire Hazards/6",
+          "excerpt": "Extremely flammable. Gas/air mixtures are explosive."
+        },
+        {
+          "text": "Things that burn in air burn even more strongly in oxygen.",
+          "passage": "O2/Record Description/0",
+          "excerpt": "Materials that burn in air will burn more vigorously in oxygen."
+        }
+      ],
+      "whyNot": []
+    },
+    "iron-sulfur": {
+      "summary": [],
+      "bondingType": [],
+      "bondingWhy": [],
+      "trigger": [],
+      "hazard": [
+        {
+          "text": "Sulfur burns with a blue flame and makes sulfur dioxide, a poisonous gas.",
+          "passage": "S/Hazards Summary/1",
+          "excerpt": "Sulfur burns with a blue flame that may be difficult to see in daylight, and produces toxic sulfur dioxide gas."
+        },
+        {
+          "text": "Fine iron powder can catch fire all by itself.",
+          "passage": "Fe/Hazards Summary/0",
+          "excerpt": "Fine iron powder can ignite spontaneously."
+        }
+      ],
+      "whyNot": []
+    },
+    "helium-oxygen": {
+      "summary": [],
+      "bondingType": [],
+      "bondingWhy": [],
+      "trigger": [],
+      "hazard": [],
+      "whyNot": [
+        {
+          "text": "Helium's electrons are very hard to remove, which makes helium unreactive, meaning it doesn't easily join in chemical reactions.",
+          "passage": "lt/helium-oxygen/0",
+          "excerpt": "electrons will be very difficult to remove, making helium unreactive"
+        },
+        {
+          "text": "Helium is chemically inert, so it takes part in no chemical reactions under any known circumstances.",
+          "passage": "He/Reactivity Profile/0",
+          "excerpt": "Chemically inert. These substances undergo no chemical reactions under any known circumstances."
+        }
+      ]
+    }
+  },
+  "substances": {
+    "CH4": {
+      "standardState": [
+        {
+          "value": "gas",
+          "text": "Methane is a gas.",
+          "passage": "CH4/Record Description/0",
+          "excerpt": "Methane is a colorless odorless gas."
+        }
+      ],
+      "appearance": [
+        {
+          "text": "Methane has no color and no smell.",
+          "passage": "CH4/Physical Description/4",
+          "excerpt": "Colorless, odorless gas;"
+        }
+      ],
+      "uses": [
+        {
+          "text": "Methane is often piped into homes for heating and cooking.",
+          "passage": "CH4/Uses/7",
+          "excerpt": "is often piped into homes for domestic heating and cooking purposes"
+        },
+        {
+          "text": "Methane can be burned to make electricity.",
+          "passage": "CH4/Uses/7",
+          "excerpt": "Methane may be burned to produce electricity"
+        },
+        {
+          "text": "Methane is used to make other chemicals and is part of the fuel called natural gas.",
+          "passage": "CH4/Record Description/0",
+          "excerpt": "It is used in making other chemicals and as a constituent of the fuel, natural gas."
+        }
+      ]
+    },
+    "CO2": {
+      "standardState": [
+        {
+          "value": "gas",
+          "text": "Carbon dioxide is a gas at everyday air temperatures and pressures.",
+          "passage": "CO2/Record Description/0",
+          "excerpt": "Carbon dioxide appears as a colorless odorless gas at atmospheric temperatures and pressures."
+        }
+      ],
+      "appearance": [
+        {
+          "text": "Carbon dioxide gas has no color and no smell.",
+          "passage": "CO2/Physical Description/6",
+          "excerpt": "Colorless, odorless gas."
+        }
+      ],
+      "uses": [
+        {
+          "text": "Carbon dioxide is used to make fizzy soft drinks and soda water.",
+          "passage": "CO2/Record Description/8",
+          "excerpt": "Carbon dioxide is used to produce carbonated soft drinks and soda water."
+        },
+        {
+          "text": "Carbon dioxide is used to put out fires and to freeze food.",
+          "passage": "CO2/Record Description/0",
+          "excerpt": "Used to freeze food, to control chemical reactions, and as a fire extinguishing agent."
+        },
+        {
+          "text": "Life jackets often contain carbon dioxide under pressure so they can inflate, or fill up, quickly.",
+          "passage": "CO2/Uses/7",
+          "excerpt": "Life jackets often contain canisters of pressured carbon dioxide for quick inflation."
+        }
+      ]
+    },
+    "Cl2": {
+      "standardState": [],
+      "appearance": [
+        {
+          "text": "Chlorine is a yellow-green gas with a strong, irritating smell.",
+          "passage": "Cl2/Record Description/0",
+          "excerpt": "At room temperature, chlorine is a yellow-green gas that is heavier than air and has a strong irritating odor."
+        }
+      ],
+      "uses": []
+    },
+    "Fe": {
+      "standardState": [],
+      "appearance": [
+        {
+          "text": "Pure iron is a silvery white, fairly soft metal.",
+          "passage": "Fe/Color/Form/2",
+          "excerpt": "Pure iron is a silvery white, relatively soft metal"
+        }
+      ],
+      "uses": []
+    },
+    "FeS": {
+      "standardState": [
+        {
+          "value": "solid",
+          "text": "Iron(II) sulfide is a gray to brown solid.",
+          "passage": "FeS/Physical Description/0",
+          "excerpt": "Gray to brown solid, or in pure form, colorless hexagonal crystals"
+        }
+      ],
+      "appearance": [
+        {
+          "text": "Iron(II) sulfide can look like dark brown or black metal-like pieces, sticks or small grains.",
+          "passage": "FeS/Color/Form/1",
+          "excerpt": "Dark-brown or black metallic pieces, sticks, or granules"
+        }
+      ],
+      "uses": [
+        {
+          "text": "Iron(II) sulfide is used as a pigment, a coloring substance, in glass, bottles and paint.",
+          "passage": "FeS/Uses/0",
+          "excerpt": "Used as a pigment in hair dyes and ceramics (former uses), glasses and bottles, and paint;"
+        },
+        {
+          "text": "Iron(II) sulfide is used to treat exhaust gases and heavy metal pollution.",
+          "passage": "FeS/Uses/3",
+          "excerpt": "Treatment of exhaust gases and heavy metal pollution."
+        }
+      ]
+    },
+    "H2": {
+      "standardState": [],
+      "appearance": [
+        {
+          "text": "Hydrogen is a gas with no color and no smell.",
+          "passage": "H2/Record Description/0",
+          "excerpt": "Hydrogen is a colorless, odorless gas."
+        }
+      ],
+      "uses": []
+    },
+    "H2O": {
+      "standardState": [
+        {
+          "value": "liquid",
+          "text": "Water is a liquid at normal room temperature and pressure.",
+          "passage": "H2O/Record Description/2",
+          "excerpt": "Water is a liquid at standard ambient temperature and pressure"
+        }
+      ],
+      "appearance": [
+        {
+          "text": "Water is a clear liquid with no smell or taste.",
+          "passage": "H2O/Record Description/10",
+          "excerpt": "A clear, odorless, tasteless liquid"
+        }
+      ],
+      "uses": [
+        {
+          "text": "Water is used for drinking, cooking, bathing, washing and doing laundry.",
+          "passage": "H2O/Uses/3",
+          "excerpt": "Drinking, culinary purposes, bathing, washing, laundering"
+        },
+        {
+          "text": "Water is used for farming, raising farm animals and gardens.",
+          "passage": "H2O/Uses/3",
+          "excerpt": "agriculture, stock raising and gardens"
+        },
+        {
+          "text": "People also use water for fun, such as swimming, boating and fishing.",
+          "passage": "H2O/Uses/3",
+          "excerpt": "for fishing, swimming, boating and other recreational purposes"
+        }
+      ]
+    },
+    "He": {
+      "standardState": [],
+      "appearance": [
+        {
+          "text": "Helium is a gas with no color and no smell.",
+          "passage": "He/Record Description/1",
+          "excerpt": "Helium is a colorless odorless gas."
+        }
+      ],
+      "uses": []
+    },
+    "Na": {
+      "standardState": [],
+      "appearance": [
+        {
+          "text": "Sodium is a soft, silvery metal that turns grayish white when it is left in the air.",
+          "passage": "Na/Physical Description/0",
+          "excerpt": "Sodium appears as a silvery soft metal that becomes grayish white upon exposure to air"
+        }
+      ],
+      "uses": []
+    },
+    "NaCl": {
+      "standardState": [],
+      "appearance": [
+        {
+          "text": "Sodium chloride looks like clear, colorless crystals or a white powder made of tiny crystals.",
+          "passage": "NaCl/Color/Form/0",
+          "excerpt": "Colorless, transparent crystals or white, crystalline powder"
+        }
+      ],
+      "uses": [
+        {
+          "text": "Sodium chloride is a salt that is commonly used to season food, which means adding flavor to it.",
+          "passage": "NaCl/Record Description/8",
+          "excerpt": "A ubiquitous sodium salt that is commonly used to season food."
+        },
+        {
+          "text": "Salt is used to make plastic and paper, and for de-icing, which means clearing away ice.",
+          "passage": "NaCl/Uses/7",
+          "excerpt": "Salt is used for food flavouring, food, plastic production, paper production, water conditioning, de-icing, agricultural applications."
+        },
+        {
+          "text": "Salting food is an important way to preserve it, which means keeping it from going bad.",
+          "passage": "NaCl/Record Description/6",
+          "excerpt": "Salt is one of the oldest and most ubiquitous of food seasonings, and salting is an important method of food preservation."
+        }
+      ]
+    },
+    "O2": {
+      "standardState": [],
+      "appearance": [
+        {
+          "text": "Oxygen is a gas with no color, no smell and no taste.",
+          "passage": "O2/Record Description/0",
+          "excerpt": "Oxygen is a colorless, odorless and tasteless gas."
+        }
+      ],
+      "uses": []
+    },
+    "S": {
+      "standardState": [],
+      "appearance": [
+        {
+          "text": "Sulfur looks like pale yellow crystals or powder and has a faint smell like rotten eggs.",
+          "passage": "S/Physical Description/1",
+          "excerpt": "Pale yellow crystals or powder with faint odor of rotten eggs"
+        }
+      ],
+      "uses": []
+    }
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "claims": {
+    "sodium-chlorine.summary.0": {
+      "verdict": "supported",
+      "excerpt": "In the process, a great amount of light and heat is released."
+    },
+    "sodium-chlorine.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "Sodium chloride, also known as salt, common salt, table salt or halite, is an ionic compound with the chemical formula NaCl"
+    },
+    "sodium-chlorine.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "The sodium loses an electron, and the chlorine gains that electron."
+    },
+    "sodium-chlorine.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "The attraction between oppositely charged ions is called an ionic bond"
+    },
+    "sodium-chlorine.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "a yellow-green gas that is extremely corrosive to most metals and very poisonous to animals and plants"
+    },
+    "sodium-chlorine.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "a soft, silvery-white metal that burns vigorously in air and reacts explosively with water"
+    },
+    "hydrogen-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Once ignited it burns with a pale blue, almost invisible flame."
+    },
+    "hydrogen-oxygen.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "a water molecule contains one oxygen and two hydrogen atoms that are connected by covalent bonds"
+    },
+    "hydrogen-oxygen.bondingWhy.0": {
+      "verdict": "not_supported",
+      "reason": "The passage never describes electrons as 'the tiny particles around an atom', so the claim adds a definition the passage does not give."
+    },
+    "hydrogen-oxygen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+    },
+    "hydrogen-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Will be easily ignited by heat, sparks or flames."
+    },
+    "hydrogen-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "A mixture of hydrogen and oxygen explodes if ignited."
+    },
+    "hydrogen-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Hydrogen and Deuterium fires are difficult to detect since they burn with an invisible flame."
+    },
+    "methane-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Most of the energy released during this chemical reaction is released as heat, and a little bit as light."
+    },
+    "methane-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "When electrons are shared between two atoms, they make a bond called a covalent bond ."
+    },
+    "methane-oxygen.bondingWhy.1": {
+      "verdict": "not_supported",
+      "reason": "The passage says sharing electrons is another way to get a complete valence shell, but it never says the valence shell is the outer shell, so that definition is added."
+    },
+    "methane-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Will be easily ignited by heat, sparks or flames."
+    },
+    "methane-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Extremely flammable. Gas/air mixtures are explosive."
+    },
+    "methane-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Materials that burn in air will burn more vigorously in oxygen."
+    },
+    "iron-sulfur.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Sulfur burns with a blue flame that may be difficult to see in daylight, and produces toxic sulfur dioxide gas."
+    },
+    "iron-sulfur.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Fine iron powder can ignite spontaneously."
+    },
+    "helium-oxygen.whyNot.0": {
+      "verdict": "supported",
+      "excerpt": "these two electrons will be very difficult to remove, making helium unreactive"
+    },
+    "helium-oxygen.whyNot.1": {
+      "verdict": "supported",
+      "excerpt": "Chemically inert. These substances undergo no chemical reactions under any known circumstances."
+    },
+    "CH4.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Methane is a colorless odorless gas."
+    },
+    "CH4.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Colorless, odorless gas"
+    },
+    "CH4.uses.0": {
+      "verdict": "supported",
+      "excerpt": "is often piped into homes for domestic heating and cooking purposes"
+    },
+    "CH4.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Methane may be burned to produce electricity"
+    },
+    "CH4.uses.2": {
+      "verdict": "supported",
+      "excerpt": "It is used in making other chemicals and as a constituent of the fuel, natural gas."
+    },
+    "CO2.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Carbon dioxide appears as a colorless odorless gas at atmospheric temperatures and pressures."
+    },
+    "CO2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Colorless, odorless gas."
+    },
+    "CO2.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Carbon dioxide is used to produce carbonated soft drinks and soda water."
+    },
+    "CO2.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Used to freeze food, to control chemical reactions, and as a fire extinguishing agent."
+    },
+    "CO2.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Life jackets often contain canisters of pressured carbon dioxide for quick inflation."
+    },
+    "Cl2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "chlorine is a yellow-green gas that is heavier than air and has a strong irritating odor"
+    },
+    "Fe.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Pure iron is a silvery white, relatively soft metal"
+    },
+    "FeS.standardState.0": {
+      "verdict": "not_supported",
+      "reason": "The passage says it is a gray to brown solid or, in pure form, colorless crystals, so stating flatly that it is gray to brown leaves out part of the answer."
+    },
+    "FeS.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Dark-brown or black metallic pieces, sticks, or granules"
+    },
+    "FeS.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Used as a pigment in hair dyes and ceramics (former uses), glasses and bottles, and paint"
+    },
+    "FeS.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Treatment of exhaust gases and heavy metal pollution."
+    },
+    "H2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Hydrogen is a colorless, odorless gas."
+    },
+    "H2O.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Water is a liquid at standard ambient temperature and pressure"
+    },
+    "H2O.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "A clear, odorless, tasteless liquid"
+    },
+    "H2O.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Drinking, culinary purposes, bathing, washing, laundering"
+    },
+    "H2O.uses.1": {
+      "verdict": "supported",
+      "excerpt": "agriculture, stock raising and gardens"
+    },
+    "H2O.uses.2": {
+      "verdict": "supported",
+      "excerpt": "for fishing, swimming, boating and other recreational purposes"
+    },
+    "He.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Helium is a colorless odorless gas."
+    },
+    "Na.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Sodium appears as a silvery soft metal that becomes grayish white upon exposure to air."
+    },
+    "NaCl.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Colorless, transparent crystals or white, crystalline powder"
+    },
+    "NaCl.uses.0": {
+      "verdict": "supported",
+      "excerpt": "A ubiquitous sodium salt that is commonly used to season food."
+    },
+    "NaCl.uses.1": {
+      "verdict": "supported",
+      "excerpt": "plastic production, paper production, water conditioning, de-icing"
+    },
+    "NaCl.uses.2": {
+      "verdict": "supported",
+      "excerpt": "salting is an important method of food preservation"
+    },
+    "O2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Oxygen is a colorless, odorless and tasteless gas."
+    },
+    "S.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Pale yellow crystals or powder with faint odor of rotten eggs"
+    }
+  }
+}

@@ -1,0 +1,1859 @@
+{
+  "reactions": {
+    "reaction:sodium-chlorine": {
+      "summary": [
+        {
+          "value": "As the reaction happens, a great deal of light and heat is given off.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/04%3A_Chemical_Bonds/4.03%3A_The_Reaction_of_Sodium_with_Chlorine",
+            "retrieved": "2026-11-16",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "sodium-chlorine.summary.1"
+          }
+        }
+      ],
+      "bonding": {
+        "type": {
+          "value": "ionic",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Record-Description",
+            "retrieved": "2026-11-16",
+            "via": "DrugBank"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "sodium-chlorine.bonding.type"
+          }
+        },
+        "typeSentence": "Sodium chloride, also called table salt, is an ionic compound.",
+        "why": [
+          {
+            "value": "The sodium gives up an electron, and the chlorine takes that electron.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/04%3A_Chemical_Bonds/4.03%3A_The_Reaction_of_Sodium_with_Chlorine",
+              "retrieved": "2026-11-16",
+              "via": "LibreTexts Chemistry"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "sodium-chlorine.bonding.why.0"
+            }
+          },
+          {
+            "value": "An ionic bond is the attraction, or pull, between ions that have opposite electric charges.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/10%3A_Chemical_Bonding/10.03%3A_Lewis_Structures_of_Ionic_Compounds-_Electrons_Transferred",
+              "retrieved": "2026-11-16",
+              "via": "LibreTexts Chemistry"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "sodium-chlorine.bonding.why.1"
+            }
+          }
+        ]
+      },
+      "hazard": {
+        "why": [
+          {
+            "value": "Chlorine is a yellow-green gas that is very poisonous to animals and plants.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/04%3A_Chemical_Bonds/4.03%3A_The_Reaction_of_Sodium_with_Chlorine",
+              "retrieved": "2026-11-16",
+              "via": "LibreTexts Chemistry"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "sodium-chlorine.hazard.why.0"
+            }
+          },
+          {
+            "value": "Sodium metal burns strongly in air and reacts explosively with water.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/04%3A_Chemical_Bonds/4.03%3A_The_Reaction_of_Sodium_with_Chlorine",
+              "retrieved": "2026-11-16",
+              "via": "LibreTexts Chemistry"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "sodium-chlorine.hazard.why.1"
+            }
+          }
+        ]
+      }
+    },
+    "reaction:hydrogen-oxygen": {
+      "summary": [
+        {
+          "value": "Hydrogen burns with a pale blue flame that is almost impossible to see.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/783#section=Record-Description",
+            "retrieved": "2026-11-16",
+            "via": "CAMEO Chemicals"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "hydrogen-oxygen.summary.1"
+          }
+        }
+      ],
+      "bonding": {
+        "type": {
+          "value": "covalent",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Record-Description",
+            "retrieved": "2026-11-16",
+            "via": "DrugBank"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "hydrogen-oxygen.bonding.type"
+          }
+        },
+        "typeSentence": "In water, the oxygen atom and the hydrogen atoms are held together by covalent bonds.",
+        "why": [
+          {
+            "value": "Sharing electrons is a way for atoms to fill up their outer layer of electrons.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/10%3A_Chemical_Bonding/10.04%3A_Covalent_Lewis_Structures-_Electrons_Shared",
+              "retrieved": "2026-11-16",
+              "via": "LibreTexts Chemistry"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "hydrogen-oxygen.bonding.why.0"
+            }
+          }
+        ]
+      },
+      "trigger": {
+        "value": "Hydrogen is easily set alight by heat, sparks or flames.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/783#section=Fire-Hazards",
+          "retrieved": "2026-11-16",
+          "via": "Emergency Response Guidebook (ERG)"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "hydrogen-oxygen.energy.trigger"
+        }
+      },
+      "hazard": {
+        "why": [
+          {
+            "value": "A mixture of hydrogen and oxygen can explode if it is set alight.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_-_Atoms_First_2e_(OpenStax)/18%3A_Representative_Metals_Metalloids_and_Nonmetals/18.06%3A_Occurrence_Preparation_and_Compounds_of_Hydrogen",
+              "retrieved": "2026-11-16",
+              "via": "LibreTexts Chemistry"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "hydrogen-oxygen.hazard.why.0"
+            }
+          },
+          {
+            "value": "Hydrogen fires are hard to notice because they burn with a flame you cannot see.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/783#section=Fire-Hazards",
+              "retrieved": "2026-11-16",
+              "via": "Emergency Response Guidebook (ERG)"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "hydrogen-oxygen.hazard.why.1"
+            }
+          }
+        ]
+      }
+    },
+    "reaction:methane-oxygen": {
+      "summary": [
+        {
+          "value": "As methane burns, most of the energy comes out as heat, and a little comes out as light.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Environmental_Chemistry/Green_Chemistry_and_the_Ten_Commandments_of_Sustainability_(Manahan)/05%3A_Chemical_Reactions-_Making_Materials_Safely_and_Sustainable/5.09%3A_New_Page",
+            "retrieved": "2026-11-16",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "methane-oxygen.summary.1"
+          }
+        }
+      ],
+      "trigger": {
+        "value": "Methane catches fire easily from heat, a spark or a flame.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Fire-Hazards",
+          "retrieved": "2026-11-16",
+          "via": "Emergency Response Guidebook (ERG)"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "methane-oxygen.energy.trigger"
+        }
+      },
+      "hazard": {
+        "why": [
+          {
+            "value": "Methane catches fire very easily, and a mixture of methane gas and air can explode.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Fire-Hazards",
+              "retrieved": "2026-11-16",
+              "via": "ILO-WHO International Chemical Safety Cards (ICSCs)"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "methane-oxygen.hazard.why.0"
+            }
+          },
+          {
+            "value": "Things that burn in air burn even more strongly in oxygen.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/977#section=Record-Description",
+              "retrieved": "2026-11-16",
+              "via": "CAMEO Chemicals"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "methane-oxygen.hazard.why.1"
+            }
+          }
+        ]
+      }
+    },
+    "reaction:iron-sulfur": {
+      "summary": [],
+      "hazard": {
+        "why": [
+          {
+            "value": "Sulfur burns with a blue flame and makes sulfur dioxide, a poisonous gas.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5362487#section=Hazards-Summary",
+              "retrieved": "2026-11-16",
+              "via": "Hazardous Substances Data Bank (HSDB)"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "iron-sulfur.hazard.why.0"
+            }
+          },
+          {
+            "value": "Fine iron powder can catch fire all by itself.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/23925#section=Hazards-Summary",
+              "retrieved": "2026-11-16",
+              "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "iron-sulfur.hazard.why.1"
+            }
+          }
+        ]
+      }
+    },
+    "reaction:helium-oxygen": {
+      "summary": [],
+      "whyNot": [
+        {
+          "value": "Helium's electrons are very hard to remove, which makes helium unreactive, meaning it doesn't easily join in chemical reactions.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(CK-12)/06%3A_The_Periodic_Table/6.11%3A_Noble_Gases",
+            "retrieved": "2026-11-16",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "helium-oxygen.whyNot.0"
+          }
+        },
+        {
+          "value": "Helium is chemically inert, so it takes part in no chemical reactions under any known circumstances.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/23987#section=Reactivity-Profile",
+            "retrieved": "2026-11-16",
+            "via": "CAMEO Chemicals"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "helium-oxygen.whyNot.1"
+          }
+        }
+      ]
+    }
+  },
+  "substances": {
+    "compound:cid-297": {
+      "standardState": {
+        "value": "gas",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Record-Description",
+          "retrieved": "2026-11-16",
+          "via": "CAMEO Chemicals"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-297.standardState"
+        }
+      },
+      "appearance": {
+        "value": "Methane has no color and no smell.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Physical-Description",
+          "retrieved": "2026-11-16",
+          "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-297.appearance"
+        }
+      },
+      "uses": [
+        {
+          "value": "Methane is often piped into homes for heating and cooking.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Toxin and Toxin Target Database (T3DB)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-297.uses.0"
+          }
+        },
+        {
+          "value": "Methane can be burned to make electricity.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Toxin and Toxin Target Database (T3DB)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-297.uses.1"
+          }
+        },
+        {
+          "value": "Methane is used to make other chemicals and is part of the fuel called natural gas.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Record-Description",
+            "retrieved": "2026-11-16",
+            "via": "CAMEO Chemicals"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-297.uses.2"
+          }
+        }
+      ]
+    },
+    "compound:cid-280": {
+      "standardState": {
+        "value": "gas",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/280#section=Record-Description",
+          "retrieved": "2026-11-16",
+          "via": "CAMEO Chemicals"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-280.standardState"
+        }
+      },
+      "appearance": {
+        "value": "Carbon dioxide gas has no color and no smell.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/280#section=Physical-Description",
+          "retrieved": "2026-11-16",
+          "via": "The National Institute for Occupational Safety and Health (NIOSH)"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-280.appearance"
+        }
+      },
+      "uses": [
+        {
+          "value": "Carbon dioxide is used to make fizzy soft drinks and soda water.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/280#section=Record-Description",
+            "retrieved": "2026-11-16",
+            "via": "Toxin and Toxin Target Database (T3DB)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-280.uses.0"
+          }
+        },
+        {
+          "value": "Carbon dioxide is used to put out fires and to freeze food.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/280#section=Record-Description",
+            "retrieved": "2026-11-16",
+            "via": "CAMEO Chemicals"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-280.uses.1"
+          }
+        },
+        {
+          "value": "Life jackets often contain carbon dioxide under pressure so they can inflate, or fill up, quickly.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/280#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Toxin and Toxin Target Database (T3DB)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-280.uses.2"
+          }
+        }
+      ]
+    },
+    "compound:cid-24526": {
+      "appearance": {
+        "value": "Chlorine is a yellow-green gas with a strong, irritating smell.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/24526#section=Record-Description",
+          "retrieved": "2026-11-16",
+          "via": "Agency for Toxic Substances and Disease Registry (ATSDR)"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-24526.appearance"
+        }
+      },
+      "uses": []
+    },
+    "compound:cid-23925": {
+      "appearance": {
+        "value": "Pure iron is a silvery white, fairly soft metal.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/23925#section=Color-Form",
+          "retrieved": "2026-11-16",
+          "via": "Hazardous Substances Data Bank (HSDB)"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-23925.appearance"
+        }
+      },
+      "uses": []
+    },
+    "compound:cid-14828": {
+      "appearance": {
+        "value": "Iron(II) sulfide can look like dark brown or black metal-like pieces, sticks or small grains.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/14828#section=Color-Form",
+          "retrieved": "2026-11-16",
+          "via": "Hazardous Substances Data Bank (HSDB)"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-14828.appearance"
+        }
+      },
+      "uses": [
+        {
+          "value": "Iron(II) sulfide is used as a pigment, a coloring substance, in glass, bottles and paint.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/14828#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-14828.uses.0"
+          }
+        },
+        {
+          "value": "Iron(II) sulfide is used to treat exhaust gases and heavy metal pollution.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/14828#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Hazardous Substances Data Bank (HSDB)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-14828.uses.1"
+          }
+        }
+      ]
+    },
+    "compound:cid-783": {
+      "appearance": {
+        "value": "Hydrogen is a gas with no color and no smell.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/783#section=Record-Description",
+          "retrieved": "2026-11-16",
+          "via": "CAMEO Chemicals"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-783.appearance"
+        }
+      },
+      "uses": []
+    },
+    "compound:cid-962": {
+      "standardState": {
+        "value": "liquid",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Record-Description",
+          "retrieved": "2026-11-16",
+          "via": "DrugBank"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-962.standardState"
+        }
+      },
+      "appearance": {
+        "value": "Water is a clear liquid with no smell or taste.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Record-Description",
+          "retrieved": "2026-11-16",
+          "via": "Medical Subject Headings (MeSH)"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-962.appearance"
+        }
+      },
+      "uses": [
+        {
+          "value": "Water is used for drinking, cooking, bathing, washing and doing laundry.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Hazardous Substances Data Bank (HSDB)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-962.uses.0"
+          }
+        },
+        {
+          "value": "Water is used for farming, raising farm animals and gardens.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Hazardous Substances Data Bank (HSDB)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-962.uses.1"
+          }
+        },
+        {
+          "value": "People also use water for fun, such as swimming, boating and fishing.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Hazardous Substances Data Bank (HSDB)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-962.uses.2"
+          }
+        }
+      ]
+    },
+    "compound:cid-23987": {
+      "appearance": {
+        "value": "Helium is a gas with no color and no smell.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/23987#section=Record-Description",
+          "retrieved": "2026-11-16",
+          "via": "CAMEO Chemicals"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-23987.appearance"
+        }
+      },
+      "uses": []
+    },
+    "compound:cid-5360545": {
+      "appearance": {
+        "value": "Sodium is a soft, silvery metal that turns grayish white when it is left in the air.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5360545#section=Physical-Description",
+          "retrieved": "2026-11-16",
+          "via": "CAMEO Chemicals"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-5360545.appearance"
+        }
+      },
+      "uses": []
+    },
+    "compound:cid-5234": {
+      "appearance": {
+        "value": "Sodium chloride looks like clear, colorless crystals or a white powder made of tiny crystals.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Color-Form",
+          "retrieved": "2026-11-16",
+          "via": "Hazardous Substances Data Bank (HSDB)"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-5234.appearance"
+        }
+      },
+      "uses": [
+        {
+          "value": "Sodium chloride is a salt that is commonly used to season food, which means adding flavor to it.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Record-Description",
+            "retrieved": "2026-11-16",
+            "via": "Medical Subject Headings (MeSH)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-5234.uses.0"
+          }
+        },
+        {
+          "value": "Salt is used to make plastic and paper, and for de-icing, which means clearing away ice.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Toxin and Toxin Target Database (T3DB)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-5234.uses.1"
+          }
+        },
+        {
+          "value": "Salting food is an important way to preserve it, which means keeping it from going bad.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Record-Description",
+            "retrieved": "2026-11-16",
+            "via": "Toxin and Toxin Target Database (T3DB)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-5234.uses.2"
+          }
+        }
+      ]
+    },
+    "compound:cid-977": {
+      "appearance": {
+        "value": "Oxygen is a gas with no color, no smell and no taste.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/977#section=Record-Description",
+          "retrieved": "2026-11-16",
+          "via": "CAMEO Chemicals"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-977.appearance"
+        }
+      },
+      "uses": []
+    },
+    "compound:cid-5362487": {
+      "appearance": {
+        "value": "Sulfur looks like pale yellow crystals or powder and has a faint smell like rotten eggs.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5362487#section=Physical-Description",
+          "retrieved": "2026-11-16",
+          "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-5362487.appearance"
+        }
+      },
+      "uses": []
+    }
+  },
+  "records": [
+    {
+      "id": "sodium-chlorine.summary.1",
+      "subject": {
+        "entity": "reaction:sodium-chlorine",
+        "field": "/summary/1"
+      },
+      "method": "agent",
+      "claimedValue": "As the reaction happens, a great deal of light and heat is given off.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/04%3A_Chemical_Bonds/4.03%3A_The_Reaction_of_Sodium_with_Chlorine",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "In the process, a great amount of light and heat is released.",
+      "evidence": "In the process, a great amount of light and heat is released.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "sodium-chlorine.bonding.type",
+      "subject": {
+        "entity": "reaction:sodium-chlorine",
+        "field": "/bonding/type"
+      },
+      "method": "agent",
+      "claimedValue": "ionic",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Record-Description",
+      "upstream": "DrugBank",
+      "retrievedValue": "Sodium chloride, also known as salt, common salt, table salt or halite, is an ionic compound",
+      "evidence": "Sodium chloride, also known as salt, common salt, table salt or halite, is an ionic compound",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "sodium-chlorine.bonding.why.0",
+      "subject": {
+        "entity": "reaction:sodium-chlorine",
+        "field": "/bonding/why/0"
+      },
+      "method": "agent",
+      "claimedValue": "The sodium gives up an electron, and the chlorine takes that electron.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/04%3A_Chemical_Bonds/4.03%3A_The_Reaction_of_Sodium_with_Chlorine",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "The sodium loses an electron, and the chlorine gains that electron.",
+      "evidence": "The sodium loses an electron, and the chlorine gains that electron.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "sodium-chlorine.bonding.why.1",
+      "subject": {
+        "entity": "reaction:sodium-chlorine",
+        "field": "/bonding/why/1"
+      },
+      "method": "agent",
+      "claimedValue": "An ionic bond is the attraction, or pull, between ions that have opposite electric charges.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/10%3A_Chemical_Bonding/10.03%3A_Lewis_Structures_of_Ionic_Compounds-_Electrons_Transferred",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "The attraction between oppositely charged ions is called an ionic bond",
+      "evidence": "The attraction between oppositely charged ions is called an ionic bond",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "sodium-chlorine.hazard.why.0",
+      "subject": {
+        "entity": "reaction:sodium-chlorine",
+        "field": "/hazard/why/0"
+      },
+      "method": "agent",
+      "claimedValue": "Chlorine is a yellow-green gas that is very poisonous to animals and plants.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/04%3A_Chemical_Bonds/4.03%3A_The_Reaction_of_Sodium_with_Chlorine",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "a yellow-green gas that is extremely corrosive to most metals and very poisonous to animals and plants",
+      "evidence": "a yellow-green gas that is extremely corrosive to most metals and very poisonous to animals and plants",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "sodium-chlorine.hazard.why.1",
+      "subject": {
+        "entity": "reaction:sodium-chlorine",
+        "field": "/hazard/why/1"
+      },
+      "method": "agent",
+      "claimedValue": "Sodium metal burns strongly in air and reacts explosively with water.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/04%3A_Chemical_Bonds/4.03%3A_The_Reaction_of_Sodium_with_Chlorine",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "a soft, silvery-white metal that burns vigorously in air and reacts explosively with water",
+      "evidence": "a soft, silvery-white metal that burns vigorously in air and reacts explosively with water",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "hydrogen-oxygen.summary.1",
+      "subject": {
+        "entity": "reaction:hydrogen-oxygen",
+        "field": "/summary/1"
+      },
+      "method": "agent",
+      "claimedValue": "Hydrogen burns with a pale blue flame that is almost impossible to see.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/783#section=Record-Description",
+      "upstream": "CAMEO Chemicals",
+      "retrievedValue": "Once ignited it burns with a pale blue, almost invisible flame.",
+      "evidence": "Once ignited it burns with a pale blue, almost invisible flame.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "hydrogen-oxygen.bonding.type",
+      "subject": {
+        "entity": "reaction:hydrogen-oxygen",
+        "field": "/bonding/type"
+      },
+      "method": "agent",
+      "claimedValue": "covalent",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Record-Description",
+      "upstream": "DrugBank",
+      "retrievedValue": "a water molecule contains one oxygen and two hydrogen atoms that are connected by covalent bonds.",
+      "evidence": "a water molecule contains one oxygen and two hydrogen atoms that are connected by covalent bonds.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "hydrogen-oxygen.bonding.why.0",
+      "subject": {
+        "entity": "reaction:hydrogen-oxygen",
+        "field": "/bonding/why/0"
+      },
+      "method": "agent",
+      "claimedValue": "Sharing electrons is a way for atoms to fill up their outer layer of electrons.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/10%3A_Chemical_Bonding/10.04%3A_Covalent_Lewis_Structures-_Electrons_Shared",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "There is another mechanism for obtaining a complete valence shell: sharing electrons.",
+      "evidence": "There is another mechanism for obtaining a complete valence shell: sharing electrons.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "hydrogen-oxygen.energy.trigger",
+      "subject": {
+        "entity": "reaction:hydrogen-oxygen",
+        "field": "/energy/trigger"
+      },
+      "method": "agent",
+      "claimedValue": "Hydrogen is easily set alight by heat, sparks or flames.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/783#section=Fire-Hazards",
+      "upstream": "Emergency Response Guidebook (ERG)",
+      "retrievedValue": "Will be easily ignited by heat, sparks or flames.",
+      "evidence": "Will be easily ignited by heat, sparks or flames.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "hydrogen-oxygen.hazard.why.0",
+      "subject": {
+        "entity": "reaction:hydrogen-oxygen",
+        "field": "/hazard/why/0"
+      },
+      "method": "agent",
+      "claimedValue": "A mixture of hydrogen and oxygen can explode if it is set alight.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_-_Atoms_First_2e_(OpenStax)/18%3A_Representative_Metals_Metalloids_and_Nonmetals/18.06%3A_Occurrence_Preparation_and_Compounds_of_Hydrogen",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "A mixture of hydrogen and oxygen explodes if ignited.",
+      "evidence": "A mixture of hydrogen and oxygen explodes if ignited.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "hydrogen-oxygen.hazard.why.1",
+      "subject": {
+        "entity": "reaction:hydrogen-oxygen",
+        "field": "/hazard/why/1"
+      },
+      "method": "agent",
+      "claimedValue": "Hydrogen fires are hard to notice because they burn with a flame you cannot see.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/783#section=Fire-Hazards",
+      "upstream": "Emergency Response Guidebook (ERG)",
+      "retrievedValue": "Hydrogen and Deuterium fires are difficult to detect since they burn with an invisible flame.",
+      "evidence": "Hydrogen and Deuterium fires are difficult to detect since they burn with an invisible flame.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "methane-oxygen.summary.1",
+      "subject": {
+        "entity": "reaction:methane-oxygen",
+        "field": "/summary/1"
+      },
+      "method": "agent",
+      "claimedValue": "As methane burns, most of the energy comes out as heat, and a little comes out as light.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Environmental_Chemistry/Green_Chemistry_and_the_Ten_Commandments_of_Sustainability_(Manahan)/05%3A_Chemical_Reactions-_Making_Materials_Safely_and_Sustainable/5.09%3A_New_Page",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "Most of the energy released during this chemical reaction is released as heat, and a little bit as light.",
+      "evidence": "Most of the energy released during this chemical reaction is released as heat, and a little bit as light.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "methane-oxygen.energy.trigger",
+      "subject": {
+        "entity": "reaction:methane-oxygen",
+        "field": "/energy/trigger"
+      },
+      "method": "agent",
+      "claimedValue": "Methane catches fire easily from heat, a spark or a flame.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Fire-Hazards",
+      "upstream": "Emergency Response Guidebook (ERG)",
+      "retrievedValue": "Will be easily ignited by heat, sparks or flames.",
+      "evidence": "Will be easily ignited by heat, sparks or flames.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "methane-oxygen.hazard.why.0",
+      "subject": {
+        "entity": "reaction:methane-oxygen",
+        "field": "/hazard/why/0"
+      },
+      "method": "agent",
+      "claimedValue": "Methane catches fire very easily, and a mixture of methane gas and air can explode.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Fire-Hazards",
+      "upstream": "ILO-WHO International Chemical Safety Cards (ICSCs)",
+      "retrievedValue": "Extremely flammable. Gas/air mixtures are explosive.",
+      "evidence": "Extremely flammable. Gas/air mixtures are explosive.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "methane-oxygen.hazard.why.1",
+      "subject": {
+        "entity": "reaction:methane-oxygen",
+        "field": "/hazard/why/1"
+      },
+      "method": "agent",
+      "claimedValue": "Things that burn in air burn even more strongly in oxygen.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/977#section=Record-Description",
+      "upstream": "CAMEO Chemicals",
+      "retrievedValue": "Materials that burn in air will burn more vigorously in oxygen.",
+      "evidence": "Materials that burn in air will burn more vigorously in oxygen.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "iron-sulfur.hazard.why.0",
+      "subject": {
+        "entity": "reaction:iron-sulfur",
+        "field": "/hazard/why/0"
+      },
+      "method": "agent",
+      "claimedValue": "Sulfur burns with a blue flame and makes sulfur dioxide, a poisonous gas.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5362487#section=Hazards-Summary",
+      "upstream": "Hazardous Substances Data Bank (HSDB)",
+      "retrievedValue": "Sulfur burns with a blue flame that may be difficult to see in daylight, and produces toxic sulfur dioxide gas.",
+      "evidence": "Sulfur burns with a blue flame that may be difficult to see in daylight, and produces toxic sulfur dioxide gas.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "iron-sulfur.hazard.why.1",
+      "subject": {
+        "entity": "reaction:iron-sulfur",
+        "field": "/hazard/why/1"
+      },
+      "method": "agent",
+      "claimedValue": "Fine iron powder can catch fire all by itself.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/23925#section=Hazards-Summary",
+      "upstream": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "retrievedValue": "Fine iron powder can ignite spontaneously.",
+      "evidence": "Fine iron powder can ignite spontaneously.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "helium-oxygen.whyNot.0",
+      "subject": {
+        "entity": "reaction:helium-oxygen",
+        "field": "/whyNot/0"
+      },
+      "method": "agent",
+      "claimedValue": "Helium's electrons are very hard to remove, which makes helium unreactive, meaning it doesn't easily join in chemical reactions.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(CK-12)/06%3A_The_Periodic_Table/6.11%3A_Noble_Gases",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "these two electrons will be very difficult to remove, making helium unreactive",
+      "evidence": "these two electrons will be very difficult to remove, making helium unreactive",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "helium-oxygen.whyNot.1",
+      "subject": {
+        "entity": "reaction:helium-oxygen",
+        "field": "/whyNot/1"
+      },
+      "method": "agent",
+      "claimedValue": "Helium is chemically inert, so it takes part in no chemical reactions under any known circumstances.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/23987#section=Reactivity-Profile",
+      "upstream": "CAMEO Chemicals",
+      "retrievedValue": "Chemically inert. These substances undergo no chemical reactions under any known circumstances.",
+      "evidence": "Chemically inert. These substances undergo no chemical reactions under any known circumstances.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-297.standardState",
+      "subject": {
+        "entity": "compound:cid-297",
+        "field": "/standardState"
+      },
+      "method": "agent",
+      "claimedValue": "gas",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Record-Description",
+      "upstream": "CAMEO Chemicals",
+      "retrievedValue": "Methane is a colorless odorless gas.",
+      "evidence": "Methane is a colorless odorless gas.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-297.appearance",
+      "subject": {
+        "entity": "compound:cid-297",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Methane has no color and no smell.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Physical-Description",
+      "upstream": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "retrievedValue": "Colorless, odorless gas",
+      "evidence": "Colorless, odorless gas",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-297.uses.0",
+      "subject": {
+        "entity": "compound:cid-297",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Methane is often piped into homes for heating and cooking.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Uses",
+      "upstream": "Toxin and Toxin Target Database (T3DB)",
+      "retrievedValue": "is often piped into homes for domestic heating and cooking purposes",
+      "evidence": "is often piped into homes for domestic heating and cooking purposes",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-297.uses.1",
+      "subject": {
+        "entity": "compound:cid-297",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Methane can be burned to make electricity.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Uses",
+      "upstream": "Toxin and Toxin Target Database (T3DB)",
+      "retrievedValue": "Methane may be burned to produce electricity",
+      "evidence": "Methane may be burned to produce electricity",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-297.uses.2",
+      "subject": {
+        "entity": "compound:cid-297",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Methane is used to make other chemicals and is part of the fuel called natural gas.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/297#section=Record-Description",
+      "upstream": "CAMEO Chemicals",
+      "retrievedValue": "It is used in making other chemicals and as a constituent of the fuel, natural gas.",
+      "evidence": "It is used in making other chemicals and as a constituent of the fuel, natural gas.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-280.standardState",
+      "subject": {
+        "entity": "compound:cid-280",
+        "field": "/standardState"
+      },
+      "method": "agent",
+      "claimedValue": "gas",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/280#section=Record-Description",
+      "upstream": "CAMEO Chemicals",
+      "retrievedValue": "Carbon dioxide appears as a colorless odorless gas at atmospheric temperatures and pressures.",
+      "evidence": "Carbon dioxide appears as a colorless odorless gas at atmospheric temperatures and pressures.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-280.appearance",
+      "subject": {
+        "entity": "compound:cid-280",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Carbon dioxide gas has no color and no smell.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/280#section=Physical-Description",
+      "upstream": "The National Institute for Occupational Safety and Health (NIOSH)",
+      "retrievedValue": "Colorless, odorless gas.",
+      "evidence": "Colorless, odorless gas.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-280.uses.0",
+      "subject": {
+        "entity": "compound:cid-280",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Carbon dioxide is used to make fizzy soft drinks and soda water.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/280#section=Record-Description",
+      "upstream": "Toxin and Toxin Target Database (T3DB)",
+      "retrievedValue": "Carbon dioxide is used to produce carbonated soft drinks and soda water.",
+      "evidence": "Carbon dioxide is used to produce carbonated soft drinks and soda water.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-280.uses.1",
+      "subject": {
+        "entity": "compound:cid-280",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Carbon dioxide is used to put out fires and to freeze food.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/280#section=Record-Description",
+      "upstream": "CAMEO Chemicals",
+      "retrievedValue": "Used to freeze food, to control chemical reactions, and as a fire extinguishing agent.",
+      "evidence": "Used to freeze food, to control chemical reactions, and as a fire extinguishing agent.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-280.uses.2",
+      "subject": {
+        "entity": "compound:cid-280",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Life jackets often contain carbon dioxide under pressure so they can inflate, or fill up, quickly.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/280#section=Uses",
+      "upstream": "Toxin and Toxin Target Database (T3DB)",
+      "retrievedValue": "Life jackets often contain canisters of pressured carbon dioxide for quick inflation.",
+      "evidence": "Life jackets often contain canisters of pressured carbon dioxide for quick inflation.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-24526.appearance",
+      "subject": {
+        "entity": "compound:cid-24526",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Chlorine is a yellow-green gas with a strong, irritating smell.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/24526#section=Record-Description",
+      "upstream": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+      "retrievedValue": "chlorine is a yellow-green gas that is heavier than air and has a strong irritating odor",
+      "evidence": "chlorine is a yellow-green gas that is heavier than air and has a strong irritating odor",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-23925.appearance",
+      "subject": {
+        "entity": "compound:cid-23925",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Pure iron is a silvery white, fairly soft metal.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/23925#section=Color-Form",
+      "upstream": "Hazardous Substances Data Bank (HSDB)",
+      "retrievedValue": "Pure iron is a silvery white, relatively soft metal",
+      "evidence": "Pure iron is a silvery white, relatively soft metal",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-14828.appearance",
+      "subject": {
+        "entity": "compound:cid-14828",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Iron(II) sulfide can look like dark brown or black metal-like pieces, sticks or small grains.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/14828#section=Color-Form",
+      "upstream": "Hazardous Substances Data Bank (HSDB)",
+      "retrievedValue": "Dark-brown or black metallic pieces, sticks, or granules",
+      "evidence": "Dark-brown or black metallic pieces, sticks, or granules",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-14828.uses.0",
+      "subject": {
+        "entity": "compound:cid-14828",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Iron(II) sulfide is used as a pigment, a coloring substance, in glass, bottles and paint.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/14828#section=Uses",
+      "upstream": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "retrievedValue": "Used as a pigment in hair dyes and ceramics (former uses), glasses and bottles, and paint",
+      "evidence": "Used as a pigment in hair dyes and ceramics (former uses), glasses and bottles, and paint",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-14828.uses.1",
+      "subject": {
+        "entity": "compound:cid-14828",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Iron(II) sulfide is used to treat exhaust gases and heavy metal pollution.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/14828#section=Uses",
+      "upstream": "Hazardous Substances Data Bank (HSDB)",
+      "retrievedValue": "Treatment of exhaust gases and heavy metal pollution.",
+      "evidence": "Treatment of exhaust gases and heavy metal pollution.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-783.appearance",
+      "subject": {
+        "entity": "compound:cid-783",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Hydrogen is a gas with no color and no smell.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/783#section=Record-Description",
+      "upstream": "CAMEO Chemicals",
+      "retrievedValue": "Hydrogen is a colorless, odorless gas.",
+      "evidence": "Hydrogen is a colorless, odorless gas.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-962.standardState",
+      "subject": {
+        "entity": "compound:cid-962",
+        "field": "/standardState"
+      },
+      "method": "agent",
+      "claimedValue": "liquid",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Record-Description",
+      "upstream": "DrugBank",
+      "retrievedValue": "Water is a liquid at standard ambient temperature and pressure",
+      "evidence": "Water is a liquid at standard ambient temperature and pressure",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-962.appearance",
+      "subject": {
+        "entity": "compound:cid-962",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Water is a clear liquid with no smell or taste.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Record-Description",
+      "upstream": "Medical Subject Headings (MeSH)",
+      "retrievedValue": "A clear, odorless, tasteless liquid",
+      "evidence": "A clear, odorless, tasteless liquid",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-962.uses.0",
+      "subject": {
+        "entity": "compound:cid-962",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Water is used for drinking, cooking, bathing, washing and doing laundry.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Uses",
+      "upstream": "Hazardous Substances Data Bank (HSDB)",
+      "retrievedValue": "Drinking, culinary purposes, bathing, washing, laundering",
+      "evidence": "Drinking, culinary purposes, bathing, washing, laundering",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-962.uses.1",
+      "subject": {
+        "entity": "compound:cid-962",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Water is used for farming, raising farm animals and gardens.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Uses",
+      "upstream": "Hazardous Substances Data Bank (HSDB)",
+      "retrievedValue": "agriculture, stock raising and gardens",
+      "evidence": "agriculture, stock raising and gardens",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-962.uses.2",
+      "subject": {
+        "entity": "compound:cid-962",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "People also use water for fun, such as swimming, boating and fishing.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/962#section=Uses",
+      "upstream": "Hazardous Substances Data Bank (HSDB)",
+      "retrievedValue": "for fishing, swimming, boating and other recreational purposes",
+      "evidence": "for fishing, swimming, boating and other recreational purposes",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-23987.appearance",
+      "subject": {
+        "entity": "compound:cid-23987",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Helium is a gas with no color and no smell.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/23987#section=Record-Description",
+      "upstream": "CAMEO Chemicals",
+      "retrievedValue": "Helium is a colorless odorless gas.",
+      "evidence": "Helium is a colorless odorless gas.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-5360545.appearance",
+      "subject": {
+        "entity": "compound:cid-5360545",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Sodium is a soft, silvery metal that turns grayish white when it is left in the air.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5360545#section=Physical-Description",
+      "upstream": "CAMEO Chemicals",
+      "retrievedValue": "Sodium appears as a silvery soft metal that becomes grayish white upon exposure to air.",
+      "evidence": "Sodium appears as a silvery soft metal that becomes grayish white upon exposure to air.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-5234.appearance",
+      "subject": {
+        "entity": "compound:cid-5234",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Sodium chloride looks like clear, colorless crystals or a white powder made of tiny crystals.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Color-Form",
+      "upstream": "Hazardous Substances Data Bank (HSDB)",
+      "retrievedValue": "Colorless, transparent crystals or white, crystalline powder",
+      "evidence": "Colorless, transparent crystals or white, crystalline powder",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-5234.uses.0",
+      "subject": {
+        "entity": "compound:cid-5234",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Sodium chloride is a salt that is commonly used to season food, which means adding flavor to it.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Record-Description",
+      "upstream": "Medical Subject Headings (MeSH)",
+      "retrievedValue": "A ubiquitous sodium salt that is commonly used to season food.",
+      "evidence": "A ubiquitous sodium salt that is commonly used to season food.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-5234.uses.1",
+      "subject": {
+        "entity": "compound:cid-5234",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Salt is used to make plastic and paper, and for de-icing, which means clearing away ice.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Uses",
+      "upstream": "Toxin and Toxin Target Database (T3DB)",
+      "retrievedValue": "Salt is used for food flavouring, food, plastic production, paper production, water conditioning, de-icing, agricultural applications.",
+      "evidence": "Salt is used for food flavouring, food, plastic production, paper production, water conditioning, de-icing, agricultural applications.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-5234.uses.2",
+      "subject": {
+        "entity": "compound:cid-5234",
+        "field": "/uses/2"
+      },
+      "method": "agent",
+      "claimedValue": "Salting food is an important way to preserve it, which means keeping it from going bad.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5234#section=Record-Description",
+      "upstream": "Toxin and Toxin Target Database (T3DB)",
+      "retrievedValue": "salting is an important method of food preservation",
+      "evidence": "salting is an important method of food preservation",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-977.appearance",
+      "subject": {
+        "entity": "compound:cid-977",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Oxygen is a gas with no color, no smell and no taste.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/977#section=Record-Description",
+      "upstream": "CAMEO Chemicals",
+      "retrievedValue": "Oxygen is a colorless, odorless and tasteless gas.",
+      "evidence": "Oxygen is a colorless, odorless and tasteless gas.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    },
+    {
+      "id": "cid-5362487.appearance",
+      "subject": {
+        "entity": "compound:cid-5362487",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Sulfur looks like pale yellow crystals or powder and has a faint smell like rotten eggs.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5362487#section=Physical-Description",
+      "upstream": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "retrievedValue": "Pale yellow crystals or powder with faint odor of rotten eggs",
+      "evidence": "Pale yellow crystals or powder with faint odor of rotten eggs",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:19:03Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c814a3b",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-pilot-43785112064"
+    }
+  ]
+}
