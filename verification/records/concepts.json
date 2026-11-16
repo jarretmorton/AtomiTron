@@ -69,6 +69,94 @@
       "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
+      "id": "concept.endothermic",
+      "subject": {
+        "entity": "concept:endothermic",
+        "field": "/text"
+      },
+      "method": "agent",
+      "claimedValue": "Reactions that absorb energy are called endothermic.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/03%3A_Matter_and_Energy/3.09%3A_Energy_and_Chemical_and_Physical_Change",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "Reactions that absorb energy are endothermic.",
+      "evidence": "Reactions that absorb energy are endothermic.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T02:06:46Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at a1a0d96",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-explanations"
+    },
+    {
+      "id": "concept.enthalpySign",
+      "subject": {
+        "entity": "concept:enthalpySign",
+        "field": "/text"
+      },
+      "method": "agent",
+      "claimedValue": "A negative enthalpy change means a reaction is exothermic, and a positive one means it is endothermic.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_2e_(OpenStax)/05%3A_Thermochemistry/5.03%3A_Enthalpy",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "A negative value of an enthalpy change, Δ H < 0, indicates an exothermic reaction; a positive value, Δ H > 0, indicates an endothermic",
+      "evidence": "A negative value of an enthalpy change, Δ H < 0, indicates an exothermic reaction; a positive value, Δ H > 0, indicates an endothermic",
+      "result": "pass",
+      "checkedAt": "2026-11-16T02:06:46Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at a1a0d96",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-explanations"
+    },
+    {
+      "id": "concept.exothermic",
+      "subject": {
+        "entity": "concept:exothermic",
+        "field": "/text"
+      },
+      "method": "agent",
+      "claimedValue": "Reactions that release energy are called exothermic.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/03%3A_Matter_and_Energy/3.09%3A_Energy_and_Chemical_and_Physical_Change",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "Reactions that release energy are exothermic.",
+      "evidence": "Reactions that release energy are exothermic.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T02:06:46Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at a1a0d96",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-explanations"
+    },
+    {
+      "id": "concept.formationZero",
+      "subject": {
+        "entity": "concept:formationZero",
+        "field": "/text"
+      },
+      "method": "agent",
+      "claimedValue": "By definition, an element in its most stable form has a standard enthalpy of formation of zero.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_2e_(OpenStax)/05%3A_Thermochemistry/5.03%3A_Enthalpy",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "By definition, the standard enthalpy of formation of an element in its most stable form is equal to zero under standard conditions",
+      "evidence": "By definition, the standard enthalpy of formation of an element in its most stable form is equal to zero under standard conditions",
+      "result": "pass",
+      "checkedAt": "2026-11-16T02:06:46Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at a1a0d96",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-explanations"
+    },
+    {
       "id": "concept.isotopes",
       "subject": {
         "entity": "concept:isotopes",
