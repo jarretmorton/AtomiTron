@@ -13,6 +13,10 @@ const VALENCE = `${LT}/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.07%3A_E
 const ENERGY = `${LT}/03%3A_Matter_and_Energy/3.09%3A_Energy_and_Chemical_and_Physical_Change`;
 const OPENSTAX = 'https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_2e_(OpenStax)';
 const ENTHALPY = `${OPENSTAX}/05%3A_Thermochemistry/5.03%3A_Enthalpy`;
+const POLARITY = `${LT}/10%3A_Chemical_Bonding/10.08%3A_Electronegativity_and_Polarity_-_Why_Oil_and_Water_Do_not_Mix`;
+const BALANCE = `${LT}/07%3A_Chemical_Reactions/7.04%3A_How_to_Write_Balanced_Chemical_Equations`;
+const CK12 = 'https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(CK-12)';
+const COORDINATION = `${CK12}/08%3A_Ionic_and_Metallic_Bonding/8.08%3A_Coordination_Number`;
 
 export interface Concept {
   text: string;
@@ -59,6 +63,22 @@ export const CONCEPTS = {
   enthalpySign: {
     text: 'A negative enthalpy change means a reaction is exothermic, and a positive one means it is endothermic.',
     url: ENTHALPY,
+  },
+  electronegativity: {
+    text: 'Electronegativity is the ability of an atom in a molecule to attract shared electrons.',
+    url: POLARITY,
+  },
+  bondByDifference: {
+    text: 'When the electronegativity difference between two atoms is small, the electrons are shared and the bond is covalent; when it is large, one atom takes the electrons and the bond is ionic.',
+    url: POLARITY,
+  },
+  saltLattice: {
+    text: 'In a sodium chloride crystal, six chloride ions surround each sodium ion, and six sodium ions surround each chloride ion.',
+    url: COORDINATION,
+  },
+  balanced: {
+    text: 'A balanced chemical equation has the same number and type of each atom on both sides.',
+    url: BALANCE,
   },
   formationZero: {
     text: 'By definition, an element in its most stable form has a standard enthalpy of formation of zero.',

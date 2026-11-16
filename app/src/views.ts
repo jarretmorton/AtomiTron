@@ -2,6 +2,7 @@
 
 import { combineView } from './views/combine';
 import { elementView } from './views/element';
+import { previewView } from './views/preview';
 import { tableView } from './views/table';
 
 function placeholder(title: string, body: string, phase: number): () => HTMLElement {
@@ -24,6 +25,8 @@ export const views = {
   table: () => tableView(),
   element: (params: string[]) => elementView(params[0]),
   combine: (params: string[]) => combineView(params),
+  // Not linked from the app: a review page for proposed visuals.
+  preview: () => previewView(),
   journal: placeholder('Journal', 'Every compound you discover and every hypothesis you write is collected here.', 4),
 } satisfies Record<string, (params: string[]) => HTMLElement>;
 

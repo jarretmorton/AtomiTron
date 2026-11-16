@@ -1,0 +1,99 @@
+{
+ "cid": 222,
+ "source": {
+  "url": "https://pubchem.ncbi.nlm.nih.gov/compound/222#section=3D-Conformer",
+  "via": "PubChem",
+  "retrieved": "2026-11-15"
+ },
+ "note": "Computed by PubChem: a model, not a measurement.",
+ "3d": {
+  "atoms": [
+   {
+    "symbol": "N",
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   {
+    "symbol": "H",
+    "x": -0.4417,
+    "y": 0.2906,
+    "z": 0.8711
+   },
+   {
+    "symbol": "H",
+    "x": 0.7256,
+    "y": 0.6896,
+    "z": -0.1907
+   },
+   {
+    "symbol": "H",
+    "x": 0.4875,
+    "y": -0.8701,
+    "z": 0.2089
+   }
+  ],
+  "bonds": [
+   {
+    "a": 0,
+    "b": 1,
+    "order": 1
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "order": 1
+   },
+   {
+    "a": 0,
+    "b": 3,
+    "order": 1
+   }
+  ]
+ },
+ "2d": {
+  "atoms": [
+   {
+    "symbol": "N",
+    "x": 2.5369,
+    "y": 0.155,
+    "z": 0.0
+   },
+   {
+    "symbol": "H",
+    "x": 3.0739,
+    "y": 0.465,
+    "z": 0.0
+   },
+   {
+    "symbol": "H",
+    "x": 2,
+    "y": 0.465,
+    "z": 0.0
+   },
+   {
+    "symbol": "H",
+    "x": 2.5369,
+    "y": -0.465,
+    "z": 0.0
+   }
+  ],
+  "bonds": [
+   {
+    "a": 0,
+    "b": 1,
+    "order": 1
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "order": 1
+   },
+   {
+    "a": 0,
+    "b": 3,
+    "order": 1
+   }
+  ]
+ }
+}
