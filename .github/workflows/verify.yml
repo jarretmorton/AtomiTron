@@ -22,6 +22,7 @@ on:
           - draft-and-verify
           - verify-explanations
           - reactions-pilot
+          - reactions-all
         default: reverify-pilot
       elements:
         description: "For draft-and-verify: element symbols separated by spaces, or 'remaining' (every element without history and uses yet, about $20–25)"
@@ -38,7 +39,7 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120  # the full reaction run is about 230 API calls
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
@@ -52,7 +53,7 @@ jobs:
       - run: npm ci
 
       - name: Collect the source passages
-        if: inputs.task != 'reactions-pilot'
+        if: ${{ !startsWith(inputs.task, 'reactions') }}
         env:
           ELEMENTS: ${{ inputs.task == 'reverify-pilot' && 'H C N O Na Mg Cl Fe Cu Au' || inputs.task == 'verify-explanations' && '--concepts-only' || inputs.elements }}
         run: python -m pipeline.text_sources $ELEMENTS
@@ -98,18 +99,20 @@ jobs:
           python -m pipeline.text_facts evaluate "$RUN"
           cp "$RUN/report.md" "$RUN/comparison.md"
 
-      # Phase 3: the text for five pilot reactions and their substances
-      # (summaries, bonding, triggers, hazard notes, states, uses), about $2-3.
+      # Phase 3: the text for reactions and their substances (summaries,
+      # bonding, triggers, hazard notes, states, uses). reactions-pilot does
+      # five reactions (about $2); reactions-all does all 49 (about $15-20).
       # The energies and hazard statements come from code (pipeline.compounds).
-      - name: Draft and verify reaction text (pilot) through the Claude API
-        if: inputs.task == 'reactions-pilot'
+      - name: Draft and verify reaction text through the Claude API
+        if: ${{ startsWith(inputs.task, 'reactions') }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WHICH: ${{ inputs.task == 'reactions-all' && 'all' || 'pilot' }}
         run: |
-          RUN="verification/agent-runs/$(date -u +%F)-api-reactions-pilot-${{ github.run_id }}"
+          RUN="verification/agent-runs/$(date -u +%F)-api-reactions-$WHICH-${{ github.run_id }}"
           echo "RUN=$RUN" >> "$GITHUB_ENV"
           python -m pipeline.compounds
-          python -m pipeline.reaction_text sources pilot
+          python -m pipeline.reaction_text sources "$WHICH"
           python -m pipeline.reaction_text draft "$RUN"
           python -m pipeline.reaction_text claims "$RUN"
           python -m pipeline.agents_api verify "$RUN"

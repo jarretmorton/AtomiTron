@@ -350,10 +350,13 @@ def build_claims(run: Path) -> None:
                     rejected.append((cid, f"more than {limit} {field} statement(s)"))
                 else:
                     take(cid, field, item, t["passages"], t["id"])
-    for s in tasks["substances"]:
+    for n, s in enumerate(tasks["substances"]):
         d = drafts["substances"].get(s["key"])
         if not d:
             continue
+        # One verifier call per batch of substances, as in drafting: a single
+        # call for all of them could run out of room and answer nothing.
+        group = f"substances-{n // SUBSTANCES_PER_CALL}"
         for field, limit in SUBSTANCE_FIELDS.items():
             for i, item in enumerate(d.get(field, [])):
                 cid = f"{s['key']}.{field}.{i}"
@@ -362,7 +365,7 @@ def build_claims(run: Path) -> None:
                 elif i >= limit:
                     rejected.append((cid, f"more than {limit} {field} statement(s)"))
                 else:
-                    take(cid, field, item, s["passages"], "substances")
+                    take(cid, field, item, s["passages"], group)
     write_json(run / "claims.json", claims)
     write_json(run / "rejected-before-verification.json", [{"id": c, "reason": r} for c, r in rejected])
     print(f"{len(claims)} claims for verification ({len(rejected)} rejected by code first) -> {run / 'claims.json'}")
