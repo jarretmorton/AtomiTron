@@ -1,20 +1,20 @@
 {
   "claims": {
-    "concept.exothermic": {
+    "concept.electronegativity": {
       "verdict": "supported",
-      "excerpt": "Reactions that release energy are exothermic."
+      "excerpt": "The ability of an atom in a molecule to attract shared electrons is called electronegativity"
     },
-    "concept.endothermic": {
+    "concept.bondByDifference": {
       "verdict": "supported",
-      "excerpt": "Reactions that absorb energy are endothermic."
+      "excerpt": "If the difference between the electronegativities is large, the more electronegative atom will take the bonding electrons completely away from the other atom"
     },
-    "concept.enthalpySign": {
+    "concept.saltLattice": {
       "verdict": "supported",
-      "excerpt": "negative value of an enthalpy change, Δ H < 0, indicates an exothermic reaction; a positive value, Δ H > 0, indicates an endothermic reaction"
+      "excerpt": "Likewise, six sodium ions immediately surround each chloride ion, making the coordination number of chloride also equal to 6."
     },
-    "concept.formationZero": {
+    "concept.balanced": {
       "verdict": "supported",
-      "excerpt": "By definition, the standard enthalpy of formation of an element in its most stable form is equal to zero under standard conditions"
+      "excerpt": "Balanced chemical equations have the same number and type of each atom on both sides of the equation."
     }
   }
 }

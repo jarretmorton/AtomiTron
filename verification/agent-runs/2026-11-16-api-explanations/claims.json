@@ -1,22 +1,22 @@
 [
   {
-    "id": "concept.exothermic",
-    "text": "Reactions that release energy are called exothermic.",
-    "passage": "concept/energy"
+    "id": "concept.electronegativity",
+    "text": "Electronegativity is the ability of an atom in a molecule to attract shared electrons.",
+    "passage": "concept/polarity"
   },
   {
-    "id": "concept.endothermic",
-    "text": "Reactions that absorb energy are called endothermic.",
-    "passage": "concept/energy"
+    "id": "concept.bondByDifference",
+    "text": "When the electronegativity difference between two atoms is small, the electrons are shared and the bond is covalent; when it is large, one atom takes the electrons and the bond is ionic.",
+    "passage": "concept/polarity"
   },
   {
-    "id": "concept.enthalpySign",
-    "text": "A negative enthalpy change means a reaction is exothermic, and a positive one means it is endothermic.",
-    "passage": "concept/enthalpy"
+    "id": "concept.saltLattice",
+    "text": "In a sodium chloride crystal, six chloride ions surround each sodium ion, and six sodium ions surround each chloride ion.",
+    "passage": "concept/coordination"
   },
   {
-    "id": "concept.formationZero",
-    "text": "By definition, an element in its most stable form has a standard enthalpy of formation of zero.",
-    "passage": "concept/enthalpy"
+    "id": "concept.balanced",
+    "text": "A balanced chemical equation has the same number and type of each atom on both sides.",
+    "passage": "concept/balance"
   }
 ]
