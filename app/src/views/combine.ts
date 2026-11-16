@@ -25,23 +25,13 @@ import type { Compound, Fact, Phase, Range, Reaction } from '../data/schema';
 import { bondDiagram, planBond, type AtomInfo } from '../ui/bond-diagram';
 import { citation, conceptNote, el, factRow } from '../ui/fact';
 import { num } from '../ui/format';
+import { beforeAfter, crystal3d, energyHill, energyScale, formulaNode, molecule3d, photosFor, pubchemDrawing } from '../ui/visuals';
 import { CLASSES } from './table';
 
 /** The current selection, kept while moving between the picker and a result. */
 let selection: string[] = [];
 
 const PHASE: Record<Phase, string> = { s: 's', l: 'l', g: 'g' };
-
-/** "Ca(OH)2" with its counts as subscripts, as one inline element. */
-export function formulaNode(formula: string): HTMLElement {
-  const span = el('span', 'formula');
-  for (const part of formula.split(/(\d+)/)) {
-    if (!part) continue;
-    if (/^\d+$/.test(part)) span.append(el('sub', undefined, part));
-    else span.append(part);
-  }
-  return span;
-}
 
 function statement(f: Fact): HTMLElement | null {
   if (!isRenderable(f)) return null;
@@ -274,6 +264,13 @@ function substanceCard(c: Compound): HTMLElement {
   const head = el('h3', undefined);
   head.append(formulaNode(isRenderable(c.formula) ? c.formula.value : '?'));
   card.append(head);
+  // What it looks like as a structure: PubChem's drawing, and a 3D model you
+  // can turn (molecules) or a small crystal (salts with a verified statement).
+  const visuals = el('div', 'visual-row');
+  visuals.append(pubchemDrawing(c));
+  const model = molecule3d(c) ?? crystal3d(c);
+  if (model) visuals.append(model);
+  card.append(visuals);
   // A state worked out by code says how (rule state-at-room-temperature).
   const derived = c.standardState.derivation?.inputs.length;
   const stateHow = derived
@@ -349,7 +346,7 @@ function shellsList(r: Reaction, data: ReactionData): HTMLElement | null {
   return box;
 }
 
-function entryView(r: Reaction, data: ReactionData): HTMLElement {
+function entryView(r: Reaction, data: ReactionData, scale: number): HTMLElement {
   const art = el('article', 'card entry');
   art.append(el('h2', undefined, r.title));
   const hz = hazardBox(r);
@@ -357,6 +354,8 @@ function entryView(r: Reaction, data: ReactionData): HTMLElement {
 
   if (r.kind === 'no-reaction') {
     art.append(statements(r.summary) ?? el('p', undefined, ''), el('h3', undefined, 'Why'), statements(r.whyNot) ?? el('p'));
+    const photos = photosFor(r);
+    if (photos) art.append(photos);
     return art;
   }
 
@@ -365,7 +364,7 @@ function entryView(r: Reaction, data: ReactionData): HTMLElement {
     if (d) diagramSlot.replaceWith(d);
     else diagramSlot.remove();
   });
-  art.append(layer(1, 'What happens', true, statements(r.summary), diagramSlot));
+  art.append(layer(1, 'What happens', true, statements(r.summary), beforeAfter(r, data.compounds), diagramSlot, photosFor(r)));
 
   const bt = r.bonding?.type;
   art.append(
@@ -375,7 +374,7 @@ function entryView(r: Reaction, data: ReactionData): HTMLElement {
   );
 
   const dir = r.energy?.direction;
-  const energy = layer(3, 'Energy', false);
+  const energy = layer(3, 'Energy', false, energyHill(r, scale));
   if (dir && isRenderable(dir)) {
     const concept = dir.value === 'exothermic' ? CONCEPTS.exothermic : CONCEPTS.endothermic;
     const row = factRow('Energy', dir, { show: (f) => ({ text: f.value === 'exothermic' ? 'Exothermic' : 'Endothermic' }), concept });
@@ -436,7 +435,8 @@ function resultView(tokens: string[], data: ReactionData): HTMLElement {
     return page;
   }
   if (found.length > 1) page.append(el('p', 'note', `AtomiTron has ${found.length} entries for this combination: what forms depends on the conditions.`));
-  for (const r of found) page.append(entryView(r, data));
+  const scale = energyScale(data.reactions);
+  for (const r of found) page.append(entryView(r, data, scale));
   document.title = `${found.map((r) => r.title).join(' · ')} — AtomiTron`;
   return page;
 }

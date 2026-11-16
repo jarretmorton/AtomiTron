@@ -1,41 +1,15 @@
-// The bond visuals' logic on real data: electron-dot drawings appear only
-// when every atom ends with a full outer shell, and 3D models start facing
-// the viewer so no atom hides behind another.
+// The bond visuals on real data: 3D models start facing the viewer so no
+// atom hides behind another, every compound has its drawing, and every photo
+// is for a real entry and has its file and credit.
 
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { planLewis, type ModelAtom, type ModelBond } from '../app/src/ui/lewis';
 import { facing, type Vec } from '../app/src/ui/model3d';
 import { ROOT } from './integrity';
 
-type Model = { '3d': { atoms: ModelAtom[]; bonds: ModelBond[] } };
+type Model = { '3d': { atoms: { symbol: string; x: number; y: number; z: number }[] } };
 const model = (cid: number) => JSON.parse(readFileSync(join(ROOT, `data/models/cid-${cid}.json`), 'utf8')) as Model;
-const VALENCE: Record<string, number> = { H: 1, C: 4, N: 5, O: 6 };
-const valence = (s: string) => VALENCE[s];
-
-describe('electron-dot drawings', () => {
-  it('fills every outer shell for the preview molecules', () => {
-    const lone = (cid: number) => planLewis(model(cid)['3d'].atoms, model(cid)['3d'].bonds, valence)?.atoms.map((a) => `${a.symbol}${a.lonePairs}`).sort();
-    expect(lone(962)).toEqual(['H0', 'H0', 'O2']); // water: two unshared pairs on oxygen
-    expect(lone(222)).toEqual(['H0', 'H0', 'H0', 'N1']); // ammonia: one
-    expect(lone(280)).toEqual(['C0', 'O2', 'O2']); // carbon dioxide: double bonds, two pairs on each oxygen
-  });
-
-  it('draws carbon dioxide straight', () => {
-    const p = planLewis(model(280)['3d'].atoms, model(280)['3d'].bonds, valence)!;
-    const ys = p.atoms.map((a) => a.y);
-    expect(Math.max(...ys) - Math.min(...ys)).toBeLessThan(0.01);
-  });
-
-  it('draws nothing when the numbers do not fit', () => {
-    // Carbon monoxide: a triple bond leaves carbon one electron short of a full shell by simple counting.
-    const co: ModelAtom[] = [{ symbol: 'C', x: 0, y: 0, z: 0 }, { symbol: 'O', x: 1.1, y: 0, z: 0 }];
-    expect(planLewis(co, [{ a: 0, b: 1, order: 3 }], valence)).toBeNull();
-    expect(planLewis(co, [{ a: 0, b: 1, order: 1 }], valence)).toBeNull();
-    expect(planLewis(co, [{ a: 0, b: 1, order: 2 }], () => undefined)).toBeNull();
-  });
-});
 
 describe('3D models', () => {
   it('start with the widest side facing the viewer, so water shows both hydrogens', () => {
@@ -47,5 +21,23 @@ describe('3D models', () => {
     const [o, h1, h2] = pts;
     expect(Math.hypot(h1![0] - h2![0], h1![1] - h2![1])).toBeGreaterThan(1);
     expect(Math.hypot(h1![0] - o![0], h1![1] - o![1])).toBeGreaterThan(0.5);
+  });
+});
+
+describe('pictures', () => {
+  it('has a PubChem drawing for every compound, and every photo is complete', async () => {
+    const { existsSync } = await import('node:fs');
+    const { PHOTOS } = await import('../app/src/content/media');
+    const compounds = JSON.parse(readFileSync(join(ROOT, 'data/verified/compounds.json'), 'utf8')).items as { id: string; element?: string }[];
+    for (const c of compounds.filter((x) => !x.element)) {
+      expect(existsSync(join(ROOT, 'app/public/media', `pubchem-cid-${c.id.split('-').pop()}.png`)), c.id).toBe(true);
+    }
+    const ids = new Set((JSON.parse(readFileSync(join(ROOT, 'data/verified/reactions.json'), 'utf8')).items as { id: string }[]).map((r) => r.id));
+    for (const p of PHOTOS) {
+      expect(existsSync(join(ROOT, 'app/public/media', p.file)), p.file).toBe(true);
+      expect(p.credit.length, p.file).toBeGreaterThan(5);
+      expect(p.sourceUrl.startsWith('https://chem.libretexts.org/'), p.file).toBe(true);
+      for (const r of p.reactions) expect(ids.has(`reaction:${r}`), r).toBe(true);
+    }
   });
 });

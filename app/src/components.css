@@ -853,7 +853,7 @@ button.tile[aria-pressed="true"] {
   }
 }
 
-/* ---- Bond visuals preview ------------------------------------------------------ */
+/* ---- Bond visuals (Combine mode) ------------------------------------------------ */
 
 /* Element colors (Okabe–Ito, color-blind safe). Every ball also shows its symbol. */
 :root {
@@ -863,13 +863,10 @@ button.tile[aria-pressed="true"] {
   --el-o: #e69f00;
   --el-na: #cc79a7;
   --el-cl: #009e73;
+  --el-s: #f0e442;
+  --el-br: #d55e00;
 }
 
-.preview-card h2 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
 .model3d {
   display: block;
@@ -880,29 +877,9 @@ button.tile[aria-pressed="true"] {
   touch-action: none;
 }
 
-.lewis-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-}
 
-.lewis-fig {
-  margin: 0;
-  text-align: center;
-}
 
-.lewis {
-  width: 180px;
-  height: 140px;
-}
 
-.lewis-symbol {
-  fill: var(--ink);
-  font-size: 22px;
-  font-weight: 700;
-  text-anchor: middle;
-}
 
 .photo {
   margin: 8px 0;
@@ -948,67 +925,14 @@ button.tile[aria-pressed="true"] {
   color: var(--muted);
 }
 
-.ba-hazard {
-  color: var(--non-edge);
-  font-weight: 600;
-}
 
-.ba-safe {
-  color: var(--muted);
-}
 
-.count-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  margin: 8px 0;
-}
 
-.count-side {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-}
 
-.count-unit {
-  display: inline-flex;
-  padding: 3px;
-  border: 1px dashed var(--rule);
-  border-radius: 999px;
-}
 
-.count-ball {
-  display: inline-grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border: 1.5px solid var(--ink);
-  border-radius: 50%;
-  color: #111;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
 
-.el-h { background: var(--el-h); }
-.el-c { background: var(--el-c); }
-.el-n { background: var(--el-n); }
-.el-o { background: var(--el-o); }
-.el-na { background: var(--el-na); }
-.el-cl { background: var(--el-cl); }
 
-.count-table {
-  border-collapse: collapse;
-  margin: 6px 0;
-}
 
-.count-table th,
-.count-table td {
-  padding: 4px 14px;
-  border-bottom: 1px solid var(--rule);
-  text-align: center;
-}
 
 .hill-row {
   display: flex;
@@ -1057,42 +981,52 @@ button.tile[aria-pressed="true"] {
   font-size: 0.9rem;
 }
 
-.tug {
-  margin: 14px 0 6px;
+
+
+
+
+
+.visual-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
 }
 
-.tug-title {
-  margin: 0 0 22px;
-  font-weight: 700;
+.drawing {
+  margin: 0;
+  text-align: center;
 }
 
-.tug-track {
-  position: relative;
-  height: 8px;
-  margin: 0 20px 24px;
-  border-radius: 4px;
-  background: var(--rule);
+.drawing img {
+  display: block;
+  max-width: 220px;
+  max-height: 180px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 6px;
+  border-radius: var(--radius);
+  background: #fff;
 }
 
-.tug-span {
-  position: absolute;
-  top: 0;
-  height: 8px;
-  border-radius: 4px;
-  background: var(--link);
+.drawing figcaption,
+.model-fig figcaption {
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
-.tug-mark {
-  position: absolute;
-  top: -15px;
-  display: grid;
-  place-items: center;
-  width: 38px;
-  height: 38px;
-  margin-left: -19px;
-  border: 1.5px solid var(--ink);
-  border-radius: 50%;
-  color: #111;
-  font-weight: 700;
-  z-index: 1;
+.model-fig {
+  flex: 1 1 260px;
+  margin: 0;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.photos .photo {
+  flex: 1 1 260px;
 }

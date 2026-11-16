@@ -92,6 +92,20 @@ On branch `claude/phase-3-reactions`. The plan and its decisions are in
   - **Explanations:** four new ones (exothermic, endothermic, the sign
     rule, zero for elements), verified 3 of 3 (run 43790122237, a few
     cents).
+- **Bond visuals (2026-11-16, chosen from the preview, PR #24):**
+  - In "What happens": before and after (each starting substance and
+    product with its verified description), and photos where a source
+    page has one with a stated licence (sodium/chlorine/salt and salt
+    crystals, water splitting, the noble gases).
+  - In "Energy": an energy hill, with every reaction drawn to one scale.
+  - In "The new substance": PubChem's structure drawing for every
+    compound, and either a 3D model you can turn (the 11 molecules, from
+    PubChem's computed conformers) or a crystal (sodium chloride only:
+    other salts need their own source sentence).
+  - Not chosen: electron-dot drawings, counting atoms, the
+    electronegativity tug-of-war. The preview page is removed.
+  - `python -m pipeline.models` fetches the models and drawings (it needs
+    Pillow, to crop the drawings).
 - **Arsenic's melting point** still needs its fix, to be confirmed when the
   qualifier rule is built into the element pipeline.
 

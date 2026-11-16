@@ -1,0 +1,32 @@
+{
+ "cid": 260,
+ "source": {
+  "url": "https://pubchem.ncbi.nlm.nih.gov/compound/260#section=3D-Conformer",
+  "via": "PubChem",
+  "retrieved": "2026-11-15"
+ },
+ "note": "Computed by PubChem: a model, not a measurement.",
+ "3d": {
+  "atoms": [
+   {
+    "symbol": "Br",
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   {
+    "symbol": "H",
+    "x": 0.6731,
+    "y": -0.2281,
+    "z": -1.2649
+   }
+  ],
+  "bonds": [
+   {
+    "a": 0,
+    "b": 1,
+    "order": 1
+   }
+  ]
+ }
+}

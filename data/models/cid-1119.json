@@ -1,0 +1,43 @@
+{
+ "cid": 1119,
+ "source": {
+  "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1119#section=3D-Conformer",
+  "via": "PubChem",
+  "retrieved": "2026-11-15"
+ },
+ "note": "Computed by PubChem: a model, not a measurement.",
+ "3d": {
+  "atoms": [
+   {
+    "symbol": "S",
+    "x": 0,
+    "y": -0.5774,
+    "z": 0
+   },
+   {
+    "symbol": "O",
+    "x": 1.3091,
+    "y": 0.2887,
+    "z": 0
+   },
+   {
+    "symbol": "O",
+    "x": -1.3091,
+    "y": 0.2887,
+    "z": 0
+   }
+  ],
+  "bonds": [
+   {
+    "a": 0,
+    "b": 1,
+    "order": 2
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "order": 2
+   }
+  ]
+ }
+}
