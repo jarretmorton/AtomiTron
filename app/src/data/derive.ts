@@ -229,7 +229,7 @@ export function summaryFromEquation(names: string[], weights: number[]): string 
   let sentence: string;
   if (products.length === 0) {
     if (reactants.length < 2) throw new DerivationError('a no-reaction pair needs two substances');
-    sentence = `${listed(reactants)} don't react with each other.`;
+    sentence = `${listed(reactants)} don't react under everyday conditions.`;
   } else if (reactants.length === 1) {
     sentence = `${reactants[0]} breaks down into ${listed(products)}.`;
   } else if (products.length === 1) {

@@ -23,11 +23,16 @@ on:
           - verify-explanations
           - reactions-pilot
           - reactions-all
+          - reactions-some
         default: reverify-pilot
       elements:
         description: "For draft-and-verify: element symbols separated by spaces, or 'remaining' (every element without history and uses yet, about $20–25)"
         type: string
         default: remaining
+      reactions:
+        description: "For reactions-some: reaction ids separated by spaces (assembled locally afterwards, with the earlier runs)"
+        type: string
+        default: ""
 
 permissions:
   contents: write  # to push the results branch; nothing else
@@ -107,12 +112,13 @@ jobs:
         if: ${{ startsWith(inputs.task, 'reactions') }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          WHICH: ${{ inputs.task == 'reactions-all' && 'all' || 'pilot' }}
+          WHICH: ${{ inputs.task == 'reactions-all' && 'all' || inputs.task == 'reactions-some' && 'some' || 'pilot' }}
+          IDS: ${{ inputs.reactions }}
         run: |
           RUN="verification/agent-runs/$(date -u +%F)-api-reactions-$WHICH-${{ github.run_id }}"
           echo "RUN=$RUN" >> "$GITHUB_ENV"
           python -m pipeline.compounds
-          python -m pipeline.reaction_text sources "$WHICH"
+          if [ "$WHICH" = some ]; then python -m pipeline.reaction_text sources $IDS; else python -m pipeline.reaction_text sources "$WHICH"; fi
           python -m pipeline.reaction_text draft "$RUN"
           python -m pipeline.reaction_text claims "$RUN"
           python -m pipeline.agents_api verify "$RUN"

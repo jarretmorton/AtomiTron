@@ -6,7 +6,7 @@ staged energies (verification/methodology.md, section 14).
     python -m pipeline.reaction_text claims   RUN_DIR          # code checks: claims.json
     python -m pipeline.agents_api    verify   RUN_DIR          # Claude API: 3 verifiers
     python -m pipeline.reaction_text evaluate RUN_DIR          # 3 of 3 -> facts.json, report.md
-    python -m pipeline.reaction_text assemble RUN_DIR          # -> data/verified/{compounds,reactions}.json
+    python -m pipeline.reaction_text assemble RUN_DIR...       # -> data/verified/{compounds,reactions}.json
 
 Needs data/staged/reactions.json (python -m pipeline.compounds) for the
 equations, names and energies. Like the element text, the agents only draft
@@ -188,8 +188,15 @@ def build_sources(args: list[str]) -> None:
             "passages": list(dict.fromkeys(ids)),
         })
         used.update(keys)
+    # A re-run of chosen reactions drafts only substances that have no
+    # published text yet, so it can't disturb text that already passed.
+    published = set()
+    if args not in (["all"], []) and (VERIFIED / "compounds.json").exists():
+        published = {c["id"] for c in load_json(VERIFIED / "compounds.json")["items"] if c.get("appearance") or c.get("uses")}
     for k in sorted(used):
         s = subs[k]
+        if s["id"] in published:
+            continue
         fields = [f for f in SUBSTANCE_FIELDS if not (f == "standardState" and "standardState" in s)
                   and not (f == "uses" and s.get("element"))]  # an element's uses are on its own page
         ids = []
@@ -509,16 +516,25 @@ VERIFIED = ROOT / "data" / "verified"
 RECORDS = ROOT / "verification" / "records" / "reactions.json"
 
 
-def assemble(run: Path) -> None:
-    """Join the staged numbers (pipeline.compounds) and a run's verified text
+def assemble(*runs: Path) -> None:
+    """Join the staged numbers (pipeline.compounds) and the runs' verified text
     into the published compound and reaction files, with their records.
+
+    Runs are given oldest first. A later run's text for a reaction replaces
+    the earlier one's; substances are only ever drafted once (a re-run skips
+    published ones), so their text is merged.
 
     A substance is published only with a state at room temperature (from code
     or verified text). A reaction is published only when all its substances
     are; a no-reaction pair also needs at least one verified "why not"."""
     staged = load_json(STAGED)
-    facts = load_json(run / "facts.json")
-    text_s, text_r = facts["substances"], facts["reactions"]
+    run = runs[-1]
+    text_s, text_r, run_records = {}, {}, []
+    for r in runs:
+        f = load_json(r / "facts.json")
+        text_s.update(f["substances"])
+        text_r.update(f["reactions"])
+        run_records = f["records"] + run_records  # later runs first, so their records win
     held: list[str] = []
 
     compounds = {}
@@ -588,14 +604,14 @@ def assemble(run: Path) -> None:
 
     walk([list(compounds.values()), reactions])
     by_id: dict[str, dict] = {}
-    for x in staged["records"] + facts["records"]:
+    for x in staged["records"] + run_records:
         by_id.setdefault(x["id"], x)
     records = [by_id[i] for i in sorted(used)]
     write_json(VERIFIED / "compounds.json", {"schemaVersion": 4, "kind": "compounds", "items": sorted(compounds.values(), key=lambda c: c["id"])})
     write_json(VERIFIED / "reactions.json", {"schemaVersion": 4, "kind": "reactions", "items": reactions})
     write_json(RECORDS, {"schemaVersion": 4, "kind": "verification-records", "items": sorted(records, key=lambda x: x["id"])})
     (run / "assembled.md").write_text(
-        "\n".join([f"# Assembled from {run.name}", "", f"- Compounds published: **{len(compounds)}** of {len(staged['substances'])}",
+        "\n".join([f"# Assembled from {', '.join(r.name for r in runs)}", "", f"- Compounds published: **{len(compounds)}** of {len(staged['substances'])}",
                    f"- Reactions published: **{len(reactions)}** of {len(staged['reactions'])}", "", "## Held back", ""]
                   + ([f"- {h}" for h in held] or ["None."])) + "\n", encoding="utf-8", newline="\n")
     print(f"{len(compounds)} compounds and {len(reactions)} reactions published; {len(held)} held back (see {run.name}/assembled.md)")
@@ -605,7 +621,9 @@ if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "sources":
         build_sources(sys.argv[2:])
-    elif cmd in ("draft", "claims", "evaluate", "assemble") and len(sys.argv) == 3:
-        {"draft": draft, "claims": build_claims, "evaluate": evaluate, "assemble": assemble}[cmd](Path(sys.argv[2]).resolve())
+    elif cmd == "assemble" and len(sys.argv) >= 3:
+        assemble(*(Path(a).resolve() for a in sys.argv[2:]))
+    elif cmd in ("draft", "claims", "evaluate") and len(sys.argv) == 3:
+        {"draft": draft, "claims": build_claims, "evaluate": evaluate}[cmd](Path(sys.argv[2]).resolve())
     else:
         sys.exit(__doc__)

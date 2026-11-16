@@ -95,7 +95,7 @@ describe('reaction enthalpy', () => {
     expect(s(['sodium', 'chlorine', 'sodium chloride'], [-1, -1, 1])).toBe('Sodium and chlorine combine to make sodium chloride.');
     expect(s(['methane', 'oxygen', 'carbon dioxide', 'water'], [-1, -1, 1, 1])).toBe('Methane and oxygen react to make carbon dioxide and water.');
     expect(s(['water', 'hydrogen', 'oxygen'], [-1, 1, 1])).toBe('Water breaks down into hydrogen and oxygen.');
-    expect(s(['helium', 'oxygen'], [-1, -1])).toBe("Helium and oxygen don't react with each other.");
+    expect(s(['helium', 'oxygen'], [-1, -1])).toBe("Helium and oxygen don't react under everyday conditions.");
     expect(s(['a', 'b', 'c', 'd'], [-1, -1, -1, 1])).toBe('A, b and c combine to make d.');
     expect(() => s(['a', 'b'], [1, -1])).toThrow(/before products/);
     expect(() => s(['a', 'b'], [-2, 1])).toThrow(/-1 \(reactant\) or 1/);

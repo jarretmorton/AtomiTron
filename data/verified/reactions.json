@@ -1195,16 +1195,16 @@
       }
     },
     {
-      "id": "reaction:sodium-oxygen",
-      "title": "Sodium and oxygen",
+      "id": "reaction:lithium-oxygen",
+      "title": "Lithium and oxygen",
       "inputs": [
-        "element:Na",
+        "element:Li",
         "element:O"
       ],
       "kind": "reaction",
       "reactants": [
         {
-          "substance": "compound:cid-5360545",
+          "substance": "compound:cid-3028194",
           "coefficient": 4,
           "phase": "s"
         },
@@ -1216,14 +1216,14 @@
       ],
       "products": [
         {
-          "substance": "compound:cid-73971",
+          "substance": "compound:cid-166630",
           "coefficient": 2,
           "phase": "s"
         }
       ],
       "summary": [
         {
-          "value": "Sodium and oxygen combine to make sodium oxide.",
+          "value": "Lithium and oxygen combine to make lithium oxide.",
           "unit": null,
           "uncertain": false,
           "source": {
@@ -1233,14 +1233,14 @@
           },
           "verification": {
             "status": "pass",
-            "recordId": "sodium-oxygen.summary.0"
+            "recordId": "lithium-oxygen.summary.0"
           },
           "derivation": {
             "rule": "summary-from-equation",
             "inputs": [
-              "cid-5360545.name",
+              "cid-3028194.name",
               "cid-977.name",
-              "cid-73971.name"
+              "cid-166630.name"
             ],
             "weights": [
               -1,
@@ -1248,25 +1248,11 @@
               1
             ]
           }
-        },
-        {
-          "value": "When sodium burns in oxygen, it gives a strong orange flame.",
-          "unit": null,
-          "uncertain": false,
-          "source": {
-            "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_(Inorganic_Chemistry)/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__1%3A_The_Alkali_Metals/2Reactions_of_the_Group_1_Elements/Reactions_of_Group_I_Elements_with_Oxygen",
-            "retrieved": "2026-11-16",
-            "via": "LibreTexts Chemistry"
-          },
-          "verification": {
-            "status": "pass",
-            "recordId": "sodium-oxygen.summary.1"
-          }
         }
       ],
       "energy": {
         "enthalpy": {
-          "value": -835.96,
+          "value": -1197.46,
           "unit": "kJ",
           "uncertain": false,
           "source": {
@@ -1276,14 +1262,14 @@
           },
           "verification": {
             "status": "pass",
-            "recordId": "sodium-oxygen.energy.enthalpy"
+            "recordId": "lithium-oxygen.energy.enthalpy"
           },
           "derivation": {
             "rule": "reaction-enthalpy",
             "inputs": [
-              "cid-5360545.formationEnthalpies.s",
+              "cid-3028194.formationEnthalpies.s",
               "cid-977.formationEnthalpies.g",
-              "cid-73971.formationEnthalpies.s"
+              "cid-166630.formationEnthalpies.s"
             ],
             "weights": [
               -4,
@@ -1303,61 +1289,15 @@
           },
           "verification": {
             "status": "pass",
-            "recordId": "sodium-oxygen.energy.direction"
+            "recordId": "lithium-oxygen.energy.direction"
           },
           "derivation": {
             "rule": "energy-direction",
             "inputs": [
-              "sodium-oxygen.energy.enthalpy"
+              "lithium-oxygen.energy.enthalpy"
             ]
           }
-        },
-        "trigger": {
-          "value": "Sodium can be set alight by heat, sparks or flames.",
-          "unit": null,
-          "uncertain": false,
-          "source": {
-            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5360545#section=Fire-Hazards",
-            "retrieved": "2026-11-16",
-            "via": "Emergency Response Guidebook (ERG)"
-          },
-          "verification": {
-            "status": "pass",
-            "recordId": "sodium-oxygen.energy.trigger"
-          }
         }
-      },
-      "hazard": {
-        "why": [
-          {
-            "value": "Sodium can badly burn skin after even a short touch.",
-            "unit": null,
-            "uncertain": false,
-            "source": {
-              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5360545#section=Hazards-Summary",
-              "retrieved": "2026-11-16",
-              "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
-            },
-            "verification": {
-              "status": "pass",
-              "recordId": "sodium-oxygen.hazard.why.0"
-            }
-          },
-          {
-            "value": "Sodium burns violently and can explode, spattering material around.",
-            "unit": null,
-            "uncertain": false,
-            "source": {
-              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5360545#section=Record-Description",
-              "retrieved": "2026-11-16",
-              "via": "CAMEO Chemicals"
-            },
-            "verification": {
-              "status": "pass",
-              "recordId": "sodium-oxygen.hazard.why.1"
-            }
-          }
-        ]
       }
     },
     {
@@ -6551,6 +6491,362 @@
       }
     },
     {
+      "id": "reaction:photosynthesis",
+      "title": "Carbon dioxide and water, in a plant",
+      "inputs": [
+        "compound:cid-280",
+        "compound:cid-962"
+      ],
+      "kind": "reaction",
+      "reactants": [
+        {
+          "substance": "compound:cid-280",
+          "coefficient": 6,
+          "phase": "g"
+        },
+        {
+          "substance": "compound:cid-962",
+          "coefficient": 6,
+          "phase": "l"
+        }
+      ],
+      "products": [
+        {
+          "substance": "compound:cid-5793",
+          "coefficient": 1,
+          "phase": "s"
+        },
+        {
+          "substance": "compound:cid-977",
+          "coefficient": 6,
+          "phase": "g"
+        }
+      ],
+      "summary": [
+        {
+          "value": "Carbon dioxide and water react to make glucose and oxygen.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/07%3A_Chemical_Reactions/7.03%3A_The_Chemical_Equation",
+            "retrieved": "2026-11-15",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "photosynthesis.summary.0"
+          },
+          "derivation": {
+            "rule": "summary-from-equation",
+            "inputs": [
+              "cid-280.name",
+              "cid-962.name",
+              "cid-5793.name",
+              "cid-977.name"
+            ],
+            "weights": [
+              -1,
+              -1,
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "energy": {
+        "enthalpy": {
+          "value": 2801.5,
+          "unit": "kJ",
+          "uncertain": false,
+          "qualifier": "single measurement",
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_2e_(OpenStax)/05%3A_Thermochemistry/5.03%3A_Enthalpy",
+            "retrieved": "2026-11-15",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "photosynthesis.energy.enthalpy"
+          },
+          "derivation": {
+            "rule": "reaction-enthalpy",
+            "inputs": [
+              "cid-280.formationEnthalpies.g",
+              "cid-962.formationEnthalpies.l",
+              "cid-5793.formationEnthalpies.s",
+              "cid-977.formationEnthalpies.g"
+            ],
+            "weights": [
+              -6,
+              -6,
+              1,
+              6
+            ]
+          }
+        },
+        "direction": {
+          "value": "endothermic",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_2e_(OpenStax)/05%3A_Thermochemistry/5.03%3A_Enthalpy",
+            "retrieved": "2026-11-15",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "photosynthesis.energy.direction"
+          },
+          "derivation": {
+            "rule": "energy-direction",
+            "inputs": [
+              "photosynthesis.energy.enthalpy"
+            ]
+          }
+        },
+        "trigger": {
+          "value": "The reaction needs sunlight, which a green pigment in plants called chlorophyll turns into chemical energy.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/08%3A_Oxidation_and_Reduction/8.07%3A_Oxidations_Reduction_and_Living_Things",
+            "retrieved": "2026-11-16",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "photosynthesis.energy.trigger"
+          }
+        }
+      },
+      "hazard": {
+        "why": [
+          {
+            "value": "Oxygen makes things that burn in air burn even more strongly.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/977#section=Record-Description",
+              "retrieved": "2026-11-16",
+              "via": "CAMEO Chemicals"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "photosynthesis.hazard.why.0"
+            }
+          },
+          {
+            "value": "Very fine glucose particles spread through air can form a mixture that can explode.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Fire-Hazards",
+              "retrieved": "2026-11-16",
+              "via": "ILO-WHO International Chemical Safety Cards (ICSCs)"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "photosynthesis.hazard.why.1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "reaction:glucose-oxygen",
+      "title": "Glucose and oxygen",
+      "inputs": [
+        "compound:cid-5793",
+        "element:O"
+      ],
+      "kind": "reaction",
+      "reactants": [
+        {
+          "substance": "compound:cid-5793",
+          "coefficient": 1,
+          "phase": "s"
+        },
+        {
+          "substance": "compound:cid-977",
+          "coefficient": 6,
+          "phase": "g"
+        }
+      ],
+      "products": [
+        {
+          "substance": "compound:cid-280",
+          "coefficient": 6,
+          "phase": "g"
+        },
+        {
+          "substance": "compound:cid-962",
+          "coefficient": 6,
+          "phase": "l"
+        }
+      ],
+      "summary": [
+        {
+          "value": "Glucose and oxygen react to make carbon dioxide and water.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/07%3A_Chemical_Reactions/7.03%3A_The_Chemical_Equation",
+            "retrieved": "2026-11-15",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "glucose-oxygen.summary.0"
+          },
+          "derivation": {
+            "rule": "summary-from-equation",
+            "inputs": [
+              "cid-5793.name",
+              "cid-977.name",
+              "cid-280.name",
+              "cid-962.name"
+            ],
+            "weights": [
+              -1,
+              -1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "value": "Inside living cells, this reaction gives off its energy slowly, so it does not look like burning.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/08%3A_Oxidation_and_Reduction/8.07%3A_Oxidations_Reduction_and_Living_Things",
+            "retrieved": "2026-11-16",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "glucose-oxygen.summary.1"
+          }
+        }
+      ],
+      "bonding": {
+        "type": {
+          "value": "covalent",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/280#section=Record-Description",
+            "retrieved": "2026-11-16",
+            "via": "DrugBank"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "glucose-oxygen.bonding.type"
+          }
+        },
+        "why": [
+          {
+            "value": "A covalent bond forms when atoms share electrons with each other.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/10%3A_Chemical_Bonding/10.04%3A_Covalent_Lewis_Structures-_Electrons_Shared",
+              "retrieved": "2026-11-16",
+              "via": "LibreTexts Chemistry"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "glucose-oxygen.bonding.why.0"
+            }
+          }
+        ]
+      },
+      "energy": {
+        "enthalpy": {
+          "value": -2801.5,
+          "unit": "kJ",
+          "uncertain": false,
+          "qualifier": "single measurement",
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_2e_(OpenStax)/05%3A_Thermochemistry/5.03%3A_Enthalpy",
+            "retrieved": "2026-11-15",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "glucose-oxygen.energy.enthalpy"
+          },
+          "derivation": {
+            "rule": "reaction-enthalpy",
+            "inputs": [
+              "cid-5793.formationEnthalpies.s",
+              "cid-977.formationEnthalpies.g",
+              "cid-280.formationEnthalpies.g",
+              "cid-962.formationEnthalpies.l"
+            ],
+            "weights": [
+              -1,
+              -6,
+              6,
+              6
+            ]
+          }
+        },
+        "direction": {
+          "value": "exothermic",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_2e_(OpenStax)/05%3A_Thermochemistry/5.03%3A_Enthalpy",
+            "retrieved": "2026-11-15",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "glucose-oxygen.energy.direction"
+          },
+          "derivation": {
+            "rule": "energy-direction",
+            "inputs": [
+              "glucose-oxygen.energy.enthalpy"
+            ]
+          }
+        }
+      },
+      "hazard": {
+        "why": [
+          {
+            "value": "Glucose can burn, and a fine dust of glucose in air can explode.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Fire-Hazards",
+              "retrieved": "2026-11-16",
+              "via": "ILO-WHO International Chemical Safety Cards (ICSCs)"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "glucose-oxygen.hazard.why.0"
+            }
+          },
+          {
+            "value": "Things that burn in air burn even more fiercely in oxygen.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/977#section=Record-Description",
+              "retrieved": "2026-11-16",
+              "via": "CAMEO Chemicals"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "glucose-oxygen.hazard.why.1"
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": "reaction:helium-oxygen",
       "title": "Helium and oxygen",
       "inputs": [
@@ -6560,7 +6856,7 @@
       "kind": "no-reaction",
       "summary": [
         {
-          "value": "Helium and oxygen don't react with each other.",
+          "value": "Helium and oxygen don't react under everyday conditions.",
           "unit": null,
           "uncertain": false,
           "source": {
@@ -6626,7 +6922,7 @@
       "kind": "no-reaction",
       "summary": [
         {
-          "value": "Neon and chlorine don't react with each other.",
+          "value": "Neon and chlorine don't react under everyday conditions.",
           "unit": null,
           "uncertain": false,
           "source": {
@@ -6678,7 +6974,7 @@
       "kind": "no-reaction",
       "summary": [
         {
-          "value": "Argon and sodium don't react with each other.",
+          "value": "Argon and sodium don't react under everyday conditions.",
           "unit": null,
           "uncertain": false,
           "source": {
@@ -6744,7 +7040,7 @@
       "kind": "no-reaction",
       "summary": [
         {
-          "value": "Platinum and oxygen don't react with each other.",
+          "value": "Platinum and oxygen don't react under everyday conditions.",
           "unit": null,
           "uncertain": false,
           "source": {
@@ -6796,7 +7092,7 @@
       "kind": "no-reaction",
       "summary": [
         {
-          "value": "Copper and water don't react with each other.",
+          "value": "Copper and water don't react under everyday conditions.",
           "unit": null,
           "uncertain": false,
           "source": {

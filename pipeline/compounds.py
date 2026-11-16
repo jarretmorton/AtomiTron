@@ -204,7 +204,7 @@ class Builder:
         if d.get("element"):
             self.element_state(out, d["element"])
         else:
-            self.compound_state(out, d["cid"])
+            self.compound_state(out, d["cid"], d.get("meltingPointExclude", []))
         out["hazards"] = self.hazards(entity, d["cid"])
         if not d.get("nist"):
             self.notes.append(f"{key}: no NIST WebBook entry")
@@ -334,7 +334,7 @@ class Builder:
                                      "weights": weights},
                          notes="written by code from the verified names and the balanced equation")
 
-    def compound_state(self, out: dict, cid: int) -> None:
+    def compound_state(self, out: dict, cid: int, exclude: list[dict]) -> None:
         """A compound's melting point from PubChem, and from it, its state at
         25 °C. Only "solid" can be decided this way: every contributor's
         melting (or decomposition) point must be above room temperature, and
@@ -355,6 +355,11 @@ class Builder:
                 walk(s.get("Section", []))
 
         walk(rec.get("Section", []))
+        # A contributor whose entry is about a different substance (decided
+        # case by case, with the reason, in definitions.json).
+        skipped = {x["contributor"]: x["why"] for x in exclude}
+        excluded = [f"{w} ({skipped[w]}): {r}" for w, r, _ in found if w in skipped]
+        found = [f for f in found if f[0] not in skipped]
         if not found:
             self.notes.append(f"{out['key']}: no PubChem melting point with a unit; its state is left to the agent step")
             return
@@ -373,7 +378,8 @@ class Builder:
             as_written=raw if m["unit"] != "°C" else None,
             corroboration=[{"sourceUrl": url, "upstream": w, "value": r} for w, r, _ in found if r != raw] or None,
             notes=(f"converted from {m['unit']}; " if m["unit"] != "°C" else "")
-            + f"{len(found)} PubChem melting point(s), all above room temperature")
+            + f"{len(found)} PubChem melting point(s), all above room temperature"
+            + (f"; left out: {'; '.join(excluded)}" if excluded else ""))
         out["standardState"] = self.fact(
             out["id"], "/standardState", "solid", None, RULE_PAGES["state-at-room-temperature"], retrieved,
             "LibreTexts Chemistry", "", derivation={"rule": "state-at-room-temperature",

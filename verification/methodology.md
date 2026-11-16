@@ -457,8 +457,10 @@ never by name or formula, because those return the wrong entry too often
 - **A compound's state** is derived from its PubChem melting points only to
   say "solid": every contributor's melting (or decomposition) point must be
   above 25 °C, and none may say otherwise. Otherwise it is agent-checked.
-  Glucose is held back by this rule: one contributor's entry describes a
-  watery liquid (a solution), against 146 °C from the others.
+  A contributor whose entry describes a different substance can be left
+  out, with the reason recorded in the reaction list and the record: CAMEO's
+  glucose entry describes a watery liquid, a glucose solution (decided
+  2026-11-16).
   The zero is only given for the element in that state.
 
 ### Reaction enthalpy
@@ -522,6 +524,9 @@ for a no-reaction pair, why nothing happens.
 - **The first summary sentence is written by code** (rule
   `summary-from-equation`) from the verified names and the equation, so
   every entry has one: "Sodium and chlorine combine to make sodium chloride."
+  For a no-reaction pair it says they "don't react under everyday
+  conditions" (decided 2026-11-16), because the sources hedge: oxygen is
+  "mostly unreactive" with gold, and platinum is "generally inert".
   Agent statements add only what you would notice (a flame, heat).
 - **Pages per reaction:** the reaction list names LibreTexts pages that
   describe each reaction itself, where one exists (38 of 49). Each was

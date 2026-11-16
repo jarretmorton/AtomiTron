@@ -1845,6 +1845,160 @@
       "hazards": []
     },
     {
+      "id": "compound:cid-166630",
+      "nistId": "C12057248",
+      "name": {
+        "value": "lithium oxide",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Synonyms",
+          "retrieved": "2026-11-15",
+          "via": "PubChem",
+          "asWritten": "Lithium oxide"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-166630.name"
+        }
+      },
+      "formula": {
+        "value": "Li2O",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Molecular-Formula",
+          "retrieved": "2026-11-15",
+          "via": "PubChem"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-166630.formula"
+        }
+      },
+      "standardState": {
+        "value": "solid",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/03%3A_Matter_and_Energy/3.03%3A_Classifying_Matter_According_to_Its_StateSolid_Liquid_and_Gas",
+          "retrieved": "2026-11-15",
+          "via": "LibreTexts Chemistry"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-166630.standardState"
+        },
+        "derivation": {
+          "rule": "state-at-room-temperature",
+          "inputs": [
+            "cid-166630.meltingPoint"
+          ]
+        }
+      },
+      "formationEnthalpies": [
+        {
+          "phase": "s",
+          "value": {
+            "value": -598.73,
+            "unit": "kJ/mol",
+            "uncertain": false,
+            "source": {
+              "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C12057248&Units=SI&cTG=on&cTC=on",
+              "retrieved": "2026-11-15",
+              "via": "Chase, 1998"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "cid-166630.formationEnthalpies.s"
+            }
+          }
+        },
+        {
+          "phase": "l",
+          "value": {
+            "value": -553.25,
+            "unit": "kJ/mol",
+            "uncertain": false,
+            "source": {
+              "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C12057248&Units=SI&cTG=on&cTC=on",
+              "retrieved": "2026-11-15",
+              "via": "Chase, 1998"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "cid-166630.formationEnthalpies.l"
+            }
+          }
+        },
+        {
+          "phase": "g",
+          "value": {
+            "value": -166.94,
+            "unit": "kJ/mol",
+            "uncertain": false,
+            "source": {
+              "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C12057248&Units=SI&cTG=on&cTC=on",
+              "retrieved": "2026-11-15",
+              "via": "Chase, 1998"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "cid-166630.formationEnthalpies.g"
+            }
+          }
+        }
+      ],
+      "meltingPoint": {
+        "value": 1438,
+        "unit": "°C",
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Melting-Point",
+          "retrieved": "2026-11-15",
+          "via": "PAC Chemical Database, U.S. Department of Energy"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-166630.meltingPoint"
+        }
+      },
+      "uses": [],
+      "hazards": [
+        {
+          "code": "H314",
+          "statement": {
+            "value": "Causes severe skin burns and eye damage",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=GHS-Classification",
+              "retrieved": "2026-11-15",
+              "via": "European Chemicals Agency (ECHA)"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "cid-166630.hazards.0.statement"
+            }
+          },
+          "reportedBy": {
+            "value": 76.2,
+            "unit": "%",
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=GHS-Classification",
+              "retrieved": "2026-11-15",
+              "via": "European Chemicals Agency (ECHA)"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "cid-166630.hazards.0.reportedBy"
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "compound:cid-222",
       "nistId": "C7664417",
       "name": {
@@ -8667,6 +8821,151 @@
       ]
     },
     {
+      "id": "compound:cid-5793",
+      "nistId": "C26655345",
+      "name": {
+        "value": "glucose",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Synonyms",
+          "retrieved": "2026-11-15",
+          "via": "PubChem"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-5793.name"
+        }
+      },
+      "formula": {
+        "value": "C6H12O6",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Molecular-Formula",
+          "retrieved": "2026-11-15",
+          "via": "PubChem"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-5793.formula"
+        }
+      },
+      "standardState": {
+        "value": "solid",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/03%3A_Matter_and_Energy/3.03%3A_Classifying_Matter_According_to_Its_StateSolid_Liquid_and_Gas",
+          "retrieved": "2026-11-15",
+          "via": "LibreTexts Chemistry"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-5793.standardState"
+        },
+        "derivation": {
+          "rule": "state-at-room-temperature",
+          "inputs": [
+            "cid-5793.meltingPoint"
+          ]
+        }
+      },
+      "formationEnthalpies": [
+        {
+          "phase": "s",
+          "value": {
+            "value": -1274.5,
+            "unit": "kJ/mol",
+            "uncertain": false,
+            "qualifier": "single measurement",
+            "source": {
+              "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C26655345&Units=SI&cTG=on&cTC=on",
+              "retrieved": "2026-11-15",
+              "via": "Huffman and Fox, 1938"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "cid-5793.formationEnthalpies.s"
+            }
+          }
+        }
+      ],
+      "meltingPoint": {
+        "value": 146,
+        "unit": "°C",
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Melting-Point",
+          "retrieved": "2026-11-15",
+          "via": "Hazardous Substances Data Bank (HSDB)"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-5793.meltingPoint"
+        }
+      },
+      "appearance": {
+        "value": "Glucose can be colorless crystals or a white, grainy powder.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Color-Form",
+          "retrieved": "2026-11-16",
+          "via": "Hazardous Substances Data Bank (HSDB)"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-5793.appearance"
+        }
+      },
+      "uses": [
+        {
+          "value": "Glucose is used in foods and medicines.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-5793.uses.0"
+          }
+        },
+        {
+          "value": "Glucose is used in sweets, baby foods, and brewing and wine making.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Hazardous Substances Data Bank (HSDB)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-5793.uses.1"
+          }
+        },
+        {
+          "value": "Glucose is used in baking and canning, and to make caramel coloring.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5793#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Hazardous Substances Data Bank (HSDB)"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-5793.uses.2"
+          }
+        }
+      ],
+      "hazards": []
+    },
+    {
       "id": "compound:cid-6093208",
       "nistId": "C1305620",
       "name": {
@@ -9194,144 +9493,6 @@
             "verification": {
               "status": "pass",
               "recordId": "cid-6334.hazards.0.reportedBy"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "compound:cid-73971",
-      "nistId": "C1313593",
-      "name": {
-        "value": "sodium oxide",
-        "unit": null,
-        "uncertain": false,
-        "source": {
-          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/73971#section=Synonyms",
-          "retrieved": "2026-11-15",
-          "via": "PubChem",
-          "asWritten": "Sodium oxide"
-        },
-        "verification": {
-          "status": "pass",
-          "recordId": "cid-73971.name"
-        }
-      },
-      "formula": {
-        "value": "Na2O",
-        "unit": null,
-        "uncertain": false,
-        "source": {
-          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/73971#section=Molecular-Formula",
-          "retrieved": "2026-11-15",
-          "via": "PubChem"
-        },
-        "verification": {
-          "status": "pass",
-          "recordId": "cid-73971.formula"
-        }
-      },
-      "standardState": {
-        "value": "solid",
-        "unit": null,
-        "uncertain": false,
-        "source": {
-          "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/03%3A_Matter_and_Energy/3.03%3A_Classifying_Matter_According_to_Its_StateSolid_Liquid_and_Gas",
-          "retrieved": "2026-11-15",
-          "via": "LibreTexts Chemistry"
-        },
-        "verification": {
-          "status": "pass",
-          "recordId": "cid-73971.standardState"
-        },
-        "derivation": {
-          "rule": "state-at-room-temperature",
-          "inputs": [
-            "cid-73971.meltingPoint"
-          ]
-        }
-      },
-      "formationEnthalpies": [
-        {
-          "phase": "s",
-          "value": {
-            "value": -417.98,
-            "unit": "kJ/mol",
-            "uncertain": false,
-            "source": {
-              "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1313593&Units=SI&cTG=on&cTC=on",
-              "retrieved": "2026-11-15",
-              "via": "Chase, 1998"
-            },
-            "verification": {
-              "status": "pass",
-              "recordId": "cid-73971.formationEnthalpies.s"
-            }
-          }
-        },
-        {
-          "phase": "l",
-          "value": {
-            "value": -372.84,
-            "unit": "kJ/mol",
-            "uncertain": false,
-            "source": {
-              "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1313593&Units=SI&cTG=on&cTC=on",
-              "retrieved": "2026-11-15",
-              "via": "Chase, 1998"
-            },
-            "verification": {
-              "status": "pass",
-              "recordId": "cid-73971.formationEnthalpies.l"
-            }
-          }
-        }
-      ],
-      "meltingPoint": {
-        "value": 1275,
-        "unit": "°C",
-        "uncertain": false,
-        "qualifier": "sublimes",
-        "source": {
-          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/73971#section=Melting-Point",
-          "retrieved": "2026-11-15",
-          "via": "ILO-WHO International Chemical Safety Cards (ICSCs)"
-        },
-        "verification": {
-          "status": "pass",
-          "recordId": "cid-73971.meltingPoint"
-        }
-      },
-      "uses": [],
-      "hazards": [
-        {
-          "code": "H314",
-          "statement": {
-            "value": "Causes severe skin burns and eye damage",
-            "unit": null,
-            "uncertain": false,
-            "source": {
-              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/73971#section=GHS-Classification",
-              "retrieved": "2026-11-15",
-              "via": "European Chemicals Agency (ECHA)"
-            },
-            "verification": {
-              "status": "pass",
-              "recordId": "cid-73971.hazards.0.statement"
-            }
-          },
-          "reportedBy": {
-            "value": 86.9,
-            "unit": "%",
-            "uncertain": false,
-            "source": {
-              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/73971#section=GHS-Classification",
-              "retrieved": "2026-11-15",
-              "via": "European Chemicals Agency (ECHA)"
-            },
-            "verification": {
-              "status": "pass",
-              "recordId": "cid-73971.hazards.0.reportedBy"
             }
           }
         }

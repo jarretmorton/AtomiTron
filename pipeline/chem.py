@@ -162,7 +162,7 @@ def summary_from_equation(names: list[str], weights: list[int]) -> str:
     if not products:
         if len(reactants) < 2:
             raise ValueError("a no-reaction pair needs two substances")
-        sentence = f"{_listed(reactants)} don't react with each other."
+        sentence = f"{_listed(reactants)} don't react under everyday conditions."
     elif len(reactants) == 1:
         sentence = f"{reactants[0]} breaks down into {_listed(products)}."
     elif len(products) == 1:

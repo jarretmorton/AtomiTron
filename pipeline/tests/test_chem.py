@@ -64,7 +64,7 @@ class Enthalpy(unittest.TestCase):
         self.assertEqual(summary_from_equation(["methane", "oxygen", "carbon dioxide", "water"], [-1, -1, 1, 1]),
                          "Methane and oxygen react to make carbon dioxide and water.")
         self.assertEqual(summary_from_equation(["water", "hydrogen", "oxygen"], [-1, 1, 1]), "Water breaks down into hydrogen and oxygen.")
-        self.assertEqual(summary_from_equation(["helium", "oxygen"], [-1, -1]), "Helium and oxygen don't react with each other.")
+        self.assertEqual(summary_from_equation(["helium", "oxygen"], [-1, -1]), "Helium and oxygen don't react under everyday conditions.")
         with self.assertRaises(ValueError):
             summary_from_equation(["a", "b"], [1, -1])
 
