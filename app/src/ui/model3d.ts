@@ -172,6 +172,11 @@ export function startModel3d(canvas: HTMLCanvasElement, balls: Ball[], sticks: S
     if (!canvas.isConnected) return; // the page moved on
     const dt = last ? Math.min(0.1, (now - last) / 1000) : 0;
     last = now;
+    // Nothing to draw while it's out of sight (inside a closed layer).
+    if (canvas.clientWidth === 0) {
+      requestAnimationFrame(tick);
+      return;
+    }
     if (!dragging && !reduceMotion) yaw += IDLE_SPIN * dt;
     draw();
     requestAnimationFrame(tick);
