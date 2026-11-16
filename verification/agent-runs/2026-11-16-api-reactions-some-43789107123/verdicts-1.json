@@ -1,0 +1,40 @@
+{
+  "claims": {
+    "lithium-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Lithium burns with a strongly red-tinged flame if heated in air; in pure oxygen, the flame is more intense."
+    },
+    "lithium-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Lithium burns with a strongly red-tinged flame if heated in air"
+    },
+    "lithium-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Molten lithium is quite easily ignited and is then difficult to extinguish."
+    },
+    "lithium-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "A corrosive substance that can cause injury to the skin, eyes, and respiratory tract"
+    },
+    "gold-oxygen.whyNot.0": {
+      "verdict": "not_supported",
+      "reason": "The passage says gold, silver and platinum do not react with oxygen, but it never says they are 'a few' metals, and it elsewhere says oxygen is only 'mostly unreactive' with gold."
+    },
+    "gold-oxygen.whyNot.1": {
+      "verdict": "supported",
+      "excerpt": "Oxygen is mostly unreactive with gold and platinum."
+    },
+    "Li2O.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "White odorless powder"
+    },
+    "Li2O.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Used as a carbon dioxide absorbent"
+    },
+    "Li2O.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Used as a carbon dioxide absorbent and to make specialty glasses and ceramics"
+    }
+  }
+}

@@ -120,6 +120,58 @@ def reaction_enthalpy(values: list, weights: list[int]):
     return lo if lo == hi else {"min": lo, "max": hi}
 
 
+ROOM_TEMPERATURE_C = 25
+
+
+def state_at_room_temperature(melting_c, boiling_c: float | None = None) -> str:
+    """Solid, liquid or gas at 25 °C, from the melting and boiling points in
+    °C. A melting point alone is enough for a solid. A melting range (a
+    substance that melts or decomposes over a span) is a solid if even its
+    lowest point is above room temperature."""
+    if isinstance(melting_c, dict):
+        if boiling_c is None and melting_c["min"] > ROOM_TEMPERATURE_C:
+            return "solid"
+        raise ValueError("a melting range reaching room temperature has no single state")
+    if boiling_c is not None and melting_c >= boiling_c:
+        raise ValueError("melting point must be below boiling point")
+    if melting_c > ROOM_TEMPERATURE_C:
+        return "solid"
+    if boiling_c is None:
+        raise ValueError("below room temperature, the state also needs the boiling point")
+    if boiling_c < ROOM_TEMPERATURE_C:
+        return "gas"
+    if melting_c < ROOM_TEMPERATURE_C < boiling_c:
+        return "liquid"
+    raise ValueError("a melting or boiling point at exactly room temperature has no single state")
+
+
+def _listed(names: list[str]) -> str:
+    return "".join(names) if len(names) < 2 else f"{', '.join(names[:-1])} and {names[-1]}"
+
+
+def summary_from_equation(names: list[str], weights: list[int]) -> str:
+    """The plain-language summary of an equation (twin of summaryFromEquation)."""
+    if any(w not in (1, -1) for w in weights):
+        raise ValueError("weights must be -1 (reactant) or 1 (product)")
+    reactants = [n for n, w in zip(names, weights) if w == -1]
+    products = [n for n, w in zip(names, weights) if w == 1]
+    if not reactants:
+        raise ValueError("an equation needs at least one reactant")
+    if 1 in weights and max(i for i, w in enumerate(weights) if w == -1) > weights.index(1):
+        raise ValueError("reactants must come before products")
+    if not products:
+        if len(reactants) < 2:
+            raise ValueError("a no-reaction pair needs two substances")
+        sentence = f"{_listed(reactants)} don't react under everyday conditions."
+    elif len(reactants) == 1:
+        sentence = f"{reactants[0]} breaks down into {_listed(products)}."
+    elif len(products) == 1:
+        sentence = f"{_listed(reactants)} combine to make {products[0]}."
+    else:
+        sentence = f"{_listed(reactants)} react to make {_listed(products)}."
+    return sentence[0].upper() + sentence[1:]
+
+
 def energy_direction(enthalpy) -> str:
     lo, hi = (enthalpy["min"], enthalpy["max"]) if isinstance(enthalpy, dict) else (enthalpy, enthalpy)
     if hi < 0:

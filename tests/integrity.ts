@@ -133,6 +133,24 @@ function checkCompound(c: Compound, at: string, errors: string[]): void {
     const symbol = c.element.slice('element:'.length);
     if (Object.keys(comp).length !== 1 || !(symbol in comp)) errors.push(`${at}: marked as ${c.element} but its formula is ${c.formula.value}`);
   }
+  const sd = c.standardState.derivation;
+  if (sd) {
+    const symbol = c.element?.slice('element:'.length);
+    const own = c.id.slice('compound:'.length);
+    if (sd.rule !== 'state-at-room-temperature') {
+      errors.push(`${at}: a derived state must use state-at-room-temperature`);
+    } else if (!symbol) {
+      // A compound: from its own melting point (PubChem).
+      if (!isDeepStrictEqual(sd.inputs, [`${own}.meltingPoint`]) || !c.meltingPoint) {
+        errors.push(`${at}: a compound's state must be derived from its own melting point`);
+      }
+    } else if (
+      !isDeepStrictEqual(sd.inputs, [`${symbol}.meltingPoint`, `${symbol}.boilingPoint`]) &&
+      !isDeepStrictEqual(sd.inputs, [`${symbol}.meltingPoint`])
+    ) {
+      errors.push(`${at}: the state must be derived from ${symbol}'s own melting and boiling points`);
+    }
+  }
   const phases = new Set<string>();
   for (const h of c.formationEnthalpies) {
     if (phases.has(h.phase)) errors.push(`${at}: two formation enthalpies for phase ${h.phase}`);
@@ -155,6 +173,26 @@ function checkReaction(r: Reaction, at: string, compounds: Map<string, Compound>
     if (/\d/.test(f.value)) errors.push(`${at}: hazard.why[${i}] contains a number`);
   }
   if (r.energy?.trigger && /\d/.test(r.energy.trigger.value)) errors.push(`${at}: energy.trigger contains a number`);
+
+  // The first summary is written by code from this entry's own substances.
+  const nameOf = (id: string) => (compounds.get(id) ?? [...compounds.values()].find((c) => c.element === id))?.name;
+  const summary = r.summary[0]?.derivation;
+  const parts: [string, number][] =
+    r.kind === 'reaction'
+      ? [...r.reactants!.map((s) => [s.substance, -1] as [string, number]), ...r.products!.map((s) => [s.substance, 1] as [string, number])]
+      : r.inputs.map((id) => [id, -1] as [string, number]);
+  const names = parts.map(([id]) => nameOf(id)?.verification.recordId);
+  if (
+    summary?.rule !== 'summary-from-equation' ||
+    names.some((n) => !n) ||
+    !isDeepStrictEqual(summary.inputs, names) ||
+    !isDeepStrictEqual(summary.weights, parts.map(([, w]) => w))
+  ) {
+    errors.push(`${at}: the first summary must be derived (summary-from-equation) from this entry's own substances`);
+  }
+  for (const [i, f] of r.summary.entries()) {
+    if (i > 0 && /\d/.test(f.value)) errors.push(`${at}: summary[${i}] contains a number`);
+  }
   if (r.kind !== 'reaction') return;
 
   const sides = { reactants: r.reactants!, products: r.products! };

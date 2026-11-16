@@ -138,10 +138,11 @@ def drafts_from_response(data: dict) -> dict:
 
 
 def group_claims(claims: list[dict]) -> dict[str, list[dict]]:
-    """One verifier call per element (and one for the explanations)."""
+    """One verifier call per element (and one for the explanations), or per
+    the claim's own group where it names one (reactions)."""
     groups: dict[str, list[dict]] = {}
     for c in claims:
-        key = "concept" if c["id"].startswith("concept.") else c["id"].split(".", 1)[0]
+        key = c.get("group") or ("concept" if c["id"].startswith("concept.") else c["id"].split(".", 1)[0])
         groups.setdefault(key, []).append(c)
     return groups
 
@@ -219,7 +220,14 @@ class Caller:
 
 
 def sources_by_id() -> dict[str, dict]:
-    return {p["id"]: p for p in json.loads((SOURCES_DIR / "sources.json").read_text("utf-8"))}
+    """Element and explanation passages, plus reaction passages when a
+    reaction run has collected them."""
+    out = {}
+    for name in ("sources.json", "reaction-sources.json"):
+        path = SOURCES_DIR / name
+        if path.exists():
+            out.update({p["id"]: p for p in json.loads(path.read_text("utf-8"))})
+    return out
 
 
 def git_sha() -> str:
@@ -278,6 +286,8 @@ def verify(run: Path) -> None:
     for n in range(1, RUNS + 1):
         for key, group in group_claims(claims).items():
             passages = sorted({c["passage"] for c in group})
+            # Verifiers see only the claim, never the drafter's value or group.
+            group = [{k: c[k] for k in ("id", "text", "passage")} for c in group]
             user = ("CLAIMS:\n" + json.dumps(group, ensure_ascii=False) + "\n\nSOURCES:\n"
                     + json.dumps([{"id": p, "text": src[p]["text"]} for p in passages], ensure_ascii=False))
             jobs.append((n, key, user))

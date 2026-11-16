@@ -1,0 +1,2432 @@
+[
+  {
+    "id": "sodium-chlorine.summary.0",
+    "group": "sodium-chlorine",
+    "text": "As sodium and chlorine react, a great deal of light and heat is given off.",
+    "passage": "lt/sodium-chlorine/0"
+  },
+  {
+    "id": "sodium-chlorine.bondingType.0",
+    "group": "sodium-chlorine",
+    "text": "Sodium chloride, also called table salt, is an ionic compound.",
+    "passage": "lt/sodium-chlorine/0",
+    "value": "ionic"
+  },
+  {
+    "id": "sodium-chlorine.bondingWhy.0",
+    "group": "sodium-chlorine",
+    "text": "The sodium gives up an electron, and the chlorine takes that electron.",
+    "passage": "lt/sodium-chlorine/0"
+  },
+  {
+    "id": "sodium-chlorine.bondingWhy.1",
+    "group": "sodium-chlorine",
+    "text": "The sodium and chloride ions that form have opposite charges, and opposite charges attract each other.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "sodium-chlorine.hazard.0",
+    "group": "sodium-chlorine",
+    "text": "Chlorine is a yellow-green gas that is very poisonous to animals and plants.",
+    "passage": "lt/sodium-chlorine/0"
+  },
+  {
+    "id": "sodium-chlorine.hazard.1",
+    "group": "sodium-chlorine",
+    "text": "Sodium metal burns strongly in air and reacts explosively with water.",
+    "passage": "lt/sodium-chlorine/0"
+  },
+  {
+    "id": "potassium-chlorine.summary.0",
+    "group": "potassium-chlorine",
+    "text": "As potassium and chlorine react, a white solid forms.",
+    "passage": "lt/potassium-chlorine/0"
+  },
+  {
+    "id": "potassium-chlorine.bondingWhy.0",
+    "group": "potassium-chlorine",
+    "text": "An ionic bond forms when electrons move from one atom to another.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "potassium-chlorine.bondingWhy.1",
+    "group": "potassium-chlorine",
+    "text": "An ionic bond is the pull between ions that have opposite charges.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "potassium-chlorine.hazard.0",
+    "group": "potassium-chlorine",
+    "text": "Chlorine is a gas that is poisonous to breathe in.",
+    "passage": "Cl2/Record Description/1"
+  },
+  {
+    "id": "potassium-chlorine.hazard.1",
+    "group": "potassium-chlorine",
+    "text": "Potassium catches fire when it meets water or moisture.",
+    "passage": "K/Fire Hazards/0"
+  },
+  {
+    "id": "magnesium-chlorine.bondingWhy.0",
+    "group": "magnesium-chlorine",
+    "text": "An ionic bond forms when electrons move from one atom to another, and the oppositely charged ions then pull on each other.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "magnesium-chlorine.hazard.0",
+    "group": "magnesium-chlorine",
+    "text": "Chlorine is a highly poisonous yellow-green gas with a strong smell like bleach.",
+    "passage": "Cl2/Record Description/7"
+  },
+  {
+    "id": "magnesium-chlorine.hazard.1",
+    "group": "magnesium-chlorine",
+    "text": "Magnesium exposed to damp chlorine can catch fire all by itself.",
+    "passage": "Mg/Reactivity Profile/0"
+  },
+  {
+    "id": "calcium-chlorine.summary.0",
+    "group": "calcium-chlorine",
+    "text": "Calcium can burn in chlorine gas.",
+    "passage": "Ca/Reactivity Profile/1"
+  },
+  {
+    "id": "calcium-chlorine.bondingType.0",
+    "group": "calcium-chlorine",
+    "text": "Calcium chloride is an ionic compound made of calcium and chlorine.",
+    "passage": "CaCl2/Record Description/2",
+    "value": "ionic"
+  },
+  {
+    "id": "calcium-chlorine.bondingWhy.0",
+    "group": "calcium-chlorine",
+    "text": "Calcium atoms give up electrons, and chlorine atoms accept them.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "calcium-chlorine.bondingWhy.1",
+    "group": "calcium-chlorine",
+    "text": "Moving electrons makes ions with opposite charges, and their pull on each other is called an ionic bond.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "calcium-chlorine.trigger.0",
+    "group": "calcium-chlorine",
+    "text": "Heat can start calcium burning in chlorine.",
+    "passage": "Ca/Reactivity Profile/0"
+  },
+  {
+    "id": "calcium-chlorine.hazard.0",
+    "group": "calcium-chlorine",
+    "text": "Chlorine is a greenish yellow gas that is poisonous to breathe in.",
+    "passage": "Cl2/Record Description/1"
+  },
+  {
+    "id": "calcium-chlorine.hazard.1",
+    "group": "calcium-chlorine",
+    "text": "Calcium metal can burn skin on contact.",
+    "passage": "Ca/Hazards Summary/0"
+  },
+  {
+    "id": "lithium-chlorine.summary.0",
+    "group": "lithium-chlorine",
+    "text": "Lithium and chlorine react with a glowing, bright flame.",
+    "passage": "Li/Reactivity Profile/0"
+  },
+  {
+    "id": "lithium-chlorine.hazard.0",
+    "group": "lithium-chlorine",
+    "text": "Lithium reacts violently with many substances, including halogens, and this can cause fire or explosion.",
+    "passage": "Li/Chemical Dangers/0"
+  },
+  {
+    "id": "lithium-chlorine.hazard.1",
+    "group": "lithium-chlorine",
+    "text": "Chlorine is a highly poisonous yellow-green gas.",
+    "passage": "Cl2/Record Description/7"
+  },
+  {
+    "id": "sodium-bromine.summary.0",
+    "group": "sodium-bromine",
+    "text": "Tiny pieces of sodium react with bromine with luminescence.",
+    "passage": "Na/Reactivity Profile/0"
+  },
+  {
+    "id": "sodium-bromine.bondingWhy.0",
+    "group": "sodium-bromine",
+    "text": "Sodium is rather reactive, and it does not take much energy to remove its outer electron to make a sodium ion.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "sodium-bromine.hazard.0",
+    "group": "sodium-bromine",
+    "text": "Sodium can catch fire in bromine vapor and react explosively.",
+    "passage": "Br2/Reactivity Profile/0"
+  },
+  {
+    "id": "sodium-bromine.hazard.1",
+    "group": "sodium-bromine",
+    "text": "Bromine is poisonous to breathe in and very corrosive to body tissue.",
+    "passage": "Br2/Record Description/0"
+  },
+  {
+    "id": "magnesium-oxygen.summary.0",
+    "group": "magnesium-oxygen",
+    "text": "Magnesium burns with a very bright white flame.",
+    "passage": "lt/magnesium-oxygen/0"
+  },
+  {
+    "id": "magnesium-oxygen.bondingType.0",
+    "group": "magnesium-oxygen",
+    "text": "Magnesium oxide is held together by an ionic bond, where oppositely charged particles attract each other.",
+    "passage": "lt/ionic-bonds",
+    "value": "ionic"
+  },
+  {
+    "id": "magnesium-oxygen.bondingWhy.0",
+    "group": "magnesium-oxygen",
+    "text": "Ionic bonds form when electrons move from one atom to another, as happens between magnesium and oxygen atoms.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "magnesium-oxygen.bondingWhy.1",
+    "group": "magnesium-oxygen",
+    "text": "The particles left with opposite charges pull toward each other, and that pull is the ionic bond.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "magnesium-oxygen.trigger.0",
+    "group": "magnesium-oxygen",
+    "text": "The reaction starts when magnesium is ignited, and then it reacts quickly and dramatically.",
+    "passage": "lt/classifying-reactions"
+  },
+  {
+    "id": "magnesium-oxygen.hazard.0",
+    "group": "magnesium-oxygen",
+    "text": "Magnesium in fine bits or powder catches fire very easily.",
+    "passage": "Mg/Fire Hazards/5"
+  },
+  {
+    "id": "magnesium-oxygen.hazard.1",
+    "group": "magnesium-oxygen",
+    "text": "The magnesium oxide fume made when magnesium burns is dangerous to breathe in.",
+    "passage": "MgO/Record Description/0"
+  },
+  {
+    "id": "sodium-oxygen.summary.0",
+    "group": "sodium-oxygen",
+    "text": "When sodium burns in oxygen, it gives a strong orange flame.",
+    "passage": "lt/sodium-oxygen/0"
+  },
+  {
+    "id": "sodium-oxygen.bondingType.0",
+    "group": "sodium-oxygen",
+    "text": "Sodium oxide is an ionic compound, made of charged particles called ions that attract each other.",
+    "passage": "lt/ionic-bonds",
+    "value": "ionic"
+  },
+  {
+    "id": "sodium-oxygen.bondingWhy.0",
+    "group": "sodium-oxygen",
+    "text": "Ionic bonds form when electrons move across from an atom to a different atom.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "sodium-oxygen.bondingWhy.1",
+    "group": "sodium-oxygen",
+    "text": "Ions with opposite charges pull on each other, and this pull is called an ionic bond.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "sodium-oxygen.trigger.0",
+    "group": "sodium-oxygen",
+    "text": "Sodium can be set alight by heat, sparks or flames.",
+    "passage": "Na/Fire Hazards/1"
+  },
+  {
+    "id": "sodium-oxygen.hazard.0",
+    "group": "sodium-oxygen",
+    "text": "Sodium can badly burn skin after even a short touch.",
+    "passage": "Na/Hazards Summary/0"
+  },
+  {
+    "id": "sodium-oxygen.hazard.1",
+    "group": "sodium-oxygen",
+    "text": "Sodium burns violently and can explode, spattering material around.",
+    "passage": "Na/Record Description/0"
+  },
+  {
+    "id": "calcium-oxygen.summary.0",
+    "group": "calcium-oxygen",
+    "text": "Calcium is slow to start burning, but then it bursts into a bright white flame with a touch of red.",
+    "passage": "lt/calcium-oxygen/0"
+  },
+  {
+    "id": "calcium-oxygen.trigger.0",
+    "group": "calcium-oxygen",
+    "text": "Heat is what gets the metal to start burning.",
+    "passage": "lt/calcium-oxygen/0"
+  },
+  {
+    "id": "calcium-oxygen.hazard.0",
+    "group": "calcium-oxygen",
+    "text": "Calcium in a fine powder can catch fire in air and burn with a deep red flame.",
+    "passage": "Ca/Air and Water Reactions/0"
+  },
+  {
+    "id": "calcium-oxygen.hazard.1",
+    "group": "calcium-oxygen",
+    "text": "Calcium oxide strongly irritates skin and eyes.",
+    "passage": "CaO/Record Description/0"
+  },
+  {
+    "id": "aluminum-oxygen.bondingType.0",
+    "group": "aluminum-oxygen",
+    "text": "The bonds in aluminum oxide are mostly ionic, because oxygen forms largely ionic oxides with metals.",
+    "passage": "lt/aluminum-oxygen/0",
+    "value": "ionic"
+  },
+  {
+    "id": "aluminum-oxygen.bondingWhy.0",
+    "group": "aluminum-oxygen",
+    "text": "Ionic bonds form when electrons move from one atom to another.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "aluminum-oxygen.bondingWhy.1",
+    "group": "aluminum-oxygen",
+    "text": "The ions that form have opposite charges, and their pull on each other is the ionic bond.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "aluminum-oxygen.hazard.0",
+    "group": "aluminum-oxygen",
+    "text": "Aluminum powder catches fire easily and burns with an intense flame.",
+    "passage": "Al/Record Description/1"
+  },
+  {
+    "id": "aluminum-oxygen.hazard.1",
+    "group": "aluminum-oxygen",
+    "text": "Things that burn in air burn even more fiercely in oxygen.",
+    "passage": "O2/Record Description/0"
+  },
+  {
+    "id": "copper-oxygen.summary.0",
+    "group": "copper-oxygen",
+    "text": "When copper is heated in air, its surface becomes covered with a black coating.",
+    "passage": "Cu/Air and Water Reactions/0"
+  },
+  {
+    "id": "copper-oxygen.bondingType.0",
+    "group": "copper-oxygen",
+    "text": "Copper(II) oxide has an ionic structure.",
+    "passage": "CuO/Record Description/0",
+    "value": "ionic"
+  },
+  {
+    "id": "copper-oxygen.bondingWhy.0",
+    "group": "copper-oxygen",
+    "text": "Ionic bonds come from electrons moving from one atom to another atom.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "copper-oxygen.bondingWhy.1",
+    "group": "copper-oxygen",
+    "text": "This makes ions with opposite charges, and the pull between them is called an ionic bond.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "copper-oxygen.trigger.0",
+    "group": "copper-oxygen",
+    "text": "Heating copper in air makes it become coated with black oxide.",
+    "passage": "Cu/Air and Water Reactions/0"
+  },
+  {
+    "id": "copper-oxygen.hazard.0",
+    "group": "copper-oxygen",
+    "text": "Tiny copper particles spread through air can form mixtures that explode.",
+    "passage": "Cu/Fire Hazards/1"
+  },
+  {
+    "id": "copper-oxygen.hazard.1",
+    "group": "copper-oxygen",
+    "text": "Things that burn in air burn even more strongly in oxygen.",
+    "passage": "O2/Record Description/0"
+  },
+  {
+    "id": "iron-oxygen.summary.0",
+    "group": "iron-oxygen",
+    "text": "As iron rusts, the rust forms a layer that flakes off easily instead of staying tight to the surface.",
+    "passage": "lt/iron-oxygen/0"
+  },
+  {
+    "id": "iron-oxygen.hazard.0",
+    "group": "iron-oxygen",
+    "text": "Fine iron powder can catch fire all by itself.",
+    "passage": "Fe/Hazards Summary/0"
+  },
+  {
+    "id": "iron-oxygen.hazard.1",
+    "group": "iron-oxygen",
+    "text": "Oxygen makes any fire burn more fiercely.",
+    "passage": "O2/Fire Hazards/0"
+  },
+  {
+    "id": "zinc-oxygen.summary.0",
+    "group": "zinc-oxygen",
+    "text": "When zinc burns, it gives off fumes of zinc oxide.",
+    "passage": "Zn/Chemical Dangers/0"
+  },
+  {
+    "id": "zinc-oxygen.trigger.0",
+    "group": "zinc-oxygen",
+    "text": "Zinc can be set alight by heat, sparks or flames.",
+    "passage": "Zn/Fire Hazards/2"
+  },
+  {
+    "id": "zinc-oxygen.hazard.0",
+    "group": "zinc-oxygen",
+    "text": "Burning zinc can give off poisonous zinc oxide fumes.",
+    "passage": "Zn/Record Description/1"
+  },
+  {
+    "id": "zinc-oxygen.hazard.1",
+    "group": "zinc-oxygen",
+    "text": "Very fine bits of zinc spread out in air can form a mixture that explodes.",
+    "passage": "Zn/Fire Hazards/5"
+  },
+  {
+    "id": "hydrogen-oxygen.summary.0",
+    "group": "hydrogen-oxygen",
+    "text": "Hydrogen burns with a pale blue flame that is almost invisible.",
+    "passage": "H2/Record Description/0"
+  },
+  {
+    "id": "hydrogen-oxygen.bondingType.0",
+    "group": "hydrogen-oxygen",
+    "text": "Water is held together by covalent bonds between its hydrogen and oxygen atoms.",
+    "passage": "H2O/Record Description/2",
+    "value": "covalent"
+  },
+  {
+    "id": "hydrogen-oxygen.bondingWhy.0",
+    "group": "hydrogen-oxygen",
+    "text": "Covalent bonds form when atoms share electrons with each other.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "hydrogen-oxygen.bondingWhy.1",
+    "group": "hydrogen-oxygen",
+    "text": "Sharing electrons is another way for atoms to get a complete valence shell.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "hydrogen-oxygen.trigger.0",
+    "group": "hydrogen-oxygen",
+    "text": "Heat, sparks or flames can easily set hydrogen alight.",
+    "passage": "H2/Fire Hazards/0"
+  },
+  {
+    "id": "hydrogen-oxygen.hazard.0",
+    "group": "hydrogen-oxygen",
+    "text": "A mixture of hydrogen and oxygen can explode if it is ignited.",
+    "passage": "lt/hydrogen-oxygen/0"
+  },
+  {
+    "id": "hydrogen-oxygen.hazard.1",
+    "group": "hydrogen-oxygen",
+    "text": "Hydrogen fires are hard to notice because hydrogen burns with an invisible flame.",
+    "passage": "H2/Fire Hazards/0"
+  },
+  {
+    "id": "carbon-oxygen.summary.0",
+    "group": "carbon-oxygen",
+    "text": "Carbon burns as it combines with oxygen.",
+    "passage": "lt/carbon-oxygen/0"
+  },
+  {
+    "id": "carbon-oxygen.bondingType.0",
+    "group": "carbon-oxygen",
+    "text": "Carbon dioxide has covalent bonds, because oxygen forms covalent oxides with non-metals such as carbon.",
+    "passage": "lt/carbon-oxygen/0",
+    "value": "covalent"
+  },
+  {
+    "id": "carbon-oxygen.bondingWhy.0",
+    "group": "carbon-oxygen",
+    "text": "A covalent bond forms when atoms share electrons.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "carbon-oxygen.bondingWhy.1",
+    "group": "carbon-oxygen",
+    "text": "Sharing electrons is another way for atoms to get a complete valence shell.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "carbon-oxygen.trigger.0",
+    "group": "carbon-oxygen",
+    "text": "Carbon can be set burning by heat, sparks or flames.",
+    "passage": "C/Fire Hazards/0"
+  },
+  {
+    "id": "carbon-oxygen.hazard.0",
+    "group": "carbon-oxygen",
+    "text": "Powdered carbon catches fire very easily, and fine carbon dust in air can explode.",
+    "passage": "C/Fire Hazards/2"
+  },
+  {
+    "id": "carbon-oxygen.hazard.1",
+    "group": "carbon-oxygen",
+    "text": "When carbon burns without enough fresh air, it can make poisonous carbon monoxide.",
+    "passage": "C/Chemical Dangers/0"
+  },
+  {
+    "id": "carbon-oxygen-monoxide.summary.0",
+    "group": "carbon-oxygen-monoxide",
+    "text": "The carbon monoxide gas that forms has no color, no smell and no taste.",
+    "passage": "CO/Record Description/0"
+  },
+  {
+    "id": "carbon-oxygen-monoxide.bondingType.0",
+    "group": "carbon-oxygen-monoxide",
+    "text": "In carbon monoxide, the carbon atom and the oxygen atom are held together by a covalent bond.",
+    "passage": "CO/Record Description/8",
+    "value": "covalent"
+  },
+  {
+    "id": "carbon-oxygen-monoxide.bondingWhy.0",
+    "group": "carbon-oxygen-monoxide",
+    "text": "A covalent bond forms when two atoms share electrons between them.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "carbon-oxygen-monoxide.bondingWhy.1",
+    "group": "carbon-oxygen-monoxide",
+    "text": "Sharing electrons is another way atoms can get a complete valence shell.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "carbon-oxygen-monoxide.trigger.0",
+    "group": "carbon-oxygen-monoxide",
+    "text": "Carbon can be set alight by heat, sparks or flames.",
+    "passage": "C/Fire Hazards/0"
+  },
+  {
+    "id": "carbon-oxygen-monoxide.hazard.0",
+    "group": "carbon-oxygen-monoxide",
+    "text": "Carbon monoxide is very poisonous, and having no color or smell makes it even more dangerous.",
+    "passage": "lt/carbon-oxygen-monoxide/0"
+  },
+  {
+    "id": "carbon-oxygen-monoxide.hazard.1",
+    "group": "carbon-oxygen-monoxide",
+    "text": "As carbon uses up the oxygen in a room, poisonous carbon monoxide forms instead of carbon dioxide.",
+    "passage": "lt/carbon-oxygen-monoxide/0"
+  },
+  {
+    "id": "carbon-monoxide-oxygen.summary.0",
+    "group": "carbon-monoxide-oxygen",
+    "text": "When carbon monoxide burns, its flame has very little color.",
+    "passage": "CO/Fire Hazards/0"
+  },
+  {
+    "id": "carbon-monoxide-oxygen.bondingType.0",
+    "group": "carbon-monoxide-oxygen",
+    "text": "In carbon dioxide, a carbon atom is joined by covalent double bonds to two oxygen atoms.",
+    "passage": "CO2/Record Description/4",
+    "value": "covalent"
+  },
+  {
+    "id": "carbon-monoxide-oxygen.bondingWhy.0",
+    "group": "carbon-monoxide-oxygen",
+    "text": "A covalent bond forms when two atoms share electrons.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "carbon-monoxide-oxygen.bondingWhy.1",
+    "group": "carbon-monoxide-oxygen",
+    "text": "In a double covalent bond, the atoms share two pairs of electrons.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "carbon-monoxide-oxygen.trigger.0",
+    "group": "carbon-monoxide-oxygen",
+    "text": "Carbon monoxide can be set alight by heat, sparks or flames.",
+    "passage": "CO/Fire Hazards/2"
+  },
+  {
+    "id": "carbon-monoxide-oxygen.hazard.0",
+    "group": "carbon-monoxide-oxygen",
+    "text": "Carbon monoxide is extremely flammable, and a mixture of carbon monoxide gas and air can explode.",
+    "passage": "CO/Fire Hazards/4"
+  },
+  {
+    "id": "carbon-monoxide-oxygen.hazard.1",
+    "group": "carbon-monoxide-oxygen",
+    "text": "Carbon monoxide is very poisonous, and having no color, smell or taste makes it even more dangerous.",
+    "passage": "lt/carbon-monoxide-oxygen/0"
+  },
+  {
+    "id": "sulfur-oxygen.summary.0",
+    "group": "sulfur-oxygen",
+    "text": "Burning sulfur gives a blue flame that can be hard to see in daylight.",
+    "passage": "S/Hazards Summary/1"
+  },
+  {
+    "id": "sulfur-oxygen.bondingType.0",
+    "group": "sulfur-oxygen",
+    "text": "Oxygen forms covalent oxides with nonmetals such as sulfur, so sulfur dioxide has covalent bonds.",
+    "passage": "lt/sulfur-oxygen/0",
+    "value": "covalent"
+  },
+  {
+    "id": "sulfur-oxygen.bondingWhy.0",
+    "group": "sulfur-oxygen",
+    "text": "When two atoms share electrons, they make a covalent bond.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "sulfur-oxygen.bondingWhy.1",
+    "group": "sulfur-oxygen",
+    "text": "Atoms can get a complete valence shell another way, by sharing electrons.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "sulfur-oxygen.trigger.0",
+    "group": "sulfur-oxygen",
+    "text": "Sulfur can be set alight by heat, sparks or flames.",
+    "passage": "S/Fire Hazards/0"
+  },
+  {
+    "id": "sulfur-oxygen.hazard.0",
+    "group": "sulfur-oxygen",
+    "text": "Burning sulfur makes sulfur dioxide, which is a poisonous gas.",
+    "passage": "S/Hazards Summary/1"
+  },
+  {
+    "id": "sulfur-oxygen.hazard.1",
+    "group": "sulfur-oxygen",
+    "text": "Fine sulfur dust floating in air can explode.",
+    "passage": "S/Fire Hazards/1"
+  },
+  {
+    "id": "nitrogen-oxygen.trigger.0",
+    "group": "nitrogen-oxygen",
+    "text": "Very high heat, like the heat near a lightning bolt, makes nitrogen and oxygen in the air react.",
+    "passage": "lt/nitrogen-oxygen/0"
+  },
+  {
+    "id": "nitrogen-oxygen.hazard.0",
+    "group": "nitrogen-oxygen",
+    "text": "Nitric oxide is very poisonous if you breathe it in or if it soaks in through your skin.",
+    "passage": "NO/Record Description/1"
+  },
+  {
+    "id": "nitrogen-oxygen.hazard.1",
+    "group": "nitrogen-oxygen",
+    "text": "Nitric oxide reacts with oxygen to make nitrogen dioxide, which is a poisonous gas.",
+    "passage": "NO/Fire Hazards/0"
+  },
+  {
+    "id": "methane-oxygen.summary.0",
+    "group": "methane-oxygen",
+    "text": "The burning gas makes a flame that also gives off light, probably a light blue glow.",
+    "passage": "lt/methane-oxygen/0"
+  },
+  {
+    "id": "methane-oxygen.bondingType.0",
+    "group": "methane-oxygen",
+    "text": "In carbon dioxide, a carbon atom is joined by covalent double bonds to two oxygen atoms.",
+    "passage": "CO2/Record Description/4",
+    "value": "covalent"
+  },
+  {
+    "id": "methane-oxygen.bondingWhy.0",
+    "group": "methane-oxygen",
+    "text": "A covalent bond forms when two atoms share electrons.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "methane-oxygen.bondingWhy.1",
+    "group": "methane-oxygen",
+    "text": "Sharing electrons is another way for atoms to get a complete valence shell.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "methane-oxygen.trigger.0",
+    "group": "methane-oxygen",
+    "text": "Methane can easily be set burning by heat, sparks or flames.",
+    "passage": "CH4/Fire Hazards/4"
+  },
+  {
+    "id": "methane-oxygen.hazard.0",
+    "group": "methane-oxygen",
+    "text": "Methane is extremely flammable, and a mixture of methane gas and air can explode.",
+    "passage": "CH4/Fire Hazards/6"
+  },
+  {
+    "id": "methane-oxygen.hazard.1",
+    "group": "methane-oxygen",
+    "text": "Oxygen makes any fire burn more fiercely.",
+    "passage": "O2/Fire Hazards/0"
+  },
+  {
+    "id": "propane-oxygen.summary.0",
+    "group": "propane-oxygen",
+    "text": "This is a combustion reaction, so it gives off energy as light and heat.",
+    "passage": "lt/propane-oxygen/0"
+  },
+  {
+    "id": "propane-oxygen.bondingType.0",
+    "group": "propane-oxygen",
+    "text": "In carbon dioxide, a carbon atom is joined to two oxygen atoms by covalent double bonds.",
+    "passage": "CO2/Record Description/4",
+    "value": "covalent"
+  },
+  {
+    "id": "propane-oxygen.bondingWhy.0",
+    "group": "propane-oxygen",
+    "text": "A covalent bond forms when two atoms share electrons.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "propane-oxygen.bondingWhy.1",
+    "group": "propane-oxygen",
+    "text": "Sharing electrons is another way for atoms to get a complete valence shell.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "propane-oxygen.trigger.0",
+    "group": "propane-oxygen",
+    "text": "Propane is easily set alight by heat, sparks or flames.",
+    "passage": "C3H8/Fire Hazards/1"
+  },
+  {
+    "id": "propane-oxygen.hazard.0",
+    "group": "propane-oxygen",
+    "text": "Propane is extremely flammable, and a mixture of propane gas and air can explode.",
+    "passage": "C3H8/Fire Hazards/3"
+  },
+  {
+    "id": "propane-oxygen.hazard.1",
+    "group": "propane-oxygen",
+    "text": "Oxygen makes any fire burn more fiercely.",
+    "passage": "O2/Fire Hazards/0"
+  },
+  {
+    "id": "ethane-oxygen.summary.0",
+    "group": "ethane-oxygen",
+    "text": "In combustion reactions, a substance reacts with oxygen gas and gives off energy as light and heat.",
+    "passage": "lt/ethane-oxygen/0"
+  },
+  {
+    "id": "ethane-oxygen.bondingType.0",
+    "group": "ethane-oxygen",
+    "text": "In carbon dioxide, the carbon atom is joined to oxygen atoms by covalent double bonds.",
+    "passage": "CO2/Record Description/4",
+    "value": "covalent"
+  },
+  {
+    "id": "ethane-oxygen.bondingWhy.0",
+    "group": "ethane-oxygen",
+    "text": "Covalent bonds form when atoms share electrons.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "ethane-oxygen.bondingWhy.1",
+    "group": "ethane-oxygen",
+    "text": "Sharing electrons is another way atoms can get a complete valence shell.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "ethane-oxygen.trigger.0",
+    "group": "ethane-oxygen",
+    "text": "Ethane is easily set alight by heat, sparks or flames.",
+    "passage": "C2H6/Fire Hazards/2"
+  },
+  {
+    "id": "ethane-oxygen.hazard.0",
+    "group": "ethane-oxygen",
+    "text": "Ethane catches fire extremely easily, and a mixture of ethane gas and air can explode.",
+    "passage": "C2H6/Fire Hazards/4"
+  },
+  {
+    "id": "ethane-oxygen.hazard.1",
+    "group": "ethane-oxygen",
+    "text": "Things that burn in air burn even more fiercely in oxygen.",
+    "passage": "O2/Record Description/0"
+  },
+  {
+    "id": "hydrogen-chlorine.summary.0",
+    "group": "hydrogen-chlorine",
+    "text": "Chlorine burns in hydrogen with a quiet, very hot flame.",
+    "passage": "HCl/Methods of Manufacturing/3"
+  },
+  {
+    "id": "hydrogen-chlorine.bondingType.0",
+    "group": "hydrogen-chlorine",
+    "text": "Hydrogen can share an electron to form a single covalent bond.",
+    "passage": "lt/hydrogen-chlorine/0",
+    "value": "covalent"
+  },
+  {
+    "id": "hydrogen-chlorine.bondingWhy.0",
+    "group": "hydrogen-chlorine",
+    "text": "When two atoms share electrons, they make a bond called a covalent bond.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "hydrogen-chlorine.bondingWhy.1",
+    "group": "hydrogen-chlorine",
+    "text": "Sharing electrons is another way for atoms to get a complete valence shell.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "hydrogen-chlorine.trigger.0",
+    "group": "hydrogen-chlorine",
+    "text": "Almost any kind of energy, such as heat, sunlight or sparks, can set off a hydrogen and chlorine mixture.",
+    "passage": "Cl2/Fire Hazards/0"
+  },
+  {
+    "id": "hydrogen-chlorine.hazard.0",
+    "group": "hydrogen-chlorine",
+    "text": "Under some conditions, hydrogen reacts explosively with chlorine to form hydrogen chloride.",
+    "passage": "lt/hydrogen-chlorine/0"
+  },
+  {
+    "id": "hydrogen-chlorine.hazard.1",
+    "group": "hydrogen-chlorine",
+    "text": "Chlorine, one of the starting gases, is highly poisonous.",
+    "passage": "Cl2/Record Description/7"
+  },
+  {
+    "id": "nitrogen-hydrogen.summary.0",
+    "group": "nitrogen-hydrogen",
+    "text": "Without a catalyst, this reaction is so slow that almost nothing happens in any sensible amount of time.",
+    "passage": "lt/nitrogen-hydrogen/0"
+  },
+  {
+    "id": "nitrogen-hydrogen.bondingType.0",
+    "group": "nitrogen-hydrogen",
+    "text": "Ammonia is made of a nitrogen atom covalently bonded to hydrogen atoms, so its bonds are covalent.",
+    "passage": "NH3/Record Description/9",
+    "value": "covalent"
+  },
+  {
+    "id": "nitrogen-hydrogen.bondingWhy.0",
+    "group": "nitrogen-hydrogen",
+    "text": "Covalent bonds form when atoms share electrons.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "nitrogen-hydrogen.bondingWhy.1",
+    "group": "nitrogen-hydrogen",
+    "text": "Sharing electrons is another way for atoms to get a complete valence shell.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "nitrogen-hydrogen.hazard.0",
+    "group": "nitrogen-hydrogen",
+    "text": "Hydrogen is extremely flammable, and a mixture of hydrogen gas and air can explode.",
+    "passage": "H2/Fire Hazards/4"
+  },
+  {
+    "id": "nitrogen-hydrogen.hazard.1",
+    "group": "nitrogen-hydrogen",
+    "text": "Liquid ammonia can burn the skin and cause permanent damage to the eyes.",
+    "passage": "NH3/Hazards Summary/2"
+  },
+  {
+    "id": "hydrogen-bromine.summary.0",
+    "group": "hydrogen-bromine",
+    "text": "The reaction between hydrogen and bromine can keep a flame burning on its own inside a closed burner.",
+    "passage": "HBr/Methods of Manufacturing/0"
+  },
+  {
+    "id": "hydrogen-bromine.bondingType.0",
+    "group": "hydrogen-bromine",
+    "text": "Hydrogen bromide is held together by a covalent bond.",
+    "passage": "lt/covalent-bonds",
+    "value": "covalent"
+  },
+  {
+    "id": "hydrogen-bromine.bondingWhy.0",
+    "group": "hydrogen-bromine",
+    "text": "A covalent bond forms when atoms share electrons.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "hydrogen-bromine.bondingWhy.1",
+    "group": "hydrogen-bromine",
+    "text": "In hydrogen bromide, the hydrogen atom and the bromine atom share their unpaired electron.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "hydrogen-bromine.trigger.0",
+    "group": "hydrogen-bromine",
+    "text": "Hydrogen does little under normal conditions, but when it is heated it takes part in many reactions.",
+    "passage": "lt/hydrogen-bromine/0"
+  },
+  {
+    "id": "hydrogen-bromine.hazard.0",
+    "group": "hydrogen-bromine",
+    "text": "Bromine can react explosively with hydrogen.",
+    "passage": "Br2/Reactivity Profile/0"
+  },
+  {
+    "id": "hydrogen-bromine.hazard.1",
+    "group": "hydrogen-bromine",
+    "text": "Bromine is poisonous to breathe in and is very corrosive to body tissue.",
+    "passage": "Br2/Record Description/0"
+  },
+  {
+    "id": "carbon-hydrogen.bondingWhy.0",
+    "group": "carbon-hydrogen",
+    "text": "When two atoms share electrons, they make a bond called a covalent bond.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "carbon-hydrogen.hazard.0",
+    "group": "carbon-hydrogen",
+    "text": "Hydrogen catches fire extremely easily, and a mixture of hydrogen gas and air can explode.",
+    "passage": "H2/Fire Hazards/4"
+  },
+  {
+    "id": "carbon-hydrogen.hazard.1",
+    "group": "carbon-hydrogen",
+    "text": "Methane is extremely flammable, and a mixture of methane and air can explode.",
+    "passage": "CH4/Fire Hazards/6"
+  },
+  {
+    "id": "sodium-water.summary.0",
+    "group": "sodium-water",
+    "text": "The sodium melts almost at once into a small silvery ball that moves rapidly across the surface of the water.",
+    "passage": "lt/sodium-water/0"
+  },
+  {
+    "id": "sodium-water.trigger.0",
+    "group": "sodium-water",
+    "text": "The reaction starts when sodium comes in contact with water.",
+    "passage": "lt/activity-series"
+  },
+  {
+    "id": "sodium-water.hazard.0",
+    "group": "sodium-water",
+    "text": "Sodium reacts violently with water, giving off hydrogen gas that can catch fire and explode in air.",
+    "passage": "Na/Hazards Summary/0"
+  },
+  {
+    "id": "sodium-water.hazard.1",
+    "group": "sodium-water",
+    "text": "Sodium can cause bad burns after only a brief touch on the skin.",
+    "passage": "Na/Hazards Summary/0"
+  },
+  {
+    "id": "potassium-water.summary.0",
+    "group": "potassium-water",
+    "text": "So much heat is given off that the hydrogen catches fire, burning with a lilac-colored flame.",
+    "passage": "lt/potassium-water/0"
+  },
+  {
+    "id": "potassium-water.trigger.0",
+    "group": "potassium-water",
+    "text": "Potassium reacts strongly with water, even when the water is cold.",
+    "passage": "lt/potassium-water/0"
+  },
+  {
+    "id": "potassium-water.hazard.0",
+    "group": "potassium-water",
+    "text": "Potassium reacts violently with water, making hydrogen gas that can catch fire and explode.",
+    "passage": "K/Fire Hazards/0"
+  },
+  {
+    "id": "potassium-water.hazard.1",
+    "group": "potassium-water",
+    "text": "Potassium hydroxide is corrosive to metals and to body tissue.",
+    "passage": "KOH/Record Description/1"
+  },
+  {
+    "id": "lithium-water.summary.0",
+    "group": "lithium-water",
+    "text": "The lithium floats on top of the water, fizzing as it gives off hydrogen gas, and slowly disappears.",
+    "passage": "lt/lithium-water/0"
+  },
+  {
+    "id": "lithium-water.hazard.0",
+    "group": "lithium-water",
+    "text": "Lithium reacts violently with water, making hydrogen, a gas that can catch fire.",
+    "passage": "Li/Record Description/0"
+  },
+  {
+    "id": "lithium-water.hazard.1",
+    "group": "lithium-water",
+    "text": "Lithium hydroxide solution can badly irritate skin and eyes.",
+    "passage": "LiOH/Record Description/0"
+  },
+  {
+    "id": "calcium-water.summary.0",
+    "group": "calcium-water",
+    "text": "Bubbles of hydrogen gas are given off, and a white precipitate of calcium hydroxide forms.",
+    "passage": "lt/calcium-water/0"
+  },
+  {
+    "id": "calcium-water.trigger.0",
+    "group": "calcium-water",
+    "text": "Calcium starts reacting when it comes into contact with cold water.",
+    "passage": "lt/calcium-water/0"
+  },
+  {
+    "id": "calcium-water.hazard.0",
+    "group": "calcium-water",
+    "text": "Calcium reacts violently with water, making hydrogen, a gas that can catch fire, and the heat may set the hydrogen alight.",
+    "passage": "Ca/Air and Water Reactions/1"
+  },
+  {
+    "id": "calcium-water.hazard.1",
+    "group": "calcium-water",
+    "text": "Calcium hydroxide can burn skin and cause blisters.",
+    "passage": "Ca(OH)2/Hazards Summary/0"
+  },
+  {
+    "id": "iron-sulfur.hazard.0",
+    "group": "iron-sulfur",
+    "text": "Burning sulfur gives off a poisonous gas called sulfur dioxide, and its blue flame can be hard to see in daylight.",
+    "passage": "S/Hazards Summary/1"
+  },
+  {
+    "id": "iron-sulfur.hazard.1",
+    "group": "iron-sulfur",
+    "text": "Fine iron powder can catch fire all by itself.",
+    "passage": "Fe/Hazards Summary/0"
+  },
+  {
+    "id": "zinc-sulfur.summary.0",
+    "group": "zinc-sulfur",
+    "text": "The reaction between zinc and sulfur gives off a lot of light and heat.",
+    "passage": "lt/zinc-sulfur/0"
+  },
+  {
+    "id": "zinc-sulfur.trigger.0",
+    "group": "zinc-sulfur",
+    "text": "Heat is what starts zinc and sulfur reacting together.",
+    "passage": "lt/zinc-sulfur/1"
+  },
+  {
+    "id": "zinc-sulfur.hazard.0",
+    "group": "zinc-sulfur",
+    "text": "Zinc reacts violently with sulfur, which can cause a fire or an explosion.",
+    "passage": "Zn/Chemical Dangers/0"
+  },
+  {
+    "id": "zinc-sulfur.hazard.1",
+    "group": "zinc-sulfur",
+    "text": "Burning sulfur makes sulfur dioxide, a poisonous gas, with a blue flame that can be hard to see in daylight.",
+    "passage": "S/Hazards Summary/1"
+  },
+  {
+    "id": "ammonia-hydrogen-chloride.summary.0",
+    "group": "ammonia-hydrogen-chloride",
+    "text": "When the two colorless gases meet, a thick white smoke of solid ammonium chloride appears.",
+    "passage": "lt/ammonia-hydrogen-chloride/0"
+  },
+  {
+    "id": "ammonia-hydrogen-chloride.bondingWhy.0",
+    "group": "ammonia-hydrogen-chloride",
+    "text": "Ammonium ions form when a hydrogen ion moves from the hydrogen chloride to a lone pair of electrons on the ammonia.",
+    "passage": "lt/ammonia-hydrogen-chloride/0"
+  },
+  {
+    "id": "ammonia-hydrogen-chloride.bondingWhy.1",
+    "group": "ammonia-hydrogen-chloride",
+    "text": "The hydrogen's electron stays behind on the chlorine, which becomes a negative chloride ion.",
+    "passage": "lt/ammonia-hydrogen-chloride/0"
+  },
+  {
+    "id": "ammonia-hydrogen-chloride.hazard.0",
+    "group": "ammonia-hydrogen-chloride",
+    "text": "Ammonia gas and liquid are corrosive to skin.",
+    "passage": "NH3/Hazards Summary/1"
+  },
+  {
+    "id": "ammonia-hydrogen-chloride.hazard.1",
+    "group": "ammonia-hydrogen-chloride",
+    "text": "Hydrogen chloride is a corrosive gas with a strong, irritating smell.",
+    "passage": "HCl/Record Description/0"
+  },
+  {
+    "id": "calcium-oxide-water.summary.0",
+    "group": "calcium-oxide-water",
+    "text": "A lot of heat is given off when calcium oxide reacts with water.",
+    "passage": "CaO/Air and Water Reactions/0"
+  },
+  {
+    "id": "calcium-oxide-water.hazard.1",
+    "group": "calcium-oxide-water",
+    "text": "Calcium hydroxide can burn skin and cause blisters.",
+    "passage": "Ca(OH)2/Hazards Summary/0"
+  },
+  {
+    "id": "calcium-oxide-carbon-dioxide.hazard.0",
+    "group": "calcium-oxide-carbon-dioxide",
+    "text": "Calcium oxide strongly irritates the skin, the eyes and the soft inside lining of the nose and mouth.",
+    "passage": "CaO/Record Description/0"
+  },
+  {
+    "id": "calcium-oxide-carbon-dioxide.hazard.1",
+    "group": "calcium-oxide-carbon-dioxide",
+    "text": "Carbon dioxide is heavier than air and can cause suffocation by pushing away the air people need to breathe.",
+    "passage": "CO2/Record Description/0"
+  },
+  {
+    "id": "water-splitting.summary.0",
+    "group": "water-splitting",
+    "text": "Bubbles of hydrogen form at the cathode, and oxygen comes off at the anode.",
+    "passage": "lt/water-splitting/0"
+  },
+  {
+    "id": "water-splitting.bondingType.0",
+    "group": "water-splitting",
+    "text": "Hydrogen gas is made of pairs of hydrogen atoms joined by a covalent bond.",
+    "passage": "lt/covalent-bonds",
+    "value": "covalent"
+  },
+  {
+    "id": "water-splitting.bondingWhy.0",
+    "group": "water-splitting",
+    "text": "The two hydrogen atoms share their electrons with each other.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "water-splitting.bondingWhy.1",
+    "group": "water-splitting",
+    "text": "Sharing gives each hydrogen atom a filled valence shell, which makes the bond stable.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "water-splitting.trigger.0",
+    "group": "water-splitting",
+    "text": "An electric current is what starts this reaction.",
+    "passage": "lt/classifying-reactions"
+  },
+  {
+    "id": "water-splitting.hazard.0",
+    "group": "water-splitting",
+    "text": "A mixture of hydrogen and oxygen can explode if it is lit.",
+    "passage": "lt/water-splitting/0"
+  },
+  {
+    "id": "water-splitting.hazard.1",
+    "group": "water-splitting",
+    "text": "Hydrogen catches fire easily and burns with a pale blue flame that is almost invisible.",
+    "passage": "H2/Record Description/0"
+  },
+  {
+    "id": "mercury-oxide-heated.summary.0",
+    "group": "mercury-oxide-heated",
+    "text": "You start with a red solid that breaks down into mercury metal and oxygen gas when it is heated.",
+    "passage": "lt/mercury-oxide-heated/0"
+  },
+  {
+    "id": "mercury-oxide-heated.trigger.0",
+    "group": "mercury-oxide-heated",
+    "text": "Heating starts this reaction.",
+    "passage": "lt/mercury-oxide-heated/0"
+  },
+  {
+    "id": "mercury-oxide-heated.hazard.0",
+    "group": "mercury-oxide-heated",
+    "text": "Smoke from a fire with mercury oxide may hold poisonous mercury vapor, and the oxygen may make the fire stronger.",
+    "passage": "HgO/Fire Hazards/0"
+  },
+  {
+    "id": "mercury-oxide-heated.hazard.1",
+    "group": "mercury-oxide-heated",
+    "text": "Mercury oxide is highly poisonous if it is swallowed, breathed in, or taken in through the skin.",
+    "passage": "HgO/Hazards Summary/0"
+  },
+  {
+    "id": "calcium-carbonate-heated.trigger.0",
+    "group": "calcium-carbonate-heated",
+    "text": "Heating starts this reaction: calcium carbonate breaks down when it gets very hot.",
+    "passage": "CaCO3/Reactivity Profile/0"
+  },
+  {
+    "id": "calcium-carbonate-heated.hazard.0",
+    "group": "calcium-carbonate-heated",
+    "text": "When calcium carbonate breaks down, it gives off corrosive fumes of calcium oxide.",
+    "passage": "CaCO3/Chemical Dangers/0"
+  },
+  {
+    "id": "calcium-carbonate-heated.hazard.1",
+    "group": "calcium-carbonate-heated",
+    "text": "The calcium oxide that forms is a strong irritant to skin and eyes.",
+    "passage": "CaO/Record Description/0"
+  },
+  {
+    "id": "ammonia-splitting.bondingType.0",
+    "group": "ammonia-splitting",
+    "text": "Nitrogen atoms are held together by a covalent bond, which forms when atoms share electrons.",
+    "passage": "lt/covalent-bonds",
+    "value": "covalent"
+  },
+  {
+    "id": "ammonia-splitting.bondingWhy.0",
+    "group": "ammonia-splitting",
+    "text": "Sharing electrons is a way for atoms like nitrogen to get a complete valence shell.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "ammonia-splitting.trigger.0",
+    "group": "ammonia-splitting",
+    "text": "Heating is what makes ammonia break apart.",
+    "passage": "NH3/Chemical Dangers/1"
+  },
+  {
+    "id": "ammonia-splitting.hazard.0",
+    "group": "ammonia-splitting",
+    "text": "Hydrogen is extremely flammable and can easily catch fire from heat, sparks or flames.",
+    "passage": "H2/Fire Hazards/0"
+  },
+  {
+    "id": "ammonia-splitting.hazard.1",
+    "group": "ammonia-splitting",
+    "text": "When ammonia is heated until it breaks down, it gives off poisonous fumes.",
+    "passage": "NH3/Chemical Dangers/1"
+  },
+  {
+    "id": "chlorine-sodium-bromide.summary.0",
+    "group": "chlorine-sodium-bromide",
+    "text": "Bromine is a dark reddish-brown liquid that gives off fumes and has a sharp smell.",
+    "passage": "Br2/Record Description/0"
+  },
+  {
+    "id": "chlorine-sodium-bromide.bondingType.0",
+    "group": "chlorine-sodium-bromide",
+    "text": "Sodium chloride, also called table salt, is an ionic compound.",
+    "passage": "NaCl/Record Description/1",
+    "value": "ionic"
+  },
+  {
+    "id": "chlorine-sodium-bromide.bondingWhy.1",
+    "group": "chlorine-sodium-bromide",
+    "text": "This leaves ions with opposite charges, and the pull between them is called an ionic bond.",
+    "passage": "lt/ionic-bonds"
+  },
+  {
+    "id": "chlorine-sodium-bromide.hazard.0",
+    "group": "chlorine-sodium-bromide",
+    "text": "Chlorine is a greenish yellow gas with a choking smell, and it is poisonous to breathe in.",
+    "passage": "Cl2/Record Description/1"
+  },
+  {
+    "id": "chlorine-sodium-bromide.hazard.1",
+    "group": "chlorine-sodium-bromide",
+    "text": "Bromine gives off choking fumes and eats away at skin.",
+    "passage": "Br2/Record Description/4"
+  },
+  {
+    "id": "chlorine-potassium-bromide.hazard.0",
+    "group": "chlorine-potassium-bromide",
+    "text": "Chlorine is a gas that is poisonous to breathe in.",
+    "passage": "Cl2/Record Description/1"
+  },
+  {
+    "id": "chlorine-potassium-bromide.hazard.1",
+    "group": "chlorine-potassium-bromide",
+    "text": "Bromine gives off choking fumes and can harm the skin.",
+    "passage": "Br2/Record Description/4"
+  },
+  {
+    "id": "photosynthesis.trigger.0",
+    "group": "photosynthesis",
+    "text": "The reaction needs sunlight, which a green pigment in plants called chlorophyll turns into chemical energy.",
+    "passage": "lt/photosynthesis/0"
+  },
+  {
+    "id": "photosynthesis.hazard.0",
+    "group": "photosynthesis",
+    "text": "Oxygen makes things that burn in air burn even more strongly.",
+    "passage": "O2/Record Description/0"
+  },
+  {
+    "id": "photosynthesis.hazard.1",
+    "group": "photosynthesis",
+    "text": "Very fine glucose particles spread through air can form a mixture that can explode.",
+    "passage": "C6H12O6/Fire Hazards/0"
+  },
+  {
+    "id": "glucose-oxygen.summary.0",
+    "group": "glucose-oxygen",
+    "text": "Inside living cells, this reaction gives off its energy slowly, so it does not look like burning.",
+    "passage": "lt/glucose-oxygen/0"
+  },
+  {
+    "id": "glucose-oxygen.bondingType.0",
+    "group": "glucose-oxygen",
+    "text": "Carbon dioxide is held together by covalent bonds between its carbon atom and its oxygen atoms.",
+    "passage": "CO2/Record Description/4",
+    "value": "covalent"
+  },
+  {
+    "id": "glucose-oxygen.bondingWhy.0",
+    "group": "glucose-oxygen",
+    "text": "A covalent bond forms when atoms share electrons with each other.",
+    "passage": "lt/covalent-bonds"
+  },
+  {
+    "id": "glucose-oxygen.hazard.0",
+    "group": "glucose-oxygen",
+    "text": "Glucose can burn, and a fine dust of glucose in air can explode.",
+    "passage": "C6H12O6/Fire Hazards/0"
+  },
+  {
+    "id": "glucose-oxygen.hazard.1",
+    "group": "glucose-oxygen",
+    "text": "Things that burn in air burn even more fiercely in oxygen.",
+    "passage": "O2/Record Description/0"
+  },
+  {
+    "id": "helium-oxygen.whyNot.0",
+    "group": "helium-oxygen",
+    "text": "Helium is chemically inert, so it does not take part in chemical reactions under any known circumstances.",
+    "passage": "He/Reactivity Profile/0"
+  },
+  {
+    "id": "helium-oxygen.whyNot.1",
+    "group": "helium-oxygen",
+    "text": "So far, helium has never formed a compound with any other substance.",
+    "passage": "lt/helium-oxygen/0"
+  },
+  {
+    "id": "neon-chlorine.whyNot.0",
+    "group": "neon-chlorine",
+    "text": "Neon is so unreactive that, so far, it has never formed any compounds at all.",
+    "passage": "lt/neon-chlorine/0"
+  },
+  {
+    "id": "neon-chlorine.whyNot.1",
+    "group": "neon-chlorine",
+    "text": "Chlorine forms halides with every element except helium, neon and argon, so it forms none with neon.",
+    "passage": "Cl2/Chemical Dangers/1"
+  },
+  {
+    "id": "argon-sodium.whyNot.0",
+    "group": "argon-sodium",
+    "text": "Argon is not known to take part in chemical reactions under any circumstances.",
+    "passage": "Ar/Reactivity Profile/0"
+  },
+  {
+    "id": "argon-sodium.whyNot.1",
+    "group": "argon-sodium",
+    "text": "The noble gases have been called the inert gases, which means they are unreactive.",
+    "passage": "lt/argon-sodium/0"
+  },
+  {
+    "id": "gold-oxygen.whyNot.0",
+    "group": "gold-oxygen",
+    "text": "Many metals join with oxygen to form oxides, but gold, like silver and platinum, does not react with oxygen.",
+    "passage": "lt/gold-oxygen/0"
+  },
+  {
+    "id": "platinum-oxygen.whyNot.0",
+    "group": "platinum-oxygen",
+    "text": "Transition metals react with oxygen to form oxides, but platinum, like gold and silver, does not react with oxygen.",
+    "passage": "lt/platinum-oxygen/0"
+  },
+  {
+    "id": "platinum-oxygen.whyNot.1",
+    "group": "platinum-oxygen",
+    "text": "A solid lump of platinum is generally inert.",
+    "passage": "Pt/Reactivity Profile/0"
+  },
+  {
+    "id": "copper-water.whyNot.0",
+    "group": "copper-water",
+    "text": "On the list of metals ordered by how reactive they are, copper is grouped with metals that do not react with water or acids.",
+    "passage": "lt/activity-series"
+  },
+  {
+    "id": "Al.appearance.0",
+    "group": "substances-0",
+    "text": "Aluminum metal is light in weight and silvery-white.",
+    "passage": "Al/Record Description/0"
+  },
+  {
+    "id": "Al2O3.appearance.0",
+    "group": "substances-0",
+    "text": "Aluminum oxide is a white crystalline powder with no smell.",
+    "passage": "Al2O3/Record Description/0"
+  },
+  {
+    "id": "Al2O3.uses.0",
+    "group": "substances-0",
+    "text": "The most important use of aluminum oxide is making aluminum metal.",
+    "passage": "Al2O3/Uses/7"
+  },
+  {
+    "id": "Al2O3.uses.1",
+    "group": "substances-0",
+    "text": "Because it is so hard, aluminum oxide is also used as an abrasive.",
+    "passage": "Al2O3/Uses/7"
+  },
+  {
+    "id": "Al2O3.uses.2",
+    "group": "substances-0",
+    "text": "Aluminum oxide is used in making spark plugs, light bulbs and artificial gems.",
+    "passage": "Al2O3/Uses/2"
+  },
+  {
+    "id": "Ar.appearance.0",
+    "group": "substances-0",
+    "text": "Argon is a colorless gas with no smell.",
+    "passage": "Ar/Record Description/0"
+  },
+  {
+    "id": "Au.appearance.0",
+    "group": "substances-0",
+    "text": "Gold is a soft, yellow metal.",
+    "passage": "Au/Color/Form/1"
+  },
+  {
+    "id": "Br2.appearance.0",
+    "group": "substances-0",
+    "text": "Bromine is a dark reddish-brown liquid that gives off fumes and has a pungent smell.",
+    "passage": "Br2/Record Description/0"
+  },
+  {
+    "id": "C.standardState.0",
+    "group": "substances-0",
+    "text": "Carbon is a solid.",
+    "passage": "C/Color/Form/0",
+    "value": "solid"
+  },
+  {
+    "id": "C.appearance.0",
+    "group": "substances-0",
+    "text": "Carbon is steel gray to black and feels greasy.",
+    "passage": "C/Color/Form/0"
+  },
+  {
+    "id": "C2H6.standardState.0",
+    "group": "substances-0",
+    "text": "Ethane is a gas.",
+    "passage": "C2H6/Record Description/0",
+    "value": "gas"
+  },
+  {
+    "id": "C2H6.appearance.0",
+    "group": "substances-0",
+    "text": "Ethane is colorless and has no smell.",
+    "passage": "C2H6/Record Description/0"
+  },
+  {
+    "id": "C2H6.uses.0",
+    "group": "substances-0",
+    "text": "Ethane is used as a fuel gas and as a refrigerant.",
+    "passage": "C2H6/Uses/0"
+  },
+  {
+    "id": "C2H6.uses.1",
+    "group": "substances-0",
+    "text": "The most important use of ethane in industry is making ethylene.",
+    "passage": "C2H6/Uses/3"
+  },
+  {
+    "id": "C3H8.standardState.0",
+    "group": "substances-0",
+    "text": "Propane is a gas.",
+    "passage": "C3H8/Record Description/0",
+    "value": "gas"
+  },
+  {
+    "id": "C3H8.appearance.0",
+    "group": "substances-0",
+    "text": "Propane is colorless and has a faint smell like petroleum.",
+    "passage": "C3H8/Record Description/0"
+  },
+  {
+    "id": "C3H8.uses.0",
+    "group": "substances-0",
+    "text": "Propane is used as a fuel in homes and in industry.",
+    "passage": "C3H8/Uses/3"
+  },
+  {
+    "id": "C3H8.uses.1",
+    "group": "substances-0",
+    "text": "Propane flames are used to control weeds in crops like corn and strawberries.",
+    "passage": "C3H8/Uses/4"
+  },
+  {
+    "id": "C6H12O6.appearance.0",
+    "group": "substances-1",
+    "text": "Glucose can be colorless crystals or a white, grainy powder.",
+    "passage": "C6H12O6/Color/Form/0"
+  },
+  {
+    "id": "C6H12O6.uses.0",
+    "group": "substances-1",
+    "text": "Glucose is used in foods and medicines.",
+    "passage": "C6H12O6/Uses/0"
+  },
+  {
+    "id": "C6H12O6.uses.1",
+    "group": "substances-1",
+    "text": "Glucose is used in sweets, baby foods, and brewing and wine making.",
+    "passage": "C6H12O6/Uses/1"
+  },
+  {
+    "id": "C6H12O6.uses.2",
+    "group": "substances-1",
+    "text": "Glucose is used in baking and canning, and to make caramel coloring.",
+    "passage": "C6H12O6/Uses/1"
+  },
+  {
+    "id": "CH4.standardState.0",
+    "group": "substances-1",
+    "text": "Methane is a gas.",
+    "passage": "CH4/Record Description/0",
+    "value": "gas"
+  },
+  {
+    "id": "CH4.appearance.0",
+    "group": "substances-1",
+    "text": "Methane has no color and no smell.",
+    "passage": "CH4/Physical Description/4"
+  },
+  {
+    "id": "CH4.uses.0",
+    "group": "substances-1",
+    "text": "Methane is often piped into homes for heating and cooking.",
+    "passage": "CH4/Uses/7"
+  },
+  {
+    "id": "CH4.uses.1",
+    "group": "substances-1",
+    "text": "Methane can be burned to make electricity.",
+    "passage": "CH4/Uses/7"
+  },
+  {
+    "id": "CH4.uses.2",
+    "group": "substances-1",
+    "text": "Methane is used to make other chemicals and is part of the fuel called natural gas.",
+    "passage": "CH4/Record Description/0"
+  },
+  {
+    "id": "CO.standardState.0",
+    "group": "substances-1",
+    "text": "Carbon monoxide is a gas at room temperature.",
+    "passage": "CO/Record Description/8",
+    "value": "gas"
+  },
+  {
+    "id": "CO.appearance.0",
+    "group": "substances-1",
+    "text": "Carbon monoxide has no color, no smell and no taste.",
+    "passage": "CO/Record Description/8"
+  },
+  {
+    "id": "CO.uses.0",
+    "group": "substances-1",
+    "text": "Carbon monoxide is used to make chemicals, in metallurgy, and as a fuel.",
+    "passage": "CO/Record Description/3"
+  },
+  {
+    "id": "CO.uses.1",
+    "group": "substances-1",
+    "text": "Carbon monoxide is used in some packaging for fresh meat to keep the meat's natural color.",
+    "passage": "CO/Record Description/5"
+  },
+  {
+    "id": "CO2.standardState.0",
+    "group": "substances-1",
+    "text": "Carbon dioxide is a gas at normal air temperature and pressure.",
+    "passage": "CO2/Record Description/0",
+    "value": "gas"
+  },
+  {
+    "id": "CO2.appearance.0",
+    "group": "substances-1",
+    "text": "Carbon dioxide gas has no color and no smell.",
+    "passage": "CO2/Physical Description/6"
+  },
+  {
+    "id": "CO2.uses.0",
+    "group": "substances-1",
+    "text": "Carbon dioxide is used to make fizzy soft drinks and soda water.",
+    "passage": "CO2/Record Description/8"
+  },
+  {
+    "id": "CO2.uses.1",
+    "group": "substances-1",
+    "text": "Carbon dioxide is used to freeze food and to put out fires.",
+    "passage": "CO2/Record Description/0"
+  },
+  {
+    "id": "CO2.uses.2",
+    "group": "substances-1",
+    "text": "Life jackets often hold small cans of carbon dioxide so they can fill up quickly.",
+    "passage": "CO2/Uses/7"
+  },
+  {
+    "id": "Ca.appearance.0",
+    "group": "substances-1",
+    "text": "Calcium is a soft, silvery metal that turns grayish white in air.",
+    "passage": "Ca/Record Description/0"
+  },
+  {
+    "id": "Ca(OH)2.appearance.0",
+    "group": "substances-1",
+    "text": "Calcium hydroxide is a white powder with no smell.",
+    "passage": "Ca(OH)2/Physical Description/3"
+  },
+  {
+    "id": "Ca(OH)2.uses.0",
+    "group": "substances-1",
+    "text": "Calcium hydroxide is used in mortar, plaster and cement.",
+    "passage": "Ca(OH)2/Uses/0"
+  },
+  {
+    "id": "Ca(OH)2.uses.1",
+    "group": "substances-1",
+    "text": "Calcium hydroxide is used to keep eggs and apples fresh while they are stored.",
+    "passage": "Ca(OH)2/Uses/0"
+  },
+  {
+    "id": "Ca(OH)2.uses.2",
+    "group": "substances-1",
+    "text": "Calcium hydroxide is found in many dental products, especially for root canal filling.",
+    "passage": "Ca(OH)2/Record Description/3"
+  },
+  {
+    "id": "CaCO3.appearance.0",
+    "group": "substances-1",
+    "text": "Calcium carbonate is a white powder or colorless crystals with no smell.",
+    "passage": "CaCO3/Physical Description/5"
+  },
+  {
+    "id": "CaCO3.uses.0",
+    "group": "substances-1",
+    "text": "Calcium carbonate is used to make cement and paints.",
+    "passage": "CaCO3/Uses/0"
+  },
+  {
+    "id": "CaCO3.uses.1",
+    "group": "substances-1",
+    "text": "Calcium carbonate is used to make crayons, pencils and matches.",
+    "passage": "CaCO3/Uses/4"
+  },
+  {
+    "id": "CaCO3.uses.2",
+    "group": "substances-1",
+    "text": "Calcium carbonate is used as an antacid to ease indigestion and heartburn.",
+    "passage": "CaCO3/Record Description/4"
+  },
+  {
+    "id": "CaCl2.standardState.0",
+    "group": "substances-1",
+    "text": "Calcium chloride is a solid at room temperature.",
+    "passage": "CaCl2/Record Description/2",
+    "value": "solid"
+  },
+  {
+    "id": "CaCl2.appearance.0",
+    "group": "substances-1",
+    "text": "Calcium chloride forms white or colorless crystals with no smell.",
+    "passage": "CaCl2/Physical Description/4"
+  },
+  {
+    "id": "CaCl2.uses.0",
+    "group": "substances-1",
+    "text": "Calcium chloride is used to control ice and dust on roads.",
+    "passage": "CaCl2/Record Description/2"
+  },
+  {
+    "id": "CaCl2.uses.1",
+    "group": "substances-1",
+    "text": "Calcium chloride is used to help keep fruits firm.",
+    "passage": "CaCl2/Uses/0"
+  },
+  {
+    "id": "CaO.standardState.0",
+    "group": "substances-2",
+    "text": "Calcium oxide is a solid.",
+    "passage": "CaO/Physical Description/0",
+    "value": "solid"
+  },
+  {
+    "id": "CaO.appearance.0",
+    "group": "substances-2",
+    "text": "Calcium oxide is white or gray and comes as lumps or a grainy powder.",
+    "passage": "CaO/Physical Description/4"
+  },
+  {
+    "id": "CaO.uses.0",
+    "group": "substances-2",
+    "text": "Calcium oxide is used in building materials such as bricks, plaster and mortar.",
+    "passage": "CaO/Uses/0"
+  },
+  {
+    "id": "CaO.uses.1",
+    "group": "substances-2",
+    "text": "Calcium oxide is used in fertilizers and insecticides.",
+    "passage": "CaO/Record Description/0"
+  },
+  {
+    "id": "CaO.uses.2",
+    "group": "substances-2",
+    "text": "Calcium oxide is used to purify and soften water.",
+    "passage": "CaO/Uses/3"
+  },
+  {
+    "id": "Cl2.appearance.0",
+    "group": "substances-2",
+    "text": "Chlorine is a yellow-green gas.",
+    "passage": "Cl2/Record Description/0"
+  },
+  {
+    "id": "Cu.appearance.0",
+    "group": "substances-2",
+    "text": "Copper is a shiny, reddish metal.",
+    "passage": "Cu/Physical Description/0"
+  },
+  {
+    "id": "CuO.standardState.0",
+    "group": "substances-2",
+    "text": "Copper(II) oxide is a solid.",
+    "passage": "CuO/Physical Description/1",
+    "value": "solid"
+  },
+  {
+    "id": "CuO.appearance.0",
+    "group": "substances-2",
+    "text": "Copper(II) oxide is a black to brownish-black powder or grains.",
+    "passage": "CuO/Color/Form/0"
+  },
+  {
+    "id": "CuO.uses.0",
+    "group": "substances-2",
+    "text": "Copper(II) oxide is used as a pigment in ceramics.",
+    "passage": "CuO/Uses/8"
+  },
+  {
+    "id": "CuO.uses.1",
+    "group": "substances-2",
+    "text": "Copper(II) oxide is used in batteries.",
+    "passage": "CuO/Uses/8"
+  },
+  {
+    "id": "CuO.uses.2",
+    "group": "substances-2",
+    "text": "Copper(II) oxide is used to preserve wood.",
+    "passage": "CuO/Uses/6"
+  },
+  {
+    "id": "Fe.appearance.0",
+    "group": "substances-2",
+    "text": "Pure iron is a silvery-white, fairly soft metal.",
+    "passage": "Fe/Color/Form/2"
+  },
+  {
+    "id": "Fe2O3.standardState.0",
+    "group": "substances-2",
+    "text": "Iron(III) oxide is a solid.",
+    "passage": "Fe2O3/Physical Description/2",
+    "value": "solid"
+  },
+  {
+    "id": "Fe2O3.appearance.0",
+    "group": "substances-2",
+    "text": "Iron(III) oxide is reddish-brown.",
+    "passage": "Fe2O3/Physical Description/1"
+  },
+  {
+    "id": "Fe2O3.uses.0",
+    "group": "substances-2",
+    "text": "Iron(III) oxide is used to polish glass, precious metals and diamonds.",
+    "passage": "Fe2O3/Uses/2"
+  },
+  {
+    "id": "Fe2O3.uses.1",
+    "group": "substances-2",
+    "text": "Iron(III) oxide is used in magnets and magnetic tapes.",
+    "passage": "Fe2O3/Uses/2"
+  },
+  {
+    "id": "Fe2O3.uses.2",
+    "group": "substances-2",
+    "text": "Iron(III) oxide is used to color decorative concrete and in paints.",
+    "passage": "Fe2O3/Uses/5"
+  },
+  {
+    "id": "FeS.standardState.0",
+    "group": "substances-2",
+    "text": "Iron(II) sulfide is a solid.",
+    "passage": "FeS/Physical Description/0",
+    "value": "solid"
+  },
+  {
+    "id": "FeS.appearance.0",
+    "group": "substances-2",
+    "text": "Iron(II) sulfide comes as dark-brown or black metallic pieces, sticks or grains.",
+    "passage": "FeS/Color/Form/1"
+  },
+  {
+    "id": "FeS.uses.0",
+    "group": "substances-2",
+    "text": "Iron(II) sulfide is used as a pigment in paint.",
+    "passage": "FeS/Uses/2"
+  },
+  {
+    "id": "FeS.uses.1",
+    "group": "substances-2",
+    "text": "Iron(II) sulfide is used in the ceramic industry.",
+    "passage": "FeS/Uses/2"
+  },
+  {
+    "id": "FeS.uses.2",
+    "group": "substances-2",
+    "text": "Laboratories use iron(II) sulfide as a source of hydrogen sulfide.",
+    "passage": "FeS/Uses/2"
+  },
+  {
+    "id": "H2.appearance.0",
+    "group": "substances-2",
+    "text": "Hydrogen is a gas with no color and no smell.",
+    "passage": "H2/Record Description/0"
+  },
+  {
+    "id": "H2O.standardState.0",
+    "group": "substances-3",
+    "text": "Water is a liquid at ordinary room temperature and pressure.",
+    "passage": "H2O/Record Description/2",
+    "value": "liquid"
+  },
+  {
+    "id": "H2O.appearance.0",
+    "group": "substances-3",
+    "text": "Water is a clear liquid with no smell and no taste.",
+    "passage": "H2O/Record Description/10"
+  },
+  {
+    "id": "H2O.uses.0",
+    "group": "substances-3",
+    "text": "People use water for drinking, cooking, bathing and washing clothes.",
+    "passage": "H2O/Uses/3"
+  },
+  {
+    "id": "H2O.uses.1",
+    "group": "substances-3",
+    "text": "Water is used to protect against fires.",
+    "passage": "H2O/Uses/3"
+  },
+  {
+    "id": "H2O.uses.2",
+    "group": "substances-3",
+    "text": "Water is used for fun, such as fishing, swimming and boating.",
+    "passage": "H2O/Uses/3"
+  },
+  {
+    "id": "HBr.standardState.0",
+    "group": "substances-3",
+    "text": "Hydrogen bromide is a gas.",
+    "passage": "HBr/Record Description/3",
+    "value": "gas"
+  },
+  {
+    "id": "HBr.appearance.0",
+    "group": "substances-3",
+    "text": "Hydrogen bromide has no color and has a sharp, irritating smell.",
+    "passage": "HBr/Physical Description/4"
+  },
+  {
+    "id": "HBr.uses.0",
+    "group": "substances-3",
+    "text": "Hydrogen bromide is mainly used to make other chemicals called bromides.",
+    "passage": "HBr/Uses/6"
+  },
+  {
+    "id": "HCl.standardState.0",
+    "group": "substances-3",
+    "text": "At room temperature, hydrogen chloride is a gas.",
+    "passage": "HCl/Record Description/0",
+    "value": "gas"
+  },
+  {
+    "id": "HCl.appearance.0",
+    "group": "substances-3",
+    "text": "Hydrogen chloride is colorless to slightly yellow and has a strong, irritating smell.",
+    "passage": "HCl/Record Description/0"
+  },
+  {
+    "id": "HCl.uses.0",
+    "group": "substances-3",
+    "text": "Hydrogen chloride is used for cleaning and for tanning leather.",
+    "passage": "HCl/Record Description/0"
+  },
+  {
+    "id": "HCl.uses.1",
+    "group": "substances-3",
+    "text": "Most hydrogen chloride gas is used to make hydrochloric acid.",
+    "passage": "HCl/Uses/9"
+  },
+  {
+    "id": "HCl.uses.2",
+    "group": "substances-3",
+    "text": "Hydrogen chloride is used in making rubber, medicines and other chemicals.",
+    "passage": "HCl/Record Description/2"
+  },
+  {
+    "id": "He.appearance.0",
+    "group": "substances-3",
+    "text": "Helium has no color and no smell.",
+    "passage": "He/Record Description/1"
+  },
+  {
+    "id": "Hg.appearance.0",
+    "group": "substances-3",
+    "text": "Mercury is a heavy, shiny, silver-white metal that flows like a liquid.",
+    "passage": "Hg/Physical Description/4"
+  },
+  {
+    "id": "HgO.standardState.0",
+    "group": "substances-3",
+    "text": "Mercury(II) oxide is a solid.",
+    "passage": "HgO/Physical Description/0",
+    "value": "solid"
+  },
+  {
+    "id": "HgO.appearance.0",
+    "group": "substances-3",
+    "text": "Mercury(II) oxide is a heavy powder that can be yellow, orange-yellow or red.",
+    "passage": "HgO/Physical Description/2"
+  },
+  {
+    "id": "HgO.uses.0",
+    "group": "substances-3",
+    "text": "Mercury(II) oxide is used to make parts of mercury batteries.",
+    "passage": "HgO/Uses/7"
+  },
+  {
+    "id": "HgO.uses.1",
+    "group": "substances-3",
+    "text": "Red mercury(II) oxide is used in some paints and in dry batteries.",
+    "passage": "HgO/Uses/0"
+  },
+  {
+    "id": "K.appearance.0",
+    "group": "substances-3",
+    "text": "Potassium is a soft, silvery metal, but it usually looks grayish white because of oxidation.",
+    "passage": "K/Physical Description/0"
+  },
+  {
+    "id": "KBr.standardState.0",
+    "group": "substances-3",
+    "text": "Potassium bromide is a solid.",
+    "passage": "KBr/Physical Description/1",
+    "value": "solid"
+  },
+  {
+    "id": "KBr.appearance.0",
+    "group": "substances-3",
+    "text": "Potassium bromide looks like colorless crystals or a white powder, and it has no smell.",
+    "passage": "KBr/Physical Description/0"
+  },
+  {
+    "id": "KBr.uses.0",
+    "group": "substances-3",
+    "text": "Potassium bromide is used to make photographic papers and plates.",
+    "passage": "KBr/Uses/0"
+  },
+  {
+    "id": "KBr.uses.1",
+    "group": "substances-3",
+    "text": "Potassium bromide is used in some special soaps.",
+    "passage": "KBr/Uses/0"
+  },
+  {
+    "id": "KBr.uses.2",
+    "group": "substances-3",
+    "text": "Today potassium bromide is used as an antiepileptic medicine for dogs and cats.",
+    "passage": "KBr/Uses/5"
+  },
+  {
+    "id": "KCl.appearance.0",
+    "group": "substances-4",
+    "text": "Potassium chloride looks like white or colorless crystals shaped like cubes.",
+    "passage": "KCl/Record Description/0"
+  },
+  {
+    "id": "KCl.uses.0",
+    "group": "substances-4",
+    "text": "Potassium chloride is used as a fertilizer.",
+    "passage": "KCl/Record Description/1"
+  },
+  {
+    "id": "KCl.uses.1",
+    "group": "substances-4",
+    "text": "Potassium chloride is used to melt snow and ice and to soften water.",
+    "passage": "KCl/Uses/3"
+  },
+  {
+    "id": "KCl.uses.2",
+    "group": "substances-4",
+    "text": "Potassium chloride is used as a salt substitute and as a food additive.",
+    "passage": "KCl/Uses/4"
+  },
+  {
+    "id": "KOH.standardState.0",
+    "group": "substances-4",
+    "text": "Potassium hydroxide is a solid.",
+    "passage": "KOH/Physical Description/6",
+    "value": "solid"
+  },
+  {
+    "id": "KOH.appearance.0",
+    "group": "substances-4",
+    "text": "Potassium hydroxide looks like white or slightly yellow lumps, rods or pellets.",
+    "passage": "KOH/Color/Form/1"
+  },
+  {
+    "id": "KOH.uses.0",
+    "group": "substances-4",
+    "text": "Potassium hydroxide is used to make liquid soaps.",
+    "passage": "KOH/Uses/0"
+  },
+  {
+    "id": "KOH.uses.1",
+    "group": "substances-4",
+    "text": "Potassium hydroxide is used in drain cleaners and in paint and varnish removers.",
+    "passage": "KOH/Uses/0"
+  },
+  {
+    "id": "KOH.uses.2",
+    "group": "substances-4",
+    "text": "Potassium hydroxide is used in alkaline batteries.",
+    "passage": "KOH/Record Description/1"
+  },
+  {
+    "id": "Li.appearance.0",
+    "group": "substances-4",
+    "text": "Lithium is a soft, silvery metal that is normally grayish white.",
+    "passage": "Li/Record Description/0"
+  },
+  {
+    "id": "LiCl.appearance.0",
+    "group": "substances-4",
+    "text": "Lithium chloride looks like colorless crystals or powder.",
+    "passage": "LiCl/Record Description/0"
+  },
+  {
+    "id": "LiCl.uses.0",
+    "group": "substances-4",
+    "text": "Lithium chloride is used in fireworks, fire extinguishers and dehumidifiers.",
+    "passage": "LiCl/Uses/0"
+  },
+  {
+    "id": "LiCl.uses.1",
+    "group": "substances-4",
+    "text": "Lithium chloride is used in air conditioning and in batteries.",
+    "passage": "LiCl/Uses/3"
+  },
+  {
+    "id": "LiCl.uses.2",
+    "group": "substances-4",
+    "text": "Lithium chloride is used to make lithium metal.",
+    "passage": "LiCl/Uses/0"
+  },
+  {
+    "id": "LiOH.appearance.0",
+    "group": "substances-4",
+    "text": "Lithium hydroxide looks like white crystals or a grainy powder.",
+    "passage": "LiOH/Physical Description/2"
+  },
+  {
+    "id": "LiOH.uses.0",
+    "group": "substances-4",
+    "text": "Lithium hydroxide is used in batteries and in greases made with lithium.",
+    "passage": "LiOH/Uses/0"
+  },
+  {
+    "id": "LiOH.uses.1",
+    "group": "substances-4",
+    "text": "Lithium hydroxide is used in materials that soak up carbon dioxide.",
+    "passage": "LiOH/Uses/0"
+  },
+  {
+    "id": "Mg.appearance.0",
+    "group": "substances-4",
+    "text": "Magnesium is a light, silvery metal.",
+    "passage": "Mg/Record Description/0"
+  },
+  {
+    "id": "MgCl2.standardState.0",
+    "group": "substances-4",
+    "text": "Magnesium chloride is a solid.",
+    "passage": "MgCl2/Physical Description/2",
+    "value": "solid"
+  },
+  {
+    "id": "MgCl2.appearance.0",
+    "group": "substances-4",
+    "text": "Magnesium chloride looks like thin white to gray grains or flakes.",
+    "passage": "MgCl2/Color/Form/0"
+  },
+  {
+    "id": "MgCl2.uses.0",
+    "group": "substances-4",
+    "text": "Magnesium chloride is part of fire extinguishers and ceramics.",
+    "passage": "MgCl2/Uses/4"
+  },
+  {
+    "id": "MgCl2.uses.1",
+    "group": "substances-4",
+    "text": "Magnesium chloride is used in compounds that keep dust down on roads.",
+    "passage": "MgCl2/Uses/1"
+  },
+  {
+    "id": "MgCl2.uses.2",
+    "group": "substances-4",
+    "text": "Magnesium chloride is a source of magnesium metal.",
+    "passage": "MgCl2/Uses/1"
+  },
+  {
+    "id": "MgO.standardState.0",
+    "group": "substances-4",
+    "text": "Magnesium oxide is a solid.",
+    "passage": "MgO/Physical Description/4",
+    "value": "solid"
+  },
+  {
+    "id": "MgO.appearance.0",
+    "group": "substances-4",
+    "text": "Magnesium oxide is white and is often found as a powder.",
+    "passage": "MgO/Record Description/0"
+  },
+  {
+    "id": "MgO.uses.0",
+    "group": "substances-4",
+    "text": "Magnesium oxide is used in animal feeds, fertilizers and wallboard.",
+    "passage": "MgO/Uses/0"
+  },
+  {
+    "id": "MgO.uses.1",
+    "group": "substances-4",
+    "text": "Magnesium oxide is used in fire bricks and electrical heating rods.",
+    "passage": "MgO/Uses/0"
+  },
+  {
+    "id": "MgO.uses.2",
+    "group": "substances-4",
+    "text": "Magnesium oxide is used as an antacid.",
+    "passage": "MgO/Record Description/3"
+  },
+  {
+    "id": "N2.appearance.0",
+    "group": "substances-5",
+    "text": "Nitrogen is a gas with no color and no smell.",
+    "passage": "N2/Record Description/0"
+  },
+  {
+    "id": "NH3.standardState.0",
+    "group": "substances-5",
+    "text": "Ammonia is a gas.",
+    "passage": "NH3/Record Description/0",
+    "value": "gas"
+  },
+  {
+    "id": "NH3.appearance.0",
+    "group": "substances-5",
+    "text": "Ammonia has no color, but it has a very strong smell.",
+    "passage": "NH3/Record Description/0"
+  },
+  {
+    "id": "NH3.uses.0",
+    "group": "substances-5",
+    "text": "Ammonia is used to make fertilizers for farm crops, lawns, and plants.",
+    "passage": "NH3/Record Description/0"
+  },
+  {
+    "id": "NH3.uses.1",
+    "group": "substances-5",
+    "text": "Ammonia is used in many household cleaners and window-cleaning products.",
+    "passage": "NH3/Record Description/0"
+  },
+  {
+    "id": "NH3.uses.2",
+    "group": "substances-5",
+    "text": "Ammonia is used in making plastics and detergents.",
+    "passage": "NH3/Uses/0"
+  },
+  {
+    "id": "NH4Cl.standardState.0",
+    "group": "substances-5",
+    "text": "Ammonium chloride is a solid.",
+    "passage": "NH4Cl/Record Description/0",
+    "value": "solid"
+  },
+  {
+    "id": "NH4Cl.appearance.0",
+    "group": "substances-5",
+    "text": "Ammonium chloride can look like a white powder made of crystals, either fine or coarse.",
+    "passage": "NH4Cl/Color/Form/1"
+  },
+  {
+    "id": "NH4Cl.uses.0",
+    "group": "substances-5",
+    "text": "Ammonium chloride is used as a fertilizer.",
+    "passage": "NH4Cl/Record Description/0"
+  },
+  {
+    "id": "NH4Cl.uses.1",
+    "group": "substances-5",
+    "text": "Ammonium chloride is used in dry batteries.",
+    "passage": "NH4Cl/Uses/4"
+  },
+  {
+    "id": "NH4Cl.uses.2",
+    "group": "substances-5",
+    "text": "Ammonium chloride is used in washing powders and bakery products.",
+    "passage": "NH4Cl/Uses/4"
+  },
+  {
+    "id": "NO.standardState.0",
+    "group": "substances-5",
+    "text": "Nitric oxide is a gas at room temperature.",
+    "passage": "NO/Record Description/0",
+    "value": "gas"
+  },
+  {
+    "id": "NO.appearance.0",
+    "group": "substances-5",
+    "text": "Nitric oxide is a gas with no color.",
+    "passage": "NO/Record Description/1"
+  },
+  {
+    "id": "NO.uses.0",
+    "group": "substances-5",
+    "text": "Nitric oxide is used to make nitric acid.",
+    "passage": "NO/Uses/3"
+  },
+  {
+    "id": "NO.uses.1",
+    "group": "substances-5",
+    "text": "Nitric oxide is used in bleaching rayon.",
+    "passage": "NO/Uses/3"
+  },
+  {
+    "id": "Na.appearance.0",
+    "group": "substances-5",
+    "text": "Sodium is a soft, silvery metal that turns grayish white when it is out in the air.",
+    "passage": "Na/Record Description/0"
+  },
+  {
+    "id": "NaBr.standardState.0",
+    "group": "substances-5",
+    "text": "Sodium bromide is a solid.",
+    "passage": "NaBr/Physical Description/1",
+    "value": "solid"
+  },
+  {
+    "id": "NaBr.appearance.0",
+    "group": "substances-5",
+    "text": "Sodium bromide looks like colorless or white crystals and has no smell.",
+    "passage": "NaBr/Physical Description/1"
+  },
+  {
+    "id": "NaBr.uses.0",
+    "group": "substances-5",
+    "text": "Sodium bromide is used in photography.",
+    "passage": "NaBr/Uses/3"
+  },
+  {
+    "id": "NaBr.uses.1",
+    "group": "substances-5",
+    "text": "Sodium bromide is used to control algae, bacteria, and fungi in water, such as in ornamental ponds.",
+    "passage": "NaBr/Uses/0"
+  },
+  {
+    "id": "NaBr.uses.2",
+    "group": "substances-5",
+    "text": "Sodium bromide is also used to keep moths away from clothing and fleas away from pets.",
+    "passage": "NaBr/Uses/0"
+  },
+  {
+    "id": "NaCl.appearance.0",
+    "group": "substances-5",
+    "text": "Sodium chloride looks like clear, colorless crystals or a white powder made of crystals.",
+    "passage": "NaCl/Color/Form/0"
+  },
+  {
+    "id": "NaCl.uses.0",
+    "group": "substances-5",
+    "text": "Salt is one of the oldest food seasonings, and salting is an important way to preserve food.",
+    "passage": "NaCl/Record Description/6"
+  },
+  {
+    "id": "NaCl.uses.1",
+    "group": "substances-5",
+    "text": "Sodium chloride is used in home water softeners and for highway deicing.",
+    "passage": "NaCl/Uses/5"
+  },
+  {
+    "id": "NaCl.uses.2",
+    "group": "substances-5",
+    "text": "Salt is used in making plastic and paper.",
+    "passage": "NaCl/Uses/7"
+  },
+  {
+    "id": "NaOH.standardState.0",
+    "group": "substances-6",
+    "text": "At room temperature, sodium hydroxide is a solid.",
+    "passage": "NaOH/Record Description/0",
+    "value": "solid"
+  },
+  {
+    "id": "NaOH.appearance.0",
+    "group": "substances-6",
+    "text": "Sodium hydroxide is a colorless to white solid with no smell that comes as flakes, beads or grains.",
+    "passage": "NaOH/Physical Description/6"
+  },
+  {
+    "id": "NaOH.uses.0",
+    "group": "substances-6",
+    "text": "Sodium hydroxide is used to make soaps, paper and rayon.",
+    "passage": "NaOH/Record Description/0"
+  },
+  {
+    "id": "NaOH.uses.1",
+    "group": "substances-6",
+    "text": "It is found in cleaners for drains and ovens.",
+    "passage": "NaOH/Record Description/0"
+  },
+  {
+    "id": "NaOH.uses.2",
+    "group": "substances-6",
+    "text": "It is also used for laundering, bleaching and cleaning metal.",
+    "passage": "NaOH/Record Description/0"
+  },
+  {
+    "id": "Ne.appearance.0",
+    "group": "substances-6",
+    "text": "Neon is a gas with no color and no smell.",
+    "passage": "Ne/Record Description/0"
+  },
+  {
+    "id": "O2.appearance.0",
+    "group": "substances-6",
+    "text": "Oxygen is a gas with no color, no smell and no taste.",
+    "passage": "O2/Record Description/0"
+  },
+  {
+    "id": "Pt.appearance.0",
+    "group": "substances-6",
+    "text": "Platinum is a shiny, silver-gray metal.",
+    "passage": "Pt/Color/Form/0"
+  },
+  {
+    "id": "S.appearance.0",
+    "group": "substances-6",
+    "text": "Sulfur looks like pale yellow crystals or powder, with a faint smell of rotten eggs.",
+    "passage": "S/Physical Description/1"
+  },
+  {
+    "id": "SO2.standardState.0",
+    "group": "substances-6",
+    "text": "Sulfur dioxide is a gas.",
+    "passage": "SO2/Record Description/0",
+    "value": "gas"
+  },
+  {
+    "id": "SO2.appearance.0",
+    "group": "substances-6",
+    "text": "Sulfur dioxide has no color and has a choking smell.",
+    "passage": "SO2/Record Description/2"
+  },
+  {
+    "id": "SO2.uses.0",
+    "group": "substances-6",
+    "text": "Sulfur dioxide is used to preserve fruits and other foods.",
+    "passage": "SO2/Uses/0"
+  },
+  {
+    "id": "SO2.uses.1",
+    "group": "substances-6",
+    "text": "It is used to bleach wood pulp and paper.",
+    "passage": "SO2/Uses/5"
+  },
+  {
+    "id": "SO2.uses.2",
+    "group": "substances-6",
+    "text": "It is used to make batteries and glass, and to treat water.",
+    "passage": "SO2/Uses/0"
+  },
+  {
+    "id": "Zn.appearance.0",
+    "group": "substances-6",
+    "text": "Pure zinc is a bluish-white, shiny metal.",
+    "passage": "Zn/Record Description/0"
+  },
+  {
+    "id": "ZnO.standardState.0",
+    "group": "substances-6",
+    "text": "Crude zinc oxide is a solid.",
+    "passage": "ZnO/Record Description/0",
+    "value": "solid"
+  },
+  {
+    "id": "ZnO.appearance.0",
+    "group": "substances-6",
+    "text": "Zinc oxide is a white or yellowish-white powder.",
+    "passage": "ZnO/Color/Form/0"
+  },
+  {
+    "id": "ZnO.uses.0",
+    "group": "substances-6",
+    "text": "Zinc oxide is used in bandages, ointments and sunblock.",
+    "passage": "ZnO/Record Description/5"
+  },
+  {
+    "id": "ZnO.uses.1",
+    "group": "substances-6",
+    "text": "It is found in baby powder and in creams for diaper rash.",
+    "passage": "ZnO/Record Description/1"
+  },
+  {
+    "id": "ZnO.uses.2",
+    "group": "substances-6",
+    "text": "It is used as a pigment in white paints.",
+    "passage": "ZnO/Uses/5"
+  },
+  {
+    "id": "ZnS.standardState.0",
+    "group": "substances-7",
+    "text": "Zinc sulfide is a solid.",
+    "passage": "ZnS/Physical Description/2",
+    "value": "solid"
+  },
+  {
+    "id": "ZnS.appearance.0",
+    "group": "substances-7",
+    "text": "Zinc sulfide is a white to grayish-white or yellowish powder.",
+    "passage": "ZnS/Color/Form/1"
+  },
+  {
+    "id": "ZnS.uses.0",
+    "group": "substances-7",
+    "text": "Zinc sulfide is used as a phosphor in glow-in-the-dark products.",
+    "passage": "ZnS/Uses/8"
+  },
+  {
+    "id": "ZnS.uses.1",
+    "group": "substances-7",
+    "text": "Zinc sulfide is used as a pigment in paints, inks and cosmetics.",
+    "passage": "ZnS/Uses/5"
+  },
+  {
+    "id": "ZnS.uses.2",
+    "group": "substances-7",
+    "text": "Zinc sulfide is used in x-ray screens, television screens and glowing watch faces.",
+    "passage": "ZnS/Uses/4"
+  }
+]

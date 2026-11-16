@@ -78,6 +78,29 @@ describe('reaction enthalpy', () => {
     expect(() => derive('energy-direction', [{ min: -1, max: 1 }])).toThrow(/spans zero/);
   });
 
+  it('gives the state at room temperature from melting and boiling points', () => {
+    expect(derive('state-at-room-temperature', [97.8, 883])).toBe('solid'); // sodium
+    expect(derive('state-at-room-temperature', [-7.2, 58.8])).toBe('liquid'); // bromine
+    expect(derive('state-at-room-temperature', [-101.5, -34.04])).toBe('gas'); // chlorine
+    expect(() => derive('state-at-room-temperature', [25, 100])).toThrow(/exactly room temperature/);
+    expect(() => derive('state-at-room-temperature', [100, 50])).toThrow(/below boiling/);
+    expect(derive('state-at-room-temperature', [660.32])).toBe('solid'); // aluminum: melting point alone
+    expect(derive('state-at-room-temperature', [{ min: 825, max: 1339 }])).toBe('solid'); // decomposes over a range
+    expect(() => derive('state-at-room-temperature', [{ min: 10, max: 40 }])).toThrow(/no single state/);
+    expect(() => derive('state-at-room-temperature', [-7.2])).toThrow(/also needs the boiling point/);
+  });
+
+  it('writes the summary from the equation', () => {
+    const s = (names: string[], weights: number[]) => derive('summary-from-equation', names, weights);
+    expect(s(['sodium', 'chlorine', 'sodium chloride'], [-1, -1, 1])).toBe('Sodium and chlorine combine to make sodium chloride.');
+    expect(s(['methane', 'oxygen', 'carbon dioxide', 'water'], [-1, -1, 1, 1])).toBe('Methane and oxygen react to make carbon dioxide and water.');
+    expect(s(['water', 'hydrogen', 'oxygen'], [-1, 1, 1])).toBe('Water breaks down into hydrogen and oxygen.');
+    expect(s(['helium', 'oxygen'], [-1, -1])).toBe("Helium and oxygen don't react under everyday conditions.");
+    expect(s(['a', 'b', 'c', 'd'], [-1, -1, -1, 1])).toBe('A, b and c combine to make d.');
+    expect(() => s(['a', 'b'], [1, -1])).toThrow(/before products/);
+    expect(() => s(['a', 'b'], [-2, 1])).toThrow(/-1 \(reactant\) or 1/);
+  });
+
   it('has no floating-point drift', () => {
     expect(reactionEnthalpy([0.1, 0.2], [1, 1])).toBe(0.3);
   });
@@ -131,7 +154,12 @@ const sampleReaction = (): Reaction => ({
     { substance: 'compound:cid-2', coefficient: 1, phase: 'g' },
   ],
   products: [{ substance: 'compound:cid-3', coefficient: 2, phase: 's' }],
-  summary: [text('rx.summary')],
+  summary: [
+    {
+      ...derived('Test na and Test cl2 combine to make Test nacl.', 'rx.summary', 'summary-from-equation', ['na.name', 'cl2.name', 'nacl.name']),
+      derivation: { rule: 'summary-from-equation', inputs: ['na.name', 'cl2.name', 'nacl.name'], weights: [-1, -1, 1] },
+    },
+  ],
   bonding: { type: fact('ionic', 'rx.bond', { source: { url: CONCEPT, retrieved: '2026-11-15' } }), why: [text('rx.bond.why')] },
   energy: {
     enthalpy: {
@@ -182,6 +210,13 @@ describe('gate: compounds and reactions', () => {
     ['the enthalpy is miscalculated', (_c, r) => (r.energy!.enthalpy!.value = -411.12), /reaction-enthalpy gives -822.24/],
     ['the direction is wrong', (_c, r) => (r.energy!.direction!.value = 'endothermic'), /energy-direction gives "exothermic"/],
     ['a species has no enthalpy for its phase', (_c, r) => (r.products![0]!.phase = 'l'), /no formation enthalpy for compound:cid-3\(l\)/],
+    ['the summary is not derived', (_c, r) => delete r.summary[0]!.derivation, /first summary must be derived/],
+    [
+      'the summary names other substances',
+      (_c, r) => (r.summary[0]!.derivation!.inputs = ['na.name', 'na.name', 'nacl.name']),
+      /first summary must be derived/,
+    ],
+    ['the summary text is edited', (_c, r) => (r.summary[0]!.value = 'Something else happens.'), /summary-from-equation gives/],
     ['a hazard note contains a number', (_c, r) => (r.hazard!.why[0]!.value = 'Use 5 grams.'), /hazard\.why\[0\] contains a number/],
     ['the trigger contains a number', (_c, r) => (r.energy!.trigger!.value = 'Heat to 400 degrees.'), /energy\.trigger contains a number/],
     ['the source spelling holds different atoms', (c) => (c[2]!.formula.source.asWritten = 'Cl2Na'), /holds different atoms/],
@@ -210,7 +245,7 @@ describe('reaction schema', () => {
     ['an enthalpy together with "unavailable"', (r) => (r.energy!.unavailable = 'x')],
     ['an enthalpy without a direction', (r) => delete r.energy!.direction],
     ['a no-reaction entry with products', (r) => ((r.kind = 'no-reaction'), (r.whyNot = [text('w')]))],
-    ['a single input', (r) => (r.inputs = ['element:Na'])],
+    ['a no-reaction pair with a single input', (r) => { r.kind = 'no-reaction'; delete r.reactants; delete r.products; delete r.energy; delete r.bonding; delete r.hazard; r.whyNot = [text('w')]; r.inputs = ['element:Na']; }],
     ['a zero coefficient', (r) => (r.products![0]!.coefficient = 0)],
   ])('rejects %s', (_, edit) => {
     const r = sampleReaction();

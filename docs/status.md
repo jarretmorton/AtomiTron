@@ -46,9 +46,32 @@ On branch `claude/phase-3-reactions`. The plan and its decisions are in
     calcium hydroxide mostly forms as a solid.
   - The list has 49 entries, not 50: "nitrogen and oxygen at room
     temperature" is the same pair as the nitrogen and oxygen reaction.
-- **Not built yet:** the agent step for text facts (each substance's state,
-  summaries, bonding, hazard notes), hazard-statement extraction, and the
-  Combine screens.
+- **Text step (2026-11-16, PR #22):**
+  `pipeline/reaction_text.py` drafts and verifies each reaction's text
+  (summary, bonding, trigger, hazard note, why-not) and each substance's
+  state, appearance and uses through the Claude API, with the same 3-of-3
+  rule and code checks as element text. A pilot of five reactions
+  (sodium + chlorine, hydrogen + oxygen, methane + oxygen, iron + sulfur,
+  helium + oxygen) is the `reactions-pilot` task in the "Run verification"
+  workflow.
+  - **States:** 21 of the 22 elemental substances get their state at
+    25 °C from code, from their verified melting and boiling points (a
+    melting point above 25 °C settles it alone). Carbon, and all compounds,
+    are agent-checked.
+  - **Hazard statements:** extracted for all 57 substances (those more than
+    half of ECHA's notifiers report).
+- **Full run (2026-11-16, run 43786687113, $18.62):** 363 of 397
+  statements passed 3 of 3. States come from code where possible (elements
+  from their points, compounds from PubChem melting points).
+- **Decided 2026-11-16 after the full run:** CAMEO's glucose entry (a
+  solution) is left out of glucose's melting points; no-reaction pairs
+  "don't react under everyday conditions"; lithium + oxygen replaces
+  sodium + oxygen (sodium makes a mixture with its peroxide).
+- **Re-run (run 43789107123, $0.60)** for lithium + oxygen and gold +
+  oxygen. Assembled from both runs: **all 57 compounds and 49 reactions**
+  are verified and pass the gate, in `data/verified/`.
+  Pilots: $2.00 and $2.11. **Total API spend so far: about $67.**
+- **Not built yet:** the Combine screens.
 - **Arsenic's melting point** still needs its fix, to be confirmed when the
   qualifier rule is built into the element pipeline.
 

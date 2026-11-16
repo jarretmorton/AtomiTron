@@ -174,7 +174,9 @@
             "valence-main-group",
             "zero-for-element-in-standard-state",
             "reaction-enthalpy",
-            "energy-direction"
+            "energy-direction",
+            "state-at-room-temperature",
+            "summary-from-equation"
           ]
         },
         "inputs": {
@@ -187,7 +189,7 @@
           }
         },
         "weights": {
-          "description": "For reaction-enthalpy: one whole number per input, the species' coefficient in the balanced equation, positive for products and negative for reactants.",
+          "description": "For reaction-enthalpy: one whole number per input, the species' coefficient in the balanced equation, positive for products and negative for reactants. For summary-from-equation: -1 for each reactant's name and 1 for each product's.",
           "type": "array",
           "minItems": 1,
           "items": {
