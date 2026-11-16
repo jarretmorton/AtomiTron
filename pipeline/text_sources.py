@@ -65,13 +65,13 @@ def element_passages(symbols: list[str]) -> list[dict]:
 def concept_claims() -> tuple[list[dict], list[dict]]:
     """Parse concepts.ts for (key, text, url), fetch each page as plain text."""
     src = (ROOT / "app" / "src" / "content" / "concepts.ts").read_text("utf-8")
-    consts = dict(re.findall(r"const (\w+) = `\$\{LT\}(/[^`]+)`;", src))
-    lt = re.search(r"const LT = '([^']+)'", src).group(1)
+    bases = dict(re.findall(r"const (\w+) = '([^']+)';", src))
+    consts = {name: bases[base] + path for name, base, path in re.findall(r"const (\w+) = `\$\{(\w+)\}(/[^`]+)`;", src)}
     claims, passages, seen = [], [], {}
     # text: '...' or text: "..." (double quotes when the sentence has an apostrophe)
     entries = re.findall(r"(\w+): \{\s*text: (?:'([^']+)'|\"([^\"]+)\"),\s*url: (\w+),", src)
     for key, text, ref in ((k, single or double, r) for k, single, double, r in entries):
-        url = lt + consts[ref]
+        url = consts[ref]
         if url not in seen:
             body, retrieved = fetch(url, f"libretexts/{ref.lower()}.html")
             page = body.decode("utf-8", errors="replace")

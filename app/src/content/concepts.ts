@@ -1,5 +1,5 @@
 // Short explanations shown beside the numbers on an element page ("all the
-// table numbers explained", spec 3.2). Each one is a plain-language statement
+// table numbers explained", spec 3.2) and in Combine mode (spec 3.3). Each one is a plain-language statement
 // of what its cited LibreTexts page says, and each has a verification record
 // in verification/records/concepts.json from three independent verifiers
 // (pipeline/text_facts.py). A test fails the build if any sentence here lacks
@@ -10,6 +10,9 @@ const PROTONS = `${LT}/04%3A_Atoms_and_Elements/4.05%3A_Elements-_Defined_by_The
 const ISOTOPES = `${LT}/04%3A_Atoms_and_Elements/4.08%3A_Isotopes_-_When_the_Number_of_Neutrons_Varies`;
 const ORBITALS = `${LT}/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.06%3A_Quantum-Mechanical_Orbitals_and_Electron_Configurations`;
 const VALENCE = `${LT}/09%3A_Electrons_in_Atoms_and_the_Periodic_Table/9.07%3A_Electron_Configurations_and_the_Periodic_Table`;
+const ENERGY = `${LT}/03%3A_Matter_and_Energy/3.09%3A_Energy_and_Chemical_and_Physical_Change`;
+const OPENSTAX = 'https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_2e_(OpenStax)';
+const ENTHALPY = `${OPENSTAX}/05%3A_Thermochemistry/5.03%3A_Enthalpy`;
 
 export interface Concept {
   text: string;
@@ -44,5 +47,21 @@ export const CONCEPTS = {
   valence: {
     text: "Valence electrons are the electrons in the highest-numbered shell, plus any in the last unfilled subshell. They largely control an atom's chemistry.",
     url: VALENCE,
+  },
+  exothermic: {
+    text: 'Reactions that release energy are called exothermic.',
+    url: ENERGY,
+  },
+  endothermic: {
+    text: 'Reactions that absorb energy are called endothermic.',
+    url: ENERGY,
+  },
+  enthalpySign: {
+    text: 'A negative enthalpy change means a reaction is exothermic, and a positive one means it is endothermic.',
+    url: ENTHALPY,
+  },
+  formationZero: {
+    text: 'By definition, an element in its most stable form has a standard enthalpy of formation of zero.',
+    url: ENTHALPY,
   },
 } satisfies Record<string, Concept>;
