@@ -23,9 +23,9 @@
       "minLength": 1
     },
     "inputs": {
-      "description": "What the user picks in Combine mode to find this entry: element and compound IDs.",
+      "description": "What the user picks in Combine mode to find this entry: element and compound IDs. One for a breakdown (decomposition) reaction such as splitting water; at least two otherwise, and always two or more for a no-reaction pair.",
       "type": "array",
-      "minItems": 2,
+      "minItems": 1,
       "uniqueItems": true,
       "items": {
         "type": "string",
@@ -228,6 +228,12 @@
               ]
             }
           ]
+        },
+        "properties": {
+          "inputs": {
+            "type": "array",
+            "minItems": 2
+          }
         }
       }
     }

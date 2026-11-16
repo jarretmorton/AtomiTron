@@ -243,7 +243,7 @@ describe('reaction schema', () => {
     ['an enthalpy together with "unavailable"', (r) => (r.energy!.unavailable = 'x')],
     ['an enthalpy without a direction', (r) => delete r.energy!.direction],
     ['a no-reaction entry with products', (r) => ((r.kind = 'no-reaction'), (r.whyNot = [text('w')]))],
-    ['a single input', (r) => (r.inputs = ['element:Na'])],
+    ['a no-reaction pair with a single input', (r) => { r.kind = 'no-reaction'; delete r.reactants; delete r.products; delete r.energy; delete r.bonding; delete r.hazard; r.whyNot = [text('w')]; r.inputs = ['element:Na']; }],
     ['a zero coefficient', (r) => (r.products![0]!.coefficient = 0)],
   ])('rejects %s', (_, edit) => {
     const r = sampleReaction();

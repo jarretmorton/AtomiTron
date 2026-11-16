@@ -6,6 +6,7 @@ staged energies (verification/methodology.md, section 14).
     python -m pipeline.reaction_text claims   RUN_DIR          # code checks: claims.json
     python -m pipeline.agents_api    verify   RUN_DIR          # Claude API: 3 verifiers
     python -m pipeline.reaction_text evaluate RUN_DIR          # 3 of 3 -> facts.json, report.md
+    python -m pipeline.reaction_text assemble RUN_DIR          # -> data/verified/{compounds,reactions}.json
 
 Needs data/staged/reactions.json (python -m pipeline.compounds) for the
 equations, names and energies. Like the element text, the agents only draft
@@ -502,11 +503,90 @@ def write_report(run: Path, tasks: dict, results: dict, checked_at: str) -> None
     print(f"{passed} of {len(results)} statements passed; report: {(run / 'report.md').relative_to(ROOT).as_posix()}")
 
 
+# ---- assemble -----------------------------------------------------------------------
+
+VERIFIED = ROOT / "data" / "verified"
+RECORDS = ROOT / "verification" / "records" / "reactions.json"
+
+
+def assemble(run: Path) -> None:
+    """Join the staged numbers (pipeline.compounds) and a run's verified text
+    into the published compound and reaction files, with their records.
+
+    A substance is published only with a state at room temperature (from code
+    or verified text). A reaction is published only when all its substances
+    are; a no-reaction pair also needs at least one verified "why not"."""
+    staged = load_json(STAGED)
+    facts = load_json(run / "facts.json")
+    text_s, text_r = facts["substances"], facts["reactions"]
+    held: list[str] = []
+
+    compounds = {}
+    for s in staged["substances"]:
+        t = text_s.get(s["id"], {})
+        state = s.get("standardState") or t.get("standardState")
+        if not state:
+            held.append(f"{s['key']}: no verified state at room temperature")
+            continue
+        c = {"id": s["id"], **({"element": s["element"]} if "element" in s else {}),
+             **({"nistId": s["nistId"]} if "nistId" in s else {}),
+             "name": s["name"], "formula": s["formula"], "standardState": state,
+             "formationEnthalpies": s["formationEnthalpies"]}
+        if "appearance" in t:
+            c["appearance"] = t["appearance"]
+        c["uses"] = t.get("uses", [])
+        c["hazards"] = s["hazards"]
+        compounds[s["id"]] = c
+    by_element = {c["element"]: c for c in compounds.values() if "element" in c}
+
+    reactions = []
+    for r in staged["reactions"]:
+        t = text_r.get(r["id"], {})
+        if r["kind"] == "reaction":
+            missing = [x["substance"] for x in r["reactants"] + r["products"] if x["substance"] not in compounds]
+        else:
+            missing = [i for i in r["inputs"] if i not in compounds and i not in by_element]
+        if missing:
+            held.append(f"{r['id']}: substances not published: {', '.join(missing)}")
+            continue
+        out = {"id": r["id"], "title": r["title"], "inputs": r["inputs"], "kind": r["kind"]}
+        if r["kind"] == "reaction":
+            out["reactants"], out["products"] = r["reactants"], r["products"]
+        out["summary"] = r["summary"] + t.get("summary", [])
+        if r["kind"] == "no-reaction":
+            if not t.get("whyNot"):
+                held.append(f"{r['id']}: no verified statement on why nothing happens")
+                continue
+            out["whyNot"] = t["whyNot"]
+        else:
+            if "bonding" in t:
+                out["bonding"] = {"type": t["bonding"]["type"], "why": t["bonding"]["why"]}
+            energy = dict(r["energy"])
+            if "trigger" in t:
+                energy["trigger"] = t["trigger"]
+            out["energy"] = energy
+            if "hazard" in t:
+                out["hazard"] = t["hazard"]
+        reactions.append(out)
+
+    # Records for exactly the published entities.
+    published = set(compounds) | {r["id"] for r in reactions}
+    records = [x for x in staged["records"] + facts["records"] if x["subject"]["entity"] in published]
+    write_json(VERIFIED / "compounds.json", {"schemaVersion": 4, "kind": "compounds", "items": sorted(compounds.values(), key=lambda c: c["id"])})
+    write_json(VERIFIED / "reactions.json", {"schemaVersion": 4, "kind": "reactions", "items": reactions})
+    write_json(RECORDS, {"schemaVersion": 4, "kind": "verification-records", "items": sorted(records, key=lambda x: x["id"])})
+    (run / "assembled.md").write_text(
+        "\n".join([f"# Assembled from {run.name}", "", f"- Compounds published: **{len(compounds)}** of {len(staged['substances'])}",
+                   f"- Reactions published: **{len(reactions)}** of {len(staged['reactions'])}", "", "## Held back", ""]
+                  + ([f"- {h}" for h in held] or ["None."])) + "\n", encoding="utf-8", newline="\n")
+    print(f"{len(compounds)} compounds and {len(reactions)} reactions published; {len(held)} held back (see {run.name}/assembled.md)")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "sources":
         build_sources(sys.argv[2:])
-    elif cmd in ("draft", "claims", "evaluate") and len(sys.argv) == 3:
-        {"draft": draft, "claims": build_claims, "evaluate": evaluate}[cmd](Path(sys.argv[2]).resolve())
+    elif cmd in ("draft", "claims", "evaluate", "assemble") and len(sys.argv) == 3:
+        {"draft": draft, "claims": build_claims, "evaluate": evaluate, "assemble": assemble}[cmd](Path(sys.argv[2]).resolve())
     else:
         sys.exit(__doc__)
