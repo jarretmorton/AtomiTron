@@ -542,3 +542,313 @@
 .working-list li {
   padding: 2px 0;
 }
+
+/* ---- Combine mode (spec 3.3) ------------------------------------------------- */
+
+.combine-view h2 {
+  margin: 20px 0 8px;
+  font-size: 1.1rem;
+}
+
+.combine-tray,
+.combine-hints,
+.chip-list,
+.picked {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.combine-tray {
+  min-height: var(--tap);
+  padding: 8px;
+  border: 1px dashed var(--rule);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.tray-empty {
+  color: var(--muted);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  min-height: var(--tap);
+  padding: 0 14px;
+  border: 1.5px solid var(--rule);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  line-height: var(--tap);
+  cursor: pointer;
+}
+
+.chip-name {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.chip.selected,
+.chip[aria-pressed="true"] {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--surface);
+}
+
+.chip.selected .chip-name,
+.chip[aria-pressed="true"] .chip-name {
+  color: var(--surface);
+  opacity: 0.8;
+}
+
+.chip-x {
+  font-weight: 700;
+}
+
+span.chip {
+  cursor: default;
+}
+
+.combine-actions {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0 18px;
+  border-radius: var(--radius);
+  background: var(--link);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.primary-btn[aria-disabled] {
+  background: var(--rule);
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.hint-label {
+  color: var(--muted);
+}
+
+/* Picker tiles are buttons laid out like the table. */
+button.tile {
+  font: inherit;
+  cursor: pointer;
+}
+
+button.tile.off {
+  opacity: 0.28;
+  cursor: default;
+}
+
+button.tile[aria-pressed="true"] {
+  outline: 3px solid var(--ink);
+  outline-offset: 1px;
+  font-weight: 800;
+}
+
+/* Layers */
+.entry > .statements {
+  margin-bottom: 8px;
+}
+
+.layer {
+  border-top: 1px solid var(--rule);
+}
+
+.layer > summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--tap);
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.layer > summary::-webkit-details-marker {
+  display: none;
+}
+
+.layer > summary::after {
+  content: '＋';
+  margin-left: auto;
+  color: var(--muted);
+}
+
+.layer[open] > summary::after {
+  content: '−';
+}
+
+.layer-n {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--surface);
+  font-size: 0.85rem;
+}
+
+.layer[open] {
+  padding-bottom: 12px;
+}
+
+.layer h4 {
+  margin: 14px 0 4px;
+  font-size: 0.95rem;
+}
+
+.hazard-box {
+  margin: 8px 0 12px;
+  padding: 10px 14px;
+  border: 2px solid var(--non-edge);
+  border-radius: var(--radius);
+  background: var(--non-bg);
+}
+
+.hazard-badge {
+  margin: 0 0 4px;
+  font-weight: 800;
+}
+
+.equation {
+  font-size: 1.2rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.phase {
+  color: var(--muted);
+  font-size: 0.8em;
+}
+
+.working-head {
+  margin: 8px 0 2px;
+  font-weight: 600;
+}
+
+.working-result {
+  font-weight: 700;
+}
+
+.substance {
+  padding: 8px 0;
+}
+
+.substance + .substance {
+  border-top: 1px dashed var(--rule);
+}
+
+.substance h3 {
+  margin: 6px 0;
+}
+
+.ghs-code {
+  display: inline-block;
+  padding: 0 6px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.badge-qualifier {
+  display: inline-block;
+  padding: 1px 8px;
+  border: 1.5px solid currentColor;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.note {
+  color: var(--muted);
+}
+
+.link-list a {
+  display: inline-block;
+  min-height: var(--tap);
+  line-height: var(--tap);
+}
+
+/* The bond diagram */
+.bond-figure {
+  margin: 12px 0;
+}
+
+.bond-diagram {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.bond-diagram.square {
+  max-width: 320px;
+}
+
+.bond-figure figcaption {
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.bd-nucleus {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+
+.bd-symbol {
+  fill: var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+/* Electrons that move: hold, move, hold, repeat. With reduced motion the
+   global rule ends the animation at once, so the end state shows. */
+.bd-moving {
+  animation: bd-move 5s ease-in-out infinite both;
+}
+
+.electron.bd-moving {
+  stroke: var(--ink);
+  stroke-width: 1.6px;
+}
+
+@keyframes bd-move {
+  0%, 20% {
+    transform: translate(0, 0);
+  }
+  55%, 100% {
+    transform: translate(var(--dx), var(--dy));
+  }
+}
+
+.bd-emptied {
+  animation: bd-empty 5s ease-in-out infinite both;
+}
+
+@keyframes bd-empty {
+  0%, 20% {
+    opacity: 1;
+  }
+  55%, 100% {
+    opacity: 0.25;
+  }
+}

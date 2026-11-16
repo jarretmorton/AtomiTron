@@ -63,6 +63,7 @@ export function factRow(label: string, fact: Fact | undefined, opts: FactOptions
   const value = el('div', 'fact-value');
   const shown = (opts.show ?? showFact)(fact);
   value.append(shown.text);
+  if (fact.qualifier) value.append(' ', el('span', 'badge-qualifier', fact.qualifier));
   if (fact.uncertain) value.append(' ', predictedBadge());
   row.append(name, value);
   if (shown.note) row.append(el('div', 'fact-note', shown.note));
