@@ -275,3 +275,16 @@ What this means for the list:
 The elements' own formation enthalpies are zero in their standard states by
 definition. That definition, and each element's standard state, will be
 cited from LibreTexts and PubChem like any other fact.
+
+## 6. Changes after the first full run (2026-11-16)
+
+- **Sodium + oxygen is replaced by lithium + oxygen.** The LibreTexts page
+  says sodium burning in oxygen gives "a white solid mixture of sodium oxide
+  and sodium peroxide", so a summary naming sodium oxide alone would be
+  incomplete. The same page says lithium gives "white lithium oxide".
+- **No-reaction pairs "don't react under everyday conditions",** because
+  the sources hedge (oxygen is "mostly unreactive" with gold).
+- **Glucose's melting point** leaves out CAMEO's entry, which describes a
+  glucose solution.
+- **The list has 49 entries;** all 49 are verified.
+

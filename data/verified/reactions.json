@@ -1248,6 +1248,20 @@
               1
             ]
           }
+        },
+        {
+          "value": "Lithium burns with a strongly red-tinged flame, and in pure oxygen the flame is even stronger.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_(Inorganic_Chemistry)/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__1%3A_The_Alkali_Metals/2Reactions_of_the_Group_1_Elements/Reactions_of_Group_I_Elements_with_Oxygen",
+            "retrieved": "2026-11-16",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "lithium-oxygen.summary.1"
+          }
         }
       ],
       "energy": {
@@ -1297,7 +1311,53 @@
               "lithium-oxygen.energy.enthalpy"
             ]
           }
+        },
+        "trigger": {
+          "value": "Lithium starts to burn when it is heated in air.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_(Inorganic_Chemistry)/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__1%3A_The_Alkali_Metals/2Reactions_of_the_Group_1_Elements/Reactions_of_Group_I_Elements_with_Oxygen",
+            "retrieved": "2026-11-16",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "lithium-oxygen.energy.trigger"
+          }
         }
+      },
+      "hazard": {
+        "why": [
+          {
+            "value": "Melted lithium catches fire quite easily and is then hard to put out.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3028194#section=Fire-Hazards",
+              "retrieved": "2026-11-16",
+              "via": "CAMEO Chemicals"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "lithium-oxygen.hazard.why.0"
+            }
+          },
+          {
+            "value": "Lithium oxide is corrosive and can injure the skin, the eyes and the breathing passages.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Hazards-Summary",
+              "retrieved": "2026-11-16",
+              "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "lithium-oxygen.hazard.why.1"
+            }
+          }
+        ]
       }
     },
     {
@@ -7026,6 +7086,58 @@
           "verification": {
             "status": "pass",
             "recordId": "argon-sodium.whyNot.1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "reaction:gold-oxygen",
+      "title": "Gold and oxygen",
+      "inputs": [
+        "element:Au",
+        "element:O"
+      ],
+      "kind": "no-reaction",
+      "summary": [
+        {
+          "value": "Gold and oxygen don't react under everyday conditions.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/07%3A_Chemical_Reactions/7.03%3A_The_Chemical_Equation",
+            "retrieved": "2026-11-15",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "gold-oxygen.summary.0"
+          },
+          "derivation": {
+            "rule": "summary-from-equation",
+            "inputs": [
+              "cid-23985.name",
+              "cid-977.name"
+            ],
+            "weights": [
+              -1,
+              -1
+            ]
+          }
+        }
+      ],
+      "whyNot": [
+        {
+          "value": "Oxygen mostly does not react with gold.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_(Inorganic_Chemistry)/Descriptive_Chemistry/Elements_Organized_by_Block/2_p-Block_Elements/Group_16%3A_The_Oxygen_Family_(The_Chalcogens)/Z008_Chemistry_of_Oxygen_(Z8)",
+            "retrieved": "2026-11-16",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "gold-oxygen.whyNot.0"
           }
         }
       ]

@@ -61,13 +61,16 @@ On branch `claude/phase-3-reactions`. The plan and its decisions are in
   - **Hazard statements:** extracted for all 57 substances (those more than
     half of ECHA's notifiers report).
 - **Full run (2026-11-16, run 43786687113, $18.62):** 363 of 397
-  statements passed 3 of 3. With states from code (elements from their
-  points, compounds from PubChem melting points), **56 compounds and 46 of
-  49 reactions** are verified and pass the gate, in `data/verified/`
-  (`compounds.json`, `reactions.json`). Held back: photosynthesis and
-  respiration (glucose's state: one PubChem entry describes a solution),
-  and gold + oxygen (its source hedges: "mostly unreactive").
-  Pilots: $2.00 and $2.11. **Total API spend so far: about $66.**
+  statements passed 3 of 3. States come from code where possible (elements
+  from their points, compounds from PubChem melting points).
+- **Decided 2026-11-16 after the full run:** CAMEO's glucose entry (a
+  solution) is left out of glucose's melting points; no-reaction pairs
+  "don't react under everyday conditions"; lithium + oxygen replaces
+  sodium + oxygen (sodium makes a mixture with its peroxide).
+- **Re-run (run 43789107123, $0.60)** for lithium + oxygen and gold +
+  oxygen. Assembled from both runs: **all 57 compounds and 49 reactions**
+  are verified and pass the gate, in `data/verified/`.
+  Pilots: $2.00 and $2.11. **Total API spend so far: about $67.**
 - **Not built yet:** the Combine screens.
 - **Arsenic's melting point** still needs its fix, to be confirmed when the
   qualifier rule is built into the element pipeline.

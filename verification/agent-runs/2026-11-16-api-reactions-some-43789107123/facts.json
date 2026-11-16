@@ -1,0 +1,313 @@
+{
+  "reactions": {
+    "reaction:lithium-oxygen": {
+      "summary": [
+        {
+          "value": "Lithium burns with a strongly red-tinged flame, and in pure oxygen the flame is even stronger.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_(Inorganic_Chemistry)/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__1%3A_The_Alkali_Metals/2Reactions_of_the_Group_1_Elements/Reactions_of_Group_I_Elements_with_Oxygen",
+            "retrieved": "2026-11-16",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "lithium-oxygen.summary.1"
+          }
+        }
+      ],
+      "trigger": {
+        "value": "Lithium starts to burn when it is heated in air.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_(Inorganic_Chemistry)/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__1%3A_The_Alkali_Metals/2Reactions_of_the_Group_1_Elements/Reactions_of_Group_I_Elements_with_Oxygen",
+          "retrieved": "2026-11-16",
+          "via": "LibreTexts Chemistry"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "lithium-oxygen.energy.trigger"
+        }
+      },
+      "hazard": {
+        "why": [
+          {
+            "value": "Melted lithium catches fire quite easily and is then hard to put out.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3028194#section=Fire-Hazards",
+              "retrieved": "2026-11-16",
+              "via": "CAMEO Chemicals"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "lithium-oxygen.hazard.why.0"
+            }
+          },
+          {
+            "value": "Lithium oxide is corrosive and can injure the skin, the eyes and the breathing passages.",
+            "unit": null,
+            "uncertain": false,
+            "source": {
+              "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Hazards-Summary",
+              "retrieved": "2026-11-16",
+              "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+            },
+            "verification": {
+              "status": "pass",
+              "recordId": "lithium-oxygen.hazard.why.1"
+            }
+          }
+        ]
+      }
+    },
+    "reaction:gold-oxygen": {
+      "summary": [],
+      "whyNot": [
+        {
+          "value": "Oxygen mostly does not react with gold.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_(Inorganic_Chemistry)/Descriptive_Chemistry/Elements_Organized_by_Block/2_p-Block_Elements/Group_16%3A_The_Oxygen_Family_(The_Chalcogens)/Z008_Chemistry_of_Oxygen_(Z8)",
+            "retrieved": "2026-11-16",
+            "via": "LibreTexts Chemistry"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "gold-oxygen.whyNot.0"
+          }
+        }
+      ]
+    }
+  },
+  "substances": {
+    "compound:cid-166630": {
+      "appearance": {
+        "value": "Lithium oxide is a white powder with no smell.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Physical-Description",
+          "retrieved": "2026-11-16",
+          "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-166630.appearance"
+        }
+      },
+      "uses": [
+        {
+          "value": "Lithium oxide is used to soak up carbon dioxide gas.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-166630.uses.0"
+          }
+        },
+        {
+          "value": "Lithium oxide is used to make special kinds of glass and ceramics.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-166630.uses.1"
+          }
+        }
+      ]
+    }
+  },
+  "records": [
+    {
+      "id": "lithium-oxygen.summary.1",
+      "subject": {
+        "entity": "reaction:lithium-oxygen",
+        "field": "/summary/1"
+      },
+      "method": "agent",
+      "claimedValue": "Lithium burns with a strongly red-tinged flame, and in pure oxygen the flame is even stronger.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_(Inorganic_Chemistry)/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__1%3A_The_Alkali_Metals/2Reactions_of_the_Group_1_Elements/Reactions_of_Group_I_Elements_with_Oxygen",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "Lithium burns with a strongly red-tinged flame if heated in air; in pure oxygen, the flame is more intense.",
+      "evidence": "Lithium burns with a strongly red-tinged flame if heated in air; in pure oxygen, the flame is more intense.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:59:12Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c445c7c",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-some-43789107123"
+    },
+    {
+      "id": "lithium-oxygen.energy.trigger",
+      "subject": {
+        "entity": "reaction:lithium-oxygen",
+        "field": "/energy/trigger"
+      },
+      "method": "agent",
+      "claimedValue": "Lithium starts to burn when it is heated in air.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_(Inorganic_Chemistry)/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__1%3A_The_Alkali_Metals/2Reactions_of_the_Group_1_Elements/Reactions_of_Group_I_Elements_with_Oxygen",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "Lithium burns with a strongly red-tinged flame if heated in air",
+      "evidence": "Lithium burns with a strongly red-tinged flame if heated in air",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:59:12Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c445c7c",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-some-43789107123"
+    },
+    {
+      "id": "lithium-oxygen.hazard.why.0",
+      "subject": {
+        "entity": "reaction:lithium-oxygen",
+        "field": "/hazard/why/0"
+      },
+      "method": "agent",
+      "claimedValue": "Melted lithium catches fire quite easily and is then hard to put out.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/3028194#section=Fire-Hazards",
+      "upstream": "CAMEO Chemicals",
+      "retrievedValue": "Molten lithium is quite easily ignited and is then difficult to extinguish.",
+      "evidence": "Molten lithium is quite easily ignited and is then difficult to extinguish.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:59:12Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c445c7c",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-some-43789107123"
+    },
+    {
+      "id": "lithium-oxygen.hazard.why.1",
+      "subject": {
+        "entity": "reaction:lithium-oxygen",
+        "field": "/hazard/why/1"
+      },
+      "method": "agent",
+      "claimedValue": "Lithium oxide is corrosive and can injure the skin, the eyes and the breathing passages.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Hazards-Summary",
+      "upstream": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "retrievedValue": "A corrosive substance that can cause injury to the skin, eyes, and respiratory tract",
+      "evidence": "A corrosive substance that can cause injury to the skin, eyes, and respiratory tract",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:59:12Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c445c7c",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-some-43789107123"
+    },
+    {
+      "id": "gold-oxygen.whyNot.0",
+      "subject": {
+        "entity": "reaction:gold-oxygen",
+        "field": "/whyNot/0"
+      },
+      "method": "agent",
+      "claimedValue": "Oxygen mostly does not react with gold.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_(Inorganic_Chemistry)/Descriptive_Chemistry/Elements_Organized_by_Block/2_p-Block_Elements/Group_16%3A_The_Oxygen_Family_(The_Chalcogens)/Z008_Chemistry_of_Oxygen_(Z8)",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "Oxygen is mostly unreactive with gold and platinum.",
+      "evidence": "Oxygen is mostly unreactive with gold and platinum.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:59:12Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c445c7c",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-some-43789107123"
+    },
+    {
+      "id": "cid-166630.appearance",
+      "subject": {
+        "entity": "compound:cid-166630",
+        "field": "/appearance"
+      },
+      "method": "agent",
+      "claimedValue": "Lithium oxide is a white powder with no smell.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Physical-Description",
+      "upstream": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "retrievedValue": "White odorless powder",
+      "evidence": "White odorless powder",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:59:12Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c445c7c",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-some-43789107123"
+    },
+    {
+      "id": "cid-166630.uses.0",
+      "subject": {
+        "entity": "compound:cid-166630",
+        "field": "/uses/0"
+      },
+      "method": "agent",
+      "claimedValue": "Lithium oxide is used to soak up carbon dioxide gas.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Uses",
+      "upstream": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "retrievedValue": "Used as a carbon dioxide absorbent",
+      "evidence": "Used as a carbon dioxide absorbent",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:59:12Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c445c7c",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-some-43789107123"
+    },
+    {
+      "id": "cid-166630.uses.1",
+      "subject": {
+        "entity": "compound:cid-166630",
+        "field": "/uses/1"
+      },
+      "method": "agent",
+      "claimedValue": "Lithium oxide is used to make special kinds of glass and ceramics.",
+      "unit": null,
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Uses",
+      "upstream": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases",
+      "retrievedValue": "Used as a carbon dioxide absorbent and to make specialty glasses and ceramics",
+      "evidence": "Used as a carbon dioxide absorbent and to make specialty glasses and ceramics",
+      "result": "pass",
+      "checkedAt": "2026-11-16T01:59:12Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at c445c7c",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-reactions-some-43789107123"
+    }
+  ]
+}

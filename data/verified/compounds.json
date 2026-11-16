@@ -1963,7 +1963,50 @@
           "recordId": "cid-166630.meltingPoint"
         }
       },
-      "uses": [],
+      "appearance": {
+        "value": "Lithium oxide is a white powder with no smell.",
+        "unit": null,
+        "uncertain": false,
+        "source": {
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Physical-Description",
+          "retrieved": "2026-11-16",
+          "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+        },
+        "verification": {
+          "status": "pass",
+          "recordId": "cid-166630.appearance"
+        }
+      },
+      "uses": [
+        {
+          "value": "Lithium oxide is used to soak up carbon dioxide gas.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-166630.uses.0"
+          }
+        },
+        {
+          "value": "Lithium oxide is used to make special kinds of glass and ceramics.",
+          "unit": null,
+          "uncertain": false,
+          "source": {
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/166630#section=Uses",
+            "retrieved": "2026-11-16",
+            "via": "Haz-Map, Information on Hazardous Chemicals and Occupational Diseases"
+          },
+          "verification": {
+            "status": "pass",
+            "recordId": "cid-166630.uses.1"
+          }
+        }
+      ],
       "hazards": [
         {
           "code": "H314",

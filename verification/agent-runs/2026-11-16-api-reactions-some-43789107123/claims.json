@@ -1,0 +1,56 @@
+[
+  {
+    "id": "lithium-oxygen.summary.0",
+    "group": "lithium-oxygen",
+    "text": "Lithium burns with a strongly red-tinged flame, and in pure oxygen the flame is even stronger.",
+    "passage": "lt/lithium-oxygen/0"
+  },
+  {
+    "id": "lithium-oxygen.trigger.0",
+    "group": "lithium-oxygen",
+    "text": "Lithium starts to burn when it is heated in air.",
+    "passage": "lt/lithium-oxygen/0"
+  },
+  {
+    "id": "lithium-oxygen.hazard.0",
+    "group": "lithium-oxygen",
+    "text": "Melted lithium catches fire quite easily and is then hard to put out.",
+    "passage": "Li/Fire Hazards/0"
+  },
+  {
+    "id": "lithium-oxygen.hazard.1",
+    "group": "lithium-oxygen",
+    "text": "Lithium oxide is corrosive and can injure the skin, the eyes and the breathing passages.",
+    "passage": "Li2O/Hazards Summary/0"
+  },
+  {
+    "id": "gold-oxygen.whyNot.0",
+    "group": "gold-oxygen",
+    "text": "Gold is one of a few metals, along with silver and platinum, that do not react with oxygen.",
+    "passage": "lt/gold-oxygen/0"
+  },
+  {
+    "id": "gold-oxygen.whyNot.1",
+    "group": "gold-oxygen",
+    "text": "Oxygen mostly does not react with gold.",
+    "passage": "lt/gold-oxygen/0"
+  },
+  {
+    "id": "Li2O.appearance.0",
+    "group": "substances-0",
+    "text": "Lithium oxide is a white powder with no smell.",
+    "passage": "Li2O/Physical Description/0"
+  },
+  {
+    "id": "Li2O.uses.0",
+    "group": "substances-0",
+    "text": "Lithium oxide is used to soak up carbon dioxide gas.",
+    "passage": "Li2O/Uses/0"
+  },
+  {
+    "id": "Li2O.uses.1",
+    "group": "substances-0",
+    "text": "Lithium oxide is used to make special kinds of glass and ceramics.",
+    "passage": "Li2O/Uses/0"
+  }
+]
