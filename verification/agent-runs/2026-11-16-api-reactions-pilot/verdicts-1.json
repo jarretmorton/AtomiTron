@@ -1,0 +1,208 @@
+{
+  "claims": {
+    "sodium-chlorine.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Solid sodium metal reacts with chlorine gas to produce solid sodium chloride."
+    },
+    "sodium-chlorine.summary.1": {
+      "verdict": "supported",
+      "excerpt": "One combination reaction is two elements combining to form a compound."
+    },
+    "sodium-chlorine.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "Sodium chloride, also known as salt, common salt, table salt or halite, is an ionic compound"
+    },
+    "sodium-chlorine.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "An electron transfers from the Na atom to the Cl atom"
+    },
+    "sodium-chlorine.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "The attraction between oppositely charged ions is called an ionic bond"
+    },
+    "sodium-chlorine.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Chlorine appears as a greenish yellow gas with a pungent suffocating odor. Toxic by inhalation."
+    },
+    "hydrogen-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Water appears as a clear, nontoxic liquid composed of hydrogen and oxygen"
+    },
+    "hydrogen-oxygen.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "a water molecule contains one oxygen and two hydrogen atoms that are connected by covalent bonds"
+    },
+    "hydrogen-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Covalent bonds are formed when atoms share electrons."
+    },
+    "hydrogen-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Will be easily ignited by heat, sparks or flames."
+    },
+    "hydrogen-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Hydrogen and Deuterium fires are difficult to detect since they burn with an invisible flame."
+    },
+    "methane-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "It is a colorless, flammable gas, slightly soluble in water."
+    },
+    "methane-oxygen.summary.1": {
+      "verdict": "supported",
+      "excerpt": "It is noncombustible, but will actively support the burning of combustible materials."
+    },
+    "methane-oxygen.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "a water molecule contains one oxygen and two hydrogen atoms that are connected by covalent bonds."
+    },
+    "methane-oxygen.bondingWhy.0": {
+      "verdict": "not_supported",
+      "reason": "The passage supports the electron-sharing definition but never describes electrons as 'the tiny particles around an atom', so the claim adds detail."
+    },
+    "methane-oxygen.trigger.0": {
+      "verdict": "not_supported",
+      "reason": "The passage says methane is extremely flammable and explosive in air but does not mention heat, sparks or flames as ignition sources."
+    },
+    "methane-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Behavior in Fire: Increases intensity of any fire."
+    },
+    "iron-sulfur.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Sulfur burns with a blue flame that may be difficult to see in daylight, and produces toxic sulfur dioxide gas."
+    },
+    "iron-sulfur.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Fine iron powder can ignite spontaneously."
+    },
+    "helium-oxygen.whyNot.0": {
+      "verdict": "supported",
+      "excerpt": "Chemically inert. These substances undergo no chemical reactions under any known circumstances."
+    },
+    "helium-oxygen.whyNot.1": {
+      "verdict": "supported",
+      "excerpt": "inert, monatomic gas located at the top of the noble gases on the periodic table"
+    },
+    "CH4.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Methane is a colorless odorless gas."
+    },
+    "CH4.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "It is a colourless, odourless, non-toxic but flammable gas"
+    },
+    "CH4.uses.0": {
+      "verdict": "supported",
+      "excerpt": "is often piped into homes for domestic heating and cooking purposes"
+    },
+    "CH4.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Methane may be burned to produce electricity"
+    },
+    "CH4.uses.2": {
+      "verdict": "supported",
+      "excerpt": "It is used in making other chemicals and as a constituent of the fuel, natural gas."
+    },
+    "CO2.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Carbon dioxide appears as a colorless odorless gas at atmospheric temperatures and pressures."
+    },
+    "CO2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Carbon Dioxide is a colorless, odorless, incombustible gas"
+    },
+    "CO2.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Carbon dioxide is used to produce carbonated soft drinks and soda water."
+    },
+    "CO2.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Used in carbonated beverages, fire extinguishers, dry ice, and propellants"
+    },
+    "CO2.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Life jackets often contain canisters of pressured carbon dioxide for quick inflation."
+    },
+    "Cl2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "At room temperature, chlorine is a yellow-green gas that is heavier than air and has a strong irritating odor."
+    },
+    "Fe.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Pure iron is a silvery white, relatively soft metal"
+    },
+    "FeS.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Gray to brown solid"
+    },
+    "FeS.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "usually gray to brownish-black lumps, rods or granular powder"
+    },
+    "FeS.uses.0": {
+      "verdict": "supported",
+      "excerpt": "as paint pigment"
+    },
+    "FeS.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Used as a pigment in hair dyes and ceramics (former uses), glasses and bottles, and paint"
+    },
+    "H2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Hydrogen is a colorless, odorless gas."
+    },
+    "H2O.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Water is a liquid at standard ambient temperature and pressure"
+    },
+    "H2O.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "a clear, colorless, odorless, tasteless liquid"
+    },
+    "H2O.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Drinking, culinary purposes, bathing, washing, laundering"
+    },
+    "H2O.uses.1": {
+      "verdict": "supported",
+      "excerpt": "agriculture, stock raising and gardens, for industrial processes and cooling, for water power and steam power, for fire protection"
+    },
+    "H2O.uses.2": {
+      "verdict": "supported",
+      "excerpt": "for fishing, swimming, boating and other recreational purposes"
+    },
+    "He.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Helium is a colorless odorless gas."
+    },
+    "Na.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Sodium appears as a silvery soft metal that becomes grayish white upon exposure to air."
+    },
+    "NaCl.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Colorless, transparent crystals or white, crystalline powder"
+    },
+    "NaCl.uses.0": {
+      "verdict": "supported",
+      "excerpt": "A ubiquitous sodium salt that is commonly used to season food."
+    },
+    "NaCl.uses.1": {
+      "verdict": "supported",
+      "excerpt": "plastic production, paper production, water conditioning, de-icing"
+    },
+    "NaCl.uses.2": {
+      "verdict": "supported",
+      "excerpt": "salting is an important method of food preservation"
+    },
+    "O2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Oxygen is a colorless, odorless and tasteless gas."
+    },
+    "S.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Pale yellow crystals or powder with faint odor of rotten eggs"
+    }
+  }
+}
