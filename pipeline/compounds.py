@@ -28,7 +28,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import parse as P
-from .chem import energy_direction, in_lowest_terms, is_balanced, parse_equation, parse_formula, reaction_enthalpy
+from .chem import (
+    energy_direction, in_lowest_terms, is_balanced, parse_equation, parse_formula, reaction_enthalpy,
+    state_at_room_temperature,
+)
 from .fetch import fetch
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -39,15 +42,28 @@ VERIFIER = "pipeline/compounds.py"
 
 PUBCHEM_PAGE = "https://pubchem.ncbi.nlm.nih.gov/compound/{cid}"
 PUBCHEM_API = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/property/MolecularFormula,Title/JSON"
+PUBCHEM_VIEW = "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/{cid}/JSON"
+ELEMENTS_DIR = ROOT / "data" / "verified" / "elements"
 NIST_PAGE = "https://webbook.nist.gov/cgi/cbook.cgi?ID={id}&Units=SI&cTG=on&cTC=on"
 _LT = "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)"
+# OpenStax Chemistry 2e on LibreTexts, section 5.3 "Enthalpy". It states all
+# three energy rules: the zero for an element in its most stable form, that a
+# negative change is exothermic and a positive one endothermic, and that
+# reversing an equation flips the sign.
+_ENTHALPY = "https://chem.libretexts.org/Bookshelves/General_Chemistry/Chemistry_2e_(OpenStax)/05%3A_Thermochemistry/5.03%3A_Enthalpy"
 # Pages that explain the rules behind derived values. Checked by the agent
 # step like the element explanations before anything is published.
 RULE_PAGES = {
-    "zero-for-element-in-standard-state": f"{_LT}/07%3A_Chemical_Reactions",
-    "reaction-enthalpy": f"{_LT}/07%3A_Chemical_Reactions",
-    "energy-direction": f"{_LT}/07%3A_Chemical_Reactions",
+    "zero-for-element-in-standard-state": _ENTHALPY,
+    "reaction-enthalpy": _ENTHALPY,
+    "energy-direction": _ENTHALPY,
+    "state-at-room-temperature": f"{_LT}/03%3A_Matter_and_Energy/3.03%3A_Classifying_Matter_According_to_Its_StateSolid_Liquid_and_Gas",
 }
+STATE_PHASE = {"solid": "s", "liquid": "l", "gas": "g"}
+# GHS statements: ECHA's aggregated notifications give the share of
+# notifiers for each code, e.g. "H260 (100%): In contact with water ...".
+GHS = re.compile(r"^(H\d{3})(?:\+H\d{3})* \((\d+(?:\.\d+)?)%\): ([^\[]+?)\s*(?:\[.*)?$")
+ECHA = "European Chemicals Agency (ECHA)"
 PHASES = {"gas": "g", "liquid": "l", "solid": "s"}
 
 
@@ -129,9 +145,9 @@ class Builder:
 
     def fact(self, entity: str, field: str, value, unit, url: str, retrieved: str, via: str, raw: str, *,
              qualifier: str | None = None, as_written: str | None = None, corroboration: list | None = None,
-             notes: str | None = None, derivation: dict | None = None) -> dict:
+             notes: str | None = None, derivation: dict | None = None, uncertain: bool = False) -> dict:
         rid = f"{entity.split(':', 1)[1]}{field.replace('/', '.')}"
-        fact = {"value": value, "unit": unit, "uncertain": False}
+        fact = {"value": value, "unit": unit, "uncertain": uncertain}
         if qualifier:
             fact["qualifier"] = qualifier
         fact["source"] = {"url": url, "retrieved": retrieved, "via": via, **({"asWritten": as_written} if as_written else {})}
@@ -172,6 +188,9 @@ class Builder:
         if d.get("element") and set(wanted) != {d["element"]}:
             self.drops.append((key, f"marked as element {d['element']} but its formula is {key}"))
             return None
+        if d.get("element"):
+            self.element_state(out, d["element"])
+        out["hazards"] = self.hazards(entity, d["cid"])
         if not d.get("nist"):
             self.notes.append(f"{key}: no NIST WebBook entry")
             return out
@@ -270,14 +289,76 @@ class Builder:
         for h in sub["formationEnthalpies"]:
             if h["phase"] == phase:
                 return h["value"]
+        state = sub.get("standardState")
+        if sub.get("element") and state and STATE_PHASE[state["value"]] != phase:
+            # The zero is only for the element's own standard state.
+            self.notes.append(f"{sub['key']}: the equation has it as ({phase}), but it is a {state['value']} at room temperature")
+            return None
         if sub.get("element"):
             zero = self.fact(sub["id"], f"/formationEnthalpies/{phase}", 0, "kJ/mol", RULE_PAGES["zero-for-element-in-standard-state"],
                              sub["name"]["source"]["retrieved"], "LibreTexts Chemistry", "",
                              derivation={"rule": "zero-for-element-in-standard-state", "inputs": [f"{sub['id'].split(':', 1)[1]}.standardState"]},
-                             notes="element in its standard state; the standard state is confirmed by the agent step")
+                             notes="element in its standard state" + ("" if state else "; the standard state is confirmed by the agent step"))
             sub["formationEnthalpies"].append({"phase": phase, "value": zero})
             return zero
         return None
+
+
+    def element_state(self, out: dict, symbol: str) -> None:
+        """An element's state at 25 °C, derived from its verified melting and
+        boiling points. Left for the agent step when either is missing."""
+        path = next(ELEMENTS_DIR.glob(f"*-{symbol}.json"), None)
+        e = json.loads(path.read_text("utf-8"))["items"][0] if path else {}
+        mp, bp = e.get("meltingPoint"), e.get("boilingPoint")
+        if not (mp and bp and isinstance(mp["value"], (int, float)) and isinstance(bp["value"], (int, float))):
+            self.notes.append(f"{out['key']}: no verified melting and boiling points; its state is left to the agent step")
+            return
+        try:
+            state = state_at_room_temperature(mp["value"], bp["value"])
+        except ValueError as err:
+            self.notes.append(f"{out['key']}: {err}; its state is left to the agent step")
+            return
+        out["standardState"] = self.fact(
+            out["id"], "/standardState", state, None, RULE_PAGES["state-at-room-temperature"], mp["source"]["retrieved"],
+            "LibreTexts Chemistry", "", uncertain=mp["uncertain"] or bp["uncertain"],
+            derivation={"rule": "state-at-room-temperature", "inputs": [mp["verification"]["recordId"], bp["verification"]["recordId"]]},
+            notes=f"melting point {mp['value']} °C and boiling point {bp['value']} °C, against room temperature (25 °C)")
+
+    def hazards(self, entity: str, cid: int) -> list[dict]:
+        """GHS hazard statements that more than half of ECHA's notifiers
+        report (decided 2026-11-15)."""
+        body, retrieved = fetch(PUBCHEM_VIEW.format(cid=cid), f"pubchem/compound-full-{cid}.json", self.refresh)
+        rec = json.loads(body)["Record"]
+        refs = {r["ReferenceNumber"]: r.get("SourceName", "") for r in rec.get("Reference", [])}
+        url = PUBCHEM_PAGE.format(cid=cid) + "#section=GHS-Classification"
+        out, seen = [], set()
+
+        def walk(sections):
+            for s in sections:
+                if s["TOCHeading"] == "GHS Classification":
+                    for i in s.get("Information", []):
+                        if i.get("Name") == "GHS Hazard Statements" and refs.get(i.get("ReferenceNumber")) == ECHA:
+                            for x in i["Value"]["StringWithMarkup"]:
+                                m = GHS.match(x["String"].strip())
+                                if not m or m.group(1) in seen:
+                                    continue
+                                share = float(m.group(2))
+                                if share <= 50:
+                                    continue
+                                code, text = m.group(1), m.group(3).strip()
+                                seen.add(code)
+                                n = len(out)
+                                out.append({
+                                    "code": code,
+                                    "statement": self.fact(entity, f"/hazards/{n}/statement", text, None, url, retrieved, ECHA,
+                                                           x["String"], notes=f"GHS {code}"),
+                                    "reportedBy": self.fact(entity, f"/hazards/{n}/reportedBy", share, "%", url, retrieved, ECHA,
+                                                            x["String"], notes=f"share of ECHA notifiers reporting {code}"),
+                                })
+                walk(s.get("Section", []))
+
+        walk(rec.get("Section", []))
+        return out
 
 
 def shown(value) -> str:
@@ -328,6 +409,12 @@ def write_report(b: Builder, subs: dict, reactions: list[dict]) -> Path:
             f = h["value"]
             rec = next(x for x in b.records if x["id"] == f["verification"]["recordId"])
             lines.append(f"| {s['key']} | {h['phase']} | {shown(f['value'])} | {f['source']['via']} | {f.get('qualifier') or ''} {rec.get('notes', '')} |")
+    lines += ["", "## States and hazard statements", "", "| Substance | State at 25 °C | Hazard statements (share of notifiers) |", "|---|---|---|"]
+    for s in subs.values():
+        st = s.get("standardState")
+        state = f"{st['value']} (from melting and boiling points)" if st else "agent step"
+        hz = "; ".join(f"{h['code']} {h['statement']['value']} ({h['reportedBy']['value']:g}%)" for h in s["hazards"]) or "none above half"
+        lines.append(f"| {s['key']} | {state} | {hz} |")
     lines += ["", "## Left out, with reasons", ""] + ([f"- `{k}`: {why}" for k, why in b.drops] or ["None."])
     lines += ["", "## Notes", ""] + ([f"- {n}" for n in b.notes] or ["None."])
     path = REPORTS / f"reactions-{b.checked_at[:10]}.md"

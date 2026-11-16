@@ -133,6 +133,15 @@ function checkCompound(c: Compound, at: string, errors: string[]): void {
     const symbol = c.element.slice('element:'.length);
     if (Object.keys(comp).length !== 1 || !(symbol in comp)) errors.push(`${at}: marked as ${c.element} but its formula is ${c.formula.value}`);
   }
+  const sd = c.standardState.derivation;
+  if (sd) {
+    const symbol = c.element?.slice('element:'.length);
+    if (sd.rule !== 'state-at-room-temperature' || !symbol) {
+      errors.push(`${at}: a derived state must use state-at-room-temperature, for an element`);
+    } else if (!isDeepStrictEqual(sd.inputs, [`${symbol}.meltingPoint`, `${symbol}.boilingPoint`])) {
+      errors.push(`${at}: the state must be derived from ${symbol}'s own melting and boiling points`);
+    }
+  }
   const phases = new Set<string>();
   for (const h of c.formationEnthalpies) {
     if (phases.has(h.phase)) errors.push(`${at}: two formation enthalpies for phase ${h.phase}`);

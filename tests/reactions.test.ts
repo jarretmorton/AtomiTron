@@ -78,6 +78,14 @@ describe('reaction enthalpy', () => {
     expect(() => derive('energy-direction', [{ min: -1, max: 1 }])).toThrow(/spans zero/);
   });
 
+  it('gives the state at room temperature from melting and boiling points', () => {
+    expect(derive('state-at-room-temperature', [97.8, 883])).toBe('solid'); // sodium
+    expect(derive('state-at-room-temperature', [-7.2, 58.8])).toBe('liquid'); // bromine
+    expect(derive('state-at-room-temperature', [-101.5, -34.04])).toBe('gas'); // chlorine
+    expect(() => derive('state-at-room-temperature', [25, 100])).toThrow(/exactly room temperature/);
+    expect(() => derive('state-at-room-temperature', [100, 50])).toThrow(/below boiling/);
+  });
+
   it('has no floating-point drift', () => {
     expect(reactionEnthalpy([0.1, 0.2], [1, 1])).toBe(0.3);
   });

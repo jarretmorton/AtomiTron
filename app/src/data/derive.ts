@@ -192,6 +192,17 @@ function isRangeValue(v: FactValue | undefined): v is Range {
   return typeof v === 'object' && v !== null && !Array.isArray(v) && typeof v.min === 'number' && typeof v.max === 'number';
 }
 
+/** Room temperature for the state rule, in °C (standard conditions). */
+export const ROOM_TEMPERATURE_C = 25;
+
+export function stateAtRoomTemperature(meltingC: number, boilingC: number): 'solid' | 'liquid' | 'gas' {
+  if (meltingC >= boilingC) throw new DerivationError('melting point must be below boiling point');
+  if (meltingC > ROOM_TEMPERATURE_C) return 'solid';
+  if (boilingC < ROOM_TEMPERATURE_C) return 'gas';
+  if (meltingC < ROOM_TEMPERATURE_C && boilingC > ROOM_TEMPERATURE_C) return 'liquid';
+  throw new DerivationError('a melting or boiling point at exactly room temperature has no single state');
+}
+
 function num(v: FactValue | undefined, what: string): number {
   if (typeof v !== 'number' || !Number.isFinite(v)) throw new DerivationError(`${what} must be a number`);
   return v;
@@ -212,6 +223,11 @@ const RULES: Record<DerivationRule, { arity: number; run: (inputs: FactValue[], 
       if (!weights) throw new DerivationError('reaction-enthalpy needs weights');
       return reactionEnthalpy(inputs.map((v) => (isRangeValue(v) ? v : num(v, 'formation enthalpy'))), weights);
     },
+  },
+  // Solid, liquid or gas at 25 °C, from the melting and boiling points in °C.
+  'state-at-room-temperature': {
+    arity: 2,
+    run: ([mp, bp]) => stateAtRoomTemperature(num(mp, 'melting point'), num(bp, 'boiling point')),
   },
   'energy-direction': {
     arity: 1,

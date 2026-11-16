@@ -120,6 +120,22 @@ def reaction_enthalpy(values: list, weights: list[int]):
     return lo if lo == hi else {"min": lo, "max": hi}
 
 
+ROOM_TEMPERATURE_C = 25
+
+
+def state_at_room_temperature(melting_c: float, boiling_c: float) -> str:
+    """Solid, liquid or gas at 25 °C, from the melting and boiling points in °C."""
+    if melting_c >= boiling_c:
+        raise ValueError("melting point must be below boiling point")
+    if melting_c > ROOM_TEMPERATURE_C:
+        return "solid"
+    if boiling_c < ROOM_TEMPERATURE_C:
+        return "gas"
+    if melting_c < ROOM_TEMPERATURE_C < boiling_c:
+        return "liquid"
+    raise ValueError("a melting or boiling point at exactly room temperature has no single state")
+
+
 def energy_direction(enthalpy) -> str:
     lo, hi = (enthalpy["min"], enthalpy["max"]) if isinstance(enthalpy, dict) else (enthalpy, enthalpy)
     if hi < 0:

@@ -6,6 +6,7 @@ import unittest
 
 from pipeline.chem import (
     energy_direction, in_lowest_terms, is_balanced, parse_equation, parse_formula, reaction_enthalpy,
+    state_at_room_temperature,
 )
 from pipeline.compounds import choose, enthalpy_value, Row
 
@@ -57,9 +58,27 @@ class Enthalpy(unittest.TestCase):
         with self.assertRaises(ValueError):
             energy_direction({"min": -1, "max": 1})
 
+    def test_state(self):
+        self.assertEqual(state_at_room_temperature(97.8, 883), "solid")
+        self.assertEqual(state_at_room_temperature(-7.2, 58.8), "liquid")
+        self.assertEqual(state_at_room_temperature(-101.5, -34.04), "gas")
+        for mp, bp in ((25, 100), (100, 50)):
+            with self.assertRaises(ValueError):
+                state_at_room_temperature(mp, bp)
+
     def test_direction(self):
         self.assertEqual(energy_direction(-822.24), "exothermic")
         self.assertEqual(energy_direction(571.66), "endothermic")
+
+
+class Ghs(unittest.TestCase):
+    def test_statement(self):
+        from pipeline.compounds import GHS
+        m = GHS.match("H260 (100%): In contact with water releases flammable gases which may ignite spontaneously [Danger Substances]")
+        self.assertEqual((m.group(1), m.group(2), m.group(3)),
+                         ("H260", "100", "In contact with water releases flammable gases which may ignite spontaneously"))
+        self.assertEqual(GHS.match("H318 (45.1%): Causes serious eye damage [Danger Serious eye damage]").group(2), "45.1")
+        self.assertIsNone(GHS.match("H260: In contact with water releases flammable gases"))  # no share given
 
 
 class NistValues(unittest.TestCase):

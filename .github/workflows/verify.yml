@@ -21,6 +21,7 @@ on:
           - reverify-pilot
           - draft-and-verify
           - verify-explanations
+          - reactions-pilot
         default: reverify-pilot
       elements:
         description: "For draft-and-verify: element symbols separated by spaces, or 'remaining' (every element without history and uses yet, about $20–25)"
@@ -51,6 +52,7 @@ jobs:
       - run: npm ci
 
       - name: Collect the source passages
+        if: inputs.task != 'reactions-pilot'
         env:
           ELEMENTS: ${{ inputs.task == 'reverify-pilot' && 'H C N O Na Mg Cl Fe Cu Au' || inputs.task == 'verify-explanations' && '--concepts-only' || inputs.elements }}
         run: python -m pipeline.text_sources $ELEMENTS
@@ -94,6 +96,24 @@ jobs:
           python -m pipeline.text_facts concept-claims "$RUN"
           python -m pipeline.agents_api verify "$RUN"
           python -m pipeline.text_facts evaluate "$RUN"
+          cp "$RUN/report.md" "$RUN/comparison.md"
+
+      # Phase 3: the text for five pilot reactions and their substances
+      # (summaries, bonding, triggers, hazard notes, states, uses), about $2-3.
+      # The energies and hazard statements come from code (pipeline.compounds).
+      - name: Draft and verify reaction text (pilot) through the Claude API
+        if: inputs.task == 'reactions-pilot'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          RUN="verification/agent-runs/$(date -u +%F)-api-reactions-pilot"
+          echo "RUN=$RUN" >> "$GITHUB_ENV"
+          python -m pipeline.compounds
+          python -m pipeline.reaction_text sources pilot
+          python -m pipeline.reaction_text draft "$RUN"
+          python -m pipeline.reaction_text claims "$RUN"
+          python -m pipeline.agents_api verify "$RUN"
+          python -m pipeline.reaction_text evaluate "$RUN"
           cp "$RUN/report.md" "$RUN/comparison.md"
 
       # Results are pushed before the gate, and even if a step after the API
