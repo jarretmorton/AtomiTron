@@ -6,7 +6,7 @@ import unittest
 
 from pipeline.chem import (
     energy_direction, in_lowest_terms, is_balanced, parse_equation, parse_formula, reaction_enthalpy,
-    state_at_room_temperature,
+    state_at_room_temperature, summary_from_equation,
 )
 from pipeline.compounds import choose, enthalpy_value, Row
 
@@ -58,6 +58,16 @@ class Enthalpy(unittest.TestCase):
         with self.assertRaises(ValueError):
             energy_direction({"min": -1, "max": 1})
 
+    def test_summary(self):
+        self.assertEqual(summary_from_equation(["sodium", "chlorine", "sodium chloride"], [-1, -1, 1]),
+                         "Sodium and chlorine combine to make sodium chloride.")
+        self.assertEqual(summary_from_equation(["methane", "oxygen", "carbon dioxide", "water"], [-1, -1, 1, 1]),
+                         "Methane and oxygen react to make carbon dioxide and water.")
+        self.assertEqual(summary_from_equation(["water", "hydrogen", "oxygen"], [-1, 1, 1]), "Water breaks down into hydrogen and oxygen.")
+        self.assertEqual(summary_from_equation(["helium", "oxygen"], [-1, -1]), "Helium and oxygen don't react with each other.")
+        with self.assertRaises(ValueError):
+            summary_from_equation(["a", "b"], [1, -1])
+
     def test_state(self):
         self.assertEqual(state_at_room_temperature(97.8, 883), "solid")
         self.assertEqual(state_at_room_temperature(-7.2, 58.8), "liquid")
@@ -82,6 +92,15 @@ class Ghs(unittest.TestCase):
                          ("H260", "100", "In contact with water releases flammable gases which may ignite spontaneously"))
         self.assertEqual(GHS.match("H318 (45.1%): Causes serious eye damage [Danger Serious eye damage]").group(2), "45.1")
         self.assertIsNone(GHS.match("H260: In contact with water releases flammable gases"))  # no share given
+
+
+class Names(unittest.TestCase):
+    def test_same_name(self):
+        from pipeline.compounds import same_name
+        self.assertTrue(same_name("iron (III) oxide", "iron(III) oxide"))
+        self.assertTrue(same_name("SODIUM CHLORIDE", "sodium chloride"))
+        self.assertFalse(same_name("Hydrochloric Acid", "hydrogen chloride"))
+        self.assertFalse(same_name("iron(II) oxide", "iron(III) oxide"))
 
 
 class NistValues(unittest.TestCase):

@@ -30,7 +30,7 @@ from pathlib import Path
 from . import parse as P
 from .chem import (
     energy_direction, in_lowest_terms, is_balanced, parse_equation, parse_formula, reaction_enthalpy,
-    state_at_room_temperature,
+    state_at_room_temperature, summary_from_equation,
 )
 from .fetch import fetch
 
@@ -43,6 +43,7 @@ VERIFIER = "pipeline/compounds.py"
 PUBCHEM_PAGE = "https://pubchem.ncbi.nlm.nih.gov/compound/{cid}"
 PUBCHEM_API = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/property/MolecularFormula,Title/JSON"
 PUBCHEM_VIEW = "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/{cid}/JSON"
+PUBCHEM_SYNONYMS = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/synonyms/JSON"
 ELEMENTS_DIR = ROOT / "data" / "verified" / "elements"
 NIST_PAGE = "https://webbook.nist.gov/cgi/cbook.cgi?ID={id}&Units=SI&cTG=on&cTC=on"
 _LT = "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)"
@@ -58,6 +59,7 @@ RULE_PAGES = {
     "reaction-enthalpy": _ENTHALPY,
     "energy-direction": _ENTHALPY,
     "state-at-room-temperature": f"{_LT}/03%3A_Matter_and_Energy/3.03%3A_Classifying_Matter_According_to_Its_StateSolid_Liquid_and_Gas",
+    "summary-from-equation": f"{_LT}/07%3A_Chemical_Reactions/7.03%3A_The_Chemical_Equation",
 }
 STATE_PHASE = {"solid": "s", "liquid": "l", "gas": "g"}
 # GHS statements: ECHA's aggregated notifications give the share of
@@ -176,10 +178,21 @@ class Builder:
             self.drops.append((key, f"PubChem CID {d['cid']} is {title} with formula {pc_formula}, not {key}"))
             return None
         page = PUBCHEM_PAGE.format(cid=d["cid"])
+        # The display name is curated, because PubChem's page titles aren't
+        # always the right name (CID 313, gaseous HCl, is titled "Hydrochloric
+        # Acid"). It must be one of PubChem's own names for that CID.
+        body, s_retrieved = fetch(PUBCHEM_SYNONYMS.format(cid=d["cid"]), f"pubchem/synonyms-{d['cid']}.json", self.refresh)
+        synonyms = json.loads(body)["InformationList"]["Information"][0].get("Synonym", [])
+        written = next((s for s in synonyms if same_name(s, d["name"])), None)
+        if written is None:
+            self.drops.append((key, f"the name {d['name']!r} isn't among PubChem's names for CID {d['cid']}"))
+            return None
         out = {
             "key": key, "id": entity, **({"element": f"element:{d['element']}"} if d.get("element") else {}),
             **({"nistId": d["nist"]} if d.get("nist") else {}),
-            "name": self.fact(entity, "/name", title, None, page, retrieved, "PubChem", title),
+            "name": self.fact(entity, "/name", d["name"], None, page + "#section=Synonyms", s_retrieved, "PubChem", written,
+                              as_written=written if written != d["name"] else None,
+                              notes=f"one of PubChem's names for CID {d['cid']} (page title: {title})"),
             "formula": self.fact(entity, "/formula", key, None, page + "#section=Molecular-Formula", retrieved, "PubChem", pc_formula,
                                  as_written=pc_formula if pc_formula != key else None,
                                  notes="same atoms as the source's formula, in the usual written order" if pc_formula != key else None),
@@ -228,7 +241,9 @@ class Builder:
             if missing:
                 self.drops.append((r["id"], f"unknown substances {missing}"))
                 return None
-            return {"id": rid, "title": r["title"], "kind": "no-reaction", "inputs": [input_id(subs[k]) for k in r["noReaction"]]}
+            out = {"id": rid, "title": r["title"], "kind": "no-reaction", "inputs": [input_id(subs[k]) for k in r["noReaction"]]}
+            out["summary"] = [self.summary(rid, [(subs[k], -1) for k in r["noReaction"]])]
+            return out
         parsed = parse_equation(r["equation"])
         if parsed is None:
             self.drops.append((r["id"], f"equation doesn't parse: {r['equation']}"))
@@ -249,6 +264,7 @@ class Builder:
         out = {"id": rid, "title": r["title"], "kind": "reaction", "equation": r["equation"],
                "inputs": [input_id(subs[f]) for _, f, _ in reactants],
                "reactants": species(reactants), "products": species(products)}
+        out["summary"] = [self.summary(rid, [(subs[f], -1) for _, f, _ in reactants] + [(subs[f], 1) for _, f, _ in products])]
 
         if r.get("noEnergy"):
             out["energy"] = {"unavailable": r["noEnergy"]}
@@ -303,6 +319,18 @@ class Builder:
             return zero
         return None
 
+
+    def summary(self, rid: str, parts: list[tuple[dict, int]]) -> dict:
+        """The first summary statement, written by code from the verified
+        names and the equation (rule summary-from-equation)."""
+        names = [s["name"] for s, _ in parts]
+        weights = [w for _, w in parts]
+        text = summary_from_equation([n["value"] for n in names], weights)
+        return self.fact(rid, "/summary/0", text, None, RULE_PAGES["summary-from-equation"],
+                         max(n["source"]["retrieved"] for n in names), "LibreTexts Chemistry", "",
+                         derivation={"rule": "summary-from-equation", "inputs": [n["verification"]["recordId"] for n in names],
+                                     "weights": weights},
+                         notes="written by code from the verified names and the balanced equation")
 
     def element_state(self, out: dict, symbol: str) -> None:
         """An element's state at 25 °C, derived from its verified melting and
@@ -363,6 +391,13 @@ class Builder:
 
         walk(rec.get("Section", []))
         return out
+
+
+def same_name(a: str, b: str) -> bool:
+    """Names match ignoring case and spaces around brackets:
+    "iron (III) oxide" is "iron(III) oxide"."""
+    norm = lambda s: re.sub(r"\s*([()])\s*", r"\1", s.strip().lower())
+    return norm(a) == norm(b)
 
 
 def shown(value) -> str:

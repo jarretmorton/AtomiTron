@@ -56,7 +56,8 @@ export type DerivationRule =
   | 'zero-for-element-in-standard-state'
   | 'reaction-enthalpy'
   | 'energy-direction'
-  | 'state-at-room-temperature';
+  | 'state-at-room-temperature'
+  | 'summary-from-equation';
 
 export type Phase = 's' | 'l' | 'g';
 

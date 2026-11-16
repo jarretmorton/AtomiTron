@@ -204,6 +204,42 @@ export function stateAtRoomTemperature(meltingC: number, boilingC?: number): 'so
   throw new DerivationError('a melting or boiling point at exactly room temperature has no single state');
 }
 
+function text(v: FactValue | undefined, what: string): string {
+  if (typeof v !== 'string' || !v.trim()) throw new DerivationError(`${what} must be text`);
+  return v;
+}
+
+function listed(names: string[]): string {
+  return names.length < 2 ? names.join('') : `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;
+}
+
+/**
+ * The plain-language summary of an equation. One reactant breaks down; one
+ * product is made by combining; otherwise the reactants react to make the
+ * products. With no products, it is a no-reaction pair.
+ */
+export function summaryFromEquation(names: string[], weights: number[]): string {
+  if (weights.some((w) => w !== 1 && w !== -1)) throw new DerivationError('weights must be -1 (reactant) or 1 (product)');
+  const reactants = names.filter((_, i) => weights[i] === -1);
+  const products = names.filter((_, i) => weights[i] === 1);
+  if (reactants.length === 0) throw new DerivationError('an equation needs at least one reactant');
+  if (weights.indexOf(1) !== -1 && weights.lastIndexOf(-1) > weights.indexOf(1)) {
+    throw new DerivationError('reactants must come before products');
+  }
+  let sentence: string;
+  if (products.length === 0) {
+    if (reactants.length < 2) throw new DerivationError('a no-reaction pair needs two substances');
+    sentence = `${listed(reactants)} don't react with each other.`;
+  } else if (reactants.length === 1) {
+    sentence = `${reactants[0]} breaks down into ${listed(products)}.`;
+  } else if (products.length === 1) {
+    sentence = `${listed(reactants)} combine to make ${products[0]}.`;
+  } else {
+    sentence = `${listed(reactants)} react to make ${listed(products)}.`;
+  }
+  return sentence[0]!.toUpperCase() + sentence.slice(1);
+}
+
 function num(v: FactValue | undefined, what: string): number {
   if (typeof v !== 'number' || !Number.isFinite(v)) throw new DerivationError(`${what} must be a number`);
   return v;
@@ -233,6 +269,15 @@ const RULES: Record<DerivationRule, { arity: number; run: (inputs: FactValue[], 
       if (inputs.length === 1) return stateAtRoomTemperature(num(inputs[0], 'melting point'));
       if (inputs.length === 2) return stateAtRoomTemperature(num(inputs[0], 'melting point'), num(inputs[1], 'boiling point'));
       throw new DerivationError('state-at-room-temperature takes a melting point, and optionally a boiling point');
+    },
+  },
+  // "Sodium and chlorine combine to make sodium chloride." from the names
+  // of the reactants (weight -1) and products (weight 1).
+  'summary-from-equation': {
+    arity: -1,
+    run: (inputs, weights) => {
+      if (!weights || weights.length !== inputs.length) throw new DerivationError('summary-from-equation needs one weight per name');
+      return summaryFromEquation(inputs.map((v) => text(v, 'name')), weights);
     },
   },
   'energy-direction': {

@@ -44,6 +44,9 @@ PUBCHEM_VIEW = "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/{ci
 SUBSTANCE_HEADINGS = ("Record Description", "Physical Description", "Color/Form", "Uses")
 REACTION_HEADINGS = ("Record Description", "Reactivity Profile", "Air and Water Reactions", "Chemical Dangers",
                      "Hazards Summary", "Fire Hazards")
+# For products only: how they're made, which often names the reaction
+# ("Obtained by direct reaction of iron and sulfur").
+PRODUCT_HEADINGS = ("Methods of Manufacturing",)
 MAX_PASSAGE = 3000  # characters; long CAMEO profiles are cut, and only the kept text can be cited
 
 _LT = "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)"
@@ -56,7 +59,7 @@ LIBRETEXTS = {
 }
 
 # Limits per field, and which screen applies.
-REACTION_FIELDS = {"summary": 2, "bondingType": 1, "bondingWhy": 2, "trigger": 1, "hazard": 2, "whyNot": 2}
+REACTION_FIELDS = {"summary": 1, "bondingType": 1, "bondingWhy": 2, "trigger": 1, "hazard": 2, "whyNot": 2}
 SUBSTANCE_FIELDS = {"standardState": 1, "appearance": 1, "uses": 3}
 VALUE_WORDS = {"bondingType": ("ionic", "covalent"), "standardState": ("solid", "liquid", "gas")}
 # Hazard notes and triggers may say a thing can explode or is poisonous (that
@@ -89,12 +92,16 @@ def page_text(url: str, key: str) -> tuple[str, str]:
     metadata before the lesson and the licence notes after it."""
     body, retrieved = fetch(url, key)
     page = body.decode("utf-8", errors="replace")
-    page = re.sub(r"<(script|style|nav|header|footer)[^>]*>.*?</\1>", " ", page, flags=re.S)
+    # Every LibreTexts page holds its lesson in one content container.
+    start = page.find('class="mt-content-container"')
+    if start < 0:
+        raise ValueError(f"no lesson content found on {url}")
+    page = re.sub(r"<(script|style|nav|header|footer)[^>]*>.*?</\1>", " ", page[start:], flags=re.S)
     text = normalize(html.unescape(re.sub(r"<[^>]+>", " ", page)))
-    start = max(text.find("Learning Objective"), 0)
-    ends = [i for i in (text.find("This page titled", start), text.find("Contributions & Attributions", start),
-                        text.find("Contributors and Attributions", start)) if i > 0]
-    return text[start:min(ends) if ends else len(text)], retrieved
+    text = re.sub(r'^class="mt-content-container"[^>]*>\s*', "", text)
+    ends = [i for i in (text.find("This page titled"), text.find("Contributions & Attributions"),
+                        text.find("Contributors and Attributions")) if i > 0]
+    return text[:min(ends) if ends else len(text)], retrieved
 
 
 def pubchem_passages(key: str, cid: int, headings: tuple[str, ...]) -> list[dict]:
@@ -157,14 +164,24 @@ def build_sources(args: list[str]) -> None:
         keys = ([key_of[s["substance"]] for s in r["reactants"] + r["products"]] if r["kind"] == "reaction"
                 else next(d["noReaction"] for d in defs["reactions"] if d["id"] == rid))
         keys = list(dict.fromkeys(keys))
+        products = {key_of[s["substance"]] for s in r.get("products", [])}
         ids = list(LIBRETEXTS)
+        # Pages chosen for this reaction (definitions.json), which describe
+        # the reaction itself rather than one substance.
+        for n, url in enumerate(next(d for d in defs["reactions"] if d["id"] == rid).get("pages", [])):
+            pid = f"lt/{rid}/{n}"
+            text, retrieved = page_text(url, f"libretexts/rx-{rid}-{n}.html")
+            passages[pid] = {"id": pid, "contributor": "LibreTexts Chemistry", "url": url, "retrieved": retrieved, "text": text}
+            ids.append(pid)
         for k in keys:
-            for p in pubchem_passages(k, int(subs[k]["id"].split("-")[-1]), REACTION_HEADINGS):
+            headings = REACTION_HEADINGS + (PRODUCT_HEADINGS if k in products else ())
+            for p in pubchem_passages(k, int(subs[k]["id"].split("-")[-1]), headings):
                 passages[p["id"]] = p
                 ids.append(p["id"])
         energy = r.get("energy", {})
         tasks["reactions"].append({
             "id": rid, "title": r["title"], "kind": r["kind"], "equation": r.get("equation"),
+            "summary": r["summary"][0]["value"],
             "substances": [{"key": k, "name": subs[k]["name"]["value"], "formula": subs[k]["formula"]["value"]} for k in keys],
             "energy": energy["direction"]["value"] if "direction" in energy else "not available",
             "passages": list(dict.fromkeys(ids)),
@@ -241,7 +258,7 @@ def draft(run: Path) -> None:
 
     jobs = []
     for t in tasks["reactions"]:
-        task = {k: t[k] for k in ("id", "title", "kind", "equation", "substances", "energy")}
+        task = {k: t[k] for k in ("id", "title", "kind", "equation", "summary", "substances", "energy")}
         task["draft"] = "one reaction" if t["kind"] == "reaction" else "one no-reaction pair: fill whyNot only"
         jobs.append(("reaction", t["id"], "TASK:\n" + json.dumps(task, ensure_ascii=False) + "\n\nSOURCES:\n" + sources_json(t["passages"])))
     subs = tasks["substances"]
@@ -409,7 +426,8 @@ def evaluate(run: Path) -> None:
     facts = {"reactions": {}, "substances": {}}
     for t in tasks["reactions"]:
         e, rx = f"reaction:{t['id']}", {}
-        rx["summary"] = [fact(e, f"/summary/{n}", r["claim"]["text"], r) for n, r in enumerate(passing(t["id"], "summary"))]
+        # /summary/0 is written by code (pipeline.compounds); agent statements follow it.
+        rx["summary"] = [fact(e, f"/summary/{n}", r["claim"]["text"], r) for n, r in enumerate(passing(t["id"], "summary"), start=1)]
         if t["kind"] == "no-reaction":
             rx["whyNot"] = [fact(e, f"/whyNot/{n}", r["claim"]["text"], r) for n, r in enumerate(passing(t["id"], "whyNot"))]
         else:
@@ -470,6 +488,7 @@ def write_report(run: Path, tasks: dict, results: dict, checked_at: str) -> None
         lines += [f"## {t['title']}", ""]
         if t["equation"]:
             lines += [f"`{t['equation']}` · energy: {t['energy']}", ""]
+        lines += [f"- 🔧 **summary (written by code):** {t['summary']}"]
         lines += rows(t["id"], REACTION_FIELDS) + [""]
     lines += ["## Substances", ""]
     for s in tasks["substances"]:

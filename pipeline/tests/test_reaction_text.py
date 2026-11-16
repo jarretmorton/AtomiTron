@@ -19,6 +19,7 @@ PASSAGES = [
 ]
 TASKS = {
     "reactions": [{"id": "test-salt", "title": "Test", "kind": "reaction", "equation": "2 Na(s) + Cl2(g) -> 2 NaCl(s)",
+                   "summary": "Sodium and chlorine combine to make sodium chloride.",
                    "substances": [], "energy": "exothermic", "passages": ["lt/ionic-bonds", "Na/Reactivity Profile/0"]}],
     "substances": [{"key": "NaCl", "id": "compound:cid-3", "name": "Sodium Chloride", "formula": "NaCl",
                     "fields": ["standardState", "appearance", "uses"], "passages": ["NaCl/Physical Description/0"]}],
@@ -90,6 +91,7 @@ class ReactionText(unittest.TestCase):
         self.assertTrue(all("value" not in c or c["id"].endswith(("bondingType.0", "standardState.0")) for c in claims))
 
         rx = facts["reactions"]["reaction:test-salt"]
+        self.assertEqual(rx["summary"][0]["verification"]["recordId"], "test-salt.summary.1")  # after the code one
         self.assertEqual(rx["bonding"]["type"]["value"], "ionic")
         self.assertEqual(rx["bonding"]["type"]["verification"]["recordId"], "test-salt.bonding.type")
         self.assertEqual([f["value"] for f in rx["hazard"]["why"]], ["Sodium burns brightly in chlorine."])

@@ -106,7 +106,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          RUN="verification/agent-runs/$(date -u +%F)-api-reactions-pilot"
+          RUN="verification/agent-runs/$(date -u +%F)-api-reactions-pilot-${{ github.run_id }}"
           echo "RUN=$RUN" >> "$GITHUB_ENV"
           python -m pipeline.compounds
           python -m pipeline.reaction_text sources pilot

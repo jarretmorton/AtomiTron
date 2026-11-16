@@ -10,11 +10,14 @@ will fail, so write only what the passage says.
 
 - `{task}`: what to draft (one reaction, or a list of substances), with
   each substance's name and formula. For a reaction it gives the balanced
-  equation and whether energy is released or taken in. Those are already
-  checked by code: don't restate numbers from them.
+  equation, whether energy is released or taken in, and the first summary
+  sentence, which code has already written from the equation. Those are
+  checked by code: don't restate them or their numbers.
 - `{sources}`: a JSON array of passages, each with an `id`, its
   `contributor` and `text`. Use these passages only: not your own knowledge,
-  and not the web.
+  and not the web. Passages with ids like `lt/<reaction id>/0` are textbook
+  pages chosen because they describe this reaction itself; look there
+  first.
 
 ## Every statement
 
@@ -34,9 +37,10 @@ will fail, so write only what the passage says.
 
 ## For a reaction
 
-- `summary`: one or two statements on what happens and what forms. For
-  example, that the two substances combine to make a new one.
-- `bondingType`: at most one statement naming the kind of bond in the main
+- `summary`: at most one statement on what you would notice as it
+  happens, such as a bright flame, heat or a color change. Don't repeat the
+  summary sentence code already wrote.
+- `bondingType`: at most one statement naming the kind of bond in the first
   product, as `value` "ionic" or "covalent". The sentence and the excerpt
   must both contain that word.
 - `bondingWhy`: one or two statements on why that kind of bond forms, such
@@ -47,8 +51,11 @@ will fail, so write only what the passage says.
 - `hazard`: up to two statements on why the reaction or its substances are
   dangerous, at textbook level: what can happen (it can catch fire, explode,
   burn skin, or give off a poisonous gas). **Never** how to make it happen,
-  amounts, concentrations, equipment, conditions or steps. Leave it empty
-  if nothing in the passages describes a danger.
+  amounts, concentrations, equipment, conditions or steps. Describe a
+  dangerous combination as a noun ("a mixture of hydrogen and oxygen can
+  explode"), never with an action verb such as mix, add or pour: code
+  rejects those words here. Leave it empty if nothing in the passages
+  describes a danger.
 - `whyNot`: for a "no reaction" pair only, one or two statements on why
   nothing happens, such as a substance being unreactive. Leave the other
   lists empty for a no-reaction pair.
