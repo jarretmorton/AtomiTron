@@ -22,7 +22,9 @@ will fail, so write only what the passage says.
 ## Every statement
 
 - **One plain sentence,** at most 25 words, that a curious ten-year-old can
-  follow. Prefer everyday words and explain a technical word the first time.
+  follow. Prefer everyday words. Explain a technical word only with what
+  the passage itself says about it; if the passage doesn't explain it, use
+  the word plainly. A definition you add from your own knowledge will fail.
 - **Supported by one passage** that you name by its `id`. Everything the
   sentence says must be in that passage. Rewording is fine; adding detail,
   causes, comparisons or certainty is not.
@@ -65,7 +67,8 @@ will fail, so write only what the passage says.
 - `standardState`: at most one statement giving whether the substance is a
   solid, liquid or gas at room temperature, as `value` "solid", "liquid" or
   "gas". The sentence and the excerpt must both contain that word. Only when
-  the passage plainly says so; leave it empty otherwise.
+  the passage plainly says so; leave it empty otherwise. Say only the state
+  here, nothing about color or looks: that belongs in `appearance`.
 - `appearance`: at most one statement on what it looks like.
 - `uses`: up to three statements on what it is used for. Prefer uses a
   young learner would recognize. Not medical doses, and not uses as a

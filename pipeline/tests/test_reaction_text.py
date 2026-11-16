@@ -104,6 +104,13 @@ class ReactionText(unittest.TestCase):
         self.assertIn("❌ **uses:**", report)
         self.assertIn("⛔ **trigger:**", report)
 
+    def test_value_words(self):
+        self.assertTrue(R.has_word("covalent", "a carbon atom covalently double bonded to two oxygen atoms"))
+        self.assertTrue(R.has_word("ionic", "Sodium chloride is an ionic compound."))
+        self.assertFalse(R.has_word("ionic", "an ionization energy"))
+        self.assertFalse(R.has_word("gas", "gaseous"))  # states need the word itself
+        self.assertFalse(R.has_word("solid", "solidly"))
+
     def test_hazard_screen_allows_danger_words_but_not_how(self):
         self.assertIsNone(R.screen("hazard", "It can explode and give off a poisonous gas."))
         self.assertIsNotNone(R.screen("hazard", "Mix it with water to see it explode."))

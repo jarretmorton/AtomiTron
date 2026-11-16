@@ -309,7 +309,9 @@ def screen(field: str, text: str) -> str | None:
 
 
 def has_word(word: str, text: str) -> bool:
-    return re.search(rf"\b{word}\b", normalize(text).lower()) is not None
+    """The word itself, or its adverb for a bond ("covalently bonded")."""
+    suffix = "(ly)?" if word in VALUE_WORDS["bondingType"] else ""
+    return re.search(rf"\b{word}{suffix}\b", normalize(text).lower()) is not None
 
 
 def build_claims(run: Path) -> None:
