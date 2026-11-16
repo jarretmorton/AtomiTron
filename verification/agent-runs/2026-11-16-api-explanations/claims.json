@@ -1,0 +1,22 @@
+[
+  {
+    "id": "concept.exothermic",
+    "text": "Reactions that release energy are called exothermic.",
+    "passage": "concept/energy"
+  },
+  {
+    "id": "concept.endothermic",
+    "text": "Reactions that absorb energy are called endothermic.",
+    "passage": "concept/energy"
+  },
+  {
+    "id": "concept.enthalpySign",
+    "text": "A negative enthalpy change means a reaction is exothermic, and a positive one means it is endothermic.",
+    "passage": "concept/enthalpy"
+  },
+  {
+    "id": "concept.formationZero",
+    "text": "By definition, an element in its most stable form has a standard enthalpy of formation of zero.",
+    "passage": "concept/enthalpy"
+  }
+]

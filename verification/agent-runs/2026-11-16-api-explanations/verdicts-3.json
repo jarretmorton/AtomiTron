@@ -1,0 +1,20 @@
+{
+  "claims": {
+    "concept.exothermic": {
+      "verdict": "supported",
+      "excerpt": "Reactions that release energy are exothermic."
+    },
+    "concept.endothermic": {
+      "verdict": "supported",
+      "excerpt": "Reactions that absorb energy are endothermic."
+    },
+    "concept.enthalpySign": {
+      "verdict": "supported",
+      "excerpt": "negative value of an enthalpy change, Δ H < 0, indicates an exothermic reaction; a positive value, Δ H > 0, indicates an endothermic reaction"
+    },
+    "concept.formationZero": {
+      "verdict": "supported",
+      "excerpt": "By definition, the standard enthalpy of formation of an element in its most stable form is equal to zero under standard conditions"
+    }
+  }
+}

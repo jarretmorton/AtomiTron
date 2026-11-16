@@ -1,5 +1,6 @@
-// Route table. Combine and Journal are placeholders until phases 3 and 4.
+// Route table. Journal is a placeholder until phase 4.
 
+import { combineView } from './views/combine';
 import { elementView } from './views/element';
 import { tableView } from './views/table';
 
@@ -22,7 +23,7 @@ function placeholder(title: string, body: string, phase: number): () => HTMLElem
 export const views = {
   table: () => tableView(),
   element: (params: string[]) => elementView(params[0]),
-  combine: placeholder('Combine', 'Pick two or more elements and find out whether they react, and why.', 3),
+  combine: (params: string[]) => combineView(params),
   journal: placeholder('Journal', 'Every compound you discover and every hypothesis you write is collected here.', 4),
 } satisfies Record<string, (params: string[]) => HTMLElement>;
 

@@ -71,7 +71,27 @@ On branch `claude/phase-3-reactions`. The plan and its decisions are in
   oxygen. Assembled from both runs: **all 57 compounds and 49 reactions**
   are verified and pass the gate, in `data/verified/`.
   Pilots: $2.00 and $2.11. **Total API spend so far: about $67.**
-- **Not built yet:** the Combine screens.
+- **Combine screens (2026-11-16, branch `claude/phase-3-combine`):**
+  - **Picker** (`#/combine`): the elements in the reaction list, laid out as
+    in the periodic table (the others dimmed), plus the compounds, with
+    hints for what pairs with a selection.
+  - **Result** (`#/combine/Na+Cl`), with a hazard box first when there's a
+    hazard note, then five collapsible layers:
+    1. What happens
+    2. The bond, with each element's shells
+    3. Energy, with an explanation of exothermic or endothermic
+    4. The new substance: state (with how it was worked out), melting
+       point, appearance, uses and GHS statements
+    5. The real chemistry: the equation, the energy and its working
+  - **Bond diagrams:** an animated electron diagram is drawn only where it
+    can be derived consistently from verified data: 7 reactions (3 salts,
+    4 hydrogen compounds). The others say the bond hasn't been checked yet,
+    or show no diagram.
+  - **Honest misses:** a combination with no entry says so, and never claims
+    nothing happens.
+  - **Explanations:** four new ones (exothermic, endothermic, the sign
+    rule, zero for elements), verified 3 of 3 (run 43790122237, a few
+    cents).
 - **Arsenic's melting point** still needs its fix, to be confirmed when the
   qualifier rule is built into the element pipeline.
 
