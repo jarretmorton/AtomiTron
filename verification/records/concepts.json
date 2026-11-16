@@ -25,6 +25,50 @@
       "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
     },
     {
+      "id": "concept.balanced",
+      "subject": {
+        "entity": "concept:balanced",
+        "field": "/text"
+      },
+      "method": "agent",
+      "claimedValue": "A balanced chemical equation has the same number and type of each atom on both sides.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/07%3A_Chemical_Reactions/7.04%3A_How_to_Write_Balanced_Chemical_Equations",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "Balanced chemical equations have the same number and type of each atom on both sides of the equation.",
+      "evidence": "Balanced chemical equations have the same number and type of each atom on both sides of the equation.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T06:23:02Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 2bf5bea",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-explanations-43816312089"
+    },
+    {
+      "id": "concept.bondByDifference",
+      "subject": {
+        "entity": "concept:bondByDifference",
+        "field": "/text"
+      },
+      "method": "agent",
+      "claimedValue": "When the electronegativity difference between two atoms is small, the electrons are shared and the bond is covalent; when it is large, one atom takes the electrons and the bond is ionic.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/10%3A_Chemical_Bonding/10.08%3A_Electronegativity_and_Polarity_-_Why_Oil_and_Water_Do_not_Mix",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "If the difference between the electronegativities is large, the more electronegative atom will take the bonding electrons completely away from the other atom",
+      "evidence": "If the difference between the electronegativities is large, the more electronegative atom will take the bonding electrons completely away from the other atom",
+      "result": "pass",
+      "checkedAt": "2026-11-16T06:23:02Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 2bf5bea",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-explanations-43816312089"
+    },
+    {
       "id": "concept.configuration",
       "subject": {
         "entity": "concept:configuration",
@@ -45,6 +89,28 @@
       },
       "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 7286357",
       "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-15-api-explanations"
+    },
+    {
+      "id": "concept.electronegativity",
+      "subject": {
+        "entity": "concept:electronegativity",
+        "field": "/text"
+      },
+      "method": "agent",
+      "claimedValue": "Electronegativity is the ability of an atom in a molecule to attract shared electrons.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/10%3A_Chemical_Bonding/10.08%3A_Electronegativity_and_Polarity_-_Why_Oil_and_Water_Do_not_Mix",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "The ability of an atom in a molecule to attract shared electrons is called electronegativity",
+      "evidence": "The ability of an atom in a molecule to attract shared electrons is called electronegativity",
+      "result": "pass",
+      "checkedAt": "2026-11-16T06:23:02Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 2bf5bea",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-explanations-43816312089"
     },
     {
       "id": "concept.electrons",
@@ -199,6 +265,28 @@
       },
       "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 6aa49ef",
       "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-13-api-pilot"
+    },
+    {
+      "id": "concept.saltLattice",
+      "subject": {
+        "entity": "concept:saltLattice",
+        "field": "/text"
+      },
+      "method": "agent",
+      "claimedValue": "In a sodium chloride crystal, six chloride ions surround each sodium ion, and six sodium ions surround each chloride ion.",
+      "unit": null,
+      "sourceUrl": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(CK-12)/08%3A_Ionic_and_Metallic_Bonding/8.08%3A_Coordination_Number",
+      "upstream": "LibreTexts Chemistry",
+      "retrievedValue": "Likewise, six sodium ions immediately surround each chloride ion, making the coordination number of chloride also equal to 6.",
+      "evidence": "Likewise, six sodium ions immediately surround each chloride ion, making the coordination number of chloride also equal to 6.",
+      "result": "pass",
+      "checkedAt": "2026-11-16T06:23:02Z",
+      "consistency": {
+        "runs": 3,
+        "agreeing": 3
+      },
+      "verifier": "Claude API: claude-opus-5-5 (effort high), 3 independent verifier calls per claim group; prompts pipeline/prompts/ at 2bf5bea",
+      "notes": "prompts: pipeline/prompts/; audit trail: verification/agent-runs/2026-11-16-api-explanations-43816312089"
     },
     {
       "id": "concept.shells",

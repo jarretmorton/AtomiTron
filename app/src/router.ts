@@ -5,7 +5,7 @@ import { views, type Route } from './views';
 
 const DEFAULT: Route = 'table';
 /** Which tab is highlighted for each route. */
-const TAB: Record<Route, string> = { table: 'table', element: 'table', combine: 'combine', journal: 'journal' };
+const TAB: Record<Route, string> = { table: 'table', element: 'table', combine: 'combine', journal: 'journal', preview: 'combine' };
 
 function parse(hash: string): { route: Route; params: string[] } {
   const [name, ...params] = hash.replace(/^#\/?/, '').split('/').map(decodeURIComponent);

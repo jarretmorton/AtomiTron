@@ -1,0 +1,20 @@
+{
+  "claims": {
+    "concept.electronegativity": {
+      "verdict": "supported",
+      "excerpt": "The ability of an atom in a molecule to attract shared electrons is called electronegativity"
+    },
+    "concept.bondByDifference": {
+      "verdict": "supported",
+      "excerpt": "the more electronegative atom will take the bonding electrons completely away from the other atom (electron transfer will occur), and the bond will be ionic"
+    },
+    "concept.saltLattice": {
+      "verdict": "supported",
+      "excerpt": "six chloride ions immediately surrounding a single sodium ion. The coordination number of sodium is 6. Likewise, six sodium ions immediately surround each chloride"
+    },
+    "concept.balanced": {
+      "verdict": "supported",
+      "excerpt": "Balanced chemical equations have the same number and type of each atom on both sides of the equation."
+    }
+  }
+}

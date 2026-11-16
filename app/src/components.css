@@ -852,3 +852,247 @@ button.tile[aria-pressed="true"] {
     opacity: 0.25;
   }
 }
+
+/* ---- Bond visuals preview ------------------------------------------------------ */
+
+/* Element colors (Okabe–Ito, color-blind safe). Every ball also shows its symbol. */
+:root {
+  --el-h: #e6e6e6;
+  --el-c: #9a9a9a;
+  --el-n: #56b4e9;
+  --el-o: #e69f00;
+  --el-na: #cc79a7;
+  --el-cl: #009e73;
+}
+
+.preview-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.model3d {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1;
+  margin: 8px auto;
+  touch-action: none;
+}
+
+.lewis-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.lewis-fig {
+  margin: 0;
+  text-align: center;
+}
+
+.lewis {
+  width: 180px;
+  height: 140px;
+}
+
+.lewis-symbol {
+  fill: var(--ink);
+  font-size: 22px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.photo {
+  margin: 8px 0;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.photo figcaption {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.ba-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.ba-card {
+  flex: 1 1 180px;
+  padding: 10px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.ba-card h3 {
+  margin: 0 0 6px;
+}
+
+.ba-plus,
+.ba-arrow {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.ba-hazard {
+  color: var(--non-edge);
+  font-weight: 600;
+}
+
+.ba-safe {
+  color: var(--muted);
+}
+
+.count-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.count-side {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.count-unit {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px dashed var(--rule);
+  border-radius: 999px;
+}
+
+.count-ball {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  color: #111;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.el-h { background: var(--el-h); }
+.el-c { background: var(--el-c); }
+.el-n { background: var(--el-n); }
+.el-o { background: var(--el-o); }
+.el-na { background: var(--el-na); }
+.el-cl { background: var(--el-cl); }
+
+.count-table {
+  border-collapse: collapse;
+  margin: 6px 0;
+}
+
+.count-table th,
+.count-table td {
+  padding: 4px 14px;
+  border-bottom: 1px solid var(--rule);
+  text-align: center;
+}
+
+.hill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hill-fig {
+  flex: 1 1 240px;
+  margin: 0;
+}
+
+.hill {
+  width: 100%;
+  max-width: 320px;
+}
+
+.hill-level {
+  stroke: var(--ink);
+  stroke-width: 4;
+}
+
+.hill-arrow {
+  stroke: var(--link);
+  stroke-width: 3;
+}
+
+.hill-head {
+  fill: var(--link);
+}
+
+.hill-label,
+.hill-value {
+  fill: var(--ink);
+  font-size: 12px;
+  text-anchor: middle;
+}
+
+.hill-value {
+  text-anchor: start;
+  font-weight: 700;
+}
+
+.hill-fig figcaption {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.tug {
+  margin: 14px 0 6px;
+}
+
+.tug-title {
+  margin: 0 0 22px;
+  font-weight: 700;
+}
+
+.tug-track {
+  position: relative;
+  height: 8px;
+  margin: 0 20px 24px;
+  border-radius: 4px;
+  background: var(--rule);
+}
+
+.tug-span {
+  position: absolute;
+  top: 0;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--link);
+}
+
+.tug-mark {
+  position: absolute;
+  top: -15px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin-left: -19px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  color: #111;
+  font-weight: 700;
+  z-index: 1;
+}

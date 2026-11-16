@@ -1,0 +1,22 @@
+[
+  {
+    "id": "concept.electronegativity",
+    "text": "Electronegativity is the ability of an atom in a molecule to attract shared electrons.",
+    "passage": "concept/polarity"
+  },
+  {
+    "id": "concept.bondByDifference",
+    "text": "When the electronegativity difference between two atoms is small, the electrons are shared and the bond is covalent; when it is large, one atom takes the electrons and the bond is ionic.",
+    "passage": "concept/polarity"
+  },
+  {
+    "id": "concept.saltLattice",
+    "text": "In a sodium chloride crystal, six chloride ions surround each sodium ion, and six sodium ions surround each chloride ion.",
+    "passage": "concept/coordination"
+  },
+  {
+    "id": "concept.balanced",
+    "text": "A balanced chemical equation has the same number and type of each atom on both sides.",
+    "passage": "concept/balance"
+  }
+]

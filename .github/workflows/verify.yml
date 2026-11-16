@@ -68,7 +68,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          RUN="verification/agent-runs/$(date -u +%F)-api-pilot"
+          RUN="verification/agent-runs/$(date -u +%F)-api-pilot-${{ github.run_id }}"
           echo "RUN=$RUN" >> "$GITHUB_ENV"
           python -m pipeline.agents_api reverify "$RUN" verification/agent-runs/2026-11-12-elements-text-pilot
           python -m pipeline.text_facts evaluate "$RUN"
@@ -81,7 +81,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ELEMENTS: ${{ inputs.elements }}
         run: |
-          RUN="verification/agent-runs/$(date -u +%F)-api-elements"
+          RUN="verification/agent-runs/$(date -u +%F)-api-elements-${{ github.run_id }}"
           echo "RUN=$RUN" >> "$GITHUB_ENV"
           python -m pipeline.agents_api draft "$RUN" $ELEMENTS
           python -m pipeline.text_facts claims "$RUN"
@@ -97,7 +97,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          RUN="verification/agent-runs/$(date -u +%F)-api-explanations"
+          RUN="verification/agent-runs/$(date -u +%F)-api-explanations-${{ github.run_id }}"
           echo "RUN=$RUN" >> "$GITHUB_ENV"
           python -m pipeline.text_facts concept-claims "$RUN"
           python -m pipeline.agents_api verify "$RUN"
