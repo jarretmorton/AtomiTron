@@ -138,7 +138,10 @@ function checkCompound(c: Compound, at: string, errors: string[]): void {
     const symbol = c.element?.slice('element:'.length);
     if (sd.rule !== 'state-at-room-temperature' || !symbol) {
       errors.push(`${at}: a derived state must use state-at-room-temperature, for an element`);
-    } else if (!isDeepStrictEqual(sd.inputs, [`${symbol}.meltingPoint`, `${symbol}.boilingPoint`])) {
+    } else if (
+      !isDeepStrictEqual(sd.inputs, [`${symbol}.meltingPoint`, `${symbol}.boilingPoint`]) &&
+      !isDeepStrictEqual(sd.inputs, [`${symbol}.meltingPoint`])
+    ) {
       errors.push(`${at}: the state must be derived from ${symbol}'s own melting and boiling points`);
     }
   }

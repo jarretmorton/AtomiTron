@@ -123,12 +123,15 @@ def reaction_enthalpy(values: list, weights: list[int]):
 ROOM_TEMPERATURE_C = 25
 
 
-def state_at_room_temperature(melting_c: float, boiling_c: float) -> str:
-    """Solid, liquid or gas at 25 °C, from the melting and boiling points in °C."""
-    if melting_c >= boiling_c:
+def state_at_room_temperature(melting_c: float, boiling_c: float | None = None) -> str:
+    """Solid, liquid or gas at 25 °C, from the melting and boiling points in
+    °C. A melting point alone is enough for a solid."""
+    if boiling_c is not None and melting_c >= boiling_c:
         raise ValueError("melting point must be below boiling point")
     if melting_c > ROOM_TEMPERATURE_C:
         return "solid"
+    if boiling_c is None:
+        raise ValueError("below room temperature, the state also needs the boiling point")
     if boiling_c < ROOM_TEMPERATURE_C:
         return "gas"
     if melting_c < ROOM_TEMPERATURE_C < boiling_c:

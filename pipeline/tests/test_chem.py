@@ -65,6 +65,9 @@ class Enthalpy(unittest.TestCase):
         for mp, bp in ((25, 100), (100, 50)):
             with self.assertRaises(ValueError):
                 state_at_room_temperature(mp, bp)
+        self.assertEqual(state_at_room_temperature(660.32), "solid")
+        with self.assertRaises(ValueError):
+            state_at_room_temperature(-7.2)
 
     def test_direction(self):
         self.assertEqual(energy_direction(-822.24), "exothermic")

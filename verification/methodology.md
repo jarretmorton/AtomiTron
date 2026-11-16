@@ -395,9 +395,10 @@ the app.
 
 ## 14. Compounds and reactions
 
-> **Draft for review (phase 3, 2026-11-15).** The schema and the build checks
-> below exist. The pipeline that fills them in doesn't yet, so no compound or
-> reaction data has been verified.
+> **In progress (phase 3).** The schema, the build checks and the pipeline
+> (`pipeline/compounds.py` for numbers and hazard statements,
+> `pipeline/reaction_text.py` for text) exist. Nothing is published yet: the
+> text step is in its pilot (2026-11-16).
 
 ### Substances
 
@@ -410,10 +411,10 @@ never by name or formula, because those return the wrong entry too often
 | Field | Source | Method |
 |---|---|---|
 | Name, formula | PubChem | extract. The app writes formulas the usual way (NaCl); the source's spelling (ClNa) is kept beside it, and the build checks both hold the same atoms |
-| State at 25 °C | PubChem | to be settled with the pipeline: derived from verified melting and boiling points where both exist, otherwise agent-checked from PubChem's description |
+| State at 25 °C | element pages; PubChem | for an element: derived from its verified melting and boiling points (rule `state-at-room-temperature`, below). Otherwise agent-checked: the sentence and its excerpt must both say "solid", "liquid" or "gas" (code check) |
 | Formation enthalpy, per phase | NIST WebBook | extract, by exact ID (rules below) |
 | Melting and boiling points, appearance | PubChem | extract or agent, with qualifiers (below) |
-| Uses | PubChem | agent, same procedure and safety screen as element uses |
+| Uses | PubChem | agent, same procedure and safety screen as element uses. Only for compounds: an element's uses are on its own page |
 | Hazard statements | PubChem GHS classification | extract (rule below) |
 
 ### Formation enthalpies
@@ -439,8 +440,18 @@ never by name or formula, because those return the wrong entry too often
 - **Elements in their standard state** have a formation enthalpy of zero by
   definition. That is a derived fact (rule
   `zero-for-element-in-standard-state`) resting on the substance's verified
-  standard state, and it cites the LibreTexts page that states the
-  definition.
+  standard state. It cites OpenStax *Chemistry 2e* section 5.3, "Enthalpy",
+  on LibreTexts, which states the definition, and which is also the
+  citation for the two rules below.
+- **An element's state at 25 °C** is derived (rule
+  `state-at-room-temperature`) from its verified melting and boiling points:
+  solid if it melts above 25 °C, gas if it boils below, liquid in between.
+  A melting point above 25 °C settles it alone, so an element whose boiling
+  point was left out (aluminum, gold, lithium) is still a solid by code.
+  The build checks the inputs are that element's own points. Where the
+  melting point is missing (carbon, which sublimes), the state is
+  agent-checked.
+  The zero is only given for the element in that state.
 
 ### Reaction enthalpy
 
@@ -481,15 +492,37 @@ its qualifier, and it is only cross-checked against values with the same
 qualifier. This replaces the earlier rule that left these values out, for
 elements as well as compounds.
 
+### Reaction text
+
+Each reaction gets short statements, drafted and verified like element
+history and uses (section 3): one passage per statement, a word-for-word
+excerpt of at most 25 words, three independent verifiers who must all
+agree, and code checks first. The fields are the summary of what forms, the
+bond type and why it forms, what starts the reaction, the hazard note, and
+for a no-reaction pair, why nothing happens.
+
+- **Sources:** the PubChem pages of the reaction's own substances
+  (descriptions, reactivity and hazard sections), and five LibreTexts
+  lessons: ionic bonds, covalent bonds, energy in chemical change,
+  classifying reactions, and the activity series. A statement may cite only
+  these.
+- **The bond type** must be stated: the sentence and its excerpt must both
+  contain "ionic" or "covalent" (code check). It is shown only together with
+  at least one verified statement on why that bond forms.
+- **No numbers** in any reaction text. The equation and the energy come from
+  code and show their own numbers.
+
 ### Hazards
 
-- **Statements** come from PubChem's GHS classification. A statement is shown
-  only when more than half of PubChem's notifiers report it (decided
-  2026-11-15), with that share stored beside it.
+- **Statements** come from PubChem's GHS classification, as aggregated by the
+  European Chemicals Agency (ECHA), which gives the share of notifiers for
+  each code. A statement is shown only when more than half of them report it
+  (decided 2026-11-15), with that share stored beside it.
 - **"Why this is dangerous" notes** are agent-checked text, at textbook
-  level. They go through the same safety screen as other text, and the build
-  rejects any digit in them: no quantities, concentrations, temperatures or
-  steps.
+  level. They have their own screen: they may say what can happen ("it can
+  explode", "a poisonous gas"), but code rejects any digit and any word of
+  how: amounts, concentrations, temperatures, equipment, steps, or verbs
+  such as mix, add or pour.
 - **What starts a reaction** names only the kind of trigger (heat, a spark, a
   catalyst). The build rejects any digit there too.
 - **Thermite is left out** of the reaction list (decided 2026-11-15).

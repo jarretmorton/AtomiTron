@@ -84,6 +84,8 @@ describe('reaction enthalpy', () => {
     expect(derive('state-at-room-temperature', [-101.5, -34.04])).toBe('gas'); // chlorine
     expect(() => derive('state-at-room-temperature', [25, 100])).toThrow(/exactly room temperature/);
     expect(() => derive('state-at-room-temperature', [100, 50])).toThrow(/below boiling/);
+    expect(derive('state-at-room-temperature', [660.32])).toBe('solid'); // aluminum: melting point alone
+    expect(() => derive('state-at-room-temperature', [-7.2])).toThrow(/also needs the boiling point/);
   });
 
   it('has no floating-point drift', () => {

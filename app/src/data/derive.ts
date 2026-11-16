@@ -195,9 +195,10 @@ function isRangeValue(v: FactValue | undefined): v is Range {
 /** Room temperature for the state rule, in °C (standard conditions). */
 export const ROOM_TEMPERATURE_C = 25;
 
-export function stateAtRoomTemperature(meltingC: number, boilingC: number): 'solid' | 'liquid' | 'gas' {
-  if (meltingC >= boilingC) throw new DerivationError('melting point must be below boiling point');
+export function stateAtRoomTemperature(meltingC: number, boilingC?: number): 'solid' | 'liquid' | 'gas' {
+  if (boilingC !== undefined && meltingC >= boilingC) throw new DerivationError('melting point must be below boiling point');
   if (meltingC > ROOM_TEMPERATURE_C) return 'solid';
+  if (boilingC === undefined) throw new DerivationError('below room temperature, the state also needs the boiling point');
   if (boilingC < ROOM_TEMPERATURE_C) return 'gas';
   if (meltingC < ROOM_TEMPERATURE_C && boilingC > ROOM_TEMPERATURE_C) return 'liquid';
   throw new DerivationError('a melting or boiling point at exactly room temperature has no single state');
@@ -224,10 +225,15 @@ const RULES: Record<DerivationRule, { arity: number; run: (inputs: FactValue[], 
       return reactionEnthalpy(inputs.map((v) => (isRangeValue(v) ? v : num(v, 'formation enthalpy'))), weights);
     },
   },
-  // Solid, liquid or gas at 25 °C, from the melting and boiling points in °C.
+  // Solid, liquid or gas at 25 °C, from the melting and boiling points in
+  // °C. A melting point alone is enough for a solid.
   'state-at-room-temperature': {
-    arity: 2,
-    run: ([mp, bp]) => stateAtRoomTemperature(num(mp, 'melting point'), num(bp, 'boiling point')),
+    arity: -1,
+    run: (inputs) => {
+      if (inputs.length === 1) return stateAtRoomTemperature(num(inputs[0], 'melting point'));
+      if (inputs.length === 2) return stateAtRoomTemperature(num(inputs[0], 'melting point'), num(inputs[1], 'boiling point'));
+      throw new DerivationError('state-at-room-temperature takes a melting point, and optionally a boiling point');
+    },
   },
   'energy-direction': {
     arity: 1,

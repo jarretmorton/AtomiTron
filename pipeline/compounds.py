@@ -309,20 +309,24 @@ class Builder:
         boiling points. Left for the agent step when either is missing."""
         path = next(ELEMENTS_DIR.glob(f"*-{symbol}.json"), None)
         e = json.loads(path.read_text("utf-8"))["items"][0] if path else {}
+        number = lambda f: f and isinstance(f["value"], (int, float))
         mp, bp = e.get("meltingPoint"), e.get("boilingPoint")
-        if not (mp and bp and isinstance(mp["value"], (int, float)) and isinstance(bp["value"], (int, float))):
-            self.notes.append(f"{out['key']}: no verified melting and boiling points; its state is left to the agent step")
+        if not number(mp):
+            self.notes.append(f"{out['key']}: no verified melting point; its state is left to the agent step")
             return
+        # A melting point above room temperature settles it on its own.
+        inputs = [mp] + ([bp] if number(bp) else [])
         try:
-            state = state_at_room_temperature(mp["value"], bp["value"])
+            state = state_at_room_temperature(*(f["value"] for f in inputs))
         except ValueError as err:
             self.notes.append(f"{out['key']}: {err}; its state is left to the agent step")
             return
         out["standardState"] = self.fact(
             out["id"], "/standardState", state, None, RULE_PAGES["state-at-room-temperature"], mp["source"]["retrieved"],
-            "LibreTexts Chemistry", "", uncertain=mp["uncertain"] or bp["uncertain"],
-            derivation={"rule": "state-at-room-temperature", "inputs": [mp["verification"]["recordId"], bp["verification"]["recordId"]]},
-            notes=f"melting point {mp['value']} °C and boiling point {bp['value']} °C, against room temperature (25 °C)")
+            "LibreTexts Chemistry", "", uncertain=any(f["uncertain"] for f in inputs),
+            derivation={"rule": "state-at-room-temperature", "inputs": [f["verification"]["recordId"] for f in inputs]},
+            notes=f"melting point {mp['value']} °C" + (f" and boiling point {bp['value']} °C" if len(inputs) == 2 else "")
+            + ", against room temperature (25 °C)")
 
     def hazards(self, entity: str, cid: int) -> list[dict]:
         """GHS hazard statements that more than half of ECHA's notifiers
@@ -412,7 +416,7 @@ def write_report(b: Builder, subs: dict, reactions: list[dict]) -> Path:
     lines += ["", "## States and hazard statements", "", "| Substance | State at 25 °C | Hazard statements (share of notifiers) |", "|---|---|---|"]
     for s in subs.values():
         st = s.get("standardState")
-        state = f"{st['value']} (from melting and boiling points)" if st else "agent step"
+        state = f"{st['value']} (derived from {len(st['derivation']['inputs'])} verified point(s))" if st else "agent step"
         hz = "; ".join(f"{h['code']} {h['statement']['value']} ({h['reportedBy']['value']:g}%)" for h in s["hazards"]) or "none above half"
         lines.append(f"| {s['key']} | {state} | {hz} |")
     lines += ["", "## Left out, with reasons", ""] + ([f"- `{k}`: {why}" for k, why in b.drops] or ["None."])
