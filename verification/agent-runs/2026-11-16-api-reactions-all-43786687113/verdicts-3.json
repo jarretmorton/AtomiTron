@@ -1,0 +1,1592 @@
+{
+  "claims": {
+    "sodium-chlorine.summary.0": {
+      "verdict": "supported",
+      "excerpt": "In the process, a great amount of light and heat is released."
+    },
+    "sodium-chlorine.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "A few examples of real-world ionic compounds would be NaCl (table salt) and NaF (active ingredient in toothpaste)."
+    },
+    "sodium-chlorine.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "The sodium loses an electron, and the chlorine gains that electron."
+    },
+    "sodium-chlorine.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "From basic physics, we know that opposite charges attract. This is what happens to the Na + and Cl − ions"
+    },
+    "sodium-chlorine.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "a yellow-green gas that is extremely corrosive to most metals and very poisonous to animals and plants"
+    },
+    "sodium-chlorine.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "a soft, silvery-white metal that burns vigorously in air and reacts explosively with water"
+    },
+    "potassium-chlorine.summary.0": {
+      "verdict": "supported",
+      "excerpt": "In each case, a white solid is formed, the simple chloride"
+    },
+    "potassium-chlorine.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Ionic bonds are caused by electrons transferring from one atom to another."
+    },
+    "potassium-chlorine.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "The attraction between oppositely charged ions is called an ionic bond"
+    },
+    "potassium-chlorine.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Chlorine appears as a greenish yellow gas with a pungent suffocating odor. Toxic by inhalation."
+    },
+    "potassium-chlorine.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "IGNITES WHEN EXPOSED TO WATER OR MOISTURE."
+    },
+    "magnesium-chlorine.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "The attraction of oppositely charged ions caused by electron transfer is called an ionic bond."
+    },
+    "magnesium-chlorine.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Chlorine is a highly toxic, pale yellow-green gas that has a specific strong smell similar to the smell of bleach."
+    },
+    "magnesium-chlorine.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Magnesium exposed to moist fluorine or chlorine is spontaneously flammable"
+    },
+    "calcium-chlorine.summary.0": {
+      "verdict": "not_supported",
+      "reason": "The passage says calcium burns spontaneously in chlorine at elevated temperatures but never calls the chlorine a gas, so 'chlorine gas' adds a detail the passage does not state."
+    },
+    "calcium-chlorine.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "Calcium chloride is an ionic compound of calcium and chlorine."
+    },
+    "calcium-chlorine.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Thus we need two \\(Cl\\) atoms to accept the two electrons from one \\(Ca\\) atom."
+    },
+    "calcium-chlorine.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "The attraction of oppositely charged ions caused by electron transfer is called an ionic bond."
+    },
+    "calcium-chlorine.trigger.0": {
+      "verdict": "not_supported",
+      "reason": "The passage says only finely divided calcium burns spontaneously in chlorine at elevated temperatures, so the claim drops the finely divided condition and adds a causal 'heat starts it' framing."
+    },
+    "calcium-chlorine.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Chlorine appears as a greenish yellow gas with a pungent suffocating odor. Toxic by inhalation."
+    },
+    "calcium-chlorine.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Elemental calcium causes burns on contact with skin"
+    },
+    "lithium-chlorine.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Chlorine vapors and lithium react producing a luminous flame"
+    },
+    "lithium-chlorine.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Reacts violently with strong oxidants, acids and many compounds (hydrocarbons, halogens, halons, concrete, sand and asbestos). This generates fire and explosion hazard."
+    },
+    "lithium-chlorine.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Chlorine is a highly toxic, pale yellow-green gas"
+    },
+    "sodium-bromine.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Reacts, if finely divided, with bromine with luminescence."
+    },
+    "sodium-bromine.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "It is rather reactive, however, and does not require a lot of energy to remove that electron to make the Na + ion."
+    },
+    "sodium-bromine.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Sodium, potassium, antimony and germanium ignite in bromine vapor and react explosively."
+    },
+    "sodium-bromine.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Toxic by inhalation. Accelerates the burning of combustible material. It is very corrosive to tissue and to metals."
+    },
+    "magnesium-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Magnesium burns with a typical intense white flame."
+    },
+    "magnesium-oxygen.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "and the two oppositely charged particles attract, making an ionic bond"
+    },
+    "magnesium-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Ionic bonds are caused by electrons transferring from one atom to another."
+    },
+    "magnesium-oxygen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "The attraction between oppositely charged ions is called an ionic bond"
+    },
+    "magnesium-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Magnesium reacts rapidly and dramatically when ignited, combining with oxygen from the air to produce a fine powder of magnesium oxide"
+    },
+    "magnesium-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Highly flammable when finely divided."
+    },
+    "magnesium-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "when generated by the burning or cutting of magnesium metal, the resulting magnesium oxide fume is an inhalation hazard"
+    },
+    "sodium-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Using larger amounts of sodium or burning it in oxygen gives a strong orange flame."
+    },
+    "sodium-oxygen.bondingType.0": {
+      "verdict": "not_supported",
+      "reason": "The passage describes Na2O as an ionic compound of attracting ions but never uses the name 'sodium oxide', so linking the name to the formula needs outside knowledge."
+    },
+    "sodium-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Ionic bonds are caused by electrons transferring from one atom to another."
+    },
+    "sodium-oxygen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "The attraction between oppositely charged ions is called an ionic bond"
+    },
+    "sodium-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "May be ignited by heat, sparks or flames."
+    },
+    "sodium-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Can cause second or third degree burns after brief skin contact."
+    },
+    "sodium-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Burns violently with explosions that may spatter the material."
+    },
+    "calcium-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Calcium is quite reluctant to start burning, but then bursts dramatically into flame, burning with an intense white flame with a tinge of red"
+    },
+    "calcium-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "how much heat you are supplying to the metal in order to get it to start burning"
+    },
+    "calcium-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Pyrophoric ignites in air when finely divided, then burns with crimson flame"
+    },
+    "calcium-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "A strong irritant to skin, eyes and mucous membranes."
+    },
+    "aluminum-oxygen.bondingType.0": {
+      "verdict": "not_supported",
+      "reason": "The passage gives only a general trend that metal oxides are largely ionic, never says aluminum oxide's bonds are mostly ionic, and flags Al as an exception to metal-oxide trends."
+    },
+    "aluminum-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Ionic bonds are caused by electrons transferring from one atom to another."
+    },
+    "aluminum-oxygen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "The attraction between oppositely charged ions is called an ionic bond"
+    },
+    "aluminum-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Easily ignited; burns with an intense flame."
+    },
+    "aluminum-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Materials that burn in air will burn more vigorously in oxygen."
+    },
+    "copper-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Solid pieces become covered by a black oxide when heated in air."
+    },
+    "copper-oxygen.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "Copper(II) oxide is a metal oxide that has the formula CuO. It has an ionic structure."
+    },
+    "copper-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Ionic bonds are caused by electrons transferring from one atom to another."
+    },
+    "copper-oxygen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "The attraction of oppositely charged ions caused by electron transfer is called an ionic bond."
+    },
+    "copper-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Solid pieces become covered by a black oxide when heated in air."
+    },
+    "copper-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Finely dispersed particles form explosive mixtures in air."
+    },
+    "copper-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Materials that burn in air will burn more vigorously in oxygen."
+    },
+    "iron-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "the iron oxides that form during the corrosion of iron form a layer that flakes off easily, rather than remaining tight to the surface"
+    },
+    "iron-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Fine iron powder can ignite spontaneously."
+    },
+    "iron-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Behavior in Fire: Increases intensity of any fire."
+    },
+    "zinc-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "On combustion forms zinc oxide fumes."
+    },
+    "zinc-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "May be ignited by heat, sparks or flames."
+    },
+    "zinc-oxygen.hazard.0": {
+      "verdict": "not_supported",
+      "reason": "The passage describes zinc ashes, a grayish powder, not zinc itself, so attributing the toxic fumes to burning zinc changes the subject."
+    },
+    "zinc-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Finely dispersed particles form explosive mixtures in air."
+    },
+    "hydrogen-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Once ignited it burns with a pale blue, almost invisible flame."
+    },
+    "hydrogen-oxygen.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "a water molecule contains one oxygen and two hydrogen atoms that are connected by covalent bonds"
+    },
+    "hydrogen-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Covalent bonds are formed when atoms share electrons."
+    },
+    "hydrogen-oxygen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+    },
+    "hydrogen-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Will be easily ignited by heat, sparks or flames."
+    },
+    "hydrogen-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "A mixture of hydrogen and oxygen explodes if ignited."
+    },
+    "hydrogen-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Hydrogen and Deuterium fires are difficult to detect since they burn with an invisible flame."
+    },
+    "carbon-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "The non-metal carbon of Group 14 (and its compounds) burn to form"
+    },
+    "carbon-oxygen.bondingType.0": {
+      "verdict": "not_supported",
+      "reason": "The passage never says carbon dioxide has covalent bonds or names carbon as an example of a non-metal forming covalent oxides, so the claim's conclusion and its causal link are inferred rather than stated."
+    },
+    "carbon-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Covalent bonds are formed when atoms share electrons."
+    },
+    "carbon-oxygen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+    },
+    "carbon-oxygen.trigger.0": {
+      "verdict": "not_supported",
+      "reason": "The passage lists friction, heat, sparks or flames as ignition sources, so the claim omits friction while presenting a partial list as the complete answer."
+    },
+    "carbon-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Highly flammable if powdered. Combustible. Finely dispersed particles form explosive mixtures in air."
+    },
+    "carbon-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "On combustion, forms toxic carbon monoxide if ventilation is insufficient."
+    },
+    "carbon-oxygen-monoxide.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Carbon monoxide is a colorless, nonirritating, odorless, and tasteless gas."
+    },
+    "carbon-oxygen-monoxide.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "It consists of one carbon atom covalently bonded to one oxygen atom."
+    },
+    "carbon-oxygen-monoxide.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "When electrons are shared between two atoms, they make a bond called a covalent bond ."
+    },
+    "carbon-oxygen-monoxide.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+    },
+    "carbon-oxygen-monoxide.trigger.0": {
+      "verdict": "not_supported",
+      "reason": "The passage lists friction, heat, sparks or flames as ignition sources for flammable solids in general, so the claim leaves out friction and states only part of the list as the whole answer."
+    },
+    "carbon-oxygen-monoxide.hazard.0": {
+      "verdict": "not_supported",
+      "reason": "The passage says being colorless, odorless, tasteless and non-irritating all increase its danger, so naming only no color and no smell presents part of the list as the whole reason."
+    },
+    "carbon-oxygen-monoxide.hazard.1": {
+      "verdict": "not_supported",
+      "reason": "The passage limits this to a closed environment with no or poor ventilation, and the claim drops that condition and generalizes to any room."
+    },
+    "carbon-monoxide-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Behavior in Fire: Flame has very little color."
+    },
+    "carbon-monoxide-oxygen.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "composed of a carbon atom covalently double bonded to two oxygen atoms"
+    },
+    "carbon-monoxide-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "When electrons are shared between two atoms, they make a bond called a covalent bond ."
+    },
+    "carbon-monoxide-oxygen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "A double covalent bond is a covalent bond formed by atoms that share two pairs of electrons."
+    },
+    "carbon-monoxide-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "May be ignited by heat, sparks or flames."
+    },
+    "carbon-monoxide-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Extremely flammable. Heating will cause rise in pressure with risk of bursting. Gas/air mixtures are explosive."
+    },
+    "carbon-monoxide-oxygen.hazard.1": {
+      "verdict": "not_supported",
+      "reason": "The passage gives four properties that increase the danger (colorless, odorless, tasteless and non-irritating), but the claim lists only three, so it presents a partial list as the full reason."
+    },
+    "sulfur-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Sulfur burns with a blue flame that may be difficult to see in daylight"
+    },
+    "sulfur-oxygen.bondingType.0": {
+      "verdict": "not_supported",
+      "reason": "The passage says oxygen forms covalent oxides with non-metals, but it never explicitly calls sulfur a non-metal or says sulfur dioxide has covalent bonds, so the claim's conclusion is an added inference."
+    },
+    "sulfur-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "When electrons are shared between two atoms, they make a bond called a covalent bond"
+    },
+    "sulfur-oxygen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+    },
+    "sulfur-oxygen.trigger.0": {
+      "verdict": "not_supported",
+      "reason": "The passage lists friction, heat, sparks or flames as ignition sources, and the claim omits friction while presenting its list as the complete answer."
+    },
+    "sulfur-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Sulfur burns with a blue flame that may be difficult to see in daylight, and produces toxic sulfur dioxide gas."
+    },
+    "sulfur-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Finely dispersed particles form explosive mixtures in air."
+    },
+    "nitrogen-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "The very high temperature in the vicinity of a lightning bolt causes the gases oxygen and nitrogen in the air to react to form nitric oxide."
+    },
+    "nitrogen-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Very toxic by inhalation and skin absorption."
+    },
+    "nitrogen-oxygen.hazard.1": {
+      "verdict": "not_supported",
+      "reason": "The passage says nitric oxide reacts with oxygen to form poisonous nitrogen dioxide, but it never says nitrogen dioxide is a gas, so the claim adds a detail."
+    },
+    "methane-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "The flame is also giving off light energy, probably as a light blue glow."
+    },
+    "methane-oxygen.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "This naturally occurring chemical compound is composed of a carbon atom covalently double bonded to two oxygen atoms."
+    },
+    "methane-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "When electrons are shared between two atoms, they make a bond called a covalent bond ."
+    },
+    "methane-oxygen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+    },
+    "methane-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Will be easily ignited by heat, sparks or flames."
+    },
+    "methane-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Extremely flammable. Gas/air mixtures are explosive."
+    },
+    "methane-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Behavior in Fire: Increases intensity of any fire."
+    },
+    "propane-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "A combustion reaction is a reaction in which a substance reacts with oxygen gas, releasing energy in the form of light and heat."
+    },
+    "propane-oxygen.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "This naturally occurring chemical compound is composed of a carbon atom covalently double bonded to two oxygen atoms."
+    },
+    "propane-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "When electrons are shared between two atoms, they make a bond called a covalent bond ."
+    },
+    "propane-oxygen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+    },
+    "propane-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Will be easily ignited by heat, sparks or flames."
+    },
+    "propane-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Extremely flammable. Gas/air mixtures are explosive."
+    },
+    "propane-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Increases intensity of any fire."
+    },
+    "ethane-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "A combustion reaction is a reaction in which a substance reacts with oxygen gas, releasing energy in the form of light and heat."
+    },
+    "ethane-oxygen.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "composed of a carbon atom covalently double bonded to two oxygen atoms"
+    },
+    "ethane-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Covalent bonds are formed when atoms share electrons."
+    },
+    "ethane-oxygen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+    },
+    "ethane-oxygen.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Will be easily ignited by heat, sparks or flames."
+    },
+    "ethane-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Extremely flammable. Gas/air mixtures are explosive."
+    },
+    "ethane-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Materials that burn in air will burn more vigorously in oxygen."
+    },
+    "hydrogen-chlorine.summary.0": {
+      "verdict": "supported",
+      "excerpt": "After ignition, the chlorine burns in the hydrogen with a quiet, very hot flame at greater than 2000 °C."
+    },
+    "hydrogen-chlorine.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "it can share an electron to form a single, covalent bond"
+    },
+    "hydrogen-chlorine.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "When electrons are shared between two atoms, they make a bond called a covalent bond"
+    },
+    "hydrogen-chlorine.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+    },
+    "hydrogen-chlorine.trigger.0": {
+      "verdict": "not_supported",
+      "reason": "The passage limits this to hydrogen and chlorine mixtures of 5-95%, while the claim generalizes to any mixture."
+    },
+    "hydrogen-chlorine.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "it reacts explosively with fluorine(forming HF) and, under some conditions, with chlorine(forming HCl)"
+    },
+    "hydrogen-chlorine.hazard.1": {
+      "verdict": "not_supported",
+      "reason": "The passage says chlorine is a highly toxic gas but never describes it as a starting gas in the hydrogen and chlorine reaction."
+    },
+    "nitrogen-hydrogen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "In the absence of a catalyst the reaction is so slow that virtually no reaction happens in any sensible time."
+    },
+    "nitrogen-hydrogen.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "Ammonia is an inorganic compound composed of a single nitrogen atom covalently bonded to three hydrogen atoms"
+    },
+    "nitrogen-hydrogen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Covalent bonds are formed when atoms share electrons."
+    },
+    "nitrogen-hydrogen.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+    },
+    "nitrogen-hydrogen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Extremely flammable. Many reactions may cause fire or explosion. Gas/air mixtures are explosive."
+    },
+    "nitrogen-hydrogen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "with the liquid capable of burning the skin, causing permanent eye damage, or corroding the digestive tract upon contact"
+    },
+    "hydrogen-bromine.summary.0": {
+      "verdict": "supported",
+      "excerpt": "The reaction can be conducted without catalyst by maintaining a self-sustaining flame within an enclosed burner."
+    },
+    "hydrogen-bromine.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "Use Lewis electron dot diagrams to illustrate the covalent bond formation in HBr."
+    },
+    "hydrogen-bromine.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Covalent bonds are formed when atoms share electrons."
+    },
+    "hydrogen-bromine.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "except that it has Br instead of F. The atoms are as follows: The two atoms can share their unpaired electron"
+    },
+    "hydrogen-bromine.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Under normal conditions, hydrogen is relatively inactive chemically, but when heated, it enters into many chemical reactions."
+    },
+    "hydrogen-bromine.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Reacts explosively with hydrogen, diethylzinc, dimethylformamide, ammonia"
+    },
+    "hydrogen-bromine.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Toxic by inhalation. Accelerates the burning of combustible material. It is very corrosive to tissue and to metals."
+    },
+    "carbon-hydrogen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "When electrons are shared between two atoms, they make a bond called a covalent bond ."
+    },
+    "carbon-hydrogen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Extremely flammable. Many reactions may cause fire or explosion. Gas/air mixtures are explosive."
+    },
+    "carbon-hydrogen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Extremely flammable. Gas/air mixtures are explosive."
+    },
+    "sodium-water.summary.0": {
+      "verdict": "supported",
+      "excerpt": "it melts almost at once to form a small silvery ball that moves rapidly across the surface"
+    },
+    "sodium-water.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "sodium, which has a violent reaction when it comes in contact with water"
+    },
+    "sodium-water.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Reacts violently with water releasing hydrogen gas, which will ignite and explode in air"
+    },
+    "sodium-water.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Can cause second or third degree burns after brief skin contact."
+    },
+    "potassium-water.summary.0": {
+      "verdict": "supported",
+      "excerpt": "enough heat is given off to ignite the hydrogen. This time the hydrogen flame is contaminated by potassium compounds, so the flame is lilac-colored."
+    },
+    "potassium-water.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "lithium, sodium, potassium, rubidium and cesium react vigorously or even explosively with cold water"
+    },
+    "potassium-water.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Reacts violently with water, forming flammable and explosive hydrogen gas."
+    },
+    "potassium-water.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Potassium hydroxide, [dry solid, flake, bead, or granular] appears as a white solid. Corrosive to metals and tissue."
+    },
+    "lithium-water.summary.0": {
+      "verdict": "supported",
+      "excerpt": "it floats on the surface, fizzing and giving off hydrogen gas. It gradually reacts and disappears"
+    },
+    "lithium-water.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Reacts violently with water to form flammable hydrogen gas and strong caustic solution."
+    },
+    "lithium-water.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Contact may cause severe irritation to skin, eyes, and mucous membranes."
+    },
+    "calcium-water.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Bubbles of hydrogen gas are given off, and a white precipitate (of calcium hydroxide) is formed"
+    },
+    "calcium-water.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Calcium, for example, reacts fairly vigorously and exothermically with cold water."
+    },
+    "calcium-water.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Reacts violently with water to produce hydrogen, a flammable gas [Lab. Gov. Chemist 1966]. The heat of reaction may ignite the hydrogen."
+    },
+    "calcium-water.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Can cause skin burns and blisters"
+    },
+    "iron-sulfur.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Sulfur burns with a blue flame that may be difficult to see in daylight, and produces toxic sulfur dioxide gas."
+    },
+    "iron-sulfur.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Fine iron powder can ignite spontaneously."
+    },
+    "zinc-sulfur.summary.0": {
+      "verdict": "supported",
+      "excerpt": "occur with the generation of significant amounts of light and heat. A prime example is the synthesis reaction between zinc and sulfur"
+    },
+    "zinc-sulfur.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "if energy is provided to the mixture in the form of heat, the zinc will chemically react with the sulfur"
+    },
+    "zinc-sulfur.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Reacts violently with sulfur, halogenated hydrocarbons and many other substances. This generates fire and explosion hazard."
+    },
+    "zinc-sulfur.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Sulfur burns with a blue flame that may be difficult to see in daylight, and produces toxic sulfur dioxide gas."
+    },
+    "ammonia-hydrogen-chloride.summary.0": {
+      "verdict": "supported",
+      "excerpt": "If these colorless gases are allowed to mix, a thick white smoke of solid ammonium chloride is formed."
+    },
+    "ammonia-hydrogen-chloride.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "formed by the transfer of a hydrogen ion (a proton) from the hydrogen chloride molecule to the lone pair of electrons on the ammonia molecule"
+    },
+    "ammonia-hydrogen-chloride.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "The hydrogen's electron is left behind on the chlorine to form a negative chloride ion."
+    },
+    "ammonia-hydrogen-chloride.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Ammonia gas and liquid are corrosive to skin."
+    },
+    "ammonia-hydrogen-chloride.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "hydrogen chloride is a colorless to slightly yellow, corrosive, nonflammable gas that is heavier than air and has a strong irritating odor"
+    },
+    "calcium-oxide-water.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Reacts with water to form corrosive calcium hydroxide, with evolution of much heat."
+    },
+    "calcium-oxide-water.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Can cause skin burns and blisters"
+    },
+    "calcium-oxide-carbon-dioxide.hazard.0": {
+      "verdict": "not_supported",
+      "reason": "The passage says 'mucous membranes' in general and never names the nose and mouth, so narrowing it to those adds detail the passage doesn't state."
+    },
+    "calcium-oxide-carbon-dioxide.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Heavier than air and may asphyxiate by the displacement of air."
+    },
+    "water-splitting.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Bubbles of hydrogen form at the cathode, and oxygen evolves at the anode."
+    },
+    "water-splitting.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "Because each H atom has a filled valence shell, this bond is stable, and we have made a diatomic hydrogen molecule."
+    },
+    "water-splitting.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "The two H atoms can share their electrons"
+    },
+    "water-splitting.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "Because each H atom has a filled valence shell, this bond is stable"
+    },
+    "water-splitting.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "to indicate the passage of an electric current to initiate the reaction."
+    },
+    "water-splitting.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "A mixture of hydrogen and oxygen explodes if ignited."
+    },
+    "water-splitting.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "It is easily ignited. Once ignited it burns with a pale blue, almost invisible flame."
+    },
+    "mercury-oxide-heated.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Mercury (II) oxide is a red solid. When it is heated, it decomposes into mercury metal and oxygen gas."
+    },
+    "mercury-oxide-heated.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Mercury (II) oxide, a red solid, decomposes when heated to produce mercury and oxygen gas."
+    },
+    "mercury-oxide-heated.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Fumes from fire may contain poisonous mercury vapor; oxygen may increase intensity of fire."
+    },
+    "mercury-oxide-heated.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Highly toxic by ingestion, inhalation, and skin absorption"
+    },
+    "calcium-carbonate-heated.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "Decomposes at high temperature (825 °C) to give gaseous carbon dioxide and calcium oxide (quicklime)."
+    },
+    "calcium-carbonate-heated.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Decomposes above 825 °C . This produces corrosive fumes of calcium oxide."
+    },
+    "calcium-carbonate-heated.hazard.1": {
+      "verdict": "not_supported",
+      "reason": "The passage names skin, eyes and mucous membranes, so 'skin and eyes' gives only part of the list as the full answer."
+    },
+    "ammonia-splitting.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "the three single electrons on each atom combine to form three shared pairs of electrons"
+    },
+    "ammonia-splitting.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "There is another mechanism for obtaining a complete valence shell: sharing electrons."
+    },
+    "ammonia-splitting.trigger.0": {
+      "verdict": "not_supported",
+      "reason": "The passage only mentions ammonia being heated to decomposition when describing toxic fumes; it does not present heating as the cause of ammonia breaking apart."
+    },
+    "ammonia-splitting.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "EXTREMELY FLAMMABLE. Will be easily ignited by heat, sparks or flames."
+    },
+    "ammonia-splitting.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "When ammonia is heated to decomposition, it emits toxic fumes and nitrogen oxides."
+    },
+    "chlorine-sodium-bromide.summary.0": {
+      "verdict": "supported",
+      "excerpt": "Bromine is a dark reddish-brown fuming liquid with a pungent odor."
+    },
+    "chlorine-sodium-bromide.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "Sodium chloride, also known as salt, common salt, table salt or halite, is an ionic compound"
+    },
+    "chlorine-sodium-bromide.bondingWhy.1": {
+      "verdict": "supported",
+      "excerpt": "The attraction between oppositely charged ions is called an ionic bond, and it is one of the main types of chemical bonds in chemistry."
+    },
+    "chlorine-sodium-bromide.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Chlorine appears as a greenish yellow gas with a pungent suffocating odor. Toxic by inhalation."
+    },
+    "chlorine-sodium-bromide.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "It is a volatile reddish-brown liquid that gives off suffocating vapors, is corrosive to the skin"
+    },
+    "chlorine-potassium-bromide.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Chlorine appears as a greenish yellow gas with a pungent suffocating odor. Toxic by inhalation."
+    },
+    "chlorine-potassium-bromide.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "It is a volatile reddish-brown liquid that gives off suffocating vapors, is corrosive to the skin"
+    },
+    "photosynthesis.trigger.0": {
+      "verdict": "supported",
+      "excerpt": "a green pigment called chlorophyll that converts sunlight into chemical energy"
+    },
+    "photosynthesis.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Materials that burn in air will burn more vigorously in oxygen."
+    },
+    "photosynthesis.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Finely dispersed particles form explosive mixtures in air."
+    },
+    "glucose-oxygen.summary.0": {
+      "verdict": "supported",
+      "excerpt": "it clearly does not resemble one when it occurs in a living cell because of the slow release of energy from the series of reactions"
+    },
+    "glucose-oxygen.bondingType.0": {
+      "verdict": "supported",
+      "excerpt": "This naturally occurring chemical compound is composed of a carbon atom covalently double bonded to two oxygen atoms."
+    },
+    "glucose-oxygen.bondingWhy.0": {
+      "verdict": "supported",
+      "excerpt": "Covalent bonds are formed when atoms share electrons."
+    },
+    "glucose-oxygen.hazard.0": {
+      "verdict": "supported",
+      "excerpt": "Combustible. Finely dispersed particles form explosive mixtures in air."
+    },
+    "glucose-oxygen.hazard.1": {
+      "verdict": "supported",
+      "excerpt": "Materials that burn in air will burn more vigorously in oxygen."
+    },
+    "helium-oxygen.whyNot.0": {
+      "verdict": "supported",
+      "excerpt": "Chemically inert. These substances undergo no chemical reactions under any known circumstances."
+    },
+    "helium-oxygen.whyNot.1": {
+      "verdict": "supported",
+      "excerpt": "Only helium and neon have not formed compounds at this time."
+    },
+    "neon-chlorine.whyNot.0": {
+      "verdict": "not_supported",
+      "reason": "The passage says neon has not formed compounds 'at this time' and calls the noble gases 'fairly unreactive', but it never says neon's lack of compounds is because it is 'so unreactive', so the claim adds a cause and an intensity."
+    },
+    "neon-chlorine.whyNot.1": {
+      "verdict": "supported",
+      "excerpt": "Chlorine forms halides with all elements except helium, neon, and argon."
+    },
+    "argon-sodium.whyNot.0": {
+      "verdict": "supported",
+      "excerpt": "These substances undergo no chemical reactions under any known circumstances."
+    },
+    "argon-sodium.whyNot.1": {
+      "verdict": "supported",
+      "excerpt": "This group has been referred to as the \"inert\" gases, indicating that they are chemically inert, or unreactive."
+    },
+    "gold-oxygen.whyNot.0": {
+      "verdict": "not_supported",
+      "reason": "The passage says gold, silver and platinum 'do not react with oxygen' but later says oxygen is only 'mostly unreactive with gold and platinum', so the claim's absolute wording overstates a source that contradicts itself."
+    },
+    "platinum-oxygen.whyNot.0": {
+      "verdict": "supported",
+      "excerpt": "Transition metals react with oxygen to form metal oxides. However, gold, silver, and platinum do not react with oxygen."
+    },
+    "platinum-oxygen.whyNot.1": {
+      "verdict": "supported",
+      "excerpt": "Massive platinum (lump, ingot, etc.) is generally inert."
+    },
+    "copper-water.whyNot.0": {
+      "verdict": "supported",
+      "excerpt": "\\(\\ce{Cu}\\) \\(\\ce{Hg}\\) \\(\\ce{Ag}\\) \\(\\ce{Pt}\\) \\(\\ce{Au}\\) Unreactive with water or acids."
+    },
+    "Al.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Aluminum metal is light in weight and silvery-white in appearance."
+    },
+    "Al2O3.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Aluminum oxide is a white odorless crystalline powder."
+    },
+    "Al2O3.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Aluminium oxide's most significant use is in the production of aluminium metal"
+    },
+    "Al2O3.uses.1": {
+      "verdict": "supported",
+      "excerpt": "it is also used as an abrasive due to its hardness"
+    },
+    "Al2O3.uses.2": {
+      "verdict": "supported",
+      "excerpt": "spark plugs, crucibles and laboratory wares, adsorbent for gases and water vapors, chromatographic analysis, fluxes, light bulbs, artificial gems"
+    },
+    "Ar.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Argon appears as a colorless odorless noncombustible gas."
+    },
+    "Au.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Yellow, soft metal"
+    },
+    "Br2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Bromine is a dark reddish-brown fuming liquid with a pungent odor."
+    },
+    "C.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Steel gray to black greasy feeling solid."
+    },
+    "C.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Steel gray to black greasy feeling solid."
+    },
+    "C2H6.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Ethane appears as a colorless odorless gas."
+    },
+    "C2H6.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Ethane appears as a colorless odorless gas."
+    },
+    "C2H6.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Used as a refrigerant and fuel gas"
+    },
+    "C2H6.uses.1": {
+      "verdict": "supported",
+      "excerpt": "The single most important industrial use for ethane is the production of ethylene by steam-cracking."
+    },
+    "C3H8.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Propane appears as a colorless gas with a faint petroleum-like odor."
+    },
+    "C3H8.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Propane appears as a colorless gas with a faint petroleum-like odor."
+    },
+    "C3H8.uses.0": {
+      "verdict": "supported",
+      "excerpt": "household and industrial fuel"
+    },
+    "C3H8.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Used in flame control of weeds in corn, soybeans, cotton, tobacco, strawberries"
+    },
+    "C6H12O6.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Colorless crystals or white granular powder"
+    },
+    "C6H12O6.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Used in foods and medicines"
+    },
+    "C6H12O6.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Confectionary, infant foods, medicine, brewing and wine making"
+    },
+    "C6H12O6.uses.2": {
+      "verdict": "supported",
+      "excerpt": "caramel coloring, baking and canning"
+    },
+    "CH4.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Methane is a colorless odorless gas."
+    },
+    "CH4.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Colorless, odorless gas"
+    },
+    "CH4.uses.0": {
+      "verdict": "supported",
+      "excerpt": "is often piped into homes for domestic heating and cooking purposes"
+    },
+    "CH4.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Methane may be burned to produce electricity"
+    },
+    "CH4.uses.2": {
+      "verdict": "supported",
+      "excerpt": "It is used in making other chemicals and as a constituent of the fuel, natural gas."
+    },
+    "CO.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "It is a gas at room temperature."
+    },
+    "CO.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "is a colorless, odorless, and tasteless gas"
+    },
+    "CO.uses.0": {
+      "verdict": "supported",
+      "excerpt": "It is used in organic synthesis, metallurgy, and a fuel."
+    },
+    "CO.uses.1": {
+      "verdict": "supported",
+      "excerpt": "used in small amounts in low oxygen modified atmosphere packaging systems (MAP) for fresh meat to stabilize and maintain natural meat color"
+    },
+    "CO2.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Carbon dioxide appears as a colorless odorless gas at atmospheric temperatures and pressures."
+    },
+    "CO2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Colorless, odorless gas."
+    },
+    "CO2.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Carbon dioxide is used to produce carbonated soft drinks and soda water."
+    },
+    "CO2.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Used to freeze food, to control chemical reactions, and as a fire extinguishing agent."
+    },
+    "CO2.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Life jackets often contain canisters of pressured carbon dioxide for quick inflation."
+    },
+    "Ca.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Calcium appears as a silvery, soft metal that turns grayish white on exposure to air."
+    },
+    "Ca(OH)2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "White, odorless powder."
+    },
+    "Ca(OH)2.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Used in mortar, plaster, cement"
+    },
+    "Ca(OH)2.uses.1": {
+      "verdict": "supported",
+      "excerpt": "to preserve eggs and apples during storage"
+    },
+    "Ca(OH)2.uses.2": {
+      "verdict": "supported",
+      "excerpt": "It is in many dental formulations, especially for root canal filling."
+    },
+    "CaCO3.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "White, odorless powder or colorless crystals."
+    },
+    "CaCO3.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Calcium carbonate is used in the manufacture of quicklime, Portland cement, and paints."
+    },
+    "CaCO3.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Production of adhesives, matches, pencils; crayons"
+    },
+    "CaCO3.uses.2": {
+      "verdict": "supported",
+      "excerpt": "as an antacid in gastric hyperacidity for temporary relief of indigestion and heartburn"
+    },
+    "CaCl2.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "It is a salt that is solid at room temperature"
+    },
+    "CaCl2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "ODOURLESS HYGROSCOPIC COLOURLESS OR WHITE CRYSTALS."
+    },
+    "CaCl2.uses.0": {
+      "verdict": "supported",
+      "excerpt": "ice and dust control on roads"
+    },
+    "CaCl2.uses.1": {
+      "verdict": "supported",
+      "excerpt": "a firming agent for fruits"
+    },
+    "CaO.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Calcium oxide appears as an odorless, white or gray-white solid in the form of hard lumps."
+    },
+    "CaO.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "White or gray, odorless lumps or granular powder."
+    },
+    "CaO.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Used in building materials (bricks, plaster, mortar, and stucco)"
+    },
+    "CaO.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Used in insecticides and fertilizers."
+    },
+    "CaO.uses.2": {
+      "verdict": "supported",
+      "excerpt": "water purification and softening"
+    },
+    "Cl2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "At room temperature, chlorine is a yellow-green gas that is heavier than air"
+    },
+    "Cu.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Reddish lustrous malleable odorless metallic solid."
+    },
+    "CuO.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Steel-grey to black solid"
+    },
+    "CuO.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Black to brownish-black amorphous or crystalline powder or granules"
+    },
+    "CuO.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Copper(II) oxide is used as a pigment in ceramics"
+    },
+    "CuO.uses.1": {
+      "verdict": "supported",
+      "excerpt": "in dry and wet cell batteries"
+    },
+    "CuO.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Wood preservation, feed additive, pigment, catalyst"
+    },
+    "Fe.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Pure iron is a silvery white, relatively soft metal"
+    },
+    "Fe2O3.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Reddish-brown solid."
+    },
+    "Fe2O3.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Reddish-brown solid;"
+    },
+    "Fe2O3.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Polishing agent for glass, precious metals, diamonds"
+    },
+    "Fe2O3.uses.1": {
+      "verdict": "supported",
+      "excerpt": "in magnets, magnetic tapes"
+    },
+    "Fe2O3.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Used almost exclusively to color decorative concrete; in paints and coatings"
+    },
+    "FeS.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Gray to brown solid"
+    },
+    "FeS.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Dark-brown or black metallic pieces, sticks, or granules"
+    },
+    "FeS.uses.0": {
+      "verdict": "supported",
+      "excerpt": "as paint pigment"
+    },
+    "FeS.uses.1": {
+      "verdict": "supported",
+      "excerpt": "in the ceramic industry"
+    },
+    "FeS.uses.2": {
+      "verdict": "supported",
+      "excerpt": "As laboratory source of hydrogen sulfide"
+    },
+    "H2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Hydrogen is a colorless, odorless gas."
+    },
+    "H2O.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Water is a liquid at standard ambient temperature and pressure"
+    },
+    "H2O.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "A clear, odorless, tasteless liquid"
+    },
+    "H2O.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Drinking, culinary purposes, bathing, washing, laundering"
+    },
+    "H2O.uses.1": {
+      "verdict": "supported",
+      "excerpt": "for fire protection"
+    },
+    "H2O.uses.2": {
+      "verdict": "supported",
+      "excerpt": "for fishing, swimming, boating and other recreational purposes"
+    },
+    "HBr.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Hydrogen bromide is an extremely irritating and corrosive gas."
+    },
+    "HBr.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Colorless gas with a sharp, irritating odor."
+    },
+    "HBr.uses.0": {
+      "verdict": "not_supported",
+      "reason": "The passage says the main use is producing inorganic bromides, so the claim's unqualified 'bromides' generalizes that use."
+    },
+    "HCl.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "At room temperature, hydrogen chloride is a colorless to slightly yellow, corrosive, nonflammable gas"
+    },
+    "HCl.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "colorless to slightly yellow, corrosive, nonflammable gas that is heavier than air and has a strong irritating odor"
+    },
+    "HCl.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Hydrogen chloride has many uses, including cleaning, pickling, electroplating metals, tanning leather"
+    },
+    "HCl.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Most hydrogen chloride gas is used in the production of hydrochloric acid."
+    },
+    "HCl.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Used in the manufacture of rubber, pharmaceuticals, chemicals"
+    },
+    "He.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Helium is a colorless odorless gas."
+    },
+    "Hg.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Heavy, shiny, silver-white, mobile liquid metal, at room temperature."
+    },
+    "HgO.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Mercuric oxide, [solid] appears as red or orange-red odorless, dense crystalline powder or scales"
+    },
+    "HgO.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "YELLOW, ORANGE-YELLOW OR RED HEAVY CRYSTALLINE POWDER."
+    },
+    "HgO.uses.0": {
+      "verdict": "supported",
+      "excerpt": "as a material for cathodes for mercury batteries"
+    },
+    "HgO.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Red mercuric oxide: Used in marine and porcelain paints, dry batteries"
+    },
+    "K.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Potassium is a soft silvery metal though normally grayish white due to oxidation."
+    },
+    "KBr.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Colorless or white solid"
+    },
+    "KBr.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Potassium bromide appears as odorless colorless crystals or white crystalline powder"
+    },
+    "KBr.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Used to make photographic papers and plates"
+    },
+    "KBr.uses.1": {
+      "verdict": "supported",
+      "excerpt": "in special soaps"
+    },
+    "KBr.uses.2": {
+      "verdict": "supported",
+      "excerpt": "today is only used in veterinary medicine, as an antiepileptic medication for dogs and cats."
+    },
+    "KCl.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Potassium chloride appears as white colorless cubic crystals."
+    },
+    "KCl.uses.0": {
+      "verdict": "supported",
+      "excerpt": "It has a role as a NMR chemical shift reference compound and a fertilizer."
+    },
+    "KCl.uses.1": {
+      "verdict": "supported",
+      "excerpt": "oil-well drilling mud, snow and ice melting, steel heat-treating and water softening."
+    },
+    "KCl.uses.2": {
+      "verdict": "supported",
+      "excerpt": "plant nutrient, salt substitute, lab reagent, buffer solutions, food additive."
+    },
+    "KOH.standardState.0": {
+      "verdict": "not_supported",
+      "reason": "The passage describes it as a solid or a clear aqueous solution, so stating only that it is a solid omits the other form given."
+    },
+    "KOH.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "White or slightly yellow lumps, rods, pellets"
+    },
+    "KOH.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Used to make liquid soaps"
+    },
+    "KOH.uses.1": {
+      "verdict": "supported",
+      "excerpt": "it is also used in paint, varnish removers, and drain cleaners"
+    },
+    "KOH.uses.2": {
+      "verdict": "supported",
+      "excerpt": "as an electrolyte in alkaline batteries"
+    },
+    "Li.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Lithium appears as a soft silvery metal that is normally grayish white."
+    },
+    "LiCl.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Lithium chloride appears as colorless crystals or powder."
+    },
+    "LiCl.uses.0": {
+      "verdict": "supported",
+      "excerpt": "desiccants, fireworks, fire extinguishers, deicer solutions, dehumidifiers, and photosensitive developers"
+    },
+    "LiCl.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Desiccant and humectant; air conditioning; batteries"
+    },
+    "LiCl.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Used to produce lithium metal and lithium borohydride"
+    },
+    "LiOH.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "White crystals or granular powder"
+    },
+    "LiOH.uses.0": {
+      "verdict": "supported",
+      "excerpt": "alkaline storage batteries, lithium-based greases"
+    },
+    "LiOH.uses.1": {
+      "verdict": "supported",
+      "excerpt": "carbon dioxide absorbents"
+    },
+    "Mg.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Magnesium appears as a light silvery metal."
+    },
+    "MgCl2.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "White to gray deliquescent solid"
+    },
+    "MgCl2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Thin white to gray granules and/or flakes"
+    },
+    "MgCl2.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Magnesium chloride is a component of fire extinguishers, ceramics, textile and paper manufacture."
+    },
+    "MgCl2.uses.1": {
+      "verdict": "supported",
+      "excerpt": "road dust-laying compounds"
+    },
+    "MgCl2.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Source of magnesium metal"
+    },
+    "MgO.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "A white solid, often found as a powder."
+    },
+    "MgO.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Magnesium oxide appears as a white solid, often found as a powder."
+    },
+    "MgO.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Used in medications, animal feeds, fertilizers, insulation, wallboard, electrical heating rods, crucibles, fire bricks"
+    },
+    "MgO.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Used in medications, animal feeds, fertilizers, insulation, wallboard, electrical heating rods, crucibles, fire bricks"
+    },
+    "MgO.uses.2": {
+      "verdict": "supported",
+      "excerpt": "It is used as an antacid and mild laxative"
+    },
+    "N2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Nitrogen appears as a colorless odorless gas."
+    },
+    "NH3.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Ammonia is a colorless gas with a very distinct odor."
+    },
+    "NH3.appearance.0": {
+      "verdict": "not_supported",
+      "reason": "The passage says ammonia has a 'very distinct' odor, which is not the same as saying it has a very strong smell."
+    },
+    "NH3.uses.0": {
+      "verdict": "supported",
+      "excerpt": "is used to make fertilizers for farm crops, lawns, and plants."
+    },
+    "NH3.uses.1": {
+      "verdict": "supported",
+      "excerpt": "ammonia is used in smelling salts, many household and industrial cleaners, and window-cleaning products"
+    },
+    "NH3.uses.2": {
+      "verdict": "supported",
+      "excerpt": "in the manufacture of plastics, explosives, pesticides, detergents, and other chemicals"
+    },
+    "NH4Cl.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Ammonium chloride is a white crystalline solid."
+    },
+    "NH4Cl.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "A white, fine or coarse, crystalline powder"
+    },
+    "NH4Cl.uses.0": {
+      "verdict": "supported",
+      "excerpt": "It is used to make other ammonium compounds, as a soldering flux, as a fertilizer, and for many other uses."
+    },
+    "NH4Cl.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Dry batteries, mordant (dyeing and printing), soldering flux"
+    },
+    "NH4Cl.uses.2": {
+      "verdict": "supported",
+      "excerpt": "washing powders, melt-retarding snow treatment, production of urea-formaldehyde resins and adhesives, bakery products."
+    },
+    "NO.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Nitric oxide is a sharp sweet-smelling gas at room temperature"
+    },
+    "NO.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Nitric oxide appears as a colorless gas."
+    },
+    "NO.uses.0": {
+      "verdict": "supported",
+      "excerpt": "MANUFACTURE OF NITRIC ACID"
+    },
+    "NO.uses.1": {
+      "verdict": "supported",
+      "excerpt": "IN BLEACHING OF RAYON"
+    },
+    "Na.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Sodium appears as a silvery soft metal that becomes grayish white upon exposure to air."
+    },
+    "NaBr.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "White solid;"
+    },
+    "NaBr.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Colorless or white hygroscopic solid; [HSDB] Colorless odorless crystalline solid;"
+    },
+    "NaBr.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Photography, medicine (sedative), preparation of bromides"
+    },
+    "NaBr.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Used to control algae, bacteria, and fungi in water systems (pasteurizing, canning, pulp & paper manufacturing, and ornamental ponds)"
+    },
+    "NaBr.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Also used to repel moths from clothing and fleas from pets;"
+    },
+    "NaCl.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Colorless, transparent crystals or white, crystalline powder"
+    },
+    "NaCl.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Salt is one of the oldest and most ubiquitous of food seasonings, and salting is an important method of food preservation."
+    },
+    "NaCl.uses.1": {
+      "verdict": "supported",
+      "excerpt": "home water softeners, highway deicing"
+    },
+    "NaCl.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Salt is used for food flavouring, food, plastic production, paper production"
+    },
+    "NaOH.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "At room temperature, sodium hydroxide is a white crystalline odorless solid"
+    },
+    "NaOH.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Colorless to white, odorless solid (flakes, beads, granular form)."
+    },
+    "NaOH.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Sodium hydroxide is used to manufacture soaps, rayon, paper, explosives, dyestuffs, and petroleum products."
+    },
+    "NaOH.uses.1": {
+      "verdict": "supported",
+      "excerpt": "It is commonly present in commercial drain and oven cleaners."
+    },
+    "NaOH.uses.2": {
+      "verdict": "supported",
+      "excerpt": "It is also used in processing cotton fabric, laundering and bleaching, metal cleaning and processing"
+    },
+    "Ne.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Neon appears as a colorless odorless noncombustible gas."
+    },
+    "O2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Oxygen is a colorless, odorless and tasteless gas."
+    },
+    "Pt.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Silver-gray, lustrous, malleable and ductile metal"
+    },
+    "S.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Pale yellow crystals or powder with faint odor of rotten eggs"
+    },
+    "SO2.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Sulfur dioxide is a colorless gas with a pungent odor."
+    },
+    "SO2.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Sulfur dioxide appears as a colorless gas with a choking or suffocating odor."
+    },
+    "SO2.uses.0": {
+      "verdict": "supported",
+      "excerpt": "Used to preserve fruits and other foods"
+    },
+    "SO2.uses.1": {
+      "verdict": "supported",
+      "excerpt": "to bleach wood pulp and paper"
+    },
+    "SO2.uses.2": {
+      "verdict": "supported",
+      "excerpt": "manufacture lithium batteries and glass; treat water"
+    },
+    "Zn.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "Pure zinc is a bluish-white shiny metal."
+    },
+    "ZnO.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "Crude zinc oxide is a yellow-gray granular solid with no odor."
+    },
+    "ZnO.appearance.0": {
+      "verdict": "supported",
+      "excerpt": "White or yellowish-white powder"
+    },
+    "ZnO.uses.0": {
+      "verdict": "supported",
+      "excerpt": "It is also used in bandages, pastes, ointments, dental cements, and as a sunblock."
+    },
+    "ZnO.uses.1": {
+      "verdict": "supported",
+      "excerpt": "in products such as baby powder and barrier creams to treat diaper rashes"
+    },
+    "ZnO.uses.2": {
+      "verdict": "supported",
+      "excerpt": "As pigment in white paints"
+    },
+    "ZnS.standardState.0": {
+      "verdict": "supported",
+      "excerpt": "White to greyish-white or yellowish solid"
+    },
+    "ZnS.appearance.0": {
+      "verdict": "not_supported",
+      "reason": "The passage also gives colorless cubic crystals as a form, so calling it only a white to grayish-white or yellowish powder presents part of the description as the whole appearance."
+    },
+    "ZnS.uses.0": {
+      "verdict": "supported",
+      "excerpt": "used as an infrared optical material and as phosphor in applications such as cathode ray tubes and glow in the dark products"
+    },
+    "ZnS.uses.1": {
+      "verdict": "supported",
+      "excerpt": "Pigment, e.g., for paints, inks, lacquers, & cosmetics"
+    },
+    "ZnS.uses.2": {
+      "verdict": "supported",
+      "excerpt": "Phosphor in x-ray and television screens, and in luminous watch faces."
+    }
+  }
+}

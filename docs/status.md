@@ -46,7 +46,7 @@ On branch `claude/phase-3-reactions`. The plan and its decisions are in
     calcium hydroxide mostly forms as a solid.
   - The list has 49 entries, not 50: "nitrogen and oxygen at room
     temperature" is the same pair as the nitrogen and oxygen reaction.
-- **Text step (2026-11-16, branch `claude/phase-3-text`):**
+- **Text step (2026-11-16, PR #22):**
   `pipeline/reaction_text.py` drafts and verifies each reaction's text
   (summary, bonding, trigger, hazard note, why-not) and each substance's
   state, appearance and uses through the Claude API, with the same 3-of-3
@@ -60,8 +60,15 @@ On branch `claude/phase-3-reactions`. The plan and its decisions are in
     are agent-checked.
   - **Hazard statements:** extracted for all 57 substances (those more than
     half of ECHA's notifiers report).
-- **Not built yet:** assembling the verified compound and reaction files,
-  and the Combine screens.
+- **Full run (2026-11-16, run 43786687113, $18.62):** 363 of 397
+  statements passed 3 of 3. With states from code (elements from their
+  points, compounds from PubChem melting points), **56 compounds and 46 of
+  49 reactions** are verified and pass the gate, in `data/verified/`
+  (`compounds.json`, `reactions.json`). Held back: photosynthesis and
+  respiration (glucose's state: one PubChem entry describes a solution),
+  and gold + oxygen (its source hedges: "mostly unreactive").
+  Pilots: $2.00 and $2.11. **Total API spend so far: about $66.**
+- **Not built yet:** the Combine screens.
 - **Arsenic's melting point** still needs its fix, to be confirmed when the
   qualifier rule is built into the element pipeline.
 

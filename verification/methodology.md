@@ -395,10 +395,11 @@ the app.
 
 ## 14. Compounds and reactions
 
-> **In progress (phase 3).** The schema, the build checks and the pipeline
-> (`pipeline/compounds.py` for numbers and hazard statements,
-> `pipeline/reaction_text.py` for text) exist. Nothing is published yet: the
-> text step is in its pilot (2026-11-16).
+> **Phase 3.** The pipeline is `pipeline/compounds.py` (numbers, names,
+> states and hazard statements, by code) and `pipeline/reaction_text.py`
+> (text, through the Claude API, then assembly). The first full run
+> (2026-11-16) verified 56 compounds and 46 of the 49 reactions. The app
+> doesn't show them until the Combine screens are built.
 
 ### Substances
 
@@ -410,8 +411,10 @@ never by name or formula, because those return the wrong entry too often
 
 | Field | Source | Method |
 |---|---|---|
-| Name, formula | PubChem | extract. The app writes formulas the usual way (NaCl); the source's spelling (ClNa) is kept beside it, and the build checks both hold the same atoms |
-| State at 25 °C | element pages; PubChem | for an element: derived from its verified melting and boiling points (rule `state-at-room-temperature`, below). Otherwise agent-checked: the sentence and its excerpt must both say "solid", "liquid" or "gas" (code check) |
+| Name | PubChem | curated, and code checks it is one of PubChem's own names (synonyms) for that CID, ignoring case and spaces around brackets. Page titles aren't always the right name: CID 313, gaseous HCl, is titled "Hydrochloric Acid" |
+| Formula | PubChem | extract. The app writes formulas the usual way (NaCl); the source's spelling (ClNa) is kept beside it, and the build checks both hold the same atoms |
+| State at 25 °C | element pages; PubChem | derived by code where it can be (rule `state-at-room-temperature`, below): for an element from its verified melting and boiling points; for a compound from PubChem's melting points. Otherwise agent-checked: the sentence and its excerpt must both say "solid", "liquid" or "gas" (code check) |
+| Melting point (compounds) | PubChem | extract, with its qualifier ("decomposes", "sublimes"). Values given only in °F are converted, with the source's spelling kept beside them |
 | Formation enthalpy, per phase | NIST WebBook | extract, by exact ID (rules below) |
 | Melting and boiling points, appearance | PubChem | extract or agent, with qualifiers (below) |
 | Uses | PubChem | agent, same procedure and safety screen as element uses. Only for compounds: an element's uses are on its own page |
@@ -451,6 +454,11 @@ never by name or formula, because those return the wrong entry too often
   The build checks the inputs are that element's own points. Where the
   melting point is missing (carbon, which sublimes), the state is
   agent-checked.
+- **A compound's state** is derived from its PubChem melting points only to
+  say "solid": every contributor's melting (or decomposition) point must be
+  above 25 °C, and none may say otherwise. Otherwise it is agent-checked.
+  Glucose is held back by this rule: one contributor's entry describes a
+  watery liquid (a solution), against 146 °C from the others.
   The zero is only given for the element in that state.
 
 ### Reaction enthalpy
@@ -511,6 +519,22 @@ for a no-reaction pair, why nothing happens.
   at least one verified statement on why that bond forms.
 - **No numbers** in any reaction text. The equation and the energy come from
   code and show their own numbers.
+- **The first summary sentence is written by code** (rule
+  `summary-from-equation`) from the verified names and the equation, so
+  every entry has one: "Sodium and chlorine combine to make sodium chloride."
+  Agent statements add only what you would notice (a flame, heat).
+- **Pages per reaction:** the reaction list names LibreTexts pages that
+  describe each reaction itself, where one exists (38 of 49). Each was
+  fetched and checked to name the reaction's substances in the same
+  sentences.
+
+### Publishing
+
+`reaction_text assemble` joins the numbers and the verified text. A
+substance is published only with a state at room temperature; a reaction
+only when all its substances are; a no-reaction pair only with at least one
+verified statement on why nothing happens. What is held back is listed in
+the run's `assembled.md`, and the build gate then checks everything again.
 
 ### Hazards
 

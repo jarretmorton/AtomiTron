@@ -117,6 +117,8 @@ jobs:
           python -m pipeline.reaction_text claims "$RUN"
           python -m pipeline.agents_api verify "$RUN"
           python -m pipeline.reaction_text evaluate "$RUN"
+          # Only a full run replaces the published compound and reaction files.
+          if [ "$WHICH" = all ]; then python -m pipeline.reaction_text assemble "$RUN"; fi
           cp "$RUN/report.md" "$RUN/comparison.md"
 
       # Results are pushed before the gate, and even if a step after the API

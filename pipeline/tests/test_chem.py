@@ -103,6 +103,25 @@ class Names(unittest.TestCase):
         self.assertFalse(same_name("iron(II) oxide", "iron(III) oxide"))
 
 
+class MeltingPoints(unittest.TestCase):
+    def test_parse(self):
+        from pipeline.compounds import melting_point as mp
+        self.assertEqual(mp("800.7 °C")["min"], 800.7)
+        self.assertEqual((mp("1076 °F (decomposes) (loses water)")["min"], mp("1076 °F (Decomposes)")["qualifier"]), (580, "decomposes"))
+        self.assertEqual({k: mp("1517-2442 °F (decomposes)")[k] for k in ("min", "max")}, {"min": 825, "max": 1339})
+        self.assertEqual(mp("1275 °C (sublimes)")["qualifier"], "sublimes")
+        self.assertTrue(mp("less than 32 °F (USCG, 1999)")["below"])
+        self.assertTrue(mp("1418 °F (NTP, 1992)")["plain"])
+        self.assertFalse(mp("146 °C; about 380 °C when anhydrous")["plain"])
+        self.assertIsNone(mp("405"))  # no unit
+        self.assertIsNone(mp("Crystals from water, MP: 83 °C"))  # words first
+
+    def test_state_from_range(self):
+        self.assertEqual(state_at_room_temperature({"min": 825, "max": 1339}), "solid")
+        with self.assertRaises(ValueError):
+            state_at_room_temperature({"min": 10, "max": 40})
+
+
 class NistValues(unittest.TestCase):
     def row(self, raw, method="Review", ref="Chase, 1998"):
         return Row("s", enthalpy_value(raw), raw, method, ref)

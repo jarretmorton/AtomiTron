@@ -85,6 +85,8 @@ describe('reaction enthalpy', () => {
     expect(() => derive('state-at-room-temperature', [25, 100])).toThrow(/exactly room temperature/);
     expect(() => derive('state-at-room-temperature', [100, 50])).toThrow(/below boiling/);
     expect(derive('state-at-room-temperature', [660.32])).toBe('solid'); // aluminum: melting point alone
+    expect(derive('state-at-room-temperature', [{ min: 825, max: 1339 }])).toBe('solid'); // decomposes over a range
+    expect(() => derive('state-at-room-temperature', [{ min: 10, max: 40 }])).toThrow(/no single state/);
     expect(() => derive('state-at-room-temperature', [-7.2])).toThrow(/also needs the boiling point/);
   });
 

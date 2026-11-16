@@ -136,8 +136,14 @@ function checkCompound(c: Compound, at: string, errors: string[]): void {
   const sd = c.standardState.derivation;
   if (sd) {
     const symbol = c.element?.slice('element:'.length);
-    if (sd.rule !== 'state-at-room-temperature' || !symbol) {
-      errors.push(`${at}: a derived state must use state-at-room-temperature, for an element`);
+    const own = c.id.slice('compound:'.length);
+    if (sd.rule !== 'state-at-room-temperature') {
+      errors.push(`${at}: a derived state must use state-at-room-temperature`);
+    } else if (!symbol) {
+      // A compound: from its own melting point (PubChem).
+      if (!isDeepStrictEqual(sd.inputs, [`${own}.meltingPoint`]) || !c.meltingPoint) {
+        errors.push(`${at}: a compound's state must be derived from its own melting point`);
+      }
     } else if (
       !isDeepStrictEqual(sd.inputs, [`${symbol}.meltingPoint`, `${symbol}.boilingPoint`]) &&
       !isDeepStrictEqual(sd.inputs, [`${symbol}.meltingPoint`])

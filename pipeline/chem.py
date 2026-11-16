@@ -123,9 +123,15 @@ def reaction_enthalpy(values: list, weights: list[int]):
 ROOM_TEMPERATURE_C = 25
 
 
-def state_at_room_temperature(melting_c: float, boiling_c: float | None = None) -> str:
+def state_at_room_temperature(melting_c, boiling_c: float | None = None) -> str:
     """Solid, liquid or gas at 25 °C, from the melting and boiling points in
-    °C. A melting point alone is enough for a solid."""
+    °C. A melting point alone is enough for a solid. A melting range (a
+    substance that melts or decomposes over a span) is a solid if even its
+    lowest point is above room temperature."""
+    if isinstance(melting_c, dict):
+        if boiling_c is None and melting_c["min"] > ROOM_TEMPERATURE_C:
+            return "solid"
+        raise ValueError("a melting range reaching room temperature has no single state")
     if boiling_c is not None and melting_c >= boiling_c:
         raise ValueError("melting point must be below boiling point")
     if melting_c > ROOM_TEMPERATURE_C:

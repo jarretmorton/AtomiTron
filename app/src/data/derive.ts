@@ -266,7 +266,16 @@ const RULES: Record<DerivationRule, { arity: number; run: (inputs: FactValue[], 
   'state-at-room-temperature': {
     arity: -1,
     run: (inputs) => {
-      if (inputs.length === 1) return stateAtRoomTemperature(num(inputs[0], 'melting point'));
+      if (inputs.length === 1) {
+        // A range (a substance that melts or decomposes over a span) is a
+        // solid if even its lowest point is above room temperature.
+        const mp = inputs[0];
+        if (isRangeValue(mp)) {
+          if (mp.min > ROOM_TEMPERATURE_C) return 'solid';
+          throw new DerivationError('a melting range reaching room temperature has no single state');
+        }
+        return stateAtRoomTemperature(num(mp, 'melting point'));
+      }
       if (inputs.length === 2) return stateAtRoomTemperature(num(inputs[0], 'melting point'), num(inputs[1], 'boiling point'));
       throw new DerivationError('state-at-room-temperature takes a melting point, and optionally a boiling point');
     },

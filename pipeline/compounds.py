@@ -203,6 +203,8 @@ class Builder:
             return None
         if d.get("element"):
             self.element_state(out, d["element"])
+        else:
+            self.compound_state(out, d["cid"])
         out["hazards"] = self.hazards(entity, d["cid"])
         if not d.get("nist"):
             self.notes.append(f"{key}: no NIST WebBook entry")
@@ -332,6 +334,52 @@ class Builder:
                                      "weights": weights},
                          notes="written by code from the verified names and the balanced equation")
 
+    def compound_state(self, out: dict, cid: int) -> None:
+        """A compound's melting point from PubChem, and from it, its state at
+        25 °C. Only "solid" can be decided this way: every contributor's
+        melting (or decomposition) point must be above room temperature, and
+        none may say otherwise. Anything else is left to the agent step."""
+        body, retrieved = fetch(PUBCHEM_VIEW.format(cid=cid), f"pubchem/compound-full-{cid}.json", self.refresh)
+        rec = json.loads(body)["Record"]
+        refs = {r["ReferenceNumber"]: r.get("SourceName", "") for r in rec.get("Reference", [])}
+        found = []
+
+        def walk(sections):
+            for s in sections:
+                if s["TOCHeading"] == "Melting Point":
+                    for i in s.get("Information", []):
+                        v = i.get("Value", {})
+                        raw = " ".join(x["String"] for x in v.get("StringWithMarkup", []))
+                        if raw and (m := melting_point(raw)):
+                            found.append((refs.get(i.get("ReferenceNumber"), "PubChem"), raw, m))
+                walk(s.get("Section", []))
+
+        walk(rec.get("Section", []))
+        if not found:
+            self.notes.append(f"{out['key']}: no PubChem melting point with a unit; its state is left to the agent step")
+            return
+        low = [raw for _, raw, m in found if m["below"] or m["min"] <= 25]
+        if low:
+            self.notes.append(f"{out['key']}: a PubChem melting point is at or below room temperature ({'; '.join(low)}); "
+                              "its state is left to the agent step")
+            return
+        # The value shown: a plain one in °C where there is one, else converted.
+        plain = [f for f in found if f[2]["unit"] == "°C" and f[2]["plain"]]
+        who, raw, m = (plain or [f for f in found if f[2]["plain"]] or found)[0]
+        value = m["min"] if m["min"] == m["max"] else {"min": m["min"], "max": m["max"]}
+        url = PUBCHEM_PAGE.format(cid=cid) + "#section=Melting-Point"
+        out["meltingPoint"] = self.fact(
+            out["id"], "/meltingPoint", value, "°C", url, retrieved, who, raw, qualifier=m["qualifier"],
+            as_written=raw if m["unit"] != "°C" else None,
+            corroboration=[{"sourceUrl": url, "upstream": w, "value": r} for w, r, _ in found if r != raw] or None,
+            notes=(f"converted from {m['unit']}; " if m["unit"] != "°C" else "")
+            + f"{len(found)} PubChem melting point(s), all above room temperature")
+        out["standardState"] = self.fact(
+            out["id"], "/standardState", "solid", None, RULE_PAGES["state-at-room-temperature"], retrieved,
+            "LibreTexts Chemistry", "", derivation={"rule": "state-at-room-temperature",
+                                                    "inputs": [out["meltingPoint"]["verification"]["recordId"]]},
+            notes="its melting point is above room temperature (25 °C)")
+
     def element_state(self, out: dict, symbol: str) -> None:
         """An element's state at 25 °C, derived from its verified melting and
         boiling points. Left for the agent step when either is missing."""
@@ -391,6 +439,36 @@ class Builder:
 
         walk(rec.get("Section", []))
         return out
+
+
+_MP = re.compile(r"^(?P<below>less than |below |<\s*)?(?P<a>-?\d+(?:\.\d+)?)(?:\s*(?:-|–|to)\s*(?P<b>-?\d+(?:\.\d+)?))?"
+                 r"\s*(?P<unit>°C|°F|K)\b(?P<rest>.*)$", re.I)
+
+
+def melting_point(raw: str) -> dict | None:
+    """'1076 °F (decomposes)' -> {min: 580, max: 580, unit: '°F', qualifier:
+    'decomposes', ...} in °C. None for text it can't read safely (no unit,
+    or words before the number)."""
+    m = _MP.match(raw.strip())
+    if not m:
+        return None
+    unit = {"°c": "°C", "°f": "°F", "k": "K"}[m.group("unit").lower()]
+    a = float(m.group("a"))
+    b = float(m.group("b")) if m.group("b") else a
+    places = max(len(x.split(".")[1]) if "." in x else 0 for x in (m.group("a"), m.group("b") or m.group("a")))
+
+    def to_c(v: float) -> float:
+        c = (v - 32) * 5 / 9 if unit == "°F" else v - 273.15 if unit == "K" else v
+        r = round(c, places)
+        return int(r) if places == 0 else r
+
+    rest = m.group("rest").lower()
+    qualifier = "decomposes" if "decompos" in rest else "sublimes" if "sublim" in rest else None
+    # "Plain": nothing but the value, a qualifier and a citation in brackets.
+    plain = re.fullmatch(r"(\s*\((?:decomposes|sublimes|loses h2o|loses h₂o|loses water|ntp, \d{4}|niosh, \d{4}|uscg, \d{4})\))*\s*",
+                         rest) is not None
+    lo, hi = sorted((to_c(a), to_c(b)))
+    return {"min": lo, "max": hi, "unit": unit, "qualifier": qualifier, "below": bool(m.group("below")), "plain": plain}
 
 
 def same_name(a: str, b: str) -> bool:

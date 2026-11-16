@@ -532,6 +532,8 @@ def assemble(run: Path) -> None:
              **({"nistId": s["nistId"]} if "nistId" in s else {}),
              "name": s["name"], "formula": s["formula"], "standardState": state,
              "formationEnthalpies": s["formationEnthalpies"]}
+        if "meltingPoint" in s:  # a compound's state is derived from it
+            c["meltingPoint"] = s["meltingPoint"]
         if "appearance" in t:
             c["appearance"] = t["appearance"]
         c["uses"] = t.get("uses", [])
@@ -569,9 +571,26 @@ def assemble(run: Path) -> None:
                 out["hazard"] = t["hazard"]
         reactions.append(out)
 
-    # Records for exactly the published entities.
-    published = set(compounds) | {r["id"] for r in reactions}
-    records = [x for x in staged["records"] + facts["records"] if x["subject"]["entity"] in published]
+    # Records for exactly the published facts. Where code and the agents both
+    # produced a field (a state), the published fact is code's, and so is
+    # its record.
+    used: set[str] = set()
+
+    def walk(node) -> None:
+        if isinstance(node, dict):
+            if "verification" in node and "value" in node:
+                used.add(node["verification"]["recordId"])
+            for v in node.values():
+                walk(v)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v)
+
+    walk([list(compounds.values()), reactions])
+    by_id: dict[str, dict] = {}
+    for x in staged["records"] + facts["records"]:
+        by_id.setdefault(x["id"], x)
+    records = [by_id[i] for i in sorted(used)]
     write_json(VERIFIED / "compounds.json", {"schemaVersion": 4, "kind": "compounds", "items": sorted(compounds.values(), key=lambda c: c["id"])})
     write_json(VERIFIED / "reactions.json", {"schemaVersion": 4, "kind": "reactions", "items": reactions})
     write_json(RECORDS, {"schemaVersion": 4, "kind": "verification-records", "items": sorted(records, key=lambda x: x["id"])})
